@@ -1,0 +1,39 @@
+在主第二欧拉区域上，第~\ref{sec:local-compensation} 节定义了 \(\mathcal B_p=G_p/H_p\)，其中 \(H_p\ne0\)，并且方程~\eqref{eq:principal-local-approximation} 给出
+\(\mathcal B_p=-1+O(q_p^{-7/8})\)，对所有虚部和目标单位相位一致成立。在 \(w=1,z=1/6\) 处应用方程~\eqref{eq:principal-slot-factorization} 中的主分解，即使原先对 \(P_p\) 的商未定义，该分解仍然有效。它给出
+\[
+ \mathfrak H_{\eta,1,Z}(s,1,1/6)
+ =H_\eta(s)\prod_{i=1}^K
+       \left(\sum_{p\in\mathcal P_i(Z)}
+           W_i(q_p/P_i)q_p^{-5/6}\mathcal B_p\right),
+\]
+其中 \(H_\eta\) 是方程~\eqref{eq:shared-principal-data} 中对应于同一排除集 \(S\) 的函数。由 \(W_i\) 的非负性，其第 \(i\) 个槽等于
+\[
+ -S_i(Z)\{1+\rho_i(s)\},\qquad
+ |\rho_i(s)|\ll P_i^{-7/8}
+ \quad(\Re s=\beta_*+e,\ \Im s\in\mathbb R).
+\]
+事实上，绝对局部误差之和至多是 \(P_i^{-7/8}S_i(Z)\) 的一个固定倍数。任取预目标数
+\[
+ 0<\kappa_P<\frac78\min_i\ell_i.
+\]
+由于 \(K\) 固定，\(\mathcal R_{\eta,Z}(s):=\prod_i(1+\rho_i(s))-1\)
+在该整条直线上满足 \(|\mathcal R_{\eta,Z}(s)|\ll Z^{-\kappa_P}\)。
+因此精确的留数修正为
+\[
+ \mathfrak H_{\eta,1,Z}(s,1,1/6)
+ =H_\eta(s)Z^{\ell/6}A_T(Z)\{1+\mathcal R_{\eta,Z}(s)\},
+\]
+这正是方程~\eqref{eq:principal-correction-residue}，其中
+\(A_\eta=A_T\) 且 \(\mu=\kappa_P\)。该分解仅在主留数处成立；它不是用于一般围道移动的修正。
+
+设 \(c_S>0\) 为方程~\eqref{eq:shared-principal-data} 中的标量，其正性是引理~\ref{lem:principal-residue-interface} 的一部分。对于充分大的 \(Z\)，定义归一化物理探针
+\[
+ J_{\mathrm{II},\eta}(Z)
+   =\frac{I_{\eta,\mathrm{modified}}(Z)}{c_S A_T(Z)}.
+\]
+它与 \(J_{\mathrm I,\eta}\) 不同，且其分子与归一化因子均与解析高度 \(T_1\) 无关。命题~\ref{prop:probe-low} 以及 \(A_T^{-1}\) 的次幂界给出，对每个 \(\epsilon>0\)，
+\begin{equation}\label{eq:part-II-normalized-low}
+ |J_{\mathrm{II},\eta}(Z)|
+ \ll_{\eta,\epsilon} Z^{C(7/8)+\epsilon}.
+\end{equation}
+同一标量用于高比较。

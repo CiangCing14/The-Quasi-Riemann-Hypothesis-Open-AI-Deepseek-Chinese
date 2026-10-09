@@ -1,0 +1,108 @@
+下面是第一个分离分量的完整结构。令
+\(\Omega_\sigma\) 由
+\(b_1,b_2,\mathfrak A_1,\mathfrak A_2,C,d_k,t',f,h\) 以及指定的
+槽位素数组成，并受其重构关系和各自支撑集的约束。特别地，
+\(\mathfrak A_a\mid\mathfrak B\)，\((C,\mathfrak B)=1\)，且
+\(d_k\mid C\mathfrak B/R_1\)，而 \(R_1,E,J,q_0\) 是导出的，
+不是自由指标。
+令 \(\mathcal A_{1,\sigma}\) 为指定的原始
+系数与优先掩码的乘积，在第二侧取共轭，并令
+\(\psi_{1,\sigma}^{\rm out}\) 为所有保留的外层
+二进截断的乘积。令 \(e_\sigma\) 为在前面的
+无商 CRT 提取中得到的乘积，该提取涉及旧重数 \(w(f)\)、两个原始
+\(\beta\) 因子、它们的立方掩码（包括 \((b_a,f)=1\)）、
+提取出的零点掩码，以及在旧外层
+理想处的有限高斯、单位、互反律和第一射线因子，但不包括所显示的 \(\mu(d_k)\) 和 \(B_{1,a}\)。
+它与 \(x_1,x_2\) 无关；其定义由该乘积给出，
+而不是通过除以 Equation~\eqref{eq:inverse-first-polynomial} 得到。
+记 \(\mathcal O_1=\{A_1,A_2,C,d,R,t,h\}\)，令
+\[
+ w_{1,\sigma}(\omega;\boldsymbol t)
+ =e_\sigma(\omega)\mu(d_k)\mu(t')B_{1,1}(t';y)
+       \overline{B_{1,2}(t';y)}\mathcal B_1(h)
+       \mathcal A_{1,\sigma}(\omega)\psi_{1,\sigma}^{\rm out}(\omega)
+       \prod_{\alpha\in\mathcal O_1}y_\alpha^{it_\alpha}.
+\]
+对于带掩码、主部恢复的形式第一分量，傅里叶
+反演给出精确恒等式
+\begin{equation}\label{eq:inverse-first-separated}
+ \begin{split}
+ \mathcal T_{1,\sigma}=(2\pi)^{-9}\int_{\mathbb R^9}
+ &\widehat{\mathfrak H}_{1,\sigma}(\boldsymbol t)
+ \sum_{\omega\in\Omega_\sigma}w_{1,\sigma}(\omega;\boldsymbol t)\\
+ &\times Z^{(\kappa_1+9\eta/2)/2}P_1(y)
+       \overline{Z^{(\kappa_2+9\eta/2)/2}P_2(y)}\,d\boldsymbol t.
+ \end{split}
+\end{equation}
+展开这两个多项式恢复了两个列模式；七个
+外层模式恢复了
+Equation~\eqref{eq:inverse-first-profile} 的其他坐标。其较大的截断在
+保留支撑集上为一，而新的截断在
+旧窗口非零处为一。这逐项验证了该恒等式。
+原始 \(\beta\) 因子和每个外层掩码仍保留在
+完整和中。
+
+\paragraph{第一个正优函数。}
+对于任何有限或绝对收敛的加权和，我们使用
+\begin{equation}\tag{D}\label{eq:weighted-cauchy}
+ \left|\sum_\omega w_\omega U_1(\omega)\overline{U_2(\omega)}\right|
+ \le\prod_{i=1}^2
+       \left(\sum_\omega|w_\omega||U_i(\omega)|^2\right)^{1/2}.
+\end{equation}
+首先对每个固定模式在整个
+\(\Omega_\sigma\) 上取 \(U_i=Z^{(\kappa_i+9\eta/2)/2}P_i\) 应用此式。只有在此之后才对
+外层因子取绝对值上界。它们的纯算术大小至多为一个
+单独分配的 \(Z^{\pi_\beta}\) 乘以旧重数和
+绝对指定槽位乘积；保留支撑集给出
+\(\mathcal B_1(h)1_{(C,J)=1}\)。特别地，没有假设
+\(\beta(b,f)\) 的任何分解。
+
+对于每个固定的旧外层重构和非零 \(y=\widetilde h\)，
+关系 \(y=hf^2E\) 蕴含 \(f^2E\mid(y)\)。如果其重数
+至多为 \(C_0d_{\mathcal O}(f)^{C_0}\)，那么
+\begin{equation}\label{eq:inverse-old-label-fibre}
+ \sum_{f^2E\mid(y)}w(f)
+ \le C_0d_{\mathcal O}((y))^{C_0+1}
+ \le C_{\pi_{\rm old}}Z^{\pi_{\rm old}}
+ \qquad(0<q_y\le Z^{H_{\rm use}}).
+\end{equation}
+最后一个界是一致的，因为 \(H_{\rm use}\) 保持在有界
+范围内；\(h=y/(f^2E)\) 随后作为元素被唯一确定。
+这是一个旧标签纤维界，而不是依赖于
+后续新标签的重数。
+多项式 \(P_i(y)\) 不再依赖于 \(f\)，也不依赖于
+各个 \(b_i,\mathfrak A_i\)，除了 \(J,q_0\)、固定的
+二进长度 \(A_i\) 和固定的射线扇区：这正是
+Equations~\eqref{eq:first-poisson-column} 和
+\eqref{eq:retained-cube-label}，其中范数轮廓已分离。
+在第一个加权柯西不等式之后，\(\mathcal B_1\) 就简单地是
+\(1_{0<q_y\le Z^{H_{\rm use}}}\)。在这个正和阶段，且仅在此刻，
+用固定的非负径向 Schwartz 函数
+\(\Phi_+(q_y/Z^{H_{\rm use}})\) 对其取优函数，该函数在自变量至多为一处至少为一。
+非空球有 \(H_{\rm use}\ge0\)，所以第二个泊松
+尺度恰好是 \(Z^{H_{\rm use}}\ge1\)。该优函数不是作为
+等式代入原始带符号表达式。更确切地说，令
+\(\mathfrak O_\sigma\) 由
+\[
+ o=(b_1,b_2,\mathfrak A_1,\mathfrak A_2,C,d_k,t';
+       \text{old assigned slot primes}),
+\]
+组成，保留其完整的各自支撑集、与 \(f,h,x\) 无关的源重构
+关系、指定的优先掩码，以及
+\((C,J)=1\)。令 \(w_o^+\) 为其指定素数的绝对原始
+系数的乘积，并在此集合之外为零。它是
+非负的且与 \(y\) 无关。每个第一正侧至多为
+\(C Z^{\pi_\beta+\pi_{\rm old}}\)，乘以其标量
+\(Z^{\kappa_i+9\eta/2}\)，再乘以显式正优函数
+\begin{equation}\label{eq:inverse-first-majorant}
+ \mathcal S_{i,\sigma,\boldsymbol t}
+ =\sum_{o\in\mathfrak O_\sigma}w_o^+
+    \sum_{y\in\mathcal O}\Phi_+(q_y/Z^{H_{\rm use}})|P_i(y)|^2.
+\end{equation}
+在这个正步骤中，旧 \(h\) 截断和模式，以及依赖于
+\(y\) 的 \(B_{1,a}\) 的零点，可以通过其上界移除。
+因此，第一个加权柯西不等式和旧标签纤维界已
+从这个正优函数以及每个
+后续外层集合中移除了旧 \(f,h\)；其原始 \(-V\) 归一化仍保留在
+\(\kappa_i\) 中。在接下来的计数之后，我们对其 \(y\) 和应用第二个泊松
+变换。

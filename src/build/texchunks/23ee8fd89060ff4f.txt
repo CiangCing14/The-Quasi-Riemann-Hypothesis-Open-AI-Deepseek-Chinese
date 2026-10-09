@@ -1,0 +1,12 @@
+最后取 $M=N=1$。实际 $O$-二进块中的指数为
+$1-O/2+\epsilon$。非负 $O$-二进块在对数意义下只有有限多个，
+且其中包含单位二进块。对它们求和，并带有较小的预备损失，
+便得到对每个允许的 $V$ 的等长结论：
+\begin{equation}\label{eq:unmarked-balanced-completed-moment}
+ \sum_{0<q_m\le C_mZ}|\mathcal C_V(Z;m,\nu)|^2
+ \ll Z^{1+\epsilon}\mathfrak M_{A,J}(V)^2.
+\end{equation}
+\section{基础探针及其平衡低估计}\label{sec:probe}
+我们现在把上一节的完备化和放入一个平均 $I_\eta(X,Y,Z)$ 之中。其原始表示分解为一个加性多项式和一个完备化 theta 行。在平衡尺度
+$X=Y=Z^{1/2}$ 下，它们的均方估计给出直接界
+$I_\eta\ll_\eta Z^{1/4+\epsilon}$。我们首先对独立的正尺度 $X,Y,Z$ 定义该平均；只有最后的命题

@@ -1,0 +1,112 @@
+\begin{proposition}[动态局部误差与导子分配]
+\label{prop:probe-errors}
+设 $51/100\le a\le1$，$0<e\le10^{-3}$，并取
+\[
+ x_r=a+16e,\qquad w_r=1-a-6e,\qquad z_r=17/50.
+\]
+选取 $P_0$ 相对于 $e$ 和固定数据充分大。
+对于 $U,T_1\ge1$ 以及满足 $(u,S)=1$
+且 $q_u\asymp U$ 的六次无因子行 $u$，设 $\psi_u^*$
+为诱导 $\chi_\bullet(u)$ 的本原特征。设
+$\mathcal W_u$ 为
+$\{w:\Re w=w_r,\ |\Im w|\le T_1\}$ 的任意子集。假设 $\psi_u^*$
+非主特征，且对 $w\in\mathcal W_u$ 一致地有
+\[
+ |L(1-w,\overline{\psi_u^*})|\ll U^\epsilon
+\]
+对任意给定的小幂次成立。
+对于所展示动态区域上的这一行，通过其前面的槽和来定义 \(\mathcal B_i\)，
+将每个 \(\mathcal B_p\) 解释为 \(G_p/H_p\)，
+其中 \(G_p\) 来自方程~\eqref{old-eq:5.13c}。所选取的
+\(P_0\) 使得在该处对每个槽素数都有 \(H_p\ne0\)，正如证明开头
+所证。本陈述仅在此动态区域上断言个体延拓。
+定义槽的主部与误差部为
+\[
+ \mathcal Q_i(u;z)=
+       -\sum_{p\in\mathcal P_i(Z)}W_i(q_p/P_i)q_p^{z-1}\overline{\chi_p(u)},
+ \qquad
+ \mathcal D_i(u)=\mathcal B_i(u;x,w,z)-\mathcal Q_i(u;z).
+\]
+那么，对于槽的每个子集 $I$ 以及相同的点 $w\in\mathcal W_u$，
+\begin{equation}\label{old-eq:5.13e}
+ \left|L^S(w,\chi_\bullet(u))\prod_{i\in I}\mathcal D_i(u)\right|
+ \ll U^{a-1/2+O(e)+\epsilon}(3+T_1)^C
+       \prod_{i\in I}P_i^{z_r-1/2+O(e)+\epsilon}.
+\end{equation}
+主部保留物理行、所有零掩码以及
+固定恒等射线限制。特别地，其中心
+归一化为
+\[
+ \mathcal Q_i(u;z)=-P_i^{z-1/2}
+       \left(P_i^{-1/2}\sum_{p\in\mathcal P_i(Z)}
+          \overline{\chi_p(u)}W_i(q_p/P_i)(q_p/P_i)^{z-1}\right).
+\]
+在相同的点 $w\in\mathcal W_u$ 处，且仅在此动态区域上，
+完整修正具有有限分解
+\begin{equation}\label{eq:dynamic-compensated-decomposition}
+ \mathfrak H_{\eta,u,Z}
+ =\mathcal H_{\eta,u}\prod_{i=1}^K(\mathcal Q_i+\mathcal D_i)
+ =\mathcal H_{\eta,u}
+   \sum_{I\subseteq\{1,\ldots,K\}}
+       \prod_{i\in I}\mathcal D_i\prod_{i\notin I}\mathcal Q_i.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+在此区域中 $\vartheta=(-w_r)_+\le6e$。引理~\ref{lem:local-euler}
+证明中的估计可加强为
+$H_p-1=O(Q^{-1-10e})$ 对 $p\nmid u$ 成立，以及
+$H_p-1=O(Q^{-10e})$ 对 $p\mid u$ 成立。增大固定的 $P_0$ 使
+得对所有上述素数有 $|H_p-1|<1/2$。方程~\eqref{old-eq:5.13c} 中的全纯
+因子 $G_p$ 除以 $H_p$，
+现在在整个此区域上定义 $\mathcal B_p$。当 $w_r<0$ 时，有界远离
+零的是 $H_p$，而不是可能奇异的原始因子 $P_p$。
+
+因此，方程~\eqref{eq:holomorphic-selected-tuple} 中的元组和在此动态
+区域上分解为 $\mathcal H_{\eta,u}\prod_i\mathcal B_i$。代入
+$\mathcal B_i=\mathcal Q_i+\mathcal D_i$ 即证得
+方程~\eqref{eq:dynamic-compensated-decomposition}。此分解
+不用于将修正延拓到当前区域之外。
+
+对于 $p\nmid u$，方程~\eqref{old-eq:5.13b} 以及
+$\mathcal E_p$ 的估计给出
+\[
+ |H_p(\mathcal B_p+\overline{\chi_p(u)})|
+ \ll Q^{-x_r+2\vartheta}+Q^{-6z_r+2\vartheta}
+       +Q^{4-5x_r-6z_r+2\vartheta}
+       +Q^{1-w_r-6z_r+\vartheta}
+ \ll Q^{-51/100}.
+\]
+这四个指数分别被
+$-a-4e$、$-51/25+12e$、$49/25-5a-68e$ 和
+$a-51/25+12e$ 所界。除以有界的 $H_p$ 保持此
+估计。由理想计数，一个槽中的素数个数为 $O(P_i)$；
+因此其来自 $p\nmid u$ 的总贡献，包括
+$Q^{z-1}$，为 $O(P_i^{z_r-51/100+\epsilon})$。
+
+对于 $p\mid u$，只有除数多个可能的标签。$\mathcal E_p$ 中的一个
+单项式在
+$Q^{z-1}\mathcal B_p$ 中乘以 $Q^{z-1+x}$，因此在分离出 $Q^z$ 后其指数为
+$x_r-1$ 加上该单项式的指数。对于六赋值表的非尾
+边界项，这些指数在
+$e=0$ 时为
+\[
+\begin{array}{c|ccccc}
+ j&1&2&3&4&5\\\hline
+ &a-2&1/2-2a&-a,\ 1-3a&1/2-2a&2-5a.
+\end{array}
+\]
+在正的 $e$ 处，它们的变化分别为
+$+6e,-32e,(-26e,-48e),-42e,-80e$。在所述范围内它们都严格低于
+$-1/2$。公共的 $R$ 项更小：
+在分离出 $Q^z$ 后其指数至多为 $49/25-1-5a-80e<-1/2$。
+额外的赋值对和 $m$ 值具有比值
+$|R|\le Q^{-11/10}$ 和 $|V|=Q^{-51/25}$，因此其几何和
+保持这些界。带有额外 $V$ 的严格第二族项在此
+归一化后也小于 $Q^{-1/2}$。
+
+唯一剩余的项是严格的
+$(e_0,l,k,m)=(1,0,1,0)$ 项，它出现于 $j\ge2$ 且为
+$-\eta(p)(Q-1)Q^{-x-w}$。在分离出 $Q^z$ 后其指数为 $-w_r$。
+显式重标度项 $-Q^{-w}$ 在分离出 $Q^z$ 后的指数为
+$-1-w_r<-1/2$，因此无需进一步估计。

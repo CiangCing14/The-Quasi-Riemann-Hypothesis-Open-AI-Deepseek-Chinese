@@ -1,0 +1,33 @@
+固定一个尾项节省 \(T>1+B_{\rm crude}+B_{\rm ref}\)。对每个泊松尾项，选取一个施瓦茨阶
+\[
+ A>1+(B_{\rm crude}+T)/\tau.
+\]
+此时，方程~\eqref{eq:inverse-raw-tail} 取 \(Y=Z^\tau\) 使得被丢弃的原始外球补集为 \(O(Z^{-T})\)，至多相差有限多个输入半范数以及任意扭高中的一个固定多项式。对于反射后的整二进尾项，实际论证至少为
+\(Z^{\tau_{\rm ref}/2}\)；对
+\(\lambda^{-4}\mathcal O\) 使用相同的格壳界，并选取
+\[
+ A_{\rm ref}>1+2(B_{\rm ref}+T)/\tau_{\rm ref}.
+\]
+这证明了被丢弃尾项的断言，而无需假定被丢弃对偶长度的任何界。
+
+接下来，通过深度 \(D\) 反向选取有限多个傅里叶高度阶与光滑半范数阶，使其高于所选尾项阶与终端输入阶。归一化逆根在圆环上是固定的实数幂，而完整核在范数单项式处的欧拉微分不引入尺度幂。方程~\eqref{eq:inverse-joint-fourier-moments}
+与 \eqref{eq:inverse-normalized-triples} 为每个正指标柯西侧和提供公共系数测度。将推论~\ref{cor:indexed-seminorm-propagation} 分别应用于这些和，使用刚刚由引理~\ref{lem:smooth-calculus} 证明的子轮廓界，然后取所展示的几何平均。两个平方根保留一个归一化离散质量，如前所示，因此真正的外标签只被计数一次。后续应用中任何外部高度截断都在此内部有限传播之后选取，而非插入其中。
+
+最后选取 \(Z\) 足够大，使得 \(\log Z\ge L_{\rm win}/\eta\)，方程~\eqref{eq:inverse-terminal-width} 中 \(C_{\rm res},C_{\rm width}\) 的阈值，
+\(\log Z\ge2\log C_{\rm ker}/\tau_{\rm ref}\)，
+\(\log Z\ge4\log q_\lambda/\eta\)，以及短完备化中使用的固定 \(h\)-圆环阈值。还要施加定义聚合局部损失的对数界以及输入引理的阈值。所有选取都先于这一最终阈值，且仅依赖于固定数据。有界的较小 \(Z\) 通过增大最终常数来处理。
+
+现在对于 \(h\le D\)，有 \(c_h=c_*-7h\eta\ge c_*/2\)。
+方程~\eqref{eq:inverse-child-margins} 与
+\eqref{eq:inverse-row-decrease} 将每个保留的非终端子节点送到下一深度及其行上限。在深度 \(D\) 处该上限为负，而每个保留的行参数都是非负的。终端界至多为 \(Z^F\)；主项与递归项在指数上至多花费
+\(L_{\rm step}=40\eta+\tau+\pi\)。反向归纳给出深度 \(h\) 处的
+\(Z^{F+(D-h)L_{\rm step}}\)，并且
+\[
+ D L_{\rm step}\le\epsilon_c/4+\epsilon_c/4+\epsilon_c/4<\epsilon_c.
+\]
+这证明了 \(\mathcal E\ll Z^{F_0+\epsilon}\)，并具有所声称的一致有限半范数与多项式高度依赖性。
+\end{proof}
+
+\subsection{标记矩的初始化}
+
+我们现在将引理~\ref{lem:marked} 中的逆多项式转换为典范族。只需要一次泊松变换。

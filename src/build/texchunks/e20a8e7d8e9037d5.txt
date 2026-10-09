@@ -1,0 +1,98 @@
+应用引理~\ref{lem:masked-poisson}，取 \(K=Z^M\)，并将其除数记为 \(d_k\mid C\mathfrak B/R_1\)，中心为 \(\delta\)，且
+\(\widehat\delta=\log_Zq_{d_k}\)。在这个真正的互素表达式上，实际的导子长度为
+\begin{equation}\label{eq:first-poisson-lengths}
+ \widehat L_1=\widehat n_1+\widehat n_2-\widehat A_1-\widehat A_2
+                    -2\widehat B+\widehat R.
+\end{equation}
+实际的核参数为 \(Z^Mq_h/(q_{d_k}q_{m_1})\)，而泊松前因子的指数为 \(M-\widehat\delta-\widehat L_1/2\)。
+我们尚未截断或对该核进行傅里叶分离。
+
+若 \(m_1=1\)，则 \(u_1=u_2=1\)，且对每个
+\(p\mid\mathfrak B\) 有 \(t_p=0\)。后一条件迫使 \(\pi_p=0\)
+且 \(a_{1p}=a_{2p}\)。因此 \(n_1=n_2\)，且 \(b_1b_2\) 是一个
+平方。即使计入所有 \(O(Z^{2\ell+\epsilon})\) 对 \(b_1,b_2\)、
+所有 \(O(Z^{r+\epsilon})\) 个相等列、所有 \(O(Z^{V+\epsilon})\)
+个标签以及 \(O(Z^M)\) 行，方程~\eqref{eq:canonical-block} 中的归一化仍给出 \(O(Z^{M+\epsilon})\)。
+若 \(r<0\) 但其固定的环形列窗口非空，则
+\(Z^{-r}\) 被其固定上端点所界，因此其理想计数仍为 \(O(Z^r)\)，且常数固定。
+标记与保留的掩码不会使这个界增加超过一个小幂次。当非零主项在下面被恢复时，它们
+将携带与非主项相同的外球掩码；引理~\ref{lem:masked-poisson} 的最后一部分以同样的代价对它们进行界定。
+
+接下来我们确定其列系数。对于互素无平方因子的本原 \(a,b\)，
+CRT 与互反律给出
+\[
+ \gamma_2(ab)=\gamma_2(a)\gamma_2(b)
+       \chi_a(b)^2\chi_b(a)^2
+ =\gamma_2(a)\gamma_2(b)\chi_b(a)^4.
+\]
+在第一个泊松根中，涉及 \(u_1\) 的因子，包括
+除数与频率，为
+\[
+ \gamma_1(u_1)\overline{\chi_{u_1}(h)}
+ \chi_{u_1}(d_kR_1)\prod_{t_p\ne0}\chi_{u_1}(p^{t_p}),
+\]
+至多相差一个固定射线因子。这可以通过将 \(u_1\) 与 \(p\) 之间的 CRT 因子写成
+\(\chi_{u_1}(p)\chi_p(u_1)^{t_p}\) 并利用互反律得到。在
+共轭的第二侧，\(t_p\) 被替换为 \(-t_p\)。\(u_1,u_2\) 之间的交叉
+因子是互反因子
+\(\mathcal R(u_1,u_2)\)，而不是零延拓符号的商。
+
+令 \(P_T=\prod_{t_p\ne0}p^{t_p}\)，视其为固定射线群中的元素。
+方程~\eqref{eq:signal} 与
+方程~\eqref{eq:G-quadratic-refinement} 表明，剩余的两列射线因子为
+\[
+ G(u_1u_2^{-1})\mathcal R(u_1u_2^{-1},P_T).
+\]
+例如，在将因子放入共轭的第二多项式之前，原始的第二高斯信号因子为
+\(\mu(u_2)\chi_{u_2}(-1)\overline{G(u_2)}\)。其写在该多项式内部的相应
+因子为
+\(\mu(u_2)\chi_{u_2}(-1)G(u_2)\)。又有
+\(G(u_2^{-1})=\chi_{u_2}(-1)\overline{G(u_2)}\)。
+这些恒等式给出了所显示的商。固定 \(P_T\) 的射线类，
+并在有限射线群上对所显示的函数进行傅里叶展开。其每一侧的因子都是真正的乘法射线
+特征，记为 \(\nu_i\)。它们的数目与系数范数
+仅依赖于固定的射线群。
+
+定义
+\[
+ E=\prod_{\pi_p=1}p^{a_{1p}+a_{2p}},\qquad
+ \widetilde h=hf^2E.
+\]
+在 \(f\) 处的原始四次方等于
+\(\overline{\chi_{u_i}(f^2)}\)，包括零点。先将槽位
+分配给 \(b_i,\mathfrak A_i,C\)。在 \(p\mid\mathfrak B\) 处第 \(i\) 侧的剩余局部因子的指数为
+\[
+ 4a_{ip}+1_{t_p\ne0}(1\mathbin{\pm}t_p)
+          +\pi_p(a_{1p}+a_{2p})\pmod6.
+\]
+正号属于第一侧。直接化简在两侧给出相同的
+答案：
+\[
+ \begin{array}{c|cc|c|c}
+ \pi_p&a_{1p}&a_{2p}&t_p&\text{exponent on both sides}\\ \hline
+ 0&0&0&0&0\\
+ 0&1&0&1&0\\
+ 0&0&1&5&0\\
+ 0&1&1&0&4\\
+ 1&0&0&3&4\\
+ 1&1&0&4&4\\
+ 1&0&1&2&4\\
+ 1&1&1&3&4
+ \end{array}
+\]
+定义 \(\xi(n)\) 为对 \(p\mid\mathfrak B\) 取乘积，其中
+\(\chi_n(p)\) 取最后一列中相应的指数次幂。
+指数为零仍表示 \(p\) 处的穿刺。该计算
+证明 \(\xi\) 对两侧是共同的，且独立于 \(h,f,C\)。
+在这些分配之后，第 \(i\) 侧的非主系数为
+\begin{equation}\tag{C}\label{eq:first-poisson-column}
+ \mu(u_i)\nu_i(u_i)\rho(u_i)
+ \overline{\chi_{u_i}(\widetilde h)}
+ \chi_{u_i}(C)^4\chi_{u_i}(d_k)\xi(u_i)\mathfrak d_i(u_i).
+\end{equation}
+它还表明，每个涉及移动的
+\(b_i,\mathfrak A_i\) 的特征要么在 \(\xi\) 中，要么在 \(\widetilde h\) 中；
+它们的其他因子是外系数。
+
+第一次变换产生了方程~\eqref{eq:first-poisson-column} 中的逆型列系数。接下来，在形成第二次变换的正行范数之前，我们将其
+四次幂因子收集到一个无平方因子标签中。

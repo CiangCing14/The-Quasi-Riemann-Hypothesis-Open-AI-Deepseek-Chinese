@@ -1,0 +1,58 @@
+使用 $K_R=RP_a/C_0$、$|L_C|\le q_C$ 以及平凡的两列点计数。在乘以 $Q/Y'^3$ 之前，这些二进块上的贡献为
+\[
+ \ll (1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B}Z^\epsilon
+       Y'^2(RP_a)^{1/6}C_0^{-1/6}D_0^{-1}.
+\]
+在缩减任意小幂次后，对 $C_0,D_0$ 的求和收敛，且对同一个固定的 $B>2$，$R$ 的求和也收敛。这给出项 $(Q/Y')P_a^{1/6}Z^\epsilon$。加上对角项和非例外项即证明了命题。
+\end{proof}
+
+\subsection{下界的完成}
+
+前面两个估计现在适用于精确低分离中同一重标度被加项的两个因子。
+
+\begin{proposition}[补偿低估计]\label{prop:probe-low}
+对于方程~\eqref{eq:compensated-probe-definition} 中的探针、方程~\eqref{old-eq:5.1} 中的几何，以及每个 $\epsilon>0$，
+\begin{equation}
+ |I_{\eta,\mathrm{modified}}(Z)|
+       \ll Z^{l_x/2+b/12+\epsilon}=Z^{3/16+\epsilon}.
+ \label{old-eq:5.10}
+\end{equation}
+该指数与目标和槽网格无关；常数和下阈值可能依赖于固定的算术数据、槽系统以及光滑检验函数。
+\end{proposition}
+
+\begin{proof}
+对于一个固定的重标度子集和元组，令 $Q=q_{b_*}X'Y'$。其分离为方程~\eqref{eq:low-separated}，其中含 $A_{m,\sigma,v}(Y')$ 和 $B^J_{m,\sigma}(Z)$。令 $r_J=q_{p_J}/Z^d$；固定的环形支集给出 $0<c_J\le r_J\le C_J<\infty$，且对元组一致成立。确切地，
+\[
+ \begin{gathered}
+ X'=Z^{l_x-d}/r_J,\qquad Y'=Z^{l_y-d}/r_J,\\
+ Q=q_{b_*}Z^{M'}/r_J^2,\qquad
+ P_a=Y'^2/Q=q_{b_*}^{-1}Z^{1/8}.
+ \end{gathered}
+\]
+特别地，当 $Z\ge q_{b_*}^8$ 时 $P_a\ge1$。增大允许的固定数据下阈值，使得 $Q,Y'\ge1$ 对元组比值也一致成立；这是可能的，因为 $M'\ge1/2$ 且 $l_y-d\ge5/16$。剩余的长度不等式为
+\[
+ l_x-d\ge3/16,\qquad l_y-d\ge5/16,
+ \qquad l_y-d-11b/6\ge1/12.
+\]
+最后一个给出
+\[
+ \frac{Y'}{P_a^{11/6}}
+ =q_{b_*}^{11/6}r_J^{-1}Z^{l_y-d-11b/6}
+       \gg_{\rm fixed}Z^{1/12},
+\]
+从而 $P_a^2/Y'\ll P_a^{1/6}$。因此命题~\ref{prop:probe-gram} 给出
+\begin{equation}
+ \sum_{q_m\ll Q}|A_{m,\sigma,v}(Y')|^2
+ \ll (1+|v|)^{J_{\mathrm{Gr}}}(Q/Y')P_a^{1/6}Z^\epsilon.
+ \label{old-eq:5.6}
+\end{equation}
+对行和运用柯西--施瓦茨不等式、引理~\ref{lem:probe-row-norm}，以及 $(1+|v|)^{J_{\mathrm{Gr}}/2}|\widehat W_0(iv)|$ 的可积性，现在将该元组的未重标度分离界定为 $Z^\epsilon$ 乘以
+\[
+ \begin{aligned}
+ Q^{-1/2}\bigl[(Q/Y')P_a^{1/6}\bigr]^{1/2}
+       \bigl[Z^{M'}\bigr]^{1/2}
+ &=\bigl[Z^{M'}/Y'\bigr]^{1/2}P_a^{1/12}\\
+ &=r_J(X')^{1/2}P_a^{1/12}.
+ \end{aligned}
+\]
+由于 $r_J$ 有界，这为 $O((X')^{1/2}P_a^{1/12}Z^\epsilon)$。

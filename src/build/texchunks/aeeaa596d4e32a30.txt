@@ -1,0 +1,50 @@
+首先，$\mathscr I_\eta(Z)$ 对每个充分大的实数 $Z$ 是一个独立指定的复值量。在每次应用中，它由该 $Z$ 下方程~\eqref{eq:general-probe} 中完备和的有限线性组合给出，允许对完备指标 $A$ 作指定限制，并对其三个正尺度作指定重缩放。该有限组合中的项数与系数可以依赖于 $Z$。对 $\mathscr I_\eta$ 的任何直接估计都指这一表达式，而非另行定义的高积分。
+
+其次，对每个满足 $(u,S)=1$ 的非零六次方自由元素 $u$ 以及每个这样的 $Z$，存在一个函数
+$\mathfrak H_{\eta,u,Z}(s,w,z)$。它在 $\mathcal D_2$ 的每一点的邻域上以及每个 $\mathcal D_1(\epsilon_0)$ 上全纯。
+对每个 $D>0$ 以及包含在这些区域之一中的每个实长方体 $\mathcal K$，存在有限常数 $B_{\eta,\mathcal K,D}$ 和
+$J_{\eta,\mathcal K,D}$，使得对
+$1\le q_u\le Z^D$、所有虚部以及 $\mathcal K$ 中的实部一致地有
+\begin{equation}
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_{\eta,\mathcal K,D}
+ Z^{B_{\eta,\mathcal K,D}}
+ (1+|\Im s|+|\Im w|+|\Im z|)^{J_{\eta,\mathcal K,D}}.
+ \label{eq:stage-all-height-majorant}
+\end{equation}
+这些常数与指数独立于 $Z,u$ 以及任何后续的分部积分次序。不假设 $\mathfrak H$ 或其任何局部因子非零。
+
+最后，对独立给定的 $\mathscr I_\eta(Z)$ 断言如下恒等式，其中所显示行上的和与积分绝对收敛：
+\begin{equation}
+\begin{split}
+ \mathscr I_\eta(Z)=\frac1{(2\pi i)^3}
+ \int_{(3)}\int_{(3)}\int_{(2)}
+ &\mathcal W(X,Y,Z;s,w,z)
+ \sum_u^{(6)}q_u^{-z}\overline{\xi(u)}\\
+ &\cdot
+ \frac{\zeta_F^S(6z)L^S(w,\chi_\bullet(u))}
+      {L^S(s,\eta\overline{\chi_\bullet(u)})}
+ \mathfrak H_{\eta,u,Z}(s,w,z)\,dz\,dw\,ds,
+\end{split}
+\label{eq:stage-high-identity}
+\end{equation}
+其中和具有方程~\eqref{eq:probe-poisson-identity} 的物理限制，并且
+\[
+ \mathcal W(X,Y,Z;s,w,z)
+ =X^{1/2-z}Z^{s+z-1}Y^{w-1}
+       e^{(s+z-1)^2}M(z)\widehat W_1(w).
+\]
+因此，方程~\eqref{eq:stage-high-identity} 是一个关于物理表达式待证明的假设，而非其定义。
+\end{definition}
+
+对于基础探针，物理表达式为
+$I_\eta(Z^{l_x},Z^{l_y},Z)$，$\ell=0$，且
+$\mathfrak H_{\eta,u,Z}=\mathcal H_{\eta,u}$。
+方程~\eqref{eq:probe-poisson-identity} 和~\eqref{eq:probe-high}
+证明了所需的恒等式，而引理~\ref{lem:local-euler} 给出了全纯性以及方程~\eqref{eq:stage-all-height-majorant}。更一般地，定义中的函数 $\mathfrak H$ 始终指
+\emph{去掉所显示的标量商之后的完整修正}。
+如果该修正是局部因子乘积之和，则这些乘积本身必须在所述区域上全纯。将商在某个局部因子的零点处写成该因子的形式并不能建立这一条件。仅用于估计保留围道的分解将在下文单独陈述。
+
+\subsection{竖直线上的外部尾项与水平连接}
+
+我们的三个梅林检验之积在三个独立的高度方向上衰减。以下估计将这种衰减转化为在大长方体之外以及在围道矩形的水平边上的界。

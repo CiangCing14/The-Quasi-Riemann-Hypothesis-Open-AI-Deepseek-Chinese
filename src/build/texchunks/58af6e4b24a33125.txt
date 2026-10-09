@@ -1,0 +1,39 @@
+在所有的逐个允许的无平方因子 \(z_1,z_2\) 上，用其展示的无商 \(L\) 因子、固定射线商、形式乘积范数、完整核以及不变的 \(\mathcal B_2\) 来定义式~\eqref{eq:inverse-second-formal-component} 的被加项。它在互素对上与真正的公式一致。在任何逐因子估计之前，插入完整的恒等式
+\[
+ 1_{(z_1,z_2)=1}=\sum_{v'\mid(z_1,z_2)}\mu(v'),\qquad z_a=v'n_a,
+\]
+设 \(v\ge0\) 为无平方因子 \(v'\)-二进组的中心，且 \(\widehat v=\log_Zq_{v'}\)。这些 \(n_a\) 是无平方因子的，且 \((v',n_a)=1\)；它们不必两两互素。在此扩张上不使用任何原始的泊松公式。对于无平方因子 \(v'\)，置
+\[
+ D_o(v';d_2,k'')=a_0(v')\nu_i(v')\rho(v')1_{(v',r_0)=1}
+   \chi_{v'}(H_o)^4\chi_{v'}(d_0)\overline{\chi_{v'}(d_2)}\chi_{v'}(k'').
+\]
+在无平方因子且互素的 \(v',n\) 上，精确提取为
+\begin{equation}\label{eq:inverse-second-extraction}
+ \begin{split}
+ L_{o,d_2,k''}(v'n)={}&D_o(v';d_2,k'')a_0(n)\nu_i(n)\rho(n)1_{(n,r_0)=1}\\
+ &\times\chi_n(H_o)^4\chi_n(d_0)\overline{\chi_n(d_2)}
+          \chi_n(k'')\chi_n(v')^4.
+ \end{split}
+\end{equation}
+这利用了 \(a_0(v'n)=a_0(v')a_0(n)\chi_n(v')^4\)。在重叠处，右侧通过 \(\chi_n(v')^4\) 将扩张定义为零，而不计算非无平方因子的高斯和。这两个公共因子给出 \(|D_o(v';d_2,k'')|^2\)，包括零点 \((v',k'')=1\) 及其固定穿刺、\(d_0\) 和标签零点。它们通过柯西不等式保留在外层权重中。旧的 gcd 还留下 \(1_{(v',g')=1}\)。由于 \(D_o\) 在 \((v',CJ)>1\) 上消失，我们等价地保留显式外层因子 \(1_{(v',g'CJ)=1}\)，它重复了那个标签零点。
+
+置 \(r_g=g'/d_2\)、\(k_{\rm new}=d_kd_2k''\) 和
+\(f_{\rm new}=JCd_2v'\)。\(n\) 上所有移动因子满足完整的零扩张恒等式
+\begin{equation}\label{eq:inverse-moving-characters}
+ \chi_n(d_k)\chi_n(k'')\overline{\chi_n(d_2)}
+       \chi_n(CJ)^4\chi_n(v')^4
+ =\chi_n(k_{\rm new})\chi_n(f_{\rm new})^4.
+\end{equation}
+它利用了 \(\overline{\chi_n(d_2)}=\chi_n(d_2)\chi_n(d_2)^4\)，在非单位元上也成立。与 \(g'=d_2r_g\) 的剩余 gcd 分裂为 \(d_2\) 处的重复零点和 \(r_g\) 处的固定穿刺。\(q_0,t'\) 处的旧穿刺保持不变。若 \(\mathcal C_{\rm ray}\) 表示 \(G\) 通过其分解的固定群，置
+\[
+ \widehat G(\vartheta)=|\mathcal C_{\rm ray}|^{-1}
+       \sum_{c\in\mathcal C_{\rm ray}}G(c)\overline{\vartheta(c)}.
+\]
+则
+\[
+ G([n_2][n_1]^{-1})=\sum_{\vartheta\in\widehat{\mathcal C}_{\rm ray}}
+   \widehat G(\vartheta)\overline{\vartheta(n_1)}\vartheta(n_2).
+\]
+因此，固定射线被加项中的两个新多项式使用相同的
+\(\nu_i\overline\vartheta\)，并且其一个有界系数
+\(\widehat G(\vartheta)\) 保持在外层。

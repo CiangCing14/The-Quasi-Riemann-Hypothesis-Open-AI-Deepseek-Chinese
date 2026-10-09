@@ -1,0 +1,68 @@
+在例外行上，对每一对已经分配的子女取绝对乘积，并乘以
+Equation~\eqref{eq:exceptional-row-count}。令
+\(c_{\mathfrak t,\mathbf J}(h')\) 表示其中心提取系数和有界提取标量。对于具有原始
+缩减量 \(\widetilde r_1,\widetilde r_2\) 的分配，
+取绝对值后 \(|c_{\mathfrak t,\mathbf J}(h')|\ll_N
+ Z^{-(\widetilde r_1+\widetilde r_2)/2}\)。
+使用绝对体积而非相消，侧 \(j\) 上的未归一化普通
+差在每个正形式尺度上都是 \(O(T'_j)\)，
+包括亚单位尺度，而未归一化的活跃槽贡献
+\(O_N(\prod_{i\in\mathcal I_j\setminus\mathcal J_j}P_i)\)。
+因此 Equation~\eqref{eq:centered-raw-normalization} 给出原始
+归一化体积
+\[
+ |P_{j,\mathfrak t,\mathbf J}(h')|
+ \ll_N N_{{\rm post},j}^{-1/2}T'_j
+             \prod_{i\in\mathcal I_j\setminus\mathcal J_j}P_i
+ =Z^{(\alpha_j-\widetilde r_j)/2+e_j}
+\]
+至多相差固定的半范数和高度因子，其中 \(j\) 表示其
+\(C\) 侧或 \(D\) 侧。因此，对于一个已分配的配对和一个
+下端点为除数的二进区间，包括其计数，指数为
+\[
+ a_0-b_2+e_1+e_2+t_- -\widetilde r_1-\widetilde r_2
+ \le a_0-b_2+e_1+(e_2+\omega_2)
+ \le a_0-b_2+2\theta_N.
+\]
+这里 Equation~\eqref{eq:centered-divisor-boundary} 给出
+\(t_- -\widetilde r_2\le\omega_2\)，且 \(\widetilde r_1\ge0\)。
+因此
+\[
+ \sum_{\mathfrak t,\mathbf J}
+ |c_{\mathfrak t,\mathbf J}(h')|
+ |P_{C,\mathfrak t,\mathbf J}(h')
+       P_{D,\mathfrak t,\mathbf J}(h')|
+ \ll Z^{a_0-b_2+2\theta_N+\epsilon_1}.
+\]
+所显示的求和是对一个固定的下端点为除数的二进区间进行的；其
+分配已经包含在
+\(\epsilon_1\) 中。它并不断言在
+M\"obius 分配之前有一个独立的乘积。从
+参考体积和名义例外计数中减去内部允许量，得到精确的
+代数恒等式
+\begin{equation}
+ \frac{m'-f}{6}+a_0-b_2-(M'+\Delta_{\rm child})
+ =A-\frac56M-F_1-F_2,
+ \label{old-eq:2.15}
+\end{equation}
+其中
+\begin{equation}
+ \begin{aligned}
+ F_1&=c/6+5\{d+(K_0-K)\}/6+w/3+\widetilde q/6
+       +w_o+\mathcal B_c-5g/6+\ell,\\
+ F_2&=2b_2-\tfrac56g_2-p_2+t_2+V/6+f/6.
+ \end{aligned}
+ \label{old-eq:2.16}
+\end{equation}
+实际超出量由
+Equation~\eqref{old-eq:2.15} 中的名义表达式加上
+\(\delta_{{\rm fr},2}/6+2\theta_N+\epsilon_1\) 所界定。
+为进行显式验证，
+Equation~\eqref{old-eq:2.15} 的左端首先等于
+\[
+ a_0-2b_2+p_2-w-\mathcal B_c-\ell
+       -\tfrac56m'-q'-f/6.
+\]
+代入 Equation~\eqref{old-eq:2.13} 和
+\(K=2A-c-d+R+E-m-(K_0-K)\) 得到
+Equations~\eqref{old-eq:2.15}--\eqref{old-eq:2.16}。

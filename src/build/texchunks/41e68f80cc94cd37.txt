@@ -1,0 +1,39 @@
+设 $\mathfrak f_u$ 为 $\psi_u^*$ 的导子。写
+$u=\epsilon_u\prod_{p\mid u}p^{j_p}$，其中 $\epsilon_u$ 是单位。
+对于与 $uS$ 互素的 primary $n$，互反律给出
+\[
+ \chi_n(u)=\epsilon_u^{(q_n-1)/6}
+       \prod_{p\mid u}\mathcal R(p,n)^{j_p}\chi_p(n)^{j_p}.
+\]
+单位指数按模六读取。素数公式可推广到
+合数 $n$：当 $A\equiv B\equiv1\pmod6$ 时，
+\[
+ \frac{AB-1}{6}\equiv\frac{A-1}{6}+\frac{B-1}{6}\pmod6.
+\]
+因此单位因子只依赖于 $q_n$ 模 $36$，而
+$\mathcal R$ 乘积只依赖于 $n$ 模 $4$。结合
+$\mathcal R$ 与局部符号的乘性，所展示的范数同余式使得右端在与 $6u$ 互素的整理想上乘性；将其延拓到它们的分式理想群。一个模
+$(36)\operatorname{rad}(u)$ 同余于一的生产元已经是 primary 的，并使得所展示的每个因子都为一。因此该特征具有一个射线表示，其固定 $2,3$ 模数乘以
+$\operatorname{rad}(u)$。它与引理~\ref{lem:fixed-numerator-ray} 的 Kummer 特征
+$\chi_\bullet(u)$ 在避开 $S$ 的理想上一致。这些特征诱导
+相同的本原特征：在主理想环
+$\mathcal O$ 中，中国剩余定理在每个公共模数的射线类中提供一个避开额外有限集 $S$ 的代表元。在一个好的素数
+$p\mid u$ 处，固定该类及所有其他好的剩余类为一，并通过中国剩余定理改变模 $p$ 的剩余类。
+剩余的局部特征 $\chi_p^{j_p}$ 具有精确阶
+$6/\gcd(6,j_p)>1$。因此它在 $p$ 处的导子指数
+恰好为一：所展示的射线模数只含 $p$ 的一次幂，而该特征不能下降到省略 $p$ 的模数。
+这是一个局部断言；理想特征在 $2,3$ 处可能仍需要固定的归一化模数。
+
+由此推出，对于任意由互不相同的选定分歧标号组成的集合 $J_0$，
+\begin{equation}\label{old-eq:5.13d}
+ q_{\mathfrak f_u}\ll_S q_{\operatorname{rad}(u)}
+       \le q_u\prod_{p\in J_0}q_p^{-(j_p-1)}.
+\end{equation}
+本原分子的函数方程
+\cite[Equation (1.1)]{GZ}、假设的反射界以及 Stirling 给出代价
+$q_{\mathfrak f_u}^{A_*}U^\epsilon(3+T_1)^C$，其中
+\[
+ A_*=1/2-w_r=a-1/2+6e>0.
+\]
+在一个选定的 $p\mid u$ 处，本原特征已经取值为零，因此在那里恢复原来的局部因子恰好乘以一。其余被删除的欧拉因子的根式为
+$O_S(U)$，代价至多为 $U^{6e+\epsilon}$，因为 $w_r\ge-6e$。

@@ -1,0 +1,66 @@
+设 \(\mathcal T_\Sigma^{\rm init}\) 为固定的 \(s\)-二进元和槽位被加项，由方程~\eqref{eq:initial-formal-component} 经完整的 M\"obius 与优先展开得到。其精确分离恒等式为
+\begin{equation}\label{eq:initial-separated-identity}
+ \begin{split}
+ \mathcal T_\Sigma^{\rm init}={}&
+ Z^{\kappa_c^{\rm init}+3\eta}(2\pi)^{-6}
+ \int_{\mathbb R^6}
+ \widehat{\mathfrak H}_{{\rm init},\Sigma,\boldsymbol\upsilon}
+       (\boldsymbol\xi)\\
+ &\quad\times\sum_{\omega\in\Omega_\Sigma}
+ V_\Sigma^{\rm init}(\omega;\boldsymbol\xi)
+ Q^{\rm init}_{1,t,j,\boldsymbol\xi}(k,f)
+ \overline{Q^{\rm init}_{2,t,j,\boldsymbol\xi}(k,f)}
+ \,d\boldsymbol\xi.
+ \end{split}
+\end{equation}
+事实上 \(x_a=Z^{\delta_{\rm init}}z_{n_a}\)。两个列模式，连同方程~\eqref{eq:initial-outer-weight} 的最后一个因子，恰好是 \(x_1^{i\xi_1}x_2^{i\xi_2}\)，而另外四个模式是外部的。傅里叶反演恢复完整轮廓；其较大的截断在保留的支集上为一，而新的列截断在旧 \(W_0\) 窗非零处为一。方程~\eqref{eq:initial-root-kernel} 恢复完整的前因子与核。方程~\eqref{eq:initial-common-extraction} 与优先展开逐项恢复每个算术因子。完整新窗中的额外组合在此复恒等式中通过旧窗在柯西之前相消。
+
+方程~\eqref{eq:initial-separated-identity} 中的变换是在任何实际的 \(C,d',s,h'\)，从而任何 \(t,k,f\) 被求值之前，从固定的环境轮廓中选出的。它依赖于 \(\Sigma,Z\)、固定的测试以及先前的模式 \(\boldsymbol\upsilon\)，并且可能依赖于已经冻结的 \(j\)，但不依赖于任何当前的外部理想或重索引的行或标签。裸的 \(h'\) 范数是一个坐标；导出的行与标签只出现在外部掩码或所显示的特征中。关系 \(C=td'\) 只限制求值点。由方程~\eqref{eq:inverse-fourier-moment}，对每个固定的 \(J\) 存在固定的 \(L,b_0\) 使得
+\[
+ \int_{\mathbb R^6}
+ |\widehat{\mathfrak H}_{{\rm init},\Sigma,\boldsymbol\upsilon}
+       (\boldsymbol\xi)|(1+|\boldsymbol\xi|)^J\,d\boldsymbol\xi
+ \ll (1+|\boldsymbol\upsilon|)^L,\qquad
+ \int_{\mathbb R^{1+|I_0|}}|\widehat{\mathfrak H}_{{\rm ov},j}(\boldsymbol\upsilon)|
+       (1+|\boldsymbol\upsilon|)^L\,d\boldsymbol\upsilon
+ \ll p_{b_0}(W).
+\]
+第一个界使用了固定的归一化根以及完整核对于每个正的 \(A_{{\rm ker},{\rm init}}\) 的一致欧拉界；\(W_0\) 仅有多项式 \(\boldsymbol\upsilon\)-依赖性。第二个界在固定的 \(j\)-乘积区间上一致。若需要，取更大的 \(L\) 也控制先前的行空间闵可夫斯基不等式。没有导数阶引入 \(Z\) 的幂。
+
+方程~\eqref{eq:initial-separated-identity} 现在将分量表示为具有典范形状的多项式，其中有一个在当前外部理想被求值之前选定的公共傅里叶密度。剩下的是界定正纤维与源测度，从源见证验证子允许性，并在引理~\ref{lem:marked} 中恢复归一化。
+
+在固定一个用于子项的商之前，对整个 \(\Omega_\Sigma\) 应用方程~\eqref{eq:weighted-cauchy}，包括所有商 \(t\)。只有在此之后才取绝对权重。保留的 \((s,C)=1\) 与 \(d'\mid C\) 使 \(f=d's\) 无平方因子，而权重的所有其他因子被一个固定常数界定。因此
+\[
+ |V_\Sigma^{\rm init}(\omega;\boldsymbol\xi)|
+ \ll\mathcal B_{\rm init}(h')\mu^2(f).
+\]
+对固定的 \(t,f,k\)，恒等式
+\[
+ d'\mid f,\qquad s=f/d',\qquad C=td',\qquad h'=k/d'
+       \quad\text{if this quotient is an element}
+\]
+表明重构在槽位之前至多有 \(d_{\mathcal O}(f)\) 种选择。这里 \(K_{\rm slot}\) 再次表示原始槽位数的固定界。至多 \(2K_{\rm slot}\) 个被分配的剩余素数整除 \(tf\)。它们的选择至多耗费 \([d_{\mathcal O}(t)d_{\mathcal O}(f)]^{2K_{\rm slot}}\)。先前的重叠素数已被冻结并在重叠三角形中计数。因此纤维，即使其实际大小依赖于 \(k\)，也被界定为
+\begin{equation}\label{eq:initial-fibre}
+ D_{\rm init}(f)C_{\rm init}(t),\qquad
+ D_{\rm init}(f)=d_{\mathcal O}(f)^{1+2K_{\rm slot}},\qquad
+ C_{\rm init}(t)=d_{\mathcal O}(t)^{2K_{\rm slot}}.
+\end{equation}
+没有独立的 \(d',s\) 计数，也没有第二次频率计数。
+
+设 \(\Omega_\Sigma^{\rm src}\) 为刚刚使用的结构外部集，在独立的正行或标签添加之前，并忽略单位傅里叶相位，定义不同源商之集
+\[
+ \mathfrak T_\Sigma=\{t=C/d':\omega\in\Omega_\Sigma^{\rm src}\}.
+\]
+它在所有当前行与标签上被投影一次，而不是为固定的 \(k,f\) 重新定义。每个成员在 \(C,d'\) 二进元上都有一个源见证，因此
+\(\log_Zq_t=\widehat B-\widehat\theta\le P_1+2\eta\)。
+包含它的范数球将其基数界定为
+\(\#\mathfrak T_\Sigma\ll Z^{P_1+2\eta+\pi_{{\rm count},{\rm init}}}\)；
+它不被用作替代的子定义域。在一个非空扇区 \(P_1+2\eta\ge0\) 中，因为它界定一个存在理想的范数。在此有界范围上的除数界给出归一化测度
+\begin{equation}\label{eq:initial-normalized-quotients}
+ d\nu_\Sigma^{\rm init}(t)
+ =Z^{-P_1-2\eta}\sum_{t\in\mathfrak T_\Sigma}C_{\rm init}(t)\delta_t,
+ \qquad
+ \|\nu_\Sigma^{\rm init}\|
+ \ll Z^{\pi_{{\rm count},{\rm init}}+\pi_{{\rm fib},{\rm init}}}.
+\end{equation}
+此集合与测度忽略单位傅里叶相位，并且对整个当前行与标签求和是公共的。非空门保持与此结构投影分离。

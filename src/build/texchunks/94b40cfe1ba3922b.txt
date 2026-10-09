@@ -1,0 +1,34 @@
+把原始主要贡献单独分离出来，用于下面的直接计数。
+在任何非互素扩展或傅里叶绝对化之前，只在真正的非主第二泊松表达式上保留外掩码
+\[
+ \mathcal B_2(k'')=1_{0<q_{d_kd_2k''}\le Z^{M_{\rm ch}}}.
+\]
+对每个被支撑的对，其余集包含在刚才考虑的实比尾项中，因此方程~\eqref{eq:inverse-raw-tail} 以如下固定的阶将其丢弃。在掩码内部保留完整的平滑核。
+掩码依赖于 \(d_k,d_2,k''\) 和固定扇区，而不依赖于剩余量 \(z_1,z_2\)。若 \(M_{\rm ch}<0\)，非零球为空，同样的尾项比较丢弃每个非零频率。在保留的非空段落中 \(M_{\rm ch}\ge0\)。
+
+实际的第二前因子具有精确的侧分裂
+\[
+ Z^{H_{\rm use}-\widehat\theta-\widehat L_2/2}
+       =Z^{\widehat\lambda_1/2}Z^{\widehat\lambda_2/2},
+ \qquad \widehat\lambda_a=H_{\rm use}-\widehat\theta-\widehat x_a+
+                           \widehat g.
+\]
+对于 \(\lambda_c=H_c-\theta-(s_i-g)\)，同样的支撑界给出
+\begin{equation}\label{eq:inverse-second-prefactor-error}
+ \widehat\lambda_a\le\lambda_c+18\eta+\tau.
+\end{equation}
+这里 \(18=12+1+4+1\)。与第一次分裂一样，所有归一化的实逆根将保留在联合平滑轮廓中直到傅里叶反演；它们不会被追加到最终的子检验中。
+所有原始系数掩码保持不变。特别地
+\[
+ (g',CJ)=1,\qquad (z_j,g'CJ)=1
+\]
+在其非零支撑上成立。
+
+主要情形是 \(z_1=z_2=1\)，等价地 \(x_1=x_2\)。
+其计数的名义恒等式为
+\begin{equation}\label{eq:second-principal-exponent}
+ \kappa_i+H_c+s_i+B+t+\ell+R/2=F-B-j,
+ \qquad F=N+V=r+3\ell+V.
+\end{equation}
+实际的上计数加上来自第一前因子的 \(9\eta/2\)、来自行尺度 \(H_{\rm use}\) 的 \(12\eta+\tau\)、来自对角 \(x\)-窗口的 \(4\eta\)、来自 \(C,t'\) 各 \(\eta\)，以及来自合并的 \(q_0,J\) 计数的 \(7\eta/2\)。它们的和为 \(26\eta+\tau\)。加上聚合局部损失 \(\pi\)，这个主要贡献因此至多为 \(Z^{F-B-j+26\eta+\tau+\pi}\le Z^{F+26\eta+\tau+\pi}\)。
+任何被恢复到形式表达式中的非零主频率都带有相同的 \(\mathcal B_2\) 掩码；它们的绝对和由引理~\ref{lem:masked-poisson} 中的完整主恢复所界定，因为 \(Z^{H_{\rm use}}\ge1\)。

@@ -1,0 +1,50 @@
+通过深度 \(D\) 选择各个截断，包括每个完整
+更大或新支撑以及上述有界裁剪族，并形成 \(\mathcal I_D,L_{\rm win}\)。包括活跃槽的乘积
+区间以及终端常数
+\(C_{\rm res},C_{\rm width},C_{\rm ker}\)，在深度上取最大值。
+这是有限的，因为每
+一段有有限多个因子分解类型，且有有限多段。令
+\[
+ F_{\max}=N_{\max}+V_{\max}+11D\eta,\qquad
+ L_{\rm all}=100(1+M_{\max}+F_{\max}+z_{0,\max}+c_*).
+\]
+这些界定了所有保留的尺度长度。事实上，
+方程~\eqref{eq:inverse-row-decrease} 及其后的界给出
+\(M\le M_{\max}\) 和 \(N,V\le F_{\max}\)。非空列窗口有
+\(r\ge-\eta\)，因此 \(\ell\le(F_{\max}+\eta)/3\)。所展示的父
+乘积将每个提取的除子长度界定为 \(2F_{\max}+6\eta\)。
+例如 \(d_k\mid C\operatorname{rad}(b_1b_2)\) 给出
+\(\delta\le r+2\ell+4\eta\)，而方程~\eqref{eq:enlarged-first-frequency}
+随后给出 \(H_{\rm use}\le7F_{\max}+18\eta+\tau\)。终端活跃
+导子支撑在行、\(f\)、穿刺和槽上；它们的
+总长度至多为 \(M_{\max}+2F_{\max}+z_{0,\max}\) 加上
+已展示的比率容许量。方程~\eqref{eq:inverse-terminal-width}
+和 \eqref{old-eq:4.4} 将保留的终端对偶长度界定为
+\(4M_{\max}+4F_{\max}+2z_{0,\max}+3d+12\eta+\tau_{\rm ref}\)。
+在方程~\eqref{eq:inverse-parameter-order} 下，所有这些界
+以及精确导子乘积长度都低于 \(L_{\rm all}\)。
+我们现在可以取 \(L_{\rm pow}=L_{\rm all}\) 并选择实现 \(\pi\) 和 \(\pi_{\rm ref}\) 的附属
+小指数。
+
+定义 \(B_{\rm crude}\) 为通过将任一原始泊松
+展开中的每个有界非频率理想或元素和（包括两个列和）替换为其在长度
+\(L_{\rm all}\) 处的格计数，并将每个显式范数因子（包括方程~\eqref{eq:inverse-raw-tail} 中的 \(1+a^{-1}\)）
+替换为其绝对上界而得到的最大指数。
+同样将除子有界系数和标记替换为其平凡多项式
+范数界。
+仅排除频率核本身。这些展开包含
+固定有限多个因子，因此这定义了一个有限的统一数。
+
+对于反射尾项，类似地使用其有界
+行、局部和活跃乘积计数以及 \(a=X/q_c^2\) 的 \(1+a^{-1}\) 来定义 \(B_{\rm ref}\)。
+不要计入保留长度处被丢弃的对偶指标。相反，
+方程~\eqref{old-eq:4.3} 在其支撑上给出
+\[
+ \frac{|d(\mu)|}{\sqrt{q_\mu}}
+ \le27q_\lambda^{-k/3}q_n^{-1/2}q_b^{-1}
+ \le27q_\lambda^{4/3}\qquad(k\ge-4).
+\]
+每个其他局部因子由有界活跃素数上的 \(q_p^{1/2}\) 的乘积界定，
+在其指示函数被丢弃后与 \(\mu\) 无关。因此 \(B_{\rm ref}\) 覆盖所有非核系数和
+有界计数，而剩余的 \(\mu\)-和是 \(\lambda^{-4}\mathcal O\) 上的无限制
+格和。

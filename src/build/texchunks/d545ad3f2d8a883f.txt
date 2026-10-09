@@ -1,0 +1,69 @@
+\begin{proof}
+在 $a$ 和 $b$ 的素数处，求解
+Equation~\eqref{old-eq:2.11} 中的同余式分别给出
+$\chi_a(j)\overline{\chi_a(Eb)}$ 和
+$\overline{\chi_b(-j)}\chi_b(Da)$。当 $j$ 的特征为零时，这些陈述仍然成立；
+只是所展示的单位因子被反转。
+在 $DE$ 的素数处，作变量替换 $x'=bx\bmod D$，$y'=ay\bmod E$。
+同余式变为 $Ex'-Dy'\equiv j\pmod{DE}$，其特征因子
+变化 $\overline{\chi_D(b)}\chi_E(a)$。剩余的单位因子为
+\[
+ \frac{\chi_E(a)}{\chi_a(E)}
+ \frac{\chi_b(D)}{\chi_D(b)}
+ \frac{\chi_b(a)}{\chi_a(b)}
+ =\mathcal R(a,E)\overline{\mathcal R(b,D)}\mathcal R(a,b).
+\]
+由假设，这里的所有分母都是单位的符号。中国
+剩余定理以及 $F(D,E;j)$ 的定义完成了证明。
+\end{proof}
+
+Equation~\eqref{eq:correlation-child-character} 的假设不会
+通过将 $\mathcal R$ 延拓为双特征而被去除。为了精确陈述
+与 M\"obius 反演一起使用的延拓，固定 $D,E,j$ 并定义
+$\widetilde F_{D,E}(a,b;j)$ 为该方程右端对所有
+在 $S$ 之外且满足 $(ab,DE)=1$ 的本原 $a,b$ 的取值，即使
+$(a,b)>1$ 也保留其零符号。对于该轨迹上的任意有限系数数组 $c(a,b)$，
+\[
+ \sum_{(a,b)=1}c(a,b)F(Da,Eb;j)
+ =\sum_{a,b}c(a,b)\widetilde F_{D,E}(a,b;j)
+                \sum_{t\mid a,\ t\mid b}\mu(t).
+\]
+事实上，完整的内层除数和为 $1_{(a,b)=1}$，并且两个关联
+表达式在该轨迹上一致。$\widetilde F_{D,E}$ 在其他处的值
+是人为的，并非 $F(Da,Eb;j)$ 的公式。特别地，在逐因子估计分离两个
+剩余列之前，必须插入完整的除数和；由单个除数
+项引入的额外公共素数不会成为真正 $D,E$ 关联的素数。
+
+\section{带标记的完备化与反射行能量}
+\label{sec:marked}\label{sec:marked-energy}
+
+补偿低估计和逆矩使用相同的带标记
+完备化。我们在此建立其反射均方。低估计
+将使用没有额外无平方因子标签或穿刺的情形；
+更一般的形式允许逆矩的泊松变换所引入的标签和掩码。
+
+我们保留 Section~\ref{sec:arithmetic} 的记号。特别地，
+理想变量具有其乘性本原生成元，固定的排除集 \(S\) 包含 \(6\) 上的素数，
+并且剩余符号的每个幂在非单位上为零，即使其指数可被
+六整除。元素行不必是无平方因子的，也不必与 \(S\) 互素。
+
+\subsection{完备和与乘积形式标记}
+
+固定一个有限指标集 \(I\) 以及 \(S\) 之外两两不交的素数列表
+\(\mathcal P_i\)，其中
+对 \(p\in\mathcal P_i\) 有 \(q_p\asymp Z^{z_i}\)。这些列表及其
+有界单项系数 \(a_i(p)\) 独立于
+当前行和无平方因子标签。它们的名义长度 \(z_i\) 位于
+固定的有界范围内。
+
+此处及下文，\emph{固定穿刺}是指一个函数
+\[
+ \rho(n)=1_{(n,\mathfrak r_\rho)=1},
+\]
+其中 \(\mathfrak r_\rho\) 是无平方因子的，并且仅要求在
+所指明的当前行和标签和中固定。此类函数的
+有界乘积具有这种形式，其中 \(\mathfrak r_\rho\) 等于
+其模的乘积的根式。该根式的范数将被显式地
+界定。它
+可能依赖于先前固定的外部理想，但不依赖于任一当前
+平均变量。

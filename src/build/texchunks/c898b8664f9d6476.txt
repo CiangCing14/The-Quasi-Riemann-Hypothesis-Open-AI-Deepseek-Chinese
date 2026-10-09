@@ -1,0 +1,88 @@
+\begin{proof}
+对于固定的重标度子集和元组，令 $Q=q_{b_*}X'Y'$。
+其分离由式~\eqref{eq:low-separated} 给出，其中
+$A_{m,\sigma,v}(Y')$ 和 $B^J_{m,\sigma}(Z)$。令
+$r_J=q_{p_J}/Z^d$；固定的环形支集给出
+$0<c_J\le r_J\le C_J<\infty$，且对元组一致成立。确切地，
+\[
+ \begin{gathered}
+ X'=Z^{l_x-d}/r_J,\qquad Y'=Z^{l_y-d}/r_J,\\
+ Q=q_{b_*}Z^{M'}/r_J^2,\qquad
+ P_a=Y'^2/Q=q_{b_*}^{-1}Z^{1/8}.
+ \end{gathered}
+\]
+特别地，当 $Z\ge q_{b_*}^8$ 时 $P_a\ge1$。增大允许的
+固定数据下阈值，使得 $Q,Y'\ge1$ 对所有
+元组比值也一致成立；这是可能的，因为 $M'\ge1/2$ 且
+$l_y-d\ge5/16$。剩余的长度不等式为
+\[
+ l_x-d\ge3/16,\qquad l_y-d\ge5/16,
+ \qquad l_y-d-11b/6\ge1/12.
+\]
+最后一个给出
+\[
+ \frac{Y'}{P_a^{11/6}}
+ =q_{b_*}^{11/6}r_J^{-1}Z^{l_y-d-11b/6}
+       \gg_{\rm fixed}Z^{1/12},
+\]
+从而 $P_a^2/Y'\ll P_a^{1/6}$。因此命题~\ref{prop:probe-gram}
+给出
+\begin{equation}
+ \sum_{q_m\ll Q}|A_{m,\sigma,v}(Y')|^2
+ \ll (1+|v|)^{J_{\mathrm{Gr}}}(Q/Y')P_a^{1/6}Z^\epsilon.
+ \label{old-eq:5.6}
+\end{equation}
+对行和用 Cauchy--Schwarz、引理~\ref{lem:probe-row-norm}，
+以及 $(1+|v|)^{J_{\mathrm{Gr}}/2}|\widehat W_0(iv)|$ 的可积性，现在
+将该元组的未重标度分离界定为 $Z^\epsilon$ 乘以
+\[
+ \begin{aligned}
+ Q^{-1/2}\bigl[(Q/Y')P_a^{1/6}\bigr]^{1/2}
+       \bigl[Z^{M'}\bigr]^{1/2}
+ &=\bigl[Z^{M'}/Y'\bigr]^{1/2}P_a^{1/12}\\
+ &=r_J(X')^{1/2}P_a^{1/12}.
+ \end{aligned}
+\]
+由于 $r_J$ 有界，这等于
+$O((X')^{1/2}P_a^{1/12}Z^\epsilon)$。
+
+对于 $d=\sum_{i\in J}\ell_i$，至多有 $Z^{d+\epsilon}$
+个重标度元组，系数为 $O(Z^{-3d/2})$，且
+$(X')^{1/2}\asymp X^{1/2}Z^{-d/2}$。因此总的额外指数
+为
+\begin{equation}
+ f(d)=d-3d/2-d/2=-d\le0.
+ \label{old-eq:5.5}
+\end{equation}
+选择各分量估计中的小幂次，使其和落在
+规定的 $\epsilon$ 之内。对有限多个子集求和即证明了
+式~\eqref{old-eq:5.10}。对于式~\eqref{eq:part-II-mellin-target} 中
+已定义的 $C=C_{\mathrm{II}}$，用于主信号的
+归一化满足
+\begin{equation}
+ \begin{gathered}
+ C_{\mathrm{II}}(s)=l_x/2+s-1+h/6=s-11/16,\\
+ C_{\mathrm{II}}(7/8)=3/16=l_x/2+b/12.
+ \end{gathered}
+ \label{old-eq:5.11}
+\end{equation}
+因此，在第二部分中假设的矛盾之下，这个下界比
+$Z^{C_{\mathrm{II}}(\beta_*)}$ 小一个精确的幂
+$\Delta=\beta_*-7/8$，除去任意规定的 $\epsilon$。
+\end{proof}
+
+\section{局部补偿及其误差}
+\label{sec:local-compensation}
+
+第~\ref{sec:compensation} 节中的物理修正已经
+从其分离的低表示进行了估计。我们现在确定其
+完整的欧拉修正，并界定两项操作留下的局部误差。全文
+中，局部记号 $P_p,P_p^*,H_p,V,W,D,R$ 与
+引理~\ref{lem:local-euler} 中相同；在共享的解析估计中，其变量
+$x$ 称为 $s$。固定一个非零六次幂自由的物理行 $u$，满足
+$(u,S)=1$。所有槽素数属于第~\ref{sec:compensation} 节的集合
+$\mathcal P_i(Z)$；对每个这样的素数令 $Q=q_p$。如
+引理~\ref{lem:local-euler} 中那样，记 $x_r=\Re x$，$w_r=\Re w$，$z_r=\Re z$。
+$P_p^*$ 中的因子 $W_{\rm loc}=\rho Q^{-w}$ 与
+$W=\chi_p(u)Q^{-w}$ 不同：在 $p\mid u$ 处，后者和 $D$ 为零，而
+前者保持其单位相位。

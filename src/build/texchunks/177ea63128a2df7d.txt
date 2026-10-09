@@ -1,0 +1,50 @@
+同一个核检验处理额外的外部分离变量。
+对于 $m\ge3$，令 $\boldsymbol y=A\boldsymbol t$，其中 $A\in\mathrm{GL}_m(\mathbb R)$ 固定，
+并将三因子核乘以一个 Borel 密度 $|v_{\boldsymbol r,Z}(y_4,\ldots,y_m)|$，该密度在
+$(\boldsymbol r,\boldsymbol v)$ 上联合 Borel 可测，且满足
+\begin{equation}
+ \sup_{\boldsymbol r,Z,\boldsymbol v}
+ (1+|\boldsymbol v|)^L|v_{\boldsymbol r,Z}(\boldsymbol v)|<\infty
+ \quad\text{for every integer }L\ge0.
+ \label{eq:external-density-contract}
+\end{equation}
+对于 $m=3$，该密度在零维空间上为一。该乘积在所有 $m$ 个坐标上仍然快速递减，
+因为 $A$ 及其逆是固定的。对于二因子核，相同的论证使用 $\mathbb R^{m-2}$ 上的
+密度且 $m\ge2$，当 $m=2$ 时密度为一。
+因此两种乘积核形式都具有上述的积分界与迹界。
+
+由对数傅里叶反演分离出的一致环形轮廓通过反复分部积分满足
+方程~\eqref{eq:external-density-contract}，如引理~\ref{lem:smooth-calculus} 中那样。
+首先将每个纯范数扭结转化为其 Mellin 变量。额外的高度坐标随后在三维变量替换中
+附加一个具有固定逆的块三角矩阵。
+
+一个仅通过固定的加权 $L^1$ 范数已知的内部系数测度并不因此被逐点密度假设或其
+迹结论所覆盖。这样的测度在其已经固定的矩阶内、在因子 $F_Z$ 内部保持积分形式。
+任何使用迹估计的额外外部坐标必须单独满足
+方程~\eqref{eq:external-density-contract}。
+
+引理中的定义域 $\mathcal D$ 很重要。假设一个倒数仅在其自变量
+$\gamma+\sum_j a_jt_j$ 的虚部位于一个带缓冲的区间内时才有界。具有
+$a_j\ne0$ 的坐标只能在该条件保持的范围内积分；引理不会将倒数界扩展到该范围之外。
+当其他因子在该处满足方程~\eqref{eq:external-arithmetic-majorant} 时，具有 $a_j=0$ 的
+坐标可以扩展。扩展轴上的所有因子必须使用其全局或绝对估计，而不是仅在保留区间上
+有效的估计。特别地，仅凭一个积分尾项并不能证明水平拼接的合理性：该拼接使用
+方程~\eqref{eq:external-trace-tail}。
+
+在此引理中增大 $N$ 只会增大外部光滑检验的衰减阶。它不会对 $F_Z$ 求导。
+因此，当 $N$ 稍后被选取时，$F_Z$ 中固定的矩轮廓阶或固定的算术高度指数保持不变。
+这与引理~\ref{lem:smooth-calculus} 中所作的阶区分相同。
+
+\subsection{移动一个固定箱}
+
+我们首先移动整行积分。行包络将仅在此步骤之后、在保留的围道上应用。
+
+\begin{lemma}[固定箱的围道变换]
+\label{lem:fixed-bin-contour}
+假设定义~\ref{def:stage-high-data}。固定
+$\sigma_0\in[7/8,1)$ 且 $\beta_*>\sigma_0$，令 $z_0=17/50$，并令
+$U=Z^d$ 且 $0<d_{\min}\le d\le d_{\max}<\infty$。
+令 $\mathcal B$ 为引理~\ref{lem:buffered-bins} 的某个箱 $(i,a)$ 中保留的物理行
+$q_u\asymp U$ 的有限集合，在任何 Mellin 变量被移动之前固定。此环形区域中的
+比较常数是固定的。取 $0<e<10^{-3}$ 和 $T_1=Z^\tau>2$，其中
+$0<\tau\le d_{\min}/100$。实范围与 $e$ 独立于目标。

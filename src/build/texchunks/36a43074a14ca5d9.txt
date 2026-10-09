@@ -1,0 +1,103 @@
+设 \(\psi^*\) 为诱导出表示 \(\psi\in\mathcal X_u\) 的本原特征，并设 \(Q_\psi\) 为其导子范数。
+互反律与固定导子素数给出
+\[
+ Q_\psi\ll_{\mathcal A}q_u,\qquad
+ L_{\rm orig}(s,\psi)
+   =L(s,\psi^*)\prod_{p\in E_u}(1-\psi^*(p)q_p^{-s}),
+ \qquad
+ E_u\subset S\cup\{p:p\mid u\}.
+\]
+被删去乘积的根式具有范数 \(O_S(q_u)\)。
+这些恒等式保留了原有的零点延拓；特别地，
+它们不会把依赖于行的掩码替换为独立选取的
+掩码。
+
+\phantomsection\label{par:physical-row-ramification}
+若在某个素数 \(p\notin S\) 处 \(v_p(u)=j\in\{1,\ldots,5\}\)，则
+\(\chi_\bullet(u)\) 在 \(p\) 处单位上的局部特征具有阶
+\(6/\gcd(6,j)>1\)。\(\Theta\) 中的特征在该处非分歧，
+因此它无法抵消这个局部特征。从而
+\(\mathcal X_u\) 中的表示只有在 \(u\) 的支集包含于 \(S\) 时
+才能诱导出主特征。这样的六次幂自由行只有有限多个，
+包括单位因子。为当前检测器将它们移除；每次应用都必须单独估计这些有界的物理
+行。
+
+固定 \(0<d_{\min}<d_{\max}<\infty\) 并记 \(U=Z^d\)，其中
+\(d_{\min}\le d\le d_{\max}\)。当前二进块中的行满足
+\(q_u\asymp U\)，其中比较常数固定。令
+\[
+ 0<\tau\le d_{\min}/100,\qquad T_1=Z^\tau>2,\qquad
+ 0<e<10^{-3},\qquad I=\lceil1/e\rceil+2.
+\]
+\(\tau\) 的值将在固定高度阶已知之后选取。目前它固定且与 \(Z\) 无关。特别地
+\(T_1\le U^{1/100}\)。
+
+\begin{lemma}[带缓冲的无零区间]\label{lem:buffered-bins}
+对每个保留下来的行 \(u\)，存在一个指标
+\(i\in\{1,\ldots,I-1\}\) 和一个格点
+\[
+ a\in(51/100+e\mathbb Z_{\ge0})\cap[51/100,1]
+\]
+具有以下性质。对 \(j=1,\ldots,I\)，令
+\[
+ M_j(u)=\max\left(\{51/100\}\cup
+ \left\{\Re\rho:
+ \begin{array}{l}
+  \psi\in\mathcal X_u,\quad L(\rho,\psi^*)=0,\\
+  \Re\rho\ge51/100,\quad |\Im\rho|\le3jT_1
+ \end{array}\right\}\right).
+\]
+则
+\[
+ a\le M_i(u)<a+e,\qquad M_{i+1}(u)<a+2e.
+\]
+若 \(a>51/100\)，则某个 \(\psi\in\mathcal X_u\) 有一个零点
+\(\rho=\sigma+i\gamma\) 满足
+\[
+ a\le\sigma<a+e,\qquad |\gamma|\le3iT_1.
+\]
+对每个 \(\epsilon_1>0\)、每个 \(\psi\in\mathcal X_u\) 以及
+充分大的 \(Z\)，在保留下来的行上一致地有
+\[
+ |L_{\rm orig}(s,\psi)|+|L_{\rm orig}(s,\psi)^{-1}|
+ \ll_{\mathcal A,e,\epsilon_1} U^{\epsilon_1}
+ \quad
+ \left(\Re s\ge a+6e,\ |\Im s|\le(3i+2)T_1\right).
+\]
+在同一高度范围内的反射线上，
+\[
+ |L_{\rm orig}(1-a-6e+it,\psi)|
+ \ll_{\mathcal A,e,\epsilon_1}
+ U^{a-1/2+12e+\epsilon_1}(3+T_1)^C,
+\]
+其中 \(C\) 仅依赖于固定的实条带与域。
+可能的配对 \((i,a)\) 有 \(O_e(1)\) 个，且与
+行及其导子无关。
+\end{lemma}
+
+\begin{proof}
+每个最大值都存在：该集合有限，每个非主本原
+\(L\) 函数的零点在紧矩形内是离散的，而绝对欧拉收敛排除了实部
+大于一的零点。序列 \(M_j(u)\) 单调不减
+且落在 \([51/100,1]\) 中。若其 \(I-1\) 个增量中的每一个
+都超过 \(e\)，则
+\[
+ M_I(u)-M_1(u)>(I-1)e>1,
+\]
+这是不可能的。选取一个指标使得
+\(M_{i+1}(u)-M_i(u)\le e\)，并将 \(M_i(u)\) 在所述
+格点上向下取整。这就给出了两个不等式。当 \(a>51/100\) 时，
+最大值 \(M_i(u)\) 由某个实际零点取得，给出 \(\rho\)。
+这一推理允许直线一上存在零点。
+
+对 \(|t|\le(3i+2)T_1\)，以 \(2+it\) 为圆心、
+半径为 \(2-a-2e\) 的闭圆盘的实部至少为 \(a+2e\)。
+其半径小于 \(3/2<T_1\)，因此其中每个点的
+虚部绝对值都小于 \(3(i+1)T_1\)。
+因此界 \(M_{i+1}(u)<a+2e\) 排除了该圆盘中每个
+本原函数的每个零点。引理~\ref{lem:logarithmic-control}
+控制了半径为 \(2-a-6e\) 的同心圆盘。以
+圆心 \(2+i\Im s\) 应用它，并在更右侧使用绝对欧拉收敛。由于 \(Q_\psi\ll_{\mathcal A}U\) 且
+\((3+|t|)^2\ll_e U^{1/50}\)，该引理中任意小的幂次可以
+选得使其贡献为 \(U^{\epsilon_1/2}\)。
+该引理之后关于多项式大小被删去欧拉乘积的估计提供了其余的 \(U^{\epsilon_1/2}\)。

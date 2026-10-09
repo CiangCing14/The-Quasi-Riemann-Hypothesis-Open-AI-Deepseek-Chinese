@@ -1,0 +1,54 @@
+固定算术数据 \(\mathcal A\)，使其独立于 \(Z\)，如
+Section~\ref{sec:arithmetic} 中那样。特别地，有限群
+\[
+ \Theta=\langle\eta,\widehat T\rangle
+\]
+包含目标以及高行族中使用的固定射线扭，并且 \(\Theta\) 中每个成员的每个导子素数都属于 \(S\)。对于一个
+六次幂自由元素 \(u\)，定义有限表示集合
+\[
+ \mathcal X_u=
+ \bigl\{\psi_{u,\nu,\varsigma}(n)=\nu(n)\chi_n(u)^\varsigma:
+       \nu\in\Theta,\ \varsigma\in\{-1,1\}\bigr\}.
+\]
+在非单位处，\(\chi_n(u)^{-1}\) 的值与该符号的任何其他
+幂一样为零。\(\Theta\) 的群性质
+表明 \(\mathcal X_u\) 在共轭下封闭。它包含
+分子特征 \(\chi_\bullet(u)\)、分母
+特征 \(\eta\overline{\chi_\bullet(u)}\)，以及通过将六次
+符号的任一方向乘以 \(\Theta\) 中一个成员所得到的每个零延拓
+表示。
+
+设 \(\psi^*\) 为诱导表示
+\(\psi\in\mathcal X_u\) 的本原特征，并设 \(Q_\psi\) 为其导子范数。
+互反律和固定导子素数给出
+\[
+ Q_\psi\ll_{\mathcal A}q_u,\qquad
+ L_{\rm orig}(s,\psi)
+   =L(s,\psi^*)\prod_{p\in E_u}(1-\psi^*(p)q_p^{-s}),
+ \qquad
+ E_u\subset S\cup\{p:p\mid u\}.
+\]
+被删除乘积的根式具有范数 \(O_S(q_u)\)。
+这些恒等式保留了原有的零延拓；特别地，
+它们不会将依赖于行的掩码替换为独立选择的
+掩码。
+
+\phantomsection\label{par:physical-row-ramification}
+如果在某个素数 \(p\notin S\) 处有 \(v_p(u)=j\in\{1,\ldots,5\}\)，则
+\(\chi_\bullet(u)\) 在 \(p\) 处单位上的局部特征具有阶
+\(6/\gcd(6,j)>1\)。\(\Theta\) 中的一个特征在该处非分歧，
+因此它不能抵消这个局部特征。从而
+\(\mathcal X_u\) 中的一个表示只有在 \(u\) 的支集在 \(S\) 上时才能诱导主特征。这样的
+六次幂自由行只有有限多个，包括单位因子。就当前检测器而言，将它们
+移除；每次应用都必须单独估计这些有界的物理
+行。
+
+固定 \(0<d_{\min}<d_{\max}<\infty\) 并记 \(U=Z^d\)，其中
+\(d_{\min}\le d\le d_{\max}\)。当前二进中的行满足
+\(q_u\asymp U\)，其中比较常数为固定值。令
+\[
+ 0<\tau\le d_{\min}/100,\qquad T_1=Z^\tau>2,\qquad
+ 0<e<10^{-3},\qquad I=\lceil1/e\rceil+2.
+\]
+\(\tau\) 的值将在固定高度阶已知之后选取。目前它固定且独立于 \(Z\)。特别地
+\(T_1\le U^{1/100}\)。

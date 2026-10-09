@@ -1,0 +1,29 @@
+\item 标量 $\zeta$ 与 $\mu$ 无关，且满足
+$|\zeta|\le1/81$。其随移动素数的依赖关系可以精确指定。
+对于 $m\not\equiv0\pmod6$，令
+\[
+ \tau_{p,m}^{\pm}=q_p^{-1/2}\sum_{y\bmod p}\chi_p(y)^m e(\pm y/p),
+ \qquad |\tau_{p,m}^{\pm}|=1.
+\]
+对每个活跃的 $p$，通过下式定义模 $p$ 的单位
+\[
+ \sigma_p=\lambda^2c/p,\qquad
+ \epsilon_p=-\big((\lambda^3c/p)\sigma_p\big)^{-1},
+\]
+并令
+\[
+ \omega_{p,j}=\begin{cases}
+ \tau_{p,j}^{-}\tau_{p,j+2}^{+}\chi_p(\epsilon_p)^{-j-2},&j\ne0,4,\\
+ \tau_{p,4}^{-},&j=4,\\
+ -\tau_{p,2}^{+}\chi_p(\epsilon_p)^{-2},&j=0.
+ \end{cases}
+\]
+$\tau$ 的下标按模六读取。令
+$M=\lambda^{12}L^4$，则存在一个绝对值为一的数 $\kappa_F$，
+它仅依赖于 $h_0$ 以及 $r$ 模 $M^2$ 的类，使得
+\begin{equation}\label{eq:reflection-row-phase}
+ \zeta=-\frac i{81}\bar\alpha(c)^2\widehat\phi(h_0)\bar\kappa_F
+ \prod_{p\ {\rm inactive}}(1-q_p^{-1})
+ \prod_{p\ {\rm active}}\chi_p(\sigma_p)^{-2}\omega_{p,j_p}.
+\end{equation}
+在 $h_0$ 与 $r\bmod M^2$ 的有限多个类中的每一个里，$d$ 和 $\vartheta$ 都是固定的。因此，在该扇区内它们是公共的列因子。除所显示的尺度 $q_c^2$ 之外，$B_p$ 之外所有其他随移动素数的依赖关系都包含在标量 $\zeta$ 中，而它可能依赖于整个活跃集。

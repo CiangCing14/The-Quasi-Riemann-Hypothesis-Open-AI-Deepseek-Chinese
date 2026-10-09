@@ -1,0 +1,133 @@
+\begin{lemma}[完备局部恒等式]\label{lem:local-euler}
+对每个满足 $(u,S)=1$ 的非零六次方自由 $u$ 以及每个
+素数 $p\notin S$，刚刚定义的因子为
+\begin{equation}\label{old-eq:5.13a}
+\begin{aligned}
+ P_p^*&=\frac1{1-R}\left\{
+ \frac{R(1-Q^{-1})-\eta(p)(Q-1)
+ Q^{-x-w}V^{1_{j\le1}}}{1-V}+J_j\right\},\\
+ P_p&=\frac1{1-V}+1_{j=0}\frac{W_{\rm loc}}{1-W_{\rm loc}}+P_p^*,
+\end{aligned}
+\end{equation}
+其中 $J_j$ 的六个值为
+\[
+\begin{array}{c|l}
+ j&J_j\\\hline
+ 0&-\eta(p)\rho^{-1}Q^{-x}+W_{\rm loc}R\\
+ 1&\eta(p)Q^{-x-w}\\
+ 2&a_p\rho^{-3}Q^{3/2-3x}\\
+ 3&-\eta(p)b_p\rho^{-2}Q^{2-3x-w}
+       +b_p^2\rho^{-4}Q^{2-4x}\\
+ 4&-\eta(p)a_p\rho^{-3}Q^{5/2-4x-w}\\
+ 5&-a_p^2Q^{3-6x}.
+\end{array}
+\]
+令 $W=\chi_p(u)Q^{-w}$ 且
+$D=\eta(p)\overline{\chi_p(u)}Q^{-x}$，并在 $p\mid u$ 处采用原始的零
+延拓，定义
+\begin{equation}\label{eq:local-H-definition}
+ H_p=P_p\frac{(1-V)(1-W)}{1-D},\qquad
+ \mathcal H_{\eta,u}=\prod_{p\notin S}H_p.
+\end{equation}
+那么方程~\eqref{eq:local-full-series} 中的级数具有
+标量分解
+\begin{equation}\label{eq:probe-high}
+ \mathcal F_{\eta,u}(x,w,z)=
+ \frac{\zeta_F^S(6z)L^S(w,\chi_\bullet(u))}
+ {L^S(x,\eta\overline{\chi_\bullet(u)})}
+ \mathcal H_{\eta,u}(x,w,z).
+\end{equation}
+记 $x_r=\Re x$，$w_r=\Re w$，$z_r=\Re z$。对每个
+固定的 $\epsilon_0>0$，修正乘积在每个下述区域中的每一点的
+邻域上正规收敛，因而在那里定义了一个全纯函数：
+\begin{align}
+ x_r\ge51/100,\quad z_r\ge17/50,\quad w_r\ge-1/100,\quad
+ x_r+w_r\ge1+\epsilon_0;\label{eq:local-region-one}\\
+ x_r\ge7/8,\quad z_r\ge33/200,\quad w_r\ge19/20.
+ \label{eq:local-region-two}
+\end{align}
+对虚部和单位相位一致地，
+$\mathcal H_{\eta,u}\ll_\epsilon q_u^\epsilon$，其中常数
+在第一个区域中还依赖于 $\epsilon_0$。对于第二个区域中的 $u=1$，
+$\mathcal H_{\eta,1}=1+O(P_0^{-c_H})$，例如
+$c_H=4/5$。方程~\eqref{eq:probe-high} 从绝对
+收敛开始，并通过这些区域给出一个亚纯延拓。
+\end{lemma}
+
+第一个区域将包含非主行的缓冲围道，包括反射后的分子线。第二个区域包含
+主留数点 $w=1$，$z=1/6$ 以及用于到达它的围道。
+
+\begin{proof}
+有四族 $t>0$：
+$(e_0,l)=(0,2r+2),(1,2r),(0,2r+1),(1,2r+1)$，其中 $r\ge0$。
+在每一族中，将 $r$ 增加一并将第一个允许的 $m$
+增加一，会把方程~\eqref{eq:local-P} 的被加项乘以
+$R$。事实上相位比为 $a_p^2$：其余比值为
+一，因为 $\gamma_3^2=\omega_p$，$\omega_p^2=1$，且 $\rho^6=1$。
+进一步增加 $m$ 会把被加项乘以 $V$。
+
+为清晰起见，下表列出除以 $R^r$ 后的每个非零被加项。
+在其第一行中 $j$ 是任意的；所有
+其他条件如所示。每个省略的情形由
+方程~\eqref{eq:local-scalar-values} 为零。
+\begin{equation}\label{eq:local-family-table}
+\begin{array}{c|c|l|l}
+ (e_0,l)&k&\text{condition on }(j,m)&R^{-r}\text{ times summand}\\\hline
+ (0,2r+2)&0&m\ge r+1&R(1-Q^{-1})V^{m-r-1}\\
+ (0,2r+2)&0&j=5,\ m=r&-a_p^2Q^{3-6x}\\
+ (0,2r+2)&1&j=0,\ m=r+1&W_{\rm loc}R\\
+ (1,2r)&0&j=0,\ m=r&-\eta(p)\rho^{-1}Q^{-x}\\
+ (1,2r)&1&j=1,\ m=r&\eta(p)Q^{-x-w}\\
+ (1,2r)&1&m\ge r+1_{j\le1}&-\eta(p)(Q-1)Q^{-x-w}V^{m-r}\\
+ (0,2r+1)&0&j=2,\ m=r&a_p\rho^{-3}Q^{3/2-3x}\\
+ (0,2r+1)&1&j=3,\ m=r&-\eta(p)b_p\rho^{-2}Q^{2-3x-w}\\
+ (1,2r+1)&0&j=3,\ m=r&b_p^2\rho^{-4}Q^{2-4x}\\
+ (1,2r+1)&1&j=4,\ m=r&-\eta(p)a_p\rho^{-3}Q^{5/2-4x-w}.
+\end{array}
+\end{equation}
+以下是对其各项的直接验证。在第一族中 $t=6r+6$。
+对于 $k=0$，主高斯提升为
+$Q^t(1-Q^{-1})$，当 $m\ge r+1$；其在
+$(j,m)=(5,r)$ 处的额外边界值为 $-Q^{t-1}$。对于 $k=1$，乘积
+$\omega_p^{-1}G_1G_{-1}=Q$ 只允许 $(j,m)=(0,r+1)$。
+这些给出前三行。在第二族中 $t=6r+1$。
+对于 $k=0$，非主等式 $j'=t-1$ 给出第四行。
+对于 $k=1$，主高斯提升在
+$j'=t$ 处有其负边界，给出第五行，而其值 $Q^{t-1}(Q-1)$ 对
+$j'>t$ 给出第六行。后一条件正是
+$m\ge r+1_{j\le1}$。
+
+对于两个奇族 $t=6r+3$ 和 $t=6r+4$。它们的 $k=0$
+行要求 $j'=t-1$，其 $k=1$ 行要求 $j'=t$。
+相位约化为
+\[
+ \gamma_1\gamma_2
+       =-\alpha(p)\overline{\chi_p(4)}\gamma_3,
+ \qquad
+ \frac{\gamma_4}{\gamma_1}
+       =-\frac{\overline{\alpha(p)}}{G(p)}.
+\]
+第一个是 $p$ 处的方程~\eqref{eq:signal}；第二个由
+第一个以及 $\gamma_2\gamma_4=1$ 推出。代入给出
+最后四行，包括两个 $j=3$ 项。因此该表覆盖了
+全部五个分歧赋值以及 $j=0$。
+
+对 $r\ge0$ 求和给出 $(1-R)^{-1}$，而两个无界的 $m$
+范围给出 $(1-V)^{-1}$。这些和正是
+方程~\eqref{old-eq:5.13a} 中 $P_p^*$ 的公式。若 $t=0$，则
+$e_0=l=0$。$k=0$ 项给出 $(1-V)^{-1}$，而 $k>0$
+项要求 $j=m=0$ 并给出 $W_{\rm loc}/(1-W_{\rm loc})$。
+这也证明了
+$P_p$ 的公式。
+
+还需验证解析断言，特别是在
+$w_r$ 为负处。令 $\mathcal E_p=P_p^*+D$。来自 $t=0$ 的贡献
+为 $(1-V)^{-1}+W/(1-W)$，因此一个精确的化简给出
+\begin{equation}\label{eq:local-H-defect}
+ H_p-1=
+ \frac{D(V+W-VW)-VW+(1-V)(1-W)\mathcal E_p}{1-D}.
+\end{equation}
+此表达式没有 $1-W$ 分母。在 $p\mid u$ 处，其中
+$D=W=0$，它约化为 $(1-V)\mathcal E_p$。在两个所述区域中
+$|R|<1$，$|V|<1$，且 $|D|<1$，一致地远离一，因此这些
+是全纯局部表达式。

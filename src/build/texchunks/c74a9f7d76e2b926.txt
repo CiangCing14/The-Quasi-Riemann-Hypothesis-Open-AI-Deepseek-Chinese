@@ -1,0 +1,60 @@
+对于 $bc\ne1$，本原原始特征的有穷傅里叶反演为
+\[
+ \sum_{v\bmod bc}\Theta_{b,c}^{(j)}(v)e(vy/(bc))
+ =\overline{\Theta_{b,c}^{(j)}(y)}\sqrt{q_{bc}}\,
+       \Gamma_{b,c}^{(j)}.
+\]
+对于非单位 $y$，左端为零，因为一个非平凡局部特征与平凡加性特征求和相消。对于所述的 $e$ 和 $d\mu$，基 $(1,\omega)$ 上的迹配对矩阵为
+$\left(\begin{smallmatrix}0&1\\1&-1\end{smallmatrix}\right)$，行列式为
+$-1$，而 $\mathcal O$ 的 $d\mu$-余体积为一。因此 $bc\mathcal O$ 的对偶为 $(bc)^{-1}\mathcal O$，而
+$bc\mathcal O$ 的余体积为 $q_{bc}$。
+陪集泊松求和，随后除以每个理想的六个生成元，因此给出
+\begin{equation}\label{eq:sextic-sieve-pair-poisson}
+ \sum_{\mathfrak a\ne0}W(q_{\mathfrak a}/M)\Psi_{b,c}^{(j)}(\mathfrak a)
+ =\frac{M\Gamma_{b,c}^{(j)}}{\sqrt{q_{bc}}}
+   \sum_{\mathfrak a\ne0}\mathscr W(Mq_{\mathfrak a}/q_{bc})
+                 \overline{\Psi_{b,c}^{(j)}(\mathfrak a)}.
+\end{equation}
+这里两个求和都遍历所有非零整理想。除以六用到了 $\Theta_{b,c}^{(j)}$ 的单位平凡性和权函数的径向性。
+零频率为零，因为该特征非平凡。
+
+\medskip\noindent\emph{平方范数的泊松变换。}
+对于支集在 $\mathcal A_N$ 中一个 $t$-类上的 $\lambda$，置
+\[
+ Q_j(M,N;\lambda)=
+ \sum_{\substack{b,c\in\mathcal A_N\\(b,c)=1}}
+   \lambda_b\overline{\lambda_c}
+   \sum_{\mathfrak a\ne0}W(q_{\mathfrak a}/M)
+                         \Psi_{b,c}^{(j)}(\mathfrak a).
+\]
+我们断言，对每个 $\varepsilon>0$，
+\begin{equation}\label{eq:sextic-sieve-pair-norm}
+ \begin{split}
+ |Q_j(M,N;\lambda)|
+ &\ll_{S,\varepsilon}(2+MN)^\varepsilon\|\lambda\|_2^2\\
+ &\quad\times
+ \left\{M+\frac MN
+   \max_{\substack{1\le H\\
+       H\ll_{S,\varepsilon}(2+MN)^\varepsilon N^2/M}}
+       E_j(H,N)\right\}.
+ \end{split}
+\end{equation}
+最大值遍历二进壳层，若为空则为零。若 $N\le1$，
+则只能出现单位好理想，环形理想计数证明了
+$M$ 项。此外当 $M$ 低于某个固定正常数时 $Q_j=0$，
+因为 $W$ 有固定的上支集端点，且非零理想的范数
+至少为一。
+
+假设 $N>1$ 并规范化 $\|\lambda\|_2=1$。则 $Q_j$ 中的每一对
+都是非平凡的，且 $q_{bc}\asymp N^2$。应用
+方程~\eqref{eq:sextic-sieve-pair-poisson} 并对对偶理想取三角
+不等式。对于小的 $\delta>0$，置
+$Z=(2+MN)^\delta$。柯西给出 $(\sum_b|\lambda_b|)^2\ll N$。
+由方程~\eqref{eq:sextic-sieve-transform-bounds}，满足
+$q_{\mathfrak a}>ZN^2/M$ 的部分，对任意 $A>1$，至多为
+\[
+ M\sum_{q_{\mathfrak a}>ZN^2/M}(Mq_{\mathfrak a}/N^2)^{-A}
+ \ll N^2Z^{1-A}.
+\]
+若截断低于一，同样的界成立。取 $A$ 足够大可使
+其成为任意负幂误差。

@@ -1,0 +1,52 @@
+恒等式 \(c=nP/j^2\) 将 \(y_c\) 置于一个固定的紧区间内。
+若 \(D'\) 在一个有界非空窗口内略微为负，这仍然有意义；\(D'\) 尚不是典范参数。选取一个
+全新的个体截断 \(\omega_c\)，使其在这个完整商支撑上等于一。对于固定的 \(j\)，令 \(\Omega_c\) 在 \(\omega_c\) 的
+完整支撑上等于一，并令 \(\Omega_i\) 在每个完整存活的
+个体槽支撑上等于一。单个联合轮廓
+\[
+ \mathfrak H_{{\rm ov},j}(y_c,(y_i)_{i\in I_0})
+ =\Omega_c(y_c)\prod_{i\in I_0}\Omega_i(y_i)
+ W\!\left(\frac{y_jy_c}{\prod_{i\in I_0}y_i}\right)
+\]
+在这些独立坐标中具有紧支撑。当前的
+截断 \(\omega_c\) 和个体因子 \(W_i(y_i)\) 留在
+其变换之外。因此，方程~\eqref{eq:inverse-log-fourier} 在维数
+\(1+|I_0|\) 下，将方程~\eqref{eq:initial-overlap-polynomial}
+精确地表示为同一个指定标量与 \(Z^{-G}\psi_u(j)^2\) 的乘积，再乘以
+\[
+ (2\pi)^{-1-|I_0|}\int_{\mathbb R^{1+|I_0|}}
+ \widehat{\mathfrak H}_{{\rm ov},j}(\boldsymbol\upsilon)
+ Z^{-D'/2}\sum_{c\ {\rm sf}}\mu(c)\psi_u(c)1_{(c,j)=1}
+ \mathfrak d_{\boldsymbol\upsilon}(c)
+ \omega_c(y_c)y_c^{i\upsilon_c}\,d\boldsymbol\upsilon,
+\]
+其中 \(\mathfrak d_{\boldsymbol\upsilon}\) 具有原始的存活
+列表和个体系数
+\(\mu(p)a_i(p)W_i(y_i)y_i^{i\upsilon_i}\)。展开标记并
+反转联合变换，逐项证明该等式。
+没有为实际存活元组选取测度。该测度可以
+依赖于已经固定的 \(j\)，但方程~\eqref{eq:inverse-fourier-moment}
+对其 \(y_j\) 在固定乘积区间内是一致的。闵可夫斯基
+不等式在整个行希尔伯特空间中用于这一个测度。
+在最终阈值被选定之前，将 \(\omega_c\) 的完整支撑、其更大的截断、
+存活槽支撑以及 \(j\)-乘积区间纳入有限
+集合 \(\mathcal I_D\)。
+采用与典范证明相同的 \(\eta\) 约定，我们于是有
+\[
+ |\widehat c-D'|\le\eta,\qquad |\widehat j-G|\le\eta
+\]
+在下文实际使用的完整支撑上成立，其中 \(\widehat c=\log_Zq_c\)。
+对于符号
+\(\varepsilon_\chi=1\)，对整个剩余多项式取共轭，
+包括其有限特征、标记和测试；其行范数不变。
+对于另一个符号，保持不变。因此，只需估计
+一个具有如下确切形式的多项式
+\begin{equation}\label{eq:initial-residual-polynomial}
+ \mathcal R_0(u)=Z^{-D'/2}\sum_{c\ {\rm sf}}
+ \mu(c)\nu_0(c)1_{(c,j)=1}\overline{\chi_c(u)}
+ \mathfrak d_0(c)W_0(q_c/Z^{D'}).
+\end{equation}
+这里 \(\nu_0\) 是一个固定的有限射线特征，\(\mathfrak d_0\)
+是帽 \(z_0\) 与那些个体系数
+或其共轭的乘积标记，而 \(W_0\) 是 \(\omega_c(y)y^{i\upsilon_c}\)
+或其共轭。所有这些都独立于行。

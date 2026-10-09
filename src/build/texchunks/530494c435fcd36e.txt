@@ -1,0 +1,42 @@
+还有一个显式的能量计算。仅对 \(t\in\mathfrak T_\Sigma\) 应用典范界，此时前述穿刺与余量检查成立。于是方程~\eqref{eq:initial-positive-child} 和 \eqref{eq:initial-weighted-count} 将未缩放的带符号外和界定为
+\[
+ C(\boldsymbol\upsilon,\boldsymbol\xi)
+ Z^{P_1+2\eta+2F_{\rm init}+\epsilon_c}
+ \|\nu_\Sigma^{\rm init}\|.
+\]
+其中的一个质量是方程~\eqref{eq:initial-normalized-quotients} 中的质量；标签 \(d's\) 仍留在子平均内部。公共傅里叶密度被单独积分一次，使用上述一致加权界。这将不同的冻结商计数一次，其见证重数已包含在纤维权重中。形式恒等式
+\[
+ \kappa_c^{\rm init}+P_1+2F_c^{\rm init}=m
+\]
+随后给出，在恢复子归一化并应用带有损失 \(\epsilon_c\) 的典范界之后，每侧指数为
+\begin{equation}\label{eq:inverse-initial-energy}
+ \begin{split}
+ &m+3\eta+2\eta+2\delta_{\rm init}+\pi_{\rm init}+\epsilon_c\\
+ &\qquad\le m+11\eta+\pi_{\rm init}+\epsilon_c.
+ \end{split}
+\end{equation}
+这里 \(\pi_{\rm init}\) 是聚合的自由选择的局部除子、二进和分离损失，包括指定重叠除子损失以及不同的分配
+\(\pi_{{\rm count},{\rm init}},\pi_{{\rm fib},{\rm init}}\)。
+这些是一个聚合的组成部分，而非重复的容许量。两个裁剪副本来自恢复的归一化和子指数。没有 \(\tau_{\rm init}\) 能量因子：行扩大发生在典范子内部，并已在其余量检验中计入。初始加权柯西取几何平均，重叠三角形已被 \(Z^{-G}\) 抵消。
+
+我们显式给出参数和尾项阶。设
+\(r_{\max},z_{\max},m_{\max}\) 界定标记范围，设
+\(s_{\rm slot}\) 界定槽位数，并令
+\(D_{\max}=r_{\max}+z_{\max}\)。置
+\(\bar c=\min(c_1,c_2)\) 并选择典范余量
+\(c_*=\bar c/2\)。对于 \(\eta,\tau_{\rm init}\le1/100\)，该应用的有效先验起始界为
+\[
+ M_{\max}=2D_{\max}+1,\qquad N_{\max}=V_{\max}=D_{\max}+1.
+\]
+确实，\(P_1\ge-2\eta\) 给出
+\(M_{\rm init}\le2D_{\max}+10\eta+\tau_{\rm init}\)，而
+\(F_{\rm init}\le D_{\max}+5\eta\) 界定两个非负子参数。按方程~\eqref{eq:inverse-parameter-order} 进行选择，取 \(\epsilon_c=\epsilon/2\)，并额外施加
+\[
+ \eta,\tau_{\rm init}\le\bar c/100,\qquad
+ \eta\le\epsilon/88,\qquad \pi_{\rm init}\le\epsilon/8.
+\]
+在施加这两组界之后，可以取 \(\tau_{\rm init}=\tau\)。
+方程~\eqref{eq:inverse-initial-margins} 随后给出两个余量至少为 \(3\bar c/4>c_*\)，因此引理~\ref{lem:canonical-moment} 适用。
+方程~\eqref{eq:inverse-initial-energy} 至多为其 \(\epsilon_c=\epsilon/2\) 损失增加 \(\epsilon/4\)。
+
+在这些有界初始范围固定之后，选择实现目标 \(\pi_{\rm init}\) 的辅助输入指数，然后再选择初始尾项和傅里叶高度阶。

@@ -1,0 +1,26 @@
+新的完整展示移动支撑具有对数范数至多
+\(\widetilde q=q+R+E\)，包括在
+\(\mathfrak r\) 处任何被抵消的因子。其名义频率尺度恰好为
+\[
+ T_1(C,D,\mathfrak e,\mathfrak r)
+ =\frac{q_{\mathfrak e}q_{\mathfrak r}X^2}
+        {Hq_Cq_D}=Z^{K_0},
+ \qquad K_0=2A-c-d+R+E-m.
+\]
+乘积支撑约定给出
+\(q_a/(X/q_C),q_b/(X/q_D)\in\exp([-H_N,H_N])\)，因此
+方程~\eqref{eq:first-poisson-bridge} 中的自变量至少为
+\(q_h/(e^{2H_N}T_{\rm sec})\)，对应于 \(T_1\) 在外扇区中的上确界。将前述整二进局部化
+应用于这个真正的互素桥。若 \(K=\log_ZT_\lambda\) 是
+一个保留二进块的上长度，则
+\begin{equation}
+ \widetilde q=q+R+E,\qquad
+ K\le K_0+\delta_{{\rm fr},1},\qquad
+ 0\le\delta_{{\rm fr},1}:=\frac\xi2+
+       \frac{\log(C_dC_{\rm sec})}{\log Z}<\xi.
+ \label{old-eq:2.3}
+\end{equation}
+上面已经估计的零频率是
+原始公共光滑行球的零项；它在截断的
+行区域上不会被恢复。后续账本保留可能的不等式
+\(K_0-K\ge-\delta_{{\rm fr},1}\)。

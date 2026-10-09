@@ -1,0 +1,42 @@
+在无穷远处，条件 $x=\lambda^3\mu\equiv1\pmod3$ 恰好隔离出
+$\mu=\lambda^{-3}nb^3$，其中 $n,b$ 为主元且 $n$ 无平方因子。
+无穷远支撑具有 $\lambda^3\mu\in\mathcal O$；\cite{DR} 中
+Equation (5.7) 的每一个其他分歧指数
+都使 $x$ 被 $\lambda$ 整除，而剩余一对中的负号给出 $x\equiv-1\pmod3$。在孤立的指标处，$\bar\theta$ 中的系数为
+\begin{equation}\label{eq:reflection-infinity-coefficient}
+ d_I(\lambda^{-3}nb^3)=3^{5/2}|b|\widetilde g_3(n).
+\end{equation}
+这是未遮蔽的源公式，对每个主无平方因子 $n$
+和每个主元 $b$ 都成立，二者之间没有互素条件。只有当
+$(n,S)=1$ 时，它才可以用整体六次记号表示：在 $\gamma_2(n)$ 中代入
+$y=\lambda v$ 得到
+\begin{equation}\label{eq:reflection-cubic-sextic-conversion}
+ \widetilde g_3(n)=\left(\frac\lambda n\right)_3^{-1}\gamma_2(n)
+       =\chi_n(\lambda)^{-2}\gamma_2(n)\qquad((n,S)=1).
+\end{equation}
+\cite[Equation (1.5)]{DR} 中的三次补充律使
+$(\lambda/x)_3$ 在所有主元 $x$ 模 $9$ 上周期。在与 $S$ 互素的主元
+上它等于 $\chi_x(\lambda)^2$。$\mathcal X$ 中的一个特征在与 $\mathfrak E$ 互素的主元上模其导子周期，而
+零条件 $(x,\mathfrak E)\ne1$ 模 $\mathfrak E$ 周期。
+因此，一个具有素支撑 $S$ 的充分可除的 $L$ 对固定有限族的每个
+成员都适用。这在选取移动局部素数之前验证了它的选择。
+
+\emph{带零延拓的有限傅里叶反演。}
+对 $j\in\{0,\ldots,5\}$ 定义
+\[
+ C_{p,j}(h)=q_p^{-1}\sum_{x\bmod p}\chi_p(x)^j e(-hx/p).
+\]
+由 $e$ 提供的特征配对在
+$\mathcal O/(p)$ 上非退化。在高斯和中作变量替换，并利用
+非平凡乘法特征的正交性，得到
+\begin{equation}\label{eq:reflection-local-fourier}
+ C_{p,j}(h)=\begin{cases}
+ q_p^{-1/2}\tau_{p,j}^{-}\chi_p(h)^{-j},&j\ne0,\ h\ne0,\\
+ 0,&j\ne0,\ h=0,\\
+ -q_p^{-1},&j=0,\ h\ne0,\\
+ 1-q_p^{-1},&j=0,\ h=0.
+ \end{cases}
+\end{equation}
+此处及以下 $h=0$ 表示 $h\equiv0\pmod p$。$\chi_p$ 的每个非平凡幂
+模素数 $p$ 本原，因此通常的有限域
+高斯和恒等式给出 $|\tau_{p,m}^{\pm}|=1$。

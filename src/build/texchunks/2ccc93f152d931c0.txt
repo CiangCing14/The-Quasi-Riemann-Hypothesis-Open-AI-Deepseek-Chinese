@@ -1,0 +1,37 @@
+为了从 von Mangoldt 系数过渡到素数，将环形权重除以 \(\log(P_i y)\)。在固定的环带上，
+\[
+ (y\partial_y)^j\frac1{\log(P_i y)}
+ =\frac{(-1)^j j!}{\{\log(P_i y)\}^{j+1}},
+\]
+因此对于充分大的 \(P_i\)，这保持每一个固定的光滑半范数，而不会引入依赖于导数阶数的 \(P_i\) 的幂。有界的 \(P_i\) 由绝对计数处理。素数的幂在中心归一化后贡献 \(P_i^{o(1)}\)，因为它们在范数环带中的个数为 \(O(P_i^{1/2+o(1)})\)。多项式大小的穿刺及其零延拓已经包含在对数导数中。这证明了该界。
+\end{proof}
+
+下面是一个精确的振幅细分。选择一个固定的分箱宽度 \(\vartheta>0\)。首先在槽长度固定之后减小 \(e\) 和 \(\epsilon_1\)，使得对于所有充分大的 \(Z\)，前述界至多为 \(P_i^{\delta/2+\vartheta}\)。这是可能的，因为对于每个固定的网格，\(\log U/\log P_i=d/\ell_i\) 保持在一个固定的有界范围内。对于 \(Q_i\ne0\) 的主槽，令
+\[
+ g_i=\min\left\{\frac{\delta}{2},
+   \max\left(0,\vartheta
+     \left\lfloor\frac{\log|Q_i|}{\vartheta\log P_i}\right\rfloor
+   \right)\right\}.
+\]
+若 \(Q_i=0\)，令 \(g_i=0\)；对于来自 Equation~\eqref{old-eq:5.13e} 的误差槽，也令 \(g_i=0\)。那么，对于主槽，
+\[
+ |Q_i|\le P_i^{g_i+\vartheta},\qquad
+ g_i>0\ \Longrightarrow\ |Q_i|\ge P_i^{g_i}.
+\]
+对于 \(g_i=0\) 的槽，不断言下界。有限多个可能的向量 \((g_i)\)，连同可能的端点值 \(\delta/2\)，将各行划分为振幅箱。定义其长度加权平均为
+\begin{equation}
+ q=\frac{\sum_i\ell_i g_i}{\ell},\qquad
+ 0\le q\le\delta/2,\qquad \ell=\sum_i\ell_i.
+ \label{old-eq:6.6}
+\end{equation}
+这个 \(q\) 记录素数振幅；它不是辅助第四矩中记作 \(q\) 的导子指数。
+
+\subsection{选定的素数槽与行计数}\label{sec:selection}
+
+使用 Equation~\eqref{eq:part-II-bootstrap} 中的 \(\Delta\) 和 \(\kappa\)：
+\[
+ 0<\Delta\le\frac1{24},\qquad
+ \kappa=2\beta_*-1=\frac34+2\Delta\in(3/4,5/6],\qquad
+ \alpha:=\frac56.
+\]
+参数 \(\kappa\) 保持动态；\(\alpha\) 是来自六次幂放大的固定斜率。由于 \(\kappa<1\) 且 \(\beta_*=(1+\kappa)/2\)，Lemma~\ref{lem:plain} 的正槽假设以等号成立。Equation~\eqref{eq:part-II-bin-ceiling} 给出当前 Part~II 箱的 \(\delta\le\kappa\le\alpha\)，包括可能的端点 \(\delta=\alpha\)。

@@ -1,0 +1,20 @@
+对于 \(z=0\)，将每个长度超过 \(M/2\) 的原始因子反射一次，其余因子保持不变。方程~\eqref{eq:centered-reflection-length} 给出每个保留的反射因子的界；未反射因子的固定盒乘子包含在 \(C_{\rm ref}\) 中。经过前述环形截断与尺度盒放大后，所得长度满足
+\begin{equation}
+ n_i^*\le M/2+\xi,\qquad
+ A^*=n_1^*+n_2^*\le M+2\xi\le M+\delta,
+ \label{old-eq:2.1h}
+\end{equation}
+只要 \(2\xi\le\delta\)。我们称之为填充零槽核心。
+这里 \(\delta\) 是正填充参数，将在下文宽度下界与步长确定之后选取。
+在边界 \(M/2\) 处没有重复反射。反射与尺度上确界在中心化之前取；对于之后某个中心化项，若其本原诱导特征位于 \(\Theta\) 之外，则先对其两个矩形应用三角不等式。对于本原诱导特征属于 \(\Theta\) 的中心化差，不施加此类上确界。
+
+\subsection{素数估计与归纳次序}\label{sec:weighted}
+
+对于 \(\kappa<1\)，令 \(s_\kappa=(1+\kappa)/2\)。在假设 \(s_\kappa\ge\beta_*\) 下，引理~\ref{lem:logarithmic-control} 的整体部分给出，对每个固定的 \(e>0\)，
+\begin{equation}
+ \frac{L'}{L}(s_\kappa+e+it,\psi)
+ \ll_e \log\!\bigl(2Q_\psi(3+|t|)^2\bigr)
+ \label{old-eq:3.4}
+\end{equation}
+其中 \(\psi\) 是本原非主诱导特征。
+为估计尺度为 \(P\) 的素数环带，对光滑 von Mangoldt 和应用 Mellin 反演，并将其围道移至 \(\Re s=s_\kappa+e\)。平移区域内没有极点，且 Mellin 变换具有任意衰减，因此方程~\eqref{old-eq:3.4} 将新积分界为 \(P^{s_\kappa+e}\) 乘以导子的对数与高度的固定多项式。指数至少为二的素数幂贡献 \(O(P^{1/2+\epsilon_1})\)。对于大的 \(P\)，将环形权除以 \(\log(Py)\) 即可把 von Mangoldt 权替换为素数权；其光滑半范数在环带上是有界的。有界的 \(P\) 通过绝对计数估计。将每个正长度系数按陈述中的特征 \(\vartheta_{ij}\) 展开。若本原诱导行特征 \(\psi\notin\Theta\) 使得 \(\psi\vartheta_{ij}\) 为主特征，则 \(\psi=\vartheta_{ij}^{-1}\in\Theta\)，矛盾。因此每个所得槽特征在 \(\mathcal R_z\) 上都是非主的。

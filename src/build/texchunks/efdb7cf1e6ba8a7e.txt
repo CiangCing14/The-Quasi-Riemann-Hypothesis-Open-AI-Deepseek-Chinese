@@ -1,0 +1,112 @@
+在无穷远处，条件 $x=\lambda^3\mu\equiv1\pmod3$ 恰好分离出
+$\mu=\lambda^{-3}nb^3$，其中 $n,b$ 为主元且 $n$ 无平方因子。
+无穷远支撑具有 $\lambda^3\mu\in\mathcal O$；在~\cite{DR} 的式 (5.7) 中
+其余每个分歧指数都使 $x$ 被 $\lambda$ 整除，而剩余一对中的负号
+给出 $x\equiv-1\pmod3$。在孤立的指标处，$\bar\theta$ 中的系数为
+\begin{equation}\label{eq:reflection-infinity-coefficient}
+ d_I(\lambda^{-3}nb^3)=3^{5/2}|b|\widetilde g_3(n).
+\end{equation}
+这是未加掩码的源公式，对每个主无平方因子 $n$
+和每个主元 $b$ 都成立，二者之间没有互素条件。只有当
+$(n,S)=1$ 时，它才可以用整体六次记号表示：在 $\gamma_2(n)$ 中代入
+$y=\lambda v$ 得到
+\begin{equation}\label{eq:reflection-cubic-sextic-conversion}
+ \widetilde g_3(n)=\left(\frac\lambda n\right)_3^{-1}\gamma_2(n)
+       =\chi_n(\lambda)^{-2}\gamma_2(n)\qquad((n,S)=1).
+\end{equation}
+~\cite[Equation (1.5)]{DR} 中的三次补充律使
+$(\lambda/x)_3$ 在所有主元 $x$ 模 $9$ 上周期。在与 $S$ 互素的主元
+上它等于 $\chi_x(\lambda)^2$。$\mathcal X$ 中的一个特征在模其导子的
+与 $\mathfrak E$ 互素的主元上周期，而零条件 $(x,\mathfrak E)\ne1$
+模 $\mathfrak E$ 周期。
+因此，一个具有素支撑 $S$ 的充分可除的 $L$ 对固定有限族的每个
+成员都适用。这在选取移动局部素数之前验证了它的选择。
+
+\emph{带零延拓的有限傅里叶反演。}
+对 $j\in\{0,\ldots,5\}$ 定义
+\[
+ C_{p,j}(h)=q_p^{-1}\sum_{x\bmod p}\chi_p(x)^j e(-hx/p).
+\]
+由 $e$ 给出的特征配对在
+$\mathcal O/(p)$ 上非退化。在高斯和中作变量替换，并利用
+非平凡乘法特征的正交性，得到
+\begin{equation}\label{eq:reflection-local-fourier}
+ C_{p,j}(h)=\begin{cases}
+ q_p^{-1/2}\tau_{p,j}^{-}\chi_p(h)^{-j},&j\ne0,\ h\ne0,\\
+ 0,&j\ne0,\ h=0,\\
+ -q_p^{-1},&j=0,\ h\ne0,\\
+ 1-q_p^{-1},&j=0,\ h=0.
+ \end{cases}
+\end{equation}
+这里及以下 $h=0$ 表示 $h\equiv0\pmod p$。$\chi_p$ 的每个非平凡幂
+模素数 $p$ 本原，因此通常的有限域
+高斯和恒等式给出 $|\tau_{p,m}^{\pm}|=1$。
+
+在 $\mathcal O/(L)$ 上以及在每个 $\mathcal O/(p)$ 上的傅里叶反演
+现在给出
+\[
+ \phi(x)\prod_p\chi_p(x)^{j_p}
+  =\sum_h C(h)e\!\left(x\left(h_0/L+\sum_p h_p/p\right)\right),
+ \qquad C(h)=\widehat\phi(h_0)\prod_pC_{p,j_p}(h_p).
+\]
+这用到了每个加法频率，包括非单位 $h_0$ 和零局部
+频率。我们不引用
+\cite[Lemma~5.2 and Corollary~5.1]{DR} 中的扭曲公式，其单位傅里叶支撑假设
+对这些掩码未必成立。在其无穷远系数 $x=\lambda^3\mu\in\mathcal O$ 上带此乘子的 theta 函数是有限和
+\begin{equation}\label{eq:reflection-translated-theta}
+ \mathcal F(z,v)=\sum_hC(h)\bar\theta(z+z_h,v),\qquad
+ z_h=\lambda^2\left(h_0/L+\sum_p h_p/p\right).
+\end{equation}
+对于孤立的无穷远指标 $x=nb^3$，$\phi$ 的分段定义
+首先丢弃每个满足 $(nb,\mathfrak E)\ne1$ 的项。这是对整个完备化指标的掩码：
+$(nb^3,\mathfrak E)=1$ 当且仅当 $n$
+和 $b$ 都是 $\mathfrak E$-单位。只有在这个剩余区域上我们才使用
+完全乘性，包括 $\chi_b(\lambda)^6=1$，来写出
+\[
+ \phi(nb^3)\prod_p\chi_p(nb^3)^{j_p}
+ =\chi_n(\lambda)^2\Psi(n)\Psi(b)^3
+ \qquad((nb,\mathfrak E)=1).
+\]
+当 $n,b$ 共享一个移动素数时它仍然成立，因为相应的
+局部幂保持其零值，包括 $j_p=0$ 的情形。对于
+被丢弃的项，完备化系数直接定义为零；
+在那里不计算 $\chi_n(\lambda)$ 的任何值。在保留区域上结合
+式~\eqref{eq:reflection-infinity-coefficient} 和
+\eqref{eq:reflection-cubic-sextic-conversion} 现在
+将直接梅林级数与乘积 $T$ 等同起来。对偶系数
+函数 $d_H$ 在式~\eqref{old-eq:4.3} 中保持完整的源支撑；
+不在它们上面放置 $S$-掩码。
+
+固定 $h_0$，并恰在 $h_p\ne0$ 时称 $p$ 为活跃的。
+式~\eqref{eq:reflection-local-fourier} 迫使所有满足
+$j_p\ne0$ 的素数都活跃。对每个 $h_0\bmod L$ 选取一次代表元
+和一个约化表达式
+$\lambda^2h_0/L=a_F/c_F$。将分子和分母乘以
+一个单位，若 $\lambda\mid c_F$ 则将分子规范化为 $1\pmod3$，
+否则将分母规范化为 $1\pmod3$。由于每个活跃
+素数都是主元，这个单位只依赖于 $h_0$。
+对于 $r=\prod_{p\ {\rm active}}p$，式~\eqref{eq:reflection-translated-theta}
+于是给出
+\begin{equation}\label{eq:reflection-cusp-fraction}
+ z_h=\frac ac,\qquad c=c_Fr,\qquad
+ a=a_Fr+\lambda^2c_F\sum_{p\mid r}(r/p)h_p.
+\end{equation}
+在整除 $c_F$ 的素数处，分子同余于 $a_Fr$ 且
+是一个单位。在 $p\mid r$ 处，它同余于
+$\lambda^2c_F(r/p)h_p$ 且同样是一个单位。因此这个分数是
+约化的，即使 $h_0$ 是模 $L$ 的非单位。空乘积
+$r=1$ 是允许的。将任何提升替换为另一个会使 $z_h$ 改变
+$\lambda^2\mathcal O=3\mathcal O$ 中的一个元素，即 $\theta$ 的一个周期。
+
+\emph{尖点矩阵及其乘子的选择。}
+下一个构造对刚得到的每个约化尖点分数确定自守
+乘子和反射加法相位。
+令 $M=\lambda^{12}L^4$。对每个活跃的 $p$，中国剩余
+定理允许将所选的非零类 $h_p\bmod p$ 提升为
+$h_p\equiv0\pmod{M^2}$。将 $r$ 限制到模 $M^2$ 的一个类。
+式~\eqref{eq:reflection-cusp-fraction} 表明 $a$ 于是
+模 $Mc_F$ 固定；事实上其移动项可被
+$M^2c_F$ 整除，而 $a_Fr$ 模 $M^2$ 固定，后者可被
+$Mc_F$ 整除，因为 $c_F$ 整除 $L$ 相差一个单位。
+它还表明若 $\lambda\mid c$ 则 $a\equiv1\pmod3$，否则
+$c\equiv1\pmod3$。

@@ -1,0 +1,57 @@
+写 \(\widehat h=\log_Zq_h\)。完备化在实际尺度
+\(N_*=N-3\widehat h\) 处进行。其固定支撑给出
+\(\widehat h\le\ell_1+\eta<d+\eta\)，只要施加下面指定的固定环形阈值。在引理~\ref{lem:reflected-energy} 中，保持
+实际的剩余行二进块并选取相同的阈值，使得
+\begin{equation}\label{eq:inverse-terminal-width}
+ H\le M-O+\eta,\qquad
+ T_d-S_0-B_0\le2M-O+Q+V-N_*+2z_a+\eta.
+\end{equation}
+这些是方程~\eqref{eq:actual-residual-row-dyad} 和
+\eqref{eq:common-width-charge}，而不是对扩大行范围的估计。代入 \(N_*=N-3\widehat h\) 以及
+方程~\eqref{eq:inverse-fixed-invariant} 中的第一个不等式，得到
+\begin{equation}\label{old-eq:4.9}
+ T_d-S_0-B_0
+ \le M-O+2z_a-z_0-c_{\rm node}+5d+4\eta.
+\end{equation}
+确实，额外的项为 \(2V+3\widehat h+\eta<5d+4\eta\)。
+
+再取阈值以确保 \(e_\lambda\ge-\eta\)，并如引理~\ref{lem:reflected-energy} 中那样丢弃整个反射尾二进块。
+于是每个保留的二进块满足
+\(v+3\ell_b+e_\lambda\le T_d+\tau_{\rm ref}\)。方程~\eqref{old-eq:4.6} 的行分支在去掉其非正项后满足
+\[
+ E_{\rm ref}\le M+z_a+\tfrac53\eta
+       \le F-c_{\rm node}+\tfrac53\eta.
+\]
+对于 \(u=z_a\) 的列分支，保留的对偶界首先给出
+\(E_{\rm ref}\le O/2+(T_d-S_0-B_0)+5\eta/3+\tau_{\rm ref}\)。
+方程~\eqref{old-eq:4.9} 和第一个不变量随后给出
+\begin{equation}\label{old-eq:4.10}
+ E_{\rm ref}\le F-2c_{\rm node}+5d+\tfrac{17}{3}\eta+\tau_{\rm ref}.
+\end{equation}
+若 \(u\ne z_a\)，其定义蕴含 \(u\ge v/2\)。保留的
+对偶界现在首先给出
+\[
+ E_{\rm ref}\le O/2+(T_d-S_0-B_0)/2+z_a
+                    +\tfrac76\eta+\tfrac12\tau_{\rm ref}.
+\]
+利用方程~\eqref{old-eq:4.9}、\(z_a\le z_0\)，然后利用第二个
+不变量，得到
+\begin{equation}\label{old-eq:4.11}
+ E_{\rm ref}\le F-M/4-3c_{\rm node}/4+(5/2)d
+                    +\tfrac{19}{6}\eta+\tfrac12\tau_{\rm ref}.
+\end{equation}
+使用带聚合局部损失
+\(\pi_{\rm ref}\) 的反射估计，包括其自由选取的指数、标签除子
+界以及有限多个对数和。若
+\[
+ c_{\rm node}\ge c_*/2,\qquad
+ d\le c_*/200,\qquad \eta,\tau_{\rm ref},\pi_{\rm ref}\le c_*/1000,
+\]
+则所有三个界在加上 \(\pi_{\rm ref}\) 后都严格低于
+\(F\)。在最后一个界中 \(M\ge0\)。对于 \(z_0=0\)，只出现 \(u=z_a=0\)。
+反射估计是对每个固定的 \(f\) 应用的；加权
+质量界 \(\sum_f w(f)\ll Z^{V+\pi_{\rm ref}}\) 表明对其
+平方界关于 \(f\) 求和至多花费这个量，这已包含
+在聚合损失中，并抵消了外面的 \(Z^{-V}\)。
+因此没有移动的四次方标签进入混合范数，而这些
+终端项满足典范估计。

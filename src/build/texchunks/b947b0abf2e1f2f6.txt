@@ -1,0 +1,61 @@
+为完备起见，使用条带原理所需的增长假设可直接由格 theta 积分得到。设
+$\mathfrak f=(f)$ 为导子，并定义周期剩余特征
+$\phi(a)=\psi((a))$，当 $(a,\mathfrak f)=1$ 时，否则取值为零。
+对于主导子 $(1)$，令 $\phi(a)=1$ 对所有 $a$ 成立，包括
+$a=0$。由于理想类群是平凡的，导子为一没有非主特征。模 $\mathfrak f$ 的周期性
+由射线特征性质推出；$\phi$ 在六个单位上平凡，因为对单位有 $(u)=(1)$。
+因此，对于 $\Re s>1$，
+\[
+ 6\pi^{-s}\Gamma(s)L(s,\psi)
+ =\int_0^\infty\bigl(\Theta_\phi(v)-\phi(0)\bigr)v^{s-1}\,dv,
+ \qquad
+ \Theta_\phi(v)=\sum_{a\in\mathcal O}\phi(a)e^{-\pi vq_a}.
+\]
+因子六计数每个理想的生成元。若
+$\widehat\phi(h)=Q^{-1}\sum_{a\bmod f}\phi(a)e(-ha/f)$，
+有限傅里叶反演和高斯泊松求和给出
+\[
+ \Theta_\phi(v)=\frac{2}{\sqrt3v}
+ \sum_{h\bmod f}\widehat\phi(h)
+ \sum_{b\in\mathcal O}
+    \exp\left(-\frac{4\pi|b-h/f|^2}{3v}\right).
+\]
+改变生成元 $f$ 只会重新索引有限和。对于每个固定
+导子，非零对偶向量具有正的最小长度。令
+$A_\phi=2\widehat\phi(0)/\sqrt3$，这证明了
+\[
+ \Theta_\phi(v)=A_\phi v^{-1}+O_\phi(v^{-1}e^{-c_\phi/v})\quad(0<v\le1),
+ \qquad
+ \Theta_\phi(v)=\phi(0)+O_\phi(e^{-c_\phi v})\quad(v\ge1)
+\]
+对某个 $c_\phi>0$ 成立。将 Mellin 积分在一点处拆分，因此得到
+\[
+ \begin{split}
+ 6\pi^{-s}\Gamma(s)L(s,\psi)
+ ={}&\frac{A_\phi}{s-1}-\frac{\phi(0)}s
+ +\int_0^1\bigl(\Theta_\phi(v)-A_\phi/v\bigr)v^{s-1}\,dv\\
+ &+\int_1^\infty\bigl(\Theta_\phi(v)-\phi(0)\bigr)v^{s-1}\,dv.
+ \end{split}
+\]
+两个积分都是整函数，且在每个有界实条带上按高度有界，
+其常数可能依赖于固定导子。因此，$1/\Gamma(s)$ 的斯特林公式
+给出 $L(s,\psi)$ 在该条带上至多指数高度增长。在主情形下，乘以
+$(s-1)/(s+1)$ 后同样的结论成立。条带原理中只用到
+对每个固定导子的这种定性增长。
+
+为了明确看出固定导子的增长常数不进入
+一致条带界，令
+\[
+ H_Q(s)=Q^{-3/5}\frac{L(s,\psi)}{(s+2)^2}.
+\]
+它在闭条带内全纯，并且由已证明的界，在两条垂直边界线上
+被一个绝对常数 $C$ 界住。
+对于 $\delta>0$，对 $H_Q(s)\exp(\delta(s-1/2)^2)$ 在高度为 $T$ 的矩形上
+应用最大值原理。在垂直边上，指数因子的模至多为 $e^{9\delta/25}$，因为
+$|\Re s-1/2|\le3/5$。在水平边上，其模至多为
+$e^{\delta(9/25-T^2)}$，当 $T\to\infty$ 时它趋于零的速度快于
+定性的固定 $Q$ 指数增长。先令 $T\to\infty$ 对
+此固定的 $Q,\delta$ 成立，然后令 $\delta\downarrow0$。结果是
+$|H_Q(s)|\le C$ 在整个条带上成立，且对每个 $Q$ 常数相同。
+乘以 $Q^{3/5}|s+2|^2$ 证明了
+Equation~\eqref{eq:hecke-growth}。

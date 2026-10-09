@@ -1,0 +1,11 @@
+\[
+ \min\left\{1,\frac23+\left(\frac23-\delta\right)r\right\}.
+\]
+关于 $r$ 的仿射表达式在两个端点处取值 $1-\delta/2$ 和
+$4/3-\delta$。由此可得，且等号在其中一个端点处取得，
+\begin{equation}\label{eq:sextic-envelope-optimization}
+ \max_{\substack{0\le o\le1\\1/2\le r\le1}}
+ \min\{1-o/2,e_o(r)-\delta r\}
+ =\min\left\{1,\max\left(1-\frac\delta2,\frac43-\delta\right)\right\}.
+\end{equation}
+该计算对 $0\le\delta\le1$ 一致成立。

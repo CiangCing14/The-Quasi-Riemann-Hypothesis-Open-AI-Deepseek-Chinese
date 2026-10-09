@@ -1,0 +1,71 @@
+方程~\eqref{eq:balanced-endpoint-certificate} 右端的每一项都非负：
+\(y,\delta\ge0\) 且 \(9-13y\ge5/2\)。
+第一行至少为 \(49(3+5y)\)，而
+\(v=51+41y\le17(3+5y)\)。因此
+\[
+ -E_*\ge\frac{49}{176256\mathcal J}
+       \ge\frac{49}{440640}>\frac1{10000},
+\]
+其中用到 \(\mathcal J\le5/2\)。
+\end{proof}
+
+\(D_x\) 和 \(\mathcal J\) 的下界在紧参数范围内界定了交叉与截断的所有导数。
+饱和损失是一致的，因为 \(\delta\ge1/50\)，
+而逆选择具有命题~\ref{prop:detector-counts} 中证明的显式供给与宽度裕量。在零容量处，
+其未加权界与 \(1-\delta\) 之差至多为所选容量减量乘以一个常数。由于
+\(R_*\ge1-\delta\)，这些情形服从相同的比较。
+因此，一旦各个请求的损失至多为 \(\epsilon\)，所有检测器、分箱与舍入误差的总和
+为 \(O(\epsilon)\)，且常数与目标无关。
+设 \(E_{\rm actual}(h)\) 表示在代入观测行界
+\(R\le R_*+\Delta/4+\epsilon_{\rm row}\) 之后相对于
+\(C(7/8)\) 的尺度指数。
+目前显式高度因子仍在该指数之外。
+方程~\eqref{eq:common-high-exponent} 中 \(R\) 的系数为 \(d\)，因此在 \(d=h\) 时容量替换贡献
+\(h\Delta/4\)。用 \(\epsilon_{\rm total}\) 表示
+\(h\epsilon_{\rm row}\) 与所有其他可调实损失之和；
+前述一致性使其以与目标无关的系数任意小。该证书给出了实际所需的比较：
+\begin{equation}
+ \begin{split}
+ E_{\rm actual}(h)-\Delta
+ &\le-\frac{49}{440640}-\left(1-\frac h4\right)\Delta
+       +\epsilon_{\rm total}\\
+ &=-\frac{49}{440640}-\frac{51}{64}\Delta
+       +\epsilon_{\rm total}.
+ \end{split}
+ \label{eq:adaptive-endpoint}
+\end{equation}
+减去 \(\Delta=C(\beta_*)-C(7/8)\) 是必要的：
+该证书并非断言对每个 \(\Delta\) 都有 \(E_{\rm actual}(h)<0\)。当高度因子在下面被转换为预留的指数裕量时，该裕量被加到
+\(\epsilon_{\rm total}\) 上。
+
+\subsection{频率范围}
+
+对于 \(1/2\le d\le h\)，可用长度为
+\[
+ \frac{\ell}{d}\ge\frac8{39}>\frac15>\frac7{37}.
+\]
+从基 \(Z\) 过渡到基 \(U\) 会将槽长度从
+\(\ell_i\) 变为 \(\ell_i/d\le2\ell_i\)，因此以该因子二选定的一个网格在整个
+区间上满足矩要求。若
+\[
+ 0<\zeta<5\ell-h=\frac1{48},
+\]
+则对于 \(h<d\le h+\zeta\)，供给仍大于
+\(1/5\)，其高于 \(7/37\) 的裕量为 \(2/185\)。
+
+对于 \(1/50<\delta<\alpha\)，使用理想行上指数
+\(R=R_*+\Delta/4\)。对于 \(\delta=\alpha\)，使用
+\(R=1-\delta\)。两者都至少为 \(1-\delta\)，因此
+\[
+ R+\delta/2-\frac{17}{50}
+ \ge\frac{33}{50}-\frac{\delta}{2}\ge\frac4{25}>0.
+\]
+下界也具有正斜率。因此 \(d=h\) 对 \(d\le h\) 界定了所有这些指数。扩展到
+\(h+\zeta\) 的代价至多为 \(2\zeta\)：事实上
+\[
+ R_*\le1-\delta+\frac{\alpha-\delta}{2}\le\frac{17}{12},
+ \qquad
+ R_*+\Delta/4\le\frac{139}{96},
+\]
+且 \(139/96+1/2-17/50<2\)。在 \(\delta=\alpha\)
+和下界情形处的斜率都小于二。

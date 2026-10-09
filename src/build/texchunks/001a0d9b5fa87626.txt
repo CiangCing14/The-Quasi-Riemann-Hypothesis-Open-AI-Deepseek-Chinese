@@ -1,0 +1,77 @@
+The dependence on the original row length can be bounded without
+identifying \(H\) with \(M-O\).  At one active non-slot prime the
+contribution to
+\(2A_0-N_0-S_0-4B_0\) is as follows:
+\[
+ \begin{array}{c|c}
+ \text{local choice}&\text{coefficient of its log-norm}\\ \hline
+ j\text{ odd, or }j=2&2\\
+ j=0\text{ active}&1\\
+ j=4\text{ small or assigned to }n&1\\
+ j=4\text{ assigned to }b&-2\\
+ j=0\text{ inactive}&0.
+ \end{array}
+\]
+A residual row prime contributes two through \(2H\).  Prime by prime,
+these coefficients are bounded by the valuations in
+\[
+ (q_k^2/q_{k_{\rm pow}})\,q_fq_{\mathfrak r_\rho}.
+\]
+Indeed, a powerful prime of row valuation \(e\ge2\) has valuation
+\(e\) in the first factor, a squarefree row prime has valuation two,
+and a prime belonging only to the squarefree \(f\) or to
+\(\mathfrak r_\rho\) has valuation one.  Intersections only increase
+the valuation of this upper bound.  Fixed excluded primes contribute
+only a fixed factor \(C_S\ge1\).  Equivalently, summing over primes gives
+the actual norm inequality
+\[
+ q_{k_{\rm res}}^2 Z^{2A_0-N_0-S_0-4B_0}
+ \le C_S\frac{q_k^2}{q_{k_{\rm pow}}}\,q_fq_{\mathfrak r_\rho}.
+\]
+Choose a fixed \(C_f\ge1\) with \(q_f\le C_fZ^V\), and put
+\(C_{\rm width}=C_H^2C_SC_k^2C_OC_f\).  The preceding inequality and
+the definition of \(T_d\) imply
+\begin{equation}\label{eq:common-width-charge}
+ T_d-S_0-B_0
+ \le 2M-O+Q+V-N_*+2z_a+
+       \frac{\log C_{\rm width}}{\log Z}.
+\end{equation}
+
+For empty slot lists, \(z_a=u=0\).  Choose \(\eta>0\) and then take \(Z\)
+so large that the two displayed constant errors are at most \(\eta\) and
+\(e_\lambda\ge-\eta\); the latter follows from
+\(\log Z\ge4\log q_\lambda/\eta\).  On a retained dyad,
+Equation~\eqref{old-eq:4.6} and
+\(v+3\ell_b+e_\lambda\le T_d+\tau_{\rm ref}\) give
+\[
+ E_{\rm ref}
+ \le O/2+\max\{H,T_d-S_0-B_0\}+\tfrac53\eta+\tau_{\rm ref}.
+\]
+For the first branch, drop the nonpositive terms after using the lower
+bound for \(e_\lambda\); for the second, use
+\(v\le T_d-3\ell_b-e_\lambda+\tau_{\rm ref}\).
+The maximum is increasing in each argument.  We may therefore use
+Equation~\eqref{eq:actual-residual-row-dyad} for its first argument and
+Equation~\eqref{eq:common-width-charge} for its second, then sum the
+logarithmically many actual \(H\)-dyads.  Taking \(\eta,\tau_{\rm ref}\)
+and the local small-power losses sufficiently small in terms of
+\(\epsilon\) proves
+\begin{equation}\label{eq:completed-moment}
+ \sum_{0<q_k\ll Z^M}'|\mathcal T_1(Z^{N_*};k)|^2
+ \ll Z^{O/2+\max\{M-O,\,2M-O+Q+V-N_*\}+\epsilon}.
+\end{equation}
+The prime on the sum restricts the powerful part to its \(O\)-dyad.
+A bounded dual range is included in the first term; an empty range is
+negligible.  No equality \(H=M-O\) has been used.
+
+\section{The compensated low estimate}\label{sec:compensated-low}
+
+We now bound the finite compensated probe defined in
+Equation~\eqref{eq:compensated-probe-definition}.  Its exact low separation
+has two factors.  We first bound the completed row after summing the marked
+slots by applying Lemma~\ref{lem:reflected-energy} directly.  We then prove
+a quantitative Gram bound for the additive polynomial from
+Section~\ref{sec:probe}.  Cauchy--Schwarz will combine these estimates to
+give the exponent $3/16$.
+
+\subsection{The marked completed row}

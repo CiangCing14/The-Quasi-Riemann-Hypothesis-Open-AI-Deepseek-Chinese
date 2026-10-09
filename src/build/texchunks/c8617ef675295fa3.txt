@@ -1,0 +1,71 @@
+\subsection{其余围道线上的绝对界}
+
+共享解析估计所用的每一条围道线上都无法使用动态分解。下面的界改为在取绝对值之前保留每个选定的因子 $G_p$。
+
+\begin{lemma}[绝对局部元组界]
+\label{lem:compensated-absolute-local-bounds}
+设 $Z\ge2$，并设 $u$ 是一个非零的六次方自由行，满足 $(u,S)=1$ 且
+$q_u\asymp U\ge1$，其中比较常数固定。保留第~\ref{sec:compensation} 节中固定的
+物理槽系统。以下界对所有虚部和单位相位一致成立。
+\begin{enumerate}
+\item 在
+\[
+ x_r=\beta_*+e,\qquad w_r=1/2,\qquad z_r=17/50,
+ \qquad 0<e\le10^{-3},
+\]
+上，在选定的素数 $p\nmid u$ 处有 $G_p=O(1)$，而在选定的素数 $p\mid u$ 处有
+$G_p\ll Q^{1/2}$。
+\item 对每个固定的 $z_\infty>2$，在
+\[
+ x_r=w_r=2,\qquad z_r=z_\infty,
+\]
+上，在每个选定的素数处有 $G_p=O_{z_\infty}(1)$。
+\end{enumerate}
+在任一情形下，对全部选定元组的正和满足
+\begin{equation}\label{eq:absolute-local-tuple-bound}
+ \sum_{(p_i)\in\prod_i\mathcal P_i(Z)}
+       \prod_i\bigl[|W_i(q_{p_i}/P_i)|q_{p_i}^{z_r-1}|G_{p_i}|\bigr]
+       \prod_{\substack{p\notin S\\p\notin\{p_1,\ldots,p_K\}}}|H_p|
+ \ll_\epsilon U^\epsilon\prod_iP_i^{z_r}.
+\end{equation}
+常数可以依赖于固定数据、$e$，以及在第二种情形下依赖于
+$z_\infty$，但不依赖于 $Z,u$ 或虚部。这些估计在 $P_p$ 或 $H_p$ 的零点处仍然
+有效。
+\end{lemma}
+
+\begin{proof}
+这两组线都位于第一个欧拉区域中，且 $\epsilon_0=3/8$。
+其逐素数缺陷估计给出 $H_p=O(1)$，而
+方程~\eqref{eq:unselected-local-product} 将所有未选定因子的正乘积
+界为 $O_\epsilon(U^\epsilon)$。
+
+先考虑 $x_r=\beta_*+e$、$w_r=1/2$ 和 $z_r=17/50$。
+对于选定的 $p\nmid u$，方程~\eqref{old-eq:5.13b} 给出
+\[
+ |G_p+\overline{\chi_p(u)}H_p|
+ \ll Q^{-x_r}+Q^{-6z_r}
+       +Q^{4-5x_r-6z_r}+Q^{1-w_r-6z_r}.
+\]
+这四个指数分别至多为
+$-7/8-e,-51/25,-483/200-5e,-77/50$。
+因此，在 $u$ 之外有 $G_p=O(1)$，无需除以 $H_p$。
+
+对于选定的 $p\mid u$，有 $W=D=0$ 且
+$\mathcal E_p=P_p^*$。方程~\eqref{old-eq:5.13c} 变为
+\[
+ G_p=\overline{\eta(p)}Q^x(1-V)\mathcal E_p-Q^{-w}H_p.
+\]
+乘以 $Q^{x_r}$ 后，局部表的严格项的指数至多为 $1-w_r=1/2$；对于 $j=1$，它还含有因子
+$V$。边界项 $J_j$ 的指数，按 $j=1,\ldots,5$ 的顺序，为
+\[
+ -\frac12,\quad \frac32-2x_r,\quad
+ \left(\frac32-2x_r,\,2-3x_r\right),\quad
+ 2-3x_r,\quad 3-5x_r.
+\]
+它们分别被
+$-1/2,-1/4-2e,(-1/4-2e,-5/8-3e),-5/8-3e,-11/8-5e$
+从上方界住。公共的 $R$ 项的指数为
+$4-5x_r-6z_r\le-483/200-5e$。几何族中所有进一步的项都会降低这些幂次，因为
+$|R|\le Q^{-329/100-6e}$ 且 $|V|=Q^{-51/25}$。
+最后 $Q^{-w}H_p=O(Q^{-1/2})$。因此，在 $u$ 上有 $G_p\ll Q^{1/2}$，
+在 $H_p$ 的零点处同样如此。

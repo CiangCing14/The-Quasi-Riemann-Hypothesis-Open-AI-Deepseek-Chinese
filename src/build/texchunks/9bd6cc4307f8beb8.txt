@@ -1,0 +1,78 @@
+在 $d=h=1/2$ 处，行包络的三段分别给出
+\[
+ E_{\mathrm I}(h)=
+ \begin{cases}
+  -1/4+\delta/2,&0\le\delta\le1/3,\\
+  -1/12,&1/3\le\delta\le2/3,\\
+  -(1-\delta)/4,&2/3\le\delta\le1.
+ \end{cases}
+\]
+前两段至多为 $-1/12$。在第三段中，来自第~\ref{sec:detector} 节的精确分箱上界为
+\[
+ \delta\le2\beta_*-1=\frac56+2\Delta_1.
+\]
+由此在每一段中都有
+\[
+ E_{\mathrm I}(h)-\Delta_1
+ \le-\frac1{24}-\frac{\Delta_1}{2}.
+\]
+这就是此处所需的与 $C_{\mathrm I}(\beta_*)$ 的比较；
+$E_{\mathrm I}(h)$ 本身不必为负。
+频率斜率为以下三种形式
+\[
+ R(\delta)+\frac\delta2-\frac{17}{50}
+ =\begin{cases}
+  33/50+\delta/2,&0\le\delta\le1/3,\\
+  149/150-\delta/2,&1/3\le\delta\le2/3,\\
+  33/50,&2/3\le\delta\le1.
+ \end{cases}
+\]
+因此它位于 $[33/50,62/75]$ 中。正性控制所有 $d\le h$，
+而向 $d\le h+\zeta$ 的延拓至多花费 $(62/75)\zeta$。
+于是，在可调损失之前，每个中心二进块至少有节省
+\[
+ m_c=\frac1{24}-\frac{62}{75}\zeta=\frac{1021}{25000}
+\]
+相对于 $C_{\mathrm I}(\beta_*)$。
+
+\subsection{修正项分片时的中心估计}
+
+前面的计算将一个聚合的绝对行界乘以外部梅林幂。我们记录当整个修正项由若干片估计、且可用界在行集之间变化时的形式。围道对于固定分箱已经得到验证；这些集合将仅用于估计其保留的被积函数。
+
+\begin{lemma}[保留积分及其指数]
+\label{lem:bin-contour-accounting}
+假设定义~\ref{def:stage-high-data} 的数据成立。固定
+$\sigma_0\in[7/8,1)$ 且 $\beta_*>\sigma_0$，并令 $z_0=17/50$。
+设 $0<d_{\min}<d_{\max}<\infty$，$U=Z^d$ 且
+$d_{\min}\le d\le d_{\max}$，并设 $\mathcal B$ 为引理~\ref{lem:buffered-bins} 的一个保留分箱 $(i,a)$ 中满足 $q_u\asymp U$ 的物理行 $u$ 的有限集。$q_u\asymp U$ 中的比较常数固定。令 $\delta=2a-1$，取该引理中的 $0<e<10^{-3}$，并令 $T_1=Z^\tau>2$ 且 $0<\tau\le d_{\min}/100$。
+实范围与 $e$ 的选取独立于目标。
+
+分箱 $\mathcal B$ 在任何梅林变量移动之前就已固定。在方程~\eqref{eq:stage-central-contours} 的保留中心围道上，假设存在分解
+\[
+ \mathfrak H_{\eta,u,Z}(s,w,z)
+       =\sum_{\lambda\in\Lambda}
+             \mathfrak H^{(\lambda)}_{\eta,u,Z}(s,w,z),
+\]
+其中 $\Lambda$ 有限、非空且在 $Z$ 之前固定。此等式仅在保留围道上要求成立；各求和项不必在围道之外全纯。对每个 $\lambda$ 及每个保留的 $(s,w,z)$，假设 $\mathcal B$ 被划分为至多 $C(1+\log Z)^D$ 个集合
+$\mathcal B_{\lambda,\nu}(s,w,z)$，其中 $C,D$ 固定。对每个集合在每个保留点，设 $R,g$ 为固定有界范围内的实数。假设对固定的
+$\varepsilon_c\ge0$ 和有限的 $A_\eta\ge0$，
+\begin{equation}
+ \sum_{u\in\mathcal B_{\lambda,\nu}(s,w,z)}
+  \left|L^S(w,\chi_\bullet(u))
+       \mathfrak H^{(\lambda)}_{\eta,u,Z}(s,w,z)\right|
+ \ll_\eta U^{R+\delta/2+\varepsilon_c}
+ Z^{\ell(z_0-1/2)+g+\varepsilon_c}(1+T_1)^{A_\eta}.
+ \label{eq:stage-central-bound}
+\end{equation}
+该界在保留点、行集和移动标号上一致。数 $\varepsilon_c$ 以及 $R,g$ 的有界范围在目标之前固定；$R,g$ 可以依赖于 $d,a$、逐点集合以及全局数 $\beta_*$，但不以其他方式依赖于 $\eta$。设 $\mathcal P_Z$ 为此分解中在任何保留点出现的所有对 $(R,g)$ 的集合。
+
+这里“保留”具有以下精确的高度含义。将所有进入方程~\eqref{eq:stage-central-bound} 验证中某个缓冲 $L$ 值、倒数或对数导数的外部坐标 $v_1,\ldots,v_m$ 列出一次，并包含全部三个原始梅林高度，当它们不出现在某个自变量中时取零系数。经过纯扭转移后，每个这样的自变量的虚部为
+$\gamma_j+\sum_{k=1}^m a_{jk}v_k$，其中有限矩阵 $(a_{jk})$ 固定且 $|\gamma_j|\le(3i+1)T_1$。限制
+\begin{equation}
+ |v_k|\le c_kT_1,\qquad
+ c_k=\frac1{2m(1+\max_j|a_{jk}|)}.
+ \label{eq:stage-height-allocation}
+\end{equation}
+系数为零的坐标可按同一规则限制。
+于是每个附加高度总计至多为 $T_1/2$。固定有界的扩大通过提高 $Z$ 的下阈值来纳入。
+若使用额外的梅林积分来建立方程~\eqref{eq:stage-central-bound}，则该不等式在这些积分之后对其整个左侧成立。任何被丢弃的部分必须留在其全局线或绝对线上，由引理~\ref{lem:external-contour-tails} 或引理~\ref{lem:smooth-calculus} 界定，并在假设断言之前纳入所示界中。允许量 $T_1/2$ 在相继的估计中不再重新给予。

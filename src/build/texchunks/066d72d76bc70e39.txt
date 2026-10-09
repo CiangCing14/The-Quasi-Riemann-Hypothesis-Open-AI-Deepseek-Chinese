@@ -1,0 +1,55 @@
+现在假设 $|\beta|\le1$。理想计数给出
+\[
+ \#\mathcal D_r(t)\ll
+       \frac C{q_r}\frac NC\frac GC.
+\]
+对于 $q_r\asymp r_0$，它与前面因子 $C/q_r$ 的乘积为
+$O(NG/r_0^2)$。在此范围内有 $O(r_0)$ 个可能的 $r$，以及 $O(T)$
+个可能的 $t$。由于 $B\asymp GT^2$，它们对
+式~\eqref{eq:completed-quadratic-reduction} 的贡献至多为
+\[
+ (KNB)^\epsilon\frac{NB}{r_0}
+       \left(\frac K{r_0}+\frac{NG}{C^2}\right)
+ \ll (KNB)^\epsilon NB(K+NB).
+\]
+这里 $r_0,C,T$ 在一个非空范围上有下界，且 $G\ll B$。
+$C,G,T,r_0$ 的二进选择数目关于范数范围是对数级的。对 $C,G,T$ 块作希尔伯特空间三角不等式，随后重新缩放 $\epsilon$，即证明式~\eqref{eq:completed-quadratic-norm}。
+\end{proof}
+
+\subsection{未标记的反射能量}
+
+对于固定的有限射线特征 $\nu$，它在与 $S$ 互素的原始元素之外延拓为零，且对于 $m\ne0$，定义中心完备化和
+\begin{equation}\label{eq:unmarked-central-completion}
+ \mathcal C_V(X;m,\nu)=
+ \sum_{\substack{c\ {\rm sf},\ n\\c,n\equiv1\ (3)\\(cn,S)=1}}
+ \frac{\gamma_2(c)\overline{\alpha(cn^3)}\nu(cn^3)\chi_{cn^3}(m)}
+      {\sqrt{q_c}\,q_n}
+ V\!\left(\frac{q_cq_n^3}{X}\right).
+\end{equation}
+这里 $c,n$ 可以共享素因子。当 $V$ 满足命题~\ref{prop:completed-reflection} 的假设时，对每个 $X>0$，定义级数绝对收敛。完全积性，保留零点，给出
+$\chi_{cn^3}(m)=\chi_c(m)\chi_n(m)^3$。因此对每个 $a>1$，
+\begin{equation}\label{eq:unmarked-central-mellin}
+ \mathcal C_V(X;m,\nu)=\frac1{2\pi i}\int_{(a)}
+ \widehat V(s-1/2)X^{s-1/2}T(s,\nu\chi_\bullet(m))\,ds.
+\end{equation}
+确实，绝对收敛允许在该直线上逐项作梅林反演。
+
+
+我们对这个完备化和在非零元素行上的均方进行估计。
+在完备化范数与行范数尺度相等时，目标是
+\[
+ \sum_{0<q_m\le C_mZ}|\mathcal C_V(Z;m,\nu)|^2
+ \ll Z^{1+\epsilon}\mathfrak M_{A,J}(V)^2
+\]
+对每个固定的 $C_m\ge1$ 和 $\epsilon>0$ 成立，其中 $A,J$ 为适当的有限阶。下面的引理~\ref{lem:unmarked-completed-moment} 给出了更一般的估计，它追踪行的重复素因子。
+
+二次筛法的理由对于无平方因子行已经可见。
+取 $m=R$ 为原始、无平方因子且良好的，且 $q_R\asymp Z$，并令 $X=Z$。
+固定一个行扇区、一个尖点扇区、一个对偶单位 $u$，以及对偶支撑中的一个整数 $k\ge-4$。此情形下没有冻结的良好局部素数。
+$R$ 的每个素数以指数一进入反射，因此对于
+$\mu=u\lambda^k n b^3$，其列因子给出
+\[
+ \chi_R(\lambda^4\mu)^3
+ =\chi_R(u\lambda^{k+4})^3\chi_R(nb)^3.
+\]
+此恒等式保留所有零点，且 $n,b$ 可以共享素因子。第一个因子仅依赖于 $R$；尖点系数与加性特征在整个扇区中是共同的。它们的系数界留下列归一化 $q_n^{-1/2}q_b^{-1}$，至多相差一个依赖于固定 $k$ 的常数。因此，行与两个列指标之间唯一的算术相互作用是引理~\ref{lem:completed-quadratic-reduction} 的核。

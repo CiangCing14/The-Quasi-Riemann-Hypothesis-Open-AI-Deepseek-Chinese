@@ -1,0 +1,60 @@
+\begin{proof}
+将掩码展开为
+\(\sum_{d\mid\operatorname{rad}R,\ d\mid k}\mu(d)\) 并令 \(k=dk'\)。
+尺度变为 \(K/q_d\)，特征贡献 \(\psi(d)\)。
+模 \(m\) 的剩余类中的泊松求和具有前因子
+\(K/(q_dq_m)\)。其有限变换为
+\[
+ \sum_{x\bmod m}\psi(x)e(hx/m)
+   =\sqrt{q_m}\gamma(\psi;m)\bar\psi(h).
+\]
+对于单位 \(h\)，这由变量替换得到。对于非单位 \(h\)，
+由本原性变换为零；对于 \(m=1\)，所述主约定适用。这证明了方程~\eqref{eq:masked-poisson}。
+对于非主本原特征，有限 Parseval 给出
+\(\sum_h|\sum_x\psi(x)e(hx/m)|^2=q_m\sum_x|\psi(x)|^2\)。
+记 \(\phi(m)=|(\mathcal O/m)^\times|\)，则有 \(\phi(m)\)
+个单位 \(h\)，其模均为
+\(\sqrt{q_m}|\gamma(\psi;m)|\)，且
+\(\sum_x|\psi(x)|^2=\phi(m)\)。因此 \(|\gamma(\psi;m)|=1\)。
+
+固定的射线限制可先展开为有限多个特征。每个特征随后被替换为其本原诱导特征，
+被移除的局部零延拓保留在 \(R\) 中；同一公式逐项适用。对于主模，
+非零频率的绝对和为 \(O_\Phi(d_{\mathcal O}(\operatorname{rad}R))\)。
+事实上，对于所有 \(A>0\)，
+\[
+ A\sum_{h\ne0}|\mathcal F\Phi(Aq_h)|\ll_\Phi1.
+\]
+当 \(A\le1\) 时格计数证明此式，当 \(A\ge1\) 时 Schwartz 衰减证明此式。
+以 \(A=K/q_d\) 对 \(d\) 求和此界。
+在以下每次使用中，相关的非空行尺度都有 \(K\ge1\)，因此
+这也是 \(O(KZ^\epsilon)\)。当在分离非主和时添加或移除主非零频率时，它们将
+携带与该和相同的外层行掩码；其绝对贡献不超过此完整主界。
+\end{proof}
+
+\subsection{典范归约及其归纳}
+
+我们现在证明引理~\ref{lem:canonical-moment}。反射能量
+处理短完备化；剩余块经过两次泊松变换以产生具有更短行的允许典范和。
+
+\begin{proof}[引理~\ref{lem:canonical-moment}的证明]
+解析选择的顺序由
+第~\ref{sec:moment-propagation}节中的推论~\ref{cor:indexed-seminorm-propagation}组织。其带指标的结论将
+分别用于每个正 Cauchy 侧和；以下证明验证
+所需的公共系数测度、固定范数损失和有限深度。
+
+在每个节点，每个联合 \((f,k)\) 希尔伯特空间使用当前标签
+测度 \(w(f)\)，且该因子在每个父 \(f\)-和中恰好保留一次，直到方程~\eqref{eq:inverse-old-label-fibre}
+移除旧标签。
+
+在每个节点保持参数 \(N,V,M\) 固定，并记
+\[
+ F=N+V,\qquad Q=\log_Zq_{\mathfrak r_\rho}.
+\]
+这里 \(F\) 是实长度和 \(N+V\)，因此起始节点处 \(F=F_0\)。在具有余量 \(c_{\rm node}\) 的节点处的两个假设恰好为
+\begin{equation}\label{eq:inverse-fixed-invariant}
+ F-M-Q-z_0\ge c_{\rm node},\qquad
+ 4F-3M-6z_0\ge c_{\rm node}.
+\end{equation}
+特别地 \(M+z_0+c_{\rm node}\le F\)。数 \(Q\) 是
+已固定穿刺根式的实际对数范数，而非二进中心。参数 \(M\) 是固定对数行长；
+第一次泊松检验的尺度为 \(Z^M\)。

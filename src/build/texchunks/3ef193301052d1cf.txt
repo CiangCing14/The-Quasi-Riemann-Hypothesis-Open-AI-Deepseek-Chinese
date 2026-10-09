@@ -1,0 +1,27 @@
+我们为该系数指定一个共同的固定模数。对于 $k\ne0$，利用单位约定和引理~\ref{lem:fixed-numerator-ray} 中固定的 $S$-素数生成元，记
+$k=\zeta k_Sk_{\mathrm{good}}$，其中
+$k_S=\prod_{\mathfrak p\in S}\pi_{\mathfrak p}^{e_{\mathfrak p}}$，
+$k_{\mathrm{good}}=\prod_{p\notin S}p^{e_p}$。对于 $S$ 之外的本原剩余理想 $m$，互反律给出
+\[
+ \begin{split}
+ \chi_m(k)&=\kappa_{\zeta,\boldsymbol e}(m)
+       \mathcal R(k_{\mathrm{good}},m)
+       \prod_{p\mid k_{\mathrm{good}}}\chi_p(m)^{e_p},\\
+ \kappa_{\zeta,\boldsymbol e}(m)
+       &=\chi_m(\zeta)\prod_{\mathfrak p\in S}
+             \chi_m(\pi_{\mathfrak p})^{e_{\mathfrak p}\bmod6}.
+ \end{split}
+\]
+每个展示出的良好局部幂都在一个共同的素数上保留其零点，包括 $6\mid e_p$ 的情形。引理~\ref{lem:fixed-numerator-ray} 将有限多个 $\kappa_{\zeta,\boldsymbol e}$ 置于一个支撑在 $S$ 上的固定射线群中。此外 $\mathcal R(k_{\mathrm{good}},m)$ 属于 $m$ 中一个固定的有限族。
+
+一次性选取 $\mathfrak l_{\rm fixed}$，使其包含本原类模数和 $S$ 零点掩码、$A_m$ 中每个固定射线系数的模数、$\mathcal R$ 在每个变量中的一个周期，以及所有前述 $\kappa_{\zeta,\boldsymbol e}$ 特征的导子。扩展系数在本原类之外或在任何逆特征被求值之前的一个固定非单位处为零。该模数独立于 $C,d,k$，并且在 $S$ 处可能具有比 $\operatorname{rad}(k)$ 更高的幂次。经互反律之后，$m_1,m_2$ 中的联合算术系数模
+\[
+ \mathfrak r=\operatorname{lcm}
+   (\mathfrak l_{\rm fixed},\operatorname{rad}C,\operatorname{rad}(k)),
+ \qquad q_{\mathfrak r}\ll_{\rm fixed}q_Cq_k.
+\]
+是周期的。若 $k$ 在 $C$ 和 $\mathfrak l_{\rm fixed}$ 之外的一个素数处有一个不被六整除的赋值 $e_p$，则称 $k$ 为非例外。在该素数处，第一个剩余列具有非主零扩展因子 $\chi_p(m_1)^{e_p}$，至多相差一个单位标量。提升、固定相位以及其他素因子都独立于 $m_1$ 模 $p$。其完全均值，从而由中国剩余定理得到的完全联合均值，为零。用 $d$ 作替换不改变这一结论，因为 $(d,k)=1$。在例外情形中，被六整除的赋值处的主零掩码仍然存在。
+
+频率 $k=0$ 只贡献对角项：相关性迫使 $n_1=n_2=1$，并等于 $\varphi(C)$。范数与 $Y'$ 相当的 $C$ 有 $O(Y')$ 个，每个满足
+$\varphi(C)\le q_C\ll Y'$。因此其贡献为
+$O(Q/Y')$。

@@ -1,0 +1,60 @@
+\begin{corollary}[带指标的有限传播]
+\label{cor:indexed-seminorm-propagation}
+在引理~\ref{lem:finite-seminorm-propagation} 中，设
+$\boldsymbol\ell$ 表示顶点 $v$ 处的任意允许长度和外标签，并设
+$\Phi_v(\boldsymbol\ell)$ 为其期望的范数指数。假设
+在除以 $Z^{\Phi_v(\boldsymbol\ell)}$ 之后，终端界具有该引理中的形式，
+且固定指数为 $\delta_v$。一条边可以由一个依赖于 $Z$ 的族
+$\Gamma_e$ 以及一个非负测度 $\nu_e$ 来加指标，并且可以具有形式
+\[
+ \int_{\Gamma_e}\int_{\mathbb R^{d_e}}
+ Z^{a_e(\boldsymbol\ell,\gamma)}|K_{e,\gamma}|
+ \prod_{r=1}^{r_e}\mathcal N_{v_{e,r}}
+  \bigl(Z,\boldsymbol\ell_{e,r},\boldsymbol W_{e,r},
+        A_{e,r}\boldsymbol t+B_{e,r}\boldsymbol\xi\bigr)^{\theta_{e,r}}
+ \,d\boldsymbol\xi\,d\nu_e(\gamma),
+\]
+其中子标签 $\boldsymbol\ell_{e,r}$ 可以依赖于
+$\boldsymbol\ell,\gamma$。假设关于这些标签一致地有
+\begin{equation}\label{eq:indexed-exponent-defect}
+ a_e(\boldsymbol\ell,\gamma)
+   +\sum_r\theta_{e,r}\Phi_{v_{e,r}}(\boldsymbol\ell_{e,r})
+   -\Phi_v(\boldsymbol\ell)\le\delta_e,
+\end{equation}
+其中 $\delta_e$ 固定，并且该引理的子轮廓界成立。
+还假设对每个固定的 $H\ge0$，
+\begin{equation}\label{eq:indexed-coefficient-measure}
+ \int_{\Gamma_e}\int_{\mathbb R^{d_e}}|K_{e,\gamma}|
+       \langle\boldsymbol\xi\rangle^H\,d\boldsymbol\xi\,d\nu_e(\gamma)
+ \le C_{e,H}Z^{\delta_e^{\mathrm{mass}}}
+       p_{\ell_e(H)}(\boldsymbol w)^{b_e(H)}
+       \langle\boldsymbol t\rangle^{c_e(H)},
+\end{equation}
+其中 $\delta_e^{\mathrm{mass}}$ 固定且与 $H$ 无关。当这些量是通过分离一个
+轮廓而得到的平方希尔伯特空间行范数时，此假设必须使用这些行所共有的
+系数测度。在有限多个深度中的每一个处只需有有限多种边类型；
+$\Gamma_e$ 的基数可以随 $Z$ 变化。
+
+那么 $\mathcal N_v/Z^{\Phi_v(\boldsymbol\ell)}$ 具有
+引理~\ref{lem:finite-seminorm-propagation} 的结论，关于
+$\boldsymbol\ell$ 一致，终端指数为 $\delta_v$，边指数为
+$\delta_e+\delta_e^{\mathrm{mass}}$。特别地，所有所需的半范数和高度阶数
+都是有限的，且独立于外部截断。
+\end{corollary}
+
+\begin{proof}
+令 $\overline{\mathcal N}_v=Z^{-\Phi_v(\boldsymbol\ell)}\mathcal N_v$。
+将其代入一条边，并由方程~\eqref{eq:indexed-exponent-defect}
+将其范数幂界定为 $Z^{\delta_e}$ 乘以归一化子项的乘积。
+代入它们的归纳界。如同引理~\ref{lem:finite-seminorm-propagation} 的乘积证明中那样，
+所需的系数矩为
+\[
+ H_e=\sum_r\theta_{e,r}
+              \bigl(H_r+B_r c'_{e,r}(J_r)\bigr),
+\]
+它是有限的且独立于 $\gamma$。方程~\eqref{eq:indexed-coefficient-measure}
+在此阶数下贡献 $Z^{\delta_e^{\mathrm{mass}}}$，并且只贡献有限的
+轮廓和高度阶数。因此，对有限多种边类型进行反向归纳，
+恰好给出所述的归一化递推。在子项内部被平均的标签在整个论证过程中
+始终留在该子项内部；它不是 $\nu_e$ 的第二个积分变量。
+\end{proof}

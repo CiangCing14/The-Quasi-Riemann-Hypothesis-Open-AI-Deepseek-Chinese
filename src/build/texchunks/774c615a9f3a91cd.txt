@@ -1,0 +1,56 @@
+对于大行，固定 \(z_\infty>2\)。在
+\((\Re s,\Re w,\Re z)=(2,2,z_\infty)\) 上，同一个
+Equation~\eqref{eq:absolute-local-tuple-bound} 给出
+\[
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_\epsilon U^\epsilon Z^{\ell z_\infty}
+\]
+对每个物理行及所有虚部成立。这验证了
+Equation~\eqref{eq:large-correction-bound}。因此 Lemma~\ref{lem:outer-row-tails}
+给出，取 \(B_0=l_x/2+1+l_y=53/32\)，
+\[
+ |\mathscr R_\eta(U;Z)|
+ \ll Z^{B_0+hz_\infty+\epsilon}U^{1+\epsilon-z_\infty},
+\]
+并且，对每个固定的 \(\zeta>0\)，在选取
+\(0<\epsilon<z_\infty-1\) 之后，
+\[
+ \sum_{U>Z^{h+\zeta}}|\mathscr R_\eta(U;Z)|
+ \ll
+ Z^{B_0+(h+\zeta)(1+\epsilon)-\zeta z_\infty+\epsilon}.
+\]
+这里 \(\mathscr R_\eta\) 是 Lemma~\ref{lem:outer-row-tails} 对
+当前物理表达式给出的行贡献。一个固定的充分大的 \(z_\infty\)
+可使最后一个指数达到所需的负值。它在
+\(\zeta\) 之后但在目标之前选取。这些调用使用
+Section~\ref{sec:local-compensation} 中的无商元组界，而非中心的
+主项/误差分解。
+
+\subsection{端点不等式}\label{sec:adaptive-endpoint}
+
+接下来我们界定 \(E(h)\)，首先不引入可调损失或高度
+因子。它们将按量化的选择顺序恢复。
+回忆
+\[
+ \kappa=\frac34+2\Delta,\qquad \alpha=\frac56.
+\]
+在活跃上端点 \(\delta=\alpha\) 处，取 Proposition~\ref{prop:detector-witness} 中的
+\(t=3/2\)。于是
+\(r\ge1-O(\epsilon)\)。在
+\(r=1\) 两侧应用 Equation~\eqref{eq:no-slot-inverse-count} 中的
+无槽放大估计。对于 \(r\ge1\)，其指数为
+\[
+ 1-\alpha+(\alpha-\delta)r=1-\delta.
+\]
+对于所述 \(O(\epsilon)\) 邻域内的 \(r<1\)，同一
+估计使用 \(e(r)=1\)，故其指数为
+\(1-\delta r\le1-\delta+O(\epsilon)\)。固定的放大
+裕度独立于该邻域。
+因此不需要选定的素数，理想的行使指数为
+\(R=1-\delta\)。在
+Equation~\eqref{eq:common-high-exponent} 中使用 \(q\le\delta/2\) 给出
+\begin{equation}
+ E(h)\le C_0+\left(\frac34-h\right)\delta+O(\epsilon)
+       =-\frac1{48}-\frac{\delta}{16}+O(\epsilon)<0.
+ \label{eq:large-delta-endpoint}
+\end{equation}

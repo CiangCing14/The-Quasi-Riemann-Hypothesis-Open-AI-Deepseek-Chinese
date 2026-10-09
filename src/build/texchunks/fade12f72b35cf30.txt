@@ -1,0 +1,51 @@
+下面是范数推论，包括其运算顺序。设
+$\mathcal I$ 为原始行集，并假设行向量 $\mathcal U$
+关于整个轮廓 $F_Y$ 是线性的。该轮廓包含其行与列范数变量的
+完整固定对数盒的截断。假设同时的对数傅里叶反演用
+一个对所有行共同的密度表示该向量。在相关算术系数
+独立性得到验证之后，写
+$F_Y=\mathfrak m_A(Y)\widetilde F_Y$。Minkowski 给出
+\begin{equation}\label{eq:reflection-common-minkowski}
+ \|\mathcal U\|_{\ell^2(\mathcal I)}
+ \le \frac{\mathfrak m_A(Y)}{(2\pi)^d}
+       \int_{\mathbb R^d}|\widehat{\widetilde F_Y}(\boldsymbol t)|
+       \|B(\boldsymbol t)\|_{\ell^2(\mathcal I)}\,d\boldsymbol t.
+\end{equation}
+这里 $B(\boldsymbol t)$ 是分离行向量，其范数幂的绝对值全
+为 1。此不等式所依据的恒等式是 $\ell^2(\mathcal I)$ 中的
+Bochner 积分；只要分离范数具有所述的
+多项式高度增长，上述有限分离范数就保证其绝对可积性。对
+各行分别选取的密度的一致界不会给出这一恒等式。
+只有在右侧的非负范数内部，行集随后才可被扩大，并在新增行上
+使用 $B$ 的同一分离公式。在新增行上不断言
+核自变量与 $Y$ 的任何比较。对此不等式平方得到因子
+$\mathfrak m_A(Y)^2$。若只使用小自变量界，则
+同样的论证允许较弱的标量 $\min\{1,Y^{1/4}\}$，其平方为
+$\min\{1,Y^{1/2}\}$。归一化轮廓具有有界的元组半范数；
+并不声称它们小，因为元组半范数包含一个常数
+一。在已展开的二次表达式中出现一次的核，其贡献为
+其标量的一次，而不自动为其平方。
+
+命题~\ref{prop:completed-reflection} 中的高斯检验在那里以及在引理~\ref{lem:reflection-common-profile} 中直接允许：在后一引理中只有联合因子 $W$ 需要紧对数支撑。若改为将紧支撑演算应用于高斯本身，则引理~\ref{lem:gaussian-annular} 提供所需的绝对可和环形分解。
+
+\begin{lemma}[格核尾项]\label{lem:lattice-kernel-tail}
+设 $\Lambda$ 为 $\mathcal O$ 或 $\lambda^{-4}\mathcal O$。假设
+$K:(0,\infty)\to\mathbb C$ 对 $x\ge1$ 满足 $|K(x)|\le C_Ax^{-A}$，
+其中 $A>1$。则对 $a>0$ 和 $U\ge1$，
+\begin{equation}\label{eq:lattice-kernel-tail}
+ \sum_{\substack{0\ne\mu\in\Lambda\\a q_\mu>U}}|K(aq_\mu)|
+ \ll_A C_A(1+a^{-1})U^{1-A}.
+\end{equation}
+对 $K=V^\sharp$ 可取
+$C_A\ll_A\mathfrak M_{A,\lceil4A\rceil+2}(V)$。
+\end{lemma}
+
+\begin{proof}
+壳层 $2^jU<a q_\mu\le2^{j+1}U$ 包含
+$O(1+2^jU/a)$ 个任一固定格的点。其贡献至多
+为 $C_A(1+2^jU/a)(2^jU)^{-A}$。对两个几何级数求和给出
+$O_A(C_A(U^{-A}+a^{-1}U^{1-A}))$，由于 $U\ge1$，这蕴含所显示的式子。
+最后一项断言由方程~\eqref{eq:reflection-kernel} 得出。
+\end{proof}
+
+\subsection{完备化指标的二次范数}

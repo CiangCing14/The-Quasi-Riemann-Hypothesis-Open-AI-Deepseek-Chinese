@@ -1,0 +1,96 @@
+设 \(\widehat r_{\rm diff}\ge0\) 为具有 \(a_{1p}\ne a_{2p}\) 的偶宇称素数的实际对数范数。表中给出
+\(\widehat R=\widehat s+\widehat r_{\rm diff}\)，因此
+\begin{equation}\label{eq:fixed-cube-count}
+ \widehat c=\widehat\ell_{\rm pair}+\widehat R/2-\widehat j
+                  -\widehat r_{\rm diff}/2
+ \le\ell+R/2-j+\tfrac52\eta.
+\end{equation}
+用这个实际上界进行理想计数会计算固定的 \(q_0\)，同时保留 \(J\)。对于一个也计算 \(J\) 的对角界，其完整窗口的指数至多为 \(j+\eta\)，给出合并的上计数 \(Z^{\ell+R/2+7\eta/2+\epsilon}\)。一旦 \(b_1,b_2,C\) 被指定，\(\mathfrak A_i\) 以及 \(d_k\mid C\mathfrak B/R_1\) 的选择只增加除子因子。
+
+结合方程~\eqref{eq:inverse-first-separated}、加权柯西以及旧标签纤维界，给出第一次变换的显式输出：
+\begin{equation}\label{eq:inverse-first-transform-output}
+ \begin{split}
+ |\mathcal T_{1,\sigma}|\ll{}&Z^{\pi_\beta+\pi_{\rm old}}
+ \int_{\mathbb R^9}|\widehat{\mathfrak H}_{1,\sigma}(\boldsymbol t)|\\
+ &\quad\times\prod_{i=1}^2
+ \left(Z^{\kappa_i+9\eta/2}\mathcal S_{i,\sigma,\boldsymbol t}\right)^{1/2}
+ \,d\boldsymbol t.
+ \end{split}
+\end{equation}
+每个 \(\mathcal S_{i,\sigma,\boldsymbol t}\) 是方程~\eqref{eq:inverse-first-majorant} 中的正和：其行多项式具有方程~\eqref{eq:inverse-first-polynomial} 中的 M\"obius 系数，由立方体导出的标签 \(J\) 被保留，并且旧的 \(f,h\) 不再出现在被平均的指标中。以下变换应用于这些正的行范数。
+
+\paragraph{第二次泊松变换。}
+固定由第一次柯西不等式得到的两个正和之一。其多项式具有形式
+\[
+ P_i(y)=\sum_x c_i(x)\overline{\chi_x(y)}.
+\]
+系数 \(c_i(x)\) 由方程~\eqref{eq:first-poisson-column} 的其余因子组成，其中 \(u_i=t'x\)、在 \(t'\) 处的穿刺以及分离权重。它与 \(y\) 无关。特别地，\(x\) 是无平方因子的，并且
+\[
+ c_i(x)=0\quad\text{unless}\quad
+ (x,CJ)=1,\quad (x,\operatorname{rad}q_0t')=1.
+\]
+穿刺 \(\rho\) 以及 \(\chi_x(d_k)\) 的零点也被保留。\(y\)-和使用了尺度 \(Z^{H_{\rm use}}\) 处的固定形状光滑正球。
+
+在其展开的平方中令
+\[
+ g'=(x_1,x_2),\qquad x_j=g'z_j,\qquad
+ \widehat g=\log_Zq_{g'}.
+\]
+设 \(g\ge0\) 为其固定中心。
+则 \(z_1,z_2\) 是无平方因子且互素的，并且每个都与 \(g'\) 互素。引理~\ref{lem:masked-poisson} 的行数据为
+\begin{equation}\label{eq:second-masked-data}
+ K=Z^{H_{\rm use}},\qquad
+ \psi_2=\bar\chi_{z_1}\chi_{z_2},\qquad
+ m_2=z_1z_2,\qquad R_{\rm mask}=g'.
+\end{equation}
+公因子 \(\bar\chi_{g'}(y)\chi_{g'}(y)\) 恰好就是这个掩码。该特征在 \(m_2=1\) 之外是本原的，因为它的两个非零局部幂具有不相交的支集。对于 \(d_2\mid g'\)，设 \(\theta\ge0\) 为其中心并记
+\(\widehat\theta=\log_Zq_{d_2}\)。实际导子长度为
+\[
+ \widehat L_2=\widehat x_1+\widehat x_2-2\widehat g,
+ \qquad |\widehat L_2-2(s_i-g)|\le10\eta.
+\]
+最后一个不等式使用了每个副本的完整新鲜 \(x\)-支集界
+\(|\widehat x_a-s_i|\le4\eta\) 以及
+\(|\widehat g-g|\le\eta\)。对于 \(k_{\rm new}=d_kd_2k''\)，蕴含关系
+\(Z^{H_{\rm use}}q_{k''}/(q_{d_2}q_{m_2})\le Z^\tau\) 给出
+\[
+ \begin{split}
+ \widehat{k_{\rm new}}
+ &\le2(s_i-g)-H_{\rm use}+\delta+2\theta+13\eta+\tau\\
+ &=M_c+\eta,
+ \end{split}
+\]
+其中
+\begin{equation}\label{eq:second-poisson-lengths}
+ \begin{split}
+ M_c&=2(s_i-g)-H_c+\delta+2\theta\\
+    &=M-4\ell-2A_i-2t-2g+2\theta-2V+j,\qquad
+ M_{\rm ch}=M_c+\eta.
+ \end{split}
+\end{equation}
+\(13\eta\) 由来自导子的 \(10\eta\)、来自 \(d_k\) 的一个以及来自 \(d_2\) 的两个组成。减去
+\(H_{\rm use}=H_c+12\eta+\tau\) 抵消了在这个第二次泊松比较中使用的同一容差 \(\tau\)。因此不需要单独的行裁剪或未记录的边界误差。
+
+将原始主贡献分离出来用于下面的直接计数。在任何非互素扩展或傅里叶绝对化之前，在真正的非主第二次泊松表达式上只保留外掩码
+\[
+ \mathcal B_2(k'')=1_{0<q_{d_kd_2k''}\le Z^{M_{\rm ch}}}.
+\]
+对于每个被支撑的对，其余集包含在刚才考虑的实际比值尾项中，因此方程~\eqref{eq:inverse-raw-tail} 以如下固定的阶丢弃它。在掩码内部保留完整的光滑核。掩码依赖于 \(d_k,d_2,k''\) 以及固定扇区，而不依赖于剩余 \(z_1,z_2\)。如果 \(M_{\rm ch}<0\)，非零球为空，并且同样的尾项比较丢弃每个非零频率。在保留的非空通道中 \(M_{\rm ch}\ge0\)。
+
+实际第二前因子具有精确的边分裂
+\[
+ Z^{H_{\rm use}-\widehat\theta-\widehat L_2/2}
+       =Z^{\widehat\lambda_1/2}Z^{\widehat\lambda_2/2},
+ \qquad \widehat\lambda_a=H_{\rm use}-\widehat\theta-\widehat x_a+
+                           \widehat g.
+\]
+对于 \(\lambda_c=H_c-\theta-(s_i-g)\)，同样的支集界给出
+\begin{equation}\label{eq:inverse-second-prefactor-error}
+ \widehat\lambda_a\le\lambda_c+18\eta+\tau.
+\end{equation}
+这里 \(18=12+1+4+1\)。如同第一次分裂，所有归一化的实逆根将保留在联合光滑轮廓中直到傅里叶反演；它们不会被附加到最终的子测试中。
+所有原始系数掩码都保留。特别地
+\[
+ (g',CJ)=1,\qquad (z_j,g'CJ)=1
+\]
+在其非零支集上。

@@ -1,0 +1,59 @@
+Define the summand in Equation~\eqref{eq:initial-formal-component}
+on all individually squarefree \(z_1,z_2\) prime to \(Cj\) by the
+displayed separate \(A_*\) factors, characters, formal product norms,
+full kernel, and unchanged outer ball.  It agrees on the coprime
+domain.  Insert the complete identity
+\[
+ 1_{(z_1,z_2)=1}=\sum_{s\mid(z_1,z_2)}\mu(s),\qquad z_a=sn_a,
+\]
+before any factorwise bound.  Let \(v\ge0\) be the center of a
+squarefree \(s\)-dyad, \(\widehat v=\log_Zq_s\), and \(\psi_s\)
+its retained individual cutoff.  The \(n_a\) are squarefree and
+prime to \(s\), but need not be mutually coprime.  This formal
+extension does not apply Poisson summation to a noncoprime conductor.
+For squarefree coprime \(s,n\), CRT and the zero-preserving identity
+\(\overline{\chi_n(d')}=\chi_n(d')\chi_n(d')^4\) give exactly
+\begin{equation}\label{eq:initial-common-extraction}
+ \begin{split}
+ A_*(sn)\overline{\chi_{sn}(d')}\chi_{sn}(h')
+ ={}&A_*(s)\overline{\chi_s(d')}\chi_s(h')\\
+ &\times A_*(n)\chi_n(d'h')\chi_n(d's)^4.
+ \end{split}
+\end{equation}
+The fourth power includes the CRT factor \(\chi_n(s)^4\).
+On an overlap it defines the residual coefficient to be zero, without
+evaluating \(\gamma_2\) on a nonsquarefree ideal.  Since \(|A_*(s)|=1\)
+outside \(S\), the two extracted scalars give
+\[
+ |A_*(s)\overline{\chi_s(d')}\chi_s(h')|^2
+ =1_{(s,d'h')=1}=1_{(s,h')=1}
+ \quad\text{when }d'\mid C,\ (s,C)=1.
+\]
+The original residual and overlap exclusions also give
+\(1_{(C,j)=1}1_{(s,Cj)=1}\).  Thus, apart from the assigned
+coefficients, individual cutoffs, and unit phases, the outer arithmetic
+weight is precisely
+\begin{equation}\label{eq:initial-outer-arithmetic}
+ \mu(d')\mu(s)\widehat G(\vartheta)\mathcal B_{\rm init}(h')
+ 1_{(C,j)=1}1_{(s,Cj)=1}1_{(s,h')=1}.
+\end{equation}
+All these factors remain through weighted Cauchy.  Set
+\[
+ t=C/d',\qquad k=d'h',\qquad f=d's,\qquad
+ \rho_{t,j}(n)=1_{(n,\operatorname{rad}(tj))=1}.
+\]
+The factors on \(n\) in Equation~\eqref{eq:initial-common-extraction},
+together with \(\rho_{t,j}\), supply exactly the original exclusions
+at \(C,s,j\) and the numerator zeros at \(d',h'\).  On the nonzero
+support \(t,d',s,n\) are pairwise coprime.  Apply
+Equation~\eqref{eq:inverse-slot-priority} to each mark with this
+ordered list.  Assigned primes and their priority masks stay outer.
+A surviving prime is already prime to \(d's\) by \(\chi_n(f)^4\)
+and to \(tj\) by \(\rho_{t,j}\), so its original individual list and
+coefficient can be retained.  Its mark is an original subcollection
+of cap \(z_0\), not a row- or label-dependent residual coefficient.
+
+The substitutions \(k=d'h'\), \(f=d's\), and the puncture
+\(\rho_{t,j}\) have therefore supplied the canonical character and
+coefficient class.  We still need a common separated profile, the
+outer multiplicity bound, and admissibility of the resulting ranges.

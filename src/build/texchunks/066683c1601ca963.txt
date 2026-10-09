@@ -1,0 +1,55 @@
+在 $\mathcal O/(L)$ 上以及在每个 $\mathcal O/(p)$ 上的傅里叶反演
+现在给出
+\[
+ \phi(x)\prod_p\chi_p(x)^{j_p}
+  =\sum_h C(h)e\!\left(x\left(h_0/L+\sum_p h_p/p\right)\right),
+ \qquad C(h)=\widehat\phi(h_0)\prod_pC_{p,j_p}(h_p).
+\]
+这用到了每一个加法频率，包括非单位的 $h_0$ 和零局部
+频率。我们不引用
+\cite[Lemma~5.2 and Corollary~5.1]{DR} 中的扭曲公式，其单位傅里叶支撑假设
+对这些掩码未必成立。以该乘子作用在其无穷系数 $x=\lambda^3\mu\in\mathcal O$ 上的 theta 函数是有限和
+\begin{equation}\label{eq:reflection-translated-theta}
+ \mathcal F(z,v)=\sum_hC(h)\bar\theta(z+z_h,v),\qquad
+ z_h=\lambda^2\left(h_0/L+\sum_p h_p/p\right).
+\end{equation}
+对于孤立的无穷指标 $x=nb^3$，$\phi$ 的分段定义
+首先丢弃所有满足 $(nb,\mathfrak E)\ne1$ 的项。这是对整个完备化指标的掩码：
+$(nb^3,\mathfrak E)=1$ 当且仅当 $n$
+和 $b$ 都是 $\mathfrak E$-单位。只有在这个剩余区域上，我们才使用
+完全积性，包括 $\chi_b(\lambda)^6=1$，来写出
+\[
+ \phi(nb^3)\prod_p\chi_p(nb^3)^{j_p}
+ =\chi_n(\lambda)^2\Psi(n)\Psi(b)^3
+ \qquad((nb,\mathfrak E)=1).
+\]
+当 $n,b$ 共享一个变动素数时它仍然成立，因为相应的
+局部幂保持其零值，包括 $j_p=0$ 的情形。对于
+被丢弃的项，完备化系数直接定义为零；
+在那里不计算 $\chi_n(\lambda)$ 的任何值。在保留区域上结合
+方程~\eqref{eq:reflection-infinity-coefficient} 和
+\eqref{eq:reflection-cubic-sextic-conversion}，现在
+将直接梅林级数与乘积 $T$ 等同起来。对偶系数
+函数 $d_H$ 在方程~\eqref{old-eq:4.3} 中保持完整的源支撑；
+没有对它们施加 $S$-掩码。
+
+固定 $h_0$，并恰在 $h_p\ne0$ 时称 $p$ 为活跃的。
+方程~\eqref{eq:reflection-local-fourier} 迫使所有满足
+$j_p\ne0$ 的素数都是活跃的。对每个 $h_0\bmod L$ 各选取一次一个代表元
+和一个约化表达式
+$\lambda^2h_0/L=a_F/c_F$。将分子和分母同乘
+一个单位，若 $\lambda\mid c_F$ 则将分子规范化为 $1\pmod3$，
+否则将分母规范化为 $1\pmod3$。由于每个活跃
+素数都是 primary 的，这个单位只依赖于 $h_0$。
+对于 $r=\prod_{p\ {\rm active}}p$，方程~\eqref{eq:reflection-translated-theta}
+于是给出
+\begin{equation}\label{eq:reflection-cusp-fraction}
+ z_h=\frac ac,\qquad c=c_Fr,\qquad
+ a=a_Fr+\lambda^2c_F\sum_{p\mid r}(r/p)h_p.
+\end{equation}
+在整除 $c_F$ 的素数处，分子同余于 $a_Fr$ 且
+是一个单位。在 $p\mid r$ 处，它同余于
+$\lambda^2c_F(r/p)h_p$ 并且同样是一个单位。因此这个分数是
+约化的，即使 $h_0$ 是模 $L$ 的非单位。空乘积
+$r=1$ 是允许的。将任意提升替换为另一个会使 $z_h$ 改变
+$\lambda^2\mathcal O=3\mathcal O$ 中的一个元素，即 $\theta$ 的一个周期。

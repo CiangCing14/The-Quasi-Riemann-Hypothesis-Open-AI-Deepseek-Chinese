@@ -1,0 +1,62 @@
+对于无平方因子的槽素数乘积 $D$，令
+$I_{\eta;D}(X,Y,Z)$ 表示在其完备化行中插入指示函数 $1_{D\mid cn^3}$ 后的
+Equation~\eqref{eq:general-probe}。
+因此 $I_{\eta;1}=I_\eta$。对于元组
+$(p_1,\ldots,p_K)\in\prod_i\mathcal P_i(Z)$ 和
+$J\subseteq\{1,\ldots,K\}$，记 $p_J=\prod_{i\in J}p_i$，其中
+$p_\varnothing=1$。子集 $J$ 索引缩扩后的槽，$J^c$
+索引标记槽；此子集记号不同于归一化
+探针 $J_{\mathrm{II},\eta}$。通过有限恒等式定义修正探针
+\begin{equation}\label{eq:compensated-probe-definition}
+\begin{split}
+ I_{\eta,\mathrm{modified}}(Z)
+ =\sum_{(p_i)\in\prod_i\mathcal P_i(Z)}\prod_{i=1}^K W_i(q_{p_i}/P_i)
+ \sum_{J\subseteq\{1,\ldots,K\}}&(-1)^{|J|}q_{p_J}^{-3/2}
+          \overline{\eta(p_{J^c})}\\
+ &\cdot I_{\eta;p_{J^c}}
+       (X/q_{p_J},Y/q_{p_J},Zq_{p_{J^c}}).
+\end{split}
+\end{equation}
+等价地，在每个素数 $p$ 处，该操作是标记项
+$\overline{\eta(p)}I_{\eta;p}(X,Y,Zq_p)$ 减去缩扩项
+$q_p^{-3/2}I_\eta(X/q_p,Y/q_p,Z)$。公式
+\eqref{eq:compensated-probe-definition} 规定了它们的复合：
+每个槽窗口保持其原始尺度 $P_i$，包括当
+另一个槽改变完备化尺度时。在 $1_T$ 上，对每个 $\theta\in\widehat T$ 都有
+$\theta(p)=1$。因此标记与
+$\overline G$ 的傅里叶分解可交换，并在每个求和项中保持
+相同的排除集和零点掩码。
+该减法的设计目的是在高侧消去标量素数贡献，
+留下矩估计所使用的六次特征素因子。Section~\ref{sec:local-compensation} 证明了该精确恒等式
+并估计了剩余的局部误差。
+
+\section{系数约定与有限关联}
+\label{sec:additional-arithmetic}
+
+我们记录素因子的附加系数约定，
+然后证明一个固定射线素数归一化子以及下文所需的完整有限傅里叶
+关联。后者保留共享的素数幂，并将
+用于加性 Gram 界以及四阶矩。第一部分中的
+留数符号和固定数据约定仍然有效。
+
+\subsection{附加系数条件}
+
+我们使用来自 Section~\ref{sec:arithmetic} 的普通多项式与逆多项式、环形轮廓以及固定算术
+数据 $\mathcal A$。以下条件
+规定了本部分中使用的额外素因子和移动零点支撑。
+
+对数长度为 $z_i$ 的素数槽为
+\begin{equation}
+ Q_{\psi,i}=Z^{-z_i/2}\sum_{p\ {\rm prime}}
+       \psi(p)\nu_i(p)W_i(q_p/Z^{z_i}).
+ \label{old-eq:1.2}
+\end{equation}
+这里 $\nu_i$ 是固定的有限射线特征或此类特征的固定有限线性
+组合。它独立于行以及
+其他选定的素数。在施加任何公共掩码或行零延拓之前，不同槽具有不相交的基础素数
+支撑。对于 Section~\ref{sec:plain} 的四阶矩，射线特征的固定有限群 $\Theta$ 是数据的一部分，并且
+每个正长度槽中系数非零的每个特征分量都必须属于 $\Theta$。
+Section~\ref{sec:inverse} 的逆矩还允许为每个槽独立选择有界
+系数 $a_i(p)$，且独立于
+行和所有其他列；素数元组的系数则是其各个槽系数的乘积。$\Theta$ 限制
+不适用于这些单独的逆矩权重。

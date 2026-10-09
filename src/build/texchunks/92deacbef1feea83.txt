@@ -1,0 +1,52 @@
+对于后面的物理应用，\(q=0\)，且行 \(u\)
+是无六次方因子的。若 \(\mathcal S\) 之外的一个素数在 \(u\) 中的
+赋值为 \(1,\ldots,5\)，其局部特征具有阶
+\(6/\gcd(6,v_p(u))>1\)，因此诱导特征不可能属于
+\(\Theta\)。因此例外物理行
+支撑在 \(\mathcal S\) 上；无六次方因子性使其成为
+有限集，至多相差有限单位群。对于抽象移动
+扭结，额外的例外行可能因相消而出现。
+它们已被包含在方程~\eqref{eq:exceptional-row-count}
+和固定特征体积论证中。
+\section{素数振幅与精细行计数}\label{sec:refined-row-counts}
+
+我们使用当前第~II 部分的算术数据和
+方程~\eqref{eq:compensated-probe-definition} 的物理槽位。用这些相同的固定数据
+实例化第~\ref{sec:detector} 节的共享
+零点检测器。
+下面的主因子和误差因子属于方程~\eqref{eq:dynamic-compensated-decomposition}
+中保留的动态分解；在该区域之外不声称任何单个局部
+商。每个保留的外部坐标都服从
+方程~\eqref{eq:stage-height-allocation} 中的单一高度分配。
+
+\subsection{素数振幅}\label{sec:amplitudes}
+
+对于尺度为 \(P_i=Z^{\ell_i}\) 的主物理槽位，将其
+中心因子写为
+\[
+ Q_i(u;z)=P_i^{-1/2}\sum_{p\in1_T}
+   \overline{\chi_p(u)}W_i(q_p/P_i)(q_p/P_i)^{z-1}.
+\]
+命题~\ref{prop:probe-errors} 中的主部分 \(\mathcal Q_i\) 恰好为
+\[
+ \mathcal Q_i(u;z)=-\sum_{p\in1_T}\overline{\chi_p(u)}q_p^{z-1}W_i(q_p/P_i)
+ =-P_i^{z-1/2}Q_i(u;z).
+\]
+如第~\ref{sec:compensation} 节中那样，每个对 \(p\in1_T\) 的求和都保留
+相同的允许集 \(\mathcal P_i(Z)\)，包括其对 \(S\) 的排除。
+原始零延拓被保留，因此整除 \(u\) 的素数
+对此主槽位没有贡献。\(z\) 的实部
+处于固定的有界范围内，其虚部是
+受共同高度允许限制的外部频率之一。
+
+\begin{lemma}[一个箱内的素数界]\label{lem:bin-prime-bound}
+在引理~\ref{lem:detector-dyads} 的假设下，将
+素数环带梅林频率包含在其累积允许量中，
+对每个 \(\epsilon_1>0\)
+\[
+ |Q_i(u;z)|\ll_{\mathcal A,e,\epsilon_1}
+ U^{\epsilon_1}P_i^{a-1/2+O(e)}.
+\]
+隐含的 \(O(e)\) 对 \(51/100\le a\le1\) 和
+固定实范围一致。它对行中的每个主槽位都成立。
+\end{lemma}

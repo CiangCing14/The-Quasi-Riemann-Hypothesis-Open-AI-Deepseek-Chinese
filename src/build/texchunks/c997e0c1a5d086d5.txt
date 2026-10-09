@@ -1,0 +1,63 @@
+\begin{proof}
+令 \(y=1/2-x\in[0,1/2]\) 且 \(v=51+41y\)。为验证该计算，写出
+\[
+ p_y=7+18y+8y^2,\qquad
+ j_y=185+170y+(-138+12y+96y^2)\delta.
+\]
+则
+\[
+ D_x=\frac{37+34y}{18},\qquad
+ P_x=\frac{p_y}{9},\qquad
+ \mathcal J=\frac{j_y}{108}.
+\]
+由 \(R_*=1-\delta+(\alpha-\delta)\delta P_x/(2\mathcal J)\)
+及方程~\eqref{eq:common-high-exponent}，
+\[
+ -E_*=
+ \frac{1+(3+8y)\delta}{48}
+ -\frac{13}{32}\,
+   \frac{(5/6-\delta)\delta P_x}{\mathcal J}.
+\]
+展开相乘得到显式的二次式
+\[
+ \begin{split}
+ 10368\mathcal J(-E_*)
+ &=2j_y[1+(3+8y)\delta]
+     -468(5/6-\delta)\delta p_y\\
+ &=10(37+34y)
+   -8(237+377y+26y^2)\delta\\
+ &\hspace{12mm}
+   +48(51+131y+94y^2+32y^3)\delta^2.
+ \end{split}
+\]
+乘以 \(v\) 并配方得到
+\begin{equation}
+ \begin{aligned}
+ 10368v\mathcal J(-E_*)
+ ={}&(3+5y)\bigl\{(4v\delta-79)^2+49\bigr\}\\
+ &+4y\bigl\{
+ 4v\delta[(1+3y)(15+32y)\delta+9-13y]
+       +265+3485y\bigr\}.
+ \end{aligned}
+ \label{eq:balanced-endpoint-certificate}
+\end{equation}
+该恒等式也可通过系数验证：将其右端展开为 \(\delta\) 的多项式，分别得到
+\[
+ \begin{split}
+ &10v(37+34y),\\
+ &-8v(237+377y+26y^2),\\
+ &48v(51+131y+94y^2+32y^3),
+ \end{split}
+\]
+它们正是前一个展示式中的常数项、一次项和二次项系数乘以 \(v\)。
+
+方程~\eqref{eq:balanced-endpoint-certificate} 右端的每一项均非负：
+\(y,\delta\ge0\) 且 \(9-13y\ge5/2\)。
+第一行至少为 \(49(3+5y)\)，而
+\(v=51+41y\le17(3+5y)\)。因此
+\[
+ -E_*\ge\frac{49}{176256\mathcal J}
+       \ge\frac{49}{440640}>\frac1{10000},
+\]
+其中用到 \(\mathcal J\le5/2\)。
+\end{proof}

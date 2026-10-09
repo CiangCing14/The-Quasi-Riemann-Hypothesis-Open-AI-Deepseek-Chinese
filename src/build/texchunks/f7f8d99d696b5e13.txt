@@ -1,0 +1,66 @@
+主计数具有指数 \(m\)，而每个非主项现在已被 \(Z^{m+\epsilon}\) 界定。该论证保留所有元素行和每个原始掩码，适用于子集族以及任一共向，并保持任意有界且行无关的素数系数。公共分离测度给出了所述的有限半范数和多项式高度一致性。这证明了方程~\eqref{old-eq:4.1}。
+\end{proof}
+
+\subsection{六次方无因子行上的放大}
+
+我们首先在所有元素行上提取一个无标记的推论。在引理~\ref{lem:marked} 中，取 \(Z=H,\ m=1\)，无槽位，且 \(r=\log_H D\)。若对固定 \(c>0\) 有 \(H\ge D^{1+c}\)，则 \(1-r\ge c/(1+c)\)；第二个所需余量也为正。对于 \(D\le H^{\epsilon/4}\)，直接界 \(|M_u(D;W)|^2\ll D\) 已足够。否则起始长度位于一个固定的有界区间内且远离零。有界的 \(H,D\) 直接处理。我们得到，对于 \(H,D\ge1\)，
+\begin{equation}\label{eq:raw-moment}
+ \sum_{\substack{u\in\mathcal O\\0<q_u\le H}}
+ \left|D^{-1/2}\sum_n\mu(n)\nu(n)\chi_n(u)^{\varepsilon_\chi}
+                         W(q_n/D)\right|^2
+ \ll_{c,\epsilon,W} H(HD)^\epsilon,\qquad H\ge D^{1+c}.
+\end{equation}
+固定的算术数据和所述的半范数包含在常数的依赖关系中。
+
+\begin{lemma}[六次方放大]\label{lem:inverse-amplification}
+设 \(\nu,W,\varepsilon_\chi\) 及零延拓如引理~\ref{lem:marked} 中所述，无素数槽位。设 \(U,D\ge1\)，并对满足 \(q_u\asymp U\) 且理想 \((u)\) 的每个素除子赋值至多为五的元素 \(u\) 求和。对于每个固定 \(c>0\) 和 \(\epsilon>0\)，令
+\[
+ H=\max(2U,D^{1+c}),\qquad P=(H/U)^{1/6}.
+\]
+则
+\begin{equation}\label{eq:amplified-note}
+ \sum_u|M_u(D;W)|^2
+ \ll \frac HP(UD)^\epsilon
+ \ll \max\{U,U^{1/6}D^{5(1+c)/6}\}(UD)^\epsilon.
+\end{equation}
+隐含常数仅依赖于 \(c,\epsilon\)、固定的算术数据以及 \(W\) 的有限多个半范数。特别地，对于 \(D=U^r\)，其中 \(r\) 在一个固定的有界非负范围内，对每个 \(\epsilon>0\)，指数可写为
+\[
+ \sum_u|M_u(U^r;W)|^2\ll U^{e(r)+\epsilon},
+ \qquad e(r)=\max\{1,(1+5r)/6\}.
+\]
+两个断言都允许在每一行中单独测试 \(W_{\sigma_u,t_u}(y)=W(y)y^{-\sigma_u+it_u}\)，其中 \(\sigma_u\) 在一个固定紧区间内且 \(|t_u|\le T_1\)，代价为 \((1+T_1)^A\)，其中 \(A\) 固定。
+\end{lemma}
+
+\begin{proof}
+首先，方程~\eqref{eq:raw-moment} 和引理~\ref{lem:smooth-calculus} 蕴含逐行尺度界
+\begin{equation}\label{eq:inverse-scale-supremum}
+ \sum_{\substack{v\in\mathcal O\\0<q_v\le C H}}
+       \sup_{0<D'\le D}|M_v(D';W)|^2
+ \ll H(HD)^\epsilon,\qquad H\ge\max(2,D^{1+c}).
+\end{equation}
+事实上，充分小的尺度在环形支集中没有理想。对 \(\log D'\) 求导将 \(W(y)\) 替换为 \(-W(y)/2-yW'(y)\)。引理~\ref{lem:smooth-calculus} 中的一维索伯列夫不等式，随后对这两个测试应用方程~\eqref{eq:raw-moment}，控制了单位对数区间上的上确界。这样的区间有 \(O(\log(2+D))\) 个。对 \(H\) 作固定放大处理其端点，直接的小尺度界处理初始区间。这证明了方程~\eqref{eq:inverse-scale-supremum}。
+
+在固定集合 \(S\) 之外的理想计数给出至少 \(c_S P\) 个主理想 \(a\) 满足 \(q_a\le P\)，其中 \(c_S>0\) 固定。对于有界 \(P\)，这可在减小 \(c_S\) 后由单位理想得到；对于大 \(P\)，它由去掉有限多个素数后的正密度理想计数得到。
+
+对于无平方因子 \(n\)，将整除 \(a\) 的素数分离为 \(n=dm\)，其中 \(d\mid\operatorname{rad}a\) 且 \((m,a)=1\)。利用零延拓，
+\[
+ \psi_{ua^6}(m)=\psi_u(m)1_{(m,a)=1}.
+\]
+当 \(u,a\) 共享素数时这也成立：两边在整除 \(m\) 且整除 \(u\) 或 \(a\) 的素数处均为零，否则六次方为一。因此分离列给出精确恒等式
+\begin{equation}\label{eq:sixth-power-column-identity}
+ M_u(D;W)=\sum_{d\mid\operatorname{rad}a}
+       \mu(d)\psi_u(d)q_d^{-1/2}M_{ua^6}(D/q_d;W).
+\end{equation}
+系数质量为至多 \(d_{\mathcal O}(a)\ll_\delta P^\delta\)。由此可得
+\[
+ |M_u(D;W)|^2\ll_\delta
+ P^{2\delta}\sup_{0<D'\le D}|M_{ua^6}(D';W)|^2.
+\]
+
+将此界对 \(a\) 取平均并对 \(u\) 求和。映射 \((u,a)\mapsto ua^6\) 在这些对上单射。事实上，在每个素数处，模六的赋值恢复了六次方无因子理想 \((u)\) 的赋值，而其余数除以六恢复了 \(a\) 的赋值。\(a\) 的主生成元随后确定了元素 \(u\)，包括其单位。此论证不需要 \((u,a)=1\)。又有 \(q_{ua^6}\ll UP^6\ll H\)。因此方程~\eqref{eq:inverse-scale-supremum} 给出
+\[
+ \sum_u|M_u(D;W)|^2
+ \ll \frac HP(UD)^\epsilon
+ =U^{1/6}H^{5/6}(UD)^\epsilon,
+\]
+在选取足够小的预备 \(\delta\) 和幂损失之后。由于 \(H=\max(2U,D^{1+c})\)，这就是方程~\eqref{eq:amplified-note}。对于有界 \(r\)，根据 \(r\) 的界和所需的幂损失选取足够小的 \(c>0\)；所述的 \(e(r)\) 公式随之成立。

@@ -1,0 +1,44 @@
+在一个恒等射线素数处，来自 $T$ 的每个固定相位都等于一，尽管
+$\eta(p)$ 可以是任意单位。先假设 $p\nmid u$，并令
+$v=\chi_p(u)$。则 $D=\eta(p)v^{-1}Q^{-x}$，且
+$\overline{\eta(p)}Q^xD=v^{-1}$。利用
+$v^{-1}W=Q^{-w}$ 和 $\mathcal E_p=P_p^*+D$ 得到精确的
+归一化消去
+\begin{equation}\label{old-eq:5.13b}
+\begin{split}
+ G_p+v^{-1}H_p={}&
+ \frac{(1-V)(1-W)}{1-D}
+ \Bigl[(v^{-1}-Q^{-w})\{V/(1-V)-D\}\\
+ &\hspace{17mm}+(\overline{\eta(p)}Q^x+v^{-1}-Q^{-w})
+                    \mathcal E_p\Bigr].
+\end{split}
+\end{equation}
+这是欧拉区域中全纯局部表达式的一个恒等式。
+在这些区域内，在原始商轨迹上其左侧为
+$H_p(\mathcal B_p+v^{-1})$。
+为了直接在该轨迹上看出消去，在归一化之前将
+$P_p^*=-D+\mathcal E_p$ 和
+$P_p=(1-V)^{-1}+W/(1-W)+P_p^*$ 代入左侧。常数 $-v^{-1}$、$v^{-1}-Q^{-w}$ 和
+$(v^{-1}-Q^{-w})W/(1-W)=Q^{-w}$ 之和为零。
+所得有理恒等式只含分母 $1-R$、$1-V$
+和 $1-D$，它们在欧拉区域中非零；因此它在那里给出所展示的全纯恒等式。
+对于 $p\mid u$，主项由原始的零延拓为零，
+而方程~\eqref{old-eq:5.13c} 则变为
+\[
+ G_p=
+ \overline{\eta(p)}Q^x(1-V)\mathcal E_p-Q^{-w}H_p.
+\]
+
+我们现在给出对其余误差槽的界。其解析
+输入被明确陈述：反射本原分子必须在保留高度处很小。将第~\ref{sec:detector}节
+用当前固定数据和 $\Theta=\langle\eta,\widehat T\rangle$ 实例化，
+使用其零延拓表示 $\nu(n)\chi_n(u)^\varsigma$，其中
+$\nu\in\Theta$ 且 $\varsigma\in\{-1,1\}$。分子 $\chi_\bullet(u)$ 及其共轭属于 $\mathcal X_u$，
+具有固定乘子 $1\in\Theta$，而分母
+$\eta\overline{\chi_\bullet(u)}$ 属于 $\mathcal X_u$，具有固定
+乘子 $\eta\in\Theta$。因此，那里的缓冲估计连同
+引理~\ref{lem:deleted-euler-factors} 的逆删除因子界，
+在保留高度处提供了下面的反射分子假设：对于下面使用的点，$\Re(1-w)=a+6e$ 且
+$|\Im(1-w)|\le T_1$，位于缓冲矩形内。恒等射线
+限制使得每个固定 $T$ 相位在
+槽素数处都等于一，而不改变物理行或任何非单位零点。

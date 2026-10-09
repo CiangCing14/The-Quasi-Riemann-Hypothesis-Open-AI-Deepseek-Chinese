@@ -1,0 +1,113 @@
+A fixed ray restriction can first be expanded into finitely many
+characters.  Each is then replaced by its primitive inducing character,
+with the removed local zero extensions kept in \(R\); the same formula
+applies term by term.  For the principal modulus the absolute sum of
+the nonzero frequencies is \(O_\Phi(d_{\mathcal O}(\operatorname{rad}R))\).
+Indeed, for all \(A>0\),
+\[
+ A\sum_{h\ne0}|\mathcal F\Phi(Aq_h)|\ll_\Phi1.
+\]
+Lattice counting proves this when \(A\le1\), and Schwartz decay proves
+it when \(A\ge1\).  Sum this bound with \(A=K/q_d\) over \(d\).
+At every use below the relevant nonempty row scale has \(K\ge1\), so
+this is also \(O(KZ^\epsilon)\).  When principal nonzero frequencies
+are added or removed while separating a nonprincipal sum, they will
+carry the same outer row mask as that sum; their absolute contribution
+is no larger than this full principal bound.
+\end{proof}
+
+\subsection{The canonical reduction and its induction}
+
+We now prove Lemma~\ref{lem:canonical-moment}.  The reflected energy
+handles the short completion; the remaining blocks undergo two Poisson
+transformations to produce admissible canonical sums with shorter rows.
+
+\begin{proof}[Proof of Lemma~\ref{lem:canonical-moment}]
+The order of the analytic choices is organized by
+Corollary~\ref{cor:indexed-seminorm-propagation} in
+Section~\ref{sec:moment-propagation}. Its indexed conclusion will be
+used on each positive Cauchy-side sum separately; the proof below verifies
+the required common coefficient measures, fixed norm losses, and finite depth.
+
+At each node, every joint \((f,k)\) Hilbert space uses the current label
+measure \(w(f)\), and that factor is retained exactly once in every
+parent \(f\)-sum until Equation~\eqref{eq:inverse-old-label-fibre}
+removes the old label.
+
+At each node keep the parameters \(N,V,M\) fixed, and write
+\[
+ F=N+V,\qquad Q=\log_Zq_{\mathfrak r_\rho}.
+\]
+Here \(F\) is the real length sum \(N+V\), so \(F=F_0\) at the starting
+node.  The two hypotheses at a node with margin \(c_{\rm node}\) are exactly
+\begin{equation}\label{eq:inverse-fixed-invariant}
+ F-M-Q-z_0\ge c_{\rm node},\qquad
+ 4F-3M-6z_0\ge c_{\rm node}.
+\end{equation}
+In particular \(M+z_0+c_{\rm node}\le F\).  The number \(Q\) is the
+actual logarithmic norm of the already fixed puncture radical, not a
+dyadic center.  The parameter \(M\) is the fixed logarithmic row length;
+the first Poisson test has scale \(Z^M\).
+
+Let \(M_{\max}\) bound the starting row lengths.  Choose
+\(0<d\le c_*/200\) and put
+\[
+ D=\left\lceil\frac{M_{\max}+2}{d}\right\rceil+1.
+\]
+We use positive parameters \(\eta,\tau,\pi,\tau_{\rm ref},\pi_{\rm ref}\),
+chosen in the quantified order at the end of the proof.  Here \(\eta\)
+is a localization tolerance bounding only the logarithms of fixed annular
+ratios, \(\tau\) is the common tolerance in the two Poisson tail comparisons,
+and \(\pi\) bounds the aggregate freely chosen local small-power losses.  At depth
+\(h\) set
+\[
+ c_h=c_*-7h\eta,\qquad c_{\rm node}=c_h,
+\]
+and impose the row cap \(M\le M_{\max}-hd\).  We prove the estimate by
+backwards induction on \(h\le D\).  Every retained row parameter below
+is nonnegative.  We shall show that a nonterminal passage decreases it
+by at least \(d\), loses at most \(7\eta\) in either required margin,
+and increases the energy exponent by at most \(40\eta+\tau+\pi\).
+No invariant will be transferred from the fixed \(F=N+V\) to an
+actual column norm.
+
+\paragraph{The short completion.}
+M\"obius inversion of the cube factor in
+Equation~\eqref{eq:marked-completion} gives the exact identity
+\begin{equation}\label{eq:marked-completion-inversion}
+ \begin{split}
+ &Z^{-N/2}\sum_{n\ {\rm sf}}a(n)\chi_n(k)\chi_n(f)^4
+       \mathfrak d(n)W(q_n/Z^N)\\
+ &\quad=
+ \sum_h\frac{\mu(h)\bar\alpha(h)^3\Psi_k(h)^3}{q_h}
+       \mathcal T_{\mathfrak d_h}(Z^N/q_h^3;k),
+ \qquad \mathfrak d_h(A)=\mathfrak d(h^3A).
+ \end{split}
+\end{equation}
+To check both the mark and the normalization, expand the right side and
+put \(c=hb\).  The factor \(V_*(y)=y^{1/2}W(y)\) changes the absolute
+coefficient to
+\[
+ Z^{-N/2}\bar\alpha(c)^3\Psi_k(c)^3q_c^{1/2}
+       \sum_{h\mid c}\mu(h).
+\]
+The mark is \(\mathfrak d(nc^3)\), independent of the divisor \(h\).
+The divisor sum vanishes unless \(c=1\), proving the identity.
+Multiplicativity of \(\Psi_k\), including its punctures, is used here.
+
+Use one fixed smooth dyadic partition with nonnegative ideal centers,
+the unit dyad having center zero.  Suppose \(V<d\) and that the center
+\(\ell_1\) of the \(h\)-dyad is less than \(d\).  Freeze \(h\), assign
+to it the slots it divides, and retain the others on the completed
+index.  A surviving slot then has the individual coefficient
+\(a_i(p)1_{p\nmid h}\).  Since \(h\) is fixed, this is a bounded
+coefficient independent of the current \(k,f\), on the same nominal
+annulus and with the same cap.  It is not the unrestricted original
+coefficient; the recursive branch below restores its original slot
+lists separately by the child zeros.  For an active subcollection define \(z_a\) to be the sum of its
+nominal slot lengths.  Assignments only delete slots, so
+\(0\le z_a\le z_0\) exactly; an actual tuple norm is never used as this
+cap.  Triangle inequality in the joint \((f,k)\) Hilbert space uses
+\(\sum_{q_h\asymp Z^{\ell_1}}q_h^{-1}\ll1\) for the fixed annulus,
+apart from the separately chosen divisor loss for assignments.  The
+bounded factor \(\Psi_k(h)^3\) is a contraction in that space.

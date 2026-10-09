@@ -1,0 +1,82 @@
+对每个 \(\gamma\in\Gamma_\sigma\)，任取一个源见证。
+其实际整除性 \(d_2\mid g'\) 与
+方程~\eqref{eq:inverse-cube-actual} 给出
+\[
+ \widehat\theta\le\widehat g,\qquad
+ \widehat j\le2\widehat\ell_{\rm pair},\qquad
+ \widehat c\le\widehat\ell_{\rm pair}.
+\]
+因此，这里所需的仅有的实际到中心不等式为
+\begin{equation}\label{eq:inverse-center-inequalities}
+ g-\theta\ge-2\eta,\qquad j\le2\ell+3\eta,\qquad
+ \widehat c\le\ell+\eta.
+\end{equation}
+前两个并非以零误差断言。特别地，第三个不等式对每个固定三元组成立，因为有其源见证，尽管它不必在整个包含计数球内成立。方程~\eqref{eq:canonical-child-data} 中的新根式具有实际对数范数 \(Q_{\rm new}=Q_\gamma\)，满足
+\begin{equation}\label{eq:inverse-new-puncture}
+ \begin{split}
+ Q_{\rm new}&\le Q+\widehat c+\widehat t+\widehat g-\widehat\theta\\
+ &\le Q+\ell+t+g-\theta+4\eta\le Q+D_c+4\eta.
+ \end{split}
+\end{equation}
+当其余因子与旧穿刺共享素数时，这也成立，因为取根式只会减小范数。最后一个不等式
+使用了 \(A_i,V\ge0\)。
+
+在方程~\eqref{eq:canonical-transition} 中使用 \(F_{\rm ch}=F_c+\delta_N\)、\(M_{\rm ch}=M_c+\eta\) 以及
+\(2(A_i+t+g-\theta+V)+j\ge-4\eta\)。两个子边缘满足
+\begin{equation}\label{eq:inverse-child-margins}
+ \begin{aligned}
+ F_{\rm ch}-M_{\rm ch}-Q_{\rm new}-z_0
+   &\ge c_{\rm node}+\delta_N-5\eta\ge c_{\rm node}-5\eta,\\
+ 4F_{\rm ch}-3M_{\rm ch}-6z_0
+   &\ge c_{\rm node}+4\delta_N-7\eta\ge c_{\rm node}-7\eta.
+ \end{aligned}
+\end{equation}
+名义上限 \(z_0\) 保持不变，因为幸存标记是一个子集合。此外 \(D_c\ge\ell+V-2\eta\) 且
+\(2\ell-j\ge-3\eta\)，从而
+\begin{equation}\label{eq:inverse-row-decrease}
+ M-M_{\rm ch}=2D_c+2\ell-j-\eta
+       \ge2(\ell+V)-8\eta\ge2d-8\eta.
+\end{equation}
+对于 \(\eta\le d/16\)，这至少为 \(3d/2\)，因此至少为 \(d\)。
+同样的恒等式给出 \(F_c\le F-\ell-V+5\eta\)，所以
+\(F_{\rm ch}\le F+11\eta\)。由于其余两个被加项非负，
+这通过有限深度界定了子 \(N_{\rm ch},V_c\)。
+
+算术构造由此产生了具有更小行长度的允许子范围。接下来我们在其典范多项式中表达变换后的和。所需的傅里叶密度对所有三元组 \(\gamma\)、行和标签都是共同的；只有在此恒等式之后，我们才会应用柯西并控制重构重数。
+
+\paragraph{第二个变换和的公共密度。}
+在求和任何实际外理想之前，使用六个独立坐标
+\[
+ (y_g,y_d,y_v,y_k,y_1,y_2)
+ =\left(\frac{q_{g'}}{Z^g},\frac{q_{d_2}}{Z^\theta},
+ \frac{q_{v'}}{Z^v},\frac{q_{k''}}{Z^{h_2}},
+ \frac{q_{n_1}}{Z^{N_c}},\frac{q_{n_2}}{Z^{N_c}}\right).
+\]
+使用已选定的新截断 \(\omega_{n,a},\omega_f\)。
+保留四个当前二进截断
+以及反转之外的 \(\omega_f\)，以及两列中的 \(\omega_{n,a}\)。令 \(\Omega_{2,\alpha}\) 为更大的截断，在相应的四个二进截断和两个列截断的完整支集上等于一。这些完整支集、\(I_f\) 以及其上的形式乘积
+\(g'v'n\) 是已包含在 \(\mathcal I_D\) 中的窗口。
+
+精确的第二根与核参数为
+\begin{equation}\label{eq:inverse-second-root-kernel}
+ \begin{split}
+ \frac{K}{q_{d_2}q_{v'}\sqrt{q_{n_1}q_{n_2}}}
+ &=Z^{\lambda_c+12\eta+\tau}y_d^{-1}y_v^{-1}(y_1y_2)^{-1/2},\\
+ \frac{Kq_{k''}}{q_{d_2}q_{v'}^2q_{n_1}q_{n_2}}
+ &=A_{{\rm ker},2}\frac{y_k}{y_dy_v^2y_1y_2},\\
+ A_{{\rm ker},2}&=Z^{H_{\rm use}+h_2-\theta-2v-2N_c}.
+ \end{split}
+\end{equation}
+确实 \(N_c=s_i-g-v\) 且
+\(\lambda_c=H_c-\theta-(s_i-g)\)。定义一个环境轮廓
+\begin{equation}\label{eq:inverse-second-profile}
+ \begin{split}
+ \mathfrak H_{2,\sigma,\boldsymbol t}(\boldsymbol y)={}&Z^{-6\eta}
+ \prod_\alpha\Omega_{2,\alpha}(y_\alpha)
+ y_d^{-1}y_v^{-1}(y_1y_2)^{-1/2}\\
+ &\times W_i(y_gy_vy_1)\overline{W_i(y_gy_vy_2)}
+ \mathcal K_2\!\left(A_{{\rm ker},2}\frac{y_k}{y_dy_v^2y_1y_2}\right).
+ \end{split}
+\end{equation}
+其外的标量恰好为 \(Z^{\lambda_c+18\eta+\tau}\)。
+完整的 \(q_{d_2}\) 分母和两个归一化实列根都在此轮廓中，且没有这样的根被附加到最终检验中。

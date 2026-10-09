@@ -1,0 +1,112 @@
+对于 \(\boldsymbol\zeta=(\zeta_g,\zeta_d,\zeta_v,\zeta_k,
+\zeta_1,\zeta_2)\)，令 \(z_n=q_n/Z^{N_{\rm ch}}\)，并定义
+\[
+ W_a'(z)=\omega_{n,a}(Z^{\delta_N}z)z^{\varepsilon_a i\zeta_a},
+ \qquad \nu_a'=\nu_i\overline\vartheta,\qquad
+ \mathfrak d_a'=\mathfrak d_{I_a'}.
+\]
+于是两个新柯西侧上的多项式恰好为
+\begin{equation}\label{eq:canonical-child-polynomial}
+ \begin{split}
+ Q_{a,\gamma,\boldsymbol\zeta}(k_{\rm new},f_{\rm new})={}&
+ \sum_{n\ {\rm sf}}\bar\alpha(n)\gamma_2(n)\nu_a'(n)\rho'(n)
+ \chi_n(k_{\rm new})\\
+ &\times\chi_n(f_{\rm new})^4
+ \mathfrak d_a'(n)W_a'(q_n/Z^{N_{\rm ch}}).
+ \end{split}
+\end{equation}
+在固定 \(q_0,t',g'/d_2\) 以及有限射线扇区之后，
+\(\nu_a'\) 和 \(\rho'\) 独立于 \(J,C,d_2,v'\) 以及
+新行。关于 \(n\) 的唯一新特征是显式展示的行因子和四次幂因子；所有其他涉及
+旧 \(b_i,\mathfrak A_i\) 的相位都已放入
+方程~\eqref{eq:retained-cube-label} 或旧行
+\(\widetilde h\) 中。分离的环形权重 \(W_a'\) 也独立于新行和标签。
+完整的剩余外权重为
+\begin{equation}\label{eq:inverse-second-outer-weight}
+ \begin{split}
+ V_\sigma(\xi;\boldsymbol\zeta)={}&w_o^+\mu(d_2)\mu(v')\widehat G(\vartheta)
+ |B_o(g')|^2|D_o(v';d_2,k'')|^2
+ 1_{(v',g'CJ)=1}\mathcal B_2(k'')\\
+ &\times\mathcal A_{2,\sigma}(\xi)
+ \psi_g(y_g)\psi_{d_2}(y_d)\psi_v(y_v)\psi_{k''}(y_k)
+ \omega_f(q_{f_{\rm new}}/Z^{V_c})\\
+ &\times y_g^{i\zeta_g}y_d^{i\zeta_d}y_v^{i\zeta_v}y_k^{i\zeta_k}
+       Z^{i\delta_N(\zeta_1+\zeta_2)}.
+ \end{split}
+\end{equation}
+所有旧的纯算术掩码和优先掩码都保留在
+\(\mathfrak O_\sigma\) 中，并带有其非负的旧系数权重
+\(w_o^+\)。所展示的两个公共量级保留了所有其他
+公共系数零点，包括依赖于 \(k''\) 的那个。
+有一个 \(\mu(d_2)\)、一个 \(\mu(v')\) 和一个射线系数。
+标签截断作为原始乘积支撑上的等式插入，并保持在外层。
+
+令 \(\mathcal T_{\sigma,i}\) 为固定的 \(v'\)-二进段、射线和槽
+被加项，由方程~\eqref{eq:inverse-second-formal-component}
+通过上述完整的 M\"obius 和槽展开得到。子式所需的精确恒等式为
+\begin{equation}\label{eq:inverse-xi-identity}
+ \begin{split}
+ \mathcal T_{\sigma,i}={}&Z^{\lambda_c+18\eta+\tau}(2\pi)^{-6}
+ \int_{\mathbb R^6}\widehat{\mathfrak H}_{2,\sigma,\boldsymbol t}
+       (\boldsymbol\zeta)\\
+ &\quad\times\sum_{\xi\in\Xi_\sigma}V_\sigma(\xi;\boldsymbol\zeta)
+ Q_{1,\gamma,\boldsymbol\zeta}(k_{\rm new},f_{\rm new})
+ \overline{Q_{2,\gamma,\boldsymbol\zeta}(k_{\rm new},f_{\rm new})}
+ \,d\boldsymbol\zeta.
+ \end{split}
+\end{equation}
+为验证它，展开两个 \(Q\)。由于
+\(y_a=Z^{\delta_N}z_{n_a}\)，它们的模连同方程~\eqref{eq:inverse-second-outer-weight} 的最后一个
+因子恰好为
+\(y_1^{i\zeta_1}y_2^{i\zeta_2}\)。其他四个模在外层。
+方程~\eqref{eq:inverse-log-fourier} 恢复了完整轮廓，
+其较大的截断在保留的支撑上为一。新的
+列截断在旧 \(W_i\) 因子非零处为一，
+且 \(\omega_f=1\) 在每个原始标签乘积上。标量和
+轮廓因此恢复了完整根、完整核以及旧窗口。
+方程~\eqref{eq:inverse-second-extraction}、
+\eqref{eq:inverse-moving-characters} 和
+\eqref{eq:inverse-slot-priority} 逐项恢复了算术因子。固定盒求和是有限的，且
+方程~\eqref{eq:inverse-fourier-moment} 证明了该积分的合理性。
+完整新窗口中的额外组合在此复傅里叶恒等式中通过旧
+窗口在柯西之前相消；只有在之后才将它们独立地保留在一个正和中。
+
+方程~\eqref{eq:inverse-xi-identity} 中的密度依赖于
+固定扇区、\(Z\)、固定测试以及 \(\boldsymbol t\)，而不依赖于
+实际的 \(\gamma,k_{\rm new},f_{\rm new}\)。耦合核使用
+裸的 \(k''\) 坐标，而非导出的行；后者仅出现在
+特征和 \(\mathcal B_2\) 中。导出的标签仅出现在
+特征及其外截断中。诸如
+\(g'=d_2r_g\) 的关系限制求值点，而非变换。
+对于每个固定的 \(B_{\rm ht},J_{\rm ht}\ge0\)，方程~\eqref{eq:inverse-fourier-moment} 中的欧拉计算
+给出某个固定的 \(b\)，使得
+\begin{equation}\label{eq:inverse-joint-fourier-moments}
+ \int_{\mathbb R^9}\int_{\mathbb R^6}
+ |\widehat{\mathfrak H}_{1,\sigma}(\boldsymbol t)|
+ |\widehat{\mathfrak H}_{2,\sigma,\boldsymbol t}(\boldsymbol\zeta)|
+ (1+|\boldsymbol t|)^{B_{\rm ht}}(1+|\boldsymbol\zeta|)^{J_{\rm ht}}
+ \,d\boldsymbol\zeta\,d\boldsymbol t\ll p_b(W)^2.
+\end{equation}
+事实上，内层加权积分是 \(\boldsymbol t\) 的多项式，
+因为 \(W_i\) 是固定截断乘以单位范数模；在该多项式阶数加上 \(B_{\rm ht}\) 处应用
+第一个变换的界。
+常数对每个实际理想和每个正
+核标量都是一致的，且没有 \(Z\) 的高度阶幂。
+
+\paragraph{第二个柯西不等式与外层计数。}
+将方程~\eqref{eq:weighted-cauchy} 应用于第二个变换后的
+和，其中
+\(U_a=Z^{(\lambda_c+18\eta+\tau)/2}Q_{a,\gamma,\boldsymbol\zeta}\)
+在完整集合 \(\Xi_\sigma\) 上，对每个固定傅里叶模。
+特别地，\(\mathcal B_2\)、\(|B_o|^2\)、\(|D_o|^2\) 和
+\(1_{(v',g'CJ)=1}\) 仍在其权重中。它们保留了上文证明的 \(f_{\rm new}\) 的无平方因子性。权重中所有其他因子
+都被一个固定常数所界，
+包括有界的原始指派槽系数个数、
+固定射线系数、各个截断以及单位模。
+因此，只有在柯西之后，绝对权重才满足
+\[
+ |V_\sigma(\xi;\boldsymbol\zeta)|
+ \ll \mathcal B_2(k'')\mu^2(f_{\rm new}).
+\]
+这一步使得新的平均理想能够保持在
+无平方因子类中。

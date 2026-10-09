@@ -1,0 +1,18 @@
+对非零理想 $\mathfrak a$，令
+$d_{\mathcal O}(\mathfrak a)=\#\{\mathfrak d:\mathfrak d\mid\mathfrak a\}$，
+其中计数包含所有整理想因子，包括那些与
+$S$ 相交的，并对 $0\ne f\in\mathcal O$ 置
+$d_{\mathcal O}(f)=d_{\mathcal O}((f))$。
+非负重数 $w(f)$ 称为因子有界的，仅当
+\[
+ w(f)\le C\,d_{\mathcal O}(f)^C
+\]
+对某个固定的 $C\ge1$ 成立，且与 $Z$、当前各行以及被平均的
+标签无关。常数 $C$ 可以依赖于 $\mathcal A$。
+这一约定并不放松 $w$ 仅依赖于
+$f$ 这一单独条件。对每个 $\delta>0$，它蕴含 $w(f)\ll_{C,\delta}q_f^\delta$
+一致成立。事实上，对于范数足够大的素理想 $\mathfrak p$，
+对每个整数 $e\ge0$ 有 $(e+1)^C\le q_{\mathfrak p}^{\delta e}$，这由
+$e\ge1$ 时 $e+1\le2^e$ 得到。对于其余有限多个素理想中的每一个，
+$\sup_{e\ge0}(e+1)^Cq_{\mathfrak p}^{-\delta e}<\infty$；将这些
+界沿 $f$ 的素因子分解相乘即证得该断言。

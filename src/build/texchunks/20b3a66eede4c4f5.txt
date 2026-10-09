@@ -1,0 +1,118 @@
+\paragraph{保留来自三次方的四次幂标签。}
+唯一地写 \(b_1b_2=q^2s\)，其中 \(s\) 无平方因子，并定义
+\[
+ J_2=\prod_{\substack{\pi_p=0\\a_{1p}=a_{2p}=1}}p,\qquad
+ J=sJ_2,\qquad q=J_2q_0.
+\]
+\(J_2\) 的每个素数在 \(b_1b_2\) 中都有正的偶赋值，
+所以 \(J_2\mid q\)。理想 \(s,J_2\) 互素且无平方因子；
+因此 \(J\) 无平方因子。设 \(j\ge0\) 为 \(J\) 的中心，并令
+\[
+ \widehat s=\log_Zq_s,\quad \widehat j_2=\log_Zq_{J_2},\quad
+ \widehat j=\log_Zq_J=\widehat s+\widehat j_2,\quad
+ \widehat\ell_{\rm pair}=(\widehat b_1+\widehat b_2)/2.
+\]
+理想恒等式 \(b_1b_2=q_0^2J_2^2s\) 恰好给出
+\begin{equation}\label{eq:inverse-cube-actual}
+ \widehat c:=\log_Zq_{q_0}
+   =\widehat\ell_{\rm pair}-\widehat s/2-\widehat j_2\ge0,
+ \qquad
+ 4\widehat\ell_{\rm pair}-2\widehat s+\widehat j_2
+   =4\widehat c+5\widehat j_2\ge0.
+\end{equation}
+上表现在证明了精确的零延拓恒等式
+\begin{equation}\label{eq:retained-cube-label}
+ \xi(n)=\chi_n(J)^4\,1_{(n,\operatorname{rad}q_0)=1}.
+\end{equation}
+事实上，指数为四的素数恰好是 \(sJ_2\) 的那些素数；
+\(\mathfrak B\) 的每个其他素数都整除 \(q_0\)。同时属于
+\(J\) 和 \(q_0\) 的素数只是重复了已由
+\(\chi_n(J)^4\) 提供的零。我们将固定 \(q_0\)，但在后面的
+平均中保留 \(J\)。模 \(q_0\) 贡献一个穿刺，不属于
+固定射线群的一部分。
+对于固定的 \(J,q_0\)，\(s,J_2\) 的选取、分解
+\(b_1b_2=q_0^2J_2^2s\) 以及理想 \(\mathfrak A_i\) 都只有
+除数重数。
+
+我们现在在延拓其互素支集或取绝对傅里叶积分之前，定位真正的第一泊松表达式。局部表给出精确的实际范数恒等式
+\[
+ \widehat R-\widehat A_1-\widehat A_2+\widehat E
+       =\widehat s-2\widehat j_2.
+\]
+对于 \(y=hf^2E\)，蕴含关系
+\(Z^Mq_h/(q_{d_k}q_{m_1})\le Z^\tau\) 和
+方程~\eqref{eq:first-poisson-lengths} 给出
+\[
+ \begin{split}
+ \widehat y
+ &\le \widehat n_1+\widehat n_2-2\widehat B-M
+       +\widehat s-2\widehat j_2+\widehat\delta+2\widehat f+\tau\\
+ &\le \widehat n_1+\widehat n_2-2\widehat B-M
+       +4\widehat\ell_{\rm pair}-\widehat j
+       +\widehat\delta+2\widehat f+\tau.
+ \end{split}
+\]
+第二个不等式是方程~\eqref{eq:inverse-cube-actual}。
+定义形式中心和外层行尺度为
+\begin{equation}\label{eq:enlarged-first-frequency}
+ H_c=2r-2B-M+4\ell+2V+\delta-j,\qquad
+ H_{\rm use}=H_c+12\eta+\tau.
+\end{equation}
+相对于 \(H_c\)，最后一个实际上界具有误差
+\[
+ (\widehat n_1-r)+(\widehat n_2-r)-2(\widehat B-B)
+ +2(\widehat b_1-\ell)+2(\widehat b_2-\ell)
+ -(\widehat j-j)+(\widehat\delta-\delta)+2(\widehat f-V),
+\]
+其在方程~\eqref{eq:inverse-ratio-bounds} 下的正最大值是
+\(12\eta\)。因此实际比值不等式蕴含
+\(q_y\le Z^{H_{\rm use}}\) 对每个被支撑的原始列对成立。
+
+在那个原始表达式上只插入外掩码
+\[
+ \mathcal B_1(h)=1_{0<q_{hf^2E}\le Z^{H_{\rm use}}}.
+\]
+对于每个被支撑的对，其补集包含在实际核
+尾项 \(Z^Mq_h/(q_{d_k}q_{m_1})>Z^\tau\) 中；应用
+方程~\eqref{eq:inverse-raw-tail} 丢弃该补集，其中
+原始计数和阶如下固定。不插入比值不等式的
+指示函数。在 \(\mathcal B_1=1\) 内部保留完整的平滑核，
+包括比值大于 \(Z^\tau\) 的对。该掩码依赖于
+\(h,f,E\) 和固定扇区，但在所指出的提取之后，
+不依赖于 \(u_1,u_2\)。若 \(H_{\rm use}<0\)，其非零球为空，
+同样的尾项比较丢弃每个非零频率。现在为统一公式而恢复的
+任何主非零项都带有这个相同的掩码。
+它们的绝对贡献由已估计的完整主恢复所界住。
+
+通过
+\[
+ 1_{(u_1,u_2)=1}=\sum_{t'\mid(u_1,u_2)}\mu(t'),\qquad u_i=t'x_i,
+ \qquad \widehat t=\log_Zq_{t'}.
+\]
+移除条件 \((u_1,u_2)=1\)。
+设 \(t\) 为其固定的非负中心。
+这个反演是在交叉相位已被上述固定射线函数替换之后进行的。
+那些函数、不变的外掩码 \(\mathcal B_1\)、所有剩余的
+零延拓局部因子，以及平滑核中的形式乘积
+\(q_{u_1}q_{u_2}q_{R_1}\) 定义了一个对非互素
+\(u_1,u_2\) 也成立的表达式。它与互素支集上的泊松求和一致；
+所展示的除数恒等式随后恰好恢复
+该支集。对于新引入的非互素对，不声称任何本原泊松公式。
+无平方因子性保留了穿刺 \((x_i,t')=1\)。在 \(t'\) 处分配的槽位是外层
+系数，而其他槽位构成 \(x_i\) 上的标记。
+
+从对所有 \(f,E\) 共同的一个固定划分插入 \(q_h\) 的二进段，
+而不是为那些标签重新中心的划分。掩码 \(\mathcal B_1\)
+蕴含 \(q_h\le q_{hf^2E}\le Z^{H_{\rm use}}\)，所以在有界保留尺度范围内
+只有对数多个这样的二进段。
+将 \(\mathcal B_1\) 保持在每个傅里叶反演之外。定义
+\[
+ s_i=r-A_i-B-t,\qquad
+ \kappa_i=M-2r-2\ell-V-\delta+A_i+B-R/2.
+\]
+在分解表达式上的恒等式 \(n_i=\mathfrak A_iCt'x_i\)
+给出 \(|\widehat x_i-s_i|\le4\eta\)。完整的新鲜 \(x_i\)-支集
+包含在 \(\mathcal I_D\) 中，所以这个相同的界在分离后直接在该支集上成立，
+而不仅在原始乘积支集上成立。
+当前前因子中使用的重构形式乘积也
+包含在那里。

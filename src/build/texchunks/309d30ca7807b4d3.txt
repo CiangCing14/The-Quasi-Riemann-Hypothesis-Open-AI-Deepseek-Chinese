@@ -1,0 +1,71 @@
+\emph{变换后测试的界。}
+对于 $A\ge0$ 和整数 $B\ge0$，置
+\[
+ \mathfrak M_{A,B}(V)=
+ \sup_{-A\le\eta\le1/4}\int_{\mathbb R}
+       (1+|u|)^B|\widehat V(\eta+iu)|\,du.
+\]
+对每个整数 $j\ge0$，
+\begin{equation}\label{eq:reflection-kernel}
+ |(x\partial_x)^jV^\sharp(x)|
+ \ll_{A,j}\min\{x^{1/4},(1+x)^{-A}\}
+       \mathfrak M_{A,\lceil4A\rceil+j+2}(V).
+\end{equation}
+若 $\chi\in C_c^\infty(0,\infty)$ 固定，$Y>0$，且 $J\ge0$ 为
+整数，则
+\begin{equation}\label{eq:reflection-annular-fourier}
+ \int_{\mathbb R}(1+|u|)^J
+ \left|\int_0^\infty\chi(y)V^\sharp(Yy)y^{-iu}\frac{dy}{y}\right|du
+ \ll_{A,J,\chi}\min\{Y^{1/4},(1+Y)^{-A}\}
+       \mathfrak M_{A,\lceil4A\rceil+J+4}(V).
+\end{equation}
+这些是有限的光滑半范数。更确切地说，
+\begin{equation}\label{eq:reflection-test-seminorm}
+ \mathfrak M_{A,B}(V)\ll_{A,B}
+ \int_0^\infty(1+x^{-A}+x^{1/4})
+       \bigl(|V(x)|+|(x\partial_x)^{B+2}V(x)|\bigr)\frac{dx}{x}.
+\end{equation}
+将 $V(x)$ 替换为 $x^{iu_0}V(x)$ 至多使
+$\mathfrak M_{A,B}$ 乘以 $(1+|u_0|)^B$。
+\end{proposition}
+
+\begin{proof}
+我们首先通过有限多个平移后的 theta 值来表达特征掩码。然后我们变换其有理尖点，并计算由此产生的自守乘子和局部傅里叶因子；最后的梅林比较给出反射恒等式及其变换后测试的界。
+
+\emph{固定的 theta 输入。}
+设 $\Gamma=\mathrm{SL}_2(\mathcal O)$，
+$\Gamma_1(3)=\{g\in\Gamma:g\equiv I\pmod3\}$，且
+$\Gamma_2=\langle\mathrm{SL}_2(\mathbb Z),\Gamma_1(3)\rangle$。
+\cite[Equations (5.4), (5.7), (5.9), and (5.12)--(5.17)]{DR} 的无条件公式
+给出 $\mathbb H^3=\mathbb C\times\mathbb R_{>0}$ 上的光滑三次 theta 函数 $\theta$，满足
+\[
+ \theta(gw)=\kappa(g)\theta(w)\quad(g\in\Gamma_2),\qquad
+ \kappa\!\begin{pmatrix}a&b\\c&\delta'\end{pmatrix}
+   =\left(\frac ca\right)_3\quad
+   \left(\begin{pmatrix}a&b\\c&\delta'\end{pmatrix}\in\Gamma_1(3),\ c\ne0\right).
+\]
+这里 $\kappa$ 在 $\mathrm{SL}_2(\mathbb Z)$ 上为一，并且在 $\Gamma_1(3)$ 中左下元素为零的元素上为一。下标 $3$ 表示通常的三次剩余符号；对于好素数 $p\notin S$，有 $(x/p)_3=\chi_p(x)^2$。
+这些自守性和系数公式不依赖于关于 $L$ 函数零点的假设。
+
+置
+\[
+ \mathsf L(t)=\begin{pmatrix}1&0\\t&1\end{pmatrix},\qquad
+ (t_0,t_1,t_2)=(0,\omega^2,\omega),\qquad
+ \Theta_b(w)=\theta(\mathsf L(t_b)w).
+\]
+若 $v\in\mathbb Z+3\mathcal O$，则 $\mathsf L(v)$ 是 $\mathrm{SL}_2(\mathbb Z)$ 中一个元素与 $\Gamma_1(3)$ 中一个乘子为一的下平移的乘积。类似的断言对
+上平移也成立。因此
+\[
+ \theta(\mathsf L(\lambda)w)=\Theta_1(w),\qquad
+ \theta(\mathsf L(-\lambda)w)=\Theta_2(w),
+\]
+因为 $\lambda-\omega^2=2+3\omega$ 且
+$-\lambda-\omega=-1-3\omega$。若 $u_0=s+t\omega$ 其中
+$0\le s,t<3$，且 $E=\bigl(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\bigr)$，
+则
+\[
+ \begin{pmatrix}u_0&-1\\1&0\end{pmatrix}=E\mathsf L(-u_0),
+ \qquad -u_0-t_t\in\mathbb Z+3\mathcal O,
+\]
+从而 $\theta\bigl(\bigl(\begin{smallmatrix}u_0&-1\\1&0\end{smallmatrix}\bigr)w\bigr)
+=\Theta_t(w)$。这些是下文所需的全部尖点代表元。

@@ -1,0 +1,68 @@
+将 \(\mathcal B_2\) 保持在完整核与旧窗口的傅里叶分离之外。设 \(I_g,I_d,I_v,I_k\) 为当前各个二进截断 \(\psi_g,\psi_{d_2},\psi_v,\psi_{k''}\) 的完整支集。选取新的截断 \(\omega_{n,a}\)，使其在 \(W_i\) 的支集除以 \(I_gI_v\) 上等于一，并具有位于区间 \([a,b]\) 内的固定完整支集，其中 \(b\ge1\)。选取非负的 \(\omega_f\)，使其在 \(I_JI_CI_dI_v\) 上等于一，并具有固定完整支集 \(I_f\)。将这些完整支集，以及其上重构的形式乘积 \(g'v'n\)，纳入上文指定的有限窗口族 \(\mathcal I_D\)。
+
+这些完整的新生子窗口给出形式中心和支集界
+\begin{equation}\label{eq:canonical-child-lengths}
+ \begin{gathered}
+ N_c=r-A_i-B-t-g-v,\qquad V_c=B+\theta+v+j,\qquad F_c=N_c+V_c,\\
+ |\widehat n_{\rm child}-N_c|\le6\eta,\qquad
+ |\widehat f_{\rm new}-V_c|\le4\eta.
+ \end{gathered}
+\end{equation}
+在因式分解表达式上，这些界由精确乘积
+\(n_i=\mathfrak A_iCt'g'v'n_{\rm child}\) 和
+\(f_{\rm new}=JCd_2v'\) 推出。完整的新生子截断和完整的扩大标签窗口都包含在 \(\mathcal I_D\) 中，因此当独立项随后通过正性加入时，同样的界直接在其支集上成立。这些加入的项并不被断言来自父因式分解。在当前分离过程中，完整新生截断上的重构形式乘积 \(x=g'v'n\) 也被包含在 \(\mathcal I_D\) 中；因此第二个前因子中使用的 \(4\eta\) 界在整个分离侧上成立。
+
+保持非负标签中心 \(V_c\) 不向上取整。仅当保留的行分量为非零时才进入子节点；此时外球有 \(M_{\rm ch}\ge0\)。此门控与任何结构外指标集分开，后者即使在 \(\mathcal B_2\) 恒为零时也可能包含零权元组。类似地，如果完整新生子列窗口不包含无平方因子理想，则其多项式为零，该分量被省略。如果 \(N_c<0\) 且存在子列，则其范数至少为一，且
+方程~\eqref{eq:canonical-child-lengths} 给出 \(-6\eta\le N_c<0\)。
+对于保留的非空子节点，定义
+\begin{equation}\label{eq:inverse-child-clipping}
+ N_{\rm ch}=\max(0,N_c),\qquad \delta_N=N_{\rm ch}-N_c\in[0,6\eta],
+ \qquad F_{\rm ch}=N_{\rm ch}+V_c=F_c+\delta_N.
+\end{equation}
+这是检验的有界改变，而不是 \(Z^\eta\) 宽的支集扩大。使用上文选定的固定包围支集区间 \([a,b]\)。如果
+\(N_c<0\)，非空性给出 \(Z^{\delta_N}\le b\)；如果 \(N_c\ge0\)，
+则 \(\delta_N=0\)，且同样的界由 \(b\ge1\) 推出。
+因此两种情形下都有 \(1\le Z^{\delta_N}\le b\)。新的环形截断
+\(\omega_{n,a}(Z^{\delta_N}y)\) 的支集位于 \([a/b,b]\) 内，且欧拉半范数一致有界。它们的尺度仅依赖于固定的扇区中心，而不依赖于当前的行或标签。这些裁剪支集的完整并集包含在 \(\mathcal I_D\) 中。
+
+通过其 \(v'\)-二进、第二射线求和项和槽分支固定 \(\sigma_0\) 的一个加细 \(\sigma\)。
+设 \(\Xi_\sigma\) 由
+\[
+ \xi=(o,g'\ {\rm sf},d_2\mid g',v'\ {\rm sf},k''\ne0;
+               \text{new assigned slot primes})
+\]
+组成，并带有保留的各个支集和槽分支。它既不包含旧的 \(f,h\)，也不包含当前的列指标 \(n_1,n_2\)。
+定义 \(R_1,E,J,q_0\) 的恒等式继承自 \(o\)，
+而 \(\gamma,k_{\rm new},f_{\rm new}\) 是 \(\xi\) 的所示函数。该集合可以在施加 \(\mathcal B_2\) 和
+\((v',g'CJ)=1\) 之前取定，并在带符号外权中保留这些掩码。设
+\(\mathcal A_{2,\sigma}(\xi)\) 为所有新分配的原始槽系数及其优先掩码的乘积，在第二侧取共轭。
+
+设 \(\mathfrak X_\sigma^{\rm src}\) 为该变换分量的结构外集合，在加入任何独立子行或标签之前。它保留
+\(o\in\mathfrak O_\sigma\)，特别是精确重构
+\(b_1b_2=q_0^2J_2^2s\)、导出的 \(J=sJ_2,q_0\)，以及完整的固定
+\(b_1,b_2,t'\) 二进支集；它还保留固定的
+\(g',d_2\) 支集、\(d_2\mid g'\)，以及其其他外算术和槽条件。零权元组可以被保留，且在定义此结构集合时忽略单位傅里叶相位。定义不同三元组的集合，不计见证重数，为
+\begin{equation}\label{eq:inverse-source-triples}
+ \Gamma_\sigma=
+ \{(q_0,t',r_g=g'/d_2):\xi\in\mathfrak X_\sigma^{\rm src}\}.
+\end{equation}
+此投影在所有可能的当前行和标签上取一次，在固定任何 \(k_{\rm new},f_{\rm new}\) 或傅里叶模式之前。每个非零变换项都映射到其中。每个成员都有一个源见证，它给出
+\(\widehat c\le\ell+\eta\)、\(\widehat t\le t+\eta\)，以及
+\(\log_Zq_{r_g}\le g-\theta+2\eta\)。这些界中的第一个将用于子节点穿刺；用于计数的包含范数球并不蕴含它。上文所述的非空行门控和子列门控与此结构投影保持分开。
+
+置
+\[
+ D_c=\ell+A_i+t+g-\theta+V.
+\]
+由于 \(r=N-3\ell\) 是与固定父节点绑定的精确定义，
+在方程~\eqref{eq:canonical-child-lengths} 和
+\eqref{eq:second-poisson-lengths} 中代入给出精确的形式恒等式
+\begin{equation}\label{eq:canonical-transition}
+ \begin{gathered}
+ F_c=F-D_c-2\ell+j,\qquad M_c=M-2D_c-2\ell+j,\\
+ F_c-M_c=F-M+D_c,\\
+ 4F_c-3M_c=4F-3M+2(A_i+t+g-\theta+V)+j.
+ \end{gathered}
+\end{equation}
+这些恒等式涉及与
+方程~\eqref{eq:inverse-fixed-invariant} 相同的固定 \(F=N+V\)，而不是实际的父范数。

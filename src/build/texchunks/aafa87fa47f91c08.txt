@@ -1,0 +1,13 @@
+选择 $\tau_{\rm ref}$ 以及规定 $\epsilon$ 允许范围内的局部小幂损失。然后提高 $Z$ 的固定数据阈值，使得 $O(\epsilon_Z)$ 项落在该允许范围内。块界、前面的计数以及已经选定的尾项节省证明了方程~\eqref{eq:unmarked-completed-moment}。扭转断言由命题~\ref{prop:completed-reflection} 中 $\mathfrak M_{A,J}$ 的范数扭转界推出。
+\end{proof}
+为明确等长情形下所用的检验，令
+\[
+ V_{\rm G}(y)=\frac1{2\sqrt\pi}
+           \exp\!\left(-\frac{(\log y)^2}{4}\right).
+\]
+它直接满足命题~\ref{prop:completed-reflection} 的假设，具有 $\widehat V_{\rm G}(t)=e^{t^2}$，并且对每个有限的 $A,J$ 都有有限的 $\mathfrak M_{A,J}$。因此前面的引理无需额外的环形延拓即可应用于它。在 $X=Z$ 处，其精确的梅林形式为
+\[
+ \mathcal C_{V_{\rm G}}(Z;m,\nu)=\frac1{2\pi i}\int_{(4)}
+       Z^t e^{t^2}T(t+1/2,\nu\chi_\bullet(m))\,dt.
+\]
+在定义求和中，系数仍由 $q_c^{-1/2}q_n^{-1}$ 规范化；尺度出现在 $V_{\rm G}(q_cq_n^3/Z)$ 中。

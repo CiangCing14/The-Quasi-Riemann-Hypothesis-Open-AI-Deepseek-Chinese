@@ -1,0 +1,131 @@
+对于最后一个断言，引理~\ref{lem:hecke-strip-growth} 的证明中回忆的本原函数方程
+\cite[Equation (1.1)]{GZ} 将 \(1-a-6e+it\) 处的值与
+\(a+6e-it\) 处的共轭本原函数联系起来。共轭
+表示位于 \(\mathcal X_u\) 中。导子和 gamma
+商至多贡献
+\[
+ Q_\psi^{a-1/2+6e}(3+|t|)^C.
+\]
+由前述圆盘界，反射后的本原值具有任意小的 \(U\)-幂次。
+最后，\(1-a-6e\ge-6e\)，因此被删除乘积的上界为 \(U^{6e+\epsilon_1}\)，在
+约化掉初步损失之后。这证明了反射
+估计。\(i\) 和 \(a\) 的范围给出 \(O_e(1)\) 对。
+\end{proof}
+
+我们称 \((i,a)\) 为该行的箱，并令
+\[
+ \delta=2a-1,\qquad 1/50\le\delta\le1.
+\]
+每一个诱导出 \(\mathcal X_u\) 中表示的本原特征
+都是有限阶赫克特征。\(\beta_*\) 的定义，
+连同 \(\beta_*>51/100\)，因此给出 \(M_i(u)\le\beta_*\)。
+特别地，该箱满足精确不等式
+\[
+ a\le\beta_*,\qquad \delta\le2\beta_*-1.
+\]
+箱 \(a=51/100\) 将由平凡行计数来界定。
+对于 \(a>51/100\)，引理~\ref{lem:buffered-bins} 中的零点产生
+大的多项式，矩可以应用于这些多项式。
+
+\begin{lemma}[逐点二进估计]\label{lem:detector-dyads}
+固定 \(r,m\) 的有界非负范围，并令
+\[
+ M_r=M_\psi(r;W_M),\qquad S_m=S_\psi(m;W_S)
+\]
+表示方程~\eqref{old-eq:1.1a} 和
+\eqref{old-eq:1.1} 中的多项式，现在以 \(U\) 为底。假设
+\(\psi\in\mathcal X_u\)，未扭轮廓在固定圆环上具有一致
+有界的光滑半范数，且任何纯范数扭的高度
+至多为 \((3i+1)T_1\)。进入同一 \(L\)-论证的所有额外 Mellin 频率
+都要求其总绝对值至多为 \(T_1/2\)。
+
+对每个 \(\epsilon>0\)，存在 \(e_0>0\)，仅依赖于
+\(\epsilon\) 和有界长度范围，以及一个有限高度
+阶 \(A_{\mathcal A}\)，在移动的行和轮廓中一致，
+使得当
+\[
+ 0<e<e_0,\qquad (1+T_1)^{A_{\mathcal A}}\le U^{\epsilon/10},
+\]
+时，对充分大的 \(Z\) 以下估计成立：
+\begin{equation}
+ |M_r|^2\ll_{\mathcal A,\epsilon}U^{\delta r+\epsilon},
+ \label{old-eq:6.2}
+\end{equation}
+\begin{equation}
+ |S_m|^2\ll_{\mathcal A,\epsilon}
+       U^{\delta\min(m,1-m)+\epsilon}.
+ \label{old-eq:6.3}
+\end{equation}
+外部尾项阶可以在正数
+\(\tau\) 之后选取。它不改变 \(A_{\mathcal A}\)。
+\end{lemma}
+
+\begin{proof}
+我们详细说明高度限制，因为完整的无限围道
+平移不能由该箱来证明其合理性。对于固定的圆环 \(W\)、
+有界实数 \(\sigma\) 和纯扭 \(y^{i\omega}\)，
+在直线 \(c+\sigma>1\) 上的 Mellin 反演给出
+\[
+ \begin{split}
+ &U^{-r/2}\sum_n\mu(n)\psi(n)
+       W(q_n/U^r)(q_n/U^r)^{-\sigma+i\omega}\\
+ &\quad=\frac1{2\pi i}\int_{(c)}
+  \mathcal MW(s)\,
+  U^{r(s+\sigma-i\omega-1/2)}
+  L_{\rm orig}(s+\sigma-i\omega,\psi)^{-1}\,ds.
+ \end{split}
+\]
+这里 \(\mathcal MW\) 是引理~\ref{lem:smooth-calculus} 中定义的
+Mellin 变换。扭出现在
+\(L\)-论证中，而不是出现在其尾项被估计的变换中。
+只将附加频率至多为所指定 \(T_1\) 分数的部分
+平移到 \(\Re(s+\sigma)=a+6e\)。
+水平连接部分和平移部分保持在
+引理~\ref{lem:buffered-bins} 的无零点矩形中。其界
+给出中心部分的 \(U^{(a-1/2+6e)r+\epsilon_1}\)。
+
+将剩余的尾项留在绝对收敛直线上，我们可以取
+其为 \(\Re(s+\sigma)=2\)。在那里倒数欧拉乘积
+绝对有界。在反向连接部分上，倒数仍保持在
+缓冲矩形内。由于实连接区间和
+长度范围有界，连接部分上剩余的算术和尺度
+因子为 \(O(U^B(1+|\Im s|)^J)\)，其中固定的 \(B,J\)
+在外部尾项阶之前选取。方程~\eqref{eq:pointwise-mellin-tail} 中的逐点 Mellin 界，
+以导数阶 \(N+\lceil J\rceil+1\) 应用于该紧
+实区间，将每个水平连接部分界定为 \(O(U^B T_1^{-N})\)。单独的竖直
+尾项由方程~\eqref{eq:late-fourier-tail} 具有相同的界。
+这两个估计都适用于未扭轮廓，在所
+述族中一致。因为 \(T_1=Z^\tau\)、\(\tau>0\)，且所有长度
+都位于一个固定有界区间内，充分大的固定 \(N\)
+使这些误差小于所声称的界。
+按所规定的 \(\epsilon\) 取 \(e\) 和 \(\epsilon_1\) 足够小
+即证明方程~\eqref{old-eq:6.2}。
+
+对于普通多项式，同样的计算使用
+\(L_{\rm orig}\) 而不是其倒数。平移到
+\(\Re(s+\sigma)=a+6e\) 给出
+\[
+ |S_m|\ll U^{(a-1/2+6e)m+\epsilon_1}
+          +O(U^B T_1^{-N}).
+\]
+或者将其中心部分平移到
+\(\Re(s+\sigma)=1-a-6e\)。该函数是整函数，因为该
+行是非主行。引理~\ref{lem:buffered-bins} 的反射估计给出
+\[
+ |S_m|\ll
+ U^{a-1/2+12e+\epsilon_1}
+ U^{(1/2-a-6e)m}(3+T_1)^C
+ +O(U^B T_1^{-N}).
+\]
+这里的连接部分只需要全局上条带界和
+被删除乘积的负条带界，因为不存在倒数。
+这些给出如上所述的固定 \(B,J\)，因此逐点
+Mellin 估计界定连接部分，而积分傅里叶估计
+界定绝对收敛直线上的尾项。取更好的中心界，
+选择 \(N\) 也
+支配当 \(m>1\) 时可能为负的指数，并
+使用所展示的高度假设即证明
+方程~\eqref{old-eq:6.3}。小于
+\(U\) 的本原导子会减小反射后的导子因子。原始被删除的
+欧拉因子已经包含在
+引理~\ref{lem:buffered-bins} 中。

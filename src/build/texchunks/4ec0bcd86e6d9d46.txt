@@ -1,0 +1,74 @@
+\begin{corollary}\label{cor:nonresidues-square-roots}
+存在绝对常数 $A,C>0$，使得对每个奇素数 $p$，
+最小正二次非剩余 $n(p)$ 满足
+\[
+ n(p)\le C(\log p)^A.
+\]
+特别地，对每个 $\delta>0$ 有 $n(p)\ll_\delta p^\delta$，这证明了
+维诺格拉多夫的最小二次非剩余猜想
+\cite[Conjecture 1.1]{TaoNonresidues}。
+给定一个奇素数 $p$ 以及二进制表示下的 $a\in\mathbb F_p$，
+存在一个确定性算法，其运行时间是 $\log p$ 的多项式，
+它返回 $a$ 的一个平方根，或报告不存在平方根。
+\end{corollary}
+
+\begin{proof}
+由定理~\ref{thm:main} 和函数方程，每个本原狄利克雷 $L$ 函数的非平凡
+零点都位于
+$1/8\le\Re s\le7/8$。因此它们位于严格更大的带形区域
+$1/16<\Re s<15/16$ 中。这为
+Bhargava、Ivanyos、Mittal 和 Saxena
+\cite[Conjecture 6.3 and Theorem 6.7]{BIMS} 的弱 GRH 假设提供了
+$\epsilon=7/16$。
+他们关于最小二次非剩余的界给出了所断言的不等式，例如取 $A=32$；这里不需要
+任何优化。
+对每个 $\delta>0$ 的断言随之成立，因为 $\log p$ 的每个固定幂都是
+$O_\delta(p^\delta)$。
+
+对于该算法，首先处理 $a=0$，并用欧拉判别法检验非零的 $a$。如果 $a$ 是
+平方元，则扫描 $2,3,\ldots$ 直到找到一个二次非剩余，并用其勒让德符号检验
+每个候选者。
+刚刚证明的界使这成为一个多项式时间的确定性
+搜索；其停止规则不需要知道 $C$。
+将得到的非剩余用于 Tonelli--Shanks 算法
+\cite[Section 2.9, Algorithm 3 and Lemma 2.9.5]{Galbraith}。
+所有剩余步骤都是确定性的，并且是 $\log p$ 的多项式。
+将 $p-1=2^e u$ 写成 $u$ 为奇数只需要去掉因子二，
+而不需要对 $u$ 分解。
+\end{proof}
+
+\section{从公共信号到无零点半平面}
+\label{sec:analytic-reduction}
+
+证明的两部分使用相同的解析原理。一个特征和被直接界定，同时也与一个包含
+目标 $L$ 函数倒数的梅林积分相比较。两个比较中的幂节省
+随后将该倒数延拓到最右侧可能的零点之外。我们
+对可变边界证明这一原理，以便它可以应用于
+$11/12$ 和 $7/8$ 而无需重复论证。
+
+在整篇论文中，$F=\mathbb Q(\sqrt{-3})$。只需考虑
+本原目标特征。事实上，由本原
+特征 $\eta$ 诱导的特征，其 $L$ 函数与 $L_F(s,\eta)$ 相差有限
+多个因子 $1-\eta(\mathfrak p)N\mathfrak p^{-s}$，这些因子对
+$\Re s>0$ 都非零。定义
+\begin{equation}
+ \beta_* = \sup\left(\{1/2\}\cup
+ \left\{\Re\rho:\begin{array}{l}
+  1/2\le\Re\rho\le1,\quad L_F(\rho,\eta)=0\\
+  \text{for some primitive finite-order Hecke character }\eta
+ \end{array}\right\}\right).
+ \label{old-eq:1.1b}
+\end{equation}
+极点不包括在内。欧拉积的绝对收敛排除了
+$\Re s>1$ 中的零点，所以 $1/2\le\beta_*\le1$。
+
+对于素理想的有限集合 $\mathcal S$，上标 $\mathcal S$
+表示相应的欧拉因子已被删除：
+\[
+ L_F^{\mathcal S}(s,\eta)
+ =L_F(s,\eta)\prod_{\mathfrak p\in\mathcal S}
+       (1-\eta(\mathfrak p)N\mathfrak p^{-s}).
+\]
+在分歧素数处局部值为零。每个展示的因子对 $\Re s>0$ 都非零，
+所以删除有限多个因子既不会在那里产生也不会移除
+零点。

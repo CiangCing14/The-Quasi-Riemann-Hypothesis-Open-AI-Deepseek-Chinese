@@ -1,0 +1,71 @@
+设 \(D_{\mathbf b}\) 如
+式~\eqref{old-eq:2.18a} 中所示，并令
+\[
+ U_i=X_i/q_{\mathfrak b_i},\qquad
+ V_i=Y_i/q_{\mathfrak b_i},\qquad
+ T=U_1U_2=V_1V_2.
+\]
+若对 \(i=1,2\) 及某个 \(r\ge0\) 有 \(U_i,V_i\ge Z^r\)，
+则
+\begin{equation}
+ \begin{split}
+ T^{-1/2}\left|
+ \sum_{l_1,l_2}
+ \vartheta(l_1)\vartheta(l_2)
+ 1_{(l_1l_2,\mathfrak R_*)=1}
+ q_{l_1l_2}^{it}D_{\mathbf b}(l_1,l_2)
+ \right|
+ \ll Z^{\epsilon_1}(1+|t|)^{2J}T^{1/2}Z^{-r}.
+ \end{split}
+ \label{old-eq:2.18f}
+\end{equation}
+在没有非负下界长度时，同一表达式为
+\(O(T^{1/2})\)。
+\end{lemma}
+
+\begin{proof}
+首先略去掩码。表示 \(\mathcal S\) 之外理想的素生成元，带有固定特征权重
+\(\vartheta\)，是固定格中剩余类的一个有限加权集合。在该格上对
+\[
+ f_{X,t}(z)=q_z^{it}W_i(q_z/X)
+           =X^{it}f_t(z/\sqrt X),\qquad
+ f_t(z)=q_z^{it}W_i(q_z).
+\]
+应用泊松求和。傅里叶变换为
+\(X^{1+it}\widehat f_t(\sqrt X\,\xi)\)。
+由于 \(f_t\) 支集在固定圆环上，对任意固定的 \(J_0>2\) 分部积分给出
+\[
+ |\widehat f_t(\xi)|
+ \ll_{J_0} (1+|t|)^{J_0}(1+|\xi|)^{-J_0},
+\]
+其中用到 \(W_i\) 的有限多个半范数。对于 \(X\ge1\)，对固定对偶格的非零点的求和因此为
+\[
+ \ll (1+|t|)^{J_0} X
+       \sum_{\xi\ne0}(1+\sqrt X|\xi|)^{-J_0}
+ \ll (1+|t|)^{J_0}
+\]
+必要时增大 \(J_0\) 即可。对于 \(0<X<1\)，格和及其零频主项均通过固定圆环上的绝对计数为 \(O(1)\)。零频为
+\(c_\vartheta X^{1+it}I_i(t)\)，其中 \(c_\vartheta\) 是剩余类的固定加权均值。这证明了式~\eqref{old-eq:2.18d} 的无掩码版本。
+
+现在通过容斥插入掩码。首先从
+\(\mathfrak R_*\) 中移除其在 \(\mathcal S\) 中的素数，因为每个求和理想已经避开它们。因此下文所用的所有除数都在 \(\mathcal S\) 之外。以 \(\mathcal L_i^0\) 记无掩码和，乘性给出
+\[
+ \mathcal L_i(X,t)
+ =\sum_{d\mid\mathfrak R_*}
+       \mu(d)\vartheta(d)q_d^{it}\mathcal L_i^0(X/q_d,t).
+\]
+主系数为
+\[
+ c_{\vartheta,\mathfrak R_*}
+ =c_\vartheta\sum_{d\mid\mathfrak R_*}
+             \frac{\mu(d)\vartheta(d)}{q_d}.
+\]
+提取出的 \(q_d^{it}\) 抵消了 \(X/q_d\) 处主项中的
+\(q_d^{-it}\)。这证明了该系数与 \(X\) 和 \(t\) 均无关。
+误差至多乘以除数个数
+\(\#\{d:d\mid\mathfrak R_*\}\ll_{\epsilon_1,B_*}Z^{\epsilon_1}\)。
+系数本身也由多项式规模的欧拉乘积估计为 \(Z^{\epsilon_1}\)-有界。这证明了
+式~\eqref{old-eq:2.18d}。
+
+对于式~\eqref{old-eq:2.18e}，在原和中取绝对值。它在某个固定正尺度以下为空；只要非空，固定圆环上的理想计数给出 \(O(X)\)
+个点。这对 \(t\) 和掩码一致。

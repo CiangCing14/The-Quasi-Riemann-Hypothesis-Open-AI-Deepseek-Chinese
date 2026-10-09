@@ -1,0 +1,59 @@
+令 $h=2-3/(3\alpha-1)=(2\alpha-5/3)/(\alpha-1/3)$ 且
+$\beta=2-2/(3\alpha-1)$。若 $M\ge N^h$，
+则式~\eqref{eq:sextic-sieve-norm-recurrence} 中的中间项至多为
+$(MN)^{2/3}$。若 $M<N^h$，则对
+式~\eqref{eq:sextic-sieve-norm-monotone} 以 $N^h\log(2MN)$ 的固定倍数
+代替 $M$ 来应用。此时
+式~\eqref{eq:sextic-sieve-norm-recurrence}
+给出 $(MN)^\varepsilon N^\beta$，因为
+$2(h+1)/3=\beta$ 且 $h<\beta$。于是两种情形下均有
+\[
+ D_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+                   \{M+N^\beta+(MN)^{2/3}\}.
+\]
+对称性给出式~\eqref{eq:sextic-sieve-inductive-bound}，其中以
+$\beta$ 代替 $\alpha$，且对每个 $j\in J$ 同时成立。
+从 $2$ 出发，映射 $\alpha\mapsto2-2/(3\alpha-1)$ 递减趋于
+$4/3$。对于所要求的损失，取有限多次迭代，直到
+剩余的指数差距小于该损失的某个固定比例，并将其
+吸收进 $(MN)^\varepsilon$。结合该界及其对称
+形式，利用
+当 $M\le N$ 时 $M^{4/3}\le(MN)^{2/3}$ 以及当
+$N\le M$ 时的类似不等式，即证得
+\begin{equation}\label{eq:sextic-sieve-norm-shell}
+ D_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+               \{M+N+(MN)^{2/3}\}\qquad(j\in J).
+\end{equation}
+
+对两个范数球作二进细分，并沿列
+壳层使用柯西不等式，将式~\eqref{eq:sextic-sieve-norm-shell} 转化为对
+以 $F_b(a)=\chi_a(b)$ 为元素的球矩阵的相同
+界。对数
+因子被一个更小的预备损失吸收，而单位
+壳层则直接估计。式~\eqref{eq:sextic-large-sieve} 中
+$\varsigma=1$ 的矩阵是此矩阵在长度 $(D,K)$ 处的转置。
+复矩阵与其转置具有相同的算子范数，这由
+伴随恒等式及整体向量共轭可得。该界对两个长度
+对称，因此它恰好给出
+$K+D+(KD)^{2/3}$。对整个内和取共轭给出
+$\varsigma=-1$，零点不变。最后，固定的行限制
+去掉非负项，而固定的系数限制则通过零延拓施加。
+这就证明了引理的所有断言。
+\end{proof}
+
+\subsection{物理行及其逆见证}
+
+筛法既已证明，剩下便是将其应用于检测器见证。
+我们仅将该引理应用于物理行的无平方因子部分。无平方因子
+与幂次行因子的分离也用于
+\cite{BGL} 的推论 1.4 的证明中；此处我们保留幂次因子的实际范数，
+因为它同时控制矩和行数。
+
+\begin{proposition}[六次筛行包络]\label{prop:sextic-row-count}
+固定算术数据 $\mathcal A$、有界物理范围
+$d_{\min}\le d\le d_{\max}$，以及
+引理~\ref{lem:buffered-bins} 和~\ref{lem:detector-dyads} 的高度与损失假设。令
+$U=Z^d$ 并沿用这些引理中的记号 $T_1$。设 $\mathcal B$
+为任意一组保留的六次方自由元素行 $u$，满足
+$q_u\asymp U$，全部位于同一个箱 $(i,a)$ 中且 $a>51/100$。令
+$\delta=2a-1$，从而 $1/50<\delta\le1$。

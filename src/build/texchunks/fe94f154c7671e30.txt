@@ -1,0 +1,66 @@
+\begin{lemma}[缓冲无零窗格]\label{lem:buffered-bins}
+对每个保留下来的行 \(u\)，存在一个指标
+\(i\in\{1,\ldots,I-1\}\) 和一个格点
+\[
+ a\in(51/100+e\mathbb Z_{\ge0})\cap[51/100,1]
+\]
+具有以下性质。对 \(j=1,\ldots,I\)，置
+\[
+ M_j(u)=\max\left(\{51/100\}\cup
+ \left\{\Re\rho:
+ \begin{array}{l}
+  \psi\in\mathcal X_u,\quad L(\rho,\psi^*)=0,\\
+  \Re\rho\ge51/100,\quad |\Im\rho|\le3jT_1
+ \end{array}\right\}\right).
+\]
+则
+\[
+ a\le M_i(u)<a+e,\qquad M_{i+1}(u)<a+2e.
+\]
+若 \(a>51/100\)，则某个 \(\psi\in\mathcal X_u\) 有一个零点
+\(\rho=\sigma+i\gamma\) 满足
+\[
+ a\le\sigma<a+e,\qquad |\gamma|\le3iT_1.
+\]
+对每个 \(\epsilon_1>0\)、每个 \(\psi\in\mathcal X_u\) 以及
+充分大的 \(Z\)，在保留下来的行上一致地有
+\[
+ |L_{\rm orig}(s,\psi)|+|L_{\rm orig}(s,\psi)^{-1}|
+ \ll_{\mathcal A,e,\epsilon_1} U^{\epsilon_1}
+ \quad
+ \left(\Re s\ge a+6e,\ |\Im s|\le(3i+2)T_1\right).
+\]
+在同一高度范围内的反射线上，
+\[
+ |L_{\rm orig}(1-a-6e+it,\psi)|
+ \ll_{\mathcal A,e,\epsilon_1}
+ U^{a-1/2+12e+\epsilon_1}(3+T_1)^C,
+\]
+其中 \(C\) 仅依赖于固定的实条带和该域。
+可能的配对 \((i,a)\) 有 \(O_e(1)\) 个，与行及其导子无关。
+\end{lemma}
+
+\begin{proof}
+每个最大值都存在：该集合是有限的，每个非主本原 \(L\) 函数的零点在紧矩形中是离散的，而绝对欧拉收敛排除了实部大于一的零点。序列 \(M_j(u)\) 单调不减且落在 \([51/100,1]\) 中。若其 \(I-1\) 个增量中的每一个都超过 \(e\)，则
+\[
+ M_I(u)-M_1(u)>(I-1)e>1,
+\]
+这是不可能的。选取一个指标使得
+\(M_{i+1}(u)-M_i(u)\le e\)，并将 \(M_i(u)\) 在所述格点上向下取整。这就给出了两个不等式。当 \(a>51/100\) 时，最大值 \(M_i(u)\) 由某个实际零点达到，从而给出 \(\rho\)。
+这一推理允许直线一上存在零点。
+
+对于 \(|t|\le(3i+2)T_1\)，以 \(2+it\) 为圆心、半径为 \(2-a-2e\) 的闭圆盘的实部至少为 \(a+2e\)。
+其半径小于 \(3/2<T_1\)，因此其中每个点的虚部绝对值都小于 \(3(i+1)T_1\)。
+因此界 \(M_{i+1}(u)<a+2e\) 排除了该圆盘中每个本原函数的每个零点。引理~\ref{lem:logarithmic-control}
+控制了半径为 \(2-a-6e\) 的同心圆盘。以圆心 \(2+i\Im s\) 应用它，并在更右侧使用绝对欧拉收敛。由于 \(Q_\psi\ll_{\mathcal A}U\) 且
+\((3+|t|)^2\ll_e U^{1/50}\)，该引理中任意小的幂次可以取得使其贡献为 \(U^{\epsilon_1/2}\)。
+该引理之后关于多项式大小被删除欧拉乘积的估计提供了另一个 \(U^{\epsilon_1/2}\)。
+
+对于最后一个断言，引理~\ref{lem:hecke-strip-growth}
+的证明中回顾的本原函数方程
+\cite[Equation (1.1)]{GZ} 将 \(1-a-6e+it\) 处的值与 \(a+6e-it\) 处的共轭本原函数联系起来。该共轭表示属于 \(\mathcal X_u\)。导子和伽马商至多贡献
+\[
+ Q_\psi^{a-1/2+6e}(3+|t|)^C.
+\]
+由前述圆盘界，反射后的本原值具有任意小的 \(U\) 幂次。最后，\(1-a-6e\ge-6e\)，因此在减少初步损失后，被删除乘积的上界为 \(U^{6e+\epsilon_1}\)。这证明了反射估计。\(i\) 和 \(a\) 的范围给出 \(O_e(1)\) 个配对。
+\end{proof}

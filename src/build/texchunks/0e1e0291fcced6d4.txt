@@ -1,0 +1,65 @@
+\begin{lemma}[固定射线素因子正规化子]\label{lem:ray-prime-normalizer}
+设 $T$ 是 $F$ 的一个射线类群的固定商群，当某个非分歧素理想的像为单位元时，记
+$p\in1_T$。
+对于固定的非负、非零光滑环形权 $W$，
+\begin{equation}\label{eq:ray-prime-normalizer}
+ \sum_{p\in1_T}W(q_p/P)q_p^{-5/6}
+ \sim\frac{P^{1/6}}{|T|\log P}
+      \int_0^\infty W(y)y^{-5/6}\,dy.
+\end{equation}
+删除任何进一步的固定有限素数集不改变此渐近式。其下阈值可以依赖于所有固定数据。
+\end{lemma}
+
+\begin{proof}
+对于对应于 $T$ 的 $F$ 的固定阿贝尔扩张，固定 Frobenius 类中的素理想定理给出
+\[
+ \pi_{1_T}(x):=\#\{p\in1_T:q_p\le x\}
+       \sim\frac{\operatorname{Li}(x)}{|T|}.
+\]
+这是 \cite[Theorem 1.1]{TZ} 中 Chebotarev 的固定扩张推论；当
+$x\to\infty$ 时扩张及其导子是固定的。若 $\operatorname{supp}W\subset[a,b]\subset(0,\infty)$，
+则误差 $o(x/\log x)$ 对 $aP\le x\le bP$ 一致成立，当 $P\to\infty$ 时。
+因此，当 $d\pi_{1_T}(x)$ 被 $dx/(|T|\log x)$ 替换时，Stieltjes 分部积分将
+方程~\eqref{eq:ray-prime-normalizer} 的左边改变 $o(P^{1/6}/\log P)$。所得的积分为
+\[
+ \frac{P^{1/6}}{|T|\log P}
+ \int_a^b W(y)y^{-5/6}\frac{\log P}{\log(Py)}\,dy.
+\]
+最后一个比值一致趋于一。这证明了该公式及其正性。固定有限集最终位于环形窗口之外。
+没有使用对射线导子一致的误差指数。
+\end{proof}
+
+\subsection{完全有限傅里叶相关}\label{sec:finite-correlations}
+
+我们现在允许模数中出现任意素数幂。下面的双变量记号
+$G(a,k)$ 是有限傅里叶和；它不同于引理~\ref{lem:fixed-gauss-phase} 中的单变量
+有限射线函数 $G(a)$。定义
+\begin{equation}
+ G(a,k)=q_a^{-1/2}\sum_{x\bmod a}\chi_a(x)e(kx/a),\qquad G(1,k)=1.
+ \label{old-eq:2.4}
+\end{equation}
+本小节中的所有特征均具有第~\ref{sec:arithmetic} 节中指定的零延拓，
+并且我们令 $v_p(0)=+\infty$。
+
+\begin{lemma}[素数幂傅里叶和]\label{lem:prime-power-fourier}
+对于 $P=q_p$ 及每个整数 $a\ge1$，
+\begin{equation}
+ \begin{aligned}
+ |G(p^a,k)|&=P^{(a-1)/2}1_{v_p(k)=a-1},&&6\nmid a,\\
+ G(p^a,k)&=P^{a/2}1_{p^a\mid k}
+             -P^{a/2-1}1_{p^{a-1}\mid k},&&6\mid a.
+ \end{aligned}
+ \label{eq:gauss-local}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+将模 $p^a$ 的剩余类写为 $x_0+py$，其中 $x_0\bmod p$ 且
+$y\bmod p^{a-1}$。对 $y$ 的求和为零，除非 $p^{a-1}\mid k$，否则
+等于 $P^{a-1}$。在后一种情况下写 $k=p^{a-1}k_0$。
+剩余的归一化和为
+\[
+ P^{a/2-1}\sum_{x_0\bmod p}\chi_p(x_0)^a e(k_0x_0/p).
+\]
+若 $6\nmid a$，其内和为当 $p\mid k_0$ 时消失，否则绝对值为 $\sqrt P$。若 $6\mid a$，内和为单位元上的加性特征之和，即 $P1_{p\mid k_0}-1$。这些正是陈述中的两种情形。
+\end{proof}

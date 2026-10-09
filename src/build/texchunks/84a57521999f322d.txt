@@ -1,0 +1,33 @@
+最后，不使用任何素数槽并取 \(t=1\)。对于逆向一侧，使用式~\eqref{eq:no-slot-inverse-count}，其中对每个 \(r\le1\) 包含 \(e(r)=1\)；对于普通一侧，使用引理~\ref{lem:plain} 的零槽情形。选取增益为零，即在两条比较行中取 \(x=0\)，同样的简短计算给出 \(R_{\rm short}(1)=1-2\delta/3\)；长界为 \(L(1)=1-\delta\)。两个输入都不需要素数供给假设，从而证明了最后的断言。
+\end{proof}
+
+\begin{remark}[超出第二部分分箱上限的未选取逆向见证]
+式~\eqref{eq:no-slot-inverse-count} 的推导仅使用了命题~\ref{prop:detector-witness} 和引理~\ref{lem:inverse-amplification} 中的逆向尖峰。因此，对于满足这些假设的共享检测器的任何实例，它都可以重复，与当前第二部分分箱上限无关。从而，对于每个固定的 \(t\in[1,3/2]\)，只要
+\[
+ a>51/100,\qquad 1/50<\delta=2a-1\le1,
+\]
+且 \(r\) 位于规定的有界非负范围内，式~\eqref{eq:no-slot-inverse-count} 中的界在保留行的固定动态分箱的每个固定呈现/二进细分上成立，并带有来自该命题的实际见证。它使用了公共逆向轮廓 \(W_{\rm base}\)、逐行参数界，以及前一个证明中使用的见证损失和高度假设，但既不需要 \(\delta\le\alpha\) 也不需要素数供给假设。此结论不包含底部分箱 \(a=51/100\) 中的所有行，这些行不一定有实际见证。
+\end{remark}
+
+命题~\ref{prop:detector-counts} 中的公式描述了下文所需的仅有的行指数。基数因子 \((1+T_1)^{A_{\mathcal A}}\) 在此显式保留。我们验证引理~\ref{lem:late-height-closure} 所需的额外依赖于目标的高度上限。设 \(\epsilon_{\rm ht}>0\) 为已随实损失一起选取的有限多个检测器高度允许量的最小值。对于固定目标，在内部轮廓阶固定之后，设 \(A_{{\rm ht},\eta}\ge0\) 支配其有限多个高度阶。令
+\[
+ \tau_{0,\eta}:=
+ \frac{d_{\min}\epsilon_{\rm ht}}{20(A_{{\rm ht},\eta}+1)}>0.
+\]
+对于 \(0<\tau\le\tau_{0,\eta}\)，\(T_1=Z^\tau\)，以及充分大的 \(Z\)，不等式 \(U\ge Z^{d_{\min}}\) 给出
+\[
+ (1+T_1)^{A_{{\rm ht},\eta}}
+ \le 2^{A_{{\rm ht},\eta}}Z^{d_{\min}\epsilon_{\rm ht}/20}
+ \le U^{\epsilon_{\rm ht}/10}.
+\]
+因此该上限强制了所有前述检测器高度假设。它在外部尾项阶和 \(Z\) 之前固定；增大该阶只改变外部测试半范数，而不改变这些内部高度阶。随后引理~\ref{lem:late-height-closure} 在不改变正实裕量或槽网格的情况下做出最终高度选择。
+
+\section{七分之八界}\label{sec:conclusion}
+
+我们完成第二部分中假设的矛盾。回顾式~\eqref{eq:part-II-bootstrap} 和~\eqref{eq:part-II-bin-ceiling}，
+\[
+ 0<\Delta=\beta_*-\frac78\le\frac1{24},\qquad
+ \kappa=\frac34+2\Delta\le\frac56,\qquad
+ \delta=2a-1\le\kappa
+\]
+对每个保留分箱成立。补偿低估计是命题~\ref{prop:probe-low}。对于同一物理探针，我们首先规范化其高展开的主项，然后对剩余行进行界定，并验证命题~\ref{lem:continuation-criterion} 所需的与目标无关的裕量。

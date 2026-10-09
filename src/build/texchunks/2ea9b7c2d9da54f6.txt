@@ -1,0 +1,40 @@
+对于好的理想 $a,b$，用它们的本原生成元表示，令
+\[
+ F_b(a)=\chi_a(b),\qquad J=\{1,2,4\}.
+\]
+这里使用的是原来的零延拓符号，当 $a$ 不是无平方因子时也是如此。它对 $a$ 和 $b$ 都是乘性的。在下面的每一个幂中，包括六的倍数，非单位元的值仍为零。
+对于 $M>0$，令
+\[
+ \mathcal I_M=\{a\text{ good}:M<q_a\le2M\},\qquad
+ \mathcal A_M=\{a\in\mathcal I_M:a\text{ squarefree}\}.
+\]
+对于支撑在 $\mathcal A_N$ 上的序列，记
+$\|\lambda\|_2^2=\sum_{b\in\mathcal A_N}|\lambda_b|^2$，并定义
+\begin{align*}
+ D_j(M,N)&=\sup_{\|\lambda\|_2=1}
+  \sum_{a\in\mathcal A_M}
+  \left|\sum_{b\in\mathcal A_N}\lambda_bF_b(a)^j\right|^2,\\
+ E_j(M,N)&=\sup_{\|\lambda\|_2=1}
+  \sum_{a\in\mathcal I_M}
+  \left|\sum_{b\in\mathcal A_N}\lambda_bF_b(a)^j\right|^2.
+\end{align*}
+空支撑给出零范数。这些范数包含所有有限射线类。我们将证明 $D_1$ 的对称界；引理中的矩阵是它的转置，两个长度互换。
+
+无平方因子范数 $D_j$ 是我们的目标。我们还需要 $E_j$，因为泊松求和会产生任意的求值理想。在其定义和中展开平方并对列特征配对，将把行长 $M$ 替换为阶为 $N^2/M$ 的对偶长度。然后幂分解将无限制的行和还原为无平方因子范数。它选取一次幂因子或二次幂因子，因此指数 $j\in\{1,2,4\}$ 被保持在一起：该集合在 $j\mapsto2j\pmod6$ 下封闭。我们将利用这个循环来改进 $D_j$ 的界中的一个暂定指数。
+
+\medskip\noindent\emph{配对求和公式。}
+使用固定的有限群
+\[
+ \mathcal T=\ker\bigl((\mathcal O/36\mathcal O)^\times
+              \longrightarrow(\mathcal O/3\mathcal O)^\times\bigr),
+ \qquad t(b)=b\bmod36\mathcal O.
+\]
+本原归一化将这些与模 $36\mathcal O$ 的射线类等同起来：每个单位轨道都有唯一的代表元，模 $3$ 等于一。特别地，$t$ 是乘性的。这个细分是固定的，因为 $2$ 和 $3$ 之上的素数属于 $S$。
+
+对于整体单位 $u$ 和好的素数 $p$，模 $p$ 的约化给出
+$\chi_p(u)=u^{(q_p-1)/6}$。由于 $q_p\equiv1\pmod6$，在 $b$ 的素因子上的乘法给出
+\begin{equation}\label{eq:sextic-sieve-unit-class}
+ \chi_b(u)=u^{(q_b-1)/6}.
+\end{equation}
+指数按模六读取：展开整数 $1+6h$ 的乘积可证明指数的相等性。因此相等的 $t$-类在六个整体单位上有相同的限制。它们也有相同的模 $4$ 剩余，这控制了引理~\ref{lem:fixed-gauss-phase} 的互反因子
+$\mathcal R$。

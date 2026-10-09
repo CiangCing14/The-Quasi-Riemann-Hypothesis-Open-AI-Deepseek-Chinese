@@ -1,0 +1,74 @@
+对每个固定的 $j$，内层和中一项非零仅当提升
+$z_k+n$ 落在 $z_j$ 的距离 $L/R$ 之内。所有提升的集合
+$\{z_k+n:1\le k\le J,\ n\in\mathcal O\}$ 在
+$\mathbb C$ 中是 $\delta$-分离的。不同的类按假设具有这一性质，而同一个类的两个不同提升相差一个非零艾森斯坦整数，其绝对值至少为一，从而至少为 $\delta$。
+以提升为中心、半径 $\delta/3$ 的圆盘位于半径 $L/R$ 的圆盘内，它们互不相交，且都落在半径 $L/R+\delta/3$ 的同心圆盘内。
+比较它们的欧几里得面积，可将这些提升的数目界定为
+\[
+ \left(1+\frac{3L}{R\delta}\right)^2
+ \ll 1+(R\delta)^{-2}.
+\]
+将 $j$ 与 $k$ 互换，同样的界成立。在泊松展开中取绝对值，使用 $\widehat F$ 的固定界，然后再使用 $2|a_ja_k|\le |a_j|^2+|a_k|^2$，我们得到
+\[
+ \sum_{q_m\le Q}\left|\sum_j a_je(mz_j)\right|^2
+ \ll R^2\bigl(1+(R\delta)^{-2}\bigr)\sum_j|a_j|^2.
+\]
+由于 $R^2=Q$，这正是所断言的估计。将 $Q$ 替换为一个固定的倍数即证得最后的陈述。
+\end{proof}
+
+我们将这一估计应用于高斯和中完整的剩余类。
+特征在此处的零延拓很重要：它使得这些分数相对于所显示的模既约，而不仅仅是相对于某个诱导导子既约。
+
+\begin{lemma}[平衡加性范数]
+\label{lem:balanced-additive-norm}
+固定探针的算术数据、环形权 $W_1$、一个射线类
+$\sigma\in T$ 以及一个行球常数 $C>0$。对于 $Y,Q\ge1$ 和每个
+实数 $v$，多项式 $A_{m,\sigma,v}(Y)$ 满足
+\[
+ \sum_{\substack{m\in\mathcal O\\q_m\le CQ}}
+       |A_{m,\sigma,v}(Y)|^2
+ \ll_{\mathcal A,W_1,C}\frac{Q+Y^2}{Y}.
+\]
+该界对 $v$ 一致。特别地，当 $Q=q_{b_*}Y^2$ 时，
+\[
+ \sum_{q_m\le CQ}|A_{m,\sigma,v}(Y)|^2
+ \ll_{\mathcal A,W_1,C}\frac QY.
+\]
+\end{lemma}
+
+\begin{proof}
+对于 $S$ 之外的一个主元 $s$，令 $r_s=q_s/Y$ 以及
+\[
+ c_\sigma(s)=1_{s\in\sigma}\frac{\chi_s(b_*)}{\tau\xi(s)}.
+\]
+其逆仅在这些与 $S$ 互素的元素上求值。这里 $|\tau|=1$，
+$|\xi(s)|=1$，且 $|\chi_s(b_*)|=1$，因为 $b_*$ 的支集在 $S$ 上。
+因此 $|c_\sigma(s)|\le1$。$A$ 的定义与高斯展开给出精确恒等式
+\[
+ A_{m,\sigma,v}(Y)
+ =Y^{-3/2}\sum_s c_\sigma(s)W_1(r_s)r_s^{-1+iv}
+       \sum_{d\bmod s}\chi_s(d)e(-md/s).
+\]
+求和遍历 $S$ 之外的主理想。对于每个这样的 $s$，特征 $\chi_s(d)$ 恰好当 $(d,s)>1$ 时为零，否则绝对值为一。这包括非无平方因子的 $s$：一个被六整除的局部指数是该素数处单位的指示函数，而不是常函数一。对于 $s=1$，单个剩余类被包含在内，且
+$\chi_1=1$。
+
+我们验证，对于有贡献的数对，分数 $d/s$ 在模 $\mathcal O$ 下互不相同。假设 $(d,s)=(d',s')=1$ 且
+$d/s-d'/s'\in\mathcal O$。那么 $ds'-d's$ 被 $ss'$ 整除。
+将此整除性模 $s$ 约化，并使用 $d$ 模
+$s$ 的逆，得到 $s\mid s'$。对称的论证给出 $s'\mid s$。
+$S$ 之外一个理想的主生成元是唯一的，故 $s=s'$；
+原来的同余式随后给出 $d=d'\pmod s$。同样的结论
+包含单位模。改变剩余类代表元只会将其分数平移 $\mathcal O$ 中的一个元素。
+
+固定 $0<r_-<r_+$ 使得 $\operatorname{supp}W_1\subset[r_-,r_+]$。
+对于两个不同的有贡献分数以及每个 $n\in\mathcal O$，
+艾森斯坦整数 $ds'-d's-nss'$ 非零。因此
+\[
+ \left|\frac d s-\frac{d'}{s'}-n\right|
+ =\frac{|ds'-d's-nss'|}{|ss'|}
+ \ge\frac1{|ss'|}\ge\frac1{r_+Y}.
+\]
+最后一个不等式使用了 $q_s,q_{s'}\le r_+Y$。因此这些分数在
+$\mathbb C/\mathcal O$ 中是
+$\delta_Y$-分离的，其中
+$\delta_Y=\min(1,r_+^{-1})/Y\le1$。

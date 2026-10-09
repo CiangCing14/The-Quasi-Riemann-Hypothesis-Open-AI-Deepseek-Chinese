@@ -1,0 +1,123 @@
+For an actual plain length \(m\le1/2\), its largest zero-loss
+capacity from Lemma~\ref{lem:plain}, at effective row width one, is
+\begin{equation}
+ z_P(m)=\frac{1-2m}{6\kappa}
+       =\frac{1-2m}{9/2+12\Delta}.
+ \label{eq:plain-zero-loss-capacity}
+\end{equation}
+Indeed the moment is applied to two copies of the plain witness,
+so its condition is \(2m+6\kappa z\le1\).
+For an inverse witness of length \(r<1\), put
+\(z_M(r)=(1-r)/2\).  We use this capacity only where the second
+strict inequality in Lemma~\ref{lem:marked} also has a fixed margin.
+
+\begin{proposition}[Row counts from the witnesses]\label{prop:detector-counts}
+Let \(\mathcal B\) be a fixed dynamic and amplitude bin of retained
+sixth-power-free physical rows \(q_u\asymp U=Z^d\), with
+\(a>51/100\), \(0<\delta=2a-1\le\alpha\), and mean amplitude
+\(q\in[0,\delta/2]\).  Put \(x=q/\delta\), so \(0\le x\le1/2\),
+and define
+\[
+ D_x=3-\frac{17x}{9},\qquad
+ P_x=\left(2-\frac{8x}{9}\right)(1-x).
+\]
+Assume the total available prime length exceeds \(7/37\) by a
+fixed positive amount.  For every \(t\in[1,3/2]\) and every
+\(\epsilon>0\), the capacity decrements and slot mesh can be chosen
+using only \(\epsilon,\Delta\) and the bounded real ranges so that
+\[
+ \#\mathcal B\ll_{\mathcal A,\epsilon}
+ U^{\max\{R_{\rm short}(t),L(t)\}+\Delta/4+\epsilon}
+ (1+T_1)^{A_{\mathcal A}},
+\]
+where \(A_{\mathcal A}<\infty\) is uniform over moving rows and
+\[
+ R_{\rm short}(t)=1-\delta+\frac{\delta P_x}{D_x}(3/2-t),
+ \qquad
+ L(t)=1-\delta+(\alpha-\delta)(t-1).
+\]
+The estimate is valid for the rowwise witnesses of
+Proposition~\ref{prop:detector-witness}, with its height condition.
+If no prime slots are selected, then \(t=1\) instead gives
+\[
+ \#\mathcal B\ll_{\mathcal A,\epsilon}
+ U^{1-2\delta/3+\epsilon}(1+T_1)^{A_{\mathcal A}},
+\]
+without a prime-supply hypothesis.  At zero inverse capacity use
+Lemma~\ref{lem:inverse-amplification}; at zero plain capacity use
+the zero-slot case of Lemma~\ref{lem:plain}.
+\end{proposition}
+
+\begin{proof}
+Subdivide by the witness presentation and dyadic pair.  The number
+of choices is \(O_{\mathcal A}((\log U)^2)\); the remaining
+rowwise smooth parameters are handled by the preceding Sobolev
+argument.  Work in one subdivision, denoting it again by
+\(\mathcal B\), and let \(r,m\) be the actual lengths
+from Proposition~\ref{prop:detector-witness}.  Whenever the selected
+slots satisfy the corresponding moment hypotheses and have total
+requested capacity \(z\), their spike and the individual witness
+spikes imply, after reducing preliminary losses,
+\[
+ \begin{array}{ll}
+ \#\mathcal B
+ \ll U^{1-\delta r-2qz+\epsilon}(1+T_1)^{A_{\mathcal A}},
+ &\text{from Lemma~\ref{lem:marked}},\\[2mm]
+ \#\mathcal B
+ \ll U^{1-2\delta m-2qz+\epsilon}(1+T_1)^{A_{\mathcal A}},
+ &\text{from Lemma~\ref{lem:plain}}.
+ \end{array}
+\]
+In the second line use two copies of \(S_m\), so the denominator
+is \(|S_m|^4\), not \(|S_m|^2\).  The effective width is one
+because the twist \(\nu\) is fixed within the row sum and has no
+moving conductor radical.  Each formula includes the arbitrarily
+small capacity, rounding, moment, and witness losses.
+
+\paragraph{Inverse witnesses without selected primes.}
+Whenever no inverse slot is selected, use instead the sixth-power
+amplification of Lemma~\ref{lem:inverse-amplification}.  It applies
+to these physical rows because their ideal valuations are at most
+five and their original zero extensions are unchanged.  After the
+present subdivision, \(U,t,D,D_*\) are common, and the inverse base
+profile is
+\[
+ W_{\rm base}(y)=W_1(y)V_{\le}(Dy/D_*).
+\]
+Its fixed logarithmic seminorms are uniformly bounded: a derivative
+of the second factor is supported where its scaled argument lies in
+a fixed compact interval.  The remaining rowwise parameters are
+\(\sigma\) in a fixed compact interval and the pure twist
+\(-(\gamma-\nu)\), of absolute value at most \((3I+1)T_1\).
+The rowwise assertion of Lemma~\ref{lem:inverse-amplification}
+therefore applies with that height range.  Replacing its factor
+\((1+(3I+1)T_1)^A\) by
+\((3I+2)^A(1+T_1)^A\) changes only a fixed constant.
+
+For clarity, this use is uniform even when \(r\) approaches one
+with \(U\).  If \(0\le r\le R_0\), Equation~\eqref{eq:amplified-note}
+with preliminary loss \(\epsilon_0\) has exponent
+\[
+ \max\left\{1,\frac{1+5(1+c)r}{6}\right\}
+       +(1+r)\epsilon_0
+ \le e(r)+\frac{5cR_0}{6}+(1+R_0)\epsilon_0,
+ \qquad e(r)=\max\left\{1,\frac{1+5r}{6}\right\}.
+\]
+For a requested loss \(\epsilon_m>0\), take, for example,
+\(c=3\epsilon_m/(10\max\{R_0,1\})\) and
+\(\epsilon_0=\epsilon_m/(4(1+R_0))\).  These are fixed before
+\(U\), and the two extra terms are at most \(\epsilon_m/2\).
+Thus division by the inverse witness spike gives
+\begin{equation}\label{eq:no-slot-inverse-count}
+ \begin{aligned}
+ \#\mathcal B&\ll
+ U^{e(r)-\delta r+\epsilon}(1+T_1)^{A_{\mathcal A}},\\
+ e(r)-\delta r&=
+ \begin{cases}
+  1-\delta r,&0\le r\le1,\\
+  1-\alpha+(\alpha-\delta)r,&r\ge1.
+ \end{cases}
+ \end{aligned}
+\end{equation}
+In particular this is not an application of the strict marked
+moment with the shrinking margin \(1-r\).

@@ -1,0 +1,43 @@
+第~\ref{par:reflection-marks}~节中的带标记反射将用到对活跃素数对的如下依赖关系。由于
+\[
+ \epsilon_p=-\lambda^{-5}(c/p)^{-2}\pmod p,
+\]
+存在一个绝对值为一的标量 $\xi_{p,j}$，它依赖于 $p,j$ 但不依赖于任何其他活跃素数，使得
+\begin{equation}\label{eq:reflection-cross-prime-phase}
+ \chi_p(\sigma_p)^{-2}\omega_{p,j}
+       =\xi_{p,j}\chi_p(c/p)^{2j+2}.
+\end{equation}
+对于 $j=4$，这用到 $2j+2\equiv-2\pmod6$；对于其他指数，代入 $\epsilon_p$ 的表达式即可立即得到。
+因此，另一个活跃素数对 $p$ 处相位的贡献，其指数模六恰为 $2j+2$。特别地，活跃指数
+$j=1$ 具有列耦合 $\chi_p(x)^{-3}=\chi_p(x)^3$。
+
+\emph{梅林归一化与延拓。}
+令
+\[
+ J(s)=\int_0^\infty
+       \left.\partial_{\bar z}\mathcal F(z,v)\right|_{z=0}
+       v^{2s-1}\,dv.
+\]
+\cite[Lemma~5.3]{DR} 中使用的贝塞尔恒等式为
+\[
+ \int_0^\infty K_{1/3}(y)y^{w-1}\,dy
+  =2^{w-2}\Gamma((w-1/3)/2)\Gamma((w+1/3)/2)
+       \qquad(\Re w>1/3).
+\]
+在 $\Re s>1$ 上，系数和绝对收敛，因此我们可以逐项对其展开式求导并积分。
+由于 $\partial_{\bar z}\check e(\mu z)=2\pi i\bar\mu\check e(\mu z)$，
+取 $w=2s+1$ 的恒等式给出
+\[
+ J(s)=\frac i4(2\pi)^{-2s}\Gamma(s+1/3)\Gamma(s+2/3)
+       \sum_{0\ne\mu\in\lambda^{-3}\mathcal O}d_I(\mu)\phi(\lambda^3\mu)
+          \prod_p\chi_p(\lambda^3\mu)^{j_p}
+          \bar\alpha(\mu)q_\mu^{-s}.
+\]
+首先如上所述使用整指数掩码限制到 $(nb,\mathfrak E)=1$，
+然后代入式~\eqref{eq:reflection-infinity-coefficient} 和
+\eqref{eq:reflection-cubic-sextic-conversion}。利用
+$q_{\lambda^{-3}}=27^{-1}$ 和 $\bar\alpha(\lambda^{-3})=-i$ 得到
+\begin{equation}\label{eq:reflection-direct-mellin}
+ J(s)=\frac{3^{5/2}}4\left(\frac{27}{(2\pi)^2}\right)^s
+       \Gamma(s+1/3)\Gamma(s+2/3)T(s,\Psi).
+\end{equation}

@@ -1,0 +1,28 @@
+\paragraph{双变换归约。}
+我们对式~\eqref{eq:canonical-block} 中每个剩余块证明如下条件估计。设 \(\epsilon_{\rm child}\ge0\)。
+假设形如
+\eqref{eq:canonical-energy} 的每个能量 \(\mathcal E'\)，满足引理~\ref{lem:canonical-moment} 的全部系数与支撑假设、相同的固定槽上限、参数
+\[
+ 0\le M'\le M-d,\qquad 0\le N',V',\qquad F'=N'+V'\le F+11\eta,
+\]
+且两个边缘至少为 \(c_{\rm node}-7\eta\)，满足
+\(\mathcal E'\ll Z^{F'+\epsilon_{\rm child}}\)。
+该假设在此归纳所用的有界范围内一致成立，具有与该引理中相同的有限半范数依赖和固定多项式高度依赖。对于
+\(\eta\le d/16\)，剩余块满足
+\begin{equation}\label{eq:canonical-reduction-contract}
+ \text{block in Equation~\eqref{eq:canonical-block}}
+ \ll Z^{F+40\eta+\tau+\pi+\epsilon_{\rm child}},
+\end{equation}
+并具有同一种一致依赖。自由选择的局部损失之和为 \(\pi\)；主项与被丢弃的尾项均包含在此估计中。因此该归约恰好提供了反向归纳所需的蕴含。其证明由下面两个变换构成：第一个产生一个正的多项式倒数范数，第二个构造出假设所适用的更小的典范能量。
+
+接下来我们说明两个变换中所用的支撑与局部化约定。对于一个实际理想或非零元素 \(a\)，记
+\(\widehat a=\log_Zq_a\)。对于指定的标量中心，帽子将表示其所指理想的实对数范数。下面引入的所有理想中心都是来自固定二进划分的非负中心。
+已固定的穿刺以及下面引入的理想 \(q_0\) 均按其实际对数范数使用，而不使用独立取整的中心。
+
+两个变换中引入的每个单独二进区间都有一个固定的紧归一化支撑。若 \(a\) 是其理想，\(a_{\rm cen}\)
+是其指定的对数中心，则我们使用
+\begin{equation}\label{eq:inverse-ratio-bounds}
+ |\log_Zq_a-a_{\rm cen}|\le\eta.
+\end{equation}
+此约定适用于原始的 \(n_i,b_i,f\) 窗口，也适用于每个被提取理想的二进区间在其被引入之时。乘积与商的误差是这些单个误差之和；下面新的剩余窗口具有明确给出的界 \(4\eta\)、\(6\eta\)
+和 \(4\eta\)。这些估计涉及固定的紧归一化比值区间，而非比值为 \(Z^\eta\) 的圆环。

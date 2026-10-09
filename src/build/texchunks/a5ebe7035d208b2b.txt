@@ -1,0 +1,12 @@
+\[
+ e_o(r)-\delta r
+ =\max\left\{
+ A-\delta r,\quad
+ \frac{1-x}{2}+(1-\delta)r,\quad
+ \frac12+\frac x6+\left(\frac23-\delta\right)r
+ \right\}.
+\]
+以三个实数的最大值为变量的 $A$ 的最小值，等于以这些数为变量的各最小值中的最大值。第一个这样的最小值是
+$A-\delta r\le1-\delta/2$。对于固定的 $r$，第二个是
+$x$ 的一个递增仿射函数与一个递减仿射函数的最小值。它们在
+$x=(1-\delta)r\in[0,1]$ 处相交，因此它关于 $x$ 的最大值是

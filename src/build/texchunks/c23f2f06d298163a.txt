@@ -1,0 +1,67 @@
+将展开后的多项式写作
+$\sum_{s,d}a_{s,d}e(-md/s)$，其中只保留单位剩余类，
+其系数平方质量为
+\[
+ \begin{split}
+ \sum_{s,d}|a_{s,d}|^2
+ &=Y^{-3}\sum_s |c_\sigma(s)W_1(r_s)|^2r_s^{-2}
+       \varphi_{\mathcal O}(s),\\
+ \varphi_{\mathcal O}(s)
+ &:=\#(\mathcal O/s\mathcal O)^\times,\qquad
+ \varphi_{\mathcal O}(1):=1.
+ \end{split}
+\]
+此表达式中不依赖于 $v$。由于
+$\varphi_{\mathcal O}(s)\le q_s\le r_+Y$，在支集上 $r_s\ge r_-$，
+且满足 $q_s\le r_+Y$ 的理想有 $O(Y)$ 个，故该质量为 $O(Y^{-1})$。
+将引理~\ref{lem:planar-additive-sieve} 应用于间隔为 $\delta_Y$ 的点 $-d/s$，
+即证得第一个界。最后 $q_{b_*}\ge1$，
+故 $Q=q_{b_*}Y^2$ 蕴含 $Q+Y^2\le2Q$，从而证得第二个界。
+\end{proof}
+
+加性范数现在恰好具有与未标记完备行范数配对所需的尺度。以下命题对原始探针执行该配对。
+
+\begin{proposition}[平衡低估计]
+\label{prop:balanced-low}
+固定用于定义 $I_\eta$ 的算术数据与光滑权重。
+对任意 $\epsilon>0$，当 $Z\to\infty$ 时，
+\[
+ \bigl|I_\eta(Z^{1/2},Z^{1/2},Z)\bigr|
+ \ll_{\mathcal A,\epsilon} Z^{1/4+\epsilon}.
+\]
+该指数与目标特征无关；隐含常数与下阈值可能依赖于其固定的算术数据。
+\end{proposition}
+
+\begin{proof}
+令 $X=Y=Z^{1/2}$ 且 $Q=q_{b_*}XY=q_{b_*}Z$。方程~\eqref{eq:low-separated} 中的函数 $\Omega$
+有界，且支集在 $(0,\infty)$ 的一个固定紧子区间内。因此该恒等式中的所有行都落在
+$0<q_m\le C_\Omega Q$ 内，其中 $C_\Omega$ 为固定常数。
+
+将引理~\ref{lem:unmarked-completed-moment} 取特化 $M=N=1$，随后用定义 $B_{m,\sigma}$ 的有限射线分解，对任意 $\epsilon_1>0$ 给出
+\[
+ \sum_{0<q_m\le C_\Omega Q}|B_{m,\sigma}(Z)|^2
+ \ll_{\mathcal A,\epsilon_1} Z^{1+\epsilon_1}.
+\]
+事实上，$q_{b_*}$ 固定，故行球是 $M=1$ 球的固定倍数。完备尺度为 $Z$，即该引理中的 $N=1$。
+该引理直接适用于定义 $B$ 的完备积分中的高斯轮廓；
+对射线特征所作的固定有限傅里叶和在行希尔伯特空间中由三角不等式仅付出一个固定因子。
+特别地，此应用保留了原始的行零掩码。
+
+对方程~\eqref{eq:low-separated} 中的行和施用柯西--施瓦茨不等式。因子 $(q_m/Q)^{-iv}$ 的绝对值为一，
+$|\xi(m)|\le1$ 及其零延拓，且 $\Omega$ 有界。
+引理~\ref{lem:balanced-additive-norm} 对 $v$ 一致，而 $B$ 与 $v$ 无关。
+由于 $W_0$ 光滑且为环形，
+$\int_{\mathbb R}|\widehat W_0(iv)|\,dv<\infty$。因此对 $\sigma\in T$ 的有限和给出
+\[
+ \begin{split}
+ |I_\eta(X,Y,Z)|
+ &\ll_{\mathcal A,\epsilon_1}
+ Q^{-1/2}\left(\frac QY\right)^{1/2}Z^{1/2+\epsilon_1/2}\\
+ &=Z^{1/4+\epsilon_1/2}.
+ \end{split}
+\]
+取 $\epsilon_1=2\epsilon$ 即证得该命题。
+\end{proof}
+
+\section{泊松表示及其欧拉因子}
+\label{sec:poisson-representation}

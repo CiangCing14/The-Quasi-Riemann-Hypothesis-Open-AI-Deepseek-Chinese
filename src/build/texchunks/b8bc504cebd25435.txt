@@ -1,0 +1,17 @@
+为清晰起见，这些区间在整个有限深度上被一致地固定如下。在每次因式分解时，选取新的单个光滑截断函数，使其在商支撑上等于一，并包含这些截断函数的完整支撑、傅里叶分离中所用较大截断函数的完整支撑，以及扩大后的标签窗口的完整支撑。同时包含下文所用的有界裁剪族。端点的乘积与商确定了初始商支撑，例如 \(b=hh'\)、剩余 \(n\) 以及子列与标签的商支撑。将此构造迭代 \(D\) 层，得到一个有限集合 \(\mathcal I_D\)，由紧致的归一化比值区间组成。若 \(L_{\rm win}\) 为其端点绝对对数的最大值，则阈值
+\(\log Z\ge L_{\rm win}/\eta\) 蕴含
+Equation~\eqref{eq:inverse-ratio-bounds} 以及下文指定的所有新支撑界。当一个正和式被放大后，其新加入的列或标签无需满足旧的父乘积恒等式。它们在此节点及下一节点的范数界直接来自 \(\mathcal I_D\) 中完整的独立新窗口。分离出的范数幂不改变这些支撑。
+
+我们使用 Lemma~\ref{lem:smooth-calculus} 中公共联合傅里叶演算的如下特化。在待从列中分离的耦合光滑因子中出现的每个归一化范数，都是某个环境轮廓的坐标 \(y_1,\ldots,y_d\)。保留在权重中的导出的外掩码或标签截断仍处于外部，无需轮廓坐标。将当前的单个二进截断和新列截断保持在反演之外，直到使用它们的加权柯西不等式处。将耦合轮廓乘以较大的单个截断 \(\Omega_j\)，使其在这些保留截断的完整支撑上等于一。对于所得的紧致轮廓 \(\mathfrak H\)，在对任何当前行或标签求和之前，定义
+\begin{equation}\label{eq:inverse-log-fourier}
+ \begin{split}
+ \widehat{\mathfrak H}(\boldsymbol t)
+   &=\int_{\mathbb R^d}\mathfrak H(e^{u_1},\ldots,e^{u_d})
+             e^{-i\boldsymbol t\cdot\boldsymbol u}\,d\boldsymbol u,\\
+ \mathfrak H(\boldsymbol y)
+   &=(2\pi)^{-d}\int_{\mathbb R^d}\widehat{\mathfrak H}(\boldsymbol t)
+          \prod_{j=1}^dy_j^{it_j}\,d\boldsymbol t.
+ \end{split}
+\end{equation}
+范数之间的算术关系限制的是此恒等式的求值点，而非其密度。外部模式留在外部权重中；对于两个列坐标，第一个测试接收 \(y_1^{it_1}\)，第二个接收 \(y_2^{-it_2}\)，其共轭提供
+\(y_2^{it_2}\)。所有归一化实反根幂都包含在耦合轮廓中，因此最终的列测试不包含第二份副本。

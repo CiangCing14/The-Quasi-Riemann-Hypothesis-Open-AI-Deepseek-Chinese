@@ -1,0 +1,74 @@
+以下下界是完全公共支撑不消耗可用指数的原因：
+\begin{equation}
+ F_1\ge\tfrac23(c+w)-3\sigma-\tfrac56\delta_{{\rm fr},1},\qquad
+ F_2\ge\tfrac23b_2.
+ \label{old-eq:2.17}
+\end{equation}
+为证明第一个，令 \(D_0=d+K_0-K\)，初始设
+\(g=J_+\) 和 \(\ell=0\)，并回忆
+\(J=D_0-c-2w+w_o\)。当 \(J\ge0\) 时，直接化简
+给出
+\[
+ F_1=c+2w+\widetilde q/6+w_o/6+\mathcal B_c
+       \ge c+2w.
+\]
+当 \(J<0\) 时，使用 \(\widetilde q\ge R\) 和
+\[
+ \mathcal B_c+\widetilde q/6
+ \ge (3c-5D_0)_+/6-\tfrac56\delta_{{\rm fr},1}.
+\]
+事实上，左边至少为
+\(\{(3c-5d-R)_++R\}/6\)，而它至少为
+\((3c-5d)_+/6\)，同时
+\(D_0\ge d-\delta_{{\rm fr},1}\)。正部是
+\(1\)-Lipschitz 的，给出所显示的修正。
+由此推出
+\[
+ F_1\ge
+ \frac{c+5D_0+(3c-5D_0)_+}{6}+\frac w3
+       -\frac56\delta_{{\rm fr},1}
+ \ge\frac23(c+w)-\frac w3-\frac56\delta_{{\rm fr},1}.
+\]
+实际选择有 \(g\le J_++2\sigma\) 和
+\(\ell\ge0\)。因此，方程~\eqref{old-eq:2.10} 将
+来自 \(2(c+w)/3\) 的额外损失界定为
+\[
+ w/3+5\sigma/3+\tfrac56\delta_{{\rm fr},1}
+ \le22\sigma/9+\tfrac56\delta_{{\rm fr},1}
+ <3\sigma+\tfrac56\delta_{{\rm fr},1}.
+\]
+
+对于方程~\eqref{old-eq:2.17} 中的第二个不等式，从 \(F_2\) 的定义出发逐个素数计算。以素数的对数范数为单位，贡献为
+\[
+ \begin{array}{c|c|c}
+ \text{common case}&F_2&b_2\\ \hline
+ i=i,\ 6\nmid i,\ \text{unit}&7i/6&i\\
+ i=i,\ 6\nmid i,\ \text{nonunit}
+       &(7i-5)/6+\tfrac13 1_{i=1}&i\\
+ i=i,\ 6\mid i,\ \text{either}&7i/6-1&i\\
+ i>j_0,\ 6\mid j_0,\ \text{unit}
+       &i+j_0/6-1&(i+j_0)/2 .
+ \end{array}
+\]
+第二行中额外的 \(1/3\) 是 \(f/6\)。第一
+行超过 \(2b_2/3\)。在第二行中，等号在
+\(i=1\) 时成立，而对于 \(i\ge2\)，差为
+\((3i-5)/6\ge0\)。在第三行中，差为
+\((i-2)/2\ge0\)，因为 \(i\ge6\)。在最后一行中，它为
+\((4i-j_0-6)/6\ge0\)，因为 \(j_0\ge6\) 且
+\(i\ge j_0+1\)。求和即证明该断言。
+
+对于非中心范围 \(A\le5M/6\)，
+方程~\eqref{old-eq:2.15}--\eqref{old-eq:2.17}
+将名义例外超出量界定为
+\(3\sigma+5\delta_{{\rm fr},1}/6\)。上面记录的实际计数和聚合
+支撑修正是在固定阶段余量中的进一步 \(O(\xi)\) 项。
+连同对角估计和较小宽度估计，这证明了
+当前宽度下的非中心阶段，并具有保留的终端
+损失。因此，先前构造的比较可以使用
+该阶段。仍需估计当 \(A>5M/6\) 时的中心例外项。
+
+对于固定例外行的一个分离侧，固定活跃槽
+标签。引理~\ref{lem:centered-coefficient-invariant} 随后给出在两个普通变量中以及在两个
+矩形项中相同的特征、穿刺和范数幂。下一个引理表明，每个普通和中 \(X^{1+it}\)
+的系数独立于 \(X\)，因此两个乘积主项在尺度乘积相等时一致。

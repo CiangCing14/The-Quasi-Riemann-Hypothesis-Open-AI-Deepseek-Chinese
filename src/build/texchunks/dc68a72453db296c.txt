@@ -1,0 +1,85 @@
+对于 $k\ne0$，将傅里叶变量拆分为二进壳层
+$q_Cq_k/P_a\asymp R$，其中 $R=1,2,4,\ldots$，且第一个壳层
+包含所有至多为二的变量。选取二进中心
+$C_0,D_0\in\{1,2,4,\ldots\}$ 使得 $q_C\asymp C_0$ 且
+$q_d\asymp D_0$，其中第一个二进块包含有界的单位范围。
+使用名义正剩余尺度
+\[
+ N=Y'/(C_0D_0),\qquad
+ \mathcal Q=q_{\mathfrak r}\ll_{\rm fixed}RP_a.
+\]
+实际剩余范数位于 $N$ 的固定倍数之内；名义值
+$N$ 允许小于一。固定任意 $A>2$ 和 $B>2$。
+对于每个固定的 $C,d,k$，两列的联合环形轮廓 $W_R$ 具有有限多个齐次单轮廓半范数，下文所用者被
+$O_{B,J_{\mathrm{Gr}}}((1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B})$ 所界，其中固定的
+$J_{\mathrm{Gr}}$ 是在这些导数阶以及 $A,B$ 之后选定的。这
+可由对第一个傅里叶核求导得到，其 Schwartz 衰减吸收由此产生的
+每一个 $R$ 的幂；范数幂的导数付出 $1+|\nu|$ 的固定幂次代价。
+此因子 $R^{-B}$ 保留在单轮廓
+傅里叶估计中，并在下文的线性格和中出现一次；
+不使用小的非齐次元组半范数。
+
+设 $a_{C,d,k}$ 为此周期算术系数。对于
+非例外频率，其归一化完全傅里叶变换，
+在两个剩余变量上归一化为 $\mathcal Q^{-2}$，
+其绝对值至多为 $q_C$ 且在 $(0,0)$ 处为零。由于
+$\mathcal O$ 的每个理想都是主理想，周期格的
+线性尺度为 $\mathcal Q^{1/2}$。因此四维格泊松
+求和给出，对于此 $A$，
+\begin{equation}
+ \left|\sum_{\mathbf m\in\mathcal O^2}
+       a_{C,d,k}(\mathbf m)W_R(\mathbf m/\sqrt N)\right|
+ \ll (1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B}q_C N^2
+             \min\{1,(\mathcal Q/N)^A\}.
+ \label{eq:gram-periodic-poisson}
+\end{equation}
+对于 $N\ge\mathcal Q$，零频率为零，其余
+对偶向量具有线性尺度 $(N/\mathcal Q)^{1/2}$。阶为 $2A>4$ 的傅里叶
+衰减将其和界为 $(\mathcal Q/N)^A$。
+对于 $N<\mathcal Q$，使用两个环形区域中的点计数。非空的
+次单位环形区域有 $N$ 被一个固定正常数从下方界住，
+因此它仍包含 $O(N)$ 个格点；低于该常数时
+它为空。这证明了方程~\eqref{eq:gram-periodic-poisson}，
+且无需对 $a_{C,d,k}$ 作任何本原性或张量积假设。
+
+置 $K_R=RP_a/C_0$。固定的壳层比较常数给出
+$q_k\le C_{\rm sh}K_R$，其中 $C_{\rm sh}>0$ 固定。因此当
+$K_R<C_{\rm sh}^{-1}$ 时非零频率范围为空。在
+非空范围上，初等格计数给出
+\[
+ \#\{k:0<q_k\le C_{\rm sh}K_R\}
+       \ll_{\rm fixed}K_R+\sqrt{K_R}+1\ll_{\rm fixed}K_R.
+\]
+因此在这些二进块上有 $O(C_0D_0K_R)$ 个 $C,d,k$ 的选择。将
+方程~\eqref{eq:gram-periodic-poisson} 乘以该计数以及
+公共前因子，至多给出
+\[
+ (1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B}\frac Q{Y'}\frac{RP_a}{C_0D_0}
+       \min\left\{1,\left(\frac{RP_aC_0D_0}{Y'}\right)^A\right\}.
+\]
+对于 $\Lambda=Y'/(RP_a)$，所需的正二进和为
+\[
+ \sum_{i,j\ge0}2^{-i-j}\min\{1,(2^{i+j}/\Lambda)^A\}
+ =\sum_{n\ge0}(n+1)2^{-n}\min\{1,(2^n/\Lambda)^A\}
+ \ll_A\frac{1+\log(2+\Lambda)}{\Lambda}.
+\]
+对于 $\Lambda\ge1$，在 $2^n\asymp\Lambda$ 处拆分两个几何尾项；
+对于 $\Lambda<1$，左侧有界，
+而所显示的右侧大于一个正常数。
+因此非例外频率贡献
+\[
+ \ll (1+|\nu|)^{J_{\mathrm{Gr}}}\frac Q{Y'}\frac{P_a^2}{Y'}Z^\epsilon
+\]
+在 $R$ 求和之后，选取固定的 $B>2$。
+
+剩下的是计数例外非零频率。它们有
+$(k)=a_1^6e$，其中 $e$ 是六次幂自由的，且支撑在
+$C$ 的素数和固定支撑上。至多有
+$6^{\omega(C)+O_S(1)}\ll_\epsilon q_C^\epsilon$ 个可能的 $e$。
+对于其中每一个，壳层界 $q_k\le C_{\rm sh}K_R$ 只允许
+$q_{a_1}\le(C_{\rm sh}K_R/q_e)^{1/6}$。若此范围非空，
+其上界至少为一，且理想计数给出
+$O_{\rm fixed}(K_R^{1/6})$ 个选择；若 $q_e>C_{\rm sh}K_R$ 则
+为空。单位因子只付出一个固定因子。因此有
+$O_\epsilon(K_R^{1/6}q_C^\epsilon)$ 个这样的元素 $k$，包括
+$K_R$ 的有界次单位范围。

@@ -1,0 +1,69 @@
+\begin{lemma}[掩蔽矩形相消]
+\label{lem:centered-lattice-cancellation}
+设 \(\vartheta\) 取遍一个固定的有限集合，其中的元素是导子素在 \(\mathcal S\) 中的有限阶射线特征。设 \(\mathfrak R_*\) 无平方因子，且对某个固定的 \(B_*\) 有 \(q_{\mathfrak R_*}\le Z^{B_*}\)，并设 \(W_1,W_2\) 是固定圆环上的光滑轮廓。对 \(X>0\) 和 \(t\in\mathbb R\)，定义
+\[
+ \mathcal L_i(X,t):=
+ \sum_l\vartheta(l)1_{(l,\mathfrak R_*)=1}
+           q_l^{it}W_i(q_l/X).
+\]
+则
+\begin{align}
+ \mathcal L_i(X,t)
+ &=c_{\vartheta,\mathfrak R_*}X^{1+it}I_i(t)
+   +O\left(Z^{\epsilon_1}(1+|t|)^J\right),
+ \label{old-eq:2.18d}\\
+ |\mathcal L_i(X,t)|&\ll X.
+ \label{old-eq:2.18e}
+\end{align}
+这里 \(J\) 固定，常数用到有限多个半范数，\(c_{\vartheta,\mathfrak R_*}\) 与 \(X,t\) 无关，而 \(I_i(t)\) 是一个固定测度常数乘以
+\(\int_0^\infty W_i(y)y^{it}\,dy\)。
+这两个估计对 \(X>0\)、所述掩蔽以及该有限特征集都是一致的。
+
+设 \(D_{\mathbf b}\) 如
+Equation~\eqref{old-eq:2.18a} 所定义，并令
+\[
+ U_i=X_i/q_{\mathfrak b_i},\qquad
+ V_i=Y_i/q_{\mathfrak b_i},\qquad
+ T=U_1U_2=V_1V_2.
+\]
+若对 \(i=1,2\) 及某个 \(r\ge0\) 有 \(U_i,V_i\ge Z^r\)，
+则
+\begin{equation}
+ \begin{split}
+ T^{-1/2}\left|
+ \sum_{l_1,l_2}
+ \vartheta(l_1)\vartheta(l_2)
+ 1_{(l_1l_2,\mathfrak R_*)=1}
+ q_{l_1l_2}^{it}D_{\mathbf b}(l_1,l_2)
+ \right|
+ \ll Z^{\epsilon_1}(1+|t|)^{2J}T^{1/2}Z^{-r}.
+ \end{split}
+ \label{old-eq:2.18f}
+\end{equation}
+若没有非负的下界长度，同一表达式为
+\(O(T^{1/2})\)。
+\end{lemma}
+
+\begin{proof}
+首先略去掩蔽。表示 \(\mathcal S\) 之外理想的素生成元，连同固定的特征权
+\(\vartheta\)，是固定格中有限个带权剩余类的集合。在该格上对
+\[
+ f_{X,t}(z)=q_z^{it}W_i(q_z/X)
+           =X^{it}f_t(z/\sqrt X),\qquad
+ f_t(z)=q_z^{it}W_i(q_z).
+\]
+应用泊松求和。傅里叶变换为
+\(X^{1+it}\widehat f_t(\sqrt X\,\xi)\)。
+由于 \(f_t\) 支在固定圆环上，对任意固定的 \(J_0>2\) 分部积分给出
+\[
+ |\widehat f_t(\xi)|
+ \ll_{J_0} (1+|t|)^{J_0}(1+|\xi|)^{-J_0},
+\]
+其中用到 \(W_i\) 的有限多个半范数。因此对 \(X\ge1\)，固定对偶格的非零点求和为
+\[
+ \ll (1+|t|)^{J_0} X
+       \sum_{\xi\ne0}(1+\sqrt X|\xi|)^{-J_0}
+ \ll (1+|t|)^{J_0}
+\]
+必要时可增大 \(J_0\)。对 \(0<X<1\)，由固定圆环上的绝对计数，格和及其零频主项均为 \(O(1)\)。零频为
+\(c_\vartheta X^{1+it}I_i(t)\)，其中 \(c_\vartheta\) 是剩余类的固定带权均值。这证明了 Equation~\eqref{old-eq:2.18d} 的无掩蔽版本。

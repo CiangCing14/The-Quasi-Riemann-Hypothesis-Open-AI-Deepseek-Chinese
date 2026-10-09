@@ -1,0 +1,57 @@
+同样的结论对积分中有限个孩子的乘积也成立。
+确切地说，一条边项可以改为具有如下形式
+\[
+ Z^{a_e}\int_{\mathbb R^{d_e}}|K_e|
+ \prod_{r=1}^{r_e}
+ \mathcal N_{v_{e,r}}\bigl(Z,\boldsymbol W_{e,r},
+       A_{e,r}\boldsymbol t+B_{e,r}\boldsymbol\xi\bigr)^{\theta_{e,r}}
+ \,d\boldsymbol\xi,
+\]
+其中 $r_e\ge1$ 是固定整数，$\theta_{e,r}\ge0$ 固定，所有孩子都有更小的
+剩余深度，并且每个孩子轮廓满足其所陈述轮廓界的自身版本。联合系数测度满足同样的
+加权界。在这种情况下，按如下方式递归定义范数指数
+\[
+ E_v=\max\left\{a_v,\ \max_e
+             \left(a_e+\sum_{r=1}^{r_e}\theta_{e,r}E_{v_{e,r}}\right)\right\}.
+\]
+结论以 $E=E_{v_0}$ 成立。这种形式包含了由 Cauchy--Schwarz 产生的两个非负孩子估计的平方根。
+\end{lemma}
+
+\begin{proof}
+在终端顶点处，该断言就是其所陈述的界。假设某个孩子已经被如下界住
+$C Z^{E'}p_{J'}(\boldsymbol W_e)^{B'}
+ \langle A_e\boldsymbol t+B_e\boldsymbol\xi\rangle^{H'}$。
+由于线性映射有界，
+\[
+ \langle A_e\boldsymbol t+B_e\boldsymbol\xi\rangle^{H'}
+ \ll_e\langle\boldsymbol t\rangle^{H'}
+              \langle\boldsymbol\xi\rangle^{H'}.
+\]
+孩子轮廓界将幂 $B'c'_e(J')$ 加到这两个高度指数中的每一个上，并将其轮廓因子替换为
+$p_{m_e(J')}(\boldsymbol w)^{B'b'_e(J')}$。使用系数测度
+界，取
+$H_e=H'+B'c'_e(J')$。这条边的贡献至多为
+\[
+ C_e Z^{a_e+E'}
+ p_{\max\{m_e(J'),\ell_e(H_e)\}}(\boldsymbol w)^{B'b'_e(J')+b_e(H_e)}
+ \langle\boldsymbol t\rangle^{H_e+c_e(H_e)}.
+\]
+每个出现的指标都是有限的。对这些指标以及
+在有限多条出边上的终端指标取最大值，必要时增大
+轮廓指数，因为 $p_j(\boldsymbol w)\ge1$。
+这证明了父界，其指数等于经过该顶点的最大路径指数。对无环图进行
+反向归纳法完成了证明。这些选择都没有提及外部截断或迟
+导数阶。
+
+对于乘积形式，代入每个孩子已经证明的界，并将其
+提升到 $\theta_{e,r}$ 次幂。系数测度必须积分的
+$\langle\boldsymbol\xi\rangle$ 的总幂为
+\[
+ H_e=\sum_{r=1}^{r_e}\theta_{e,r}
+       \bigl(H_r+B_r c'_{e,r}(J_r)\bigr).
+\]
+父轮廓的幂和 $\langle\boldsymbol t\rangle$ 的幂是
+相应的有限和，随后是在 $H_e$ 处的单个系数测度
+界。$Z$ 的幂按 $E_v$ 的所示递推式相加。对有限多个项取最大值，通过
+同样的反向归纳法证明了这一推广。
+\end{proof}

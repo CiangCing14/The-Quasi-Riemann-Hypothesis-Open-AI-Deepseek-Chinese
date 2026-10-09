@@ -1,0 +1,42 @@
+令 \(D_{\rm ker}=T_d-v-3\ell_b-e_\lambda\)。在这个实际环带的完整乘积上，引理~\ref{lem:reflection-common-profile} 允许
+\[
+ m_{\rm ker}=Z^{-(D_{\rm ker})_+/4}
+\]
+从整个齐次线性行向量中因子分解出来，其固定半范数常数中的因子至多为 \(C_{\rm ker}^{1/4}\)。归一化轮廓具有有界的固定欧拉半范数；并未声称任何非齐次元组半范数会变小。该轮廓包含来自结构提取的归一化逆根以及所有其他公共光滑范数窗口。
+
+尾项在真实的、未分离的和上被移除。若
+\(\log Z\ge2\log C_{\rm ker}/\tau_{\rm ref}\)，则每个中心超出量大于 \(\tau_{\rm ref}\) 的完整二进块都具有大于 \(Z^{\tau_{\rm ref}/2}\) 的实际核自变量。对格 \(\lambda^{-4}\mathcal O\)、
+\(a=X/q_c^2\) 和 \(U=Z^{\tau_{\rm ref}/2}\) 应用引理~\ref{lem:lattice-kernel-tail}。在完整源支撑上，第一部分中使用的系数界给出
+\[
+ |d(\mu)|/\sqrt{q_\mu}\le27q_\lambda^{4/3}.
+\]
+每个基局部因子或标记局部因子在其指示函数被丢弃后至多为 \(q_p^{1/2}\)。有界的行、元组和局部对数长度范围、局部分支计数以及 \(1+a^{-1}\) 具有固定的多项式代价
+\(Z^{B_{\rm tail}}\)，其中 \(B_{\rm tail}\) 的选择独立于核阶。对于任何期望的节省 \(D>0\)，在该壳引理中选择
+\[
+ A>1+\frac{2(B_{\rm tail}+D)}{\tau_{\rm ref}}
+\]
+使得这些完整二进块的绝对总和为 \(O(Z^{-D})\) 乘以一个有限测试半范数。范数扭结具有该半范数的固定多项式高度代价。壳和计数所有被丢弃的对偶指标，因此对于此尾项不使用任何保留对偶长度处的计数。它在傅里叶绝对化之前被移除。
+
+对于保留的二进块，将公共轮廓引理和方程~\eqref{eq:reflection-common-minkowski} 应用于方程~\eqref{eq:reflection-actual-annuli} 中的单个联合轮廓。其密度对整个当前行希尔伯特空间是公共的，包括活跃元组和：实际的行、对偶和单个槽范数是其坐标，而不是分别选择的测度的参数。完整的固定支撑盒支配每个被调用的加权傅里叶范数和高度代价。在分离模式处，范数幂具有绝对值为一，并保持行、元组和对偶系数的独立性。仅在这个分离的非负行范数内部，行集可以从原始环带扩大到 \(q_R\ll Z^H\)，对添加的行使用相同的分离公式。核在那里从不被求值。
+
+在提取公共系数之后但在使用 \(m_{\rm ker}^2\) 之前，分离的平方范数被界定为
+\[
+ Z^{-v-2\ell_b-2e_\lambda/3-S_0-B_0+\epsilon}\mathcal N,
+\]
+其中
+\begin{equation}\label{old-eq:4.6a}
+ \begin{split}
+ \mathcal N={}&
+ \sum_{\substack{k_{\rm res}\ {\rm sf}\\q_{k_{\rm res}}\ll Z^H}}
+ \left|
+ \sum_{\boldsymbol p}
+ \frac{a(\boldsymbol p)}{\sqrt{q_P}}1_{(P,k_{\rm res})=1}
+ \sum_{\substack{n\ {\rm sf}\\b}}
+ \beta(n,b)\chi_{k_{\rm res}}(nb)^3
+              \chi_P(n)^{-2}1_{(P,b)=1}
+ \right|^2,\\
+ &P=\prod_{i\ {\rm active}}p_i,\qquad q_P\asymp Z^{z_a}.
+ \end{split}
+\end{equation}
+理想 \(n,b\) 保留其所述的二进范数和固定系数限制。在提取公共界之后，
+\(|a(\boldsymbol p)|,|\beta(n,b)|\le1\)。

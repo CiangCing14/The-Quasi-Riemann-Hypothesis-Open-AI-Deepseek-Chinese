@@ -1,0 +1,49 @@
+取 $\epsilon_r=\epsilon_n=\epsilon_H=\epsilon_*$，这给出
+$\varepsilon_c\le15\epsilon_*$。由于 $d\le501/1000<1$，方程~\eqref{eq:balanced-central-contribution} 中显式的中心损失，连同预留的物理二进损失，至多为
+\[
+ 13\epsilon_*+2(15\epsilon_*)+\epsilon_*+\epsilon_*+\epsilon_*
+ =46\epsilon_*<\frac1{4800}=\frac{m_0}{4}.
+\]
+两个主损失至多为 $(3/2+1)\epsilon_*$ 和
+$2\epsilon_*$；小行损失至多为 $2\epsilon_*$。每一个都小于 $m_0/4$。所展示的大行估计已经用掉了它所要求的损失。因此所有这些项在除以固定的 $c_S$ 之后，在高度因子之前至少保留 $3m_0/4=1/1600$。我们只用
+$m=1/2400$，在下面还留出进一步的幂 $1/4800$ 可用。
+
+还需检查高度假设何时成立。设
+$\epsilon_{\rm det}>0$ 为上面选定的固定二进损失，并且在固定一个目标之后，设 $A_{{\rm det},\eta}$ 在其对引理~\ref{lem:detector-dyads} 的使用中支配有限多个阶。令
+\[
+ \tau_{0,\eta}
+ =\frac{d_{\min}\epsilon_{\rm det}}
+        {20(A_{{\rm det},\eta}+1)}>0.
+\]
+对于 $0<\tau\le\tau_{0,\eta}$ 和充分大的 $Z$，
+\[
+ (1+Z^\tau)^{A_{{\rm det},\eta}}
+ \le Z^{d_{\min}\epsilon_{\rm det}/10}
+ \le U^{\epsilon_{\rm det}/10}
+ \qquad(d\ge d_{\min}).
+\]
+这在整个物理范围内一致地验证了检测器高度条件。来自 $1+Z^\tau\le2Z^\tau$ 的固定因子被较低的阈值吸收。我们还按分箱的要求施加 $\tau\le d_{\min}/100$。用于建立见证的内部尾项阶是在这个 $\tau$ 之后选定的，并且与下面最终的外部阶 $N$ 分开。它们的增加不改变所保留的轮廓或高度阶。由这些内部选择引入的任何固定常数都通过提高下阈值被吸收进未使用的幂 $1/4800$ 中，该阈值可以依赖于 $\eta$ 和 $\tau$。
+
+对于每个最终整数 $N\ge0$，引理~\ref{lem:fixed-bin-contour} 将丢弃的高部分和衔接部分界定为
+$O_{\eta,N}(Z^{B_\eta}T_1^{-N})$，其中 $B_\eta$ 在 $N$ 之前固定。有界的实范围和行范围以及有限的分箱集合允许对所有中心二进取一个这样的
+$B_\eta$。
+对 $O(\log Z)$ 个二进求和可以通过将 $B_\eta$ 增加一来吸收，这仍然在 $N$ 之前。结合前面的估计给出
+\[
+ |J_{\mathrm I,\eta}(Z)-f_{\mathrm I,\eta}(Z)|
+ \ll_{\eta,N}Z^{C_{\mathrm I}(\beta_*)-m}(1+T_1)^{A_\eta}
+       +Z^{B_\eta}T_1^{-N}
+\]
+对某个有限的 $A_\eta,B_\eta$ 成立，只要
+$0<\tau\le\min\{d_{\min}/100,\tau_{0,\eta}\}$ 且 $Z$ 充分大。两个函数都独立于 $T_1$。
+命题~\ref{prop:balanced-low} 以损失 $\omega$ 应用并除以同一个固定的 $c_S$，给出
+\[
+ |J_{\mathrm I,\eta}(Z)|\ll_\eta
+ Z^{1/4+\omega}=Z^{C_{\mathrm I}(11/12)+\omega},
+ \qquad 0<\omega<\Delta_1.
+\]
+引理~\ref{lem:late-height-closure} 的所有假设现在都得到验证。它给出命题中所断言的节省 $m/2=1/4800$。
+\end{proof}
+
+\subsection{转移到狄利克雷 \texorpdfstring{$L$-函数}{L-functions}}
+
+延拓准则涉及 $F$ 上的赫克族。我们证明一次：该族的一个严格无零点半平面具有相应的狄利克雷推论。

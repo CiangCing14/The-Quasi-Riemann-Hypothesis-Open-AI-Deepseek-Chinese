@@ -1,0 +1,45 @@
+将方程~\eqref{eq:reflection} 左端的积分从
+$\Re s=a$ 移到 $\Re s=1/2-\sigma<0$，其中 $\sigma>1/2$。
+整函数的延拓、多项式带界以及快速的梅林衰减
+为这一移动提供了依据：将方程~\eqref{eq:pointwise-mellin-tail} 应用于
+$V$ 的加权对数导数，使得水平连接段趋于零。代入
+方程~\eqref{eq:reflection-reflected-mellin} 除以
+方程~\eqref{eq:reflection-direct-mellin}，并令 $t=1/2-s$，
+得到 gamma 商 $R(t)$ 以及因子
+\[
+ -\frac i{81}\bar\alpha(c)^2q_\mu^{-1/2}
+       \left(\frac{Kq_\mu X}{q_c^2}\right)^{-t}.
+\]
+事实上 $(2\pi)^{4s-2}27^{-s}3^{-5/2}
+=3^{-4}K^{-t}$ 且 $q_c^{1-2s}q_\mu^{s-1}
+=q_\mu^{-1/2}(q_\mu/q_c^2)^{-t}$。
+反射系数级数在这条直线上绝对收敛，因此可以与积分交换。利用方程~\eqref{eq:reflection-additive-phase}
+以及已计算的高斯和对其有限局部因子求和，即证明了方程~\eqref{eq:reflection} 和
+方程~\eqref{eq:reflection-row-phase}。由于 $|\phi|\le1$，我们有
+$|\widehat\phi(h_0)|\le1$；标量中其他每个因子的
+绝对值至多为 1。这就证明了 $|\zeta|\le1/81$。
+
+\emph{变换后测试函数的统一估计。}
+$R(t)$ 分子的第一个负极点是 $-5/6$。
+分母中倒数 gamma 函数是整函数。因此
+定义 $V^\sharp$ 的被积函数在 $\Re t>-5/6$ 上全纯。
+在 $-1/4\le\sigma\le A$ 上，斯特林公式给出
+\[
+ |R(\sigma+iu)|\ll_A(1+|u|)^{4\sigma}.
+\]
+该估计对于有界的 $u$ 也是一致的，因为这个闭带
+没有分子极点。方程~\eqref{eq:pointwise-mellin-tail} 使得
+$\widehat V$ 在每条竖直带上逐点快速递减。因此矩形
+围道移动在 $-1/4\le\Re t\le A$ 内是有效的，
+包括在任意两条非负直线之间。施加
+$(x\partial_x)^j$ 贡献 $(-t)^j$。三条直线
+$-1/4,0,A$ 将所得积分分别界定为
+\[
+ x^{1/4}\mathfrak M_{A,\lceil4A\rceil+j+2}(V),\quad
+ \mathfrak M_{A,\lceil4A\rceil+j+2}(V),\quad
+ x^{-A}\mathfrak M_{A,\lceil4A\rceil+j+2}(V).
+\]
+的常数倍。将它们组合即证明了方程~\eqref{eq:reflection-kernel}。
+快速的大 $x$ 界，其中 $A$ 任意大，也使得方程~\eqref{eq:reflection} 中的每个
+对偶和在 $V^\sharp$ 表示在零线上时绝对收敛。因此核围道的移动
+不需要对条件收敛的狄利克雷级数逐项移动。

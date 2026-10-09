@@ -1,0 +1,23 @@
+对每个固定的 $Z$ 和大的二进块，将其有限行和移到绝对直线 $(2,2,v)$ 上。从 $(3,3,2)$ 出发的路径保持在 $\Re s,\Re w\ge2$ 和 $\Re z\ge2$ 内，因此标量因子在那里是全纯的。对于这个固定的二进块，选取 $D$ 足够大，使其各行包含在 $q_u\le Z^D$ 中；方程~\eqref{eq:stage-all-height-majorant} 和外部迹界使其水平极限消失。仅用于证明此等式成立的那些常数可以依赖于固定的二进块。最终直线上的估计通过方程~\eqref{eq:large-correction-bound} 对二进块是一致的。标量 $L$ 因子在那里绝对有界，$\zeta_F^S(6z)$ 也是如此，并且方程~\eqref{eq:large-correction-bound} 适用。外部的幂，包括修正项但不包括行计数，为
+\[
+ l_x(1/2-v)+1+v+l_y+\ell v=B_0+hv.
+\]
+$O(U)$ 行和 $q_u^{-v}$ 给出 $U^{1-v}$；检验函数对固定高度多项式积分。这证明了方程~\eqref{eq:large-row-bound}。因为 $1+\epsilon-v<0$，对其几何二进尾项求和给出方程~\eqref{eq:large-row-sum}。对于固定的 $\zeta>0$，该指数中 $v$ 的系数为 $-\zeta$，证明了最后一个断言。原始行级数在其起始直线上绝对收敛，并且所展示的界给出绝对可求和的最终尾项，因此各个二进围道恒等式可以求和。数 $v$ 及其所需的有限检验阶数在 $Z$ 趋于无穷之前就已固定。
+\end{proof}
+
+\paragraph{第一阶段的 outer ranges。}
+
+使用 $l_x=l_y=h=1/2$、$\ell=0$、$d_{\min}=1/63$ 和 $\zeta=1/1000$，如同中间行估计中那样。对于小行，直线 $(\beta_*+e,1/2,z_0)$ 位于 $\mathcal D_1(3/8)$ 中，因为 $\beta_*>11/12$。局部界 $\mathcal H_{\eta,u}\ll_\epsilon q_u^\epsilon$ 对所有高度一致成立，验证了方程~\eqref{eq:small-correction-bound} 对所有指定行成立，高度阶为零。方程~\eqref{eq:small-row-sum} 在其损失之前具有以下相对指数：
+\[
+ h(z_0-1/6)-\frac{l_y}{2}+\frac{63}{50}d_{\min}
+ =\frac{13}{150}-\frac14+\frac1{50}
+ =-\frac{43}{300}.
+\]
+对于大行，$(2,2,v)$ 且 $v>2$ 位于 $\mathcal D_2$ 中。同样的全高度局部界验证了方程~\eqref{eq:large-correction-bound} 对每个物理行成立。这里 $B_0=l_x/2+1+l_y=7/4$，因此方程~\eqref{eq:large-row-sum} 的指数为
+\[
+ \frac74+\frac{501}{1000}(1+\epsilon)-\frac v{1000}+\epsilon.
+\]
+当固定数 $v$ 增大时，它趋于 $-\infty$。例如，当 $\epsilon\le10^{-6}$ 时，$v=4000$ 使其小于 $-1$，而 $C_{\mathrm I}(\beta_*)\ge1/4$。这远远提供了下面所需的节省。三个范围 $U\le Z^{d_{\min}}$、$Z^{d_{\min}}<U\le Z^{h+\zeta}$ 和 $U>Z^{h+\zeta}$ 覆盖了每个物理二进块。行 $u=1$ 已被分配给主项。
+
+\section{The \texorpdfstring{$11/12$}{11/12} conclusion}
+\label{sec:eleven-twelfths-conclusion}

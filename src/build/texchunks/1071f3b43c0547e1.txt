@@ -1,0 +1,34 @@
+选取 $\tau_{\rm ref}$ 以及规定 $\epsilon$ 容许范围内的局部小幂损失。然后提高 $Z$ 的固定数据阈值，使得 $O(\epsilon_Z)$ 项落在该容许范围内。块界、前面的计数以及已选取的尾项节省证明了方程~\eqref{eq:unmarked-completed-moment}。扭转断言由命题~\ref{prop:completed-reflection} 中 $\mathfrak M_{A,J}$ 的范数扭转界推出。
+\end{proof}
+
+为明确等长情形下所用的检验，令
+\[
+ V_{\rm G}(y)=\frac1{2\sqrt\pi}
+           \exp\!\left(-\frac{(\log y)^2}{4}\right).
+\]
+它直接满足命题~\ref{prop:completed-reflection} 的假设，有 $\widehat V_{\rm G}(t)=e^{t^2}$，并且对每个有限的 $A,J$ 都有有限的 $\mathfrak M_{A,J}$。因此前面的引理无需额外的环形延拓即可应用于它。在 $X=Z$ 处，其精确的梅林形式为
+\[
+ \mathcal C_{V_{\rm G}}(Z;m,\nu)=\frac1{2\pi i}\int_{(4)}
+       Z^t e^{t^2}T(t+1/2,\nu\chi_\bullet(m))\,dt.
+\]
+在定义求和中，系数仍由 $q_c^{-1/2}q_n^{-1}$ 规范化；尺度出现在 $V_{\rm G}(q_cq_n^3/Z)$ 中。
+
+最后取 $M=N=1$。实际 $O$-二进对中的指数为 $1-O/2+\epsilon$。非负 $O$-二进对在数量上是对数级的，且其单位二进对已包含在内。对它们求和，并带有较小的预备损失，即得对每个允许的 $V$ 的等长结论：
+\begin{equation}\label{eq:unmarked-balanced-completed-moment}
+ \sum_{0<q_m\le C_mZ}|\mathcal C_V(Z;m,\nu)|^2
+ \ll Z^{1+\epsilon}\mathfrak M_{A,J}(V)^2.
+\end{equation}
+
+\section{基础探针及其平衡低估计}\label{sec:probe}
+
+我们现在将前一节的完备化和放入一个平均 $I_\eta(X,Y,Z)$ 中。其原始表示分解为一个加性多项式和一个完备化的 theta 行。在平衡尺度 $X=Y=Z^{1/2}$ 处，它们的均方估计给出直接界 $I_\eta\ll_\eta Z^{1/4+\epsilon}$。我们首先对独立的正尺度 $X,Y,Z$ 定义该平均；本节中只有最后的命题将它们特殊化。下一节将泊松求和应用于这同一个平均，并在其主行中识别出目标 $L$ 函数的倒数。
+
+\subsection{两个因子的定义与分离}
+
+选取一个有限射线群 $T$，独立于目标特征，使得函数 $\mathcal R$、$G$ 以及引理~\ref{lem:fixed-gauss-phase} 中支撑在 $2,3$ 上的固定主相位和补充相位都通过 $T$ 分解。下面依赖于目标的固定分子特征不必通过 $T$ 分解。对于有限阶赫克特征 $\eta$，记
+\[
+ \Theta=\langle\eta,\widehat T\rangle.
+\]
+对有限族 $\{\eta\theta:\theta\in\widehat T\}$ 使用一个排除集 $S$。它包含 $6$ 上的素数、$\eta$ 及 $\widehat T$ 中特征的固定零延拓表示的定义模的素支撑，以及范数至多为一个固定 $P_0$ 的每个素数。这些完整表示属于固定算术数据。它们在 $X,Y,Z$ 以及变化的行参数和素数参数被选取之前就已固定。扩大 $S$ 不会改变 $T$。
+
+有限变换应排除与 $S$ 相交的频率，包括零，并应留下逐素数分解的系数。以下特征和相位修正安排这两个性质。

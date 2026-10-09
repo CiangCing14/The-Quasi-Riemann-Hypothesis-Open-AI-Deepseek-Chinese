@@ -1,0 +1,57 @@
+几何与梅林指数为
+\[
+ h=\frac{13}{16},\qquad \ell=\frac16,\qquad
+ l_x=\frac{17}{48},\qquad l_y=\frac{23}{48},\qquad
+ h=1-l_x+\ell,
+\]
+\[
+ C(s)=C_{\mathrm{II}}(s)=s-\frac{11}{16},
+ \qquad C(7/8)=\frac3{16}.
+\]
+这些就是方程~\eqref{old-eq:5.1}和~\eqref{eq:part-II-mellin-target}中的值。用\(s\)表示第~\ref{sec:local-compensation}节中称为\(x\)的局部变量；下面的振幅比\(x=q/\delta\)是另一个不同的实数。
+
+使用定义~\ref{def:stage-high-data}，其中
+\[
+ \mathscr I_\eta(Z)=I_{\eta,\mathrm{modified}}(Z),\qquad
+ \mathfrak H_{\eta,u,Z}(s,w,z)
+     \ \text{as in Equation~\eqref{eq:holomorphic-selected-tuple}}.
+\]
+在共用的解析引理中取\(\sigma_0=7/8\)。第~\ref{sec:local-compensation}节验证了这些数据的每一部分：方程~\eqref{eq:compensated-poisson-identity}是方程~\eqref{eq:compensated-probe-definition}中独立定义的有限表达式的绝对收敛高恒等式，且完整修正项在两个所需的欧拉区域中全纯，并满足方程~\eqref{eq:stage-all-height-majorant}。被排除的集合、物理行掩码和校准均不变。特别地，在这个完整修正项之外没有额外的欧拉因子。其标量分母为\(L_F^S(s,\eta\overline{\chi_\bullet(u)})\)，其高斯为\(\Phi(s+z-1)\)。
+
+在下面的估计中，\(0<e<10^{-3}\)是一个允许的检测器宽度。它的最终选择，连同其余实损失，在结尾的选择顺序中作出。
+
+\subsection{主正规化因子}\label{sec:principal-signal}
+
+我们验证引理~\ref{lem:principal-residue-interface}的两个修正假设。首先，方程~\eqref{eq:principal-local-tuple-bound}给出
+\[
+ |\mathfrak H_{\eta,1,Z}(s,w,z)|\ll Z^{\ell\Re z}
+\]
+在第二欧拉区域的每个固定实盒子上对所有虚部一致成立。特别地，它在方程~\eqref{eq:principal-correction-bound}中的整个矩形上成立，高度次数为零。这是对完整元组修正项的界。
+
+对于留数值，定义
+\[
+ S_i(Z)=\sum_{p\in\mathcal P_i(Z)}W_i(q_p/P_i)q_p^{-5/6},
+ \qquad P_i=Z^{\ell_i}.
+\]
+引理~\ref{lem:ray-prime-normalizer}，包括其关于删除一个固定有限集的断言，给出
+\[
+ S_i(Z)\sim\frac{P_i^{1/6}}{|T|\log P_i}
+       \int_0^\infty W_i(y)y^{-5/6}\,dy.
+\]
+每个主常数都是正的。由于槽数是固定的，所有\(S_i(Z)\)对每个充分大的\(Z\)都为正，且一个公共的下阈值允许依赖于固定数据。令
+\begin{equation}\label{eq:principal-scalar}
+ A_T(Z)=(-1)^K Z^{-\ell/6}\prod_{i=1}^K S_i(Z).
+\end{equation}
+利用\(\log P_i=\ell_i\log Z\)和\(\sum_i\ell_i=\ell\)，我们得到
+\[
+ A_T(Z)\sim
+ \frac{(-1)^K}{|T|^K(\log Z)^K}
+ \prod_{i=1}^K\left\{\frac1{\ell_i}
+       \int_0^\infty W_i(y)y^{-5/6}\,dy\right\}.
+\]
+因此\(A_T(Z)\ne0\)在该范围内，且
+\[
+ |A_T(Z)|\asymp_{T,K,(\ell_i,W_i)}(\log Z)^{-K},
+ \qquad |A_T(Z)|^{-1}\ll_\epsilon Z^\epsilon
+\]
+对每个\(\epsilon>0\)成立。下阈值可以依赖于目标的有限排除集；没有使用在变动射线导子中的一致素数渐近。

@@ -1,0 +1,66 @@
+设 \(K_{\rm slot}\) 界定原始的槽数。在固定
+\(\gamma=(q_0,t',r_g)\)、无平方因子 \(f=f_{\rm new}\) 以及元素
+\(k=k_{\rm new}\) 时，具有非零权重的可能 \(\xi\in\Xi_\sigma\) 的数目至多为一个固定常数乘以
+\(D_{K_{\rm slot}}(f)C_{K_{\rm slot}}(\gamma)\)，其中
+\begin{equation}\label{eq:inverse-new-fibre}
+ \begin{split}
+ D_{K_{\rm slot}}(f)&=d_{\mathcal O}(f)^{9+4K_{\rm slot}},\\
+ C_{K_{\rm slot}}(\gamma)&=
+ d_{\mathcal O}(q_0)^{5+2K_{\rm slot}}
+ d_{\mathcal O}(t')^{2K_{\rm slot}}
+ d_{\mathcal O}(r_g)^{2K_{\rm slot}},
+ \end{split}
+\end{equation}
+此处及以下 \(d_{\mathcal O}\) 表示理想除数计数。
+为完备起见，将 \(f\) 有序分配到
+\(J,C,d_2,v'\) 的代价为 \(4^{\omega(f)}=d_{\mathcal O}(f)^2\)，而
+拆分 \(J=sJ_2\) 的代价至多为 \(d_{\mathcal O}(f)\)。
+满足
+\(b_1b_2=q_0^2J_2^2s\) 的 \(b_1,b_2\) 的选择至多耗费
+\(d_{\mathcal O}(q_0)^2d_{\mathcal O}(f)^3\)；两个选择
+\(\mathfrak A_a\mid\operatorname{rad}(b_1b_2)\) 至多耗费
+\(d_{\mathcal O}(q_0)^2d_{\mathcal O}(f)^2\)。这些估计用到
+\(d_{\mathcal O}(IJ)\le d_{\mathcal O}(I)d_{\mathcal O}(J)\) 和
+\(d_{\mathcal O}(I^2)\le d_{\mathcal O}(I)^2\)。
+方程~\eqref{eq:poisson-divisor-reconstruction} 至多耗费
+\(d_{\mathcal O}(q_0)d_{\mathcal O}(f)\) 个 \(d_k\) 的选择。
+于是 \(g'=d_2r_g\) 固定，而 \(k''=k/(d_kd_2)\) 是唯一的
+元素（若其为整元素）。至多 \(2K_{\rm slot}\) 个旧指派
+素数整除 \(q_0ft'\)，故它们的选择至多耗费
+\([d_{\mathcal O}(q_0)d_{\mathcal O}(f)d_{\mathcal O}(t')]^{2K_{\rm slot}}\)。
+至多 \(2K_{\rm slot}\) 个新指派素数整除 \(fr_g\)，
+并至多耗费
+\([d_{\mathcal O}(f)d_{\mathcal O}(r_g)]^{2K_{\rm slot}}\)。
+另一第一侧的存活槽在选择
+第一正侧时消失；所选的存活槽在其
+新平方中出现两次，恰如此处所计。因此所显示的乘积
+支配该纤维，即使其实际大小依赖于 \(k\)。
+这里没有对旧 \(f,h\) 的计数，没有对
+\(J,C,d_2,v'\) 的独立计数，也没有第二次频率计数。
+
+方程~\eqref{eq:fixed-cube-count} 与同一来源的见证
+将 \(\Gamma_\sigma\) 置于三个范数球的乘积之内
+\[
+ q_{q_0}\le Z^{\ell+R/2-j+5\eta/2},\qquad
+ q_{t'}\le Z^{t+\eta},\qquad q_{r_g}\le Z^{g-\theta+2\eta}.
+\]
+我们使用这些球仅为了界定不同三元组的数目，而非
+作为子估计的替代区域。理想计数给出
+\begin{equation}\label{eq:canonical-fixed-count}
+ \#\Gamma_\sigma\le C Z^{C_c+11\eta/2+\pi_{\rm count}},\qquad
+ C_c=\ell+R/2-j+t+g-\theta.
+\end{equation}
+此处 \(\pi_{\rm count}\) 是单独选取的聚合量
+\(\pi\) 的一部分。在非空扇区中，这三个
+球的上指数均非负，因为它界定了一个存在理想的范数；
+理想计数中的常数项因此不添加边界幂。
+特别地，此处不计数 \(J\)。三个
+理想的取值范围均有界，故可调除数界给出
+\(C_{K_{\rm slot}}(\gamma)\ll Z^{\pi_{\rm fib}}\) 在
+包含球上一致成立。置 \(c_\sigma=C_c+11\eta/2\) 并引入
+真正与行和标号无关的测度
+\begin{equation}\label{eq:inverse-normalized-triples}
+ d\nu_\sigma(\gamma)=Z^{-c_\sigma}
+ \sum_{\gamma\in\Gamma_\sigma}C_{K_{\rm slot}}(\gamma)\delta_\gamma,
+ \qquad \|\nu_\sigma\|\ll Z^{\pi_{\rm count}+\pi_{\rm fib}}.
+\end{equation}

@@ -1,0 +1,5 @@
+\subsection{高斯和与有限互反相位}
+我们首先计算素数高斯和。这也固定了所有后续公式中三次符号的定向。
+\begin{lemma}[素数高斯恒等式]\label{lem:prime-gauss-identities}
+设 $p$ 为 $S$ 之外某个素理想的本原生成元，并令
+$H=\chi_p$ 和 $P=q_p$。那么

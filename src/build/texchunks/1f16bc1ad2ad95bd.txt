@@ -1,0 +1,44 @@
+\begin{proof}
+这样的划分可通过将非负、紧支、在 $[-1/2,1/2]$ 上为正的光滑函数的整数平移标准化得到。
+设 $\operatorname{supp}\chi\subset[-C,C]$。$W_{\mathrm G}(e^k x)$ 的每个对数导数都是 $k+\log x$ 的多项式乘以同一个高斯函数。
+因此乘积法则给出
+\[
+ p_j(w_k)\le C_j(1+|k|)^j
+             \exp\bigl(-\tfrac14((|k|-C)_+)^2\bigr).
+\]
+对每个固定的 $A$，乘以 $e^{A|k|}$ 后该式可和。
+第一个断言随之成立，而分离范数由引理~\ref{lem:smooth-calculus} 得到。在轮廓的对数傅里叶变换中，对圆环进行缩扩只插入单位相位 $e^{-ikt}$，因此不改变这些范数；周围多项式的任何实标准化都保持显式。在所指出的尾项上，乘以 $Z^Be^{A|k|}$ 后最后一个界取对数至多为 $-c\kappa^2(\log Z)^2+O(\log Z)$，其中 $c>0$ 固定；对高斯尾项求和即证明了对每个 $M$ 所述的估计。最后，令 $u=\log y$ 并在其高斯积分中配方，得到 $\mathcal MW_{\mathrm G}(s)=e^{s^2}$。同一个高斯函数在 $L^1(\mathbb R)$ 中控制每个 $e^{\sigma u}(d/du)^jW_{\mathrm G}(e^u)$，且对紧区间内的 $\sigma$ 一致。
+\end{proof}
+
+我们记录伴随这种分离的两类核的显式有限阶连续性陈述。它们不对算术变换作任何断言；该变换必须提供所述的核及其可用的实直线。
+
+\begin{lemma}[傅里叶核与梅林核的有限半范数]
+\label{lem:kernel-seminorms}
+对于 $\mathbb R^d$ 上的施瓦茨函数 $f$，令
+\[
+ s_j(f)=\sum_{|\alpha|,|\beta|\le j}
+             \|x^\alpha\partial^\beta f(x)\|_{L^1(\mathbb R^d)}.
+\]
+对每个 $A\ge0$ 和多指标 $\beta$，通常的傅里叶变换满足
+\[
+ \sup_\xi(1+|\xi|)^A|\partial^\beta\widehat f(\xi)|
+ \ll_{A,\beta,d}s_{\lceil A\rceil+|\beta|}(f).
+\]
+同样的结论，在常数有固定变化的情况下，对任何固定的非退化线性傅里叶配对成立。对于写成 $\widehat f(\xi)=F(|\xi|^2)$ 的径向变换，任何给定的界
+\[
+ \sup_{r\ge0}(1+r)^A|(r\partial_r)^jF(r)|
+\]
+因此由 $f$ 的有限多个施瓦茨半范数控制。
+
+对于梅林断言，设 $m(s)$ 在固定的闭竖直带形上全纯，并假设在该带形上一致地有 $|m(\sigma+it)|\le C(1+|t|)^h$，其中 $h\ge0$ 固定。在该带形内的一条可用直线 $\Re s=\sigma$ 上定义
+\[
+ K_W(x)=\frac1{2\pi i}\int_{(\sigma)}\mathcal MW(-s)m(s)x^{-s}\,ds,
+\]
+其中 $W$ 具有使积分绝对收敛所需的有限加权对数导数，且对数分部积分中的边界项消失。对每个整数 $j\ge0$，
+\[
+ |(x\partial_x)^jK_W(x)|
+ \ll x^{-\sigma}\int_{\mathbb R}
+       |\mathcal MW(-\sigma-it)|(1+|t|)^{h+j}\,dt.
+\]
+右端的积分由有限多个 $y^{-\sigma}|(y\partial_y)^kW(y)|\,dy/y$ 的积分控制，且对固定带形内的 $\sigma$ 一致。对于 $W(y)y^{i\omega}$，同样的界至多多出一个因子 $(1+|\omega|)^{h+j}$。乘以固定的圆环截断后，这些结论也控制 $y\mapsto K_W(Ry)$ 的每个固定对数半范数，并带有因子 $R^{-\sigma}$。
+\end{lemma}

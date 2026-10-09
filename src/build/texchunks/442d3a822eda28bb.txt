@@ -1,0 +1,120 @@
+取 $\delta'$ 由以下相容的局部同余式确定：
+\[
+ \begin{array}{ll}
+ \delta'\equiv a^{-1}\pmod{Mc_F}
+       &\text{at every prime dividing }c_F,\\
+ \delta'\equiv0\pmod M
+       &\text{at every prime dividing }M\text{ but not }c_F,\\
+ \delta'\equiv a^{-1}\pmod p& (p\mid r).
+ \end{array}
+\]
+第一行指的是 $Mc_F$ 的相应素幂部分。
+所有逆元均存在，因为 $a/c$ 是既约的。令
+$b=(a\delta'-1)/c$ 以及 $g=\bigl(\begin{smallmatrix}a&b\\c&\delta'\end{smallmatrix}\bigr)$。
+则 $g\in\Gamma$，并且用 $c$ 除 $a\delta'-1$ 得到
+\[
+ b\equiv0\pmod M\text{ at primes of }c_F,\qquad
+ b\equiv-c^{-1}\pmod M\text{ at the other primes of }M.
+\]
+因此，$a,b,c,\delta'$ 在整除 $L$ 的每个素数的所需幂次处都有固定的剩余类，
+与类 $h_p$ 无关。
+当在剩余类符号计算中出现零元时，
+可以先将 $z_h$ 平移 $\lambda^2M^2\mathcal O$，然后
+向 $\delta'$ 加上组合同余模数的倍数。
+这些改变保持所有已列出的同余式，并避开使某个元素为零的
+有限多个值。它们不改变平移后的
+theta 函数。
+
+有三种情形，由 $v_\lambda(c)$ 区分。
+若 $3\mid c$，令 $H=I$。则 $G=g\in\Gamma_1(3)$，并且对主元 $a$ 与 $r$ 的主素数的三次
+互反律给出
+\begin{equation}\label{eq:reflection-cusp-case-zero}
+ \kappa(G)=\left(\frac{c_F}{a}\right)_3
+             \left(\frac ar\right)_3.
+\end{equation}
+若 $v_\lambda(c)=1$，取唯一的 $u_0\in\{\lambda,-\lambda\}$
+使得 $u_0\equiv c\pmod3$，并令 $H=\mathsf L(u_0)$；这两种可能性是因为
+$\mathcal O/(\lambda)\simeq\mathbb F_3$。
+上面的同余式表明 $G=gH^{-1}\in\Gamma_1(3)$。
+记 $A=a-u_0b$。$A$ 与 $a$ 都是主元，并且互素：
+$(a,b)=1$ 且 $(a,u_0)=1$。行列式方程给出
+\[
+ a(c-u_0\delta')=cA-u_0,
+ \qquad bc\equiv-1\pmod a.
+\]
+由此，对 $a,A$ 应用三次互反律可得
+\[
+ \begin{split}
+ \kappa(G)
+ &=\left(\frac{-u_0}{A}\right)_3
+          \left(\frac aA\right)_3^{-1}\\
+ &=\left(\frac{-u_0}{A}\right)_3
+          \left(\frac{c/u_0}{a}\right)_3
+  =\left(\frac{-u_0}{A}\right)_3
+          \left(\frac{c_F/u_0}{a}\right)_3
+          \left(\frac ar\right)_3.
+ \end{split}
+\]
+对于第二个等号，将 $A$ 模 $a$ 约化并使用
+$(A/a)_3=(-u_0b/a)_3=(u_0/a)_3(c/a)_3^{-1}$；$-1$ 的三次符号
+为一。最后假设 $(\lambda,c)=1$。选取
+$u_0=s+t\omega\equiv a\pmod3$ 且 $0\le s,t<3$，并令
+$H=\bigl(\begin{smallmatrix}u_0&-1\\1&0\end{smallmatrix}\bigr)$。
+这里 $c\equiv1$，$\delta'\equiv0$，且 $b\equiv-1\pmod3$，所以
+\[
+ G=gH^{-1}=\begin{pmatrix}-b&a+bu_0\\-\delta'&c+\delta'u_0\end{pmatrix}
+       \in\Gamma_1(3).
+\]
+$-b$ 与 $c$ 都是主元。此外 $-bc=1-a\delta'\equiv1\pmod9$。
+将 $\delta'=u\lambda^k\delta_0$ 分解，其中 $\delta_0$ 是主元。
+补充定律给出 $(u\lambda^k/(1-a\delta'))_3=1$；三次
+互反律给出 $(\delta_0/(1-a\delta'))_3=1$，因为互反律后的分子
+为 $1\pmod{\delta_0}$。因此
+\[
+ \left(\frac{\delta'}{-bc}\right)_3=1,
+ \qquad
+ \kappa(G)=\left(\frac{\delta'}{-b}\right)_3
+          =\left(\frac{\delta'}c\right)_3^{-1}
+          =\left(\frac ac\right)_3
+          =\left(\frac a{c_F}\right)_3\left(\frac ar\right)_3.
+\]
+最后一个逆元使用了 $a\delta'\equiv1\pmod c$。
+
+在三种情形中我们都证明了
+\begin{equation}\label{eq:reflection-multiplier}
+ \kappa(G)=\kappa_F\prod_{p\mid r}\chi_p(a)^2,
+ \qquad |\kappa_F|=1.
+\end{equation}
+因子 $\kappa_F$ 在活动的 $h_p$ 于固定扇区内变化时保持不变。若 $3\mid c$，它为 $(c_F/a)_3$：单位与
+$\lambda$ 幂因子由 $a\bmod9$ 确定，而互反律
+由 $a$ 在 $c_F$ 的素数处的剩余类确定其余固定素数因子。在中间情形中，它为
+$(-u_0/A)_3((c_F/u_0)/a)_3$，同样由 $A=a-u_0b$ 与 $a$ 的固定
+剩余类确定。在最后一种情形中，它为 $(a/c_F)_3$，
+直接由固定的分母 $c_F$ 与
+$a\bmod c_F$ 确定。因此，$a,b,c,\delta'$ 的已列出同余式
+仅使用 $h_0$ 与 $r\bmod M^2$ 就确定了 $\kappa_F$。
+它们也确定了三个函数 $\Theta_b$ 中所选定的那一个。
+
+\emph{反射后的加性相位。}
+记 $x=\lambda^4\mu$ 以及 $D_F=\lambda^3c_F$。在每个 $p\mid r$ 处，
+方程~\eqref{eq:reflection-cusp-fraction} 给出
+$a\equiv\sigma_ph_p\pmod p$。因此
+$\delta'\equiv\sigma_p^{-1}h_p^{-1}\pmod p$。对 $D_Fr$ 的互素因子
+应用加性中国剩余定理，得到精确恒等式
+\begin{equation}\label{eq:reflection-additive-phase}
+ \begin{split}
+ \check e(-\delta'\mu/c)
+ &=e(-\delta'x/(D_Fr))\\
+ &=\vartheta(x)\prod_{p\mid r}e(\epsilon_ph_p^{-1}x/p),
+ \qquad
+ \vartheta(x)=e(-\delta'_F r^{-1}x/D_F).
+ \end{split}
+\end{equation}
+这里 $\delta'_F$ 是 $\delta'$ 模 $D_F$ 的类，而
+$\vartheta$ 的公式中的 $r^{-1}$ 取模 $D_F$。
+例如，$p$ 处的局部分子为
+$-\delta'(D_Fr/p)^{-1}=\epsilon_ph_p^{-1}$；这验证了符号
+与 $\lambda$ 的幂次。所选择的同余式固定了 $\delta'_F$，
+因为 $D_F$ 整除相应的局部模数，而扇区固定了
+$r^{-1}\bmod D_F$。因此，有限多个 $D_F$ 的一个公倍数
+是所有特征 $\vartheta$ 的固定模数。

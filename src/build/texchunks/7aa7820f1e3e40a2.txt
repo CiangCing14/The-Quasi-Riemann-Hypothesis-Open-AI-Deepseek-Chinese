@@ -1,0 +1,76 @@
+\begin{lemma}[外部积分尾项与迹尾项]
+\label{lem:external-contour-tails}
+设 $m\ge2$，设 $\mathcal K$ 为实围道参数的紧集，
+且对 $\boldsymbol r\in\mathcal K$ 与 $Z\ge2$，设
+$K_{\boldsymbol r,Z}$ 为 $\mathbb R^m$ 上的非负 Borel 可测核。
+假设它关于 $(\boldsymbol r,\boldsymbol t)$ 联合 Borel 可测，且对每个整数 $L\ge0$，
+\[
+ K_{\boldsymbol r,Z}(\boldsymbol t)
+ \ll_L(1+|\boldsymbol t|)^{-L}
+\]
+关于 $\boldsymbol r,Z,\boldsymbol t$ 一致成立。设
+$\mathcal D\subseteq\mathbb R^m$ 为 Borel 可测，并假设 Borel
+可测因子 $F_Z$ 在 $\mathcal D$ 上满足
+\begin{equation}
+ |F_Z(\boldsymbol t)|\le C Z^B(1+|\boldsymbol t|)^J,
+ \label{eq:external-arithmetic-majorant}
+\end{equation}
+其中 $B,J,C$ 固定，不依赖于 $Z$ 以及下文的整数 $N$。
+记 $\widehat{\boldsymbol t}_j$ 为删去 $\boldsymbol t$ 的第
+$j$ 个坐标后所得的向量。对 $T\ge1$ 与
+$\boldsymbol r\in\mathcal K$ 一致地有
+\begin{align}
+ \int_{\mathcal D\cap\{\max_j|t_j|>T\}}
+ K_{\boldsymbol r,Z}(\boldsymbol t)|F_Z(\boldsymbol t)|\,d\boldsymbol t
+ &\ll_N Z^B T^{-N},
+ \label{eq:external-integrated-tail}\\
+ \int_{\mathcal D\cap\{t_j=T\}}
+ K_{\boldsymbol r,Z}(\boldsymbol t)|F_Z(\boldsymbol t)|\,
+ d\widehat{\boldsymbol t}_j
+ &\ll_N Z^B(1+|T|)^{-N}.
+ \label{eq:external-trace-tail}
+\end{align}
+第二个断言对 $T$ 的任一符号以及每个 $j$ 均成立，其中在
+$t_j=T$ 上使用坐标 Lebesgue 测度。当假设在某个有界长度的实围道区间上一致成立，且核、区域指示函数与
+算术因子关于该实参数与其余坐标联合 Borel 可测时，两个断言在该区间上积分后仍然成立。
+\end{lemma}
+
+\begin{proof}
+将核的界乘以
+Equation~\eqref{eq:external-arithmetic-majorant}。在盒子外积分
+$(1+|\boldsymbol t|)^{J-L}$ 即证明
+Equation~\eqref{eq:external-integrated-tail}，其中 $L>N+J+m$。
+在 $t_j=T$ 上，对另外 $m-1$ 个坐标积分给出
+\[
+ \int_{\mathbb R^{m-1}}
+ (1+|T|+|\widehat{\boldsymbol t}_j|)^{J-L}
+ d\widehat{\boldsymbol t}_j
+ \ll(1+|T|)^{J-L+m-1}.
+\]
+取 $L>N+J+m-1$ 即证明 Equation~\eqref{eq:external-trace-tail}。
+限制到 $\mathcal D$ 会减小这些正积分，而有界
+实区间只贡献其长度。
+\end{proof}
+
+对于我们的三重积分，取
+\[
+ (y_1,y_2,y_3)=(\Im(s+z),\Im z,\Im w),\qquad
+ K_{\boldsymbol r,Z}(\boldsymbol t)
+ =e^{-y_1^2}|M(r_z+iy_2)|\,|\widehat W_1(r_w+iy_3)|.
+\]
+高度变量的变换行列式为 1。在固定的实盒子上，其中 $r_z$ 位于 $(0,\infty)$ 的紧子区间内，
+Section~\ref{sec:poisson-representation} 的 Mellin 估计给出 $M$ 与
+$\widehat W_1$ 的任意多项式衰减。高斯因子具有同样的性质。因此它们的乘积
+对每个 $L$ 均为 $O_L((1+|\boldsymbol y|)^{-L})$，从而也为
+$O_L((1+|\boldsymbol t|)^{-L})$。被略去的因子
+$e^{(\Re(s+z)-1)^2}$ 在该实盒子上有界。
+
+在取 $w$ 的留数之后，只剩下 $s,z$。同样的证明适用于
+核
+\begin{equation}
+ K^{(2)}_{\boldsymbol r,Z}(\boldsymbol t)
+ =e^{-y_1^2}|M(r_z+iy_2)|,
+ \qquad(y_1,y_2)=(\Im(s+z),\Im z).
+ \label{eq:external-two-dimensional-kernel}
+\end{equation}
+这提供了后续 $z$-join 所需的迹界。

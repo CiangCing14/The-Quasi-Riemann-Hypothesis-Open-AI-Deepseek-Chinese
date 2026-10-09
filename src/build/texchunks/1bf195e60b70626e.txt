@@ -1,0 +1,67 @@
+\begin{lemma}[反射能量]\label{lem:reflected-energy}
+保留上面的\hyperref[par:reflected-energy-data]{反射块数据}。
+设 \(Z\ge2\)，并假设它们的对数长度在一个固定的有界集合中变化。
+在方程~\eqref{eq:marked-completion} 的完备化求和中，固定的特征、
+穿刺和槽位系数与 \(k,f\) 无关，槽位
+支撑互不相交，且槽位系数如
+方程~\eqref{old-eq:4.2} 中那样为乘积。在冻结
+\(k_{\rm pow},k_{\rm sup}\) 之后，固定的行限制必须与活跃槽位和
+对偶变量无关，除了显式的零掩码
+\(1_{(P,k_{\rm res})=1}\)。固定一个小的 \(\tau_{\rm ref}>0\)，令
+\(X=Z^{N_*}\)。定义 \(T_d\)，并称一个二进块被保留，如果满足以下
+公式：
+\begin{equation}\label{old-eq:4.4}
+ \begin{gathered}
+ T_d=2H+2A_0+2z_a-N_*-N_0-3B_0,\\
+ v+3\ell_b+e_\lambda\le T_d+\tau_{\rm ref}
+ \quad\text{for a retained dyad}.
+ \end{gathered}
+\end{equation}
+满足
+\[
+ v+3\ell_b+e_\lambda>T_d+\tau_{\rm ref}
+\]
+的项具有任意小的总大小，并带有固定的多项式高度代价，
+这是在充分远的核围道平移以及仅依赖于固定支撑区间和 \(\tau_{\rm ref}\) 的
+\(Z\) 阈值之后。每个保留的二进块对每个活跃
+元组都有系数指数
+\begin{equation}\label{old-eq:4.5}
+ -v/2-\ell_b-e_\lambda/3-(S_0+B_0+z_a)/2.
+\end{equation}
+定义
+\begin{equation}\label{old-eq:4.7}
+ u=\min\{v,z_a,(v+z_a)/3\},
+\end{equation}
+以及
+\begin{equation}\label{old-eq:4.6}
+ \begin{split}
+ E_{\rm ref}={}&O/2+\max(H,v+\ell_b)-S_0-B_0+z_a-u-\ell_b
+                     -2e_\lambda/3\\
+ &-\tfrac12(T_d-v-3\ell_b-e_\lambda)_+.
+ \end{split}
+\end{equation}
+对每个 \(\epsilon>0\)，固定
+\(k_{\rm pow},k_{\rm sup}\) 的贡献满足
+\[
+ \sum_{k_{\rm res}\ {\rm sf}}
+       |\mathcal U_{v,\ell_b,e_\lambda}(k_{\rm res})|^2
+ \ll Z^{E_{\rm ref}-O/2+\epsilon}.
+\]
+将其固定部分按其 \(O\)-二进块求和以及局部选择求和，将
+此变为 \(O(Z^{E_{\rm ref}+\epsilon})\)。这些界在所陈述的范围内对
+移动的理想和穿刺一致，带有有限多个光滑半范数以及范数扭转高度的固定多项式代价。
+\(e_\lambda\) 的负值（当出现时）为
+\(O(1/\log Z)\)。特别地，该公式仅用于满足方程~\eqref{eq:actual-residual-row-dyad} 的
+实际剩余行二进块。
+\end{lemma}
+
+\begin{proof}
+首先通过行希尔伯特空间中的三角不等式移除不活跃的槽位。在这样的槽位处，绝对系数质量为
+\[
+ \sum_{p\in\mathcal P_i}q_p^{-1}\ll_\epsilon Z^\epsilon,
+\]
+在任何固定限制下一致，包括对于有界或零长度的
+列表。因此，只需证明将这些素数固定后的统一界。
+每个这样的分支有其自己的导子、尖点扇区和核尺度，其中
+不活跃的素数不出现在导子中。其先前的碰撞排除
+现在是一个固定的行限制。

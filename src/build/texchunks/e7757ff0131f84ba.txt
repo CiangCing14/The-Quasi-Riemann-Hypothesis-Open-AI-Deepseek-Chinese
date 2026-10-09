@@ -1,0 +1,82 @@
+固定一个非零的六次方自由行 $u$，满足 $(u,S)=1$，以及一个素数
+$p\notin S$。令
+\begin{equation}\label{eq:local-parameters}
+ \begin{gathered}
+ Q=q_p,\qquad j=v_p(u)\in\{0,\ldots,5\},\qquad
+ \rho=\chi_p(u/p^j),\qquad \omega_p=\chi_p(-1),\\
+ a_p=\overline{\alpha(p)}^3\eta(p)^3,\qquad
+ b_p=\overline{\alpha(p)}^2\eta(p)^2\overline{\chi_p(4)},
+ \qquad b_p^3=a_p^2,\\
+ V=Q^{-6z},\qquad R=a_p^2Q^{4-6x-6z},\qquad
+ W_{\rm loc}=\rho Q^{-w}.
+ \end{gathered}
+\end{equation}
+值 $\rho,a_p,b_p$ 的绝对值为一，且
+$\omega_p\in\{1,-1\}$。对 $p$ 不施加射线类限制。
+
+\paragraph{有限标量及其单位因子。}
+记 $G_r=g_{\chi_p^r}(p,1)$，其中 $G_0=-1$，并对
+$1\le r\le5$ 记 $\gamma_r=Q^{-1/2}G_r$。对 $t\ge1$ 和
+$j'\ge0$，将一个模 $p$ 的剩余类作提升求和得到
+\[
+ g_{\chi_p^r}(p^t,p^{j'})=
+ \begin{cases}
+ Q^{t-1}G_r1_{j'=t-1},&6\nmid r,\\
+ Q^t1_{j'\ge t}-Q^{t-1}1_{j'\ge t-1},&6\mid r.
+ \end{cases}
+\]
+第二行是主特征经零延拓后的拉马努金和。正交性还给出
+$G_1G_{-1}=\omega_pQ$。
+
+令 $e_0=v_p(c)\in\{0,1\}$，$l=v_p(n)$，$t=e_0+3l$，
+$k=v_p(s)$，$m=v_p(a)$，于是 $v_p(H)=j'=j+6m$。
+方程~\eqref{eq:local-F} 在 $p$ 处的部分，在其单位
+因子被还原之前，为
+\begin{equation}\label{eq:local-scalar-definition}
+ C_p(t,k,j')=
+ \sum_{\substack{d\bmod p^k\\p^{j'}\equiv p^td\pmod{p^k}}}
+ \chi_p^k(d)
+ g_{\chi_p^t}\!\left(p^t,\frac{p^{j'}-p^td}{p^k}\right).
+\end{equation}
+在模一时，此公式中的两个因子均表示一。其完整
+求值为
+\begin{equation}\label{eq:local-scalar-values}
+ C_p(t,k,j')=
+ \begin{cases}
+ 1,&t=k=0,\\
+ 1_{j'=0},&t=0,\ k>0,\\
+ g_{\chi_p^t}(p^t,p^{j'}),&t>0,\ k=0,\\
+ \omega_p^{-1}G_1g_{\chi_p^{t-1}}(p^t,p^{j'-1}),
+                      &t>0,\ k=1,\ j'\ge1,\\
+ 0,&\text{otherwise}.
+ \end{cases}
+\end{equation}
+对 $t=0$ 和 $k>0$，同余式固定 $d=p^{j'}$ 模
+$p^k$，其零延拓特征非零当且仅当
+$j'=0$。对于第四行，同余式首先迫使 $j'\ge1$。
+展开内层高斯和，对 $d\bmod p$ 的求和为
+\[
+ \sum_{d\bmod p}\chi_p(d)e(-vd/p)
+       =\omega_p^{-1}G_1\chi_p(v)^{-1}
+       \qquad(p\nmid v),
+\]
+这将高斯特征从 $\chi_p^t$ 变为
+$\chi_p^{t-1}$。若 $t>0$ 且 $k\ge2$，允许的提升
+$d=d_0+p^{k-1}v$ 不改变 $\chi_p^k(d)$，但其高斯相位
+为 $e(-yv/p)$，其中高斯变量 $y$ 是一个单位。它们的和为
+零。这证明了方程~\eqref{eq:local-scalar-values}，包括
+高斯特征为主特征及零延拓的情形。
+
+对于原始单位，记 $h_p=H/p^{j'}$，$s_p=s/p^k$，以及
+$A_p^\circ=A/p^t$。中国剩余定理及代换
+$d=h_p(b_*A_p^\circ)^{-1}d'$ 给出额外的单位因子
+\begin{equation}\label{eq:local-unit-factor}
+ U_p=\chi_p^{k-t}(h_p)\chi_p^t(s_p)
+       \chi_p^{t-k}(A_p^\circ)\chi_p^{t-k}(b_*).
+\end{equation}
+更明确地说，外层剩余类特征给出
+$\chi_p^k(h_p)\chi_p^{-k}(b_*A_p^\circ)$，而中国
+剩余因子及高斯变量的重新缩放给出
+$\chi_p^t(b_*A_p^\circ)\chi_p^{-t}(h_p/s_p)$。它们的乘积为
+方程~\eqref{eq:local-unit-factor}。由于
+$h_p=(u/p^j)(a/p^m)^6$，有 $\chi_p(h_p)=\rho$。

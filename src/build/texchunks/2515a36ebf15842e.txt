@@ -1,0 +1,43 @@
+设 \(d_{\min}=1/100\)。引理~\ref{lem:compensated-absolute-local-bounds} 给出了完整选中元组正和的界，其中每个 \(G_p\) 在取绝对值之前都被保留。在小行线上
+\[
+ \Re s=\beta_*+e,\qquad \Re w=1/2,\qquad \Re z=17/50
+\]
+方程~\eqref{eq:absolute-local-tuple-bound} 给出
+\[
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_\epsilon U^\epsilon\prod_iP_i^{17/50}
+ =U^\epsilon Z^{17\ell/50},
+\]
+对所有虚部一致成立。这是方程~\eqref{eq:small-correction-bound}，高度次数为零。它在各个局部因子的零点处仍然有效。引理~\ref{lem:outer-row-tails} 的数据已在上文验证，因此它适用于这些二进块中的每个物理行 \(u\ne1\)。其分类包含非平凡单位分子并允许主分母；此处不使用任何检测器见证或选中的矩。
+
+相对指数的 \(d\)-无关部分为
+\begin{equation}\label{eq:small-frequency-margin}
+ h\left(\frac{17}{50}-\frac16\right)-\frac{l_y}{2}
+ =-\frac{79}{800}.
+\end{equation}
+方程~\eqref{eq:small-row-bound} 中的行指数为 \(63/50<2\)。因此，方程~\eqref{eq:small-row-sum} 中的小二进和，相对于 \(C(\beta_*)\) 度量，其指数至多为
+\[
+ -\frac{79}{800}+2d_{\min}+O(e+\epsilon)
+ =-\frac{63}{800}+O(e+\epsilon).
+\]
+在可调实损失取得足够小之后，它是负的。记 \(m_{\rm small}:=63/800\) 为这一固定的无误差节省。
+
+对于大行，固定 \(z_\infty>2\)。在 \((\Re s,\Re w,\Re z)=(2,2,z_\infty)\) 上，同样的方程~\eqref{eq:absolute-local-tuple-bound} 给出
+\[
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_\epsilon U^\epsilon Z^{\ell z_\infty}
+\]
+对每个物理行和所有虚部成立。这验证了方程~\eqref{eq:large-correction-bound}。因此引理~\ref{lem:outer-row-tails} 给出，取 \(B_0=l_x/2+1+l_y=53/32\)，
+\[
+ |\mathscr R_\eta(U;Z)|
+ \ll Z^{B_0+hz_\infty+\epsilon}U^{1+\epsilon-z_\infty},
+\]
+并且，对每个固定的 \(\zeta>0\)，在选取 \(0<\epsilon<z_\infty-1\) 之后，
+\[
+ \sum_{U>Z^{h+\zeta}}|\mathscr R_\eta(U;Z)|
+ \ll
+ Z^{B_0+(h+\zeta)(1+\epsilon)-\zeta z_\infty+\epsilon}.
+\]
+这里 \(\mathscr R_\eta\) 是引理~\ref{lem:outer-row-tails} 对当前物理表达式给出的行贡献。一个固定的充分大的 \(z_\infty\) 可使最后一个指数达到所需的负值。它在 \(\zeta\) 之后、目标之前选取。这些调用使用第~\ref{sec:local-compensation} 节中的无商元组界，而非中心主项/误差分解。
+
+\subsection{端点不等式}\label{sec:adaptive-endpoint}

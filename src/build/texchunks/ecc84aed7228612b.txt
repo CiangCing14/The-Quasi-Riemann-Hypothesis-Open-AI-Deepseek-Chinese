@@ -1,0 +1,36 @@
+插入二进区间 $q_{\mathfrak w}\asymp V$，包括有界区间 $V=1$ 中的单位理想。只可能出现 $1\le V\ll_{\mathcal A}U$，并且这样的区间有 $O_{\mathcal A}(\log U)$ 个。原来的圆环 $q_u\asymp U$ 给出实际的剩余圆环
+\begin{equation}\label{eq:sextic-actual-row-annulus}
+ q_{\mathfrak k}=\frac{q_u}{q_{\mathfrak s}q_{\mathfrak w}}
+       \asymp_{\mathcal A}\frac UV.
+\end{equation}
+在求和时我们保留这一限制。只有在应用正的行界时，它才会被扩大到球 $q_k\ll_{\mathcal A}U/V$。设 $\mathcal U_V$ 表示当前见证细分中位于这个强部分二进区间内的行，并保留所有原有的物理限制。
+
+范数至多为 $V$ 的强理想的数量为 $O(V^{1/2})$。事实上，每个强理想都有唯一的表达式
+$\mathfrak v^2\mathfrak y^3$，其中 $\mathfrak y$ 无平方因子；这两个因子不必互素。由算术预备知识中的理想计数给出
+\[
+ \#\{\mathfrak w:q_{\mathfrak w}\le V,\ \mathfrak w\ {\rm powerful}\}
+ \ll V^{1/2}\sum_{\mathfrak y}q_{\mathfrak y}^{-3/2}
+ \ll V^{1/2}.
+\]
+最后一个级数由同样的理想计数收敛。对于其二进区间中每个固定的
+$\mathfrak w$，包含
+Equation~\eqref{eq:sextic-actual-row-annulus} 的球中有 $O_{\mathcal A}(U/V)$
+个理想。非空圆环的 $U/V$ 有固定的正常数下界，这也涵盖了单位剩余理想。由于 $(u)$ 的分解及其单位是唯一的，这个强部分二进区间中的行数满足
+\begin{equation}\label{eq:sextic-stratum-cardinality}
+ \#\mathcal U_V\ll_{\mathcal A}U V^{-1/2}.
+\end{equation}
+在这个上界计数中丢弃任何定义 $\mathcal U_V$ 的限制都只会增加行数。
+
+对于固定的 $\mathfrak w,\mathfrak s,\upsilon$，令
+$v=\upsilon s_{\mathfrak s}w$。分子的乘性给出精确恒等式
+\begin{equation}\label{eq:sextic-frozen-mask}
+ \chi_n(u)^{\varsigma}
+   =\chi_n(v)^{\varsigma}\chi_n(k)^{\varsigma}.
+\end{equation}
+它包含了零延拓：如果 $n$ 与任一因子相交，则两边都为零，否则就是通常的乘性。特别地，固定轮廓 $W$ 的逆多项式是
+Lemma~\ref{lem:sextic-large-sieve} 中的行和，其系数为
+\[
+ c_n=D^{-1/2}\mu(n)\nu(n)\chi_n(v)^{\varsigma}W(q_n/D).
+\]
+因子 $\mu(n)$ 保持列无平方因子。因子
+$\chi_n(v)^{\varsigma}$ 保留了 $(n,v)>1$ 处的每一个原零点，并且在剩余行 $k$ 上固定。唯一剩下的同时依赖于 $n$ 和 $k$ 的零点是所示筛核本身的零点。限制 $(k,w)=1$，以及任何从固定外部参数的物理行集继承来的限制，在此应用中都是固定的行限制。我们不扩大 $S$ 以包含 $w$ 的素数。因此筛法中的常数与 $w$ 无关，即使其固定系数掩码可能具有很大的范数。

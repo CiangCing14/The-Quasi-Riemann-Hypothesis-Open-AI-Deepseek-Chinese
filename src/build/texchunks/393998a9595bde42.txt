@@ -1,0 +1,15 @@
+\paragraph{新的典范数据及其允许性。}
+第二次变换已将移动特征恢复到典范形式。我们现在确定哪些数据将被固定，哪些将保持平均。这一区分也决定了子项的穿刺。
+在两侧令 \(\nu_a'=\nu_i\overline\vartheta\)，并定义
+\begin{equation}\label{eq:canonical-child-data}
+ \begin{gathered}
+ \gamma=(q_0,t',r_g),\qquad r_g=g'/d_2,\\
+ k_{\rm new}=d_kd_2k'',\qquad f_{\rm new}=JCd_2v',\\
+ \rho'(n)=\rho_\gamma(n)=\rho(n)1_{(n,\operatorname{rad}q_0t'r_g)=1}.
+ \end{gathered}
+\end{equation}
+在非零系数支撑上，\(J,C,d_2,v'\) 是无平方因子的且两两互素：\((C,J)=1\) 属于 \(\mathfrak O_\sigma\)，\(|B_o(g')|^2\) 迫使 \((g',CJ)=1\)，\(d_2\mid g'\)，并且 \(D_o\) 的保留零点连同旧的 gcd 限制给出 \((v',g'CJ)=1\)。因此 \(f_{\rm new}\) 在该支撑上是无平方因子的。这些公因子通过柯西仍留在外权中。
+
+三元组 \(\gamma\) 将在子项行与标签求和之前被固定。其穿刺 \(\rho_\gamma\) 因此独立于这两个平均变量。理想 \(J,C,d_2,v'\) 仍留在新的平均标签中；它们不被计为额外的固定标签。
+
+在每个选定侧的副本上应用方程~\eqref{eq:inverse-slot-priority}，使用有序列表 \((d_2,r_g,v';n_a)\)。令 \(I_a'\) 为选定侧的槽在副本 \(a\) 中保留在 \(n_a\) 上的子集合。被指派的素数及其优先掩码仍留在外层。整除 \(n\) 的幸存素数已由四次方零点与 \(JCd_2v'\) 互素，并由固定穿刺与 \(\operatorname{rad}q_0,t',r_g\) 互素。这些也提供了所有更早的幸存排除，因为 \(\operatorname{supp}\mathfrak B\subset\operatorname{supp}(Jq_0)\)。因此幸存标记是一个原始乘积形式子集合。一个被描述为指派给 \(J\) 的旧槽，只是由这个导出的支撑对旧的 \(b_a,\mathfrak A_a\) 指派进行的重新分组，而不是一个新的独立素数选择。

@@ -1,0 +1,62 @@
+\item 局部列因子为
+\[
+ B_p(x)=\begin{cases}
+ \chi_p(x)^{-j_p-2},&j_p\ne0,4,\\
+ q_p^{-1/2}(-1+q_p1_{p\mid x}),&j_p=4,\\
+ q_p^{-1/2}\chi_p(x)^{-2},&j_p=0\text{ and }p\text{ is active}.
+ \end{cases}
+\]
+函数 $d$ 是三个固定尖点系数函数之一。
+以 $u$ 表示一个艾森斯坦单位，它们的支集与大小满足
+\begin{equation}
+ \operatorname{supp}d\subset
+ \{u\lambda^k n b^3:k\ge-4,\ n,b\equiv1\pmod3,\ n\ {\rm sf}\},
+ \qquad |d(\mu)|\le27\,3^{k/6}|b|.
+ \label{old-eq:4.3}
+\end{equation}
+该界指的是被支集包含的指标所展示的表示。
+它允许 $n$ 与 $b$ 有公共素数，并且除在 $\lambda$ 处所展示的限制外，
+对 $L$ 的素数不施加任何排除。
+特征 $\vartheta$ 是 $\mathcal O$ 的一个商的一个加性特征，
+该商模一个仅依赖于 $L$ 的固定模。
+
+\item 标量 $\zeta$ 与 $\mu$ 无关，并满足
+$|\zeta|\le1/81$。其随动素数依赖关系可以被精确指定。
+对于 $m\not\equiv0\pmod6$，令
+\[
+ \tau_{p,m}^{\pm}=q_p^{-1/2}\sum_{y\bmod p}\chi_p(y)^m e(\pm y/p),
+ \qquad |\tau_{p,m}^{\pm}|=1.
+\]
+对每个活跃的 $p$，通过下式定义模 $p$ 的单位
+\[
+ \sigma_p=\lambda^2c/p,\qquad
+ \epsilon_p=-\big((\lambda^3c/p)\sigma_p\big)^{-1},
+\]
+并令
+\[
+ \omega_{p,j}=\begin{cases}
+ \tau_{p,j}^{-}\tau_{p,j+2}^{+}\chi_p(\epsilon_p)^{-j-2},&j\ne0,4,\\
+ \tau_{p,4}^{-},&j=4,\\
+ -\tau_{p,2}^{+}\chi_p(\epsilon_p)^{-2},&j=0.
+ \end{cases}
+\]
+$\tau$ 的指标按模六读取。令
+$M=\lambda^{12}L^4$，则存在一个绝对值为一的数 $\kappa_F$，
+仅依赖于 $h_0$ 以及 $r$ 模 $M^2$ 的类，使得
+\begin{equation}\label{eq:reflection-row-phase}
+ \zeta=-\frac i{81}\bar\alpha(c)^2\widehat\phi(h_0)\bar\kappa_F
+ \prod_{p\ {\rm inactive}}(1-q_p^{-1})
+ \prod_{p\ {\rm active}}\chi_p(\sigma_p)^{-2}\omega_{p,j_p}.
+\end{equation}
+在 $h_0$ 与 $r\bmod M^2$ 的有限多个类中的每一个里，$d$ 与 $\vartheta$ 都是固定的。
+因此，在该扇区内这些是公共列因子。除所展示的尺度 $q_c^2$ 之外，
+$B_p$ 之外的所有其他随动素数依赖关系都在标量 $\zeta$ 中，
+而 $\zeta$ 可能依赖于整个活跃集。
+
+分支约定对于具有相同 $L$ 与 $\Psi_0$ 的所有局部素数集是同时的。
+特别地，若将一个好素数 $p$ 以指数零加入局部集并声明其为非活跃的，
+则所得分支具有相同的 $c_F,c,d,\vartheta,\kappa_F$，在每个其他活跃素数处有相同的数据，
+并且与 $p$ 缺席的分支有相同的核。
+其标量乘以 $1-q_p^{-1}$。这种相容性包括每一个 $h_0$，
+而不仅是模 $L$ 的单位类。
+\end{enumerate}

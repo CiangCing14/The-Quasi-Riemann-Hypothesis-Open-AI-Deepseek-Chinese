@@ -1,0 +1,26 @@
+共同的环形支撑与理想计数给出，对固定的轮廓参数一致地，
+\[
+ \sum_n|c_n|^2
+ \le D^{-1}\sum_{q_n\asymp D}|W(q_n/D)|^2\ll_{\mathcal A}1.
+\]
+同样的陈述对下文所用的有限多个轮廓导数也成立，并带有相应的固定半范数。在将正剩余行和从其实际环带放大到 $q_k\ll_{\mathcal A}U/V$ 之后，应用引理~\ref{lem:sextic-large-sieve}。一个固定的放大使得行界在每个非空商范围上至少为一，并包含环形列支撑。将所得结果对 $\mathfrak w$ 的 $O(V^{1/2})$ 种选择以及 $\mathfrak s,\upsilon$ 的有限多种选择求和，得到
+\begin{equation}\label{eq:sextic-stratum-fixed-moment}
+ \sum_{u\in\mathcal U_V}|M_u(D;W)|^2
+ \ll_{\mathcal A,\epsilon_1}(UD)^{\epsilon_1}V^{1/2}
+ \left\{\frac UV+D+\left(\frac{UD}{V}\right)^{2/3}\right\}.
+\end{equation}
+本推导中的所有系数序列在应用筛法的行和中都是固定的。对于 $\mathfrak w$ 的不同冻结值，它们可以不同，而这些值仅在这些正界之后才被求和。
+
+我们现在恢复方程~\eqref{eq:sextic-witness-spike} 中 $W_u$ 的逐行选择。这里检测器以 $t=1$ 使用，因此 $D_*=U$。在表示与二进对固定之后，其逆轮廓具有形式
+\[
+ W_{\rm dyad}(x)V_{\le}(Dx/U)x^{-\sigma-i\omega},
+ \qquad \omega=\gamma-\nu_F,
+\]
+其中 $W_{\rm dyad}$ 是固定的光滑二进截断，$\nu_F$ 是来自检测器的傅里叶频率。因子 $V_{\le}(Dx/U)$ 对行和是共同的；变化的参数是 $\sigma\in[51/100,1]$ 和 $|\omega|\le(3i+1)T_1$。对任一参数求导会插入一个 $\log x$ 的幂，它在固定环带上有界。用单位盒覆盖这两个参数范围。这样的盒至多有 $1+T_1$ 的一个固定幂那么多。引理~\ref{lem:smooth-calculus} 中的参数索伯列夫不等式将盒上的上确界用轮廓导数平方的积分之有限和来界定。在这些积分之前对行求和。在每个固定参数值处，求导只改变固定的轮廓系数，插入允许的对数权重或轮廓导数。因此方程~\eqref{eq:sextic-stratum-fixed-moment} 适用于每一个这样的积分。这证明了
+\begin{equation}\label{eq:sextic-stratum-moment}
+ \sum_{u\in\mathcal U_V}|M_u(D;W_u)|^2
+ \ll_{\mathcal A,\epsilon_1}(UD)^{\epsilon_1}(1+T_1)^{A_{\mathcal A}}
+ V^{1/2}\left\{\frac UV+D+
+       \left(\frac{UD}{V}\right)^{2/3}\right\}.
+\end{equation}
+导数阶数以及因此 $A_{\mathcal A}$ 在选择 $\tau$ 之前就已固定。高度区间以及额外频率的总允许量恰好是共享检测器估计中的那些；索伯列夫步骤不分配新的频率允许量，也不改变围道。它不允许对每个 $k$ 单独选择一个系数。

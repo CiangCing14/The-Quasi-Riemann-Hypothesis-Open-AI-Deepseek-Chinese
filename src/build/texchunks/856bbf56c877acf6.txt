@@ -1,0 +1,54 @@
+固定 \(f,\rho,k_{\rm pow},k_{\rm sup}\)、非槽局部选择、\(h_0\)，
+以及残差行乘积与活跃槽乘积在完整 \(M_{\rm ref}^2\) 模下的分离类。同时固定对偶指标的
+单位和分歧指数。不再有非槽 \(j=4\) 标签被平均。我们仅使用
+方程~\eqref{eq:unmarked-structural-block} 中的代数冻结基提取，在活跃元组上的原始求和之内。
+推论~\ref{cor:marked-reflection} 及随后的相位分离使得该提取在诸元组之间同时进行：
+在各自扇区固定之后，基系数对残差行与元组是共同的，而剩余的标量分离为一个行因子和
+一个元组因子。我们不对每个元组分别应用数值无标记估计。
+
+结构提取给出共同的中心系数
+\[
+ Z^{-v/2-\ell_b-e_\lambda/3-(S_0+B_0)/2}
+\]
+乘以归一化逆根因子和有界系数。其
+\(N_0\)-赋值仅从无平方因子对偶理想中提取一个被迫的 \(j=4\) 素数，即使立方理想共享它；
+整个共享的立方部分保留在其残差范数和系数中。其 \(B_0\)-赋值从立方理想中提取
+一次出现，并留下因子 \(q_p^{-1/2}\)。
+这些是关于完整源支撑的陈述，包括 \(S\) 的允许素数。方程~\eqref{eq:marked-reflection} 中
+每个活跃标记列贡献 \(q_p^{-1/2}\)。
+由于 \(q_P/Z^{z_a}\) 位于一个固定紧区间内，这证明了方程~\eqref{old-eq:4.5} 中的
+逐元组系数指数。
+
+我们现在记录共同轮廓的精确标记实例。设
+\(F_{\rm act},N_F,B_F\) 为具有对数范数
+\(A_0,N_0,B_0\) 的实际冻结乘积。令 \(R=k_{\rm res}\)，\(P=\prod_{i\ {\rm active}}p_i\)。
+分支分母和一个受支撑的对偶指标为
+\[
+ c=c_FF_{\rm act}RP,\qquad
+ \mu=u\lambda^{h_\lambda}N_Fn(B_Fb)^3.
+\]
+在固定块中心下，定义
+\[
+ \begin{gathered}
+ y_R=q_R/Z^H,\quad y_n=q_n/Z^v,\quad
+ y_b=q_b/Z^{\ell_b},\quad y_i=q_{p_i}/Z^{z_i},\\
+ Y=\frac{q_{\lambda^{h_\lambda}N_FB_F^3}X Z^vZ^{3\ell_b}}
+          {q_{c_FF_{\rm act}}^2Z^{2H}\prod_{i\ {\rm active}}Z^{2z_i}}
+   =q_{c_F}^{-2}Z^{v+3\ell_b+e_\lambda-T_d}.
+ \end{gathered}
+\]
+乘法性给出精确恒等式
+\begin{equation}\label{eq:reflection-actual-annuli}
+ \frac{q_\mu X}{q_c^2}
+       =Yy_ny_b^3y_R^{-2}\prod_{i\ {\rm active}}y_i^{-2}.
+\end{equation}
+即使 \(N_F\) 与 \(b\) 共享素数，它仍然成立。\(Y\) 中的所有冻结因子
+都是其实际乘积，且每个移动范数仍是一个坐标。
+因此，实际行截断以及各个对偶和槽截断将
+核参数置于
+\[
+ [C_{\rm ker}^{-1},C_{\rm ker}]
+       Z^{v+3\ell_b+e_\lambda-T_d}
+\]
+中，其中 \(C_{\rm ker}\ge1\) 仅依赖于固定支撑区间和
+共同固定模。特别地，这一比较没有使用由正性添加的任何更短行。

@@ -1,0 +1,50 @@
+\begin{proposition}[二次转移]
+\label{prop:hecke-dirichlet-transfer}
+设 $\sigma_0\in[1/2,1)$。假设 $F=\mathbb Q(\sqrt{-3})$ 上每个本原有限阶赫克
+$L$ 函数在 $\Re s>\sigma_0$ 上无零点，允许其主极点位于一。则 $F$ 上每个
+有限阶赫克 $L$ 函数以及每个狄利克雷 $L$ 函数在该严格半平面上无零点，同样允许主
+极点位于一。
+\end{proposition}
+
+\begin{proof}
+从本原赫克特征过渡到它诱导的特征，只改变有限多个因子 $1-\eta(\mathfrak p)N\mathfrak p^{-s}$。
+它们在 $\Re s>0$ 上非零，因此赫克断言推广到所有
+有限阶特征。对因子
+$1-\chi(p)p^{-s}$ 的同样观察将狄利克雷断言归约为导子为 $q$ 的本原
+狄利克雷特征 $\chi$。
+
+设 $\chi_{-3}$ 为导子为三的二次特征，并设
+$\eta$ 为有限阶赫克特征，由
+$\mathfrak a\mapsto\chi(N\mathfrak a)$ 在与 $3q$ 互素的理想上给出。
+它是一个射线特征：若 $\alpha\equiv1\pmod{q\mathcal O}$，则
+$N\alpha\equiv1\pmod q$，故范数特征在相应的主射线子群上平凡。设 $S_{\mathbb Q}$ 为整除 $3q$ 的有理
+素数，并设 $\mathcal S_{\mathbb Q}$ 为 $F$ 中位于其上的素数。以上述集合为下标的上标表示删除这些欧拉
+因子。
+
+对于 $p\notin S_{\mathbb Q}$，局部因子如下一致。若 $p$
+在 $F$ 中分裂，则 $\chi_{-3}(p)=1$，两个素理想的范数均为 $p$，
+而赫克因子为 $(1-\chi(p)p^{-s})^{-2}$。这是
+$\chi$ 与 $\chi\chi_{-3}$ 的狄利克雷因子之积。若 $p$ 惰性，
+则 $\chi_{-3}(p)=-1$，唯一的素理想范数为 $p^2$，其
+因子为
+\[
+ (1-\chi(p)^2p^{-2s})^{-1}
+  =(1-\chi(p)p^{-s})^{-1}(1+\chi(p)p^{-s})^{-1}.
+\]
+这些穷尽了 $S_{\mathbb Q}$ 之外的素数。对 $\Re s>1$ 的绝对欧拉
+收敛性，随后由亚纯
+延拓的唯一性，给出
+\begin{equation}
+ L_F^{\mathcal S_{\mathbb Q}}(s,\eta)
+ =L^{S_{\mathbb Q}}(s,\chi)
+      L^{S_{\mathbb Q}}(s,\chi\chi_{-3}).
+ \label{eq:hecke-dirichlet-factorization}
+\end{equation}
+右端的乘积特征可能非本原；删除
+$S_{\mathbb Q}$ 使该恒等式不依赖于这一选择。每个
+被删除的因子在 $\Re s>0$ 上非零。
+
+两个狄利克雷因子在 $0<\Re s<1$ 上全纯。$L(s,\chi)$ 在该区域的一个零点因此会给出赫克因子的一个零点，且
+不会被极点抵消，而所假设的赫克半平面在 $\Re s>\sigma_0$ 时排除它。绝对欧拉收敛性处理 $\Re s>1$。
+在 $s=1+it$ 且 $t\ne0$ 时，两个狄利克雷因子都没有极点，故同样的
+乘积论证适用。

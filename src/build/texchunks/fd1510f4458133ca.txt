@@ -1,0 +1,42 @@
+对每个保留的外部参数元组以及每个误差槽子集，将 \(\mathcal B\) 逐点划分为第~\ref{sec:amplitudes} 节的振幅集，并在使用见证计数时划分为第~\ref{sec:selection} 节的见证细分。假设每个这样的集合 \(\mathcal C\) 具有主槽均值 \(q\in[0,\delta/2]\)，如式~\eqref{old-eq:6.6} 所示，且
+\[
+ \#\mathcal C\ll_{\mathcal A,\epsilon}
+ U^{R+\epsilon}(1+T_1)^{A_{\mathcal A}},
+\]
+在保留元组和移动标签上一致成立。出现的 \(R,q\) 取值于一个固定的有界集合，并且可以依赖于逐点集合、\(d,a\) 和 \(\beta_*\)，但不以其他方式依赖于目标。对每个出现的对定义
+\begin{equation}\label{eq:common-high-exponent}
+ \begin{split}
+ E(d)
+ &=a-\frac78+h\left(\frac{17}{50}-\frac16\right)
+       -a l_y-(1-a)\ell-(\delta/2-q)\ell
+       +d\left(R+\frac\delta2-\frac{17}{50}\right)\\
+ &=C_0+\frac23\delta+\frac q6-h(1-R)
+       +(d-h)\left(R+\frac\delta2-\frac{17}{50}\right),
+       \qquad C_0=-\frac1{48}.
+ \end{split}
+\end{equation}
+若 \(\mathcal B\ne\varnothing\)，令 \(E_{\max,Z}(d)\) 为这些值在所有保留元组处的所有逐点集合上的上确界。
+
+在中心围道
+\[
+ \Re s=a+16e,\qquad \Re w=1-a-6e,\qquad \Re z=\frac{17}{50},
+\]
+上，原始固定动态箱和式的贡献被
+\[
+ Z^{C(7/8)+E_{\max,Z}(d)+O(e+\vartheta+\epsilon)}
+ (1+T_1)^{A'_{\mathcal A}},
+\]
+所界，其中 \(\vartheta\) 是振幅箱宽度，且 \(A'_{\mathcal A}<\infty\) 在移动标签上一致。空箱贡献为零。\(O(e+\vartheta+\epsilon)\) 项中的常数仅依赖于有界实值范围和固定槽系统，而不依赖于目标。不声称对单个逐点集合有单独的积分。在固定 \(\tau>0\) 之后，所有被丢弃的外部片段和连接均为 \(O_{\mathcal A,N}(Z^B T_1^{-N})\)，其中 \(B\) 固定，且对每个固定的 \(N\) 成立。
+\end{lemma}
+
+\begin{proof}
+我们验证引理~\ref{lem:bin-contour-accounting} 的中心假设，该引理为刚刚指定的完整修正提供围道移动及其尾项。其箱上界由式~\eqref{eq:part-II-bin-ceiling} 成立。物理的 \(\Im z\) 坐标被包含在其高度分配中，因为它进入素数轮廓。其他见证、二进和素数环坐标是第~\ref{sec:selection} 节估计中使用的固定有限列表。它们的完整逐点界包含在全局或绝对直线上的被丢弃辅助积分。因此，式~\eqref{eq:stage-height-allocation} 中的单一累积分配适用，而无需在后续估计中重新给予配额。
+
+仅在保留围道上，命题~\ref{prop:probe-errors} 给出式~\eqref{eq:dynamic-compensated-decomposition} 中的分解。对于 \(I\subseteq\{1,\ldots,K\}\)，其被加项为
+\[
+ \mathfrak H_{\eta,u,Z}^{(I)}
+ =\mathcal H_{\eta,u}(s,w,z)
+       \prod_{i\in I}\mathcal D_i(u)
+       \prod_{i\notin I}\mathcal Q_i(u;z).
+\]
+所需的反射原始分子界由分子表示及其共轭的缓冲估计，连同引理~\ref{lem:deleted-euler-factors} 得出，正如在命题~\ref{prop:probe-errors} 之前所验证的那样。保留的 \(w\) 高度位于其允许集合中。每个保留的分子都是非主分子。

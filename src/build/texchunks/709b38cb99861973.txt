@@ -1,0 +1,33 @@
+\begin{proof}
+对 $\widehat f$ 求导会插入 $x^\beta$，而乘以 $\xi$ 的单项式则在傅里叶变换之前对 $x^\beta f$ 求导。傅里叶变换的 $L^1$ 界、乘积法则，以及用次数至多为 $\lceil A\rceil$ 的单项式的有限和来界定 $(1+|\xi|)^A$，给出第一个断言。对于径向函数，$r\partial_r$ 对应于 $(\xi\cdot\partial_\xi)/2$。展开其 $j$ 次幂得到傅里叶导数的有限多个多项式倍，因此第一个断言给出径向情形。固定的线性坐标变换只改变其中的常数。
+
+对于梅林断言，在绝对收敛积分下求导会插入 $(-s)^j$。在固定带域上，这被一个常数乘以 $(1+|t|)^j$ 所界定。令 $y=e^u$，并对 $e^{-\sigma u}W(e^u)$ 的傅里叶变换分部积分超过 $h+j+1$ 次。乘积法则用所述的加权对数导数来界定所得的 $L^1$ 导数，因为 $\sigma$ 在一个固定集合上取值。对于纯扭转，梅林被积函数为 $\mathcal MW(-\sigma-it+i\omega)$。作代换 $v=t-\omega$ 并利用
+$(1+|v+\omega|)^{h+j}\le(1+|v|)^{h+j}(1+|\omega|)^{h+j}$。
+最后，固定环形截断的乘积法则与 $Ry$ 的链式法则给出最后一个断言。
+\end{proof}
+
+\subsection{赫克函数的增长与对数控制}
+
+圆盘估计只有在零点被排除出该圆盘之后才会被应用。以下初等增长界为复分析论证提供输入，并清楚说明哪些常数在导子方面是一致的。当 $\psi$ 是赫克特征时，$L(s,\psi)$ 简写为 $L_F(s,\psi)$。在本小节中 $\Gamma(s)$ 表示欧拉伽马函数；有限二次函数 $\Gamma(c)$ 仅限于上述算术恒等式。
+
+\begin{lemma}[赫克带域增长]\label{lem:hecke-strip-growth}
+设 $\psi$ 是 $F$ 的一个本原非主有限阶赫克特征，导子范数为 $Q$。则
+\begin{equation}\label{eq:hecke-growth}
+ |L(\sigma+it,\psi)|\ll Q^{3/5}(3+|t|)^2,
+ \qquad-1/10\le\sigma\le11/10.
+\end{equation}
+对于主特征，同样的界在 $Q=1$ 时对 $(s-1)\zeta_F(s)/(s+1)$ 成立，其中在 $s=1$ 处使用可去值。
+\end{lemma}
+
+\begin{proof}
+有限阶特征具有平凡的无穷型，因为 $\mathbb C^\times$ 是连通的。此情形下的本原赫克函数方程是
+\[
+ \Lambda(s,\psi)=(3Q)^{s/2}(2\pi)^{-s}\Gamma(s)L(s,\psi),\qquad
+ \Lambda(s,\psi)=\varepsilon(\psi)\Lambda(1-s,\overline\psi),
+ \quad |\varepsilon(\psi)|=1.
+\]
+这是 \cite[Equation (1.1)]{GZ} 中所述平凡无穷型本原特征的函数方程；非主 $L(s,\psi)$ 是整函数。绝对欧拉收敛将 $L(11/10+it,\psi)$ 关于 $Q,t$ 一致地界定。在 $\Re s=-1/10$ 上应用函数方程与斯特林公式给出
+\[
+ |L(-1/10+it,\psi)|\ll Q^{3/5}(3+|t|)^{6/5}.
+\]
+有界 $t$ 的估计由伽马商在该直线上的连续性得到，因此常数在那里也是一致的。

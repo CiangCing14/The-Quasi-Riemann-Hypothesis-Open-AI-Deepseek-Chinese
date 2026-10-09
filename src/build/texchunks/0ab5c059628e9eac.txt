@@ -1,0 +1,31 @@
+下面是由这两个泊松变换所封闭的命题。其穿刺界是假设的一部分，因为冻结的移动模数不能被视为固定算术数据的一部分。对于递归泊松大筛框架，比较 \cite[Section~2]{HBQuadratic}、\cite[Section~4]{HB} 和 \cite[Sections~4--7]{GL}；本文的带标记递归将在下面证明。
+
+\begin{lemma}[典范带标记估计]\label{lem:canonical-moment}
+固定 \(M,N,V,z_0\) 的有界非负范围、槽数的界以及 \(c_*>0\)。令 \(f\) 取遍 \(S\) 之外满足 \(q_f\asymp Z^V\) 的无平方因子理想。令 \(w\) 为仅依赖于 \(f\) 的非负函数，满足 \(w(f)\le C d_{\mathcal O}(f)^C\)，其中 \(C\ge1\) 固定。\(C\) 和 \(w\) 的选择均不依赖于 \(Z\)、当前行或任何其他被平均的变量。下面的隐含常数可以依赖于 \(C\)，但对所有满足此固定界的 \(w\) 一致。令 \(\nu\) 为一个固定的乘法有限射线特征，其完全零延拓定义模数的素因子支撑在 \(S\) 中，并令 \(\rho(n)=1_{(n,\mathfrak r_\rho)=1}\) 为一个固定穿刺。二者均独立于 \(k,f\)。令 \(\mathfrak d\) 具有式~\eqref{old-eq:4.2} 中的乘积形式，其不交固定素数列表总长度至多为 \(z_0\)，系数有界且独立于 \(k,f\)。不允许其他依赖于行的列系数或穿刺。不存在额外的剩余系数 \(b(n)\)，即使它独立于 \(k,f\)：任意有界权重仅允许作为所述单个素槽系数的乘积。
+
+置 \(F_0=N+V\)。假设
+\begin{equation}\label{eq:invariant}
+ \begin{gathered}
+ q_{\mathfrak r_\rho}\le Z^{F_0-M-z_0-c_*},\\
+ 3M+6z_0+c_*\le4F_0.
+ \end{gathered}
+\end{equation}
+对每个光滑环形 \(W\) 和每个 \(\epsilon>0\)，定义
+\begin{equation}\label{eq:canonical-energy}
+ \begin{split}
+ \mathcal E={}&Z^{-V}\sum_f w(f)
+ \sum_{\substack{k\in\mathcal O\\0<q_k\ll Z^M}}
+ \Biggl|Z^{-N/2}\sum_{n\ {\rm sf}}
+ \bar\alpha(n)\gamma_2(n)\nu(n)\rho(n)\\
+ &\hspace{24mm}\times
+ \chi_n(k)\chi_n(f)^4\mathfrak d(n)W(q_n/Z^N)\Biggr|^2.
+ \end{split}
+\end{equation}
+则 \(\mathcal E\ll Z^{F_0+\epsilon}\)。该常数在所述范围内对移动模数和冻结外理想一致。它依赖于有限多个光滑半范数，并对分离的范数扭结高度具有固定的多项式依赖。相同结论对具有原始上界 \(z_0\) 的所有槽子集成立，包括空集。
+\end{lemma}
+
+第~\ref{sec:marked-energy} 节中的反射能量为该族提供了终端估计。其余范围将归约到具有更短行的同一族。在两个泊松变换之前，我们给出通过有限归纳传播光滑半范数和高度阶的通用解析规则。
+
+\subsection{半范数与高度阶的有限传播}\label{sec:moment-propagation}
+
+我们使用以下关于有限估计序列的抽象陈述。它并不断言任何特定的算术归约满足其假设。其目的是精确陈述，在外部高度截断之前，变换后轮廓和傅里叶系数测度的哪些一致界足以选择所有内部导数阶。

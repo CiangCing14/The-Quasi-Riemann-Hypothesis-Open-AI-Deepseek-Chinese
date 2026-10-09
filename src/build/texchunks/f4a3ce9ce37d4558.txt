@@ -1,0 +1,52 @@
+有一个精确的有限展开
+\begin{equation}\label{eq:marked-reflection}
+ \begin{split}
+ \mathcal T_{\mathcal Q}(X;\Psi,V)
+ =\sum_{\mathcal B}\zeta_{\mathcal Q}
+ \sum_{0\ne\mu\in\lambda^{-4}\mathcal O}
+ &\frac{d(\mu)\alpha(\mu)\vartheta(\lambda^4\mu)}{\sqrt{q_\mu}}
+ \prod_{p\in\mathcal A_0}B_p(\lambda^4\mu)\\
+ &\cdot\prod_{q\in\mathcal A_{\mathcal Q}}
+       q_q^{-1/2}\chi_q(\lambda^4\mu)^{-2}
+ V^\sharp\!\left(\frac{q_\mu X}{q_c^2}\right).
+ \end{split}
+\end{equation}
+这里一个分支 \(\mathcal B\) 指定了 \(h_0\bmod L\)、基础活跃集与非活跃集 \(\mathcal A_0,\mathcal I_0\)，以及一个划分
+\(\mathcal Q=\mathcal A_{\mathcal Q}\sqcup\mathcal I_{\mathcal Q}\)。
+所有满足 \(j_p\ne0\) 的基础素数都是活跃的。令
+\[
+ r=\prod_{p\in\mathcal A_0\cup\mathcal A_{\mathcal Q}}p,
+ \qquad c=c_F(h_0)r.
+\]
+基础因子 \(B_p\) 与典范函数 \(d,\vartheta\) 就是命题~\ref{prop:completed-reflection} 中对应于这个活跃根式的那些。
+当每个 \(\sigma_p,\epsilon_p,\omega_{p,j}\) 都用这个分支的整个 \(c\) 计算时，标量为
+\begin{equation}\label{eq:marked-reflection-phase}
+ \begin{split}
+ \zeta_{\mathcal Q}={}&-\frac{i}{81}\bar\alpha(c)^2
+       \widehat\phi(h_0)\bar\kappa_F
+       \prod_{p\in\mathcal I_0}(1-q_p^{-1})
+       \prod_{q\in\mathcal I_{\mathcal Q}}q_q^{-1}\\
+ &\cdot\prod_{p\in\mathcal A_0}\chi_p(\sigma_p)^{-2}\omega_{p,j_p}
+       \prod_{q\in\mathcal A_{\mathcal Q}}
+             \chi_q(\sigma_q)^{-2}(-\omega_{q,0}).
+ \end{split}
+\end{equation}
+特别地 \(|\zeta_{\mathcal Q}|\le1/81\)。函数
+\(d,\vartheta\) 与标量 \(\kappa_F\) 具有来自第一部分的、对 \(h_0\) 和 \(r\bmod M_{\rm ref}^2\) 的典范依赖关系。每个对偶和都绝对收敛，并且与那里具有相同的完全源支集。
+如果一个带标记的素数反而属于基础局部集，则相应的原始项恒为零，并在使用此公式之前被移除。
+\end{corollary}
+
+\begin{proof}
+对每个好素数和每个 \(A\in\mathcal O\)，零约定给出逐点恒等式 \(1_{q\mid A}=1-\chi_q(A)^0\)。将其乘积在
+\(\mathcal Q\) 上展开，并对所得的有限多个完备化求和中的每一个应用命题~\ref{prop:completed-reflection}。对于固定的 \(h_0\) 和活跃根式，无论一个缺席的素数是作为指数为零的非活跃分支从局部集中省略还是包含进来，命题都使用相同的 \(c_F,c,d,\vartheta,\kappa_F\)、其他局部相位以及核。因此，在 \(q\) 处的两个非活跃贡献以系数
+\(1-(1-q_q^{-1})=q_q^{-1}\) 合并。活跃贡献仅来自被减去的零掩码变换，并具有局部因子
+\(q_q^{-1/2}\chi_q(\lambda^4\mu)^{-2}\) 和标量
+\(-\omega_{q,0}=\tau_{q,2}^{+}\chi_q(\epsilon_q)^{-2}\)。
+在所有带标记的素数处收集这些选择，即证明了
+方程~\eqref{eq:marked-reflection} 和
+\eqref{eq:marked-reflection-phase}。非活跃素数不出现在
+\(r\) 中，因而也不出现在该分支的导子和核尺度中。这是相容分支之间的有限容斥，而不是一个新的 theta 恒等式。
+
+如果一个带标记的素数是基础局部素数，则该标记迫使它整除
+\(nb^3\)，而该素数处的零延拓基础因子随之消失，包括指数为零的情形。这证明了最后一个断言，且无需对零符号作任何除法。它也涵盖了原始无平方因子理想与立方理想共享该带标记素数的情形。
+\end{proof}

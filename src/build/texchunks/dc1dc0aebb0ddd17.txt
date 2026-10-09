@@ -1,0 +1,81 @@
+定义名义行宽与总宽度为
+\begin{equation}
+ \begin{aligned}
+ m'&=2a_0-K-g-g_2-V,&
+ q'&=\widetilde q+w_o+t_2+V,\\
+ M'&=m'+q'
+    =M+J-g-g_2+t_2
+    \le M-\sigma.
+ \end{aligned}
+ \label{old-eq:2.13}
+\end{equation}
+这里 \(g_2\ge t_2\)，且 \(g\) 的定义给出
+\(g-J\ge\sigma\)。这些恒等式通过代入
+\(a_0=A-c-w\) 以及式~\eqref{old-eq:2.3} 之前 \(K_0\) 的定义得到。令
+\[
+ 0\le\delta_{{\rm fr},2}:=\frac\xi2+
+       \frac{\log(C_dC_{\rm sec})}{\log Z}<\xi.
+\]
+这里的扇区常数是第二个变换的常数。
+保留的行权恰好拉回到
+\(\Omega_{\rm ret}(q_{G_cV_{\rm id}}q_{h'})\)。在其支集上，
+\[
+ q_{h'}\le
+ \frac{C_dT_{\rm sec}Z^{\xi/2}}{q_{G_cV_{\rm id}}}
+ \le\frac{C_dC_{\rm sec}Z^{2a_0-K-g+\xi/2}}
+          {q_{G_cV_{\rm id}}}
+ =Z^{m'+\delta_{{\rm fr},2}}.
+\]
+因此它位于那个公共包围行球内。在一个
+非空保留范围上，定义所声明的非负行长
+\(m'_{\rm act}=\max\{0,m'+\delta_{{\rm fr},2}\}\) 以及
+\(M'_{\rm act}=m'_{\rm act}+q'\)。非空性蕴含
+\(m'+\delta_{{\rm fr},2}\ge0\)，因此
+\(0\le M'_{\rm act}-M'\le\delta_{{\rm fr},2}\)。
+在整个带符号计算中，将此包围球的其余部分上的拉回权视为零，
+并对分片标量做同样处理。这是精确的零延拓。它们将
+仅在形成非负子范数或例外绝对乘积之后
+被其绝对界替换。
+完全提取只会缩短一个普通变量或冻结一个
+整个槽位，因此存活的槽位长度满足 \(z'\le z\)。
+
+我们记录第二个变换中的每一个其他指数。
+条件 \(s\mid u,v\) 未被丢弃：它蕴含 \(s\) 的每个
+素数都在第二个完全公共根式中。因此，在完全提取之后，残余列上不再有剩余的
+\(s\)-整除性条件。对于这个固定的
+\(s\)，长度为 \(p_2\) 的可能根式的数目为 \(O(Z^{p_2-s_0+\epsilon_1})\)：将该根式写为
+\(s\mathfrak r_2\)，其中 \((s,\mathfrak r_2)=1\)，并计数剩余范数的
+无平方因子 \(\mathfrak r_2\)。若在固定壳边界之外 \(p_2<s_0\)，
+则不存在这样的根式。用于 \(C,D\) 的同一 Rankin
+论证界定了它们的幂次与分配
+重数。选择单位/非单位划分至多花费
+\(2^{\omega(\operatorname{rad}(D_2E_2))}\)，这是另一个除子有界的
+因子，包含在 \(\epsilon_1\) 中。指数为
+\[
+ \begin{array}{l|r}
+ \text{factor}&\text{exponent}\\ \hline
+ \text{squared central normalization}&-a_0\\
+ \text{row Poisson factor and normalized inverse roots}&K+g-a_0\\
+ \text{prime density, when present}&-\ell\\
+ \text{common-support count with fixed }s&p_2-s_0\\
+ \text{common correlation}&g_2-t_2\\
+ \text{conversion to normalized residual products}&a_0-b_2
+ \end{array}
+\]
+最后一行是
+\(\{(a_0-c_2)+(a_0-d_2)\}/2\)。
+它们的和为
+\[
+ K+g-\ell-a_0+p_2-s_0+g_2-t_2-b_2.
+\]
+从允许量
+式~\eqref{old-eq:2.7} 中减去这个和，就得到内层普通乘积所允许的指数。
+这就是要由更小宽度的矩或由例外行估计提供的界：
+\begin{equation}
+ M'+\Delta_{\rm child},\qquad
+ \Delta_{\rm child}=b_2-p_2+w+\mathcal B_c+\ell
+                   \ge w+\ell.
+ \label{old-eq:2.14}
+\end{equation}
+该不等式使用了 \(b_2\ge p_2\)，因为每个公共素数处的两个
+重数都至少为一。

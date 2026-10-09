@@ -1,0 +1,89 @@
+现在假设 \(1/50<\delta<\alpha\)。令 \(x=q/\delta\in[0,1/2]\)，并使用命题~\ref{prop:detector-counts} 中的 \(D_x,P_x,R_{\rm short},L\)。参数 \(\kappa\) 仍为动态值 \(3/4+2\Delta\)，而非上界 \(5/6\)。因此该命题中实际使用的普通容量为
+\[
+ z_P(m)=\frac{1-2m}{6\kappa}
+       =\frac{1-2m}{9/2+12\Delta},
+\]
+如方程~\eqref{eq:plain-zero-loss-capacity} 所示。方程~\eqref{eq:capacity-comparison} 中的比较正是针对这一精确容量，并且除了所要求的小损失外，至多将行指数提高 \(\Delta/4\)。定义
+\begin{equation}
+ \mathcal J=(\alpha-\delta)D_x+\delta P_x,\qquad
+ t=1+\frac{\delta P_x}{2\mathcal J},\qquad
+ R_*=L(t).
+ \label{eq:target-cutoff}
+\end{equation}
+分母为正。事实上
+\[
+ \frac{37}{18}\le D_x\le3,\qquad
+ \frac79\le P_x\le2,\qquad
+ D_x-P_x=1+x-\frac{8x^2}{9}>0,
+\]
+从而
+\[
+ \frac{35}{54}\le\mathcal J\le\frac52.
+\]
+因为 \(0<\delta<\alpha\)，有 \(\mathcal J>\delta P_x>0\)，所以 \(1<t<3/2\)。此外，
+\[
+ D_x\{R_{\rm short}(t)-L(t)\}
+ =\delta P_x(3/2-t)-(\alpha-\delta)D_x(t-1)
+ =\frac{\delta P_x}{2}-\mathcal J(t-1)=0.
+\]
+因此 \(R_*=R_{\rm short}(t)=L(t)\)，且此 \(t\) 平衡了两个计数。这些公式在闭端点处也具有所述取值：当 \(\delta=\alpha\) 时，有 \(\mathcal J=\alpha P_x\)，\(t=3/2\)，且 \(R_*=R_{\rm short}(3/2)=L(3/2)=1-\delta\)。相应的交叉点满足 \(r_*(3/2)=1\)，因此其逆容量为零。前述等式论证在该边界处使用了方程~\eqref{eq:no-slot-inverse-count}，而非带有消失余量的标记估计。
+
+\begin{lemma}[补偿端点证书]\label{lem:balanced-endpoint}
+对于 \(0\le\delta\le5/6\) 和 \(0\le x\le1/2\)，由方程~\eqref{eq:target-cutoff} 定义 \(\mathcal J,t,R_*\)，其中 \(\mathcal J>0\)，并令 \(E_*\) 为取 \(q=x\delta\) 和 \(R=R_*\) 时的 \(E(h)\)。则
+\[
+ -E_*\ge\frac{49}{440640}>\frac1{10000}.
+\]
+特别地，该界在范围 \(1/50<\delta\le5/6\) 上一致成立，包括闭端点。
+\end{lemma}
+
+\begin{proof}
+令 \(y=1/2-x\in[0,1/2]\) 和 \(v=51+41y\)。为验证该计算，记
+\[
+ p_y=7+18y+8y^2,\qquad
+ j_y=185+170y+(-138+12y+96y^2)\delta.
+\]
+则
+\[
+ D_x=\frac{37+34y}{18},\qquad
+ P_x=\frac{p_y}{9},\qquad
+ \mathcal J=\frac{j_y}{108}.
+\]
+由 \(R_*=1-\delta+(\alpha-\delta)\delta P_x/(2\mathcal J)\) 和方程~\eqref{eq:common-high-exponent}，
+\[
+ -E_*=
+ \frac{1+(3+8y)\delta}{48}
+ -\frac{13}{32}\,
+   \frac{(5/6-\delta)\delta P_x}{\mathcal J}.
+\]
+展开相乘得到显式二次式
+\[
+ \begin{split}
+ 10368\mathcal J(-E_*)
+ &=2j_y[1+(3+8y)\delta]
+     -468(5/6-\delta)\delta p_y\\
+ &=10(37+34y)
+   -8(237+377y+26y^2)\delta\\
+ &\hspace{12mm}
+   +48(51+131y+94y^2+32y^3)\delta^2.
+ \end{split}
+\]
+乘以 \(v\) 并配方得到
+\begin{equation}
+ \begin{aligned}
+ 10368v\mathcal J(-E_*)
+ ={}&(3+5y)\bigl\{(4v\delta-79)^2+49\bigr\}\\
+ &+4y\bigl\{
+ 4v\delta[(1+3y)(15+32y)\delta+9-13y]
+       +265+3485y\bigr\}.
+ \end{aligned}
+ \label{eq:balanced-endpoint-certificate}
+\end{equation}
+该恒等式也可通过系数验证：将其右侧展开为 \(\delta\) 的多项式，分别得到
+\[
+ \begin{split}
+ &10v(37+34y),\\
+ &-8v(237+377y+26y^2),\\
+ &48v(51+131y+94y^2+32y^3),
+ \end{split}
+\]
+它们正是前一个展示式中常数、一次和二次系数乘以 \(v\)。

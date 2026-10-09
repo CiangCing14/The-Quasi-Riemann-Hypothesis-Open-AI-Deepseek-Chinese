@@ -1,0 +1,41 @@
+This argument uses triangle only on error labels.  It never changes
+the physical row or the coefficients and masks in any main slot.
+The tuple-independent factor $\mathcal H_{\eta,u}$ separately costs
+$U^\epsilon$ by Lemma~\ref{lem:local-euler}.  Relative to the
+central scale $P_i^{z_r-1/2}$ of a main slot, an error slot thus
+has no positive amplitude exponent in the later row count.
+\end{proof}
+
+\paragraph{主局部因子。}
+在引理~\ref{lem:local-euler} 的第二个欧拉区域中，取
+$u=1$ 且 $p\in1_T$。此时在
+方程~\eqref{old-eq:5.13b} 中 $v=1$，且在对 $P_0$ 作同样的固定放大之后，$H_p$ 有正下界。对于该区域上的这个主行，定义 $\mathcal B_p=G_p/H_p$，并用与上面相同的槽和来定义 $\mathcal B_i$。下界和不相交的支集给出分离的主因子分解
+\begin{equation}\label{eq:principal-slot-factorization}
+ \mathfrak H_{\eta,1,Z}(x,w,z)
+ =\mathcal H_{\eta,1}(x,w,z)\prod_{i=1}^K\mathcal B_i(1;x,w,z)
+ \qquad\text{in the second Euler region}.
+\end{equation}
+这并未将中心的主/误差分解扩展到其所声明的动态区域之外。四个误差指数现在为
+\[
+ -x_r,\qquad -6z_r,\qquad 4-5x_r-6z_r,
+       \qquad 1-w_r-6z_r.
+\]
+在该区域中每一个都至多为 $-7/8$。因此主乘子满足
+\begin{equation}\label{eq:principal-local-approximation}
+ \mathcal B_p=-1+O(Q^{-7/8}),
+\end{equation}
+关于虚部和目标单位相位一致成立。这就是用于归一化主留数的局部估计。
+
+它还给出了共享留数估计所需的绝对主修正。事实上这里 $G_p=H_p\mathcal B_p=O(1)$，而未选乘积由方程~\eqref{eq:unselected-local-product} 的第二区域版本具有有界的正优函数。因此每个环形槽中的理想计数给出，在第二个欧拉区域中的每个固定实盒上，且关于所有虚部一致地，
+\begin{equation}\label{eq:principal-local-tuple-bound}
+ |\mathfrak H_{\eta,1,Z}(x,w,z)|
+ \le\sum_{(p_i)\in\prod_i\mathcal P_i(Z)}
+       \prod_i\bigl[|W_i(q_{p_i}/P_i)|q_{p_i}^{z_r-1}|G_{p_i}|\bigr]
+       \prod_{\substack{p\notin S\\p\notin\{p_1,\ldots,p_K\}}}|H_p|
+ \ll \prod_iP_i^{z_r}=Z^{\ell z_r}.
+\end{equation}
+这里仅使用分离的主行下界来获得局部近似；它并未断言一般 $H_p$ 的非消失性。
+
+\subsection{其余围道线的绝对界}
+
+动态分解并非在共享解析估计所使用的每条围道上都可用。以下界改为在取绝对值之前保留每个被选因子 $G_p$。

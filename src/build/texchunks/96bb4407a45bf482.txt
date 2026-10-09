@@ -1,0 +1,75 @@
+在中心围道上
+\[
+ \Re s=a+16e,\qquad \Re w=1-a-6e,\qquad \Re z=\frac{17}{50},
+\]
+原始固定动态箱和的贡献被界定为
+\[
+ Z^{C(7/8)+E_{\max,Z}(d)+O(e+\vartheta+\epsilon)}
+ (1+T_1)^{A'_{\mathcal A}},
+\]
+其中 \(\vartheta\) 是振幅箱宽度，且
+\(A'_{\mathcal A}<\infty\) 对移动标签一致。空箱
+贡献为零。\(O(e+\vartheta+\epsilon)\) 项中的常数
+仅依赖于有界实范围与固定槽系统，而不依赖于
+目标。不主张对单个逐点集合的单独积分。在固定
+\(\tau>0\) 之后，所有被丢弃的外部片段与连接
+均为 \(O_{\mathcal A,N}(Z^B T_1^{-N})\)，其中 \(B\) 固定，
+且对每个固定的 \(N\) 成立。
+\end{lemma}
+
+\begin{proof}
+我们验证引理~\ref{lem:bin-contour-accounting} 的中心假设，
+该引理为刚刚指定的完整修正提供了围道
+移动及其尾项。其箱上界由方程~\eqref{eq:part-II-bin-ceiling} 成立。物理
+\(\Im z\) 坐标被包含在其高度分配中，因为它
+进入素数轮廓。其他见证、二进与素数环带
+坐标是第~\ref{sec:selection} 节估计中使用的固定有限列表。
+它们的完整逐点界包含在全局或绝对线上的
+被丢弃辅助积分。因此，方程~\eqref{eq:stage-height-allocation}
+中的单一累积分配适用，而无需在后续估计中重新分配额度。
+
+仅在保留的围道上，命题~\ref{prop:probe-errors} 给出
+方程~\eqref{eq:dynamic-compensated-decomposition} 中的分解。
+对于 \(I\subseteq\{1,\ldots,K\}\)，其被加项为
+\[
+ \mathfrak H_{\eta,u,Z}^{(I)}
+ =\mathcal H_{\eta,u}(s,w,z)
+       \prod_{i\in I}\mathcal D_i(u)
+       \prod_{i\notin I}\mathcal Q_i(u;z).
+\]
+所需的反射本原分子界由
+分子表示及其共轭的缓冲估计，连同引理~\ref{lem:deleted-euler-factors} 得出，
+正如在命题~\ref{prop:probe-errors} 之前所验证的。保留的 \(w\) 高度位于
+其允许集合中。每个保留的分子都是非主特征。
+
+在一个保留元组上固定一个振幅集合。对于主槽，
+\(\mathcal Q_i=-P_i^{z-1/2}Q_i\) 且
+\(\lvert Q_i\rvert\le P_i^{g_i+\vartheta}\)。将 \(g_i=0\) 赋给
+一个误差槽。方程~\eqref{old-eq:5.13e} 将 \(I\) 中所有误差槽
+与分子联合界定；其证明同时使用了方程~\eqref{old-eq:5.13d} 中
+的实际导子亏损，针对不同的严格分歧标签。它不是对每个槽的
+单独分子额度。由于
+\(\mathcal H_{\eta,u}\ll_\epsilon U^\epsilon\)，将这些估计相乘，在选择预备幂之后给出，
+\[
+ \begin{split}
+ \left|L^S(w,\chi_\bullet(u))
+       \mathfrak H_{\eta,u,Z}^{(I)}(s,w,z)\right|
+ \ll{}&U^{\delta/2+O(e)+\epsilon}(1+T_1)^{A_1}\\
+ &\cdot
+ Z^{\ell(17/50-1/2)+q\ell+O(e+\vartheta+\epsilon)}.
+ \end{split}
+\]
+这里 \(A_1<\infty\) 是目标与槽系统的固定高度阶，且
+\(\sum_i\ell_i g_i=q\ell\)，包括为误差所赋的零。未使用误差槽的
+下界。
+
+乘以假定的基数，在取
+\(\varepsilon_c\) 为 \(e+\vartheta+\epsilon\) 的固定充分大倍数之后，证明了
+方程~\eqref{eq:stage-central-bound} 且 \(g=q\ell\)。该倍数仅依赖于固定槽
+系统与有界实范围。有 \(2^K\) 个误差子集。
+振幅向量数目固定，而见证二进选择
+仅贡献 \(1+\log Z\) 的固定幂。因此所需的
+逐点重数界成立。这些集合仅在
+引理~\ref{lem:bin-contour-accounting} 使用
+\(\mathfrak H\) 移动原始动态箱和之后形成。它们不用于延拓，也不单独
+积分。

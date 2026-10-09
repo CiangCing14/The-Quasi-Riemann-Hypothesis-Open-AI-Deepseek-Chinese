@@ -1,0 +1,62 @@
+在右侧可以用 $1$ 代替 $r_\varepsilon$。对于固定的 $c$，
+相位带来的总误差至多为
+\[
+ C_c\varepsilon^2\sum_{y\in\mathcal O}|y|^2
+                         e^{-C_c^{-1}\varepsilon|y|^2}=O_c(1),
+\]
+因为该和为 $O_c(\varepsilon^{-2})$。振幅误差为
+$O_c(\varepsilon)$，阻尼误差亦然，由同样的格点估计得到。
+三者均为 $o(I_\varepsilon)$。相位 $e(-cy^2/4)$ 模
+$2\mathcal O$ 是周期的。在前面的高斯平均中取 $b=2$ 和 $a=q_c/4$；
+其四个类中的每一个都有归一化均值 $1/q_c$。因此归一化后的右端
+趋于 $(2|c|)^{-1}\sum_{y\bmod2}e(-cy^2/4)$，这就证明了
+方程~\eqref{eq:quadratic-four-term}。
+
+代表元 $0,1,\omega,\omega^2$ 模 $2$ 给出了所断言的四项表达式。
+乘以奇 $v$ 置换这些类，因此同一公式给出 $\Gamma(cv^2)=\Gamma(c)$。模
+$4$ 的单位群阶为 $12$。将模 $4$ 的一个提升平方只依赖于其
+模 $2$ 的类，而其三个可能的平方为 $1,\omega,\omega^2$。
+陈述中的四个代表元模该子群互不相同；
+又有 $\lambda^2=-3\equiv1\pmod4$。将四项表达式在
+它们上求值即得该表。将 $\Gamma(ab)/(\Gamma(a)\Gamma(b))$ 在两个生成元
+$-1,\lambda$ 上求值即得所显示的指数，从而证明了最后的
+断言。
+\end{proof}
+
+\begin{lemma}[六次互反律与固定高斯相位]
+\label{lem:fixed-gauss-phase}
+对于 $S$ 外互素的本原 $a,b$，
+\[
+ \chi_b(a)=\mathcal R(a,b)\chi_a(b),\qquad
+ \mathcal R(a,b)=\mathfrak r(a,b).
+\]
+在所有 $S$ 外的本原对上，包括非互素对，用
+方程~\eqref{eq:reciprocity-four-class} 的双特征 $\mathfrak r$ 定义
+$\mathcal R$。在每一个 $S$ 外的本原指标上，定义
+\[
+ G(c)=\overline{\chi_c(4)}\Gamma(c).
+\]
+它的模为一，且通过一个支撑在 $2,3$ 上的固定射线群分解。
+对于所有这样的 $v,w$，
+\begin{equation}\label{eq:G-quadratic-refinement}
+ G(vw)=G(v)G(w)\mathcal R(v,w),\qquad G(1)=1.
+\end{equation}
+此外 $G(v^2)=\chi_v(4)$，并且在好素数处
+\begin{equation}\label{eq:fixed-gauss-phases}
+ G(p^3)=\gamma_3(p),\qquad
+ \mathcal R(p,p)=\gamma_3(p)^2=\chi_p(-1).
+\end{equation}
+在每一个 $S$ 外的本原 $n$ 上，有
+$\chi_n(-1)=\mathcal R(n,n)$。对角线 $t\mapsto\mathcal R(t,t)$ 是
+固定射线群的一个特征。在
+方程~\eqref{eq:reciprocity-four-class} 的平方类记号中，它是 $\mathfrak r(-1,n)$，其中
+$-1$ 表示其模 $4$ 的剩余平方类，而不是单位理想 $(-1)$ 的理想射线类。
+对于无平方因子 $c$，完整的高斯恒等式为
+\begin{equation}\label{eq:signal}
+ \gamma_2(c)^3=\mu(c)\alpha(c),\qquad
+ \gamma_1(c)\gamma_2(c)=\mu(c)\alpha(c)G(c),\qquad
+ G(c)=\overline{\chi_c(4)}\gamma_3(c),\quad |G(c)|=1.
+\end{equation}
+$G$ 在非无平方因子指标上的一切出现均指刚才定义的有限射线函数，
+而不是非无平方因子的高斯和。
+\end{lemma}

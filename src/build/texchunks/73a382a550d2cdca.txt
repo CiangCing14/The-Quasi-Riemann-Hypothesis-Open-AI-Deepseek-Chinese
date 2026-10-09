@@ -1,0 +1,58 @@
+设 $b_*$ 生成 $S$ 中素数的无平方因子乘积。
+选取一个模 $b_*$ 的剩余特征 $\xi$，使其在每个素因子上的限制
+非主特征，且其阶整除六。这样的选择存在：在奇剩余特征的素数处
+可以使用二次特征，而 $2$ 上方素数处的剩余域阶为四，并具有一个三阶特征。中国
+剩余定理使 $\xi$ 成为模 $b_*$ 的本原特征。以下所有剩余
+特征在非单位元上均以零延拓。置
+\[
+ \begin{gathered}
+ g_\psi(c,k)=\sum_{d\bmod c}\psi(d)e(kd/c),\qquad
+ \tau=q_{b_*}^{-1/2}g_\xi(b_*,1),\qquad
+ \Xi(a)=\xi(a)\chi_a(b_*),\\
+ \Psi_{m,s,\eta}(a)=
+       \eta(a)\Xi(a)^{-1}\mathcal R(a,s)\chi_a(m)
+       \qquad ((a,S)=1).
+ \end{gathered}
+\]
+在每个素数处的有限特征正交性给出 $|\tau|=1$。
+由引理~\ref{lem:fixed-numerator-ray}，固定分子符号
+$a\mapsto\chi_a(b_*)$ 是一个有限射线特征，其导子
+支撑在 $S$ 上。因此 $\Xi$ 对于此目标是一个固定有限特征，
+尽管它不必通过 $T$ 分解。
+
+在 $S$ 中素数处的本原特征 $\xi$ 将迫使
+泊松频率与 $S$ 互素。伴随的归一化
+抵消了由辅助模 $b_*$ 引入的单位因子。
+对于完备化指标 $A=cn^3$，因子 $\mathcal R(A,s)$
+抵消了 $A$ 与 $s$ 之间的跨素数互反相位，而
+$\overline{G(A)}$ 抵消了 $A$ 内剩余的配对相位。
+我们在第~\ref{sec:local-euler} 节逐系数验证这些抵消。
+
+在谱参数 $t+1/2$ 处定义修正行
+\[
+ T_{m,s,\eta}(t)=
+ \sum_{\substack{c\ {\rm sf}\\n}}
+ \gamma_2(c)\overline{\alpha(cn^3)}\Psi_{m,s,\eta}(cn^3)
+ \overline{G(cn^3)}q_c^{-1/2-t}q_n^{-1-3t}.
+\]
+此处及以下理想变量避开 $S$。特别地，$\Xi(a)^{-1}$ 中的每个
+因子都在单位元上取值。值
+$G(cn^3)$ 是方程~\eqref{eq:G-quadratic-refinement} 中的有限射线延拓，当 $cn^3$ 非
+无平方因子时亦然。
+
+固定非负、非零函数 $W_0,W_1\in C_c^\infty(0,\infty)$
+并置 $\Phi(t)=e^{t^2}$。定义
+\begin{equation}\label{eq:general-probe}
+\begin{aligned}
+ I_\eta(X,Y,Z)={}&\frac1Y\sum_s
+ \frac{W_1(q_s/Y)\chi_s(b_*)}
+      {\tau\xi(s)\sqrt{q_{b_*}q_sX}}\\
+ &\quad\cdot\sum_{m\in\mathcal O}
+       \xi(m)q_s^{-1/2}g_{\chi_s}(s,-m)
+       W_0\!\left(\frac{q_m}{q_{b_*}q_sX}\right)
+       \frac1{2\pi i}\int_{(4)}
+             Z^t\Phi(t)T_{m,s,\eta}(t)\,dt.
+\end{aligned}
+\end{equation}
+此定义中的掩码去除了 $S$ 处的非单位元。方程~\eqref{eq:general-probe} 中的所有求和
+在所示直线上绝对收敛；$m$ 与 $s$ 的求和是有限的，因为权重是环状的。

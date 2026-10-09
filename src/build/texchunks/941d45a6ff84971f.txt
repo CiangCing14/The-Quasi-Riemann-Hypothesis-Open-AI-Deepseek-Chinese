@@ -1,0 +1,33 @@
+对每个保留的裁剪矩形，若没有槽存活，则在所声明的宽度
+\(M'_{\rm act}\) 处应用完备的无限制零槽断言。若槽存活，则先应用
+方程~\eqref{old-eq:2.1a}--\eqref{old-eq:2.1b} 中的代数掩码删除。
+它把这个标准裁剪乘积表示为自然乘积，并且只减小其非负仿射表达式。对每个实际乘积，在两次频率包围、\(\mathfrak t\)-分配以及掩码删除之后，令
+\(A_{\rm act},z_{\rm act}\) 为其所声明的总长度和槽长度，并置
+\[
+ F_{\rm act}
+ =\bigl(A_{\rm act}-M'_{\rm act}+(6\kappa-1)z_{\rm act}\bigr)_+.
+\]
+其父项满足方程~\eqref{old-eq:3.9}。在此掩码删除之前，令 \(z'\le z\) 为裁剪矩形的存活槽长度。方程~\eqref{old-eq:3.14} 和
+\eqref{eq:centered-clipped-rectangle}，连同 \(M'_{\rm act}\ge M'\)，给出
+\[
+ \begin{split}
+ A_{{\rm clip},j,\varrho}-M'_{\rm act}+(6\kappa-1)z'
+ &\le \alpha_j-M'+(6\kappa-1)z
+       +e_j+\pi_{j,\varrho}-\widetilde r_j-(M'_{\rm act}-M')\\
+ &\le6(w+\ell)+\delta_{{\rm fr},1}+e_j+\pi_{j,\varrho}.
+ \end{split}
+\]
+同样的计算在另一侧以 \(c_2,d_2\) 互换后成立。
+因此，取正部再删除固定掩码给出
+\[
+ F_{\rm act}\le6(w+\ell)+\delta_{{\rm fr},1}
+                 +(e_j+\pi_{j,\varrho})_+
+ \le6(w+\ell)+\delta_{{\rm fr},1}+2\theta_N.
+\]
+这里 \(z_{\rm act}\le z'\le z\)。所有展示的账目都使用固定的聚合长度列表
+\[
+ A,z,c,d,p,R,E,s_0,K,w,w_o,g,\ell,c_2,d_2,p_2,g_2,t_2,V.
+\]
+它们的仿射系数和正部利普希茨常数是数值的，且与 \(N\) 无关。因此，一旦施加了聚合阈值，所展示的频率界、原始归一化界和矩形裁剪界都包含在
+\(C_*\xi\) 中，其中固定的 \(C_*\ge1\) 与 \(N\) 无关。这个固定误差界的存在性使用了比较长度之前的单个
+\(\theta_N=H_N/\log Z\)，而不是 \(N\) 个独立的 \(\xi\) 副本。我们在下面增大 \(C_*\)，以覆盖一个阶段中固定次数的运算。

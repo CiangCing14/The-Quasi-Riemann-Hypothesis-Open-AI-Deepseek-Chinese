@@ -1,0 +1,25 @@
+\subsection{素数估计与归纳次序}\label{sec:weighted}
+
+对于 \(\kappa<1\)，令 \(s_\kappa=(1+\kappa)/2\)。在假设
+\(s_\kappa\ge\beta_*\) 下，引理~\ref{lem:logarithmic-control} 的整体部分给出，对每个固定的 \(e>0\)，
+\begin{equation}
+ \frac{L'}{L}(s_\kappa+e+it,\psi)
+ \ll_e \log\!\bigl(2Q_\psi(3+|t|)^2\bigr)
+ \label{old-eq:3.4}
+\end{equation}
+对原始非主诱导特征 \(\psi\) 成立。
+为估计尺度为 \(P\) 的素数环带，对光滑 von Mangoldt 和施加 Mellin 反演并将其围道移至
+\(\Re s=s_\kappa+e\)。平移区域内没有极点，
+且 Mellin 变换具有任意衰减，因此
+方程~\eqref{old-eq:3.4} 将新的积分界为
+\(P^{s_\kappa+e}\) 乘以导子的对数以及高度的固定
+多项式。指数至少为二的素数幂
+贡献 \(O(P^{1/2+\epsilon_1})\)。对于大的 \(P\)，将
+环带权重除以 \(\log(Py)\) 便把 von Mangoldt 权重替换为
+素数权重；其光滑半范数在环带上是有界的。
+有界的 \(P\) 通过绝对计数来估计。将每个
+正长度系数按陈述中的特征 \(\vartheta_{ij}\)
+展开。若原始诱导行特征
+\(\psi\notin\Theta\) 使得 \(\psi\vartheta_{ij}\) 为主特征，则
+\(\psi=\vartheta_{ij}^{-1}\in\Theta\)，矛盾。因此
+每个所得的槽特征在 \(\mathcal R_z\) 上都是非主的。

@@ -1,0 +1,55 @@
+在对 Mellin 变量作纯扭转的平移之后，一个被 $Z^B(1+|\boldsymbol t|)^J$ 界住的、被丢弃的分离被积函数，其绝对尾项至多为
+$Z^BT_1^{-N}\|w\|_{J+N,\mathrm{sep}}$。这里 $B$ 和 $J$ 必须在选取 $N$ 之前固定。一个一致光滑的分离轮廓的进一步导数改变的是最后这个半范数，而不是先前固定的高度阶。在一个高度与 $T_1$ 相当、实长度有界的连接上，取阶为 $N+\lceil J\rceil$ 的式~\eqref{eq:pointwise-mellin-tail} 给出 $Z^BT_1^{-N}$ 乘以外部检验函数相应的有限加权导数范数，只要其他因子在该处具有所述的界。当那些外部范数是一致的时候，这就是 $O(Z^BT_1^{-N})$。
+\end{lemma}
+
+\begin{proof}
+对满足 $2m>J+d$ 的整数 $m$，分部积分给出
+\[
+ (1+|\boldsymbol t|^2)^m\widehat w(\boldsymbol t)
+ =\int_{\mathbb R^d}(1-\Delta)^m w_{\log}(\boldsymbol u)
+                       e^{-i\boldsymbol t\cdot\boldsymbol u}\,d\boldsymbol u.
+\]
+其绝对值被 $\Omega$ 的体积乘以
+$C_{m,d}p_{2m}(w)$ 界住。加权积分是有限的，因为 $2m>J+d$；
+可以选取 $2m\le J+d+2$。傅里叶反演给出单项式公式。
+对于 $\ell^2$ 中的行向量 $B(\boldsymbol t)$，那里所用的精确不等式是
+\[
+ \left\|\frac1{(2\pi)^d}\int\widehat w(\boldsymbol t)
+                 B(\boldsymbol t)\,d\boldsymbol t\right\|_{\ell^2}
+ \le\frac1{(2\pi)^d}\int|\widehat w(\boldsymbol t)|
+                 \|B(\boldsymbol t)\|_{\ell^2}\,d\boldsymbol t.
+\]
+
+在一维情形，微积分基本定理、在放大后的区间上对基点取平均，以及柯西--施瓦茨给出
+$\sup_I|F|^2\ll\int_{I+[-1,1]}(|F|^2+|F'|^2)$。在每个坐标上依次应用这一结论便证明了式~\eqref{eq:parameter-sobolev}。它可以在导数积分之前按行求和，因为所有项都是非负的。长度为 $O(\log Z)$ 的对数尺度范围需要
+$O(\log Z)$ 个单位区间；高度范围 $[-T_1,T_1]$ 需要
+$O(1+T_1)$ 个区间。关于对数尺度的导数会插入
+$yW'(y)$，连同中心归一化的常数导数一起。归一化扭转 $y^{it}$ 的导数会插入 $\log y$ 的幂。
+这些仍然是具有有限半范数界的环形轮廓。例如，
+若一个固定参数的平方行界为 $O((1+|t|)^H)$，且有
+$d_t$ 个高度参数，则覆盖与积分的代价至多为 $(1+T_1)^{H+d_t}$ 的固定倍数。
+
+在 $|\boldsymbol t|>T_1$ 上有
+$(1+|\boldsymbol t|)^{-N}\le T_1^{-N}$，这证明了
+式~\eqref{eq:late-fourier-tail}。Mellin 平移由其定义立得。为证明式~\eqref{eq:pointwise-mellin-tail}，令
+$F_\sigma(u)=e^{\sigma u}W(e^u)$。对 $|T|\ge1$，分部积分给出
+\[
+ \mathcal MW(\sigma+iT)=(-iT)^{-N}
+              \int_{\mathbb R}F_\sigma^{(N)}(u)e^{iTu}\,du,
+ \qquad
+ F_\sigma^{(N)}(u)=e^{\sigma u}\sum_{j=0}^N
+       \binom Nj\sigma^{N-j}D_y^jW(e^u).
+\]
+取绝对值便给出紧实带上的界。对于
+$|T|<1$，绝对积分在增大常数之后给出该界。
+所述的两类 $W$ 具有所需的端点衰减：在第一种情形紧支集即已足够，而在第二种情形，$-\infty$ 处的 $e^{\sigma u}$ 与 $+\infty$ 处的 Schwartz 衰减即已足够。
+
+对于式~\eqref{eq:joint-gaussian-slice}，使用
+\[
+ 1+|T|\le(1+|T+v|)(1+|v|),\qquad
+ 1+|T|+|v|+|w|\le2(1+|T+v|)(1+|v|)(1+|w|).
+\]
+将 $(1+|T|)^N$ 移到左边，逐点界住加权的 $a(v)$，并将剩余的多项式权对 $T+v$ 中的高斯积分。剩余的 $w$ 积分就是所展示的那个。这证明了联合界，也证明了所述的连接估计。对于积分后的断言，
+映射 $(t_1,t_2,t_3)\mapsto(t_1+t_2,t_2,t_3)$ 及其逆都具有固定的算子范数。因此，原变量中的一个固定多项式权被变换后变量中的一个固定多项式权界住。
+在一个盒子的补集上，插入该权的额外逆幂，并分别对高斯和两个 Mellin 因子积分。
+所附的块三角映射具有同样的性质，因为它的所有系数及其逆的系数都是固定的。

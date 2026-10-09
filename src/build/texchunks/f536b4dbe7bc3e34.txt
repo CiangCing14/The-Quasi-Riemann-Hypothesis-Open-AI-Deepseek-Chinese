@@ -1,0 +1,22 @@
+若 \(F_{\rm act}>0\)，则从该乘积中移除整个槽，直到剩余乘积满足方程~\eqref{old-eq:3.9}，或直到不再有槽剩余。这里的移除是指将逐点界方程~\eqref{old-eq:3.5}应用于整个选定的素多项式；没有素标签被冻结。一个长度为 \(d\) 的被移除槽使 \(A_{\rm act}+(6\kappa-1)z_{\rm act}\) 减少 \(6\kappa d\)，并对平方 \(Z\)-指数贡献 \(\kappa d\)，而固定的半范数与高度因子则分别保留。由于每个槽的长度至多为 \(\eta\)，将正活跃长度排序并取达到 \(F_{\rm act}/(6\kappa)\) 的第一个前缀。其前一个前缀小于该阈值，且其最后一个槽的长度至多为 \(\eta\)。若没有前缀达到该阈值，则移除所有槽，其总和更小。因此恰好一个槽可能造成超出，且总移除长度 \(d_z\) 满足
+\begin{equation}
+ \begin{split}
+ d_z&\le\min\left\{z_{\rm act},
+                     \frac{F_{\rm act}}{6\kappa}+\eta\right\},\\
+ \kappa d_z&\le\frac{F_{\rm act}}6+\kappa\eta
+ \le\Delta_{\rm child}+\frac{\delta_{{\rm fr},1}}6
+                       +\frac{\theta_N}{3}+\eta.
+ \end{split}
+ \label{old-eq:3.16}
+\end{equation}
+若这些槽在到达仿射边界之前消失，则剩余的普通长度可以是任意的；这正是完备的更小宽度零槽断言包含所有长度的原因。否则，对剩余乘积应用正槽归纳。其槽仍具有原来的系数类，且其诱导行仍位于 \(\Theta\) 之外。柯西--施瓦茨对两个分别裁剪的子项的误差取平均，因此它们可能不同的矩形与槽集合不会使 \(\eta\) 加倍。将方程~\eqref{old-eq:3.16}与方程~\eqref{eq:centered-clipped-shell}中的配对系数界以及 \(M'_{\rm act}-M'\le\delta_{{\rm fr},2}\) 结合，超出子包络的严格边缘尺度代价至多为
+\begin{equation}
+ \delta_{{\rm fr},2}+\frac{\delta_{{\rm fr},1}}6
+        +\eta+\frac{7\theta_N}{3}.
+ \label{eq:centered-child-edge-cost}
+\end{equation}
+若没有槽存活，则同样的界成立，而无需贪心代价。数值 \(\theta_N\) 项与两个频率修正给出了在使用方程~\eqref{old-eq:2.14}时从方程~\eqref{old-eq:2.7}继承的 \(\epsilon_G\) 储备中的单个 \(O(\xi+\eta)\) 边缘损失；现有的局部小幂与固定解析因子保持分离。逐点估计对整个被移除乘积请求一次；其内部小幂份额可能依赖于 \(N\)。这一贪心操作仅在实际子项的所有边界缺陷都已被包含进 \(F_{\rm act}\) 之后才发生。对于 \(d_2\) 一侧的论证与交换 \(c_2,d_2\) 后相同。
+
+我们现在已经用仅更小的宽度界定了所有诱导特征位于 \(\Theta\) 之外的子行。对于剩余的行，接下来的计数与体积界处理非中心范围；中心范围则使用系数引理中保留的减法。
+
+\subsection{诱导特征位于 \texorpdfstring{\(\Theta\)}{Theta} 中的行}

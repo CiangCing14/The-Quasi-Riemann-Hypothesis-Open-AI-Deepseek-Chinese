@@ -1,0 +1,26 @@
+在剩余的求和中写 $\mathfrak a=a_0\mathfrak s$，其中 $a_0$ 是好的，且 $\mathfrak s$ 支撑在 $S$ 上，并对每个固定的 $\mathfrak s$ 选取一个生成元 $s_0$。方程~\eqref{eq:sextic-sieve-pair-values} 和~\eqref{eq:sextic-sieve-pair-gauss} 给出分离的因子
+\[
+ \overline{\Psi_{b,c}^{(j)}(a_0\mathfrak s)}
+ =\overline{F_b(a_0)^j}F_c(a_0)^j
+       \overline{\chi_b(s_0)^j}\chi_c(s_0)^j.
+\]
+所有 $\chi_b(s_0)$ 的模均为 1。将 $a_0$ 分成壳层
+$a_0\in\mathcal I_H$，其中 $H\ll ZN^2/(Mq_{\mathfrak s})$，并在 $\Re w=\delta$ 上对 $\mathscr W$ 插入梅林反演。除去一个依赖于 $M,q_{a_0},q_{\mathfrak s}$ 的有界因子，两个系数序列为
+\[
+ A_b=\lambda_b\gamma_j(b)\overline{\chi_b(s_0)^j}
+                    q_b^{-1/2+\delta+it},\qquad
+ B_b=\overline{\lambda_b}\gamma_{-j}(b)\chi_b(s_0)^j
+                    q_b^{-1/2+\delta+it}.
+\]
+它们在 $a_0$ 求和中是固定的，且绝对值满足
+$\ll N^{-1/2+\delta}|\lambda_b|$。用默比乌斯反演检测 $(b,c)=1$，并在 $a_0$ 上应用柯西不等式，得到
+\begin{align*}
+ &\sum_{a_0\in\mathcal I_H}
+  \left|\sum_{\substack{b,c\in\mathcal A_N\\(b,c)=1}}
+       A_bB_c\overline{F_b(a_0)^j}F_c(a_0)^j\right|\\
+ &\quad\le E_j(H,N)\sum_{\mathfrak d}
+   \left(\sum_{\mathfrak d\mid b}|A_b|^2\right)^{1/2}
+   \left(\sum_{\mathfrak d\mid b}|B_b|^2\right)^{1/2}
+ \ll N^{-1+3\delta}E_j(H,N).
+\end{align*}
+这里除子界吸收了关于 $\mathfrak d$ 的求和。对整个第一个多项式取共轭使用相同的 $E_j$ 范数。满足 $H<1$ 的因子只有单位求值理想，并满足 $E_j(H,N)\ll N$。$\mathfrak s$ 以及二进壳层的选择只有 $\log(2+ZN^2)$ 的固定幂次个，因为 $S$ 是固定的，且非零的 $Q_j$ 有 $M$ 有下界。方程~\eqref{eq:sextic-sieve-transform-bounds} 对 $t$ 变量积分。取 $\delta$ 相对于 $\varepsilon$ 充分小，即证明了方程~\eqref{eq:sextic-sieve-pair-norm}，包括其 $M$ 项上允许的整体损失。

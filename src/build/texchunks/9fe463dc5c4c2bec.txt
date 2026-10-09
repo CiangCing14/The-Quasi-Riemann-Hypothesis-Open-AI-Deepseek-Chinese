@@ -1,0 +1,54 @@
+在 $b_*$ 的素数处，有
+$(H-b_*Ad)/s\equiv H/s\pmod {b_*}$。完备高斯和中的局部因子为
+$\sqrt{q_{b_*}}\tau\xi(A)\overline{\xi(H/s)}$。
+这里 $\overline{\xi(H/s)}=\overline{\xi(u)}\xi(s)$，因为
+$\xi(a)^6=1$。这消去了式~\eqref{eq:local-full-coefficient} 中每一个显式出现的 $\xi$ 因子。式~\eqref{eq:local-unit-factor} 中最后一些因子的乘积消去了
+$\chi_s(b_*)\chi_A(b_*)^{-1}$。这一消去是逐系数的。
+对 $S$ 的任意固定扩大，同样的计算使用相同的射线群 $T$。
+
+\paragraph{剩余配对相位的消去。}
+令 $t_p=v_p(A)$、$k_p=v_p(s)$，在每一对不同素数处的互反律给出
+\[
+ \mathcal R(A,s)\prod_p
+       \chi_p^{t_p}(s_p)\chi_p^{-k_p}(A_p^\circ)
+       =\prod_p\mathcal R(p,p)^{t_pk_p}.
+\]
+事实上，对于 $p\ne r$，两个方向具有相反的符号指数，其商为 $\mathcal R(p,r)$；这消去了双特征 $\mathcal R(A,s)$ 中相应的配对。
+只剩下其对角部分。
+
+式~\eqref{eq:signal} 给出
+$\gamma_2(c)=\mu(c)\alpha(c)G(c)/\gamma_1(c)$。
+中国剩余公式
+\[
+ \gamma_1(c)=\prod_{p\mid c}\gamma_1(p)
+             \prod_{p<r,\ p,r\mid c}\chi_p(r)\chi_r(p)
+\]
+去掉了剩余配对乘积的无平方因子部分。若
+$e_p=v_p(c)$、$l_p=v_p(n)$，则其在配对 $p<r$ 处的指数为
+$t_pt_r-e_pe_r=3(e_pl_r+e_rl_p+3l_pl_r)$。$\chi_p(r)\chi_r(p)$ 的立方为 $\mathcal R(p,r)$，其平方为 1。
+因此，在此除法之后剩下的配对乘积为
+\[
+ \prod_{p<r}\mathcal R(p,r)^{e_pl_r+e_rl_p+l_pl_r}
+ =\mathcal R(c,n)G(n^3)
+   \prod_p\overline{G(p^3)}^{\,l_p}
+            \mathcal R(p,p)^{-e_pl_p-l_p(l_p-1)/2}.
+\]
+该等式通过将二次细化
+式~\eqref{eq:G-quadratic-refinement} 在 $n^3$ 的素因子上展开得到。同样的细化给出
+$G(c)\mathcal R(c,n)G(n^3)=G(cn^3)$，它被插入的 $\overline{G(cn^3)}$ 消去。最后
+式~\eqref{eq:fixed-gauss-phases} 给出
+$G(p^3)=\gamma_3(p)$ 和 $\mathcal R(p,p)=\omega_p$。
+这些恒等式解释了所有配对相位，且对 $p$ 的射线类没有限制。
+
+因此，式~\eqref{eq:local-full-coefficient} 中的系数已分解为素因子。在绝对收敛中，其在 $p$ 处的因子是级数
+\begin{equation}\label{eq:local-P}
+\begin{aligned}
+ P_p={}&\sum_{\substack{e_0=0,1\\l,k,m\ge0}}
+ (-1)^{e_0}\gamma_1^{-e_0}\eta(p)^{e_0}
+ (a_p\overline{\gamma_3})^l\rho^{k-t}
+ \omega_p^{tk-e_0l-l(l-1)/2}C_p(t,k,j+6m)\\
+ &\hspace{33mm}\cdot
+ Q^{-(x+1/2)e_0-(1+3x)l-wk-6zm},\qquad t=e_0+3l.
+\end{aligned}
+\end{equation}
+令 $P_p^*$ 为限制在 $t>0$ 上的同一和式，等价地，限制在完备化指标 $A$ 具有正赋值的情形。

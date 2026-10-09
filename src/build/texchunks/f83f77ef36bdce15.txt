@@ -1,0 +1,24 @@
+在本节中，始终假设 \(\beta_*>51/100\)，其中 \(\beta_*\)
+是方程~\eqref{old-eq:1.1b} 中的全局上确界。这一设定
+不选取延拓准则中的两个边界中的任何一个。
+\subsection{缓冲矩形与逐点界}
+固定与 \(Z\) 无关的算术数据 \(\mathcal A\)，如
+第~\ref{sec:arithmetic} 节所述。特别地，有限群
+\[
+ \Theta=\langle\eta,\widehat T\rangle
+\]
+包含目标以及高行族中使用的固定射线扭，并且 \(\Theta\) 中每个成员的
+每一个导子素数都属于 \(S\)。对于一个
+六次方自由元素 \(u\)，定义有限表示集合
+\[
+ \mathcal X_u=
+ \bigl\{\psi_{u,\nu,\varsigma}(n)=\nu(n)\chi_n(u)^\varsigma:
+       \nu\in\Theta,\ \varsigma\in\{-1,1\}\bigr\}.
+\]
+在非单位元处，\(\chi_n(u)^{-1}\) 的值，如同该符号的
+其他任何幂一样，为零。\(\Theta\) 的群性质
+表明 \(\mathcal X_u\) 在共轭下封闭。它包含
+分子特征 \(\chi_\bullet(u)\)、分母
+特征 \(\eta\overline{\chi_\bullet(u)}\)，以及通过将六次
+符号的任一方向乘以 \(\Theta\) 的一个成员而得到的每一个零延拓
+表示。

@@ -1,0 +1,20 @@
+直接估计现在可用。为了将探针与命题~\ref{lem:continuation-criterion} 中的 Mellin 信号进行比较，我们回到独立的正常数尺度 $X,Y,Z$，并在元素变量 $m$ 上应用泊松求和。所得的各行由频率的六次方无因子部分索引。我们将把每一行分解为赫克 $L$ 函数和一个全纯欧拉乘积；行 $u=1$ 将包含目标函数的倒数。
+
+\subsection{精确的泊松级数}
+
+修正项 $\overline{G(A)}$ 与 $m$ 无关，而完备化行中变化的特征恰为 $\chi_A(m)$，包括其零点。因此，泊松求和使用的是完整模 $sb_*A$，即使 $s$ 与 $A$ 有公共素因子。展开 $s$-高斯和，并首先对模 $b_*A$ 的一个剩余类的提升求和。这些提升施加了 $H\equiv b_*Ad\pmod s$，并给出系数
+\begin{equation}\label{eq:local-F}
+ F(s,A,H)=\sum_{\substack{d\bmod s\\H\equiv b_*Ad\pmod s}}
+ \chi_s(d)g_{\xi\chi_A}\!\left(b_*A,\frac{H-b_*Ad}{s}\right).
+\end{equation}
+事实上，$\xi(m)\chi_A(m)q_s^{-1/2}g_{\chi_s}(s,-m)$ 模 $sb_*A$ 的有限傅里叶变换为 $q_s^{1/2}F(s,A,H)$。行尺度 $q_{b_*}q_sX$ 的泊松前因子为 $X/q_A$。在方程~\eqref{eq:general-probe} 中的外平方根归一化之后，将其单独的 $Y^{-1}$ 留在外面，它们的乘积为 $X^{1/2}/(q_{b_*}^{1/2}q_A)$。这也验证了变换中 $q_s$ 的所有因子。
+
+在 $b_*$ 的素因子处，本原高斯和消失，除非 $(H,S)=1$。因此它也去掉了 $H=0$。每个剩余元素都有唯一表达式 $H=ua^6$，其中 $u$ 是一个六次方无因子元素，包括其单位因子，而 $a$ 是一个理想的本原生成元。将 $\sum_u^{(6)}$ 记为对这样的非零 $u$ 且 $(u,S)=1$ 的求和。
+
+设 $\widetilde W_0(|y|^2)$ 为 $W_0(|y|^2)$ 在自对偶测度和第~\ref{sec:arithmetic} 节中固定的特征下的平面傅里叶变换。泊松之后的径向傅里叶参数为 $Xq_H/q_A$。令
+\[
+ M(z)=\int_0^\infty\widetilde W_0(r)r^{z-1}\,dr,
+ \qquad
+ \widehat W_1(w)=\int_0^\infty W_1(r)r^{w-1}\,dr.
+\]
+零点处的光滑性和 Schwartz 衰减表明 $M$ 在 $\Re z>0$ 上全纯。在每个紧正实条带上，它在 $\Im z$ 中具有任意多项式衰减：$e^{(\Re z)v}\widetilde W_0(e^v)$ 的每个导数在 $v$ 中可积，且在该条带上一致，因此可反复应用分部积分。同样的论证给出 $\widehat W_1$ 在每个固定实条带上的任意多项式衰减。

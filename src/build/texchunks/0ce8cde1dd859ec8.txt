@@ -1,0 +1,65 @@
+只把保留下来的 $s$ 段移到 $a+16e$。在这个矩形上，
+\[
+ \Re(s+w)\ge1+10e,
+\]
+而定义 $\mathcal D_1(10e)$ 的其他不等式仍然成立。
+倒数自变量的实部至少为 $a+16e>a+6e$。
+所述高度盒把两个标量自变量
+严格置于 $|\Im v|\le(3i+2)T_1$ 内，只要 $Z$ 充分大。
+因此引理~\ref{lem:buffered-bins} 在整个
+保留下来的矩形上排除其零点。由于 $6z_0>1$，标量 zeta 因子在这次移动中
+没有极点。因此没有跨过任何极点。
+
+对于一个 $s$-join，其虚坐标固定为 $T_1$ 的常数倍。
+方程~\eqref{eq:stage-high-identity} 中的标量分母只依赖于 $s$，因此当
+$\Im z$ 和 $\Im w$ 的积分延拓到各自的整条轴时，其缓冲估计仍然有效。
+在这些延拓后的轴上使用全局分子估计以及
+方程~\eqref{eq:stage-all-height-majorant}。迹估计随后给出
+$O_{\eta,N}(Z^{B_\eta}T_1^{-N})$。本论证中没有任何 $w$- 或 $z$-join
+延拓了一条已被移入仅仅是缓冲区域的 $s$-轴。
+
+\end{proof}
+
+精确的高表示是一个三重积分，其完整修正项有一个强函数。因此我们可以在
+引入任何辅助分离变量之前进行这一变换。如果某个中心估计之后使用了这类
+变量，那么它们的保留区域和丢弃部分必须在该估计中得到论证；它们不是
+刚刚证明的围道恒等式的新坐标。
+
+\subsection{应用行包络}
+
+对于基础修正，引理~\ref{lem:local-euler} 验证了
+引理~\ref{lem:fixed-bin-contour} 的假设。确实，
+$|\mathcal H_{\eta,u}|\ll_\epsilon q_u^\epsilon$ 在两个欧拉区域中的所有三个
+高度上一致成立；对于 $q_u\le Z^D$，取 $\epsilon=1$ 即得
+方程~\eqref{eq:stage-all-height-majorant}，其中 $B=D$ 且高度阶为零。
+我们现在估计保留下来的积分，在本小节中始终使用
+$l_x=l_y=h=1/2$ 和 $\ell=0$。
+
+固定
+\[
+ d_{\min}=\frac1{63},\qquad \zeta=\frac1{1000},\qquad
+ d_{\max}=h+\zeta=\frac{501}{1000}.
+\]
+对于此范围内的一个二进 $U=Z^d$，在移动任何 Mellin 变量之前固定一个动态箱
+$(i,a)$，并令 $\delta=2a-1$。命题~\ref{prop:sextic-row-count} 在给定损失
+$\epsilon_r>0$ 下给出其基数至多
+$U^{R(\delta)+\epsilon_r}(1+T_1)^{A_\eta}$，至多相差一个固定常数。
+对于底层，这就是直接计数 $O_\eta(U)$，因为
+$R(1/50)=1$；它不使用见证。
+
+分子 $L^S(w,\chi_\bullet(u))$ 正是第~\ref{sec:detector} 节中 $\nu=1$ 的
+原始零延拓表示。在保留下来的直线 $\Re w=1-a-6e$ 上，引理~\ref{lem:buffered-bins}
+将其界为
+$U^{\delta/2+12e+\epsilon_n}(3+T_1)^C$，对任意 $\epsilon_n>0$。
+这在底层箱中也成立。中心点位于
+$\mathcal D_1(10e)$ 中，因此引理~\ref{lem:local-euler} 中更强的局部估计给出
+$|\mathcal H_{\eta,u}|\ll_{e,\epsilon_H}U^{\epsilon_H}$，对任意
+$\epsilon_H>0$。因此
+\[
+ \sum_{u\in\mathcal B}
+ |L^S(w,\chi_\bullet(u))\mathcal H_{\eta,u}(s,w,z)|
+ \ll_\eta
+ U^{R(\delta)+\delta/2+12e+\epsilon_r+\epsilon_n+\epsilon_H}
+ (1+T_1)^{A'_\eta}.
+\]
+这里 $A'_\eta$ 是有限的，并且在最终外部尾阶之前就已固定。

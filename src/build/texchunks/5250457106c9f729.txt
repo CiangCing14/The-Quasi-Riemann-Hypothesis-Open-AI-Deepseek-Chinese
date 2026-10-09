@@ -1,0 +1,57 @@
+对两个范数球作二进细分，并在列壳层上使用柯西不等式，将方程~\eqref{eq:sextic-sieve-norm-shell} 转化为对元素为 $F_b(a)=\chi_a(b)$ 的球矩阵的相同界。对数因子被一个更小的预备损失吸收，单位壳层则直接估计。方程~\eqref{eq:sextic-large-sieve} 中 $\varsigma=1$ 的矩阵是此矩阵在长度 $(D,K)$ 处的转置。复矩阵与其转置具有相同的算子范数，这由伴随恒等式及随后的整向量共轭得到。该界在两个长度上是对称的，因此它恰好给出 $K+D+(KD)^{2/3}$。对整个内和取共轭得到 $\varsigma=-1$，零点不变。最后，固定行限制去除非负项，而固定系数限制则通过零延拓施加。这证明了引理的所有断言。
+\end{proof}
+
+\subsection{物理行及其逆见证}
+
+筛法既已证明，剩下便是将其应用于检测器见证。我们仅将此引理应用于物理行的无平方因子部分。无平方因子行因子与强大行因子的分离也用于 \cite{BGL} 的推论 1.4 的证明中；此处我们保留强大因子的实际范数，因为它同时控制矩和行数。
+
+\begin{proposition}[六次筛法行包络]\label{prop:sextic-row-count}
+固定算术数据 $\mathcal A$、有界物理范围 $d_{\min}\le d\le d_{\max}$，以及引理~\ref{lem:buffered-bins} 和~\ref{lem:detector-dyads} 的高度与损失假设。令 $U=Z^d$，并沿用这些引理中的记号 $T_1$。设 $\mathcal B$ 为任意一组保留的六次幂自由元素行 $u$，满足 $q_u\asymp U$，且全部位于同一个箱 $(i,a)$ 中，其中 $a>51/100$。令 $\delta=2a-1$，故 $1/50<\delta\le1$。
+
+对每个 $\epsilon>0$，在缩减命题~\ref{prop:detector-witness} 中的预备损失后，对所有充分大的 $Z$，
+\begin{equation}\label{eq:sextic-row-count}
+ \#\mathcal B\ll_{\mathcal A,\epsilon}
+ U^{R(\delta)+\epsilon}(1+T_1)^{A_{\mathcal A}},
+ \qquad
+ R(\delta)=\min\left\{1,
+       \max\left(1-\frac\delta2,\frac43-\delta\right)\right\}.
+\end{equation}
+有限阶 $A_{\mathcal A}$ 在物理二进区间、箱以及所有移动行上是一致的。它可以在 $T_1=Z^\tau$ 中的正指数被选定之前固定。该估计对每个固定的保留外部参数元组以及原始行限制均成立。隐含常数可能依赖于固定的比较常数以及有限多个共享轮廓半范数。逐行轮廓的选择恰好是命题~\ref{prop:detector-witness} 和引理~\ref{lem:smooth-calculus} 所允许的那些；不允许任意依赖于行的系数。
+
+底箱 $a=51/100$ 被排除在见证断言之外。对该箱，初等界 $\#\mathcal B\ll_{\mathcal A}U$ 适用；它与数值 $R(1/50)=1$ 一致。
+\end{proposition}
+
+\begin{proof}
+固定一个小的预备损失 $\epsilon_0>0$。对 $\mathcal B$ 中的每一行以 $t=1$ 应用命题~\ref{prop:detector-witness}。按其表示标签 $\psi_{u,\nu,\varsigma}(n)=\nu(n)\chi_n(u)^{\varsigma}$ 及其二进多项式长度对进行细分。表示标签只有固定有限多个，而长度对有 $O_{\mathcal A}((\log U)^2)$ 个。在这样一个细分内，逆长度 $D=U^r$ 和数对 $(\nu,\varsigma)$ 是固定的。在此细分中记
+\[
+ M_u(D;W)=D^{-1/2}\sum_n\mu(n)\nu(n)\chi_n(u)^{\varsigma}W(q_n/D)
+\]
+为该表示的逆多项式。见证给出
+\begin{equation}\label{eq:sextic-witness-spike}
+ \frac12-O(\epsilon_0)\le r\le1+O(1/\log U),
+ \qquad |M_u(D;W_u)|^2\gg_{\mathcal A,\epsilon_0}
+       U^{\delta r-\epsilon_0}.
+\end{equation}
+记号 $W_u$ 保留了允许的逐行范数轮廓参数。此处的多项式是所示表示的原始多项式，而非其本原诱导特征的多项式。我们首先在这些参数固定时对其进行估计，然后处理它们的逐行选择。
+
+对每个六次幂自由行，将其理想唯一分解为
+\[
+ (u)=\mathfrak s\mathfrak w\mathfrak k,
+ \quad
+ \mathfrak s=\prod_{p\in S}p^{v_p(u)},\quad
+ \mathfrak w=\prod_{\substack{p\notin S\\2\le v_p(u)\le5}}p^{v_p(u)},
+ \quad
+ \mathfrak k=\prod_{\substack{p\notin S\\v_p(u)=1}}p.
+\]
+于是 $\mathfrak k$ 无平方因子，$(\mathfrak k,\mathfrak w)=1$，且 $\mathfrak w$ 是强大的，即其每个正素因子赋值至少为二。$\mathfrak s$ 只有有限多种可能，因为其在固定集合 $S$ 上的赋值属于 $\{0,\ldots,5\}$。为每个这样的理想选取一个生成元 $s_{\mathfrak s}$。以 $w,k$ 记 $\mathfrak w,\mathfrak k$ 的主生成元，则存在唯一的单位 $\upsilon$ 使得
+\[
+ u=\upsilon s_{\mathfrak s}wk.
+\]
+每当取行和时，我们固定 $\mathfrak s$ 和 $\upsilon$。
+
+插入二进范围 $q_{\mathfrak w}\asymp V$，包括有界范围 $V=1$ 中的单位理想。只有 $1\le V\ll_{\mathcal A}U$ 可能出现，且这样的范围有 $O_{\mathcal A}(\log U)$ 个。原始环带 $q_u\asymp U$ 给出实际的剩余环带
+\begin{equation}\label{eq:sextic-actual-row-annulus}
+ q_{\mathfrak k}=\frac{q_u}{q_{\mathfrak s}q_{\mathfrak w}}
+       \asymp_{\mathcal A}\frac UV.
+\end{equation}
+在构造和时我们保留此限制。仅当应用正行界时，才将其扩大为球 $q_k\ll_{\mathcal A}U/V$。设 $\mathcal U_V$ 表示当前见证细分中位于此强大部分二进区间内的行，所有原始物理限制均保留。

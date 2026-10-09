@@ -1,0 +1,73 @@
+在形式分解 \(z_a=sn_a\) 上，完整的根与核论证恰好为
+\begin{equation}\label{eq:initial-root-kernel}
+ \begin{split}
+ \frac{Z^{-D'}Z^m}{q_{d'}q_s\sqrt{q_{n_1}q_{n_2}}}
+ &=Z^{\kappa_c^{\rm init}}x_d^{-1}x_s^{-1}(x_1x_2)^{-1/2},\\
+ \frac{Z^mq_{h'}}{q_{d'}q_s^2q_{n_1}q_{n_2}}
+ &=A_{{\rm ker},{\rm init}}\frac{x_h}{x_dx_s^2x_1x_2},\\
+ A_{{\rm ker},{\rm init}}&=Z^{m+H-\theta-2(D'-B)}.
+ \end{split}
+\end{equation}
+对于第一个等式，使用 \(N_c^{\rm init}=D'-B-v\) 和
+\(\kappa_c^{\rm init}=m-2D'+B-\theta\)。等价地，其根为
+\(x_d^{-1}x_C(x_{c_1}x_{c_2})^{-1/2}\)，其中
+\(x_{c_a}=x_Cx_sx_a\)。定义单个联合轮廓
+\begin{equation}\label{eq:initial-joint-profile}
+ \begin{split}
+ \mathfrak H_{{\rm init},\Sigma,\boldsymbol\upsilon}(\boldsymbol x)
+ ={}&Z^{-3\eta}\prod_\alpha\Omega_{{\rm init},\alpha}(x_\alpha)
+ x_d^{-1}x_s^{-1}(x_1x_2)^{-1/2}\\
+ &\times W_0(x_Cx_sx_1)\overline{W_0(x_Cx_sx_2)}
+ \mathcal K_{\rm init}\!\left(
+ A_{{\rm ker},{\rm init}}\frac{x_h}{x_dx_s^2x_1x_2}\right).
+ \end{split}
+\end{equation}
+其外部标量恰好为 \(Z^{\kappa_c^{\rm init}+3\eta}\)。
+旧的 \(c\)-窗口是耦合的，因此包含在此轮廓中，
+所有归一化实逆根以及完整核也是如此。没有
+实根也被放入子检验中。
+
+对于 \(\boldsymbol\xi=(\xi_C,\xi_d,\xi_s,\xi_h,\xi_1,\xi_2)\)，令
+\(z_n=q_n/Z^{N_{\rm init}}\)，再次令
+\(\varepsilon_1=1,\varepsilon_2=-1\)，并定义
+\[
+ W_a^{\rm init}(z)=\omega_{n,a}(Z^{\delta_{\rm init}}z)
+                       z^{\varepsilon_a i\xi_a}.
+\]
+若 \(\mathfrak d_a'\) 是 \(a\) 侧存留的子集，则精确的未归一化子多项式为
+\begin{equation}\label{eq:initial-child-polynomial}
+ Q^{\rm init}_{a,t,j,\boldsymbol\xi}(k,f)
+ =\sum_{n\ {\rm sf}}A_*(n)\rho_{t,j}(n)
+ \chi_n(k)\chi_n(f)^4\mathfrak d_a'(n)
+ W_a^{\rm init}(q_n/Z^{N_{\rm init}}).
+\end{equation}
+其固定的有限特征、穿刺、乘积标记和检验均
+独立于 \(k,f\)。两侧可以有不同的检验和
+子集，但两者具有相同的典范系数类。
+
+令 \(\Omega_\Sigma\) 由
+\[
+ \omega=(C\ {\rm sf},d'\mid C,s\ {\rm sf},h'\ne0;
+                      \text{assigned slot primes})
+\]
+组成，并带有保留的个体支撑和槽分支。它没有
+当前的列指标。函数 \(t,k,f\) 是上述定义的乘积；该集合可以在施加所展示的
+外部零点掩码之前取定，这些掩码将出现在权重中。令
+\(\mathcal A_\Sigma^{\rm init}(\omega)\) 为 \(\mathfrak d_0\) 的所有
+指定系数及其优先掩码的乘积，在第二侧取共轭。完整的剩余外部权重为
+\begin{equation}\label{eq:initial-outer-weight}
+ \begin{split}
+ V_\Sigma^{\rm init}(\omega;\boldsymbol\xi)={}&
+ \mu(d')\mu(s)\widehat G(\vartheta)\mathcal B_{\rm init}(h')
+ 1_{(C,j)=1}1_{(s,Cj)=1}1_{(s,h')=1}
+ \mathcal A_\Sigma^{\rm init}(\omega)\\
+ &\times\psi_C(x_C)\psi_{d'}(x_d)\psi_s(x_s)\psi_{h'}(x_h)
+ \omega_f(q_f/Z^{V_c^{\rm init}})\\
+ &\times x_C^{i\xi_C}x_d^{i\xi_d}x_s^{i\xi_s}x_h^{i\xi_h}
+ Z^{i\delta_{\rm init}(\xi_1+\xi_2)}.
+ \end{split}
+\end{equation}
+截断 \(\omega_f\) 在每个原始标签乘积上均为 1，因此
+在分离之前其插入是等式。每个 M\"obius 因子各有一份
+副本，且有一个射线系数。特别地，
+\((s,h')\) 处的公共零点仍然存在。

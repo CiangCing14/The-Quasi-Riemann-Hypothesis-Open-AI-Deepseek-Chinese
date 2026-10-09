@@ -1,0 +1,38 @@
+与一对 $(R,g)$ 相关联的公共理想指数为
+\begin{equation}
+ E_{\sigma_0}(d;R,g)=a-\sigma_0+h(z_0-1/6)-a l_y-\ell/2+g
+                  +d(R+\delta/2-z_0).
+ \label{eq:stage-high-exponent}
+\end{equation}
+若 $\mathcal B$ 为空，则其贡献为零。否则令
+\[
+ E^{\max}_{\sigma_0,Z}(d)
+   =\sup_{(R,g)\in\mathcal P_Z}E_{\sigma_0}(d;R,g).
+\]
+对每个 $\varepsilon_d,\varepsilon_p>0$，当 $Z$ 充分大时，$\mathcal B$ 在中心围道上的总贡献为
+\begin{equation}
+ \begin{split}
+ \ll_\eta{}& Z^{C(\sigma_0)+E^{\max}_{\sigma_0,Z}(d)+(16-6l_y)e}\\
+ &\cdot Z^{(1+d)\varepsilon_c+d\varepsilon_d+\varepsilon_p}
+       (1+T_1)^{A_\eta}.
+ \end{split}
+ \label{eq:stage-central-contribution}
+\end{equation}
+上确界有限，因为这些对位于一个固定的有界范围内。幂 $\varepsilon_p$ 吸收了逐点的对数重数。并未断言对逐点片段或行集有单独的积分。在此围道移动中，所有被舍弃的部分与水平连接项对每个固定的 $N$ 均为 $O_{\eta,N}(Z^{B_\eta}T_1^{-N})$，其中 $B_\eta$ 有限且在 $N$ 之前固定。
+\end{lemma}
+
+\begin{proof}
+将引理~\ref{lem:fixed-bin-contour} 应用于原始三重积分，对其三个盒常数使用方程~\eqref{eq:stage-height-allocation} 中相应的 $c_k$。这些常数是正的且至多为 $1/2$。因此，完整修正与固定箱在引入任何逐点片段之前就给出了保留积分与所断言的误差。用于中心界的任何辅助积分均受陈述中附加假设的约束。
+
+现在使用中心分解并构造逐点集 $\mathcal B_{\lambda,\nu}$。在每个保留点上，对原始行和施用三角不等式，然后对该点上出现的集合施用方程~\eqref{eq:stage-central-bound}。逐点至多有 $(1+\log Z)^D$ 的固定倍数个这样的集合。将它们的每个指数用 $\mathcal P_Z$ 上的上确界来界定，并只对原始全纯行和积分。因此，既不需要单个逐点细分的可测性，也不需要跨围道点的一个公共标签集。在保留的围道上，引理~\ref{lem:buffered-bins} 将倒数界定为 $O_{\eta,e,\varepsilon_d}(U^{\varepsilon_d})$。这些测试具有一致有界的联合 $L^1$ 范数，因为变换 $(\Im s,\Im z,\Im w)\mapsto(\Im(s+z),\Im z,\Im w)$ 是可逆的。标量因子 $\zeta_F^S(6z_0)$ 绝对有界。剩下的是计算 $Z$ 的实幂。
+
+外部因子，包括 $q_u^{-z_0}$ 以及方程~\eqref{eq:stage-central-contours} 中的实位移，贡献
+\[
+ l_x(1/2-z_0)+a+z_0-1-a l_y-dz_0+(16-6l_y)e.
+\]
+方程~\eqref{eq:stage-central-bound} 加上
+$d(R+\delta/2+\varepsilon_c)+\ell(z_0-1/2)+g+\varepsilon_c$。
+倒数加上 $d\varepsilon_d$。减去
+$C(\sigma_0)=\sigma_0+l_x/2-1+h/6$ 并利用
+$h=1-l_x+\ell$ 即得方程~\eqref{eq:stage-high-exponent} 以及方程~\eqref{eq:stage-central-contribution} 中其余各项。当 $Z$ 充分大时，逐点对数重数被 $Z^{\varepsilon_p}$ 界定。这证明了该断言。
+\end{proof}

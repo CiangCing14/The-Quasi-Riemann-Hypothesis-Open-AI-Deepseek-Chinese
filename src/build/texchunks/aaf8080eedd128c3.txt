@@ -1,0 +1,59 @@
+\emph{反射加性相位。}
+令 $x=\lambda^4\mu$，$D_F=\lambda^3c_F$。对每个 $p\mid r$，
+方程~\eqref{eq:reflection-cusp-fraction} 给出
+$a\equiv\sigma_ph_p\pmod p$。因此
+$\delta'\equiv\sigma_p^{-1}h_p^{-1}\pmod p$。对 $D_Fr$ 的互素因子作加性中国剩余定理，得到精确恒等式
+\begin{equation}\label{eq:reflection-additive-phase}
+ \begin{split}
+ \check e(-\delta'\mu/c)
+ &=e(-\delta'x/(D_Fr))\\
+ &=\vartheta(x)\prod_{p\mid r}e(\epsilon_ph_p^{-1}x/p),
+ \qquad
+ \vartheta(x)=e(-\delta'_F r^{-1}x/D_F).
+ \end{split}
+\end{equation}
+这里 $\delta'_F$ 是 $\delta'$ 模 $D_F$ 的类，而
+$\vartheta$ 的公式中的 $r^{-1}$ 取模 $D_F$。
+例如，$p$ 处的局部分子为
+$-\delta'(D_Fr/p)^{-1}=\epsilon_ph_p^{-1}$；这验证了符号
+以及 $\lambda$ 的幂次。所选的同余式固定了 $\delta'_F$，
+因为 $D_F$ 整除相应的局部模，而扇区固定了
+$r^{-1}\bmod D_F$。因此，有限多个 $D_F$ 的一个公倍数
+就是所有特征 $\vartheta$ 的一个固定模。
+
+对 方程~\eqref{eq:reflection-multiplier} 取共轭贡献
+$\bar\kappa_F\prod_{p\mid r}\chi_p(\sigma_p)^{-2}\chi_p(h_p)^{-2}$。
+对于 $j\ne0$，乘以
+方程~\eqref{eq:reflection-local-fourier} 使局部和保持不变
+\[
+ q_p^{-1/2}\tau_{p,j}^{-}
+ \sum_{h\ne0}\chi_p(h)^{-j-2}e(\epsilon_ph^{-1}x/p).
+\]
+令 $y=h^{-1}$，该和是指数为 $j+2$ 的高斯和。
+若 $j\ne4$，其值为
+$q_p^{1/2}\tau_{p,j+2}^{+}\chi_p(\epsilon_px)^{-j-2}$，同样在
+$p\mid x$ 处成立，因为此时两边都为零。若 $j=4$，它是
+拉马努金和
+\[
+ \sum_{y\ne0}e(\epsilon_pxy/p)=-1+q_p1_{p\mid x}.
+\]
+对于活跃的 $j=0$，同样的代换给出
+\[
+ -q_p^{-1}\sum_{h\ne0}\chi_p(h)^{-2}e(\epsilon_ph^{-1}x/p)
+ =-q_p^{-1/2}\tau_{p,2}^{+}\chi_p(\epsilon_px)^{-2}.
+\]
+这些恰好是 $\omega_{p,j}B_p(x)$；一个不活跃的零指数
+贡献 $1-q_p^{-1}$。这证明了每个局部因子，包括
+其零延拓。$h_0$ 和活跃子集的选择至多给出
+$q_L2^{\#\{p:j_p=0\}}$ 项。将 $j_p=4$ 的因子拆分
+至多再乘以 $2^{\#\{p:j_p=4\}}$，从而证明了所述的
+计数。
+
+在这些局部和之前构造的分母和固定扇区数据
+仅通过 $h_0$ 和活跃根
+$r$ 依赖于局部素数集；剩余的活跃频率依赖恰好就是刚刚求和的局部依赖。我们对每个 $h_0$ 使用相同的代表元
+和归一化分数，并且每当那些
+数据重现时，使用相同的固定扇区选择
+的尖点函数、固定加性特征和 $\kappa_F$。一个缺席的素数与一个不活跃的零指数素数具有
+相同的活跃根；因此它们的其他活跃 $\sigma_p,\epsilon_p$ 也相同。不活跃系数 $1-q_p^{-1}$ 是唯一的变化。
+这证明了陈述中的同时分支相容性。

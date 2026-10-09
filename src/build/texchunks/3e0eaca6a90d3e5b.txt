@@ -1,0 +1,58 @@
+因子 $\chi_r(mh)^3$ 是一个有界列因子。将 $m,h$ 在 $S$ 上支撑的无平方因子部分与其好部分分离：
+$m=m_Sm_{\rm g}$ 和 $h=h_Sh_{\rm g}$。$m_S,h_S$ 只有有限多种选择。它们的符号是有界行因子，而
+$j=m_{\rm g}h_{\rm g}$ 是无平方因子的好部分，范数为 $O(NG/C^2)$。
+对于固定的 $r,t,m_S,h_S$，按 $j$ 将其余列分组。若 $C_j$
+是所得的系数，则二次大筛法给出
+\[
+ \sum_{k'}\left|\sum_j C_j\chi_{k'}(j)^3\right|^2
+ \ll_\epsilon (KNB)^\epsilon
+       \left(\frac K{q_r}+\frac{NG}{C^2}\right)\sum_j|C_j|^2.
+\]
+外层求和可以保留其所有固定的限制条件。在一个非空范围上，最后一个展示式中的两个商长度都被一个固定
+正常数从下方界定；将它们替换为与 1 的最大值只会改变比较常数。
+
+对于每个 $j$，分解为 $m_{\rm g},h_{\rm g}$ 的方式数受除数界控制。在其范围内有 $O(C/q_r)$ 个可能的 $c'$。因此对这两种选择应用柯西不等式给出
+\[
+ \sum_j|C_j|^2
+ \ll_\epsilon (KNB)^\epsilon\frac C{q_r}
+ \sum_{(c',m,h)\in\mathcal D_r(t)}
+          |\beta(rc'm,rc'ht^2)|^2.
+\]
+来自 $\chi_r$ 的有界列因子仅在这个正项和中被舍弃。固定的坏部分符号是单位模的行因子，在应用筛法之前已从外层模中移除。
+这里的理想 $m,h$ 是原始理想，由它们固定的 $S$ 部分重构而来；$c'$ 的 $S$ 部分未被触及。
+合并这些展示式即证明了方程~\eqref{eq:completed-quadratic-reduction}。
+
+现在假设 $|\beta|\le1$。理想计数给出
+\[
+ \#\mathcal D_r(t)\ll
+       \frac C{q_r}\frac NC\frac GC.
+\]
+对于 $q_r\asymp r_0$，它与前面因子 $C/q_r$ 的乘积为
+$O(NG/r_0^2)$。在此范围内有 $O(r_0)$ 个可能的 $r$，以及 $O(T)$
+个可能的 $t$。由于 $B\asymp GT^2$，它们对方程~\eqref{eq:completed-quadratic-reduction} 的贡献至多为
+\[
+ (KNB)^\epsilon\frac{NB}{r_0}
+       \left(\frac K{r_0}+\frac{NG}{C^2}\right)
+ \ll (KNB)^\epsilon NB(K+NB).
+\]
+这里 $r_0,C,T$ 在一个非空范围上从下方有界，且 $G\ll B$。
+$C,G,T,r_0$ 的二进选择数目在范数范围上是对数级的。对 $C,G,T$ 块应用希尔伯特空间三角不等式，随后重新缩放 $\epsilon$，即证明了方程~\eqref{eq:completed-quadratic-norm}。
+\end{proof}
+
+\subsection{无标记反射能量}
+
+对于固定的有限射线特征 $\nu$，在远离与 $S$ 互素的原始元素处用零延拓，且对于 $m\ne0$，定义中心完备化和
+\begin{equation}\label{eq:unmarked-central-completion}
+ \mathcal C_V(X;m,\nu)=
+ \sum_{\substack{c\ {\rm sf},\ n\\c,n\equiv1\ (3)\\(cn,S)=1}}
+ \frac{\gamma_2(c)\overline{\alpha(cn^3)}\nu(cn^3)\chi_{cn^3}(m)}
+      {\sqrt{q_c}\,q_n}
+ V\!\left(\frac{q_cq_n^3}{X}\right).
+\end{equation}
+这里 $c,n$ 可以共享素因子。当 $V$ 满足命题~\ref{prop:completed-reflection} 的假设时，定义级数对每个 $X>0$ 绝对收敛。完全积性，保留零点，给出
+$\chi_{cn^3}(m)=\chi_c(m)\chi_n(m)^3$。因此对于每个 $a>1$，
+\begin{equation}\label{eq:unmarked-central-mellin}
+ \mathcal C_V(X;m,\nu)=\frac1{2\pi i}\int_{(a)}
+ \widehat V(s-1/2)X^{s-1/2}T(s,\nu\chi_\bullet(m))\,ds.
+\end{equation}
+事实上，绝对收敛允许在该直线上逐项进行梅林反演。

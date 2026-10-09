@@ -1,0 +1,39 @@
+\paragraph{正典范子项.}
+对固定的傅里叶模式，定义正子项和
+\begin{equation}\label{eq:inverse-positive-child}
+ \begin{split}
+ \mathcal H_{a,\gamma}={}&
+ \sum_{\substack{f\ {\rm sf}\\q_f/Z^{V_c}\in I_f}}
+ D_{K_{\rm slot}}(f)
+ \sum_{\substack{k\in\mathcal O\\0<q_k\le Z^{M_{\rm ch}}}}
+ |Q_{a,\gamma,\boldsymbol\zeta}(k,f)|^2
+ =Z^{F_{\rm ch}}\mathcal E_{a,\gamma}.
+ \end{split}
+\end{equation}
+该等式是方程~\eqref{eq:canonical-energy} 在相同行球、标签权重 \(D_{K_{\rm slot}}\) 以及方程~\eqref{eq:canonical-child-polynomial} 和 \eqref{eq:canonical-child-data} 中的测试与穿刺下的归一化；若那里使用更大的固定行球，则该等式改为所需上界方向的不等式。权重仅依赖于 \(f\)。重指标后，\(\mathcal B_2\) 恰为所展示的行球。只有现已为正的外层行和标签和已被放大到其完整的固定窗口。列使用其完整的固定新鲜窗口，但其穿刺、标记和测试未被删除或改变。刚刚证明的实际纤维支配给出
+\[
+ \begin{split}
+ \left|\sum_{\xi\in\Xi_\sigma}V_\sigma Q_1\overline{Q_2}\right|
+ &\le\prod_{a=1}^2
+       \left(\sum_{\xi\in\Xi_\sigma}|V_\sigma||Q_a|^2\right)^{1/2}\\
+ &\ll Z^{c_\sigma}\prod_{a=1}^2
+       \left(\int_{\Gamma_\sigma}\mathcal H_{a,\gamma}
+                    \,d\nu_\sigma(\gamma)\right)^{1/2}.
+ \end{split}
+\]
+这里 \(Q_a=Q_{a,\gamma,\boldsymbol\zeta}(k_{\rm new},f_{\rm new})\)。两个平方根各贡献 \(Z^{c_\sigma/2}\)，因此有一个固定计数因子。一致子项界给出一个总质量 \(\|\nu_\sigma\|\)，而非其平方。子项界将仅对 \(\gamma\in\Gamma_\sigma\) 使用，利用方程~\eqref{eq:inverse-child-margins} 中已验证的假设。
+
+\paragraph{能量指数.}
+形式中心满足精确恒等式
+\begin{equation}\label{eq:canonical-prefactor}
+ \kappa_i+\lambda_c+C_c+2F_c=F.
+\end{equation}
+这通过代入其定义和 \(H_c=2r-2B-M+4\ell+2V+\delta-j\) 得到；所有提取的长度相消，结果为 \(r+3\ell+V=N+V\)。
+
+我们现在仅对 \(\gamma\in\Gamma_\sigma\) 使用子项估计，对此前述边距和行递减已被证明。若它在那里一致地给出 \(\mathcal E_{a,\gamma}\ll C(\boldsymbol t,\boldsymbol\zeta) Z^{F_{\rm ch}+\epsilon_{\rm child}}\)，并带有其固定多项式高度依赖，则方程~\eqref{eq:inverse-positive-child} 和上述最终加权柯西界给出
+\[
+ \left|\sum_{\xi\in\Xi_\sigma}V_\sigma Q_1\overline{Q_2}\right|
+ \ll C(\boldsymbol t,\boldsymbol\zeta)
+ Z^{c_\sigma+2F_{\rm ch}+\epsilon_{\rm child}}\|\nu_\sigma\|.
+\]
+归一化质量即方程~\eqref{eq:inverse-normalized-triples} 中的那个；见证重数已在其纤维权重中。公共傅里叶密度随后使用方程~\eqref{eq:inverse-joint-fourier-moments} 积分一次。它不是离散测度的一部分，也不对任何行或标签重新选取。因此真正的外层计数及其归一化质量各出现一次。平均的 \(J,C,d_2,v'\) 保持在正子项和中，不再另行计数。

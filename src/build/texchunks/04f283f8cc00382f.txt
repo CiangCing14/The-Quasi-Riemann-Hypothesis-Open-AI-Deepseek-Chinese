@@ -1,0 +1,83 @@
+固定一个单位 $u$、一个整数 $k\ge-4$，以及对偶范围
+\[
+ \mu=u\lambda^kN_Fn(B_Fb)^3,\qquad
+ q_n\asymp Z^v,\quad q_b\asymp Z^{\ell_b},\quad
+ q_{\lambda^k}=Z^{e_\lambda},
+\]
+其中 $v,\ell_b\ge0$。无平方因子 $n$ 与主 $b$ 保留式~\eqref{old-eq:4.3} 的完整源支撑，包括 $S$ 的允许素数以及共享素数。设 $H\ge0$，并在一个固定的紧对数盒上选取一个公共光滑轮廓 $W_1(y_R,y_n,y_b)$，其中
+\[
+ y_R=q_R/Z^H,\qquad y_n=q_n/Z^v,\qquad y_b=q_b/Z^{\ell_b}.
+\]
+为这三个范围选取固定的光滑环形截断 $\chi_{\rm row},\chi_n,\chi_b$，并令
+\[
+ W_0(\boldsymbol y)=\chi_{\rm row}(y_R)\chi_n(y_n)\chi_b(y_b)W_1(\boldsymbol y).
+\]
+支撑集与所引用的半范数在整个块上一致固定。记 $\mathcal U_{v,\ell_b,e_\lambda}(R)$ 为式~\eqref{eq:reflection} 右端中指定的项，限制于此对偶表示并乘以 $W_0(y_R,y_n,y_b)$。原始行集 $\mathcal I_H$ 由满足 $\chi_{\rm row}(q_R/Z^H)\ne0$ 的允许 $R$ 组成。此定义对上述每一个固定选择分别作出。
+\end{definition}
+
+此定义中的冻结素数在不同调用之间可以变化；它们不被加入固定的算术模 $L$。该定义仅在取当前关于 $R$ 的范数之前固定它们。
+
+\begin{lemma}[无标记反射块]
+\label{lem:unmarked-reflected-block}
+对于一个无标记反射块，令
+\[
+ T_0=2H+2A_0-N-N_0-3B_0,\qquad
+ \nu_0=\frac v2+\ell_b+\frac{e_\lambda}{3}+\frac{S_0+B_0}{2}.
+\]
+设所有这些对数长度在一个固定有界集合中取值。令
+\[
+ Y=\frac{q_{\lambda^kN_FB_F^3}X Z^vZ^{3\ell_b}}
+          {q_{c_FF_{\rm act}}^2Z^{2H}},\qquad
+ W(\boldsymbol y)=y_n^{-1/2}y_b^{-1}W_0(\boldsymbol y),\qquad
+ F_Y(\boldsymbol y)=W(\boldsymbol y)V^\sharp(Yy_ny_b^3y_R^{-2}).
+\]
+存在函数 $\rho(R)$ 与 $\beta(n,b)$，其绝对值至多为 1，使得 $\beta$ 与 $R$ 无关，且
+\begin{equation}\label{eq:unmarked-structural-block}
+ \mathcal U_{v,\ell_b,e_\lambda}(R)
+ =\frac13 Z^{-\nu_0}\rho(R)
+       \sum_{n,b}\beta(n,b)\chi_R(nb)^3F_Y(y_R,y_n,y_b).
+\end{equation}
+该求和保留定义中所有固定的对偶限制。此处唯一同时依赖于 $R$ 与对偶变量的算术因子是所展示的零延拓二次符号。此外，
+\begin{equation}\label{eq:unmarked-actual-annuli}
+ \frac{q_\mu X}{q_c^2}=Yy_ny_b^3y_R^{-2},\qquad
+ c=c_FF_{\rm act}R.
+\end{equation}
+这是原始支撑上的精确恒等式，包括 $N_F$ 与 $b$ 共享素数时。
+
+对每个 $\epsilon>0$ 与每个固定 $A\ge0$，
+\begin{equation}\label{eq:unmarked-reflected-energy}
+ \begin{split}
+ \sum_{R\in\mathcal I_H}|\mathcal U_{v,\ell_b,e_\lambda}(R)|^2
+ &\ll_{\epsilon,A} Z^{E_0+\epsilon}p_5(W)^2
+       \mathfrak M_{A,\lceil4A\rceil+7}(V)^2,\\
+ E_0={}&\max(H,v+\ell_b)-S_0-B_0-\ell_b-\frac{2e_\lambda}{3}
+       -\frac12(T_0-v-3\ell_b-e_\lambda)_+.
+ \end{split}
+\end{equation}
+常数可以依赖于固定核阶 $A$、固定算术数据、有界对数长度范围以及固定支撑盒，但不依赖于移动的冻结局部集 $\mathcal F$。$W_0$ 中的范数扭曲具有由其有限半范数提供的多项式代价。
+\end{lemma}
+
+\begin{proof}
+对于固定的 $h_0$ 以及 $R$ 模 $M_{\rm ref}^2$ 的固定类，$F_{\rm act}R$ 的类固定。因此命题~\ref{prop:completed-reflection} 对整个行集给出一个公共 $d$ 与一个公共加性特征 $\vartheta$。记 $x_F=u\lambda^{k+4}N_FB_F^3$，从而 $\lambda^4\mu=x_Fnb^3$。剩余局部因子恰为
+\[
+ \prod_{p\mid R}B_p(\lambda^4\mu)
+ =\chi_R(x_F)^3\chi_R(nb^3)^3
+ =\chi_R(x_F)^3\chi_R(nb)^3.
+\]
+两个等式中都包含零；没有单位符号被除。特别地，任何与 $x_F$ 的碰撞都是仅依赖于 $R$ 的限制。每个剩余局部因子都是固定的，且仅依赖于对偶指标。反射的标量 $\zeta_R$ 依赖于 $R$，但不依赖于 $\mu$。
+
+在指定的对偶支撑上定义
+\[
+ \delta(n,b)=
+ \frac{d(\mu)\alpha(\mu)\vartheta(\lambda^4\mu)}
+      {27\,3^{k/6}|B_Fb|}.
+\]
+系数界给出 $|\delta(n,b)|\le1$。其分母非零，且当分子为零时该定义仍然有效。利用 $q_\mu=3^kq_{N_Fn}q_{B_Fb}^3$ 得到精确分解
+\[
+ \frac{d(\mu)\alpha(\mu)\vartheta(\lambda^4\mu)}{\sqrt{q_\mu}}
+ =27\delta(n,b)q_{\lambda^k}^{-1/3}
+                  q_{N_Fn}^{-1/2}q_{B_Fb}^{-1}.
+\]
+一个小 Ramanujan 因子或一个活跃零掩码因子贡献 $q_p^{-1/2}$。一个整除性因子贡献 $q_p^{1/2}$；对于分配给 $N_F$ 的素数，它抵消来自无平方因子分母的 $q_p^{-1/2}$，而对于分配给 $B_F$ 的素数，它在提取后留下 $q_p^{-1/2}$。当分配给 $N_F$ 的素数同时整除 $b$ 时，它在 $b$ 中的整个出现都保留在 $q_b^{-1}$ 与 $\delta(n,b)$ 中。这些事实恰好给出公共幂 $Z^{-\nu_0}y_n^{-1/2}y_b^{-1}$。
+
+将 $\delta$、小 Ramanujan 项的符号、有界固定局部特征以及固定对偶指示函数吸收进 $\beta(n,b)$。该函数以 1 为界，且与 $R$ 无关。令 $\rho(R)=81\zeta_R\chi_R(x_F)^3$；由于 $|\zeta_R|\le1/81$，它以 1 为界。因子 $27/81=1/3$ 现在证明了式~\eqref{eq:unmarked-structural-block}。范数的乘性证明了式~\eqref{eq:unmarked-actual-annuli}。它不使用 $N_F$ 与 $b$ 之间的任何互素性。

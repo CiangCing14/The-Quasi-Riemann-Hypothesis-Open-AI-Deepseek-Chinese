@@ -1,0 +1,92 @@
+对于 $x\ne0,1$，选取 $j_x\in\{0,1,2\}$ 使得
+$H^2(x(1-x))=\omega^{j_x}$。这些 $x$ 上的 $x$ 与 $1-x$ 的乘积均为
+$-1$，故 $\prod_{x\ne0,1}x(1-x)=1$。因此
+$\sum_{x\ne0,1}j_x\equiv0\pmod3$。由于
+\[
+ \omega^j\equiv1+j(\omega-1)\pmod{(\omega-1)^2},
+ \qquad ((\omega-1)^2)=(3),
+\]
+我们得到 $J(H^2,H^2)\equiv P-2\equiv-1\pmod3$。由 $p$ 的可除性
+以及范数的相等推出 $J(H^2,H^2)=up$，其中 $u$ 为单位。由于 $p$ 是
+主元素且六个单位模 $3$ 的剩余类互不相同，该同余式迫使 $u=-1$。最后，
+$\tau_2^3=J(H^2,H^2)\tau_2\tau_4=-pP$。将两个高斯恒等式除以
+$\sqrt P$ 的相应幂次即证得该引理。
+\end{proof}
+
+剩余的相位是二次的。下面对它的求值即使对非无平方因子或非主元素的奇元素也成立。
+
+\begin{lemma}[二次四项公式]\label{lem:quadratic-four-term}
+对于非零奇元素 $c\in\mathcal O$，定义
+\[
+ \Gamma(c)=|c|^{-1}\sum_{x\bmod c}e(x^2/c).
+\]
+则
+\begin{equation}\label{eq:quadratic-four-term}
+ \Gamma(c)=\frac12\sum_{y\bmod2\mathcal O}e(-cy^2/4).
+\end{equation}
+对于 $c=a+b\omega$，右端为
+$(1+i^{-b}+i^a+i^{b-a})/2$。特别地，$\Gamma$ 仅依赖于
+$c\bmod4\mathcal O$，且对每个奇元素 $v$ 有 $\Gamma(cv^2)=\Gamma(c)$。
+模 $4$ 的单位其平方子群为 $\{1,\omega,\omega^2\}$，平方类代表元为
+$1,-1,\lambda,-\lambda$。函数 $\Gamma$ 在这些单位上从不为零，且
+$\mathfrak r(a,b)=\Gamma(ab)/(\Gamma(a)\Gamma(b))$ 满足
+\begin{equation}\label{eq:reciprocity-four-class}
+ \begin{gathered}
+ \begin{array}{c|rrrr}
+  c&1&-1&\lambda&-\lambda\\ \hline
+  \Gamma(c)&1&1&i&-i
+ \end{array}\\
+ \mathfrak r((-1)^e\lambda^f,(-1)^g\lambda^h)
+       =(-1)^{eh+fg+fh},\qquad e,f,g,h\in\{0,1\}.
+ \end{gathered}
+\end{equation}
+因此 $|\Gamma(c)|=1$，且 $\mathfrak r$ 是平方类群上的对称
+$\{\pm1\}$-值双特征。
+\end{lemma}
+
+\begin{proof}
+使用核为 $e(-zy)$、测度为 $d\mu$ 的傅里叶变换。
+对 $\varepsilon>0$，在 $\mathcal O$ 上对
+$f_\varepsilon(z)=e(z^2/c)e^{-\pi\varepsilon|z|^2}$ 应用泊松求和。
+直接的高斯积分给出，其中 $r_\varepsilon=1+3q_c\varepsilon^2/16$，
+\[
+ \widehat f_\varepsilon(y)
+ =\frac{|c|}{2\sqrt{r_\varepsilon}}
+    e^{-\pi\varepsilon q_c|y|^2/(4r_\varepsilon)}
+    e\bigl(-cy^2/(4r_\varepsilon)\bigr).
+\]
+为验证归一化，将 $z$ 旋转 $c$ 的辐角的一半。所得实二元高斯函数的
+二次型矩阵为
+\[
+ \begin{pmatrix}
+ \varepsilon&-4i/(\sqrt3|c|)\\
+ -4i/(\sqrt3|c|)&\varepsilon
+ \end{pmatrix},
+ \qquad \det=\frac{16r_\varepsilon}{3q_c}.
+\]
+其特征值为具有正实部的共轭对。行列式的正平方根、$d\mu$ 中的因子
+$2/\sqrt3$ 以及配方给出上述公式。
+
+令 $I_\varepsilon=\int_{\mathbb C}e^{-\pi\varepsilon|z|^2}d\mu(z)
+=2/(\sqrt3\varepsilon)$。对于固定的理想 $(b)$、固定的类 $v\bmod b$
+以及 $a>0$，在 $b\mathcal O$ 上的高斯泊松求和给出
+\[
+ \frac1{I_\varepsilon}\sum_{z\in v+b\mathcal O}
+             e^{-\pi a\varepsilon|z|^2}
+ \longrightarrow\frac1{a q_b}\qquad(\varepsilon\downarrow0).
+\]
+零对偶向量给出极限，而每个非零对偶向量都指数小。相位 $e(z^2/c)$
+模 $c$ 周期。因此泊松恒等式左端的归一化趋于 $\Gamma(c)/|c|$。
+
+在右端可将 $r_\varepsilon$ 替换为 $1$。对于固定的 $c$，来自相位的
+总误差至多为
+\[
+ C_c\varepsilon^2\sum_{y\in\mathcal O}|y|^2
+                         e^{-C_c^{-1}\varepsilon|y|^2}=O_c(1),
+\]
+因为该和为 $O_c(\varepsilon^{-2})$。振幅误差为 $O_c(\varepsilon)$，
+阻尼误差亦然，由相同的格估计可得。三者均为 $o(I_\varepsilon)$。
+相位 $e(-cy^2/4)$ 模 $2\mathcal O$ 周期。在前述高斯均值中取 $b=2$
+及 $a=q_c/4$；其四个类中每一个的归一化均值均为 $1/q_c$。因此右端的
+归一化趋于 $(2|c|)^{-1}\sum_{y\bmod2}e(-cy^2/4)$，即证得
+方程~\eqref{eq:quadratic-four-term}。

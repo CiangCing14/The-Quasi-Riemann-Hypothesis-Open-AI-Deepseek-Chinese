@@ -1,0 +1,31 @@
+那么 $\mathcal N_v/Z^{\Phi_v(\boldsymbol\ell)}$ 具有引理~\ref{lem:finite-seminorm-propagation} 的结论，关于 $\boldsymbol\ell$ 一致，终端指数为 $\delta_v$，边指数为 $\delta_e+\delta_e^{\mathrm{mass}}$。特别地，所有所需的半范数与高度阶都是有限的，且不依赖于外部截断。
+\end{corollary}
+
+\begin{proof}
+令 $\overline{\mathcal N}_v=Z^{-\Phi_v(\boldsymbol\ell)}\mathcal N_v$。在一条边中作代入，并由方程~\eqref{eq:indexed-exponent-defect} 将其范数幂界定为 $Z^{\delta_e}$ 乘以归一化子节点的乘积。代入它们的归纳界。如同引理~\ref{lem:finite-seminorm-propagation} 的乘积证明中那样，所需的系数矩为
+\[
+ H_e=\sum_r\theta_{e,r}
+              \bigl(H_r+B_r c'_{e,r}(J_r)\bigr),
+\]
+它是有限的且不依赖于 $\gamma$。方程~\eqref{eq:indexed-coefficient-measure} 在此阶贡献 $Z^{\delta_e^{\mathrm{mass}}}$，且只贡献有限的轮廓阶与高度阶。因此，对有限个边类型作反向归纳，恰好给出所述的归一化递推。在子节点内部平均的标签在整个论证过程中始终留在该子节点内；它不是 $\nu_e$ 的第二个积分变量。
+\end{proof}
+
+我们明确说明本推论中离散标签是如何归一化的。在相关的加权柯西不等式之后，假设一个非负外测度满足
+$\sum_{\gamma\in\Gamma}w_\gamma\le C Z^{c+\epsilon}$，其中固定的 $c$ 与 $\epsilon$ 在高度阶之前选定。对于该块上共同的逐标签前因子 $Z^{a_{\mathrm{raw}}}$，令
+\[
+ d\nu_\Gamma(\gamma)=Z^{-c}
+             \sum_{\gamma\in\Gamma}w_\gamma\,\delta_\gamma,
+ \qquad \nu_\Gamma(\Gamma)\le C Z^\epsilon.
+\]
+这里 $\delta_\gamma$ 表示单位点质量。对于使所示积分为有限的非负 $B_\gamma$，精确恒等式为
+\begin{equation}\label{eq:normalized-label-measure}
+ \begin{split}
+ &Z^{a_{\mathrm{raw}}}\sum_{\gamma\in\Gamma}w_\gamma
+              \int |K_\gamma(\boldsymbol\xi)|B_\gamma(\boldsymbol\xi)
+                                      \,d\boldsymbol\xi\\
+ &\qquad=Z^{a_{\mathrm{raw}}+c}
+       \int_\Gamma\int |K_\gamma(\boldsymbol\xi)|B_\gamma(\boldsymbol\xi)
+                                      \,d\boldsymbol\xi\,d\nu_\Gamma(\gamma).
+ \end{split}
+\end{equation}
+$K_\gamma$ 的一致加权矩现在给出方程~\eqref{eq:indexed-coefficient-measure}，仅余下 $Z^\epsilon$ 质量。因此，若所示指数已包含计数 $c$，就必须使用此归一化测度；保留未归一化的和会把同一批标签计算两次。该规则涉及的是加权质量，而不是在此质量之外的基数。它仅在任何依赖于行的资格仍留在子节点内、或已由非负不等式移除之后才被应用。仍在子节点范数中平均的标签不包含在 $\Gamma$ 中。

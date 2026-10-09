@@ -1,0 +1,68 @@
+在反射前删除冗余的欧拉因子，并在之后以几何方式恢复它们，得到
+\[
+ T_k(X;W)
+ =\varepsilon_k
+ \sum_{\substack{d_0\mid\mathfrak R_{0,k}\\
+                  \operatorname{rad}(h_0)\mid\mathfrak R_{0,k}}}
+ \frac{\mu(d_0)\psi_k^*(d_0)\overline{\psi_k^*(h_0)}}
+      {\sqrt{q_{d_0}q_{h_0}}}\,
+ T_{\overline{\psi_k^0}}
+   \left(\frac{C_kq_{d_0}}{Xq_{h_0}};W^\sharp\right),
+ \qquad |\varepsilon_k|=1.
+\]
+该几何级数被
+\(\prod_{p\mid\mathfrak R_{0,k}}(1-q_p^{-1/2})^{-1}\) 绝对控制。
+因此其总系数质量，连同 \(d_0\)
+求和，为 \(Z^{\epsilon_1}\)。尺度为
+\begin{equation}
+ Y=\frac{C_kq_{d_0}}{Xq_{h_0}},\qquad
+ d_0\mid\mathfrak R_{0,k},\quad
+ \operatorname{rad}(h_0)\mid\mathfrak R_{0,k}.
+ \label{old-eq:2.1d}
+\end{equation}
+由方程~\eqref{old-eq:2.1c}，存在固定的 \(C_{\mathcal A}\ge1\)
+使得
+\[
+ C_kq_{\mathfrak R_{0,k}}\le C_{\mathcal A}Z^M,\qquad
+ Y\le C_{\mathcal A}Z^{M-\log_ZX}.
+\]
+
+轮廓 \(W^\sharp\) 可被划分为光滑圆环。
+在其主尺度以下，中心归一化给出在相对尺度 \(2^{-j}\) 的圆环上可和的
+系数 \(O(2^{-j/2})\)。
+在该尺度以上，快速衰减给出任意可和的幂。
+固定一个小的长度容差 \(\xi>0\)。在放大 \(Z^{\xi/2}\) 之后截断上圆环；
+足够多的固定导数使被省略的部分通过绝对计数变得可忽略。低于 \(Z^{-\xi}\) 的主尺度
+同样可忽略。若一个保留的圆环轮廓具有固定的上支撑端点 \(B\)，则一个
+能包含非零整理想的尺度 \(S\) 满足 \(SB\ge1\)。在这样的
+尺度上，
+\[
+ \max(S,1)\le\max(1,B)S.
+\]
+因此，将一个保留的亚单位尺度替换为尺度一，代价是这个固定的
+乘性因子。所有这些断言对移动的标签都是一致的。
+
+依赖于行的选择 \(d_0,h_0\) 通过其系数
+质量处理，随后在所得尺度中逐行取上确界。
+引理~\ref{lem:smooth-calculus} 使用 \(O((\log Z)^2)\) 个单位盒和
+轮廓的导数，界定了两个多项式范围尺度上的上确界。行特征及其自然零点
+保持不变：在反射之后，在其绝对值内对整个因子取共轭，将共轭特征替换为
+原特征并共轭其轮廓。这一操作是
+有效的，因为一个乘积的绝对值在共轭其中一个因子时不变。
+
+设 \(C_{\rm ref}\ge1\) 包含 \(C_{\mathcal A}\)、固定的圆环
+端点乘子、反射因子及任何配对未反射因子的对数盒乘子，以及保留轮廓类型的
+\(\max(1,B)\)。该常数在数据和
+轮廓类型之后固定，独立于 \(Z\) 和移动的标签。对于
+\(n=\log_ZX\)，每个满足前述支撑
+检验的保留尺度，在允许的裁剪和盒放大之后，具有所声明的
+非负长度
+\begin{equation}
+ n_{\rm ref}\le M-n+\frac\xi2+\frac{\log C_{\rm ref}}{\log Z}
+ \le M-n+\xi
+ \qquad\left(\frac{\log C_{\rm ref}}{\log Z}\le\frac\xi2\right).
+ \label{eq:centered-reflection-length}
+\end{equation}
+当 \(M-n\) 略微为负时，这也是一个线性界；若其
+右侧为负，则不存在这样的保留尺度。较小的上圆环范围仅改变用于
+被丢弃尾项的固定衰减、半范数和高度阶。

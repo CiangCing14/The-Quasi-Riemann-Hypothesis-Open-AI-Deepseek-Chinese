@@ -1,0 +1,10 @@
+\[
+ \tau(A)\tau(B)=J(A,B)\tau(AB).
+\]
+The group with $x+y=0$ vanishes because $AB$ is nonprincipal; for a nonzero
+sum, division by $x+y$ gives the displayed Jacobi factor.  In particular
+$|J(A,B)|=\sqrt P$ if $A,B,AB$ are all nonprincipal.
+The number of solutions of $4x(1-x)=y$ is $1+H^3(1-y)$.  Summing $H(y)$
+times this identity and using $\sum_yH(y)=0$ gives
+$J(H,H^3)=H(4)J(H,H)$.  Write $\tau_j=\tau(H^j)$.
+The Gauss--Jacobi identity and $\tau_2\tau_4=P$ now give

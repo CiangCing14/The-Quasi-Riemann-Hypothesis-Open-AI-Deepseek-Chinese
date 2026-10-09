@@ -1,0 +1,67 @@
+令 $C=(u,v)$，并记 $u=Cn_1$，$v=Cn_2$，其中 $(n_1,n_2)=1$。
+则除非 $C\mid j$，$F(u,v;j)=0$。对于 $j=Ck$，
+\begin{equation}
+ \begin{aligned}
+ F(Cn_1,Cn_2;Ck)
+ &=\chi_{n_1}(k)\overline{\chi_{n_2}(-k)}
+      \mathcal R(n_1,n_2)L_C(n_1,n_2;k),\\
+ L_C(n_1,n_2;k)
+ &=\sum_{\substack{x,y\bmod C\\n_2x-n_1y\equiv k\pmod C}}
+       \chi_C(x)\overline{\chi_C(y)}
+   =\prod_{p^c\parallel C}L_{p^c}.
+ \end{aligned}
+ \label{eq:correlation-lift}
+\end{equation}
+对于 $P=q_p$ 且 $p\nmid n_1n_2$，局部因子为
+\begin{equation}
+ L_{p^c}=P^{c-1}\chi_p(n_1/n_2)^c
+ \begin{cases}
+ P-1,&p\mid k,\\
+ -1,&p\nmid k,\ 6\nmid c,\\
+ P-2,&p\nmid k,\ 6\mid c.
+ \end{cases}
+ \label{eq:correlation-local}
+\end{equation}
+若 $p$ 恰好整除 $n_1,n_2$ 之一，则局部因子为
+$P^{c-1}(P-1)1_{6\mid c}1_{p\nmid k}$。在真正的剩余轨迹
+$(n_1,n_2)=1$ 上，$L_C$ 表示
+方程~\eqref{eq:correlation-lift} 中的同余和。当 $L_C$ 用于所有剩余
+对时，它转而表示这些局部公式的人为乘积延拓，其中若 $p\mid(n_1,n_2)$，则局部值定义为零。
+在真正的剩余轨迹之外，这不是原来的同余和。
+真正的函数与这一人为延拓都满足
+$|L_C|\le q_C$，且该延拓在每个剩余列中模
+$\operatorname{rad}C$ 周期。
+\end{lemma}
+
+\begin{proof}
+将所展示的傅里叶变换中的两个高斯和展开，得到
+\[
+ \frac1{q_uq_v}\sum_{x\bmod u,y\bmod v}\chi_u(x)\overline{\chi_v(y)}
+ \sum_{h\bmod uv}e\bigl(h(vx-uy-j)/(uv)\bigr).
+\]
+加性正交性使得内层和在同余成立时为 $q_uq_v$，
+否则为零。若 $j=0$ 且某一被加项非零，则 $x$ 和 $y$ 分别是
+模 $u$ 和 $v$ 的单位。将同余模 $u$ 约化得 $u\mid v$，将
+其模 $v$ 约化得 $v\mid u$。由于生成元是主元，
+$u=v$。此时同余给出 $x=y\bmod u$，并给出 $\varphi(u)$。这一
+论证在局部特征幂为主特征时也使用了零掩码。
+
+被 $C$ 整除是直接的。除以 $C$ 后，$j=Ck$ 的同余为
+\[
+ n_2x-n_1y\equiv k\pmod{Cn_1n_2}.
+\]
+模 $n_1$ 和 $n_2$ 约化，并保留零值，得到
+\[
+ \chi_{n_1}(x)=\chi_{n_1}(k)\overline{\chi_{n_1}(n_2)},\qquad
+ \overline{\chi_{n_2}(y)}
+ =\overline{\chi_{n_2}(-k)}\chi_{n_2}(n_1).
+\]
+这两个单位因子的乘积为 $\mathcal R(n_1,n_2)$。
+还需确定模 $C$ 同余的诸提升的重数。这可以在每个素数处检验。若 $c=v_p(C)$ 且两个剩余
+模都不含 $p$，则没有额外的提升。若，比如说，
+$d=v_p(n_1)>0$ 且 $p\nmid n_2$，则 $y\bmod p^c$ 是自由的，而同余
+由它唯一确定 $x\bmod p^{c+d}$。模 $p^c$ 的约化
+正是方程~\eqref{eq:correlation-lift} 中的公共同余。
+$p\mid n_2$ 的情形是对称的，且这一论证包含 $c=0$。
+因此中国剩余定理给出了与 $L_C$ 中所用公共
+解之间的双射，即使 $C$ 与一个剩余模相交。

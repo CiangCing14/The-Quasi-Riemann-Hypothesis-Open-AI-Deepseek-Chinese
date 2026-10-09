@@ -1,0 +1,99 @@
+主要情形是 \(z_1=z_2=1\)，等价地 \(x_1=x_2\)。
+其计数的名义恒等式为
+\begin{equation}\label{eq:second-principal-exponent}
+ \kappa_i+H_c+s_i+B+t+\ell+R/2=F-B-j,
+ \qquad F=N+V=r+3\ell+V.
+\end{equation}
+实际的上计数从第一个前因子加上 \(9\eta/2\)，
+从行尺度 \(H_{\rm use}\) 加上 \(12\eta+\tau\)，从
+对角 \(x\)-窗口加上 \(4\eta\)，从 \(C,t'\) 各加上 \(\eta\)，从
+合并的 \(q_0,J\) 计数加上 \(7\eta/2\)。它们的和为 \(26\eta+\tau\)。以
+聚合局部损失 \(\pi\) 计，这一主贡献因此至多为
+\(Z^{F-B-j+26\eta+\tau+\pi}\le Z^{F+26\eta+\tau+\pi}\)。
+任何被恢复到形式表达式中的非零主频率都带有
+相同的 \(\mathcal B_2\) 掩码；其绝对和由引理~\ref{lem:masked-poisson} 中的完整
+主恢复所界定，因为
+\(Z^{H_{\rm use}}\ge1\)。
+
+对于非主项，我们现在确定新的系数
+类。对于无平方因子 \(z\)，本原
+高斯和的复共轭与方程~\eqref{eq:signal} 给出
+\[
+ \gamma_{-1}(z)=\chi_z(-1)\overline{\gamma_1(z)},\qquad
+ \mu(z)\gamma_{-1}(z)
+ =\bar\alpha(z)\gamma_2(z)\chi_z(-1)\overline{G(z)}.
+\]
+原始的第二个因子是
+\(\mu(z)\gamma_1(z)=\overline{\bar\alpha(z)\gamma_2(z)}G(z)\)；
+写在共轭第二
+多项式内的相应因子具有射线因子 \(\overline{G(z)}\)。两个本原
+根的 CRT 交叉因子是 \(\mathcal R(z_1,z_2)\)。因此它们的合并射线因子为
+\[
+ \mathfrak G(a,b)=\chi_a(-1)\overline{G(a)}G(b)\mathcal R(a,b)
+       =G(ba^{-1}).
+\]
+最后一个等式由
+方程~\eqref{eq:G-quadratic-refinement} 和
+\(\mathcal R(a,a)=\chi_a(-1)\) 推出，先在素数上由
+方程~\eqref{eq:fixed-gauss-phases} 得到，然后按乘法延拓。
+此式中的所有商都在固定的有限射线群中。
+特别地，
+\[
+ \mathfrak G(v'n_1,v'n_2)=\mathfrak G(n_1,n_2).
+\]
+公共乘法特征 \(\nu_i(v')\) 也在
+两侧之间相消。
+
+从一个对所有 \(d_k,d_2\) 公共的划分中插入 \(q_{k''}\) 的二进段。
+掩码 \(\mathcal B_2\) 蕴含 \(q_{k''}\le Z^{M_{\rm ch}}\)，因此它们的
+数目在有界保留范围内是对数级的。设 \(h_2\) 为
+这样一个裸频率二进段的中心。我们现在记录待分离的精确
+分量。固定第一个模式与所选侧 \(i\)，
+记
+\[
+ H_o=CJ,\qquad r_0=\operatorname{rad}q_0t',\qquad d_0=d_k,
+ \qquad a_0(z)=\bar\alpha(z)\gamma_2(z),\qquad
+ \mathcal K_2=\mathcal F\Phi_+,
+\]
+并从
+方程~\eqref{eq:second-masked-data} 保留 \(K=Z^{H_{\rm use}}\)。对于无平方因子自变量，置
+\begin{equation}\label{eq:inverse-second-outer-coefficients}
+ \begin{split}
+ B_o(g')&=\mu(g')\nu_i(g')\rho(g')1_{(g',r_0)=1}
+              \chi_{g'}(H_o)^4\chi_{g'}(d_0),\\
+ L_{o,d_2,k''}(z)&=a_0(z)\nu_i(z)\rho(z)1_{(z,r_0)=1}
+       \chi_z(H_o)^4\chi_z(d_0)\overline{\chi_z(d_2)}\chi_z(k'').
+ \end{split}
+\end{equation}
+\(P_i\) 中旧的分离检验记为 \(W_i\)，因此
+\(W_i(x)=\omega_{x,i}(x)x^{\varepsilon_iit_{x_i}}\)。
+设 \(\psi_g,\psi_{d_2},\psi_{k''}\) 表示在固定的 \(g',d_2,k''\) 二进段上保留的各个
+截断，在其归一化
+范数处取值。对于这一预备模式 \(\sigma_0\)，
+方程~\eqref{eq:inverse-first-majorant} 的掩码
+主恢复非零分量恰好为
+\begin{equation}\label{eq:inverse-second-formal-component}
+ \begin{split}
+ \mathcal T_{2,\sigma_0,i}={}&
+ \sum_{\substack{o\in\mathfrak O_\sigma,\ g'\ {\rm sf}\\d_2\mid g',\ k''\ne0}}
+ w_o^+\psi_g\psi_{d_2}\psi_{k''}\mu(d_2)\mathcal B_2(k'')|B_o(g')|^2\\
+ &\times\sum_{\substack{z_1,z_2\ {\rm sf}\\(z_1z_2,g')=1}}
+ 1_{(z_1,z_2)=1}L_{o,d_2,k''}(z_1)\overline{L_{o,d_2,k''}(z_2)}
+       G([z_2][z_1]^{-1})\\
+ &\times\mathfrak d_{I_i}(g'z_1)\overline{\mathfrak d_{I_i}(g'z_2)}
+       W_i(q_{g'}q_{z_1}/Z^{s_i})
+       \overline{W_i(q_{g'}q_{z_2}/Z^{s_i})}\\
+ &\times\frac{K}{q_{d_2}\sqrt{q_{z_1}q_{z_2}}}
+       \mathcal K_2\!\left(\frac{Kq_{k''}}{q_{d_2}q_{z_1}q_{z_2}}\right).
+ \end{split}
+\end{equation}
+这里括号表示固定有限射线群中的类。确实，
+\(c_i(g'z)\) 的算术部分分解为 \(B_o(g')\) 及其在 \((g',z)=1\) 上的
+剩余 \(\mu(z)\) 系数。公共行因子
+是 \(g'\) 处的掩码，其泊松展开给出一个除子
+\(d_2\)，而上面的信号计算给出所展示的两个
+\(L\) 因子与射线商。恢复的主配对
+\(z_1=z_2=1\) 由 \(G(1)=1\) 相符。其单独代价，以及在此公式之前
+移除的原始补集，已经被界定。
+因此，这是对正
+优函数指定分量的等式，而非对原始带号块的等式。

@@ -1,0 +1,30 @@
+\maketitle
+
+\begin{abstract}
+我们证明，$\mathbb Q(\sqrt{-3})$ 上所有有限阶赫克 $L$ 函数以及所有狄利克雷 $L$ 函数在半平面 $\Re s>7/8$ 内无零点，其中 $s=1$ 处的主极点允许存在。特别地，黎曼 zeta 函数在此半平面内无零点，从而证明了拟黎曼假设。
+\end{abstract}
+
+\tableofcontents
+\clearpage
+
+\section{引言}\label{sec:introduction}
+
+设 $F=\mathbb Q(\sqrt{-3})$，设 $\mathcal O$ 为其整数环，并记 $N\mathfrak a=|\mathcal O/\mathfrak a|$ 为非零整理想的范数。模非零整理想 $\mathfrak f$ 的有限阶赫克特征 $\eta$ 是射线类群模 $\mathfrak f$ 的一个特征，并通过零延拓到与 $\mathfrak f$ 不互素的理想上。这与通常的有限阶 idelic 定义一致：复位不贡献任何非平凡的有限阶连续特征 \cite[Chapter VI, Section 1]{MilneCFT}。对于 $\Re s>1$，置
+\[
+ L_F(s,\eta)=\sum_{\mathfrak a\ne0}
+       \frac{\eta(\mathfrak a)}{(N\mathfrak a)^s}
+ =\prod_{\mathfrak p}
+       \left(1-\eta(\mathfrak p)(N\mathfrak p)^{-s}\right)^{-1}.
+\]
+同一记号也表示其亚纯延拓。对于模 $q$ 的狄利克雷特征 $\chi$，通过零延拓到非单位元上，我们同样记
+\[
+ L(s,\chi)=\sum_{n\ge1}\frac{\chi(n)}{n^s}
+ \qquad(\Re s>1)
+\]
+然后作亚纯延拓；模 $1$ 的特征给出黎曼 zeta 函数 $\zeta(s)$。这里的问题是统一排除：寻找一个常数 $\sigma_0<1$，独立于特征、其导子以及高度，使得这些函数在 $\Re s>\sigma_0$ 内没有零点。
+
+仅对 $\zeta$ 而言，存在固定的 $\sigma_0<1$ 使得 $\zeta(s)\ne0$ 在 $\Re s>\sigma_0$ 内成立，这被称为拟黎曼假设 \cite[Section 1]{BCSS}。它要求一个在每个高度都有效的间隙，而不仅仅是在 $\Re s=1$ 上的非零性。对所有狄利克雷特征的相应统一表述出现在 \cite[p.~288, Equation (1.4) and the following paragraph]{FG} 中。
+
+这些函数与素数分布之间的联系有着悠久的历史。狄利克雷 1837 年对每个既约等差数列中素数无穷性的证明引入了分离剩余类的特征 $L$ 级数 \cite{Dirichlet}。黎曼 1859 年的论文将 $\zeta$ 的零点与素数分布联系起来，并提出了临界线猜想 \cite{Riemann}。阿达马和 de la Vall\'ee Poussin 于 1896 年独立证明了 $\zeta$ 在 $\Re s=1$ 上没有零点，从而得到了素数定理 \cite{Hadamard,ValleePoussin}。赫克随后发展了数域上的特征 zeta 函数及其解析理论 \cite{Hecke}。
+
+赫克 $L$ 函数的经典无零点区域随着导子或高度的增加而趋近直线 $\Re s=1$，并且可以允许一个简单的实例外零点；阿贝尔扩张的精确形式由 \cite[Theorem 3.1]{TZ} 给出。这样的区域不能给出固定半平面内的统一排除。零点密度估计处理的是另一个问题：它们界定给定竖直线右侧的零点数目。例如，Guth 和 Maynard 的大值估计改进了 $\zeta$ 的零点密度界 \cite[Theorem 1.2]{GM}，但这些零点密度界并不排除每一个零点。

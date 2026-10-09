@@ -1,0 +1,24 @@
+不整除 $u$ 的素数上的和正规收敛，而 $u$ 的素数上的有限乘积由除数乘积界为 $O_\epsilon(q_u^\epsilon)$。这些估计对所有虚部和单位相位一致成立。当 $u=1$ 时，$P_0$ 以上的好素数尾项由理想计数为 $O(P_0^{-163/200})$，这蕴含了所断言的乘积的 $O(P_0^{-4/5})$ 估计。最后在每个素数处提取 $(1-V)^{-1}(1-W)^{-1}(1-D)$ 即得方程~\eqref{eq:probe-high}。剩余乘积的正规收敛证明了其所声称的延拓。
+\end{proof}
+
+对于 $u=1$，方程~\eqref{eq:probe-high} 包含 $1/L^S(x,\eta)$，其分子有两个主因子 $\zeta_F^S(6z)$ 和 $\zeta_F^S(w)$。它们的留数将产生目标梅林信号。对于中间行范数，下一节为与每一行相关联的有限扭转族指定一个无零点矩形，并从选定的零点产生同时多项式见证。主行和有界行，连同外范数范围，在 Section~\ref{sec:shared-analytic-estimates} 中处理。
+
+\section{带饱和见证的零点检测器}\label{sec:detector}
+
+高展开包含一个对六次方无因子行 \(u\) 的求和。我们将每个非主行与一个缓冲无零点矩形相关联，该矩形对应于它所确定的特征表示的有限族。每当所得箱位于固定下界之上时，一个零点产生一个逆多项式和一个具有同时下界的普通多项式。然后可以使用不同的均值估计来计数这些见证。这里的解析输入是引理~\ref{lem:logarithmic-control}、引理~\ref{lem:smooth-calculus} 的光滑演算，以及方程~\eqref{eq:hecke-growth} 中的全局增长估计，连同引理~\ref{lem:deleted-euler-factors} 的删除欧拉因子界。
+
+在本节中，假设 \(\beta_*>51/100\)，其中 \(\beta_*\) 是方程~\eqref{old-eq:1.1b} 中的全局上确界。此设置不选择延拓准则中的两个边界中的任何一个。
+
+\subsection{缓冲矩形与逐点界}
+
+固定与 $Z$ 无关的算术数据 \(\mathcal A\)，如 Section~\ref{sec:arithmetic} 中所述。特别地，有限群
+\[
+ \Theta=\langle\eta,\widehat T\rangle
+\]
+包含目标以及高行族中使用的固定射线扭转，且 \(\Theta\) 中每个成员的导子素数都属于 \(S\)。对于六次方无因子元素 \(u\)，定义表示的有限集合
+\[
+ \mathcal X_u=
+ \bigl\{\psi_{u,\nu,\varsigma}(n)=\nu(n)\chi_n(u)^\varsigma:
+       \nu\in\Theta,\ \varsigma\in\{-1,1\}\bigr\}.
+\]
+在非单位处，$\chi_n(u)^{-1}$ 的值，如同该符号的任何其他幂，为零。\(\Theta\) 的群性质表明 \(\mathcal X_u\) 在共轭下封闭。它包含分子特征 \(\chi_\bullet(u)\)、分母特征 \(\eta\overline{\chi_\bullet(u)}\)，以及通过将六次符号的任一方向乘以 \(\Theta\) 的一个成员所得到的每个零延拓表示。

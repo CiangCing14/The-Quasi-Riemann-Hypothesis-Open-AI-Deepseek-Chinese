@@ -1,0 +1,44 @@
+固定 \(\sigma_0\) 的一个加细 \(\sigma\)，由其 \(v'\)-二进、
+第二射线被加项与槽分支确定。
+令 \(\Xi_\sigma\) 由
+\[
+ \xi=(o,g'\ {\rm sf},d_2\mid g',v'\ {\rm sf},k''\ne0;
+               \text{new assigned slot primes})
+\]
+组成，并保留各个体支撑与槽分支。它既不包含旧的 \(f,h\)，也不包含当前的列指标 \(n_1,n_2\)。
+定义 \(R_1,E,J,q_0\) 的恒等式继承自 \(o\)，
+而 \(\gamma,k_{\rm new},f_{\rm new}\) 是 \(\xi\) 的所示函数。该集合可以在施加 \(\mathcal B_2\) 与
+\((v',g'CJ)=1\) 之前取定，并在带符号外权中保留这些掩码。令
+\(\mathcal A_{2,\sigma}(\xi)\) 为所有新指派的原始槽系数及其优先掩码之积，在第二侧取共轭。
+
+令 \(\mathfrak X_\sigma^{\rm src}\) 为该变换分量的结构外集合，
+在添加任何独立子行或标签之前。它保留
+\(o\in\mathfrak O_\sigma\)，特别是精确重构
+\(b_1b_2=q_0^2J_2^2s\)、导出的 \(J=sJ_2,q_0\)，以及完整的
+固定 \(b_1,b_2,t'\) 二进支撑；它还保留固定的
+\(g',d_2\) 支撑、\(d_2\mid g'\)，以及其其他外算术与槽条件。零权元组可以保留，且在定义此结构集合时忽略单位傅里叶相位。定义不同三元组的集合（不计见证重数）为
+\begin{equation}\label{eq:inverse-source-triples}
+ \Gamma_\sigma=
+ \{(q_0,t',r_g=g'/d_2):\xi\in\mathfrak X_\sigma^{\rm src}\}.
+\end{equation}
+此投影在所有可能的当前行与标签上取一次，在固定任何 \(k_{\rm new},f_{\rm new}\) 或傅里叶模式之前。每个非零变换项都映入其中。每个成员都有一个源见证，它给出
+\(\widehat c\le\ell+\eta\)、\(\widehat t\le t+\eta\)，以及
+\(\log_Zq_{r_g}\le g-\theta+2\eta\)。这些界中的第一个将用于子穿刺；用于计数的包含范数球并不蕴含它。上文所述的非空行门与子列门
+与此结构投影保持分离。
+
+置
+\[
+ D_c=\ell+A_i+t+g-\theta+V.
+\]
+由于 \(r=N-3\ell\) 是与固定父项绑定的精确定义，
+代入方程~\eqref{eq:canonical-child-lengths} 与
+\eqref{eq:second-poisson-lengths} 给出精确的形式恒等式
+\begin{equation}\label{eq:canonical-transition}
+ \begin{gathered}
+ F_c=F-D_c-2\ell+j,\qquad M_c=M-2D_c-2\ell+j,\\
+ F_c-M_c=F-M+D_c,\\
+ 4F_c-3M_c=4F-3M+2(A_i+t+g-\theta+V)+j.
+ \end{gathered}
+\end{equation}
+这些恒等式涉及与
+方程~\eqref{eq:inverse-fixed-invariant} 相同的固定 \(F=N+V\)，而非实际的父范数。

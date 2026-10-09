@@ -1,0 +1,48 @@
+\begin{lemma}[无标记反射块]
+\label{lem:unmarked-reflected-block}
+对于一个无标记反射块，令
+\[
+ T_0=2H+2A_0-N-N_0-3B_0,\qquad
+ \nu_0=\frac v2+\ell_b+\frac{e_\lambda}{3}+\frac{S_0+B_0}{2}.
+\]
+令所有这些对数长度在一个固定的有界集合中取值。令
+\[
+ Y=\frac{q_{\lambda^kN_FB_F^3}X Z^vZ^{3\ell_b}}
+          {q_{c_FF_{\rm act}}^2Z^{2H}},\qquad
+ W(\boldsymbol y)=y_n^{-1/2}y_b^{-1}W_0(\boldsymbol y),\qquad
+ F_Y(\boldsymbol y)=W(\boldsymbol y)V^\sharp(Yy_ny_b^3y_R^{-2}).
+\]
+存在函数 $\rho(R)$ 和 $\beta(n,b)$，其绝对值至多为 1，使得 $\beta$ 与 $R$ 无关，并且
+\begin{equation}\label{eq:unmarked-structural-block}
+ \mathcal U_{v,\ell_b,e_\lambda}(R)
+ =\frac13 Z^{-\nu_0}\rho(R)
+       \sum_{n,b}\beta(n,b)\chi_R(nb)^3F_Y(y_R,y_n,y_b).
+\end{equation}
+该求和保留了定义中所有固定的对偶限制。这里唯一同时依赖于 $R$ 和对偶变量的算术因子是所展示的零延拓二次符号。此外，
+\begin{equation}\label{eq:unmarked-actual-annuli}
+ \frac{q_\mu X}{q_c^2}=Yy_ny_b^3y_R^{-2},\qquad
+ c=c_FF_{\rm act}R.
+\end{equation}
+这是原始支集上的精确恒等式，包括当 $N_F$ 与 $b$ 有公共素因子时。
+
+对每个 $\epsilon>0$ 和每个固定的 $A\ge0$，
+\begin{equation}\label{eq:unmarked-reflected-energy}
+ \begin{split}
+ \sum_{R\in\mathcal I_H}|\mathcal U_{v,\ell_b,e_\lambda}(R)|^2
+ &\ll_{\epsilon,A} Z^{E_0+\epsilon}p_5(W)^2
+       \mathfrak M_{A,\lceil4A\rceil+7}(V)^2,\\
+ E_0={}&\max(H,v+\ell_b)-S_0-B_0-\ell_b-\frac{2e_\lambda}{3}
+       -\frac12(T_0-v-3\ell_b-e_\lambda)_+.
+ \end{split}
+\end{equation}
+常数可能依赖于固定的核阶 $A$、固定的算术数据、有界的对数长度范围以及固定的支集盒，但不依赖于移动的冻结局部集合 $\mathcal F$。$W_0$ 中的范数扭转让其有限半范数提供了多项式代价。
+\end{lemma}
+
+\begin{proof}
+对于固定的 $h_0$ 和固定的 $R$ 模 $M_{\rm ref}^2$ 的类，$F_{\rm act}R$ 的类是固定的。因此命题~\ref{prop:completed-reflection} 对整个行集合给出一个公共的 $d$ 和一个公共的加性特征 $\vartheta$。记 $x_F=u\lambda^{k+4}N_FB_F^3$，从而 $\lambda^4\mu=x_Fnb^3$。剩余的局部因子恰好为
+\[
+ \prod_{p\mid R}B_p(\lambda^4\mu)
+ =\chi_R(x_F)^3\chi_R(nb^3)^3
+ =\chi_R(x_F)^3\chi_R(nb)^3.
+\]
+两个等式都包含零；没有单位符号被除。特别地，任何与 $x_F$ 的碰撞都是仅依赖于 $R$ 的限制。每个剩余的局部因子都是固定的，并且仅依赖于对偶指标。反射的标量 $\zeta_R$ 依赖于 $R$ 但不依赖于 $\mu$。

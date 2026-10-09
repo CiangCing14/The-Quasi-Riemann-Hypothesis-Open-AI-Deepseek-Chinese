@@ -1,0 +1,50 @@
+对每个选定的行范围，\(U=Z^d\) 有 \(d\ge1/2\)，因此
+\[
+ w_i=\frac{\ell_i}{d}\le\frac{2\ell}{K}<\eta_{\rm mesh},
+ \qquad
+ \delta\max_iw_i\le\frac{2\ell}{K}<b_{\rm round}.
+\]
+第二个不等式使用了 \(\delta\le5/6<1\)。总可用长度仍为 \(\ell/d\)。对于 \(d\le h\)，它至少为 \(8/39\)，比 \(7/37\) 超出 \(23/1443\)。对于 \(h<d\le h+\zeta\) 且 \(\zeta<1/48\)，它超过 \(1/5\)，其超出 \(7/37\) 的部分为 \(2/185\)。因此每个选定的逆容量以及较小的普通容量都得到了供给。额外的界 \(2\ell/K<1/185\) 低于后一个间隙的一半。一个零容量邻域，包括等号端点，使用无槽矩。实际的环形比值将名义长度改变 \(O_K(1/\log U)\)，在足够大的阈值下被固定的严格余量吸收。
+
+内部中心放大器也与这些窗口保持分离。记 \(\sigma_{\rm width}\) 为在引理~\ref{lem:plain} 的证明中记作 \(\sigma\) 的宽度减量。该证明使用池指数 \(\ell_*=\sigma_{\rm width}/3\) 以及低于 \(\sigma_{\rm width}/6\) 的网格。在基 \(U\) 处，每个活跃物理槽的范数至多为 \(2U^{\eta_{\rm mesh}}\)，而池从 \(U^{\ell_*}/2\) 开始。它们固定的指数间隙使得这些集合对所有足够大的 \(U\) 都不相交，且在选定的 \(d\)-范围内一致。带标记的逆矩没有网格条件。
+
+方程~\eqref{eq:principal-scalar} 中的正规化因子对于这一实际选择非零。令 \(c_i=\int_0^\infty W_i(y)y^{-5/6}\,dy>0\)。第~\ref{sec:principal-signal} 节中已证明的渐近式特化为
+\[
+ S_i(Z)\sim\frac{P^{1/6}c_i}{|T|\log P}>0,\qquad
+ A_T(Z)\sim
+ \left(\frac{K}{|T|\ell}\right)^K
+       \left(\prod_i c_i\right)(\log Z)^{-K}>0.
+\]
+符号使用了偶数 \(K\)。任何后续固定的排除集只影响公共下阈值，因为其素数最终会离开所有这些窗口。选择
+\[
+ \kappa_P=\frac7{16}\frac{\ell}{K}=\frac7{96K},
+ \qquad 0<\kappa_P<\frac78\min_i\ell_i=\frac7{48K},
+ \qquad m_P:=\kappa_P.
+\]
+因此主近似具有一个在目标之前选定的正余量。子集的数量、窄窗口的半范数以及它们的有限高度阶数可能依赖于这个固定的 \(K\)。
+
+选择振幅宽度、剩余幂损失以及 \(e\)，使得它们总的高代价小于 \(m_{\rm high}/8\)，并且使得
+\[
+ (1+h)e+\epsilon_{\rm pr}<m_w/4,\qquad
+ e+\epsilon_{\rm pr}<m_z/4,\qquad
+ e+\epsilon_{\rm pr}<m_P/4.
+\]
+这里 \(\epsilon_{\rm pr}>0\) 包含主余项估计中所选的小幂次。还要求 \(e<10^{-3}\) 以及引理~\ref{lem:detector-dyads} 中的界 \(e_0\)。槽长度已经固定，因此振幅细分中所需的小幂次可以根据其正的最小值来选择。所有这些选择只依赖于 \(\Delta\) 和目标前的槽系统。
+
+选择
+\[
+ 0<\zeta<\min\{1/48,m_{\rm high}/16\}.
+\]
+频率扩展的代价至多为 \(2\zeta<m_{\rm high}/8\)。现在在第~\ref{sec:tails} 节中选择绝对直线 \(z_\infty>2\) 足够靠右，使得其大行和相对于 \(C(\beta_*)\) 具有大于 \(m_{\rm high}\) 的节省。其指数只依赖于这些实选择，因此 \(z_\infty\) 也先于目标。选择方程~\eqref{eq:shared-principal-nonvanishing} 所需的目标前截断。在目标固定后，命题~\ref{prop:probe-errors} 所需的任何额外固定排除素数可以加入 \(S\)：相同的正乘积尾控制项保持共享收缩，且 \(T\) 和槽窗口都不改变。
+
+为清楚起见，非主实比较在引理~\ref{lem:high-bin} 中的所有逐点对上都一致。令 \(\epsilon_{\rm real}(d)\ge0\) 收集相关范围内分配的实损失、网格损失和矩损失。端点不等式、中间不等式以及正斜率给出
+\begin{equation}\label{eq:saving-criterion}
+ E(d)+\epsilon_{\rm real}(d)
+ \le(\beta_*-7/8)-\varepsilon_{\rm hi},
+ \qquad \varepsilon_{\rm hi}>0,
+\end{equation}
+对每个出现的 \((R,q)\) 和每个适中的 \(d\) 成立，同时仍保留 \(m_{\rm high}\) 的一个固定比例。因此同一不等式对 \(E_{\max,Z}(d)\) 成立，且在 \(Z\) 中一致。小界和大界具有所述的分开节省。将次幂正规化因子估计一次应用于非主贡献和外行贡献，并使用低于 \(m_{\rm high}/8\) 的幂次吸收剩余的有限二进重数。引理~\ref{lem:principal-residue-interface} 已经包含其自身的正规化因子余量 \(\epsilon_{\rm pr}\)。上述四个高实分配代价小于 \(m_{\rm high}/2\)；这最后一个余量留下超过 \(3m_{\rm high}/8\)。主不等式留下 \(m_w,m_z,m_P\) 各自的超过 \(3/4\)。因此可以在目标之前固定
+\[
+ m=\frac14\min\{m_{\rm high},m_w,m_z,m_P\}>0
+\]
+作为保留高度因子之前的公共剩余高节省。对于低估计，应用方程~\eqref{eq:part-II-normalized-low} 并取目标前损失 \(\Delta/2\)，并令 \(\omega=\Delta/2\)。令 \(\epsilon_{\rm ht}>0\) 为已经用这些实损失选定的有限多个检测器高度余量的最小值。

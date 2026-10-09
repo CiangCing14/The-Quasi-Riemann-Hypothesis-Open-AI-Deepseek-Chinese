@@ -1,0 +1,31 @@
+将此引理应用于每个已分配的例外子项。其系数与公共掩码上的假设由引理~\ref{lem:centered-coefficient-invariant}得出；特别地，主项在同一行、掩码与整积范数幂下在任何绝对值之前相消。初始时四个普通长度均至少为\(L\)。在选定的\(\mathfrak t\)-因子被移除之前，\(c_2\)一侧的普通长度下界至少为\(L-c-w-c_2\)，名义总长度为\(\alpha_1=a_0-c_2\)：没有任何一个普通项损失超过由两个真正的公共支撑与放大器所提取的总量\(c+w+c_2\)。另一侧具有关于\(d_2\)的类似界。令
+\[
+ r=(L-c-w-\min(c_2,d_2))_+,
+\]
+并称具有此参考节省量的一侧为第一侧，同时重新标记其相关的原始数据。若\(\widetilde r_1<r\)，则每个选定的普通长度满足\(a_{1,i}\le\widetilde r_1\)，因此四个形式后普通尺度均具有对数长度至少\(r-a_{1,i}\ge r-\widetilde r_1>0\)。在这些精确等积形式尺度上应用方程~\eqref{old-eq:2.18f}。若\(\widetilde r_1\ge r\)（包括相等情形），或若\(r=0\)，则使用同一引理中的全尺度绝对体积回退。在此分支中没有任何形式中心尺度被截断，且形式差中保留一个恒为零的矩形。所得的节省量为\((r-\widetilde r_1)_+\)。在另一侧取绝对体积，这给出每个下端除子二进块上的聚合界，
+\begin{equation}
+ \begin{split}
+ &\sum_{\mathfrak t,\mathbf J}
+ |c_{\mathfrak t,\mathbf J}(h')|
+ |P_{C,\mathfrak t,\mathbf J}(h')
+       P_{D,\mathfrak t,\mathbf J}(h')|\\
+ &\hspace{15mm}\ll
+ Z^{a_0-b_2-r+2\theta_N+\epsilon_1}.
+ \end{split}
+ \label{old-eq:2.18}
+\end{equation}
+此处及以下均隐含分离高度的一个固定多项式。为验证该界，原始系数与体积给出参考指数\(a_0-b_2+e_1+e_2\)与缩减量\(-\widetilde r_1-\widetilde r_2\)，而除子计数给出\(t_-\)。方程~\eqref{eq:centered-divisor-boundary}给出单行不等式
+\begin{equation}
+ \begin{split}
+ t_- -\widetilde r_1-\widetilde r_2-(r-\widetilde r_1)_+
+ &=(t_- -\widetilde r_2)-\max(r,\widetilde r_1)\\
+ &\le\omega_2-r.
+ \end{split}
+ \label{old-eq:2.18h}
+\end{equation}
+加上\(e_1+e_2\)后至多剩下
+\(e_1+(e_2+\omega_2)-r\le2\theta_N-r\)。
+除子有界的分配仅贡献\(\epsilon_1\)，从而证明了方程~\eqref{old-eq:2.18}。
+这适用于人工项，即使商保留\(\mathfrak t\)-素数，因为系数引理在每个矩形差内保持公共掩码、等积尺度与一个范数幂。
+
+活跃槽位仅在有限变换移除其高斯系数之后才被求和。其未归一化的绝对和贡献\(O_N(\prod_{i\ {\rm live}}P_i)\)。将其与名义原始归一化因子结合，即得到方程~\eqref{eq:centered-raw-normalization}中完整的\(e_j\)体积因子，如上所包含；它不被因子乘积归一化因子所替代。傅里叶测度在其标签之前已固定，因此以这些标签为条件既不改变公共掩码也不改变中心节省量。零条件槽位标量仅在当前绝对界中被丢弃。

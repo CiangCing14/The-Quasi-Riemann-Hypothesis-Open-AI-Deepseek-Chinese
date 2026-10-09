@@ -1,0 +1,62 @@
+\paragraph{分离第一个变换后的乘积。}
+我们记录在应用柯西之前实际的预因子。它恰好按两个列侧分裂为
+\[
+ Z^{-r-2\ell-V}Z^{M-\widehat\delta-\widehat L_1/2}
+       =Z^{\widehat\kappa_1/2}Z^{\widehat\kappa_2/2},
+ \quad
+ \widehat\kappa_i=M-r-2\ell-V-\widehat\delta-\widehat n_i
+                  +\widehat A_i+\widehat B-\widehat R/2.
+\]
+方程~\eqref{eq:inverse-ratio-bounds} 在每一侧给出
+\begin{equation}\label{eq:inverse-first-prefactor-error}
+ \widehat\kappa_i\le\kappa_i+\tfrac92\eta.
+\end{equation}
+五个误差权重为 \(1,1,1,1,1/2\)。我们现在用所有实逆根在一个联合轮廓中实现这一归一化。
+固定一个第一二进、射线和槽模式 \(\sigma\)，并令 \(h_1\)
+为其裸-\(h\) 二进区间的中心。使用九个独立的
+归一化坐标
+\[
+ \boldsymbol y=(y_{A_1},y_{A_2},y_C,y_d,y_R,y_t,y_h,y_{x_1},y_{x_2})
+ =\left(\frac{q_{\mathfrak A_1}}{Z^{A_1}},
+ \frac{q_{\mathfrak A_2}}{Z^{A_2}},\frac{q_C}{Z^B},
+ \frac{q_{d_k}}{Z^\delta},\frac{q_{R_1}}{Z^R},\frac{q_{t'}}{Z^t},
+ \frac{q_h}{Z^{h_1}},\frac{q_{x_1}}{Z^{s_1}},\frac{q_{x_2}}{Z^{s_2}}\right).
+\]
+在形式 \(u_a=t'x_a\)
+表达式上精确的全根和核参数为
+\begin{equation}\label{eq:inverse-first-root-kernel}
+ \begin{split}
+ \frac{Z^{-r-2\ell-V}Z^M}
+ {q_{d_k}\sqrt{q_{R_1}}q_{t'}\sqrt{q_{x_1}q_{x_2}}}
+ &=Z^{(\kappa_1+\kappa_2)/2}
+ y_d^{-1}y_R^{-1/2}y_t^{-1}(y_{x_1}y_{x_2})^{-1/2},\\
+ \frac{Z^Mq_h}{q_{d_k}q_{R_1}q_{t'}^2q_{x_1}q_{x_2}}
+ &=A_{{\rm ker},1}\frac{y_h}{y_dy_Ry_t^2y_{x_1}y_{x_2}},\\
+ A_{{\rm ker},1}&=Z^{M+h_1-\delta-R-2t-s_1-s_2}.
+ \end{split}
+\end{equation}
+选择新的截断 \(\omega_{x,a}\)，其在旧的
+\(W\)-支集除以各个 \(\mathfrak A_a,C,t'\)
+支集上等于一，并将它们保留在列中。保留每个当前的外层
+二进截断于反转之外。令 \(\Omega_{1,\alpha}\) 为更大的
+截断，在这些保留截断的完整支集上等于一。
+令 \(\mathcal K_1=\mathcal F\Phi\)，定义单个紧轮廓
+\begin{equation}\label{eq:inverse-first-profile}
+ \begin{split}
+ \mathfrak H_{1,\sigma}(\boldsymbol y)={}&Z^{-9\eta/2}
+ \prod_\alpha\Omega_{1,\alpha}(y_\alpha)
+ y_d^{-1}y_R^{-1/2}y_t^{-1}(y_{x_1}y_{x_2})^{-1/2}\\
+ &\times W(y_{A_1}y_Cy_ty_{x_1})
+       \overline{W(y_{A_2}y_Cy_ty_{x_2})}
+ \mathcal K_1\!\left(A_{{\rm ker},1}
+       \frac{y_h}{y_dy_Ry_t^2y_{x_1}y_{x_2}}\right).
+ \end{split}
+\end{equation}
+此轮廓外的标量恰好为
+\(\prod_{a=1}^2Z^{(\kappa_a+9\eta/2)/2}\)。
+特别地，该轮廓包含每个实根一次，当
+实际列范数不同时也是如此。其变换由
+方程~\eqref{eq:inverse-log-fourier} 在环境九维
+盒上定义，先于任何实际 \(f,h\) 或外层理想被求和。\(b_a,f,J,E,q_0\) 的范数仅出现在外层系数、特征、掩码
+或方程~\eqref{eq:first-poisson-column} 之后的各个截断中；
+它们不需要额外的耦合轮廓坐标。

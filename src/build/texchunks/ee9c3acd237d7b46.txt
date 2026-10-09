@@ -1,0 +1,60 @@
+应用引理~\ref{lem:bin-contour-accounting}，取 \(\sigma_0=7/8\)
+和 \(g=q\ell\)。其在
+方程~\eqref{eq:stage-high-exponent} 中的指数为
+\[
+ a-\frac78+h\left(\frac{17}{50}-\frac16\right)-a l_y-\frac{\ell}{2}
+       +q\ell+d\left(R+\frac\delta2-\frac{17}{50}\right).
+\]
+因为
+\(-(1-a)\ell-(\delta/2-q)\ell=-\ell/2+q\ell\)，
+这正是方程~\eqref{eq:common-high-exponent} 的第一行。
+代入几何量以及 \(a=(1+\delta)/2\) 即得其第二行。
+特别地，\(q\ell=q/6\) 是一个以 \(Z\) 为底的指数，而非 \(dq/6\)。
+方程~\eqref{eq:stage-central-contribution} 中的显式误差在有界 \(d\)-范围上为
+\(O(e+\vartheta+\epsilon)\)，这是在选定其余预备幂次之后。其上确界恰为
+陈述中的那个。引理~\ref{lem:bin-contour-accounting} 还给出了
+所述的外部尾项，其尺度次数在 \(N\) 之前固定。
+\end{proof}
+
+下取整箱 \(a=51/100\) 有 \(\delta_0=1/50\)，且不需要
+零点见证。理想计数 \(R=1\)，连同
+\(q\le\delta_0/2\)，给出
+\begin{equation}\label{eq:floor-bound}
+ E(h)\le C_0+\frac34\delta_0=-\frac7{1200}<0.
+\end{equation}
+其频率斜率为 \(R+\delta_0/2-17/50\)，是正的，因此这
+界住了每个 \(d\le h\)。略高于 \(h\) 的小幅延拓将在下面加以控制。
+
+\subsection{小行范数与大型行范数}\label{sec:tails}
+
+令 \(d_{\min}=1/100\)。引理~\ref{lem:compensated-absolute-local-bounds}
+界住了完整选取元组的正和，其中每个 \(G_p\)
+在取绝对值之前都被保留。在小行线上
+\[
+ \Re s=\beta_*+e,\qquad \Re w=1/2,\qquad \Re z=17/50
+\]
+方程~\eqref{eq:absolute-local-tuple-bound} 给出
+\[
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_\epsilon U^\epsilon\prod_iP_i^{17/50}
+ =U^\epsilon Z^{17\ell/50},
+\]
+对所有虚部一致成立。这就是
+方程~\eqref{eq:small-correction-bound}，其高度次数为零。
+它在各个局部因子的零点处仍然成立。引理~\ref{lem:outer-row-tails} 的数据
+已在上文验证过，因此它适用于这些二进块中的每个物理行 \(u\ne1\)。其
+分类包含非平凡单位分子，并允许一个主分母；此处不使用任何检测器见证或选取矩。
+
+相对指数的 \(d\)-无关部分为
+\begin{equation}\label{eq:small-frequency-margin}
+ h\left(\frac{17}{50}-\frac16\right)-\frac{l_y}{2}
+ =-\frac{79}{800}.
+\end{equation}
+方程~\eqref{eq:small-row-bound} 中的行指数为
+\(63/50<2\)。因此，方程~\eqref{eq:small-row-sum} 中的小
+二进和，相对于 \(C(\beta_*)\) 度量，其指数至多为
+\[
+ -\frac{79}{800}+2d_{\min}+O(e+\epsilon)
+ =-\frac{63}{800}+O(e+\epsilon).
+\]
+在可调实损失取得足够小之后，它是负的。记 \(m_{\rm small}:=63/800\) 为这一固定的无误差节省。

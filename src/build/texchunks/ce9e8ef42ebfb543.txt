@@ -1,0 +1,79 @@
+\subsection{主正规化因子}\label{sec:principal-signal}
+
+我们验证引理~\ref{lem:principal-residue-interface} 的两条修正假设。首先，
+方程~\eqref{eq:principal-local-tuple-bound} 给出
+\[
+ |\mathfrak H_{\eta,1,Z}(s,w,z)|\ll Z^{\ell\Re z}
+\]
+在第二欧拉区域中每个固定实盒上关于所有虚部一致成立。特别地，这在
+方程~\eqref{eq:principal-correction-bound} 中的整个矩形上成立，高度次数为零。
+这是对完整元组修正的一个界。
+
+对于留数值，定义
+\[
+ S_i(Z)=\sum_{p\in\mathcal P_i(Z)}W_i(q_p/P_i)q_p^{-5/6},
+ \qquad P_i=Z^{\ell_i}.
+\]
+引理~\ref{lem:ray-prime-normalizer}，包括其关于删除一个固定有限集的断言，给出
+\[
+ S_i(Z)\sim\frac{P_i^{1/6}}{|T|\log P_i}
+       \int_0^\infty W_i(y)y^{-5/6}\,dy.
+\]
+每个主常数都是正的。由于槽位数固定，
+所有 \(S_i(Z)\) 对每个充分大的 \(Z\) 都为正，且
+允许一个公共下阈值依赖于固定数据。令
+\begin{equation}\label{eq:principal-scalar}
+ A_T(Z)=(-1)^K Z^{-\ell/6}\prod_{i=1}^K S_i(Z).
+\end{equation}
+利用 \(\log P_i=\ell_i\log Z\) 和 \(\sum_i\ell_i=\ell\)，我们得到
+\[
+ A_T(Z)\sim
+ \frac{(-1)^K}{|T|^K(\log Z)^K}
+ \prod_{i=1}^K\left\{\frac1{\ell_i}
+       \int_0^\infty W_i(y)y^{-5/6}\,dy\right\}.
+\]
+因此 \(A_T(Z)\ne0\) 在该范围内，且
+\[
+ |A_T(Z)|\asymp_{T,K,(\ell_i,W_i)}(\log Z)^{-K},
+ \qquad |A_T(Z)|^{-1}\ll_\epsilon Z^\epsilon
+\]
+对每个 \(\epsilon>0\) 成立。下阈值可能依赖于目标的
+有限排除集；没有使用移动射线导子中的一致素数渐近。
+
+在主第二欧拉区域上，第~\ref{sec:local-compensation} 节
+定义 \(\mathcal B_p=G_p/H_p\)，其中 \(H_p\ne0\)，并且
+方程~\eqref{eq:principal-local-approximation} 给出
+\(\mathcal B_p=-1+O(q_p^{-7/8})\)，关于所有虚部和
+目标单位相位一致成立。在 \(w=1,z=1/6\) 处应用
+方程~\eqref{eq:principal-slot-factorization} 中的主因子分解，此时
+即使原先关于 \(P_p\) 的商未定义它仍然有效。
+它给出
+\[
+ \mathfrak H_{\eta,1,Z}(s,1,1/6)
+ =H_\eta(s)\prod_{i=1}^K
+       \left(\sum_{p\in\mathcal P_i(Z)}
+           W_i(q_p/P_i)q_p^{-5/6}\mathcal B_p\right),
+\]
+其中 \(H_\eta\) 是方程~\eqref{eq:shared-principal-data} 中
+针对同一排除集 \(S\) 的函数。由 \(W_i\) 的非负性，其第 \(i\) 个
+槽位等于
+\[
+ -S_i(Z)\{1+\rho_i(s)\},\qquad
+ |\rho_i(s)|\ll P_i^{-7/8}
+ \quad(\Re s=\beta_*+e,\ \Im s\in\mathbb R).
+\]
+事实上，绝对局部误差之和至多是
+\(P_i^{-7/8}S_i(Z)\) 的一个固定倍数。选择任意预目标数
+\[
+ 0<\kappa_P<\frac78\min_i\ell_i.
+\]
+由于 \(K\) 固定，\(\mathcal R_{\eta,Z}(s):=\prod_i(1+\rho_i(s))-1\)
+在该整条直线上满足 \(|\mathcal R_{\eta,Z}(s)|\ll Z^{-\kappa_P}\)。
+因此精确留数修正为
+\[
+ \mathfrak H_{\eta,1,Z}(s,1,1/6)
+ =H_\eta(s)Z^{\ell/6}A_T(Z)\{1+\mathcal R_{\eta,Z}(s)\},
+\]
+这正是方程~\eqref{eq:principal-correction-residue}，其中
+\(A_\eta=A_T\) 且 \(\mu=\kappa_P\)。该因子分解仅在
+主留数处断言；它不是用于一般围道移动的修正。

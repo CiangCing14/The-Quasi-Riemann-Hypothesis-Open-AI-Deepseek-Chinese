@@ -1,0 +1,5 @@
+\[
+ \tau_{p,m}^{\pm}=q_p^{-1/2}\sum_{y\bmod p}\chi_p(y)^m e(\pm y/p),
+ \qquad |\tau_{p,m}^{\pm}|=1.
+\]
+对每个活跃的 $p$，通过下式定义模 $p$ 的单位

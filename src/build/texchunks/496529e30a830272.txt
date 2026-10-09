@@ -1,0 +1,57 @@
+我们将需要严格正性
+\begin{equation}\label{eq:radial-mellin-positive}
+ M(1/6)>0.
+\end{equation}
+这里给出一个证明，它不需要傅里叶变换本身非负。对于 $0<\sigma<1$，
+\[
+ |y|^{2\sigma-2}=\frac1{\Gamma(1-\sigma)}
+             \int_0^\infty t^{-\sigma}e^{-t|y|^2}\,dt.
+\]
+左侧与 $\widetilde W_0(|y|^2)$ 的配对是绝对可积的。Fubini 与傅里叶对偶将其表示为
+\[
+ \frac1{\Gamma(1-\sigma)}\int_0^\infty t^{-\sigma}
+ \int_{\mathbb C}W_0(|x|^2)
+       \frac{2\pi}{\sqrt3\,t}
+       \exp\!\left(-\frac{4\pi^2|x|^2}{3t}\right)
+                  d\mu(x)\,dt>0.
+\]
+内层积分对每个 $t>0$ 都严格为正，因为 $W_0$ 非负且不恒为零。绝对可积性可由傅里叶侧所显示的表示，或由这一侧 $W_0$ 的环形支撑得到。极坐标积分将原来的配对等同于 $(2\pi/\sqrt3)M(\sigma)$，从而证明了式~\eqref{eq:radial-mellin-positive}。
+
+在两个权重的 Mellin 反演之后令 $x=t+1-z$。对于非零的六次方自由 $u$ 且 $(u,S)=1$，定义
+\begin{equation}\label{eq:local-full-series}
+ \mathcal F_{\eta,u}(x,w,z)=
+ \sum_{\substack{c\ {\rm sf}\\n,s,a}}
+ K_\eta(c,n,s,a;u)\,
+ q_c^{-1/2-x}q_n^{-1-3x}q_s^{-w}q_a^{-6z},
+\end{equation}
+其中 $A=cn^3$，并且保留所有归一化后的系数为
+\begin{equation}\label{eq:local-full-coefficient}
+ K_\eta(c,n,s,a;u)=
+ \frac{F(s,A,ua^6)\chi_s(b_*)}
+ {\sqrt{q_{b_*}}\tau\xi(s)\overline{\xi(u)}}
+ \gamma_2(c)\overline{\alpha(A)G(A)}
+ \eta(A)\Xi(A)^{-1}\mathcal R(A,s).
+\end{equation}
+为方便起见，定义公共 Mellin 权重
+\[
+ \mathcal W(X,Y,Z;x,w,z)=
+ X^{1/2-z}Z^{x+z-1}Y^{w-1}
+ \Phi(x+z-1)M(z)\widehat W_1(w).
+\]
+例如，直线 $\Re x=3$、$\Re w=3$、$\Re z=2$ 对应于原来的直线 $\Re t=4$，并且位于绝对收敛区域内。完整的高恒等式为
+\begin{equation}\label{eq:probe-poisson-identity}
+ \begin{split}
+ I_\eta(X,Y,Z)=\frac1{(2\pi i)^3}
+ \int_{(3)}\int_{(3)}\int_{(2)}
+ &\mathcal W(X,Y,Z;x,w,z)\\
+ &\cdot\sum_u^{(6)}q_u^{-z}\overline{\xi(u)}
+             \mathcal F_{\eta,u}(x,w,z)\,dz\,dw\,dx.
+ \end{split}
+\end{equation}
+人们可以用初等界 $|F(s,A,H)|\le q_sq_{b_*A}$ 以及环形权重来证明这些直线上所有交换的合理性。特别地，式~\eqref{eq:low-separated} 与 \eqref{eq:probe-poisson-identity} 是同一个探针的恒等式，而不是分别选取的测试表达式的估计。
+
+
+\subsection{标量欧拉恒等式}
+\label{sec:local-euler}
+
+接下来我们计算式~\eqref{eq:local-full-coefficient} 中的系数。我们的目标是证明高序列是目标 $\eta$ 的标量欧拉乘积。该计算还单独记录了在给定素数处完备化指标 $A$ 具有正赋值的项。我们保留每一个射线相位，直到它被消去或被分配给一个局部因子。

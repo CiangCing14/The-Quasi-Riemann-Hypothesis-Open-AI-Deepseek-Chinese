@@ -1,0 +1,43 @@
+在这个区域上，$\chi_A(u m_S)$ 只依赖于 $u$ 以及模六的 $S$-赋值，因为每个分子因子都是模 $A$ 的单位。对于有限多个代表元
+$d=u\prod_{\mathfrak l\in S}\pi_{\mathfrak l}^{e_{\mathfrak l}}$，
+$0\le e_{\mathfrak l}<6$，引理~\ref{lem:fixed-numerator-ray} 将
+$A\mapsto\chi_A(d)$ 等同于一个有限射线特征，其导子支撑在 $6d$ 之上的素数处，全部在 $S$ 中。一旦好的射线类固定下来，
+$A\mapsto\mathcal R(A,m_{\rm good})$ 就是支撑在 $2,3$ 之上的素数处的一个固定有限特征族中的一员。它们与基特征有限族的乘积给出所断言的固定族。选取其导子与 $S$-掩码的一个公倍数，即得公共的
+$\mathfrak E$，进而得到 $L$。完备化系数中额外的好的局部剩余符号因子被放入 $\mathcal P$，并在同一个素数处按相同的零点约定合并；它们不改变这个固定模。该论证要求 $m\ne0$，并且对行
+$m=0$ 不作任何局部素数断言。
+\end{proof}
+
+\subsection{公共轮廓与格尾项}
+
+反射级数有一个依赖于其行的尺度。我们将这种依赖性保留在一个联合光滑轮廓内，直到傅里叶反演之后；这为整行的范数给出一个系数测度。
+
+\begin{lemma}[公共环形核轮廓]
+\label{lem:reflection-common-profile}
+设 $V$ 满足命题~\ref{prop:completed-reflection} 的假设。
+固定整数 $d\ge1$、紧集 $\Omega\subset\mathbb R^d$ 以及实指数 $a_1,\ldots,a_d$。设 $W$ 是一个光滑轮廓，其对数支撑在 $\Omega$ 中，对给定块中的所有行公共，并设 $Y>0$ 在该块内固定。令
+\[
+ h(\boldsymbol y)=\prod_{i=1}^d y_i^{a_i},\qquad
+ F_Y(\boldsymbol y)=W(\boldsymbol y)V^\sharp(Yh(\boldsymbol y)),\qquad
+ \mathfrak m_A(Y)=\min\{Y^{1/4},(1+Y)^{-A}\}.
+\]
+对于 $A\ge0$ 以及整数 $j,J\ge0$，
+\begin{align}
+ p_j(F_Y)&\ll_{A,j,d,\Omega,\boldsymbol a}
+ \mathfrak m_A(Y)p_j(W)
+ \mathfrak M_{A,\lceil4A\rceil+j+2}(V),
+ \label{eq:reflection-common-profile}\\
+ \|F_Y\|_{J,\mathrm{sep}}&\ll_{A,J,d,\Omega,\boldsymbol a}
+ \mathfrak m_A(Y)p_{J+d+2}(W)
+ \mathfrak M_{A,\lceil4A\rceil+J+d+4}(V).
+ \label{eq:reflection-common-measure}
+\end{align}
+这里 $p_j$ 是单个轮廓的齐次半范数，而不是元组的非齐次半范数。常数与 $Y$ 以及该块内实际的范数标签无关。
+\end{lemma}
+
+\begin{proof}
+在 $W$ 的支撑上，单项式 $h$ 被仅依赖于 $\Omega$ 和指数的正常数从上下界住。作用在 $V^\sharp(Yh(\boldsymbol y))$ 上的每个算子 $y_i\partial_{y_i}$ 等于 $V^\sharp$ 在 $Yh(\boldsymbol y)$ 处的欧拉导数的 $a_i$ 倍。它不产生额外的 $Y$ 的幂。莱布尼茨法则与
+方程~\eqref{eq:reflection-kernel} 证明了
+方程~\eqref{eq:reflection-common-profile}。以 $j=J+d+2$ 应用
+引理~\ref{lem:smooth-calculus} 即得
+方程~\eqref{eq:reflection-common-measure}。
+\end{proof}

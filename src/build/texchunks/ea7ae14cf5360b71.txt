@@ -1,0 +1,36 @@
+设 \(c,d\) 为 \(C,D\) 的对数范数，并设 \(p\) 为它们共同根式的对数范数。设 \(\mathfrak r\) 为共同素数的乘积，这些素数的净指数模六非零；其对数为 \(R\)。相应的特征 \(\xi_{\mathfrak r}\) 模 \(\mathfrak r\) 本原。在互补共同行掩码的 M\"obius 展开中，记 \(\mathfrak e\) 为所选因子，\(E\) 为其对数范数。特别地
+\[
+ R\le p,\qquad E\le p-R.
+\]
+
+设 \(A_C(a)\) 与 \(A_D(b)\) 为分配的卷积系数，其中共同特征 \(\tau\) 已略去。它们包含所有轮廓、活跃槽系数与固定掩码；在中心情形下，每个都包含整个分配的差。置
+\[
+ \tau_C(a)=\tau(a)\chi_a(\mathfrak e\mathfrak r)
+                       \xi_{\mathfrak r}(a),\qquad
+ \tau_D(b)=\tau(b)\chi_b(\mathfrak e\mathfrak r)
+                       \overline{\xi_{\mathfrak r}(b)}.
+\]
+带来自第~\ref{sec:arithmetic} 节的自对偶格测度的剩余类泊松求和，对此分配给出如下非零频率表达式，至多相差冻结标签中的一个有界模标量：
+\begin{equation}
+ \begin{split}
+ \frac{H}{Xq_{\mathfrak e}\sqrt{q_{\mathfrak r}}}
+ \sum_{h\ne0}G_{\xi_{\mathfrak r}}(\mathfrak r,h)
+ \sum_{(a,b)=1}
+ &\frac{A_C(a)\overline{A_D(b)}}{\sqrt{q_aq_b}}\,
+ \tau_C(a)\overline{\tau_D(b)}
+ \overline{\mathcal R(a,b)}\,
+ G(a,h)\overline{G(b,-h)}
+ \\
+ &\quad\cdot
+ \widehat\Phi_1\left(
+    \frac{Hq_h}{q_{\mathfrak e}q_{\mathfrak r}q_aq_b}
+                    \right).
+ \end{split}
+ \label{eq:first-poisson-bridge}
+\end{equation}
+这里 \(G_{\xi_{\mathfrak r}}\) 是归一化本原高斯和，其模至多为 1。为验证归一化，代换 \(k=\mathfrak e k'\) 与模 \(\mathfrak r ab\) 的泊松求和给出 \(H/(q_{\mathfrak e}q_{\mathfrak r}q_aq_b)\)。三个未归一化高斯和恢复出 \(\sqrt{q_{\mathfrak r}q_aq_b}\)。全局平方中心归一化为 \(X^{-1}\)。对于相位，对两两互素的模 \(a,b,\mathfrak r\) 应用 CRT 给出
+\[
+ \chi_a(b\mathfrak r)\overline{\chi_b(a\mathfrak r)}
+       \xi_{\mathfrak r}(ab).
+\]
+代换 \(k=\mathfrak e k'\) 给出 \(\chi_a(\mathfrak e)\overline{\chi_b(\mathfrak e)}\)，至多相差冻结标签中的一个标量。互反律将 \(\chi_a(b)\overline{\chi_b(a)}\) 变为 \(\overline{\mathcal R(a,b)}\)；其余因子恰为 \(\tau_C(a)\overline{\tau_D(b)}\)。这证明了式~\eqref{eq:first-poisson-bridge}。每个新特征作用于其整个剩余乘积。其新的移动素数属于所提取的支集，并穿刺每个剩余因子。它们的完整展示并集被计入，即使 \(\mathfrak r\) 处的因子在单位上相消。

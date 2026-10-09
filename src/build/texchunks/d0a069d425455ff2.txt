@@ -1,0 +1,61 @@
+在展开平方之前，恢复所有活跃槽和。令
+\(B(u)\) 表示前述某个高斯多项式中的完整分配卷积系数，
+包括其固定掩码和 \(s\)-整除条件。当使用中心化时，它包含整个差。
+其模满足
+\(q_u/Z^{a_0}\in\exp([-H_N,H_N])\)。令 \(\Phi_2\) 为定义最终行球的非负
+光滑径向函数。除素数密度中的 \(Z^{o(1)}\) 损失外，待界的范数为
+\[
+ Z^{-\ell}\sum_h\Phi_2(q_h/Z^{K+g})
+ \left|Z^{-a_0/2}\sum_u B(u)\tau_1(u)q_u^{it}G(u,h)\right|^2.
+\]
+引理~\ref{lem:full-correlation} 中的傅里叶恒等式给出其
+精确展开
+\[
+ \begin{split}
+ Z^{K+g-\ell-a_0}\sum_{u,v}
+ \frac{B(u)\overline{B(v)}\tau_1(u)\overline{\tau_1(v)}
+       q_u^{it}q_v^{-it}}{\sqrt{q_uq_v}}
+ \sum_j F(u,v;j)
+ \widehat\Phi_2\left(\frac{Z^{K+g}q_j}{q_uq_v}\right).
+ \end{split}
+\]
+此处出现的核为
+\begin{equation}
+ \widehat\Phi_2\left(\frac{Z^{K+g}q_j}{q_uq_v}\right).
+ \label{old-eq:2.18b}
+\end{equation}
+所显示的逆平方根和该核都保留为完整 \(u,v\) 的函数，直到下文将其分离为整乘积。特别地，
+该公式包含每个活跃素数和每个共享素数重数。
+
+在 \(j=0\) 时，引理~\ref{lem:full-correlation} 只留下 \(u=v\)，
+其中 \(F(u,u;0)=\varphi(u)\le q_u\)。在非空壳层上，被 \(s\) 整除的
+支撑模的数量至多为
+\[
+ C\frac{Y_{\rm col}}{q_s}=C Z^{a_0-s_0+\theta_N},
+\]
+因为写 \(u=sv\) 在该壳层上给出 \(Y_{\rm col}/q_s\ge1\)。
+除数有界系数使用其单独的 \(\epsilon_1\)
+份额。因此对角指数为
+\(K+g-\ell-s_0+\theta_N\)，包括当 \(a_0-s_0\) 略为
+负时。从方程~\eqref{old-eq:2.7} 的允许量中减去其名义部分，且不含 \(\epsilon_G\)，得到
+\begin{equation}
+ \begin{split}
+ &(K+g-\ell-s_0)
+ -(a_0+\widetilde q+w_o+w+\mathcal B_c-s_0)\\
+ &\quad=(A-M)-d-(K_0-K)-w_o-\mathcal B_c+g-\ell\\
+ &\quad\le A-M+5\sigma/3+\delta_{{\rm fr},1}.
+ \end{split}
+ \label{old-eq:2.12}
+\end{equation}
+对于该不等式，令 \(D_0=d+K_0-K\)。贡献
+\(-D_0-w_o+J_+\) 至多为 \(\delta_{{\rm fr},1}\)：当 \(J\ge0\) 时，它至多为
+\(-c-2w\)，而当 \(J<0\) 时，使用
+\(D_0\ge-\delta_{{\rm fr},1}\)。
+剩余的最大增量为放大主范数中的
+\(2\sigma-\ell_*=5\sigma/3\)；
+其他范数的增量为 \(\sigma\)。因此，当 \(A\le M\) 时，对角项
+只需要所显示的终端损失 \(5\sigma/3\)，加上
+已保留的频率扰动 \(\delta_{{\rm fr},1}\)
+和数值支撑修正 \(\theta_N\)，
+并在填充零槽核心中额外增加一个 \(\delta\)。
+\(\theta_N\) 修正包含在 \(C_*\xi\) 阶段允许量中。

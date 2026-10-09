@@ -1,0 +1,58 @@
+下面是第一个分离分量的完整结构。令
+\(\Omega_\sigma\) 由
+\(b_1,b_2,\mathfrak A_1,\mathfrak A_2,C,d_k,t',f,h\) 以及所指定的
+槽位素数组成，并受其重构关系和各自支撑集的约束。特别地
+\(\mathfrak A_a\mid\mathfrak B\)，\((C,\mathfrak B)=1\)，且
+\(d_k\mid C\mathfrak B/R_1\)，而 \(R_1,E,J,q_0\) 是导出的，
+不是自由指标。
+令 \(\mathcal A_{1,\sigma}\) 为所指定的原始
+系数与优先掩码的乘积，在第二侧取共轭，并令
+\(\psi_{1,\sigma}^{\rm out}\) 为所有保留的外层
+二进截断的乘积。令 \(e_\sigma\) 为在前述
+对旧重数 \(w(f)\) 的无商 CRT 提取中得到的乘积，即两个原始
+\(\beta\) 因子、它们的包含 \((b_a,f)=1\) 的立方掩码、所
+提取的零点掩码，以及在旧外层
+理想处的有限高斯、单位、互反律和第一射线因子，排除已显示的 \(\mu(d_k)\) 和 \(B_{1,a}\)。
+它独立于 \(x_1,x_2\)；其定义由该乘积给出，
+而非由除以方程~\eqref{eq:inverse-first-polynomial} 给出。
+记 \(\mathcal O_1=\{A_1,A_2,C,d,R,t,h\}\)，置
+\[
+ w_{1,\sigma}(\omega;\boldsymbol t)
+ =e_\sigma(\omega)\mu(d_k)\mu(t')B_{1,1}(t';y)
+       \overline{B_{1,2}(t';y)}\mathcal B_1(h)
+       \mathcal A_{1,\sigma}(\omega)\psi_{1,\sigma}^{\rm out}(\omega)
+       \prod_{\alpha\in\mathcal O_1}y_\alpha^{it_\alpha}.
+\]
+对于带掩码、主部恢复的形式第一分量，傅里叶
+反演给出精确恒等式
+\begin{equation}\label{eq:inverse-first-separated}
+ \begin{split}
+ \mathcal T_{1,\sigma}=(2\pi)^{-9}\int_{\mathbb R^9}
+ &\widehat{\mathfrak H}_{1,\sigma}(\boldsymbol t)
+ \sum_{\omega\in\Omega_\sigma}w_{1,\sigma}(\omega;\boldsymbol t)\\
+ &\times Z^{(\kappa_1+9\eta/2)/2}P_1(y)
+       \overline{Z^{(\kappa_2+9\eta/2)/2}P_2(y)}\,d\boldsymbol t.
+ \end{split}
+\end{equation}
+展开这两个多项式恢复了两个列模式；七个
+外层模式恢复了
+方程~\eqref{eq:inverse-first-profile} 的其他坐标。其较大的截断在
+保留支撑集上为一，而新截断在
+旧窗口非零处为一。这逐项验证了该恒等式。
+原始 \(\beta\) 因子和每个外层掩码仍留在
+完整和中。
+
+\paragraph{第一个正优函数。}
+对任何有限或绝对收敛的加权和，我们使用
+\begin{equation}\tag{D}\label{eq:weighted-cauchy}
+ \left|\sum_\omega w_\omega U_1(\omega)\overline{U_2(\omega)}\right|
+ \le\prod_{i=1}^2
+       \left(\sum_\omega|w_\omega||U_i(\omega)|^2\right)^{1/2}.
+\end{equation}
+首先在整个
+\(\Omega_\sigma\) 上对每个固定模式取 \(U_i=Z^{(\kappa_i+9\eta/2)/2}P_i\) 应用此式。只有此时才对外层
+因子取绝对值界。它们的纯算术量值至多为一个
+单独分配的 \(Z^{\pi_\beta}\) 乘以旧重数和
+绝对指定槽位乘积；保留支撑集给出
+\(\mathcal B_1(h)1_{(C,J)=1}\)。特别地，并未假设
+\(\beta(b,f)\) 的任何分解。

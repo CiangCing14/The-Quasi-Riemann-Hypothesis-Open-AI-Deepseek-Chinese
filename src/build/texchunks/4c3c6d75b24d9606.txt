@@ -1,0 +1,70 @@
+令 $\varepsilon_c=12e+\epsilon_r+\epsilon_n+\epsilon_H$。
+缓冲倒数对任意
+$\varepsilon_d>0$ 的代价为 $U^{\varepsilon_d}$，且 $\zeta_F^S(6z_0)$ 绝对有界。
+这些检验在上述三个独立高度坐标中具有有界的联合 $L^1$ 范数。外部幂，包括 $q_u^{-z_0}$，为
+\[
+ Z^{a/2-3/4+z_0/2+13e}U^{-z_0}.
+\]
+将这些界相乘得到，对每个 $\varepsilon_p>0$，一个保留箱贡献至多
+\begin{equation}
+ \ll_\eta Z^{1/4+E_{\mathrm I}(d)+13e
+       +(1+d)\varepsilon_c+d\varepsilon_d+\varepsilon_p}
+ (1+T_1)^{A'_\eta}.
+ \label{eq:balanced-central-contribution}
+\end{equation}
+这里我们无害地将界放大了
+$Z^{\varepsilon_c+\varepsilon_p}$，使得这些损失与后面的一般估计具有相同的形式，并且
+\[
+ E_{\mathrm I}(d)=-\frac34+\frac{\delta+R(\delta)}2
+ +\left(d-\frac12\right)
+       \left(R(\delta)+\frac\delta2-\frac{17}{50}\right).
+\]
+在此应用中不存在额外的梅林积分。其标量缓冲自变量具有高度 $\Im s$ 和 $\Im w$。行计数中的见证频率和轮廓选择保持在检测器现有允许范围内，且不进入任一标量自变量。
+
+在 $d=h=1/2$ 处，行包络的三部分分别给出
+\[
+ E_{\mathrm I}(h)=
+ \begin{cases}
+  -1/4+\delta/2,&0\le\delta\le1/3,\\
+  -1/12,&1/3\le\delta\le2/3,\\
+  -(1-\delta)/4,&2/3\le\delta\le1.
+ \end{cases}
+\]
+前两部分至多为 $-1/12$。在第三部分中，来自第~\ref{sec:detector} 节的精确箱上界为
+\[
+ \delta\le2\beta_*-1=\frac56+2\Delta_1.
+\]
+由此在每一部分中都有
+\[
+ E_{\mathrm I}(h)-\Delta_1
+ \le-\frac1{24}-\frac{\Delta_1}{2}.
+\]
+这就是此处所需的与 $C_{\mathrm I}(\beta_*)$ 的比较；
+$E_{\mathrm I}(h)$ 本身不必为负。
+频率斜率为以下三种形式
+\[
+ R(\delta)+\frac\delta2-\frac{17}{50}
+ =\begin{cases}
+  33/50+\delta/2,&0\le\delta\le1/3,\\
+  149/150-\delta/2,&1/3\le\delta\le2/3,\\
+  33/50,&2/3\le\delta\le1.
+ \end{cases}
+\]
+因此它位于 $[33/50,62/75]$ 中。正性控制所有 $d\le h$，而到 $d\le h+\zeta$ 的延拓至多花费 $(62/75)\zeta$。
+因此，在可调损失之前，每个中心二进块相对于 $C_{\mathrm I}(\beta_*)$ 至少有节省
+\[
+ m_c=\frac1{24}-\frac{62}{75}\zeta=\frac{1021}{25000}
+\]
+。
+
+\subsection{将修正拆分为若干部分时的中心估计}
+
+前面的计算将一个聚合的绝对行界乘以外部梅林幂。我们记录当整个修正由若干部分估计且可用界在行集之间变化时的形式。围道已对固定箱得到验证；这些集合将仅用于估计其保留被积函数。
+
+\begin{lemma}[保留积分及其指数]
+\label{lem:bin-contour-accounting}
+假设定义~\ref{def:stage-high-data} 的数据。固定
+$\sigma_0\in[7/8,1)$ 且 $\beta_*>\sigma_0$，并令 $z_0=17/50$。
+设 $0<d_{\min}<d_{\max}<\infty$，$U=Z^d$ 且
+$d_{\min}\le d\le d_{\max}$，并设 $\mathcal B$ 为引理~\ref{lem:buffered-bins} 的一个保留箱 $(i,a)$ 中满足 $q_u\asymp U$ 的物理行 $u$ 的有限集合。$q_u\asymp U$ 中的比较常数为固定常数。令 $\delta=2a-1$，取 $0<e<10^{-3}$ 如该引理中所述，并令 $T_1=Z^\tau>2$ 且 $0<\tau\le d_{\min}/100$。
+实范围与 $e$ 的选取独立于目标。
