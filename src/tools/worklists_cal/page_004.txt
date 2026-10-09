@@ -1,6 +1,0 @@
-PAGE 4   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL O  y   97.5 x  175.4- 184.1
-      line: Let F = Q ( − 3) , let O be its ring of integers, and write N a = |O / a | for the norm of a nonzero
-CAL O  y   97.5 x  376.7- 385.4
-      line: Let F = Q ( − 3) , let O be its ring of integers, and write N a = |O / a | for the norm of a nonzero

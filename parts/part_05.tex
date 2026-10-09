@@ -1,0 +1,451 @@
+\subsection{无标记反射能量}
+
+对固定的有限射线特征 $\nu$——它在与 $S$ 互素的主元素之外零延拓——以及 $m\ne0$，定义中心完备化和
+\begin{equation}\label{eq:unmarked-central-completion}
+ \mathcal C_V(X;m,\nu)=
+ \sum_{\substack{c\ {\rm sf},\ n\\c,n\equiv1\ (3)\\(cn,S)=1}}
+ \frac{\gamma_2(c)\overline{\alpha(cn^3)}\nu(cn^3)\chi_{cn^3}(m)}
+      {\sqrt{q_c}\,q_n}
+ V\!\left(\frac{q_cq_n^3}{X}\right).
+\end{equation}
+此处 $c,n$ 可以共享素因子。当 $V$ 满足命题~\ref{prop:completed-reflection} 的假设时，
+定义级数对每个 $X>0$ 都绝对收敛。完备乘性（保留零点）给出
+$\chi_{cn^3}(m)=\chi_c(m)\chi_n(m)^3$。于是对每个 $a>1$，
+\begin{equation}\label{eq:unmarked-central-mellin}
+ \mathcal C_V(X;m,\nu)=\frac1{2\pi i}\int_{(a)}
+ \widehat V(s-1/2)X^{s-1/2}T(s,\nu\chi_\bullet(m))\,ds.
+\end{equation}
+事实上，绝对收敛性允许在该线上逐项进行 Mellin 反演。
+
+
+我们对这个完备化和在非零元素行上的均方进行估计。在完备范数尺度与行范数尺度相等时，目标是
+\[
+ \sum_{0<q_m\le C_mZ}|\mathcal C_V(Z;m,\nu)|^2
+ \ll Z^{1+\epsilon}\mathfrak M_{A,J}(V)^2
+\]
+对每个固定的 $C_m\ge1$ 与 $\epsilon>0$，取适当有限阶 $A,J$。
+下面的引理~\ref{lem:unmarked-completed-moment} 给出更一般的估计，它追踪行中重复的素因子。
+
+二次筛法的原因对无平方因子行已经可见。取 $m=R$ 为主元素、无平方因子且良好（good），
+满足 $q_R\asymp Z$，并令 $X=Z$。固定一个行扇区、一个尖点扇区、一个对偶单位 $u$，
+以及对偶支撑中的一个整数 $k\ge-4$。此情形下没有冻结的良好局部素因子。
+$R$ 的每个素因子都以指数一进入反射，因此对 $\mu=u\lambda^k n b^3$，其列因子给出
+\[
+ \chi_R(\lambda^4\mu)^3
+ =\chi_R(u\lambda^{k+4})^3\chi_R(nb)^3.
+\]
+此恒等式保留所有零点，且 $n,b$ 可以共享素因子。第一个因子只依赖于 $R$；
+尖点系数与加性特征在整个扇区中相同。它们的系数界留下列正规化因子 $q_n^{-1/2}q_b^{-1}$，
+至多相差一个依赖于固定 $k$ 的常数。因此，行与两个列指标之间唯一的算术相互作用
+是引理~\ref{lem:completed-quadratic-reduction} 的核。
+
+在对偶二进区间 $q_n\asymp U$、$q_b\asymp B$ 上，反射核的变量与 $UB^3/Z$ 相当。
+它的快速衰减允许对任意固定 $\tau>0$ 丢弃满足 $UB^3>Z^{1+\tau}$ 的整块；
+当分歧指数与其他参数变化时，下面的尾部论证使这一限制一致成立。
+在保留的块上，引理~\ref{lem:reflection-common-profile} 用一个公共系数测度分离核，
+同时保留实际的行环带。把反射和的这个二进片段记作 $\mathcal U_{U,B,k}(R)$。
+对保留的块，二次范数与列正规化的平方给出
+\[
+ \sum_R|\mathcal U_{U,B,k}(R)|^2
+ \ll_{V,k,\tau,\epsilon}Z^\epsilon
+       \frac{(Z+UB)UB}{UB^2}
+ =Z^\epsilon\frac{Z+UB}{B}
+ \ll_{V,k,\tau,\epsilon}Z^{1+\tau+\epsilon}.
+\]
+此处 $B\ge1$ 与 $UB^3\le Z^{1+\tau}$ 给出最后一个不等式。这解释了平衡能量尺度。
+一般论证还须对分歧指数求和、在不等尺度下保留核的节省，并处理行中重复的素因子。
+我们冻结行中指数至少为二的素数幂，并把同样的二次范数应用于其无平方因子剩余因子。
+下面的定义记录由此产生的局部项；完备化行的引理随后对它们求和。
+
+\begin{definition}[无标记反射块]
+\label{def:unmarked-reflected-block}
+固定 $Z\ge2$、$X=Z^N$、命题~\ref{prop:completed-reflection} 中的某个固定特征 $\Psi_0$
+及其公共模 $L$，并令 $M_{\rm ref}=\lambda^{12}L^4$。对 $R$ 上的当前范数，冻结有限个
+良好素因子集合 $\mathcal F$，其指数为 $j_p\in\{0,\ldots,5\}$。令 $R$ 取遍无平方因子的
+主元素良好理想，它们与 $\mathcal F$ 的每个素因子互素，落在模 $M_{\rm ref}^2$ 的一个
+固定同余类中，并可带有任何进一步的固定行限制。这些限制独立于对偶变量。
+在与 $S$ 互素的主元素上令
+\[
+ \Psi_R(A)=\Psi_0(A)\prod_{p\in\mathcal F}\chi_p(A)^{j_p}
+                         \prod_{p\mid R}\chi_p(A).
+\]
+每个局部幂都保留其零点。在对 $\Psi_R$ 的反射中，固定 $h_0$、$\mathcal F$ 中每个
+$j_p=0$ 素因子处的活跃或非活跃选择，以及每个 $j_p=4$ Ramanujan 因子的两个被加项之一。
+$R$ 的所有素因子都是活跃的且指数为一。令 $F_{\rm act}$ 为 $\mathcal F$ 中活跃素因子的乘积。
+
+对 $j_p=4$ 处选定的每个整除性被加项，使用精确划分
+\[
+ 1_{p\mid n_0b_0^3}=1_{p\mid n_0}+1_{p\nmid n_0}1_{p\mid b_0}.
+\]
+选择一项。令 $N_F$ 为分配给无平方因子理想 $n_0$ 的素因子之积，令 $B_F$ 为分配给
+$b_0$（而非 $n_0$）的素因子之积。记 $n_0=N_Fn$、$b_0=B_Fb$。在第一种分配中只抽取
+$n_0$ 中的出现，即使 $b_0$ 也含该素因子；在第二种中恰从 $b_0$ 抽取一次出现。
+所有其余的源限制都保留在 $n,b$ 上。令 $F_{\rm sm}$ 为小的 $j_p=4$ 被加项与活跃的
+$j_p=0$ 素因子之积，并令
+\[
+ A_0=\log_Zq_{F_{\rm act}},\qquad S_0=\log_Zq_{F_{\rm sm}},\qquad
+ N_0=\log_Zq_{N_F},\qquad B_0=\log_Zq_{B_F}.
+\]
+空积的对数范数为零。
+
+固定一个单位 $u$、一个整数 $k\ge-4$，以及对偶区间
+\[
+ \mu=u\lambda^kN_Fn(B_Fb)^3,\qquad
+ q_n\asymp Z^v,\quad q_b\asymp Z^{\ell_b},\quad
+ q_{\lambda^k}=Z^{e_\lambda},
+\]
+其中 $v,\ell_b\ge0$。无平方因子的 $n$ 与主元素 $b$ 保留方程~\eqref{old-eq:4.3} 的
+完整源支撑，包括 $S$ 的允许素因子与共享素因子。令 $H\ge0$，并在一个固定紧对数盒上
+选取公共光滑剖面 $W_1(y_R,y_n,y_b)$，其中
+\[
+ y_R=q_R/Z^H,\qquad y_n=q_n/Z^v,\qquad y_b=q_b/Z^{\ell_b}.
+\]
+为这三个区间选取固定的光滑环带截断 $\chi_{\rm row},\chi_n,\chi_b$，并令
+\[
+ W_0(\boldsymbol y)=\chi_{\rm row}(y_R)\chi_n(y_n)\chi_b(y_b)W_1(\boldsymbol y).
+\]
+支撑集与所引用的半范数在块上一致固定。把方程~\eqref{eq:reflection} 右端限制到该对偶
+表示并乘以 $W_0(y_R,y_n,y_b)$ 后的指定项记作 $\mathcal U_{v,\ell_b,e_\lambda}(R)$。
+原始行集 $\mathcal I_H$ 由满足 $\chi_{\rm row}(q_R/Z^H)\ne0$ 的允许 $R$ 组成。
+上述每一个固定选择都单独作此定义。
+\end{definition}
+
+此定义中的冻结素因子在每次使用时可以变化；它们不被加入固定的算术模 $L$。
+该定义只在取 $R$ 上的当前范数之前固定它们。
+
+\begin{lemma}[无标记反射块]
+\label{lem:unmarked-reflected-block}
+对无标记反射块，令
+\[
+ T_0=2H+2A_0-N-N_0-3B_0,\qquad
+ \nu_0=\frac v2+\ell_b+\frac{e_\lambda}{3}+\frac{S_0+B_0}{2}.
+\]
+令所有这些对数长度在固定有界集上变化。令
+\[
+ Y=\frac{q_{\lambda^kN_FB_F^3}X Z^vZ^{3\ell_b}}
+          {q_{c_FF_{\rm act}}^2Z^{2H}},\qquad
+ W(\boldsymbol y)=y_n^{-1/2}y_b^{-1}W_0(\boldsymbol y),\qquad
+ F_Y(\boldsymbol y)=W(\boldsymbol y)V^\sharp(Yy_ny_b^3y_R^{-2}).
+\]
+存在函数 $\rho(R)$ 与 $\beta(n,b)$，其绝对值至多为一，使得 $\beta$ 独立于 $R$，且
+\begin{equation}\label{eq:unmarked-structural-block}
+ \mathcal U_{v,\ell_b,e_\lambda}(R)
+ =\frac13 Z^{-\nu_0}\rho(R)
+       \sum_{n,b}\beta(n,b)\chi_R(nb)^3F_Y(y_R,y_n,y_b).
+\end{equation}
+该和保留定义中所有固定的对偶限制。此处唯一同时依赖于 $R$ 与对偶变量的算术因子
+是所示零延拓的二次符号。此外，
+\begin{equation}\label{eq:unmarked-actual-annuli}
+ \frac{q_\mu X}{q_c^2}=Yy_ny_b^3y_R^{-2},\qquad
+ c=c_FF_{\rm act}R.
+\end{equation}
+这是原始支撑上的精确恒等式，包括 $N_F$ 与 $b$ 共享素因子的情形。
+
+对每个 $\epsilon>0$ 与每个固定的 $A\ge0$，
+\begin{equation}\label{eq:unmarked-reflected-energy}
+ \begin{split}
+ \sum_{R\in\mathcal I_H}|\mathcal U_{v,\ell_b,e_\lambda}(R)|^2
+ &\ll_{\epsilon,A} Z^{E_0+\epsilon}p_5(W)^2
+       \mathfrak M_{A,\lceil4A\rceil+7}(V)^2,\\
+ E_0={}&\max(H,v+\ell_b)-S_0-B_0-\ell_b-\frac{2e_\lambda}{3}
+       -\frac12(T_0-v-3\ell_b-e_\lambda)_+.
+ \end{split}
+\end{equation}
+常数可以依赖于固定的核阶 $A$、固定的算术数据、有界的对数长度范围以及固定的支撑盒，
+但不依赖于变动的冻结局部集 $\mathcal F$。$W_0$ 中的范数扭曲具有由其有限半范数
+提供的多项式代价。
+\end{lemma}
+
+\begin{proof}
+对固定的 $h_0$ 与 $R$ 模 $M_{\rm ref}^2$ 的固定同余类，$F_{\rm act}R$ 的类也是固定的。
+因此命题~\ref{prop:completed-reflection} 为整个行集给出一个公共的 $d$ 和一个公共的
+加性特征 $\vartheta$。记 $x_F=u\lambda^{k+4}N_FB_F^3$，从而 $\lambda^4\mu=x_Fnb^3$。
+剩余局部因子恰为
+\[
+ \prod_{p\mid R}B_p(\lambda^4\mu)
+ =\chi_R(x_F)^3\chi_R(nb^3)^3
+ =\chi_R(x_F)^3\chi_R(nb)^3.
+\]
+两个等式都包含零点；没有除以任何单位符号。特别地，与 $x_F$ 的任何碰撞都是只依赖于
+$R$ 的限制。每个剩余的局部因子都是固定的，且只依赖于对偶指标。反射的标量
+$\zeta_R$ 依赖于 $R$ 但不依赖于 $\mu$。
+
+在指定的对偶支撑上定义
+\[
+ \delta(n,b)=
+ \frac{d(\mu)\alpha(\mu)\vartheta(\lambda^4\mu)}
+      {27\,3^{k/6}|B_Fb|}.
+\]
+系数界给出 $|\delta(n,b)|\le1$。其分母非零，且当分子为零时定义仍然有效。
+利用 $q_\mu=3^kq_{N_Fn}q_{B_Fb}^3$ 得到精确分解
+\[
+ \frac{d(\mu)\alpha(\mu)\vartheta(\lambda^4\mu)}{\sqrt{q_\mu}}
+ =27\delta(n,b)q_{\lambda^k}^{-1/3}
+                  q_{N_Fn}^{-1/2}q_{B_Fb}^{-1}.
+\]
+小的 Ramanujan 因子或活跃的零掩码因子贡献 $q_p^{-1/2}$。整除性因子贡献 $q_p^{1/2}$；
+对分配给 $N_F$ 的素因子，它抵消无平方因子分母中的 $q_p^{-1/2}$，而对分配给 $B_F$ 的
+素因子，它在抽取后留下 $q_p^{-1/2}$。当分配给 $N_F$ 的素因子也整除 $b$ 时，它在 $b$
+中的全部出现都保留在 $q_b^{-1}$ 与 $\delta(n,b)$ 中。这些事实恰好给出公共幂
+$Z^{-\nu_0}y_n^{-1/2}y_b^{-1}$。
+
+把 $\delta$、小 Ramanujan 项的符号、有界固定局部特征以及固定对偶指示函数吸收进
+$\beta(n,b)$。该函数被一界住且独立于 $R$。令 $\rho(R)=81\zeta_R\chi_R(x_F)^3$；
+由于 $|\zeta_R|\le1/81$，它被一界住。因子 $27/81=1/3$ 随即证明
+方程~\eqref{eq:unmarked-structural-block}。范数的乘性证明
+方程~\eqref{eq:unmarked-actual-annuli}。它不使用 $N_F$ 与 $b$ 之间的任何互素性。
+
+由对数范数的定义，
+\[
+ Y=q_{c_F}^{-2}Z^{v+3\ell_b+e_\lambda-T_0}.
+\]
+可能的 $c_F$ 的有限集只依赖于 $L$。因此
+$\mathfrak m_A(Y)\ll_L Z^{-(T_0-v-3\ell_b-e_\lambda)_+/4}$。
+把引理~\ref{lem:reflection-common-profile}（三维）与
+方程~\eqref{eq:reflection-common-minkowski} 应用于该结构恒等式。
+该单一密度对所有 $R$ 是公共的，因为 $W$ 以行范数与两个对偶范数作为坐标。
+在每个 Fourier 模处，范数幂的绝对值为一，可吸收进有界的行标量与公共对偶系数。
+直到此时才把正的行范数从 $\mathcal I_H$ 扩大到满足 $q_R\ll Z^H$ 的无平方因子良好 $R$，
+并保留任何固定限制。对新增的行不使用核估计。
+
+方程~\eqref{eq:completed-quadratic-norm}（取 $K=Z^H$、$N_{\rm col}=Z^v$、
+$B_{\rm col}=Z^{\ell_b}$）把分离后的平方范数界为
+\[
+ Z^{\epsilon+\max(H,v+\ell_b)+v+\ell_b}.
+\]
+结构恒等式中的公共系数平方具有指数 $-v-2\ell_b-2e_\lambda/3-S_0-B_0$。
+抽取出的剖面标量的平方贡献 $-(T_0-v-3\ell_b-e_\lambda)_+/2$。把这些指数与
+三维分离范数结合，即证明方程~\eqref{eq:unmarked-reflected-energy}。
+\end{proof}
+
+为便于后面的求和，称一个对偶块是保留的，当
+\[
+ v+3\ell_b+e_\lambda\le T_0+\tau_{\rm ref},
+ \qquad \tau_{\rm ref}>0.
+\]
+在固定支撑盒上，方程~\eqref{eq:unmarked-actual-annuli} 把核变量置于
+$[C_{\rm ker}^{-1},C_{\rm ker}]$ 乘以 $Z^{v+3\ell_b+e_\lambda-T_0}$ 之中，
+其中 $C_{\rm ker}$ 固定。若 $\log Z\ge2\log C_{\rm ker}/\tau_{\rm ref}$，
+则每个未保留的整块在其支撑上各处的实际变量都大于 $Z^{\tau_{\rm ref}/2}$。
+当其余对数长度位于有界范围时，这些块可在 Fourier 反演之前以任意幂次节省被移除。
+以下是该一致性断言所需的细节。
+
+在完整源支撑上，
+\[
+ \frac{|d(\mu)|}{\sqrt{q_\mu}}
+ \le27q_{\lambda^k}^{-1/3}q_{n_0}^{-1/2}q_{b_0}^{-1}
+ \le27q_\lambda^{4/3}.
+\]
+在丢弃其指示函数之后，每个局部因子都被 $q_p^{1/2}$ 界住，且关于 $\mu$ 一致。
+当活跃对数范数有界时，这些界的乘积具有固定的多项式大小。对固定的行令 $a=X/q_c^2$。
+其因子 $1+a^{-1}$ 在所述行与导子范围上也具有固定的多项式界。有限局部选择与有界行计数
+具有进一步固定的多项式代价；把这些范数尺度指数之和记作 $B_{\rm tail}$。
+固定的剖面半范数及其多项式高度代价仍是该指数之外的可乘因子。
+它在核阶之前选定，且不计入被丢弃的对偶指标。
+剩余的对偶和是引理~\ref{lem:lattice-kernel-tail} 中无限制的格点和，其中
+$U=Z^{\tau_{\rm ref}/2}$。对任意 $D>0$，选取
+\[
+ A>1+\frac{2(B_{\rm tail}+D)}{\tau_{\rm ref}}
+\]
+使被丢弃的贡献为 $O(Z^{-D})$ 乘以 $V$ 的一个有限半范数与固定剖面界。
+该断言或对绝对总和成立，或在把 $B_{\rm tail}$ 增大以计入有界行计数后对行范数成立。
+二进截断具有有界重叠，因此该格点估计控制它们的整个和。特别地，
+没有对被丢弃的对偶长度作任何假设。
+
+我们最后对一个元素行求和这些反射块。下面的范数观察记录了支配该求和的实际支撑。
+假设一个元素行有理想分解 $(m)=m_{\rm pow}m_{\rm sup}R$，各因子为整理想，
+且固定支撑常数给出
+\[
+ q_m\le C_mZ^M,\qquad q_{m_{\rm pow}}\ge Z^O/C_O,
+ \qquad q_R\ge Z^H/C_H.
+\]
+由于 $q_{m_{\rm sup}}\ge1$，乘性给出
+\begin{equation}\label{eq:actual-residual-row-dyad}
+ H\le M-O+\frac{\log C_{\rm res}}{\log Z},
+ \qquad C_{\rm res}=C_HC_mC_O.
+\end{equation}
+该不等式不要求 $m_{\rm sup}$ 的范数有界，且它不必取等号。我们将在三个因子位于
+不相交素支撑上、且单位剩余理想落在有界 $H=0$ 二进区间的情形下使用它。
+
+\begin{lemma}[无标记完备化行矩]
+\label{lem:unmarked-completed-moment}
+令 $\nu$ 取遍一个固定的有限族乘性有限射线特征，其导子支撑于 $S$ 上，
+且都在与 $S$ 互素的主元素之外零延拓。固定 $M\ge0$ 与 $N\in\mathbb R$ 的有界范围、
+一个常数 $C_m\ge1$，以及固定的二进支撑比较。对非零元素 $m$，令
+\[
+ m_{\rm pow}=\prod_{v_{\mathfrak p}(m)\ge2}
+                 \mathfrak p^{v_{\mathfrak p}(m)}
+\]
+为其极大幂理想因子。对其二进区间使用非负中心 $O$，单位区间取中心零。
+
+对每个 $\epsilon>0$，存在有限的 $A\ge0$ 与整数 $J\ge0$，使得对每个满足
+命题~\ref{prop:completed-reflection} 的检验函数 $V$、每个实际的 $O$-二进区间
+以及所有充分大的 $Z$，
+\begin{equation}\label{eq:unmarked-completed-moment}
+ \sum_{\substack{0<q_m\le C_mZ^M\\q_{m_{\rm pow}}\asymp Z^O}}
+       |\mathcal C_V(Z^N;m,\nu)|^2
+ \ll Z^{O/2+\max\{M-O,\,2M-O-N\}+\epsilon}
+       \mathfrak M_{A,J}(V)^2.
+\end{equation}
+有限阶、常数与下阈值可以依赖于固定的算术数据、参数范围、$C_m$、二进支撑比较
+以及 $\epsilon$。它们对元素行与固定族中的 $\nu$ 一致。该估计直接包含 Gaussian
+检验函数；对 $V$ 不作环带支撑假设。用 $x^{it_0}V(x)$ 替换 $V(x)$ 至多带来
+关于 $1+|t_0|$ 的固定多项式代价。
+\end{lemma}
+
+\begin{proof}
+固定一个特征 $\nu$。取 $\Psi_{\rm base}=\nu$，引理~\ref{lem:reflection-row-sectors}
+为 $\nu(A)\chi_A(m)$ 的反射提供固定的有限族字面特征。在任何良好行素因子变化之前
+选定它们的公共 $\mathfrak E,L$。把行划分为该引理中的有限多个单位、$S$-赋值剩余与
+良好射线扇区。这样保留了每个良好局部素因子，包括其行赋值被六整除的那些。
+
+对指定的 $O$-二进区间中的行，把其赋值为一的素因子拆分为支撑于 $S$ 上的
+$m_{\rm sup}$ 与无平方因子的良好积 $R$。于是 $(m)=m_{\rm pow}m_{\rm sup}R$，
+位于不相交的素支撑上。冻结单位、实际理想 $m_{\rm pow},m_{\rm sup}$，然后把 $R$
+划分为实际光滑环带 $q_R\asymp Z^H$，其中 $H\ge0$ 且单位落在有界的零二进区间。
+在每个反射向量中保留此截断。方程~\eqref{eq:actual-residual-row-dyad} 给出
+\begin{equation}\label{eq:unmarked-row-width}
+ H\le M-O+O_{\rm fixed}(1/\log Z).
+\end{equation}
+固定的行限制，包括与冻结因子的互素性，都独立于对偶变量。
+
+经过行扇区转换后，取定义~\ref{def:unmarked-reflected-block} 中的 $\mathcal F$
+为 $m_{\rm pow}$ 的良好素因子，其赋值模六约简。$R$ 的素因子指数为一。固定 $h_0$、
+$R$ 模 $M_{\rm ref}^2$ 的一个同余类，以及冻结素因子处的局部活跃与 Ramanujan 选择。
+每个活跃的冻结良好素因子都以至少二的指数整除 $m_{\rm pow}$。因此
+\begin{equation}\label{eq:unmarked-powerful-radical}
+ q_{F_{\rm act}}^2\le q_{m_{\rm pow}},\qquad
+ 2A_0\le O+O_{\rm fixed}(1/\log Z).
+\end{equation}
+这使用了实际幂二进区间的上界比较。$m_{\rm pow}$ 可能的 $S$-素因子只增大其范数。
+
+把 $X=Z^N$ 处的方程~\eqref{eq:reflection} 应用于方程~\eqref{eq:unmarked-central-mellin}
+中的 Mellin 表示。其对偶和绝对收敛。在剩余无平方因子范数与立方范数中插入固定的
+光滑二进划分，并固定对偶指标的单位与分歧指数。这些操作给出
+定义~\ref{def:unmarked-reflected-block} 的块，且 $W$ 的半范数一致有界。
+无需对原始检验函数 $V$ 作划分：此处的紧剖面是对偶截断与行截断乘以正规化的逆根之积，
+而 $V^\sharp$ 仍是核。
+
+固定一个小的 $\tau_{\rm ref}>0$。行长 $H,O$、活跃长度 $A_0$ 与 $N$ 位于固定有界
+范围内。$S_0,N_0,B_0$ 亦然，因为它们的素因子积整除 $F_{\rm act}$。因此，
+引理~\ref{lem:unmarked-reflected-block} 之后的尾部论证以任意指定的幂次节省移除
+所有未保留的整对偶块，并带 $V$ 的一个有限半范数。其多项式代价包含下面的行计数
+与局部计数，但不含被丢弃的对偶指标。先选定它的核阶，再增大命题中的 $A,J$，
+使 $\mathfrak M_{A,J}(V)$ 支配此尾部半范数与块半范数。这是可能的，因为增大 $A$
+拓宽定义 $\mathfrak M_{A,J}$ 的上确界，而增大 $J$ 增大其权重。
+
+记 $e=e_\lambda$。源限制 $k\ge-4$ 给出 $e\ge-4\log 3/\log Z$。对保留的块，
+\[
+ v+3\ell_b+e\le T_0+\tau_{\rm ref}.
+\]
+由于 $v,\ell_b\ge0$ 且 $T_0$ 有界，这也界住了每个保留的对偶长度。对偶环带与 $k$
+的保留选择只有对数多个。选取非负的 $\epsilon_Z=O_{\rm fixed}(1/\log Z)$，
+大到足以覆盖方程~\eqref{eq:unmarked-row-width} 与
+\eqref{eq:unmarked-powerful-radical} 中的支撑偏移，并确保 $e\ge-\epsilon_Z$。
+
+方程~\eqref{eq:unmarked-reflected-energy} 中的指数满足
+\[
+ E_0\le\max\{H,T_0-S_0-B_0\}+\frac53\epsilon_Z+\tau_{\rm ref}.
+\]
+为看出这一点，使用 $\max(H,v+\ell_b)-\ell_b=\max(H-\ell_b,v)$ 并丢弃非正的核项。
+第一支至多为 $H+2\epsilon_Z/3$，因为 $\ell_b,S_0,B_0\ge0$。在第二支中，
+保留性给出 $v\le T_0-3\ell_b-e+\tau_{\rm ref}$，故它至多为
+$T_0-S_0-B_0+5\epsilon_Z/3+\tau_{\rm ref}$。此外，
+\[
+ \begin{split}
+ T_0-S_0-B_0
+ &=2H+2A_0-N-N_0-S_0-4B_0\\
+ &\le 2M-O-N+O(\epsilon_Z),
+ \end{split}
+\]
+由方程~\eqref{eq:unmarked-row-width} 与 \eqref{eq:unmarked-powerful-radical}。
+因此每个保留的块（其冻结行部分固定）的指数至多为
+\[
+ \max\{M-O,2M-O-N\}+\tau_{\rm ref}+O(\epsilon_Z).
+\]
+
+还需计算冻结部分与有限展开。每个幂理想都唯一地写成 $x^2y^3$，其中 $y$ 无平方因子：
+在一个素因子处，$y$ 的指数是幂指数的奇偶性，而奇正指数至少为三。因此理想计数与
+$\sum_yq_y^{-3/2}<\infty$ 给出
+\[
+ \#\{m_{\rm pow}:q_{m_{\rm pow}}\ll Z^O\}\ll Z^{O/2}.
+\]
+无平方因子的 $m_{\rm sup}$ 是 $S$ 的固定根式的一个因子，只有有限多个选择。
+$m_{\rm pow}$ 的良好素因子处的局部分支具有被因子数界住的重数，其 Ramanujan
+分配亦然。逐行的因子 Cauchy 再对局部选择求和，代价为 $Z$ 的任意小幂。
+$h_0$、固定射线扇区与单位的选择都有限，而实际的行环带与保留的对偶环带只花费
+$\log Z$ 的幂。这恰好一次地计入幂贡献 $O/2$。
+
+在给定的 $\epsilon$ 余量内选取 $\tau_{\rm ref}$ 与局部小幂损失。然后增大固定数据
+阈值 $Z$，使 $O(\epsilon_Z)$ 项落在该余量内。块界、前面的计数以及已选定的尾部节省
+证明方程~\eqref{eq:unmarked-completed-moment}。扭曲断言由
+命题~\ref{prop:completed-reflection} 中 $\mathfrak M_{A,J}$ 的范数扭曲界推出。
+\end{proof}
+
+为明确等长度处所用的检验函数，令
+\[
+ V_{\rm G}(y)=\frac1{2\sqrt\pi}
+           \exp\!\left(-\frac{(\log y)^2}{4}\right).
+\]
+它直接满足命题~\ref{prop:completed-reflection} 的假设，有
+$\widehat V_{\rm G}(t)=e^{t^2}$，且对每个有限 $A,J$ 都有有限的 $\mathfrak M_{A,J}$。
+因此前面的引理无需额外的环带延拓即可应用于它。在 $X=Z$ 处其精确的 Mellin 形式为
+\[
+ \mathcal C_{V_{\rm G}}(Z;m,\nu)=\frac1{2\pi i}\int_{(4)}
+       Z^t e^{t^2}T(t+1/2,\nu\chi_\bullet(m))\,dt.
+\]
+在定义和中，系数仍由 $q_c^{-1/2}q_n^{-1}$ 正规化；尺度出现在
+$V_{\rm G}(q_cq_n^3/Z)$ 中。
+
+最后取 $M=N=1$。实际 $O$-二进区间中的指数为 $1-O/2+\epsilon$。非负 $O$-二进区间
+只有对数多个，且其单位二进区间已含在内。对它们求和（带一个更小的预备损失），
+给出对每个可容许 $V$ 的等长度结论：
+\begin{equation}\label{eq:unmarked-balanced-completed-moment}
+ \sum_{0<q_m\le C_mZ}|\mathcal C_V(Z;m,\nu)|^2
+ \ll Z^{1+\epsilon}\mathfrak M_{A,J}(V)^2.
+\end{equation}
+
+\section{基础探针及其平衡低估计}\label{sec:probe}
+
+现在我们把上一节的完备化和放入一个平均 $I_\eta(X,Y,Z)$ 中。它的原始表示分解为
+一个加性多项式与一个完备化 theta 行。在平衡尺度 $X=Y=Z^{1/2}$ 处，它们的均方
+估计给出直接界 $I_\eta\ll_\eta Z^{1/4+\epsilon}$。我们先对独立的正尺度 $X,Y,Z$
+定义该平均；本节只有最后的命题才将它们特殊化。下一节对同一平均应用 Poisson 求和，
+并在其主行中识别目标 $L$ 函数的倒数。
+
+\subsection{两个因子的定义与分离}
+
+选取一个有限射线群 $T$（独立于目标特征），使函数 $\mathcal R$、$G$ 以及
+引理~\ref{lem:fixed-gauss-phase} 中支撑于 $2,3$ 上的固定主相位与补充相位都能
+通过它分解。下面依赖于目标的固定分子特征不必通过 $T$ 分解。对有限阶 Hecke
+特征 $\eta$，记
+\[
+ \Theta=\langle\eta,\widehat T\rangle.
+\]
+对有限族 $\{\eta\theta:\theta\in\widehat T\}$ 使用一个排除集 $S$。它包含 $6$ 上的
+素因子、$\eta$ 与 $\widehat T$ 中特征的固定零延拓表示的定义模的素支撑，以及范数
+至多一个固定 $P_0$ 的每个素因子。这些完整表示属于固定的算术数据。它们在选定
+$X,Y,Z$ 与变动的行参数、素参数之前就固定。扩大 $S$ 不会改变 $T$。
+
+有限变换应排除与 $S$ 相交的频率（包括零），并应留下逐素因子分解的系数。
+下面的特征与相位修正安排这两个性质。
+
+令 $b_*$ 生成 $S$ 中素因子的无平方因子积。选取模 $b_*$ 的剩余特征 $\xi$，
+使其在每个素因子上的限制都是非主的，且其阶整除六。这样的选择存在：
+在奇剩余特征的素因子处可以使用二次特征，而 $2$ 上素因子处的剩余域阶为四且有一个
+三阶特征。中国剩余定理使 $\xi$ 模 $b_*$ 本原。以下所有剩余特征都在非单位上零延拓。令
+\[
+ \begin{gathered}
+ g_\psi(c,k)=\sum_{d\bmod c}\psi(d)e(kd/c),\qquad
+ \tau=q_{b_*}^{-1/2}g_\xi(b_*,1),\qquad
+ \Xi(a)=\xi(a)\chi_a(b_*),\\
+ \Psi_{m,s,\eta}(a)=
+       \eta(a)\Xi(a)^{-1}\mathcal R(a,s)\chi_a(m)
+       \qquad ((a,S)=1).
+ \end{gathered}
+\]
+每个素因子处的有限特征正交性给出 $|\tau|=1$。
+由引理~\ref{lem:fixed-numerator-ray}，固定分子符号 $a\mapsto\chi_a(b_*)$ 是一个
+有限射线特征，其导子支撑于 $S$ 上。因此 $\Xi$ 是该目标的一个固定有限特征，
+尽管它不必通过 $T$ 分解。
+

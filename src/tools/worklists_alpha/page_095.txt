@@ -1,4 +1,0 @@
-PAGE 95   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 2 glyph(s) O1 H1 | zh 0
-   \mathcal O  y   77.2 x  322.4   line: O
-   \mathcal H  y  220.9 x   96.5   line: H ≪ ( KNBL ) ϵ X X X β ( n, b ) χ ′ ( nb ) 3 X √ D χ ′ ( n ) − 2 1 . (14.8)

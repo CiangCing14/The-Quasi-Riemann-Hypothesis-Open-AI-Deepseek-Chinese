@@ -1,0 +1,537 @@
+\subsection{向 Dirichlet \texorpdfstring{$L$ 函数}{L-functions} 的转移}
+
+延拓准则涉及 $F$ 上的 Hecke 族。我们证明一次：该族的严格无零点半平面具有相应的 Dirichlet 推论。
+
+\begin{proposition}[二次转移]
+\label{prop:hecke-dirichlet-transfer}
+设 $\sigma_0\in[1/2,1)$。假设 $F=\mathbb Q(\sqrt{-3})$ 上的每个本原有限阶 Hecke
+$L$ 函数在 $\Re s>\sigma_0$ 上无零点，允许其在 $1$ 处的主极点。那么 $F$ 上的每个
+有限阶 Hecke $L$ 函数以及每个 Dirichlet $L$ 函数在同一严格半平面上无零点，同样
+允许在 $1$ 处的主极点。
+\end{proposition}
+
+\begin{proof}
+从本原 Hecke 特征过渡到它所诱导的特征，只改变有限多个因子
+$1-\eta(\mathfrak p)N\mathfrak p^{-s}$。它们在 $\Re s>0$ 上非零，因此 Hecke
+论断延伸到所有有限阶特征。对因子
+$1-\chi(p)p^{-s}$ 的相同观察把 Dirichlet 论断归约为导子为 $q$ 的本原
+Dirichlet 特征 $\chi$。
+
+设 $\chi_{-3}$ 为导子为三的二次特征，设
+$\eta$ 为通过与 $3q$ 互素的理想上的
+$\mathfrak a\mapsto\chi(N\mathfrak a)$ 给出的有限阶 Hecke 特征。
+它是射线特征：若 $\alpha\equiv1\pmod{q\mathcal O}$，则
+$N\alpha\equiv1\pmod q$，所以范数特征在相应的主射线子群上平凡。设 $S_{\mathbb Q}$ 为整除
+$3q$ 的有理素数，设 $\mathcal S_{\mathbb Q}$ 为 $F$ 上位于其上的素数。以这些集合作上标
+表示删去这些 Euler 因子。
+
+对 $p\notin S_{\mathbb Q}$，局部因子如下相符。若 $p$
+在 $F$ 中分裂，则 $\chi_{-3}(p)=1$，两个素理想的范数为 $p$，
+Hecke 因子为 $(1-\chi(p)p^{-s})^{-2}$。这是
+$\chi$ 与 $\chi\chi_{-3}$ 的 Dirichlet 因子之积。若 $p$ 是惰性的，
+则 $\chi_{-3}(p)=-1$，唯一素理想的范数为 $p^2$，其
+因子为
+\[
+ (1-\chi(p)^2p^{-2s})^{-1}
+  =(1-\chi(p)p^{-s})^{-1}(1+\chi(p)p^{-s})^{-1}.
+\]
+这些穷尽了 $S_{\mathbb Q}$ 之外的素数。$\Re s>1$ 上的绝对 Euler
+收敛性，继之以亚纯延拓的唯一性，给出
+\begin{equation}
+ L_F^{\mathcal S_{\mathbb Q}}(s,\eta)
+ =L^{S_{\mathbb Q}}(s,\chi)
+      L^{S_{\mathbb Q}}(s,\chi\chi_{-3}).
+ \label{eq:hecke-dirichlet-factorization}
+\end{equation}
+右端的乘积特征可能是非本原的；删去
+$S_{\mathbb Q}$ 使该恒等式不依赖于这一选择。每个
+被删去的因子在 $\Re s>0$ 上非零。
+
+两个 Dirichlet 因子在 $0<\Re s<1$ 上全纯。因此 $L(s,\chi)$ 在
+那里的零点将给出 Hecke 因子的零点，且
+不被极点抵消，而当 $\Re s>\sigma_0$ 时假设的 Hecke 半平面排除了它。
+绝对 Euler 收敛性处理 $\Re s>1$。
+在 $s=1+it$（$t\ne0$）上，两个 Dirichlet 因子都没有极点，所以同样的
+乘积论证适用。
+
+在 $s=1$ 处，只有当 $\chi$ 与 $\chi\chi_{-3}$ 中有一个本原
+诱导特征是主特征时，才可能发生极点-零点相消。那么
+另一个将是 $\chi_{-3}$。其 Dirichlet 级数在 $1$ 处收敛，
+这是由非主周期特征的有界部分和保证的，将连续项
+分组给出
+\[
+ \begin{split}
+ L(1,\chi_{-3})
+ &=\sum_{n\ge0}\left(\frac1{3n+1}-\frac1{3n+2}\right)\\
+ &=\int_0^1\frac{1-x}{1-x^3}\,dx
+   =\int_0^1\frac{dx}{1+x+x^2}
+   =\frac{\pi}{3\sqrt3}>0.
+ \end{split}
+\]
+第一个积分由非负配对被积函数的单调收敛性得到。因此在这最后一种情形
+也没有零点；允许主极点。这证明了严格半平面论断，
+而对其边界不作任何断言。
+\end{proof}
+
+\begin{proof}[定理~\ref{thm:eleven-twelfths} 的证明]
+假设 $\beta_*>11/12$。引理~\ref{lem:local-euler} 与
+方程~\eqref{eq:shared-principal-nonvanishing} 对每个
+本原目标给出 $\Re s>11/12$ 上所需的、全纯且非零的 $H_\eta$。
+命题~\ref{prop:balanced-high} 及其证明中建立的低界与高界验证了
+命题~\ref{lem:continuation-criterion}，其中
+\[
+ \sigma_0=\frac{11}{12},\qquad C=C_{\mathrm I},\qquad
+ \omega=\frac{\Delta_1}{2},\qquad \sigma=\frac1{4800}.
+\]
+这两个正损失与目标无关，而允许的
+常数、排除集与阈值可以依赖于它。延拓
+准则与假设矛盾。因此 $\beta_*\le11/12$。
+按定义以及 $\Re s>1$ 中的绝对 Euler 收敛性，$F$ 上的每个
+本原有限阶 Hecke $L$ 函数在严格
+半平面 $\Re s>11/12$ 上无零点，允许主极点。
+
+命题~\ref{prop:hecke-dirichlet-transfer} 在同一边界处应用，
+把该论断延伸到所有有限阶 Hecke 特征与所有 Dirichlet
+$L$ 函数，包括 $\zeta(s)$。它保持严格半平面与
+允许的主极点。这证明了定理。
+\end{proof}
+
+\part{八分之七无零点半平面}
+\label{part:seven-eighths}
+
+\section{补偿探针}\label{sec:compensation}
+
+定理~\ref{thm:eleven-twelfths} 适用于进入方程~\eqref{old-eq:1.1b} 中上确界的
+每个本原特征，因此给出
+$\beta_*\le11/12$。在整个第~II 部分中反设
+$\beta_*>7/8$，并令
+\begin{equation}\label{eq:part-II-bootstrap}
+ \Delta:=\beta_*-\frac78,\qquad 0<\Delta\le\frac1{24},
+ \qquad
+ \kappa:=2\beta_*-1=\frac34+2\Delta\le\frac56.
+\end{equation}
+节~\ref{sec:detector} 中精确的分箱上界适用，因为
+$\beta_*>7/8>51/100$。对每个保留的非主行及其分箱
+$(i,a)$，它给出
+\begin{equation}\label{eq:part-II-bin-ceiling}
+ a\le\beta_*,\qquad \delta=2a-1\le\kappa\le\frac56.
+\end{equation}
+确实，定义 $M_i(u)$ 的有限集由下限 $51/100$ 与
+真实零点的实部构成，全都至多为 $\beta_*$。这只用到
+上确界的定义，而非其达到。边界情形
+$\delta=5/6$ 仍是论证的一部分。
+
+对于命题~\ref{lem:continuation-criterion} 的第二次应用，
+在整个第~II 部分中记
+\begin{equation}\label{eq:part-II-mellin-target}
+ C(s)=C_{\mathrm{II}}(s):=s-\frac{11}{16},\qquad
+ C(7/8)=\frac3{16}.
+\end{equation}
+我们的任务是由下面的有限表达式构造一个正规化探针 $J_{\mathrm{II},\eta}$。
+它不同于平衡探针
+$J_{\mathrm I,\eta}$。其低端目标是
+$|J_{\mathrm{II},\eta}(Z)|\ll_\eta Z^{3/16+\omega}$，其中
+$0<\omega<\Delta$ 为公共的；其高端必须满足
+方程~\eqref{eq:high-probe-contract} 中带有该 $C$ 的信号估计。非零标量
+正规化将在主项求值后指定。
+
+对每个本原目标 $\eta$，使用节~\ref{sec:probe} 中
+数据 $T,S,b_*,\xi,\tau,\Xi,W_0,W_1$ 的一个容许的固定实例。
+$P_0$ 的允许选择将按下面的参数顺序作出。这些
+数据可以不同于第~I 部分中所用的数据，但在本应用内它们
+与 $Z$ 无关，且在物理探针与其高
+表示中相同。
+
+我们先在原探针上定义两项修正，然后再
+移动任何围道。随后的低端与高端估计将涉及
+这同一个有限表达式。
+
+使用固定的几何
+\begin{equation}
+ \begin{gathered}
+ b=\frac18,\qquad h=\frac{13}{16},\qquad \ell=\frac16,\\
+ l_x=1+\ell-h=\frac{17}{48},\qquad
+ l_y=l_x+b=\frac{23}{48},\\
+ X=Z^{l_x},\qquad Y=Z^{l_y},\qquad
+ M=l_x+l_y=\frac56,\qquad M+\ell=1.
+ \end{gathered}
+ \label{old-eq:5.1}
+\end{equation}
+固定总长度为 $\ell$ 的正槽长 $\ell_1,\ldots,\ell_K$，
+并令 $P_i=Z^{\ell_i}$。每个物理槽具有
+非负、非零的光滑环形权重 $W_i(q_p/P_i)$。其允许的
+素数集为
+\[
+ \mathcal P_i(Z)=\{p\text{ prime}:p\notin S,\ p\in1_T,
+                         \ q_p/P_i\in\operatorname{supp}W_i\}.
+\]
+在施加射线与 $S$ 限制之前，要求不同槽的
+底层窗口集
+$\{p\text{ prime}:q_p/P_i\in\operatorname{supp}W_i\}$
+互不相交。
+特别地，集合 $\mathcal P_i(Z)$ 互不相交，且
+$\prod_i\mathcal P_i(Z)$ 中的每个元组都由不同的素数组成。
+槽的数目与长度将在后面选择，但它们
+独立于 $Z$ 而固定。下面对槽 $i$ 的 $p\in1_T$ 求和
+始终保留这同样的排除与环形支撑。
+
+对槽素数的无平方因子乘积 $D$，用
+$I_{\eta;D}(X,Y,Z)$ 表示在其完备化行中插入
+指示函数 $1_{D\mid cn^3}$ 的方程~\eqref{eq:general-probe}。
+于是 $I_{\eta;1}=I_\eta$。对元组
+$(p_1,\ldots,p_K)\in\prod_i\mathcal P_i(Z)$ 与
+$J\subseteq\{1,\ldots,K\}$，记 $p_J=\prod_{i\in J}p_i$，其中
+$p_\varnothing=1$。子集 $J$ 索引重标度的槽，$J^c$
+索引带标记的槽；这一子集记号不同于正规化
+探针 $J_{\mathrm{II},\eta}$。由有限恒等式定义修正探针
+\begin{equation}\label{eq:compensated-probe-definition}
+\begin{split}
+ I_{\eta,\mathrm{modified}}(Z)
+ =\sum_{(p_i)\in\prod_i\mathcal P_i(Z)}\prod_{i=1}^K W_i(q_{p_i}/P_i)
+ \sum_{J\subseteq\{1,\ldots,K\}}&(-1)^{|J|}q_{p_J}^{-3/2}
+          \overline{\eta(p_{J^c})}\\
+ &\cdot I_{\eta;p_{J^c}}
+       (X/q_{p_J},Y/q_{p_J},Zq_{p_{J^c}}).
+\end{split}
+\end{equation}
+等价地，在每个素数 $p$ 处，该运算为带标记项
+$\overline{\eta(p)}I_{\eta;p}(X,Y,Zq_p)$ 减去重标度项
+$q_p^{-3/2}I_\eta(X/q_p,Y/q_p,Z)$。公式
+\eqref{eq:compensated-probe-definition} 规定了它们的复合：
+每个槽窗口停留在其原始尺度 $P_i$，包括当
+另一个槽改变了完备化尺度时。在 $1_T$ 上，对每个
+$\theta\in\widehat T$ 有 $\theta(p)=1$。因此带标记与 $\overline G$ 的 Fourier 分解
+可交换，并在每个被加项中保持
+同样的排除集与零点掩码。
+该减法旨在抵消高端上的标量素数贡献，
+留下矩估计所用的六次特征素因子。节~\ref{sec:local-compensation} 证明精确
+恒等式并界定剩余的局部误差。
+
+\section{系数约定与有限相关性}
+\label{sec:additional-arithmetic}
+
+我们记录关于素因子的补充系数约定，
+然后证明一个固定射线素数正规化因子以及下面所需的完整有限 Fourier
+相关性。后者保留共享的素数幂，并将
+用于加性 Gram 界以及四阶矩。第 I 部分的
+剩余符号与固定数据约定仍然有效。
+
+\subsection{补充系数条件}
+
+我们使用节~\ref{sec:arithmetic} 中的普通多项式与逆多项式、环形剖面以及固定算术
+数据 $\mathcal A$。以下条件
+规定了本部分所用的额外素因子与移动零点支撑。
+
+对数长度为 $z_i$ 的素数槽为
+\begin{equation}
+ Q_{\psi,i}=Z^{-z_i/2}\sum_{p\ {\rm prime}}
+       \psi(p)\nu_i(p)W_i(q_p/Z^{z_i}).
+ \label{old-eq:1.2}
+\end{equation}
+这里 $\nu_i$ 是一个固定的有限射线特征，或这类特征的固定有限线性
+组合。它独立于该行以及
+其它所选素数。在施加任何公共掩码或行零点延拓之前，不同的槽具有互不相交的底层素数
+支撑。对于
+节~\ref{sec:plain} 的四阶矩，一个固定的有限射线特征群 $\Theta$
+是数据的一部分，且在每个正长度槽中系数
+非零的每个特征分量都必须属于 $\Theta$。
+节~\ref{sec:inverse} 的逆矩还允许一个有界
+系数 $a_i(p)$，它为每个槽独立选取，并独立于
+该行及所有其它列；素数元组的系数于是为
+其各个槽系数之积。$\Theta$ 限制
+不适用于这些单独的逆矩权重。
+
+对于一个辅助四阶矩，各行是元素 $0<q_k\ll Z^m$，且
+\begin{equation}
+ \psi_k(n)=\tau(n)\chi_n(k),\qquad M=m+q.
+ \label{old-eq:1.3}
+\end{equation}
+扭曲 $\tau$ 在其外标签固定后对其行和是公共的，
+其分解为固定有限射线因子与移动
+剩余符号因子的显示分解是数据的一部分。设 $D_{\mathrm{mov}}$ 为
+所有好素数的无平方因子乘积，在这些素数处至少有一个显示的移动
+因子在非单位元上有其自然零点。这包括一个素数，即使
+该因子有可被六整除的指数（包括指数为零），或当
+局部特征在相乘后相消时。我们要求
+$q_{D_{\mathrm{mov}}}\le Z^q$，重迭的素数只计一次。
+
+一个附加穿孔是一个指示函数 $1_{(n,R)=1}$，其中 $R$ 无平方因子，
+$q_R\le Z^B$，且 $B$ 在一个先给定的有界范围内。它必须对
+当前行和以及该和中每个普通因子与素因子都是公共的；它
+可以依赖于先前冻结的外标签。一个素数只有通过将其
+显示的局部因子精确分解为该互素指示函数与所保留的局部或
+固定射线特征相位，才能从 $D_{\mathrm{mov}}$ 中移出并放入 $R$。那些相位必须保留，
+重构后的零点必须从显示的移动因子中移除，并且
+公共穿孔要在节~\ref{sec:plain} 中的自然反射之前删除。
+任何零点素数都不得从两个支撑中被省略。
+若一个在该素数处仍然分歧的移动特征保留下来，该素数就留在
+$D_{\mathrm{mov}}$ 中；只有多余的零点可以转移到 $R$。
+这里一个固定的有限射线特征具有其完整的零点延拓表示，
+且其射线群按前述意义固定；一个具有移动导子的特征
+不能被重新标记为固定。一个局部冻结的移动扭曲因子或
+多余零点掩码保留所述的移动支撑与穿孔
+要求。特别地，一个随 $Z$ 变化的多余掩码不能包含
+在固定算术数据中。$\chi_n(k)$ 的零点延拓允许
+随 $k$ 自然变化，但该变化行因子
+与固定扭曲之间的相消不可以被改写为每一行单独选取的穿孔。外部
+选取的依赖行的穿孔与依赖行的列系数
+不属于此类。这个全支撑约定支配
+节~\ref{sec:plain} 中的每一次四阶矩调用。
+
+公共一致性约定对这些系数类有以下附加条款。
+任何所需的槽网格只依赖于固定的
+实对数长度范围、严格余量与指定的正幂
+损失。有限半范数阶、多项式高度阶、隐含常数
+与下阈值也可以依赖于一个指定的固定槽数。
+它们在移动模、包含于 $M$ 中的根式、
+容许穿孔以及处于其所述范围内的外标签上一致，即使
+某个外标签在一次行和期间被固定。除子有界重数定义中的
+常数 $C$ 也可以依赖于这个固定槽数。
+$C$ 与 $Z$、当前各行以及被平均标签的独立性，
+以及重数只依赖于 $f$ 的任何单独要求，都保持
+如节~\ref{sec:arithmetic}。槽数是一个单独的固定
+参数，移动标签仍在 $\mathcal A$ 之外。
+
+\subsection{固定射线类中的素数计数}
+
+\begin{lemma}[固定射线素数正规化因子]\label{lem:ray-prime-normalizer}
+设 $T$ 为 $F$ 的射线类群的一个固定商，当某个非分歧素理想的像是单位元时
+记 $p\in1_T$。
+对一个固定的非负、非零光滑环形权重 $W$，
+\begin{equation}\label{eq:ray-prime-normalizer}
+ \sum_{p\in1_T}W(q_p/P)q_p^{-5/6}
+ \sim\frac{P^{1/6}}{|T|\log P}
+      \int_0^\infty W(y)y^{-5/6}\,dy.
+\end{equation}
+删去任何进一步的固定有限素数集不改变这一
+渐近。其下阈值可以依赖于所有固定数据。
+\end{lemma}
+
+\begin{proof}
+对于对应于 $T$ 的 $F$ 的固定阿贝尔扩张，固定 Frobenius 类中的素理想
+定理给出
+\[
+ \pi_{1_T}(x):=\#\{p\in1_T:q_p\le x\}
+       \sim\frac{\operatorname{Li}(x)}{|T|}.
+\]
+这是 \cite[定理 1.1]{TZ} 中 Chebotarev 的固定扩张推论；
+该扩张及其导子在
+$x\to\infty$ 时固定。若 $\operatorname{supp}W\subset[a,b]\subset(0,\infty)$，
+则当 $P\to\infty$ 时误差 $o(x/\log x)$ 对 $aP\le x\le bP$ 一致。
+因此当
+$d\pi_{1_T}(x)$ 被 $dx/(|T|\log x)$ 替换时，Stieltjes 分部积分把
+方程~\eqref{eq:ray-prime-normalizer} 的左端改变 $o(P^{1/6}/\log P)$。所得积分是
+\[
+ \frac{P^{1/6}}{|T|\log P}
+ \int_a^b W(y)y^{-5/6}\frac{\log P}{\log(Py)}\,dy.
+\]
+最后的比值一致地趋于一。这证明了该公式及其
+正性。一个固定有限集最终位于环形窗口之外。
+没有使用关于射线导子一致的误差指数。
+\end{proof}
+
+\subsection{完整有限 Fourier 相关性}\label{sec:finite-correlations}
+
+我们现在允许模中有任意素数幂。下面的二元记号
+$G(a,k)$ 是一个有限 Fourier 和；它不同于引理~\ref{lem:fixed-gauss-phase}
+的一元有限射线函数 $G(a)$。定义
+\begin{equation}
+ G(a,k)=q_a^{-1/2}\sum_{x\bmod a}\chi_a(x)e(kx/a),\qquad G(1,k)=1.
+ \label{old-eq:2.4}
+\end{equation}
+本小节中所有特征都具有节~\ref{sec:arithmetic} 中指定的零点延拓，
+且我们令 $v_p(0)=+\infty$。
+
+\begin{lemma}[素数幂 Fourier 和]\label{lem:prime-power-fourier}
+对 $P=q_p$ 与每个整数 $a\ge1$，
+\begin{equation}
+ \begin{aligned}
+ |G(p^a,k)|&=P^{(a-1)/2}1_{v_p(k)=a-1},&&6\nmid a,\\
+ G(p^a,k)&=P^{a/2}1_{p^a\mid k}
+             -P^{a/2-1}1_{p^{a-1}\mid k},&&6\mid a.
+ \end{aligned}
+ \label{eq:gauss-local}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+把模 $p^a$ 的剩余写成 $x_0+py$，其中 $x_0\bmod p$，
+$y\bmod p^{a-1}$。当且仅当 $p^{a-1}\mid k$ 时对 $y$ 的求和为零，
+否则等于 $P^{a-1}$。在后一情形写 $k=p^{a-1}k_0$。
+剩下的正规化和为
+\[
+ P^{a/2-1}\sum_{x_0\bmod p}\chi_p(x_0)^a e(k_0x_0/p).
+\]
+若 $6\nmid a$，其内和当 $p\mid k_0$ 时为零，否则
+绝对值为 $\sqrt P$。若 $6\mid a$，内和是
+加性特征在单位元上的和，即 $P1_{p\mid k_0}-1$。这些
+恰好是命题中的两种情形。
+\end{proof}
+
+\begin{lemma}[完整相关性与公共因子]\label{lem:full-correlation}
+对 $S$ 之外的本原模 $u,v$ 与 $j\in\mathcal O$，令
+\begin{equation}
+ F(u,v;j)
+ =\sum_{\substack{x\bmod u,\ y\bmod v\\
+                    vx-uy\equiv j\pmod{uv}}}
+       \chi_u(x)\overline{\chi_v(y)}.
+ \label{old-eq:2.11}
+\end{equation}
+则
+\[
+ F(u,v;j)=\frac1{\sqrt{q_uq_v}}\sum_{h\bmod uv}
+ G(u,h)\overline{G(v,h)}e(-jh/(uv)).
+\]
+在零频率处，除非 $u=v$ 否则 $F(u,v;0)=0$，且
+$F(u,u;0)=\varphi(u)$，其中 $\varphi(u)$ 是模 $u$ 的单位元个数。
+
+设 $C=(u,v)$ 并写 $u=Cn_1$，$v=Cn_2$，其中 $(n_1,n_2)=1$。
+则除非 $C\mid j$ 否则 $F(u,v;j)=0$。对 $j=Ck$，
+\begin{equation}
+ \begin{aligned}
+ F(Cn_1,Cn_2;Ck)
+ &=\chi_{n_1}(k)\overline{\chi_{n_2}(-k)}
+      \mathcal R(n_1,n_2)L_C(n_1,n_2;k),\\
+ L_C(n_1,n_2;k)
+ &=\sum_{\substack{x,y\bmod C\\n_2x-n_1y\equiv k\pmod C}}
+       \chi_C(x)\overline{\chi_C(y)}
+   =\prod_{p^c\parallel C}L_{p^c}.
+ \end{aligned}
+ \label{eq:correlation-lift}
+\end{equation}
+对 $P=q_p$ 与 $p\nmid n_1n_2$，局部因子为
+\begin{equation}
+ L_{p^c}=P^{c-1}\chi_p(n_1/n_2)^c
+ \begin{cases}
+ P-1,&p\mid k,\\
+ -1,&p\nmid k,\ 6\nmid c,\\
+ P-2,&p\nmid k,\ 6\mid c.
+ \end{cases}
+ \label{eq:correlation-local}
+\end{equation}
+若 $p$ 恰好整除 $n_1,n_2$ 之一，局部因子为
+$P^{c-1}(P-1)1_{6\mid c}1_{p\nmid k}$。在真实剩余轨迹
+$(n_1,n_2)=1$ 上，$L_C$ 意指
+方程~\eqref{eq:correlation-lift} 中的同余和。当 $L_C$ 用于所有剩余
+对时，它反而表示这些局部
+公式的人为乘积延拓，当 $p\mid(n_1,n_2)$ 时局部值定义为零。
+在真实剩余轨迹之外，这不是原来的同余和。
+真实函数与这一人为延拓都满足
+$|L_C|\le q_C$，且该延拓在每个剩余列中模
+$\operatorname{rad}C$ 周期。
+\end{lemma}
+
+\begin{proof}
+在所显示的 Fourier 变换中展开两个 Gauss 和，留下
+\[
+ \frac1{q_uq_v}\sum_{x\bmod u,y\bmod v}\chi_u(x)\overline{\chi_v(y)}
+ \sum_{h\bmod uv}e\bigl(h(vx-uy-j)/(uv)\bigr).
+\]
+加性正交性使内和在同余成立时
+为 $q_uq_v$，否则为零。若 $j=0$ 且某个被加项非零，则 $x$ 与 $y$ 是
+模 $u$ 与 $v$ 的单位元。将同余模 $u$ 约化得 $u\mid v$，
+模 $v$ 约化得 $v\mid u$。由于生成元是本原的，
+$u=v$。该同余于是说明 $x=y\bmod u$ 并给出 $\varphi(u)$。这一
+论证在局部特征幂为主特征时也用到零点掩码。
+
+$C$ 的可除性立即可得。除以 $C$ 后，$j=Ck$ 的同余
+为
+\[
+ n_2x-n_1y\equiv k\pmod{Cn_1n_2}.
+\]
+模 $n_1$ 与 $n_2$ 的约化给出（保留零值）
+\[
+ \chi_{n_1}(x)=\chi_{n_1}(k)\overline{\chi_{n_1}(n_2)},\qquad
+ \overline{\chi_{n_2}(y)}
+ =\overline{\chi_{n_2}(-k)}\chi_{n_2}(n_1).
+\]
+两个单位因子之积为 $\mathcal R(n_1,n_2)$。
+剩下的是确定模 $C$ 同余的升高的重数。这可以
+逐个素数检验。若 $c=v_p(C)$ 且两个剩余
+模都不含 $p$，则没有额外的升高。若比方说
+$d=v_p(n_1)>0$ 且 $p\nmid n_2$，则 $y\bmod p^c$ 自由，且同余
+由它唯一确定 $x\bmod p^{c+d}$。模 $p^c$ 的约化
+恰好是方程~\eqref{eq:correlation-lift} 中的公共同余。
+$p\mid n_2$ 的情形是对称的，且这一论证包含 $c=0$。
+因此中国剩余定理给出与 $L_C$ 中所用公共解之间的一个
+双射，即使 $C$ 与一个剩余模相交。
+
+对于局部计算，置 $k_p=\mathcal O/(p)$ 与 $A=\chi_p^c$，即
+$k_p^\times$ 的一个零延拓特征。由于 $n_1,n_2$ 中至少有一个
+在 $p$ 处是单位元，模 $p$ 的每个
+解有 $P^{c-1}$ 个模 $p^c$ 的升高。若两者都是单位元且
+$p\mid k$，单位变量成比例，域和为
+$A(n_1/n_2)(P-1)$。若 $p\nmid n_1n_2k$，置
+$y=(k/n_1)t$ 与 $x=(k/n_2)(1+t)$。域和变为
+\[
+ A(n_1/n_2)\sum_{t\ne0,-1}A((1+t)/t)
+ =A(n_1/n_2)\sum_{z\in k_p^\times\setminus\{1\}}A(z).
+\]
+当 $A$ 非主时它为 $-A(n_1/n_2)$，当 $A$ 为主时
+为 $(P-2)A(n_1/n_2)$。若 $p\mid n_1$ 且 $p\nmid n_2$，
+域方程迫使 $x=k/n_2$。当 $p\mid k$ 时其特征为零。当
+$p\nmid k$ 时，对 $y$ 的剩余求和除非 $A$ 为主否则为零，
+此时它为 $P-1$。另一情形是对称的。这证明了真实剩余轨迹上的所有局部
+公式。当两个剩余都与 $p$ 相交时按所规定的零
+延拓它们，得到剩余列模 $p$ 的函数，
+每个的绝对值至多为 $P^c$。它们之积也证明了
+人为延拓的最终论断；在一个新加入的对处不宣称
+同余和恒等式。
+\end{proof}
+
+对某些应用，更可取的是移除两个完整模公共的所有素数
+及其全部重数。下一种形式在每个剩余乘积上留下一个
+公共行特征。
+
+\begin{lemma}[完备公共支撑相关性]
+\label{lem:complete-support-correlation}
+假设 $u=Da$，$v=Eb$ 是本原的且在 $S$ 之外，其中
+$(a,b)=1$ 且 $(ab,DE)=1$。则对每个 $j\in\mathcal O$，
+\begin{equation}
+ \begin{split}
+ F(Da,Eb;j)={}&F(D,E;j)\mathcal R(a,E)
+       \overline{\mathcal R(b,D)}\mathcal R(a,b)\\
+ &\hspace{8mm}\cdot\chi_a(j)\overline{\chi_b(-j)}.
+ \end{split}
+ \label{eq:correlation-child-character}
+\end{equation}
+模 $D,E$ 可以包含任意素数幂，包括共享的辅助
+素因子。
+\end{lemma}
+
+\begin{proof}
+在 $a$ 与 $b$ 的素数处，解
+方程~\eqref{old-eq:2.11} 中的同余分别给出
+$\chi_a(j)\overline{\chi_a(Eb)}$ 与
+$\overline{\chi_b(-j)}\chi_b(Da)$。当 $j$ 的某个
+特征为零时，这些陈述仍然有效；只有所显示的单位因子被求逆。
+在 $DE$ 的素数处作变量替换 $x'=bx\bmod D$，$y'=ay\bmod E$。
+同余变为 $Ex'-Dy'\equiv j\pmod{DE}$，其特征因子
+改变 $\overline{\chi_D(b)}\chi_E(a)$。剩下的单位因子是
+\[
+ \frac{\chi_E(a)}{\chi_a(E)}
+ \frac{\chi_b(D)}{\chi_D(b)}
+ \frac{\chi_b(a)}{\chi_a(b)}
+ =\mathcal R(a,E)\overline{\mathcal R(b,D)}\mathcal R(a,b).
+\]
+由假设，这里所有分母都是单位元的符号。中国
+剩余定理与 $F(D,E;j)$ 的定义完成证明。
+\end{proof}
+
+方程~\eqref{eq:correlation-child-character} 的假设不会
+因把 $\mathcal R$ 延拓为双特征而消除。为确切陈述与
+M\"obius 反演一起使用的延拓，固定 $D,E,j$ 并定义
+$\widetilde F_{D,E}(a,b;j)$ 为该方程右端对所有满足 $(ab,DE)=1$、
+在 $S$ 之外的本原 $a,b$ 的取值，即使
+$(a,b)>1$ 也保留其零符号。对此轨迹上任意有限系数阵列 $c(a,b)$，
+\[
+ \sum_{(a,b)=1}c(a,b)F(Da,Eb;j)
+ =\sum_{a,b}c(a,b)\widetilde F_{D,E}(a,b;j)
+                \sum_{t\mid a,\ t\mid b}\mu(t).
+\]
+确实，完整的内除子和为 $1_{(a,b)=1}$，且两个相关
+表达式在该轨迹上一致。$\widetilde F_{D,E}$ 在别处的值
+是人为的，并非 $F(Da,Eb;j)$ 的公式。特别地，
+必须在逐因子估计分离两个
+剩余列之前插入完整除子和；由单个除子
+项引入的额外公共素数不会成为真实 $D,E$ 相关性的素数。

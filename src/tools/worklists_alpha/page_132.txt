@@ -1,3 +1,0 @@
-PAGE 132   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 1 glyph(s) B1 | zh 0
-   \mathcal B  y  645.6 x  235.9   line: B ( k ′′ ) = 1 .

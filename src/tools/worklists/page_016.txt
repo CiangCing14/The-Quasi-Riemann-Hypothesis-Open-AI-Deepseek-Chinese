@@ -1,8 +1,0 @@
-PAGE 16
-counts pdf: {'sum': 0, 'prod': 2, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 1}
-
-PROD      y  591.9 x  338.9- 352.9 
-          line: m = um S m good , m S = Y π p v p ( m ) ,
-PROD      y  662.5 x  338.0- 352.0 
-          line: χ A ( m ) = χ A ( um S ) R ( A, m good ) Y χ p ( A ) v p ( m ) . (4.8)
-BAR       y  681.0 x  334.3- 336.6 

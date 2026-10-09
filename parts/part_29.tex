@@ -1,0 +1,218 @@
+\begin{proposition}[选择次序]\label{prop:parameter-order}
+在方程~\eqref{eq:part-II-bootstrap} 的矛盾之下，存在数
+\[
+ 0<\omega<\Delta,\qquad \sigma>0
+\]
+以及固定的几何、矩损失、容量减量、槽系统、振幅宽度、分箱宽度 \(e>0\) 和扩张 \(0<\zeta<1/48\)，
+所有这些都在目标特征之前选定，并具有下述性质。
+对每个本原有限阶目标 \(\eta\)，随后可以选取其固定的算术数据、一个正的高度指数 \(\tau_\eta\)、
+一个有限的外部尾阶 \(N_\eta\) 以及一个下阈值 \(Z_{0,\eta}\)，使得对 \(Z\ge Z_{0,\eta}\)，
+\[
+ |J_{\mathrm{II},\eta}(Z)|\ll_\eta Z^{C(7/8)+\omega},\qquad
+ |J_{\mathrm{II},\eta}(Z)-f_{\mathrm{II},\eta}(Z)|
+ \ll_\eta Z^{C(\beta_*)-\sigma}.
+\]
+指数 \(\omega,\sigma\) 不依赖于 \(\eta\)。
+截断 \(T_1=Z^{\tau_\eta}\) 只出现在估计中，而不出现在这两个函数中的任何一个里。
+\end{proposition}
+
+\begin{proof}
+理想的余量是
+\[
+ m_{\rm lo}=\Delta,\qquad m_{\rm hi}=\frac{51}{64}\Delta,\qquad
+ m_{\rm high}:=\min\{m_{\rm hi},m_{\rm small}\}>0.
+\]
+主围道余量是方程~\eqref{old-eq:5.14} 中的 \(m_w,m_z\)。
+为 \(m_{\rm lo},m_{\rm high},m_w,m_z\) 中的每一个保留一半。
+在紧实参数区间上，乘以所有所需的探测器、矩、容量与舍入损失的系数
+都独立于目标而有界。
+事实上，\(\delta\ge1/50\)、\(D_x\ge37/18\) 且 \(\mathcal J\ge35/54\)；
+二进长度有界，并且命题~\ref{prop:detector-counts} 给出了固定的逆宽度与供给余量。
+等式 \(\delta=\alpha\) 使用了上面的单独无槽界。
+选取矩损失与容量减量，使得它们在高度指数中的总代价小于 \(m_{\rm high}/8\)。
+
+设 \(\eta_{\rm mesh}>0\) 为引理~\ref{lem:plain} 对这些损失与有界实区间所提供的网格。
+它在 \([3/4,1]\) 上的一致断言特别适用于此处所用的紧闭包 \(\kappa\in[3/4,5/6]\)，
+并且该网格不依赖于槽的数目。
+只有最终的半范数与高度阶可能依赖于一个固定的槽计数。
+设 \(b_{\rm round}>0\) 足够小，使得低于 \(b_{\rm round}\) 的平方尖峰舍入损失
+在指数基的有界变化之后代价小于 \(m_{\rm high}/8\)。
+选取一个固定的偶整数 \(K\)，使得
+\[
+ \frac{2\ell}{K}<
+ \min\left\{\eta_{\rm mesh},b_{\rm round},\frac1{185}\right\},
+ \qquad \ell_i=\frac{\ell}{K}\quad(1\le i\le K).
+\]
+这些正长度之和为 \(\ell\)，且独立于目标与 \(Z\)。令 \(P_i=P=Z^{\ell/K}\)。
+对 \(1\le i\le K\)，令
+\[
+ I_i=\left(1+\frac{2i-1}{2K+1},\,1+\frac{2i}{2K+1}\right)\subset(1,2)
+\]
+并选取一个非负、非零的 \(W_i\in C_c^\infty(I_i)\)。
+这些区间具有正的间隙。
+因此，在施加射线、排除集或行掩码之前，它们的底层素窗口对每个 \(Z\) 都是不相交的。
+方程~\eqref{eq:compensated-probe-definition} 使每个窗口在每个被加项中保持其原始尺度。
+
+对每个选定的行区间，\(U=Z^d\) 满足 \(d\ge1/2\)，故
+\[
+ w_i=\frac{\ell_i}{d}\le\frac{2\ell}{K}<\eta_{\rm mesh},
+ \qquad
+ \delta\max_iw_i\le\frac{2\ell}{K}<b_{\rm round}.
+\]
+第二个不等式使用了 \(\delta\le5/6<1\)。总可用长度仍为 \(\ell/d\)。
+对 \(d\le h\)，它至少为 \(8/39\)，超出 \(7/37\) 达 \(23/1443\)。
+对 \(h<d\le h+\zeta\) 且 \(\zeta<1/48\)，它超过 \(1/5\)，
+其超出 \(7/37\) 的部分为 \(2/185\)。
+因此每个选定的逆容量以及较小的普通容量都得到供给。
+额外的界 \(2\ell/K<1/185\) 低于后一间隙的一半。
+零容量的邻域（包括等式的端点）使用无槽矩。
+实际的环带比将名义长度改变 \(O_K(1/\log U)\)，
+这被足够大阈值处的固定严格余量所吸收。
+
+内部的中心放大器也与这些窗口保持分离。
+用 \(\sigma_{\rm width}\) 表示引理~\ref{lem:plain} 证明中记为 \(\sigma\) 的宽度减量。
+该证明使用池指数 \(\ell_*=\sigma_{\rm width}/3\) 以及低于 \(\sigma_{\rm width}/6\) 的网格。
+在基 \(U\) 处，每个活跃的物理槽的范数至多为 \(2U^{\eta_{\rm mesh}}\)，
+而池从 \(U^{\ell_*}/2\) 开始。
+它们固定的指数间隙使这些集合对所有充分大的 \(U\) 都不相交，且在选定的 \(d\)-区间上一致。
+带标记的逆矩没有网格条件。
+
+方程~\eqref{eq:principal-scalar} 中的正规化因子对这一实际选取非零。
+令
+\(c_i=\int_0^\infty W_i(y)y^{-5/6}\,dy>0\)。
+已在节~\ref{sec:principal-signal} 中证明的渐近式特殊化为
+\[
+ S_i(Z)\sim\frac{P^{1/6}c_i}{|T|\log P}>0,\qquad
+ A_T(Z)\sim
+ \left(\frac{K}{|T|\ell}\right)^K
+       \left(\prod_i c_i\right)(\log Z)^{-K}>0.
+\]
+符号使用了偶数的 \(K\)。
+任何后来的固定排除集只影响公共下阈值，因为其素数最终会离开所有这些窗口。选取
+\[
+ \kappa_P=\frac7{16}\frac{\ell}{K}=\frac7{96K},
+ \qquad 0<\kappa_P<\frac78\min_i\ell_i=\frac7{48K},
+ \qquad m_P:=\kappa_P.
+\]
+因此主逼近有一个在目标之前选定的正余量。
+子集的数目、窄窗口的半范数以及它们的有限高度阶可能依赖于这个固定的 \(K\)。
+
+选取振幅宽度、剩余的幂损失以及 \(e\)，使得它们在高度中的总代价小于 \(m_{\rm high}/8\)，
+并且使得
+\[
+ (1+h)e+\epsilon_{\rm pr}<m_w/4,\qquad
+ e+\epsilon_{\rm pr}<m_z/4,\qquad
+ e+\epsilon_{\rm pr}<m_P/4.
+\]
+这里 \(\epsilon_{\rm pr}>0\) 包含了主余项估计中所选取的小幂次。
+还要求 \(e<10^{-3}\) 以及引理~\ref{lem:detector-dyads} 中的界 \(e_0\)。
+槽长度已经固定，因此振幅细分中所需的小幂次可以依据它们的正下界来选取。
+所有这些选择只依赖于 \(\Delta\) 与目标前的槽系统。
+
+选取
+\[
+ 0<\zeta<\min\{1/48,m_{\rm high}/16\}.
+\]
+于是频率扩张的代价至多为 \(2\zeta<m_{\rm high}/8\)。
+现在在节~\ref{sec:tails} 中选取绝对直线 \(z_\infty>2\) 足够靠右，
+使得其大行和相对于 \(C(\beta_*)\) 具有大于 \(m_{\rm high}\) 的节省。
+它的指数只依赖于这些实选择，因此 \(z_\infty\) 也先于目标。
+选取方程~\eqref{eq:shared-principal-nonvanishing} 所需的目标前截断。
+在目标固定之后，命题~\ref{prop:probe-errors} 所要求的任何额外固定排除素数
+都可以添加到 \(S\) 中：同一个正乘积尾控制函数保持共享的压缩，
+且 \(T\) 与槽窗口都不改变。
+
+为清晰起见，非主实比较在引理~\ref{lem:high-bin} 中的所有逐点对上都一致。
+设 \(\epsilon_{\rm real}(d)\ge0\) 汇集相关区间所分配的实、网格与矩损失。
+端点不等式、中间不等式以及正的斜率给出
+\begin{equation}\label{eq:saving-criterion}
+ E(d)+\epsilon_{\rm real}(d)
+ \le(\beta_*-7/8)-\varepsilon_{\rm hi},
+ \qquad \varepsilon_{\rm hi}>0,
+\end{equation}
+对每个出现的 \((R,q)\) 以及每个适中的 \(d\) 成立，同时仍保留 \(m_{\rm high}\) 的一个固定比例。
+因此同一不等式对 \(E_{\max,Z}(d)\) 成立，且在 \(Z\) 上一致。
+小界与大界各自具有其所陈述的节省。
+将次幂正规化因子估计应用一次于非主与外行的贡献，
+并使用低于 \(m_{\rm high}/8\) 的幂吸收剩余的有限二进重数。
+引理~\ref{lem:principal-residue-interface} 已经包含了它自己的正规化因子余量
+\(\epsilon_{\rm pr}\)。上面的四个高度实分配代价小于 \(m_{\rm high}/2\)；
+这最后一个余量留下超过 \(3m_{\rm high}/8\)。
+主不等式为 \(m_w,m_z,m_P\) 中的每一个留下超过 \(3/4\)。因此可以在目标之前固定
+\[
+ m=\frac14\min\{m_{\rm high},m_w,m_z,m_P\}>0
+\]
+作为一个在保留高度因子之前的公共剩余高度节省。
+对于低估计，以目标前损失 \(\Delta/2\) 应用方程~\eqref{eq:part-II-normalized-low}，
+并令 \(\omega=\Delta/2\)。
+设 \(\epsilon_{\rm ht}>0\) 为已随这些实损失选定的有限多个探测器高度余量中的最小值。
+
+现在固定一个本原目标 \(\eta\)。
+选取其容许的固定算术数据以及最终的排除集 \(S\)，包括其导子、公共截断以及刚才描述的进一步固定排除。
+物理表达式、\(H_\eta\)、\(c_S\) 以及信号都使用这同一份数据。
+群 \(T\) 与槽系统保持独立于目标。
+为这份数据固定前面结果所供给的所有内部矩、半范数与 Sobolev 阶。
+它们在变动模数、公共掩码与冻结标号上的一致性给出一个有限的 \(A_\eta\)，
+它控制所有保留高度因子的乘积，包括二进、素数、分子反射与行计数高度因子。
+它独立于任何后来的外部测试阶。
+全高度修正界以及共享解析引理中的直接全局或绝对界
+同样为所有被丢弃的物理片段给出一个有限的尺度次数 \(B_\eta\)，独立于后来的阶 \(N\)。
+将这些片段正规化并对它们的有限多个类型求和，只会增大这个固定的 \(B_\eta\)。
+
+我们使用在节~\ref{sec:selection} 末尾验证的高度上界。
+设 \(A_{{\rm ht},\eta}\le A_\eta\) 控制有限多个探测器高度阶，必要时增大 \(A_\eta\)，并令
+\[
+ \tau_{0,\eta}:=
+       \frac{d_{\min}\epsilon_{\rm ht}}{20(1+A_{{\rm ht},\eta})}>0.
+\]
+这个数在目标的保留阶之后、但在 \(N\) 与 \(Z\) 之前固定。若
+\(0<\tau\le\min\{d_{\min}/100,\tau_{0,\eta}\}\) 且 \(T_1=Z^\tau\)，
+则对 \(U\ge Z^{d_{\min}}\) 与充分大的 \(Z\)，
+\[
+ T_1\le U^{1/100},\qquad
+ (1+T_1)^{A_{{\rm ht},\eta}}
+ \le2^{A_{{\rm ht},\eta}}Z^{d_{\min}\epsilon_{\rm ht}/20}
+ \le U^{\epsilon_{\rm ht}/10}.
+\]
+由 \(\epsilon_{\rm ht}\) 的定义，这在整个适中区间上证明了引理~\ref{lem:detector-dyads} 中的
+每个字面条件 \((1+T_1)^{A_{\mathcal A}}\le U^{\epsilon/10}\)。
+第一个界还使探测器的粗略误差
+\(U^{-189/100+o(1)}T_1^2\le U^{-187/100+o(1)}\) 趋于零。
+每个带缓冲的适中区间都满足 \(d\le h+\zeta<1\)；小行与绝对大行不使用带缓冲的截断。
+
+固定的有限外部坐标列表（包括物理的 \(\Im z\) 坐标）使用方程~\eqref{eq:stage-height-allocation} 中的单一分配。
+它的矩阵由槽系统与有限保留估计固定，且独立于外部导数阶。
+对每个这样的 \(\tau\)，二进、见证与素数估计可以如它们各自陈述所允许的那样，
+在 \(\tau\) 之后选取其辅助外部阶，使得它们完整的逐点界成立。
+在吸收它们被丢弃的部分时选取一个严格的幂间隙；
+由此产生的外部半范数常数随后被依赖于 \(\tau\) 的下阈值所吸收。
+对任何所要求的剩余阶 \(N\)，这些辅助阶可以进一步增大；
+这只改变外部半范数常数与下阈值，而不改变 \(A_\eta\)、\(B_\eta\) 或
+\(\tau_{0,\eta}\)。不再对经过外部微分的剖面重新应用内部矩。
+
+因此，结合引理~\ref{lem:high-bin}、所有行区间以及主余项估计，
+对每个固定的 \(N\) 与这个上界区间中充分大的 \(Z\)，得到
+\[
+ |J_{\mathrm{II},\eta}(Z)-f_{\mathrm{II},\eta}(Z)|
+ \ll_{\eta,N}
+ Z^{C(\beta_*)-m}(1+T_1)^{A_\eta}
+       +Z^{B_\eta}T_1^{-N}.
+\]
+下阈值允许依赖于 \(\tau,N,\eta\)。
+这就是方程~\eqref{eq:late-height-hypothesis}。
+其低假设是取 \(\omega=\Delta/2\) 的方程~\eqref{eq:part-II-normalized-low}，
+且这两个函数不包含 \(T_1\)。
+以 \(\sigma_0=7/8\)、\(C=C_{\mathrm{II}}\)、这个 \(m\) 以及已验证的上界 \(\tau_{0,\eta}\) 应用
+引理~\ref{lem:late-height-closure}。它选取 \(\tau_\eta\)，然后是一个公共的控制外部阶 \(N_\eta\)，
+最后是阈值。
+它给出所断言的高度估计，其中 \(\sigma=m/2>0\)。
+\(\omega\) 与 \(\sigma\) 都在目标之前固定。
+\end{proof}
+
+命题~\ref{prop:parameter-order} 与
+方程~\eqref{eq:shared-principal-nonvanishing} 验证了命题~\ref{lem:continuation-criterion} 的假设，
+其中 \(\sigma_0=7/8\)、\(J_\eta=J_{\mathrm{II},\eta}\) 且
+\(f_\eta=f_{\mathrm{II},\eta}\)。这与 \(\beta_*>7/8\) 矛盾；
+因此 \(\beta_*\le7/8\)。取 \(\sigma_0=7/8\) 的命题~\ref{prop:hecke-dirichlet-transfer}
+把本原 Hecke 结论推广到所有有限阶 Hecke 与 Dirichlet \(L\) 函数（允许主极点），
+并证明了定理~\ref{thm:main}。

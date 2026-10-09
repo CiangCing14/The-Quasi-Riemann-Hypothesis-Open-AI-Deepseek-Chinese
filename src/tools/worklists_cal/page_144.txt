@@ -1,8 +1,0 @@
-PAGE 144   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 2
-
-CAL I  y  113.8 x  510.7- 516.6
-      line: larger cutoffs, the surviving slot supports, and the j -product interval in the finite collection I
-CAL R  y  239.6 x  157.2- 166.5
-      line: R ( u ) = Z − D ′ / 2 X µ ( c ) ν ( c )1 χ ( u ) d ( c ) W ( q /Z D ′ ) . (17.68)
-CAL B  y  616.1 x  236.6- 243.8
-      line: B ( h ′ ) = 1 .

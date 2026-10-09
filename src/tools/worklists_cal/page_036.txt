@@ -1,8 +1,0 @@
-PAGE 36   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 2
-
-CAL O  y  231.2 x  309.5- 318.2
-      line: Lemma 5.4 (Lattice kernel tails) . Let Λ be either O or λ − 4 O . Suppose K : (0 , ∞ ) → C satisfies
-CAL O  y  231.2 x  352.9- 361.6
-      line: Lemma 5.4 (Lattice kernel tails) . Let Λ be either O or λ − 4 O . Suppose K : (0 , ∞ ) → C satisfies
-CAL R  y  668.1 x  333.5- 342.8
-      line: product. The reciprocity factor is the fixed bicharacter R of Equation ( 4.4 ). These are precisely

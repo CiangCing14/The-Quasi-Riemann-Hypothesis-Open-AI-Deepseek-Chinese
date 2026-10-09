@@ -1,0 +1,492 @@
+按照方程~\eqref{eq:shared-principal-nonvanishing} 所需选取固定截断。相关的
+\(H_\eta\) 在 \(\Re s>7/8\) 上全纯，在该处满足收缩性，并使用同一个
+\(S\)。令 \(\mathscr P_{\mathrm{II},\eta}\) 表示方程~\eqref{eq:compensated-poisson-identity}
+中 \(u=1\) 的项，并置
+\[
+ f_{\mathrm{II},\eta}(Z)=\frac1{2\pi i}\int_{(2)}
+ Z^{C(s)}e^{(s-5/6)^2}\frac{H_\eta(s)}{L_F^S(s,\eta)}\,ds.
+\]
+引理~\ref{lem:principal-residue-interface} 的所有假设现已在 \(\sigma_0=7/8\)
+下得到验证。其余项估计为
+\[
+ \begin{split}
+ \left|\frac{\mathscr P_{\mathrm{II},\eta}(Z)}{c_S A_T(Z)}
+       -f_{\mathrm{II},\eta}(Z)\right|
+ \ll{}&
+ Z^{C(\beta_*)+(1+h)e-m_w+\epsilon}
+ +Z^{C(\beta_*)+e-m_z+\epsilon}\\
+ &+Z^{C(\beta_*)+e-\kappa_P+\epsilon},
+ \end{split}
+\]
+其中两个几何余量为
+\begin{equation}\label{old-eq:5.14}
+ m_w:=\frac{l_y}{20}=\frac{23}{960},\qquad
+ m_z:=\frac h{600}=\frac{13}{9600}.
+\end{equation}
+引理~\ref{lem:principal-residue-interface} 包含留数路径、标量 Jacobian
+以及主积分的右移。特别地，最后一项是在其原始全局线上估计的误差；
+它不属于 \(f_{\mathrm{II},\eta}\)。该信号与物理探针都独立于 \(T_1\)。
+
+\subsection{补偿后的高指数}
+
+低阶估计与主行比较现在涉及延拓准则所需的函数
+$J_{\mathrm{II},\eta}$ 与 $f_{\mathrm{II},\eta}$。尚需证明，对某个公共的
+$\sigma>0$，
+\[
+ \left|\frac{I_{\eta,\mathrm{modified}}(Z)
+                -\mathscr P_{\mathrm{II},\eta}(Z)}{c_S A_T(Z)}\right|
+ \ll_\eta Z^{C(\beta_*)-\sigma}.
+\]
+我们首先相对于原始尺度 $Z^{C(7/8)}$ 估计这些非主贡献。除以
+$c_S A_T(Z)$ 的代价是一个任意小的幂，在最终选取余量时一次性预留。
+
+
+\begin{lemma}[单个行分箱的一个高指数]\label{lem:high-bin}
+设 \(0<d_{\min}<d_{\max}<\infty\)，令 \(U=Z^d\) 且
+\(d_{\min}\le d\le d_{\max}\)，并令
+\(\mathcal B\) 为一个固定动态分箱 \((i,a)\) 中保留的非主物理行
+\(q_u\asymp U\) 的有限集。置
+\(\delta=2a-1\)。假设引理~\ref{lem:buffered-bins}、\ref{lem:detector-dyads}
+与 \ref{lem:bin-prime-bound} 的分箱与高度假设成立，其中
+\(0<e<10^{-3}\)、\(T_1=Z^\tau>2\)、\(0<\tau\le d_{\min}/100\)，且采用
+方程~\eqref{eq:stage-height-allocation} 中的累积分配。
+有界实范围、正的损失 \(e,\vartheta,\epsilon\) 以及槽位系统都在目标之前固定。
+
+对每个保留的外部参数元组与每个误差槽位子集，把 \(\mathcal B\)
+逐点划分为节~\ref{sec:amplitudes} 的振幅集，以及（当使用见证计数时）
+节~\ref{sec:selection} 的见证细分。假设每个这样的集合 \(\mathcal C\)
+具有主槽位均值 \(q\in[0,\delta/2]\)，如方程~\eqref{old-eq:6.6} 中那样，并且
+\[
+ \#\mathcal C\ll_{\mathcal A,\epsilon}
+ U^{R+\epsilon}(1+T_1)^{A_{\mathcal A}},
+\]
+在保留的元组与移动标号上一致。出现的 \(R,q\) 取值范围为一个固定有界集，
+可以依赖于逐点集、\(d,a\) 与 \(\beta_*\)，但除此之外不依赖于目标。
+对每个出现的对，定义
+\begin{equation}\label{eq:common-high-exponent}
+ \begin{split}
+ E(d)
+ &=a-\frac78+h\left(\frac{17}{50}-\frac16\right)
+       -a l_y-(1-a)\ell-(\delta/2-q)\ell
+       +d\left(R+\frac\delta2-\frac{17}{50}\right)\\
+ &=C_0+\frac23\delta+\frac q6-h(1-R)
+       +(d-h)\left(R+\frac\delta2-\frac{17}{50}\right),
+       \qquad C_0=-\frac1{48}.
+ \end{split}
+\end{equation}
+若 \(\mathcal B\ne\varnothing\)，令 \(E_{\max,Z}(d)\) 为在所有保留元组上、
+对所有逐点集取这些值的上确界。
+
+在中心围道
+\[
+ \Re s=a+16e,\qquad \Re w=1-a-6e,\qquad \Re z=\frac{17}{50},
+\]
+上，原始固定动态分箱和的贡献被
+\[
+ Z^{C(7/8)+E_{\max,Z}(d)+O(e+\vartheta+\epsilon)}
+ (1+T_1)^{A'_{\mathcal A}},
+\]
+所界，其中 \(\vartheta\) 是振幅分箱宽度，且
+\(A'_{\mathcal A}<\infty\) 在移动标号上一致。空分箱的贡献为零。
+\(O(e+\vartheta+\epsilon)\) 项中的常数只依赖于有界实范围与固定槽位系统，
+而不依赖于目标。不宣称单个逐点集的单独积分。固定 \(\tau>0\) 之后，
+所有被舍弃的外部片段与衔接都是 \(O_{\mathcal A,N}(Z^B T_1^{-N})\)，
+对某个固定的 \(B\) 与每个固定的 \(N\)。
+\end{lemma}
+
+\begin{proof}
+我们验证引理~\ref{lem:bin-contour-accounting} 的中心假设，它为刚才指定的
+完整修正提供围道移动及其尾部。其分箱上界由
+方程~\eqref{eq:part-II-bin-ceiling} 成立。物理的
+\(\Im z\) 坐标包含在其高度分配中，因为它进入素剖面。其余见证、二进与
+素环带坐标就是节~\ref{sec:selection} 的估计中所用的固定有限列表。
+其完整的逐点界包含在全局线或绝对线上被舍弃的辅助积分。因此
+方程~\eqref{eq:stage-height-allocation} 中的单一累积分配适用，
+而无需在之后的估计中重新申请配额。
+
+仅在保留的围道上，命题~\ref{prop:probe-errors} 给出
+方程~\eqref{eq:dynamic-compensated-decomposition} 中的分解。
+对 \(I\subseteq\{1,\ldots,K\}\)，其被加项为
+\[
+ \mathfrak H_{\eta,u,Z}^{(I)}
+ =\mathcal H_{\eta,u}(s,w,z)
+       \prod_{i\in I}\mathcal D_i(u)
+       \prod_{i\notin I}\mathcal Q_i(u;z).
+\]
+所需的反射本原分子界由分子表示及其共轭的带缓冲估计，连同
+引理~\ref{lem:deleted-euler-factors} 得出，正如命题~\ref{prop:probe-errors}
+之前所验证的。保留的 \(w\) 高度落在其允许集内。每个保留的分子都是非主的。
+
+固定一个保留元组上的一个振幅集。对一个主槽位，
+\(\mathcal Q_i=-P_i^{z-1/2}Q_i\) 且
+\(\lvert Q_i\rvert\le P_i^{g_i+\vartheta}\)。对一个误差槽位赋值 \(g_i=0\)。
+方程~\eqref{old-eq:5.13e} 把 \(I\) 中的所有误差槽位与分子一起界住；
+其证明同时对不同的严格分歧标号使用方程~\eqref{old-eq:5.13d} 中的
+实际导子亏量。它不是对每个槽位单独的分子配额。由于
+\(\mathcal H_{\eta,u}\ll_\epsilon U^\epsilon\)，在选取预备幂之后，
+将这些估计相乘得到
+\[
+ \begin{split}
+ \left|L^S(w,\chi_\bullet(u))
+       \mathfrak H_{\eta,u,Z}^{(I)}(s,w,z)\right|
+ \ll{}&U^{\delta/2+O(e)+\epsilon}(1+T_1)^{A_1}\\
+ &\cdot
+ Z^{\ell(17/50-1/2)+q\ell+O(e+\vartheta+\epsilon)}.
+ \end{split}
+\]
+这里 \(A_1<\infty\) 是目标与槽位系统的一个固定高度阶，且
+\(\sum_i\ell_i g_i=q\ell\)，包括对误差所赋的零。没有使用误差槽位的下界。
+
+乘以假定的基数即证明方程~\eqref{eq:stage-central-bound} 在 \(g=q\ell\)
+下成立，只要取 \(\varepsilon_c\) 为 \(e+\vartheta+\epsilon\) 的一个固定的
+足够大的倍数。该倍数只依赖于固定槽位系统与有界实范围。共有 \(2^K\)
+个误差子集。振幅向量的数目固定，见证二进选择只贡献 \(1+\log Z\)
+的一个固定幂。因此所需的逐点重数界成立。这些集合只在
+引理~\ref{lem:bin-contour-accounting} 用 \(\mathfrak H\) 移动了原始动态分箱和
+之后才形成。它们不用于延拓，也不单独积分。
+
+以 \(\sigma_0=7/8\) 与 \(g=q\ell\) 应用
+引理~\ref{lem:bin-contour-accounting}。它在
+方程~\eqref{eq:stage-high-exponent} 中的指数为
+\[
+ a-\frac78+h\left(\frac{17}{50}-\frac16\right)-a l_y-\frac{\ell}{2}
+       +q\ell+d\left(R+\frac\delta2-\frac{17}{50}\right).
+\]
+因为
+\(-(1-a)\ell-(\delta/2-q)\ell=-\ell/2+q\ell\)，
+这就是方程~\eqref{eq:common-high-exponent} 的第一行。
+代入几何关系与 \(a=(1+\delta)/2\) 即得第二行。
+特别地 \(q\ell=q/6\) 是一个以 \(Z\) 为底的指数，而非 \(dq/6\)。
+在选取剩余的预备幂之后，方程~\eqref{eq:stage-central-contribution} 中的
+显式误差在有界 \(d\)-范围上为 \(O(e+\vartheta+\epsilon)\)。
+其上确界正是陈述中的那个。引理~\ref{lem:bin-contour-accounting} 还给出
+所述的外部尾部，其尺度次数在 \(N\) 之前固定。
+\end{proof}
+
+底部分箱 \(a=51/100\) 有 \(\delta_0=1/50\)，且不需要零见证。理想计数
+\(R=1\) 连同 \(q\le\delta_0/2\) 给出
+\begin{equation}\label{eq:floor-bound}
+ E(h)\le C_0+\frac34\delta_0=-\frac7{1200}<0.
+\end{equation}
+其频率斜率 \(R+\delta_0/2-17/50\) 为正，因此这界住每个 \(d\le h\)。
+略高于 \(h\) 的小扩展将在下面加以控制。
+
+\subsection{小行范数与大行范数}\label{sec:tails}
+
+置 \(d_{\min}=1/100\)。引理~\ref{lem:compensated-absolute-local-bounds}
+界住完整选取元组的正和，其中每个 \(G_p\) 在取绝对值之前被保留。
+在小行线
+\[
+ \Re s=\beta_*+e,\qquad \Re w=1/2,\qquad \Re z=17/50
+\]
+上，方程~\eqref{eq:absolute-local-tuple-bound} 给出
+\[
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_\epsilon U^\epsilon\prod_iP_i^{17/50}
+ =U^\epsilon Z^{17\ell/50},
+\]
+在所有虚部上一致。这就是方程~\eqref{eq:small-correction-bound}，
+其高度次数为零。它在个别局部因子的零点处仍然成立。
+引理~\ref{lem:outer-row-tails} 的数据已在上面验证过，因此它适用于
+这些二进对中的每个物理行 \(u\ne1\)。其分类包含非平凡的单位分子，
+并允许主分母；这里不使用零点探测器见证或选取的矩。
+
+相对指数中不依赖于 \(d\) 的部分是
+\begin{equation}\label{eq:small-frequency-margin}
+ h\left(\frac{17}{50}-\frac16\right)-\frac{l_y}{2}
+ =-\frac{79}{800}.
+\end{equation}
+方程~\eqref{eq:small-row-bound} 中的行指数为
+\(63/50<2\)。因此，方程~\eqref{eq:small-row-sum} 中相对于 \(C(\beta_*)\) 度量的
+小二进和，其指数至多为
+\[
+ -\frac{79}{800}+2d_{\min}+O(e+\epsilon)
+ =-\frac{63}{800}+O(e+\epsilon).
+\]
+在可调的实损失取得足够小之后，它是负的。记
+\(m_{\rm small}:=63/800\) 表示这个固定的无误差节省。
+
+对大的行，固定 \(z_\infty>2\)。在
+\((\Re s,\Re w,\Re z)=(2,2,z_\infty)\) 上，同一个
+方程~\eqref{eq:absolute-local-tuple-bound} 给出
+\[
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_\epsilon U^\epsilon Z^{\ell z_\infty}
+\]
+对每个物理行与所有虚部成立。这验证了
+方程~\eqref{eq:large-correction-bound}。因此，引理~\ref{lem:outer-row-tails}
+在 \(B_0=l_x/2+1+l_y=53/32\) 下给出
+\[
+ |\mathscr R_\eta(U;Z)|
+ \ll Z^{B_0+hz_\infty+\epsilon}U^{1+\epsilon-z_\infty},
+\]
+并且，在选取 \(0<\epsilon<z_\infty-1\) 之后，对每个固定的 \(\zeta>0\)，
+\[
+ \sum_{U>Z^{h+\zeta}}|\mathscr R_\eta(U;Z)|
+ \ll
+ Z^{B_0+(h+\zeta)(1+\epsilon)-\zeta z_\infty+\epsilon}.
+\]
+这里 \(\mathscr R_\eta\) 是引理~\ref{lem:outer-row-tails} 对
+当前物理表达式的行贡献。固定的足够大的 \(z_\infty\)
+使最后的指数达到所需的负值。它在
+\(\zeta\) 之后、目标之前选取。这些引用使用无商元组界
+（见节~\ref{sec:local-compensation}），而不是中心的主/误差分解。
+
+\subsection{端点不等式}\label{sec:adaptive-endpoint}
+
+接下来我们界 \(E(h)\)，首先不考虑可调损失或高度因子。
+它们将按量化的选择次序恢复。回顾
+\[
+ \kappa=\frac34+2\Delta,\qquad \alpha=\frac56.
+\]
+在活动上端点 \(\delta=\alpha\) 处，在
+命题~\ref{prop:detector-witness} 中取 \(t=3/2\)。于是
+\(r\ge1-O(\epsilon)\)。在 \(r=1\) 的两侧应用
+方程~\eqref{eq:no-slot-inverse-count} 中的无槽位放大估计。
+对 \(r\ge1\)，其指数为
+\[
+ 1-\alpha+(\alpha-\delta)r=1-\delta.
+\]
+对所述 \(O(\epsilon)\) 邻域内的 \(r<1\)，同一估计使用 \(e(r)=1\)，
+故其指数为 \(1-\delta r\le1-\delta+O(\epsilon)\)。固定的放大余量
+独立于该邻域。因此不需要选取素数，理想行指数为
+\(R=1-\delta\)。在方程~\eqref{eq:common-high-exponent} 中使用
+\(q\le\delta/2\) 给出
+\begin{equation}
+ E(h)\le C_0+\left(\frac34-h\right)\delta+O(\epsilon)
+       =-\frac1{48}-\frac{\delta}{16}+O(\epsilon)<0.
+ \label{eq:large-delta-endpoint}
+\end{equation}
+
+现在假设 \(1/50<\delta<\alpha\)。置 \(x=q/\delta\in[0,1/2]\)，
+并使用命题~\ref{prop:detector-counts} 中的
+\(D_x,P_x,R_{\rm short},L\)。参数 \(\kappa\)
+保持动态值 \(3/4+2\Delta\)，而不是上界
+\(5/6\)。因此该命题中所用的实际普通容量为
+\[
+ z_P(m)=\frac{1-2m}{6\kappa}
+       =\frac{1-2m}{9/2+12\Delta},
+\]
+如方程~\eqref{eq:plain-zero-loss-capacity} 中那样。方程~\eqref{eq:capacity-comparison}
+中的比较针对这一确切容量，除所要求的小损失外，至多把行指数提高
+\(\Delta/4\)。定义
+\begin{equation}
+ \mathcal J=(\alpha-\delta)D_x+\delta P_x,\qquad
+ t=1+\frac{\delta P_x}{2\mathcal J},\qquad
+ R_*=L(t).
+ \label{eq:target-cutoff}
+\end{equation}
+分母为正。事实上
+\[
+ \frac{37}{18}\le D_x\le3,\qquad
+ \frac79\le P_x\le2,\qquad
+ D_x-P_x=1+x-\frac{8x^2}{9}>0,
+\]
+从而
+\[
+ \frac{35}{54}\le\mathcal J\le\frac52.
+\]
+因为 \(0<\delta<\alpha\)，有
+\(\mathcal J>\delta P_x>0\)，故 \(1<t<3/2\)。
+此外，
+\[
+ D_x\{R_{\rm short}(t)-L(t)\}
+ =\delta P_x(3/2-t)-(\alpha-\delta)D_x(t-1)
+ =\frac{\delta P_x}{2}-\mathcal J(t-1)=0.
+\]
+于是 \(R_*=R_{\rm short}(t)=L(t)\)，且这个 \(t\) 平衡了两个计数。
+这些公式还具有所述的闭端点值：在
+\(\delta=\alpha\) 处，有 \(\mathcal J=\alpha P_x\)、\(t=3/2\) 与
+\(R_*=R_{\rm short}(3/2)=L(3/2)=1-\delta\)。相应的交叉
+有 \(r_*(3/2)=1\)，故其逆容量为零。前面的
+等式论证在该边界处使用方程~\eqref{eq:no-slot-inverse-count}，而不是
+带有消失余量的带标记估计。
+
+\begin{lemma}[补偿后的端点证书]\label{lem:balanced-endpoint}
+对 \(0\le\delta\le5/6\) 与 \(0\le x\le1/2\)，由
+方程~\eqref{eq:target-cutoff} 定义 \(\mathcal J,t,R_*\)，其中
+\(\mathcal J>0\)，并令 \(E_*\) 为取
+\(q=x\delta\) 与 \(R=R_*\) 的 \(E(h)\)。则
+\[
+ -E_*\ge\frac{49}{440640}>\frac1{10000}.
+\]
+特别地，该界在范围
+\(1/50<\delta\le5/6\) 上一致，包括闭端点。
+\end{lemma}
+
+\begin{proof}
+置 \(y=1/2-x\in[0,1/2]\) 与 \(v=51+41y\)。为验证该
+计算，记
+\[
+ p_y=7+18y+8y^2,\qquad
+ j_y=185+170y+(-138+12y+96y^2)\delta.
+\]
+则
+\[
+ D_x=\frac{37+34y}{18},\qquad
+ P_x=\frac{p_y}{9},\qquad
+ \mathcal J=\frac{j_y}{108}.
+\]
+由 \(R_*=1-\delta+(\alpha-\delta)\delta P_x/(2\mathcal J)\)
+与方程~\eqref{eq:common-high-exponent}，
+\[
+ -E_*=
+ \frac{1+(3+8y)\delta}{48}
+ -\frac{13}{32}\,
+   \frac{(5/6-\delta)\delta P_x}{\mathcal J}.
+\]
+展开相乘得到显式的二次式
+\[
+ \begin{split}
+ 10368\mathcal J(-E_*)
+ &=2j_y[1+(3+8y)\delta]
+     -468(5/6-\delta)\delta p_y\\
+ &=10(37+34y)
+   -8(237+377y+26y^2)\delta\\
+ &\hspace{12mm}
+   +48(51+131y+94y^2+32y^3)\delta^2.
+ \end{split}
+\]
+乘以 \(v\) 并配方得到
+\begin{equation}
+ \begin{aligned}
+ 10368v\mathcal J(-E_*)
+ ={}&(3+5y)\bigl\{(4v\delta-79)^2+49\bigr\}\\
+ &+4y\bigl\{
+ 4v\delta[(1+3y)(15+32y)\delta+9-13y]
+       +265+3485y\bigr\}.
+ \end{aligned}
+ \label{eq:balanced-endpoint-certificate}
+\end{equation}
+这个恒等式也可以通过系数来验证：将其右端展开为
+\(\delta\) 的多项式，分别给出
+\[
+ \begin{split}
+ &10v(37+34y),\\
+ &-8v(237+377y+26y^2),\\
+ &48v(51+131y+94y^2+32y^3),
+ \end{split}
+\]
+它们分别是前一个展示式中的常数、一次与二次系数乘以 \(v\)。
+
+方程~\eqref{eq:balanced-endpoint-certificate} 右端的每一项都非负：
+\(y,\delta\ge0\) 且 \(9-13y\ge5/2\)。
+第一行至少为 \(49(3+5y)\)，而
+\(v=51+41y\le17(3+5y)\)。因此
+\[
+ -E_*\ge\frac{49}{176256\mathcal J}
+       \ge\frac{49}{440640}>\frac1{10000},
+\]
+其中用到 \(\mathcal J\le5/2\)。
+\end{proof}
+
+\(D_x\) 与 \(\mathcal J\) 的下界界住了交叉与截断在紧参数范围上的所有导数。
+饱和损失是一致的，因为 \(\delta\ge1/50\)，
+且逆选择具有命题~\ref{prop:detector-counts} 中所证明的显式供给与宽度余量。
+在零容量处，其未加权界与 \(1-\delta\) 之差至多为
+所选容量减量的一个常数倍。由于
+\(R_*\ge1-\delta\)，这些情形遵循相同的比较。
+因此，一旦所有探测器、分箱与取整误差各自所要求的损失至多为
+\(\epsilon\)，它们合计为 \(O(\epsilon)\)，且其常数不依赖于目标。
+令 \(E_{\rm actual}(h)\) 表示在代入观察到的行界
+\(R\le R_*+\Delta/4+\epsilon_{\rm row}\) 之后，相对于
+\(C(7/8)\) 的尺度指数。目前显式高度因子仍在此外。
+方程~\eqref{eq:common-high-exponent} 中 \(R\) 的系数
+为 \(d\)，故在 \(d=h\) 处容量替换贡献
+\(h\Delta/4\)。记 \(\epsilon_{\rm total}\) 为
+\(h\epsilon_{\rm row}\) 与所有其他可调实损失之和；前述
+一致性使其具有不依赖于目标的系数、且可任意小。该证书给出
+实际所需的比较：
+\begin{equation}
+ \begin{split}
+ E_{\rm actual}(h)-\Delta
+ &\le-\frac{49}{440640}-\left(1-\frac h4\right)\Delta
+       +\epsilon_{\rm total}\\
+ &=-\frac{49}{440640}-\frac{51}{64}\Delta
+       +\epsilon_{\rm total}.
+ \end{split}
+ \label{eq:adaptive-endpoint}
+\end{equation}
+减去 \(\Delta=C(\beta_*)-C(7/8)\) 是本质的：
+该证书并不是断言对每个 \(\Delta\) 都有 \(E_{\rm actual}(h)<0\)。
+当高度因子在下面被转换为预留的指数配额时，该配额被加到
+\(\epsilon_{\rm total}\) 上。
+
+\subsection{频率范围}
+
+对 \(1/2\le d\le h\)，可用长度为
+\[
+ \frac{\ell}{d}\ge\frac8{39}>\frac15>\frac7{37}.
+\]
+从以 \(Z\) 为底换到以 \(U\) 为底，把槽位长度从
+\(\ell_i\) 变为 \(\ell_i/d\le2\ell_i\)，故按这个因子二选取的
+一个网格在整个区间上满足矩的要求。若
+\[
+ 0<\zeta<5\ell-h=\frac1{48},
+\]
+则对 \(h<d\le h+\zeta\)，供给仍大于
+\(1/5\)，其高于 \(7/37\) 的余量为 \(2/185\)。
+
+对 \(1/50<\delta<\alpha\)，使用理想行上指数
+\(R=R_*+\Delta/4\)。对 \(\delta=\alpha\)，使用
+\(R=1-\delta\)。两者都至少为 \(1-\delta\)，故
+\[
+ R+\delta/2-\frac{17}{50}
+ \ge\frac{33}{50}-\frac{\delta}{2}\ge\frac4{25}>0.
+\]
+底部分箱也有正的斜率。因此 \(d=h\) 界住
+\(d\le h\) 的所有这些指数。扩展到
+\(h+\zeta\) 的代价至多为 \(2\zeta\)：事实上
+\[
+ R_*\le1-\delta+\frac{\alpha-\delta}{2}\le\frac{17}{12},
+ \qquad
+ R_*+\Delta/4\le\frac{139}{96},
+\]
+且 \(139/96+1/2-17/50<2\)。在 \(\delta=\alpha\)
+与底部分箱情形处的斜率都小于二。
+
+对 \(d_{\min}\le d\le1/2\) 与 \(\delta\le\alpha\)，取 \(t=1\)
+且不使用选取的素数。命题~\ref{prop:detector-counts}
+给出底部分箱之外的理想指数 \(1-2\delta/3\)。
+使用略大的公共指数
+\[
+ R=\frac{76}{75}-\frac23\delta.
+\]
+在 \(\delta=1/50\) 处它等于一，因此它也涵盖底部分箱。
+其斜率在此范围上为 \(101/150-\delta/6>0\)。
+在方程~\eqref{eq:common-high-exponent} 中使用 \(q\le\delta/2\) 得到
+\begin{equation}
+ E(d)\le E(1/2)+O(\epsilon)
+ \le-\frac{529}{2400}+\frac{25}{96}\delta+O(\epsilon)
+ \le-\frac{49}{14400}+O(\epsilon)<0.
+ \label{eq:adaptive-intermediate}
+\end{equation}
+中间的表达式由代入
+\(d=1/2\)、\(R=76/75-2\delta/3\) 与 \(q=\delta/2\) 得出；
+最后一个不等式用到 \(\delta\le5/6\)。
+在 \(\delta=\alpha\) 处，方程~\eqref{eq:large-delta-endpoint} 中所用的计数
+及其正斜率已经控制每个 \(d\le h\)。
+连同节~\ref{sec:tails}，这些情形覆盖每个
+物理行范数。只有 \(d\ge1/2\) 在行矩中使用选取的物理素因子；
+在每个范围中，每个物理槽位都保留在高阶修正中。
+
+为与 \(C(\beta_*)\) 比较，从每个理想指数中减去
+\(C(\beta_*)-C(7/8)=\Delta\)。
+在自适应范围中，这正是方程~\eqref{eq:adaptive-endpoint} 中的比较；
+其唯一的正容量配额是 \(h\Delta/4\)。其他端点范围在减去 \(\Delta\)
+之前具有非正的理想指数。
+因此它们都保留不依赖于目标的主高阶余量
+\[
+ m_{\rm hi}:=\left(1-\frac h4\right)\Delta
+             =\frac{51}{64}\Delta.
+\]
+低指数具有余量 \(m_{\rm lo}:=\Delta\)。
+主围道与逼近余量已在节~\ref{sec:principal-signal} 中建立；
+现在我们一起选取所有损失。
+
+\subsection{选择次序与结论}
+
+最后，我们把不依赖于目标的实选择与依赖于目标的高度及外部检验次数分离。
+数值选择仍是本应用的一部分；最终高度选取由
+引理~\ref{lem:late-height-closure} 提供。
+

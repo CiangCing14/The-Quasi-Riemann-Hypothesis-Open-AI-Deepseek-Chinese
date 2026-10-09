@@ -1,6 +1,0 @@
-PAGE 28   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 1
-
-CAL O  y  465.6 x  307.4- 316.1
-      line: and n squarefree. The infinity support has λ 3 µ ∈O ; every other ramified exponent in Equation
-CAL X  y  645.9 x  445.9- 453.7
-      line: modulo 9 . On primary elements prime to S it equals χ ( λ ) 2 . A character in X is periodic on

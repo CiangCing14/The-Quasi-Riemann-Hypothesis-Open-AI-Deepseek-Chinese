@@ -1,7 +1,0 @@
-PAGE 54
-counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 0, 'abs': 0}
-
-OVERLINE  y  590.0 x  266.9- 292.4 covers: 'χ p (4)'
-          line: γ γ = − α ( p ) χ (4) γ , γ 4 = − α ( p ) .
-OVERLINE  y  582.6 x  367.1- 388.1 covers: 'α ( p )'
-          line: γ α ( p )

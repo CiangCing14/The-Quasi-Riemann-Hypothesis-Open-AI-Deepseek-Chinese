@@ -1,8 +1,0 @@
-PAGE 140   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 6 glyph(s) H2 E2 O1 B1 | zh 1
-   \mathcal H  y   97.2 x  149.0   line: H = X D ( f ) X | Q ( k, f ) | 2 = Z F ch E .
-   \mathcal E  y   97.2 x  425.3   line: H = X D ( f ) X | Q ( k, f ) | 2 = Z F ch E .
-   \mathcal O  y  112.9 x  300.7   line: f sf k ∈O
-   \mathcal B  y  183.0 x  286.7   line: weight depends on f alone. After reindexing, B is exactly the displayed row ball. Only the now
-   \mathcal H  y  302.1 x  331.3   line: ≪ Z c σ Y H dν ( γ ) .
-   \mathcal E  y  478.8 x  257.7   line: decrease have been proved. If it gives E ≪ C ( t , ζ ) Z F ch + ϵ child uniformly there, with its fixed

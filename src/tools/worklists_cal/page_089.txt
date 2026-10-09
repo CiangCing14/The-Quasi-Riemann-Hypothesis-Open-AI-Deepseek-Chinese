@@ -1,6 +1,0 @@
-PAGE 89   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL O  y  326.5 x   89.3-  98.0
-      line: j ∈O , put
-CAL R  y  489.8 x  316.5- 325.8
-      line: F ( Cn , Cn ; Ck ) = χ ( k ) χ ( − k ) R ( n , n ) L ( n , n ; k ) ,

@@ -1,9 +1,0 @@
-PAGE 83
-counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 2}
-
-OVERLINE  y  228.3 x  516.9- 523.4 covers: 'primitive'
-          line: T 1 , this proves the asserted family-wide exponent without changing either function.
-PAREN     y   94.2 x  236.0- 244.2 ch=(
-PAREN     y   94.2 x  341.3- 349.5 ch=)
-BAR       y  278.8 x  209.8- 212.8 
-BAR       y  278.8 x  291.9- 294.9 

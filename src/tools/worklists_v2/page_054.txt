@@ -1,8 +1,0 @@
-PAGE 54   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 4 glyph(s) H2 E2 | zh 0
-   \mathcal H  y   73.2 x  288.2   line: Uniformly in imaginary parts and unit phases, H ≪ q ϵ , with the constant also depending on ϵ
-   \mathcal H  y   86.7 x  310.8   line: in the first region. For u = 1 in the second region, H = 1 + O ( P − c H ) with, for example, c =
-   \mathcal E  y  715.9 x  465.5   line: It remains to justify the analytic assertions, especially where w is negative. Put E = P ∗ + D .
-   \mathcal E  y  752.0 x  418.5   line: D ( V + W − V W ) − V W + (1 − V )(1 − W ) E
-
----- Chinese file today: \substack x0, line breaks \\ x10 ----

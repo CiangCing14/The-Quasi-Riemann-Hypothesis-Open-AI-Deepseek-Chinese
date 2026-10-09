@@ -1,0 +1,412 @@
+对于乘积形式，代入每个子结点已经证明的界，并将其提升到 $\theta_{e,r}$。系数测度必须积分的
+$\langle\boldsymbol\xi\rangle$ 的总幂次为
+\[
+ H_e=\sum_{r=1}^{r_e}\theta_{e,r}
+       \bigl(H_r+B_r c'_{e,r}(J_r)\bigr).
+\]
+父剖面的幂次和 $\langle\boldsymbol t\rangle$ 的幂次是对应的有限和，随后是在 $H_e$ 处的单个
+系数测度界。$Z$ 的幂次按 $E_v$ 的显示递推式相加。对有限多项取最大值，即以同样的反向归纳
+证明这一推广。
+\end{proof}
+
+\begin{corollary}[带指标的有限传播]
+\label{cor:indexed-seminorm-propagation}
+在引理~\ref{lem:finite-seminorm-propagation} 中，设 $\boldsymbol\ell$ 表示顶点 $v$ 处的任意
+容许长度和外标签，并设 $\Phi_v(\boldsymbol\ell)$ 为其所需的范数指数。假设在除以
+$Z^{\Phi_v(\boldsymbol\ell)}$ 之后，终端界具有该引理中的形式，且指数 $\delta_v$ 固定。一条边
+可以由依赖于 $Z$ 的族 $\Gamma_e$ 以及非负测度 $\nu_e$ 作为指标，且可以具有形式
+\[
+ \int_{\Gamma_e}\int_{\mathbb R^{d_e}}
+ Z^{a_e(\boldsymbol\ell,\gamma)}|K_{e,\gamma}|
+ \prod_{r=1}^{r_e}\mathcal N_{v_{e,r}}
+  \bigl(Z,\boldsymbol\ell_{e,r},\boldsymbol W_{e,r},
+        A_{e,r}\boldsymbol t+B_{e,r}\boldsymbol\xi\bigr)^{\theta_{e,r}}
+ \,d\boldsymbol\xi\,d\nu_e(\gamma),
+\]
+其中子标签 $\boldsymbol\ell_{e,r}$ 可以依赖于 $\boldsymbol\ell,\gamma$。假设关于这些标签
+一致地有
+\begin{equation}\label{eq:indexed-exponent-defect}
+ a_e(\boldsymbol\ell,\gamma)
+   +\sum_r\theta_{e,r}\Phi_{v_{e,r}}(\boldsymbol\ell_{e,r})
+   -\Phi_v(\boldsymbol\ell)\le\delta_e,
+\end{equation}
+且 $\delta_e$ 固定，并且该引理的子剖面界成立。还假设对每个固定的 $H\ge0$，
+\begin{equation}\label{eq:indexed-coefficient-measure}
+ \int_{\Gamma_e}\int_{\mathbb R^{d_e}}|K_{e,\gamma}|
+       \langle\boldsymbol\xi\rangle^H\,d\boldsymbol\xi\,d\nu_e(\gamma)
+ \le C_{e,H}Z^{\delta_e^{\mathrm{mass}}}
+       p_{\ell_e(H)}(\boldsymbol w)^{b_e(H)}
+       \langle\boldsymbol t\rangle^{c_e(H)},
+\end{equation}
+其中 $\delta_e^{\mathrm{mass}}$ 与 $H$ 无关地固定。当这些量是通过分离一个剖面而得到的平方
+后的 Hilbert 空间行范数时，本假设必须使用这些行共同的系数测度。在有限多个深度的每一个处
+只需有有限多种边类型；$\Gamma_e$ 的基数可以随 $Z$ 变化。
+
+于是 $\mathcal N_v/Z^{\Phi_v(\boldsymbol\ell)}$ 具有
+引理~\ref{lem:finite-seminorm-propagation} 的结论，关于 $\boldsymbol\ell$ 一致，终端指数为
+$\delta_v$，边指数为 $\delta_e+\delta_e^{\mathrm{mass}}$。特别地，所有所需的半范数和高度
+阶数都是有限的且独立于外部截断。
+\end{corollary}
+
+\begin{proof}
+置 $\overline{\mathcal N}_v=Z^{-\Phi_v(\boldsymbol\ell)}\mathcal N_v$。在某条边中的代入与
+方程~\eqref{eq:indexed-exponent-defect} 将其范数幂次界定为 $Z^{\delta_e}$ 乘以正规化子结点
+之积。代入它们的归纳界。如同引理~\ref{lem:finite-seminorm-propagation} 的乘积证明，所需的
+系数矩为
+\[
+ H_e=\sum_r\theta_{e,r}
+              \bigl(H_r+B_r c'_{e,r}(J_r)\bigr),
+\]
+它是有限的且与 $\gamma$ 无关。方程~\eqref{eq:indexed-coefficient-measure} 在此阶数处贡献
+$Z^{\delta_e^{\mathrm{mass}}}$ 以及仅有限的剖面和高度阶数。因此关于有限多种边类型的反向
+归纳恰好给出所述的归一化递推。在子结点内部被平均的标签在整个论证过程中都留在该子结点内部；
+它不是 $\nu_e$ 的第二个积分变量。
+\end{proof}
+
+我们明确说明本推论中离散标签是如何归一化的。在相关的加权 Cauchy 不等式之后，假设非负外测度
+满足 $\sum_{\gamma\in\Gamma}w_\gamma\le C Z^{c+\epsilon}$，其中固定的 $c$ 和 $\epsilon$
+在选择高度阶数之前选定。对于该块上共同的逐标签前因子 $Z^{a_{\mathrm{raw}}}$，置
+\[
+ d\nu_\Gamma(\gamma)=Z^{-c}
+             \sum_{\gamma\in\Gamma}w_\gamma\,\delta_\gamma,
+ \qquad \nu_\Gamma(\Gamma)\le C Z^\epsilon.
+\]
+这里 $\delta_\gamma$ 表示单位点质量。对于使所示积分为有限的非负 $B_\gamma$，精确恒等式为
+\begin{equation}\label{eq:normalized-label-measure}
+ \begin{split}
+ &Z^{a_{\mathrm{raw}}}\sum_{\gamma\in\Gamma}w_\gamma
+              \int |K_\gamma(\boldsymbol\xi)|B_\gamma(\boldsymbol\xi)
+                                      \,d\boldsymbol\xi\\
+ &\qquad=Z^{a_{\mathrm{raw}}+c}
+       \int_\Gamma\int |K_\gamma(\boldsymbol\xi)|B_\gamma(\boldsymbol\xi)
+                                      \,d\boldsymbol\xi\,d\nu_\Gamma(\gamma).
+ \end{split}
+\end{equation}
+$K_\gamma$ 的一致加权矩现在给出方程~\eqref{eq:indexed-coefficient-measure}，只留下剩余的
+$Z^\epsilon$ 质量。因此，已经包含计数 $c$ 的显示指数必须使用这个归一化测度；保留未归一化的
+和会把相同的标签计算两次。该规则涉及的是加权质量，而不是在该质量之外的基数。它仅在行相关的
+可选择性仍留在子结点内部、或已被某个非负不等式移除之后才被应用。仍在子范数中被平均的标签
+不包含在 $\Gamma$ 中。
+
+对于小的核振幅有一个单独的归一化。单剖面半范数 $p_j(w)$ 是齐次的，而
+$p_j(\boldsymbol w)=1+\sum p_j(w_i)$ 不是。假设固定块上的联合环形剖面满足：对标量
+$0<m_R\le1$，
+\[
+ p_j(F_R)\le m_R C_j p_{\ell(j)}(\boldsymbol w)^{b(j)}
+                         \langle\boldsymbol t\rangle^{h(j)}
+       \qquad(j\ge0).
+\]
+可以把 $F_R$ 保留在 Fourier 系数测度中，其加权 $L^1$ 范数此时包含因子 $m_R$。或者，写
+$F_R=m_R\widetilde F_R$ 并把 $m_R$ 放到该测度之外。若多项式或行向量 $\mathcal P(F_R)$
+关于整个剖面是线性的，则
+\[
+ \mathcal P(F_R)=m_R\mathcal P(\widetilde F_R),\qquad
+ \|\mathcal P(F_R)\|_2^2=m_R^2\|\mathcal P(\widetilde F_R)\|_2^2.
+\]
+含 $\widetilde F_R$ 的元组具有有界的（而非小的）半范数。标量只有在乘以整个差时才能从中心差中
+移除。在已展开的二次表达式中出现一次的核贡献一个因子 $m_R$，而不自动是其平方。这些约定要么
+使用小测度，要么使用外部标量，绝不两者兼用。如果正的行范围稍后将被扩大，则先在实际环带上固定
+该标量与共同剖面，并在扩大之前得到包含该标量的范数不等式。
+
+以下是验证这两条边假设的充分解析方法。设 $m(\boldsymbol y)$ 为固定的范数单项式，$\chi$ 为在
+固定环带之积中具有紧对数支集的光滑截断。假设一个归一化核具有 Euler 界
+\[
+ |(r\partial_r)^jK(r)|\le C_{A,j}\mathfrak S_{m(A,j)}
+                                      \min(1,r^{-A}),
+\]
+其中 $\mathfrak S_k$ 是指定的有限输入半范数与多项式高度界的一个递增族，且 $m(A,j)$ 关于 $j$
+取非减。乘积法则和链式法则给出，对 $R>0$ 一致地，
+\begin{equation}\label{eq:normalized-kernel-profile}
+ p_j\bigl(\chi(\boldsymbol y)K(Rm(\boldsymbol y))\bigr)
+ \le C'_{A,j}\mathfrak S_{m(A,j)}\min(1,R^{-A}).
+\end{equation}
+确实，作用于核的 $y_i\partial_{y_i}$ 等于 $m$ 中 $y_i$ 的固定指数乘以 $r\partial_r$，且
+$m$ 在截断支集上有上界和下界。微分不会产生额外的因子 $R$。当这三个核估计可用时，同样的论证
+保持带有 $\min(R^{1/4},1,R^{-A})$ 的界。衰减阶 $A$ 在每个所要求的 $j$ 处相同；只有输入阶
+及其有限的高度次数增加。对于 $c>0$ 的旧窗 $w(c m(\boldsymbol y))$，Euler 导数由 $w$ 的整体
+对数半范数界定，且不引入依赖于导数阶的 $c$ 的幂。诸如 $y^{-1/2}$ 的归一化实幂遵循同样的规则。
+归一化范数的纯扭转只插入其高度的固定幂。
+
+普通的径向 Fourier 半范数必须在径向尺度被归一化之后才能使用。对于两个实维数中的固定环形 $w$，
+$f_R(x)=w(R|x|^2)$ 满足
+\[
+ \|\partial^j f_R\|_1=R^{j/2-1}\|\partial^j f_1\|_1
+\]
+对任意阶为 $j$ 的固定方向导数，由 $x\mapsto\sqrt R x$ 得到。因此一个未归一化的收缩径向试验
+可能引入依赖于 $j$ 的尺度幂。充分的假设是在其所述行尺度处具有固定形状的径向 Schwartz 试验，
+或者在该尺度处为零附近常值的径向 $C_c^\infty$ 试验。归一化之后，
+引理~\ref{lem:kernel-seminorms} 应用于其固定变换，移动的尺度比只以
+方程~\eqref{eq:normalized-kernel-profile} 中的方式出现。例如在 $q_u=U_0y$ 上
+$q_u^{-1/2}=U_0^{-1/2}y^{-1/2}$；中心幂属于范数指数，而环形因子具有与阶无关的尺度界。同样
+$q_u^{it}=U_0^{it}y^{it}$，且在对归一化剖面微分之前，把中心单位相位作为标量分离出来。
+
+对数 Fourier 分离在一个坐标表内使用联合截断，该坐标表包含耦合光滑因子中出现的每个归一化范数。
+导出的非光滑行掩码和标签掩码留在该因子之外，不需要坐标。一个用作此类坐标、初始范围从某个球
+一直到范数 1 的非零范数，必须首先被划分成针对当前扇区固定的共同整环带；零频率是单独的。在有界
+对数范围内，对于固定数量的 $d$ 个变量，有 $O((1+\log Z)^d)$ 个这样的块，因此它们的计数花费
+一个预先选定的小幂。截断及其整个支集只依赖于块中心和固定数据，而不依赖于行范数内标签的个别值。
+只要耦合光滑因子是这单个联合函数且不再依赖于个别标签，其 Fourier 密度就对这些行是共同的，正如
+引理~\ref{lem:smooth-calculus} 所要求的；对行相关密度的分别一致界不能推出同样的 Hilbert 空间
+不等式。非光滑掩码通过精确的算术恒等式被保留或消解，绝不被微分，也绝不被并入为依赖于标签的
+尖锐 Fourier 选择子。
+
+最后，假设一个固定的 $\xi>0$，内部二分比 $R>Z^\xi$ 的绝对算术计数至多为 $Z^B R^b$。带有
+因子 $R^{-A}$ 的系数界给出，对 $A>b$，
+\[
+ \sum_{\substack{R\ \mathrm{dyadic}\\R>Z^\xi}}Z^B R^{b-A}
+       \ll Z^{B-\xi(A-b)}.
+\]
+从固定的 $B,b,\xi$ 和所需的内部节省中选择 $A$。实际的界还可能含有有限输入半范数和多项式高度
+因子；它们进入有限传播图。这一尾部估计不是对所有高度都一致的无高度断言。参数 Sobolev 只增加
+固定数量的剖面导数和高度维数，且所有这些内部阶数都在外部截断之前选定。
+
+最后假设图及其所有核与环形阶数都已被固定，给出高度次数 $H$。假设一个额外的、外部的分离使用环形
+剖面，其 $p_j$ 对每个固定 $j$ 关于 $Z$ 一致有界，或使用前面各引理中的加权 Mellin 范数或环形
+范数在每个固定阶处一致有界的非环形剖面，并且其被丢弃的被积函数具有界
+$Z^{B_0}\langle\boldsymbol t\rangle^{J_0}$，其中 $B_0,J_0$ 固定。外部截断被要求留在图之外：
+它不会用依赖于截断的剖面来替换剖面 $\boldsymbol w$ 或核 $K_e$。给定保留的允许高度 $\delta>0$，
+先选择 $0<\tau<\delta/(1+H)$。于是对 $T_1=Z^\tau$ 有 $(1+T_1)^H\le2^H Z^\delta$。在此选择
+之后，以权 $J_0$ 和任意满足 $N>(B_0+M)/\tau$ 的固定整数 $N$，
+方程~\eqref{eq:late-fourier-tail} 使积分后的外部尾为 $O(Z^{-M})$，对任意给定的 $M>0$。对于
+水平连接，使用方程~\eqref{eq:pointwise-mellin-tail} 并加上该额外的固定高度权，或对联合高斯切片
+使用方程~\eqref{eq:joint-gaussian-slice}。当这样的切片上其它坐标被延拓到整个实轴时，伴随的算术
+因子必须在这些坐标上有整体界；进入分母且仅在带缓冲区域内被控制的坐标必须保持限制在该区域内。
+外部常数可以依赖于 $N$ 和固定数据。这一较晚的选择不改变任何内部剖面或内部阶数 $J,H$，这正是
+所断言的依赖次序。
+
+\subsection{带掩码的有限 Poisson 求和}
+
+我们现在证明引理~\ref{lem:marked}，使用节~\ref{sec:arithmetic} 的算术约定以及
+引理~\ref{lem:reflected-energy} 处理终端情形。递归归约使用下面这种 Poisson 求和形式的两次
+应用，初始化使用一次。其显式的除数变量保留每个零延拓。
+
+\begin{lemma}[带掩码的本原 Poisson]\label{lem:masked-poisson}
+设 \(\psi\) 为模理想 \(m\) 的本原有限特征，在非单位上以零延拓，并设 \(R\) 为任意理想。设
+\(\Phi(q_z)\) 为 \(\mathbb C\) 上的径向 Schwartz 函数，并设 \(\mathcal F\Phi(q_y)\) 表示其对
+自对偶测度和核 \(e(-zy)\) 的 Fourier 变换。对 \(K>0\)，
+\begin{equation}\label{eq:masked-poisson}
+ \begin{split}
+ &\sum_{k\in\mathcal O}\psi(k)1_{(k,R)=1}\Phi(q_k/K)\\
+ &\quad=\frac{K\gamma(\psi;m)}{\sqrt{q_m}}
+ \sum_{d\mid\operatorname{rad}R}\frac{\mu(d)\psi(d)}{q_d}
+ \sum_{h\in\mathcal O}\bar\psi(h)
+       \mathcal F\Phi\!\left(\frac{Kq_h}{q_dq_m}\right),
+ \end{split}
+\end{equation}
+其中
+\(\gamma(\psi;m)=q_m^{-1/2}\sum_{x\bmod m}\psi(x)e(x/m)\)。
+对非主本原特征，\(|\gamma(\psi;m)|=1\) 且 \(h=0\) 项为零。对主本原特征，约定为
+\(m=1,\ \gamma(1;1)=1,\ \psi(h)=1\)，包括在 \(h=0\) 处。
+\end{lemma}
+
+\begin{proof}
+将掩码展开为 \(\sum_{d\mid\operatorname{rad}R,\ d\mid k}\mu(d)\) 并写 \(k=dk'\)。尺度变为
+\(K/q_d\)，而特征贡献 \(\psi(d)\)。模 \(m\) 的剩余类中的 Poisson 求和有前因子 \(K/(q_dq_m)\)。
+其有限变换为
+\[
+ \sum_{x\bmod m}\psi(x)e(hx/m)
+   =\sqrt{q_m}\gamma(\psi;m)\bar\psi(h).
+\]
+对单位 \(h\)，这由变量替换得到。对非单位 \(h\)，由本原性变换为零；对 \(m=1\)，所述的通常
+约定适用。这证明了方程~\eqref{eq:masked-poisson}。对非主本原特征，有限 Parseval 给出
+\(\sum_h|\sum_x\psi(x)e(hx/m)|^2=q_m\sum_x|\psi(x)|^2\)。写
+\(\phi(m)=|(\mathcal O/m)^\times|\)，有 \(\phi(m)\) 个单位 \(h\)，其模均为
+\(\sqrt{q_m}|\gamma(\psi;m)|\)，且 \(\sum_x|\psi(x)|^2=\phi(m)\)。因此 \(|\gamma(\psi;m)|=1\)。
+
+一个固定的射线限制可以首先展开为有限多个特征。每一个随后被其本原诱导特征替代，被移除的局部零
+延拓保留在 \(R\) 中；同一公式逐项适用。对主模，非零频率的绝对和是
+\(O_\Phi(d_{\mathcal O}(\operatorname{rad}R))\)。确实，对所有 \(A>0\)，
+\[
+ A\sum_{h\ne0}|\mathcal F\Phi(Aq_h)|\ll_\Phi1.
+\]
+当 \(A\le1\) 时格点计数证明这一点，当 \(A\ge1\) 时 Schwartz 衰减证明之。以 \(A=K/q_d\) 对
+\(d\) 求和此界。在下面每次使用时，相关的非空行尺度都有 \(K\ge1\)，因此这同样是
+\(O(KZ^\epsilon)\)。当在分离一个非主和时加入或移去主的非零频率时，它们将携带与该和相同的
+外行掩码；它们的绝对贡献不大于这个完整的主界。
+\end{proof}
+
+\subsection{典范归约及其归纳}
+
+我们现在证明引理~\ref{lem:canonical-moment}。反射能量处理短完备化；剩余的块经过两次 Poisson
+变换以产生具有较短行的容许典范和。
+
+\begin{proof}[引理~\ref{lem:canonical-moment} 的证明]
+解析选择的次序由推论~\ref{cor:indexed-seminorm-propagation} 组织，该推论见
+节~\ref{sec:moment-propagation}。其带指标的结论将分别用于每个正的 Cauchy
+侧和；下面的证明验证所需的共同系数测度、固定范数损失和有限深度。
+
+在每个结点处，每个联合 \((f,k)\) Hilbert 空间使用当前的标签测度 \(w(f)\)，并且该因子在每个
+父 \(f\)-和中恰好保留一次，直到方程~\eqref{eq:inverse-old-label-fibre} 移除旧标签。
+
+在每个结点处保持参数 \(N,V,M\) 固定，并写
+\[
+ F=N+V,\qquad Q=\log_Zq_{\mathfrak r_\rho}.
+\]
+这里 \(F\) 是实长度和 \(N+V\)，故在起始结点处 \(F=F_0\)。在具有余量 \(c_{\rm node}\) 的
+结点处的两个假设恰好是
+\begin{equation}\label{eq:inverse-fixed-invariant}
+ F-M-Q-z_0\ge c_{\rm node},\qquad
+ 4F-3M-6z_0\ge c_{\rm node}.
+\end{equation}
+特别地 \(M+z_0+c_{\rm node}\le F\)。数 \(Q\) 是已固定穿孔根式的实际对数范数，而不是二分中心。
+参数 \(M\) 是固定的对数行长；第一次 Poisson 试验的尺度为 \(Z^M\)。
+
+设 \(M_{\max}\) 界定起始行长。选择 \(0<d\le c_*/200\) 并置
+\[
+ D=\left\lceil\frac{M_{\max}+2}{d}\right\rceil+1.
+\]
+我们使用正参数 \(\eta,\tau,\pi,\tau_{\rm ref},\pi_{\rm ref}\)，按证明末尾的量词次序选取。
+这里 \(\eta\) 是仅界定固定环形比之对数的局部化容差，\(\tau\) 是两个 Poisson 尾部比较中的共同
+容差，\(\pi\) 界定自由选择的局部小幂损失之总和。在深度 \(h\) 处置
+\[
+ c_h=c_*-7h\eta,\qquad c_{\rm node}=c_h,
+\]
+并施加行上限 \(M\le M_{\max}-hd\)。我们通过对 \(h\le D\) 的反向归纳证明该估计。下面每个保留
+的行参数都是非负的。我们将证明，非终端的一步至少使其减少 \(d\)，在两个所需余量中的任一个至多
+损失 \(7\eta\)，并使能量指数至多增加 \(40\eta+\tau+\pi\)。不会有任何不变量从固定的 \(F=N+V\)
+传递到实际的列范数。
+
+\paragraph{短完备化。}
+方程~\eqref{eq:marked-completion} 中立方因子的 M\"obius 反演给出精确恒等式
+\begin{equation}\label{eq:marked-completion-inversion}
+ \begin{split}
+ &Z^{-N/2}\sum_{n\ {\rm sf}}a(n)\chi_n(k)\chi_n(f)^4
+       \mathfrak d(n)W(q_n/Z^N)\\
+ &\quad=
+ \sum_h\frac{\mu(h)\bar\alpha(h)^3\Psi_k(h)^3}{q_h}
+       \mathcal T_{\mathfrak d_h}(Z^N/q_h^3;k),
+ \qquad \mathfrak d_h(A)=\mathfrak d(h^3A).
+ \end{split}
+\end{equation}
+为了检查标记和归一化，展开右边并置 \(c=hb\)。因子 \(V_*(y)=y^{1/2}W(y)\) 把绝对系数变为
+\[
+ Z^{-N/2}\bar\alpha(c)^3\Psi_k(c)^3q_c^{1/2}
+       \sum_{h\mid c}\mu(h).
+\]
+标记是 \(\mathfrak d(nc^3)\)，与除数 \(h\) 无关。除数和除非 \(c=1\) 外为零，这证明了该恒等式。
+这里使用了 \(\Psi_k\) 的乘性，包括其穿孔。
+
+使用一个固定的光滑二分剖分，其理想中心非负，单位二分元的中心为零。假设 \(V<d\) 且
+\(h\)-二分元的中心 \(\ell_1\) 小于 \(d\)。冻结 \(h\)，把其整除的槽位分配给它，并将其余的保留
+在完备化指标上。一个存活下来的槽位此时具有单独的系数 \(a_i(p)1_{p\nmid h}\)。由于 \(h\)
+固定，这是一个有界的系数，与当前的 \(k,f\) 无关，在相同的名义环带上并具有相同的上限。它不是
+无限制的原始系数；下面的递归分支通过子零点分别恢复其原始的槽位表。对一个活跃的子集定义
+\(z_a\) 为其名义槽位长度之和。分配只会删除槽位，故恰有 \(0\le z_a\le z_0\)；实际的元组范数
+从不被用作这个上限。联合 \((f,k)\) Hilbert 空间中的三角不等式对固定环带使用
+\(\sum_{q_h\asymp Z^{\ell_1}}q_h^{-1}\ll1\)，除了单独选取的分配除子损失之外。有界因子
+\(\Psi_k(h)^3\) 是该空间中的一个压缩。
+
+写 \(\widehat h=\log_Zq_h\)。完备化在实际尺度 \(N_*=N-3\widehat h\) 处。其固定支集给出
+\(\widehat h\le\ell_1+\eta<d+\eta\)，一旦施加下面指定的固定环形阈值。在
+引理~\ref{lem:reflected-energy} 中，保留实际的剩余行二分元并选取相同的阈值使得
+\begin{equation}\label{eq:inverse-terminal-width}
+ H\le M-O+\eta,\qquad
+ T_d-S_0-B_0\le2M-O+Q+V-N_*+2z_a+\eta.
+\end{equation}
+这些是方程~\eqref{eq:actual-residual-row-dyad} 和 \eqref{eq:common-width-charge}，而不是对于
+扩大后的行范围的估计。代入 \(N_*=N-3\widehat h\) 和
+方程~\eqref{eq:inverse-fixed-invariant} 中的第一个不等式给出
+\begin{equation}\label{old-eq:4.9}
+ T_d-S_0-B_0
+ \le M-O+2z_a-z_0-c_{\rm node}+5d+4\eta.
+\end{equation}
+确实，附加项为 \(2V+3\widehat h+\eta<5d+4\eta\)。
+
+同时选取阈值使得 \(e_\lambda\ge-\eta\)，并如引理~\ref{lem:reflected-energy} 那样丢弃整个
+反射尾部二分元。于是每个保留的二分元满足
+\(v+3\ell_b+e_\lambda\le T_d+\tau_{\rm ref}\)。方程~\eqref{old-eq:4.6} 的行分支在去掉其
+非正项后满足
+\[
+ E_{\rm ref}\le M+z_a+\tfrac53\eta
+       \le F-c_{\rm node}+\tfrac53\eta.
+\]
+对于 \(u=z_a\) 的列分支，保留的对偶界首先给出
+\(E_{\rm ref}\le O/2+(T_d-S_0-B_0)+5\eta/3+\tau_{\rm ref}\)。
+方程~\eqref{old-eq:4.9} 和第一个不变量随后给出
+\begin{equation}\label{old-eq:4.10}
+ E_{\rm ref}\le F-2c_{\rm node}+5d+\tfrac{17}{3}\eta+\tau_{\rm ref}.
+\end{equation}
+若 \(u\ne z_a\)，其定义蕴含 \(u\ge v/2\)。保留的对偶界现在首先给出
+\[
+ E_{\rm ref}\le O/2+(T_d-S_0-B_0)/2+z_a
+                    +\tfrac76\eta+\tfrac12\tau_{\rm ref}.
+\]
+利用方程~\eqref{old-eq:4.9}、\(z_a\le z_0\)，然后利用第二个不变量可推出
+\begin{equation}\label{old-eq:4.11}
+ E_{\rm ref}\le F-M/4-3c_{\rm node}/4+(5/2)d
+                    +\tfrac{19}{6}\eta+\tfrac12\tau_{\rm ref}.
+\end{equation}
+使用带有总局部损失 \(\pi_{\rm ref}\) 的反射估计，包括其自由选择的指数、标签除子界以及有限
+多个对数和。若
+\[
+ c_{\rm node}\ge c_*/2,\qquad
+ d\le c_*/200,\qquad \eta,\tau_{\rm ref},\pi_{\rm ref}\le c_*/1000,
+\]
+则加上 \(\pi_{\rm ref}\) 之后，三个界都严格小于 \(F\)。在最后一个界中 \(M\ge0\)。当
+\(z_0=0\) 时只出现 \(u=z_a=0\)。反射估计是对每个固定的 \(f\) 施加的；加权质量界
+\(\sum_f w(f)\ll Z^{V+\pi_{\rm ref}}\) 表明，对其平方后的界关于 \(f\) 求和至多花费这个量，
+该量已包含在总损失中，并抵消了外部的 \(Z^{-V}\)。因此没有移动的四次幂标签进入混合范数，
+且这些终端项满足典范估计。
+
+\paragraph{剩余项及其标记。}
+在每次分解时，先把一个槽位分配给其素因子整除它的已提取因子，否则将其保留在剩余列上。完备化的
+基本恒等式是
+\begin{equation}\label{old-eq:4.12}
+ 1_{p\mid nb^3}=1_{p\mid b}+1_{p\nmid b}1_{p\mid n}.
+\end{equation}
+更一般地，对于已提取因子的有序列表 \(D_1,\ldots,D_h\)，精确的优先权恒等式是
+\begin{equation}\label{eq:inverse-slot-priority}
+ 1_{p\mid D_1\cdots D_hn}
+ =\sum_{j=1}^h1_{p\mid D_j}\prod_{a<j}1_{p\nmid D_a}
+   +1_{p\mid n}\prod_{a\le h}1_{p\nmid D_a}.
+\end{equation}
+即使已提取因子共享素因子它也成立。将其应用于每个槽位和平方的每个副本，对每个素因子元组给出
+一个不相交的划分；一个槽位的两个副本具有独立的素因子选择。在一次单因子分配中至多有
+\(2^{|I|}\) 种选择，对所示有序列表至多有 \((h+1)^{|I|}\) 种。被分配的槽位在已提取因子上具有
+除子有界的系数。由于原始系数是 \(\prod_i a_i(p_i)\)，移除被分配的槽位恰好留下一个具有其原始
+乘积系数的子集。一个将继续作为平均变量的理想并不仅因为某个槽位被分配给它就被固定。
+
+若 \(V<d\) 且 \(\ell_1\ge d\)，在方程~\eqref{eq:marked-completion-inversion} 的右侧重新
+展开完备化。若其立方理想为 \(h'\)，则先通过在联合 Hilbert 空间中的三角不等式，在平方之前隔离
+其中心为 \(\ell_2\ge0\) 的二分元和 \(h\)-二分元。置 \(b=hh'\) 并定义固定中心
+\[
+ \ell=\ell_1+\ell_2,\qquad r=N-3\ell.
+\]
+所得平方中的两个副本 \(b_1,b_2\) 具有相同的名义中心 \(\ell\)；它们的实际范数不必一致。标记是
+\(\mathfrak d(nb^3)\)，与 \(b\) 的除数 \(h\) 的选择无关。乘性给出因子 \(\chi_b(k)^3\)；
+\(\Psi_k(b)^3\) 中的四次幂恰好是掩码 \(1_{(b,f)=1}\)。对 \(b\) 的除数 \(h\) 的剩余和绝对值
+至多是一个除数函数。在二分分解并分离 \(q_nq_b^3/Z^N\) 之后，每个平方后的块被一个小幂次乘以
+\begin{equation}\tag{A}\label{eq:canonical-block}
+ \begin{split}
+ &Z^{-r-2\ell-V}\sum_f w(f)\sum_{k\in\mathcal O}\Phi(q_k/Z^M)
+ \Biggl|\sum_{q_b\asymp Z^\ell}\beta(b,f)\chi_b(k)^3\\
+ &\hspace{26mm}\times
+       \sum_{n\ {\rm sf}}a(n)\chi_n(k)\chi_n(f)^4
+       \mathfrak d(nb^3)W(q_n/Z^r)\Biggr|^2 .
+ \end{split}
+\end{equation}
+所界定。这里 \(\Phi\) 是固定非负的径向 Schwartz 函数，控制原始行球，且
+\(|\beta(b,f)|\ll Z^\epsilon\) 与 \(k,n\) 无关。其 \(f\)-依赖性包含原始掩码
+\(1_{(b,f)=1}\)；所有其它原始立方掩码都被保留。没有条件 \((b,n)=1\)。前面的指数是正确的，
+因为原始归一化为 \(Z^{-N/2}q_b^{1/2}\asymp Z^{-r/2-\ell}\)。若 \(V\ge d\)，使用同一块并取
+\(\ell=0,\ b=1,\ r=N\)。于是由中心分类和 \(\ell_2\ge0\)，每个剩余的块都恰好有
+\(V+\ell\ge d\)。所添加的行 \(k=0\) 只能在下面所计的主情形中有所贡献。
+
+\paragraph{两次变换的归约。}
+我们对方程~\eqref{eq:canonical-block} 中的每个剩余块证明下面的条件估计。设
+\(\epsilon_{\rm child}\ge0\)。假设每个形如 \eqref{eq:canonical-energy} 的能量
+\(\mathcal E'\)，具有引理~\ref{lem:canonical-moment} 的全部系数与支集假设、相同的固定槽位
+上限、参数
+\[
+ 0\le M'\le M-d,\qquad 0\le N',V',\qquad F'=N'+V'\le F+11\eta,
+\]
+以及两个余量都至少为 \(c_{\rm node}-7\eta\)，都满足
+\(\mathcal E'\ll Z^{F'+\epsilon_{\rm child}}\)。该假设在本次归纳所用有界范围内是一致成立的，
+具有如该引理中那样的有限半范数和固定多项式高度依赖性。对 \(\eta\le d/16\)，剩余的块满足
+\begin{equation}\label{eq:canonical-reduction-contract}
+ \text{方程~\eqref{eq:canonical-block} 中的块}
+ \ll Z^{F+40\eta+\tau+\pi+\epsilon_{\rm child}},
+\end{equation}
+具有同类的统一依赖性。自由选择的局部损失之和为 \(\pi\)；主项和被丢弃的尾部都包含在此估计中。
+因此该归约恰好提供了反向归纳所需的蕴含。其证明占据下面的两次变换：第一次产生一个正的逆多项式
+范数，第二次构造假设所适用的较小典范能量。

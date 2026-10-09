@@ -1,6 +1,0 @@
-PAGE 41   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL F  y   86.7 x  477.2- 485.0
-      line: log-length ranges, and the fixed support box, but not on the moving frozen local set F . Norm
-CAL I  y  644.0 x  510.3- 516.2
-      line: row scalar and the common dual coefficient. Only now enlarge the positive row norm from I

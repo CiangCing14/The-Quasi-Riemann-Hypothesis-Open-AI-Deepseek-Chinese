@@ -1,8 +1,0 @@
-PAGE 78   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 0
-
-CAL B  y  204.1 x  409.4- 416.5
-      line: Now use the central decomposition and form the pointwise sets B . At each retained
-CAL P  y  244.7 x  401.3- 408.9
-      line: sets pointwise. Bound each of their exponents by the supremum over P and integrate only the
-CAL R  y  755.7 x  370.3- 379.5
-      line: H ( s, 1 , 1 / 6) = H ( s ) Z ℓ/ 6 A ( Z )(1 + R ( s )) . (10.18)

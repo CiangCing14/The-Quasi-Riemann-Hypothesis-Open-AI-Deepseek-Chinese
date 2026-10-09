@@ -1,0 +1,487 @@
+对原始单位，记 $h_p=H/p^{j'}$、$s_p=s/p^k$，以及
+$A_p^\circ=A/p^t$。中国剩余定理与代换
+$d=h_p(b_*A_p^\circ)^{-1}d'$ 给出额外的单位因子
+\begin{equation}\label{eq:local-unit-factor}
+ U_p=\chi_p^{k-t}(h_p)\chi_p^t(s_p)
+       \chi_p^{t-k}(A_p^\circ)\chi_p^{t-k}(b_*).
+\end{equation}
+更明确地说，外层的剩余特征给出
+$\chi_p^k(h_p)\chi_p^{-k}(b_*A_p^\circ)$，而中国
+剩余因子以及 Gauss 论证的重新缩放给出
+$\chi_p^t(b_*A_p^\circ)\chi_p^{-t}(h_p/s_p)$。它们的乘积为
+方程~\eqref{eq:local-unit-factor}。由于
+$h_p=(u/p^j)(a/p^m)^6$，故有 $\chi_p(h_p)=\rho$。
+
+在 $b_*$ 的素因子处，有
+$(H-b_*Ad)/s\equiv H/s\pmod {b_*}$。完备 Gauss 和中的
+局部因子为
+$\sqrt{q_{b_*}}\tau\xi(A)\overline{\xi(H/s)}$。
+此处 $\overline{\xi(H/s)}=\overline{\xi(u)}\xi(s)$，因为
+$\xi(a)^6=1$。这消去了方程~\eqref{eq:local-full-coefficient}
+中每个出现的 $\xi$ 因子。方程~\eqref{eq:local-unit-factor}
+中最后几个因子的乘积消去了
+$\chi_s(b_*)\chi_A(b_*)^{-1}$。此相消是逐系数的。
+对 $S$ 的任一固定扩大，同样的计算使用同一个射线群 $T$。
+
+\paragraph{剩余配对相位的相消。}
+令 $t_p=v_p(A)$、$k_p=v_p(s)$，在每个不同的素数对上，互反律给出
+\[
+ \mathcal R(A,s)\prod_p
+       \chi_p^{t_p}(s_p)\chi_p^{-k_p}(A_p^\circ)
+       =\prod_p\mathcal R(p,p)^{t_pk_p}.
+\]
+事实上，对 $p\ne r$，两种定向具有相反的符号指数，其商为
+$\mathcal R(p,r)$；这消去了双特征 $\mathcal R(A,s)$ 中对应的配对。只剩其对角部分。
+
+方程~\eqref{eq:signal} 给出
+$\gamma_2(c)=\mu(c)\alpha(c)G(c)/\gamma_1(c)$。中国剩余公式
+\[
+ \gamma_1(c)=\prod_{p\mid c}\gamma_1(p)
+             \prod_{p<r,\ p,r\mid c}\chi_p(r)\chi_r(p)
+\]
+消去了剩余配对乘积的无平方因子部分。若 $e_p=v_p(c)$ 与 $l_p=v_p(n)$，
+它在配对 $p<r$ 处的指数为
+$t_pt_r-e_pe_r=3(e_pl_r+e_rl_p+3l_pl_r)$。$\chi_p(r)\chi_r(p)$
+的立方为 $\mathcal R(p,r)$，其平方为一。因此，此除法之后剩余的配对乘积为
+\[
+ \prod_{p<r}\mathcal R(p,r)^{e_pl_r+e_rl_p+l_pl_r}
+ =\mathcal R(c,n)G(n^3)
+   \prod_p\overline{G(p^3)}^{\,l_p}
+            \mathcal R(p,p)^{-e_pl_p-l_p(l_p-1)/2}.
+\]
+该等式通过对 $n^3$ 的素因子展开二次精细化
+方程~\eqref{eq:G-quadratic-refinement} 而得。同一精细化给出
+$G(c)\mathcal R(c,n)G(n^3)=G(cn^3)$，它被插入的
+$\overline{G(cn^3)}$ 消去。最后，方程~\eqref{eq:fixed-gauss-phases}
+给出 $G(p^3)=\gamma_3(p)$ 与 $\mathcal R(p,p)=\omega_p$。
+这些恒等式解释了所有的配对相位，对 $p$ 的射线类无任何限制。
+
+因此，方程~\eqref{eq:local-full-coefficient} 中的系数已分离为素因子。
+在绝对收敛下，它在 $p$ 处的因子是级数
+\begin{equation}\label{eq:local-P}
+\begin{aligned}
+ P_p={}&\sum_{\substack{e_0=0,1\\l,k,m\ge0}}
+ (-1)^{e_0}\gamma_1^{-e_0}\eta(p)^{e_0}
+ (a_p\overline{\gamma_3})^l\rho^{k-t}
+ \omega_p^{tk-e_0l-l(l-1)/2}C_p(t,k,j+6m)\\
+ &\hspace{33mm}\cdot
+ Q^{-(x+1/2)e_0-(1+3x)l-wk-6zm},\qquad t=e_0+3l.
+\end{aligned}
+\end{equation}
+令 $P_p^*$ 为限制到 $t>0$（等价地，完备化指标 $A$ 的正赋值）的同一和。
+
+\begin{lemma}[完备局部恒等式]\label{lem:local-euler}
+对每个满足 $(u,S)=1$ 的非零无六次幂因子 $u$ 以及每个
+素数 $p\notin S$，刚刚定义的因子为
+\begin{equation}\label{old-eq:5.13a}
+\begin{aligned}
+ P_p^*&=\frac1{1-R}\left\{
+ \frac{R(1-Q^{-1})-\eta(p)(Q-1)
+ Q^{-x-w}V^{1_{j\le1}}}{1-V}+J_j\right\},\\
+ P_p&=\frac1{1-V}+1_{j=0}\frac{W_{\rm loc}}{1-W_{\rm loc}}+P_p^*,
+\end{aligned}
+\end{equation}
+其中 $J_j$ 的六个值为
+\[
+\begin{array}{c|l}
+ j&J_j\\\hline
+ 0&-\eta(p)\rho^{-1}Q^{-x}+W_{\rm loc}R\\
+ 1&\eta(p)Q^{-x-w}\\
+ 2&a_p\rho^{-3}Q^{3/2-3x}\\
+ 3&-\eta(p)b_p\rho^{-2}Q^{2-3x-w}
+       +b_p^2\rho^{-4}Q^{2-4x}\\
+ 4&-\eta(p)a_p\rho^{-3}Q^{5/2-4x-w}\\
+ 5&-a_p^2Q^{3-6x}.
+\end{array}
+\]
+令 $W=\chi_p(u)Q^{-w}$ 与
+$D=\eta(p)\overline{\chi_p(u)}Q^{-x}$，并在 $p\mid u$
+处采用原始的零延拓，定义
+\begin{equation}\label{eq:local-H-definition}
+ H_p=P_p\frac{(1-V)(1-W)}{1-D},\qquad
+ \mathcal H_{\eta,u}=\prod_{p\notin S}H_p.
+\end{equation}
+则方程~\eqref{eq:local-full-series} 中的级数具有标量分解
+\begin{equation}\label{eq:probe-high}
+ \mathcal F_{\eta,u}(x,w,z)=
+ \frac{\zeta_F^S(6z)L^S(w,\chi_\bullet(u))}
+ {L^S(x,\eta\overline{\chi_\bullet(u)})}
+ \mathcal H_{\eta,u}(x,w,z).
+\end{equation}
+记 $x_r=\Re x$、$w_r=\Re w$、$z_r=\Re z$。对每个
+固定的 $\epsilon_0>0$，修正乘积在下述每个区域中每一点的
+邻域上正规收敛，因而在那里定义一个全纯函数：
+\begin{align}
+ x_r\ge51/100,\quad z_r\ge17/50,\quad w_r\ge-1/100,\quad
+ x_r+w_r\ge1+\epsilon_0;\label{eq:local-region-one}\\
+ x_r\ge7/8,\quad z_r\ge33/200,\quad w_r\ge19/20.
+ \label{eq:local-region-two}
+\end{align}
+关于虚部与单位相位一致地，$\mathcal H_{\eta,u}\ll_\epsilon q_u^\epsilon$，
+其中常数在第一区域还依赖于 $\epsilon_0$。对第二区域中的 $u=1$，
+$\mathcal H_{\eta,1}=1+O(P_0^{-c_H})$，例如 $c_H=4/5$。
+方程~\eqref{eq:probe-high} 始于绝对收敛，并提供穿过这些区域的亚纯延拓。
+\end{lemma}
+
+第一区域将包含非主行的带缓冲围道，包括反射分子线。
+第二区域包含主留数点 $w=1$、$z=1/6$ 以及用于到达它的围道。
+
+\begin{proof}
+有四个 $t>0$ 的族：
+$(e_0,l)=(0,2r+2),(1,2r),(0,2r+1),(1,2r+1)$，其中 $r\ge0$。
+在每个族中，将 $r$ 增加一、并将第一个允许的 $m$ 增加一，会使
+方程~\eqref{eq:local-P} 的被加项乘以 $R$。事实上相位比为 $a_p^2$：
+由于 $\gamma_3^2=\omega_p$、$\omega_p^2=1$、$\rho^6=1$，剩余的比为 1。
+进一步增大 $m$ 会使被加项乘以 $V$。
+
+为清晰起见，下表列出除以 $R^r$ 之后的每个非零被加项。
+在其第一行中 $j$ 任意；其余条件均如表所示。
+每个被省略的情形都由方程~\eqref{eq:local-scalar-values} 为零。
+\begin{equation}\label{eq:local-family-table}
+\begin{array}{c|c|l|l}
+ (e_0,l)&k&\text{condition on }(j,m)&R^{-r}\text{ times summand}\\\hline
+ (0,2r+2)&0&m\ge r+1&R(1-Q^{-1})V^{m-r-1}\\
+ (0,2r+2)&0&j=5,\ m=r&-a_p^2Q^{3-6x}\\
+ (0,2r+2)&1&j=0,\ m=r+1&W_{\rm loc}R\\
+ (1,2r)&0&j=0,\ m=r&-\eta(p)\rho^{-1}Q^{-x}\\
+ (1,2r)&1&j=1,\ m=r&\eta(p)Q^{-x-w}\\
+ (1,2r)&1&m\ge r+1_{j\le1}&-\eta(p)(Q-1)Q^{-x-w}V^{m-r}\\
+ (0,2r+1)&0&j=2,\ m=r&a_p\rho^{-3}Q^{3/2-3x}\\
+ (0,2r+1)&1&j=3,\ m=r&-\eta(p)b_p\rho^{-2}Q^{2-3x-w}\\
+ (1,2r+1)&0&j=3,\ m=r&b_p^2\rho^{-4}Q^{2-4x}\\
+ (1,2r+1)&1&j=4,\ m=r&-\eta(p)a_p\rho^{-3}Q^{5/2-4x-w}.
+\end{array}
+\end{equation}
+这里对其各项作直接验证。在第一个族中 $t=6r+6$。
+对 $k=0$，当 $m\ge r+1$ 时主 Gauss 提升为 $Q^t(1-Q^{-1})$；
+其在 $(j,m)=(5,r)$ 处的额外边界值为 $-Q^{t-1}$。对 $k=1$，
+乘积 $\omega_p^{-1}G_1G_{-1}=Q$ 只允许 $(j,m)=(0,r+1)$。
+这些给出前三行。在第二个族中 $t=6r+1$。
+对 $k=0$，非主等式 $j'=t-1$ 给出第四行。
+对 $k=1$，主 Gauss 提升在 $j'=t$ 处有其负边界，给出第五行，
+而其在 $j'>t$ 处的值 $Q^{t-1}(Q-1)$ 给出第六行。
+后一条件恰好是 $m\ge r+1_{j\le1}$。
+
+对于两个奇族 $t=6r+3$ 与 $t=6r+4$。其 $k=0$ 行要求 $j'=t-1$，
+其 $k=1$ 行要求 $j'=t$。相位化简为
+\[
+ \gamma_1\gamma_2
+       =-\alpha(p)\overline{\chi_p(4)}\gamma_3,
+ \qquad
+ \frac{\gamma_4}{\gamma_1}
+       =-\frac{\overline{\alpha(p)}}{G(p)}.
+\]
+第一式是 $p$ 处的方程~\eqref{eq:signal}；第二式由第一式与
+$\gamma_2\gamma_4=1$ 推出。代入给出最后四行，包括两个 $j=3$ 项。
+因此该表覆盖了所有五个分歧赋值以及 $j=0$。
+
+对 $r\ge0$ 求和给出 $(1-R)^{-1}$，两个无界的 $m$ 范围给出
+$(1-V)^{-1}$。这些和正是方程~\eqref{old-eq:5.13a} 中 $P_p^*$ 的公式。
+若 $t=0$，则 $e_0=l=0$。$k=0$ 的项给出 $(1-V)^{-1}$，
+而 $k>0$ 的项要求 $j=m=0$ 并给出 $W_{\rm loc}/(1-W_{\rm loc})$。
+这同时证明了 $P_p$ 的公式。
+
+尚需验证这些解析断言，尤其是在 $w_r$ 为负处。
+令 $\mathcal E_p=P_p^*+D$。$t=0$ 的贡献为 $(1-V)^{-1}+W/(1-W)$，
+因此精确化简给出
+\begin{equation}\label{eq:local-H-defect}
+ H_p-1=
+ \frac{D(V+W-VW)-VW+(1-V)(1-W)\mathcal E_p}{1-D}.
+\end{equation}
+此表达式没有 $1-W$ 分母。在 $p\mid u$ 处，$D=W=0$，
+它化简为 $(1-V)\mathcal E_p$。在两个所述区域中 $|R|<1$、$|V|<1$、
+$|D|<1$，一致地远离一，因此这些是全纯的局部表达式。
+
+对 $p\nmid u$ 且 $\vartheta=(-w_r)_+$，$j=0$ 行给出
+\[
+ |\mathcal E_p|\ll
+ Q^{4-6x_r-6z_r+\vartheta}+Q^{1-x_r-w_r-6z_r}.
+\]
+在第一区域中 $4-6x_r-6z_r\le-11/10$ 且 $\vartheta\le1/100$。
+因此方程~\eqref{eq:local-H-defect} 中额外的因子 $1-W$ 使此贡献
+至多为 $Q^{-27/25}$。项 $DW$ 至多为 $Q^{-1-\epsilon_0}$；
+该方程中其他项更小。对 $p\mid u$，严格的第二族项的指数为
+$1-x_r-w_r\le-\epsilon_0$。表中其他最接近的指数为
+\[
+ 3/2-3x_r\le-3/100,\qquad
+ 2-3x_r-w_r\le-1/50-\epsilon_0,
+\]
+其余所有指数均不大于 $-3/100$。
+因此，令 $\epsilon_H=\min(\epsilon_0,1/50)$，
+\[
+ H_p-1=O(Q^{-1-\epsilon_H})\quad(p\nmid u),\qquad
+ H_p-1=O(Q^{-\epsilon_H})\quad(p\mid u).
+\]
+在第二区域中，同样的比较给出更强的界
+\[
+ H_p-1=O(Q^{-363/200})\quad(p\nmid u),\qquad
+ H_p-1=O(Q^{-33/40})\quad(p\mid u).
+\]
+此处最接近的好素数项为 $Q^{1-x_r-w_r-6z_r}$，
+最接近的分歧项为 $Q^{1-x_r-w_r}$。
+
+对不整除 $u$ 的素数的和正规收敛，而对 $u$ 的素数取有限乘积
+由除子乘积界为 $O_\epsilon(q_u^\epsilon)$。这些估计对所有虚部与
+单位相位一致。当 $u=1$ 时，超出 $P_0$ 的好素数尾部由理想计数为
+$O(P_0^{-163/200})$，这蕴含了所断言的乘积估计 $O(P_0^{-4/5})$。
+最后，在每个素数处提取 $(1-V)^{-1}(1-W)^{-1}(1-D)$ 便给出
+方程~\eqref{eq:probe-high}。剩余乘积的正规收敛证明了其所断言的延拓。
+\end{proof}
+
+对 $u=1$，方程~\eqref{eq:probe-high} 包含 $1/L^S(x,\eta)$，
+其分子含有两个主因子 $\zeta_F^S(6z)$ 与 $\zeta_F^S(w)$。
+它们的留数将产生目标 Mellin 信号。对于中间行范数，
+下一节为与每一行相关联的有限特征族指定一个无零点矩形，
+并从选定的零点产生同时多项式见证。主行与有界行以及外部范数区间
+在节~\ref{sec:shared-analytic-estimates} 中处理。
+
+\section{带饱和见证的零点探测器}\label{sec:detector}
+
+高展开包含一个对无六次幂因子的行 \(u\) 的求和。
+我们把每个非主行与其所确定的有限特征表示族的一个带缓冲的
+无零点矩形相关联。只要所得到的分箱位于固定下界之上，
+一个零点便产生一个逆多项式与一个普通多项式，且二者具有同时下界。
+这些见证随后可用不同的均值估计来计数。此处的解析输入为
+引理~\ref{lem:logarithmic-control}、引理~\ref{lem:smooth-calculus}
+的光滑演算、方程~\eqref{eq:hecke-growth} 中的全局增长估计，
+以及引理~\ref{lem:deleted-euler-factors} 的删去 Euler 因子界。
+
+在本节中，始终假设 \(\beta_*>51/100\)，其中 \(\beta_*\)
+是方程~\eqref{old-eq:1.1b} 中的全局上确界。
+此设定不选出延拓判据中两个边界中的任何一个。
+
+\subsection{带缓冲的矩形与逐点界}
+
+如节~\ref{sec:arithmetic} 那样，独立于 \(Z\) 固定算术数据
+\(\mathcal A\)。特别地，有限群
+\[
+ \Theta=\langle\eta,\widehat T\rangle
+\]
+包含目标以及在高行族中使用的固定射线扭曲，且 \(\Theta\) 中
+每个元素的每个导子素数都属于 \(S\)。对无六次幂因子的元素 \(u\)，
+定义有限表示集合
+\[
+ \mathcal X_u=
+ \bigl\{\psi_{u,\nu,\varsigma}(n)=\nu(n)\chi_n(u)^\varsigma:
+       \nu\in\Theta,\ \varsigma\in\{-1,1\}\bigr\}.
+\]
+在非单位处，\(\chi_n(u)^{-1}\) 的值，如同符号的每个其他幂一样，
+为零。\(\Theta\) 的群性质表明 \(\mathcal X_u\) 在共轭下封闭。
+它包含分子特征 \(\chi_\bullet(u)\)、分母特征
+\(\eta\overline{\chi_\bullet(u)}\)，以及通过将六次符号的
+任一方向定向乘以 \(\Theta\) 中某个元素而得到的每个零延拓表示。
+
+令 \(\psi^*\) 为诱导表示 \(\psi\in\mathcal X_u\) 的本原特征，
+令 \(Q_\psi\) 为其导子范数。互反律与固定的导子素数给出
+\[
+ Q_\psi\ll_{\mathcal A}q_u,\qquad
+ L_{\rm orig}(s,\psi)
+   =L(s,\psi^*)\prod_{p\in E_u}(1-\psi^*(p)q_p^{-s}),
+ \qquad
+ E_u\subset S\cup\{p:p\mid u\}.
+\]
+删去乘积的根基具有范数 \(O_S(q_u)\)。
+这些恒等式保留了原始的零延拓；特别地，它们不会把依赖于行的掩码
+替换为独立选取的掩码。
+
+\phantomsection\label{par:physical-row-ramification}
+若在素数 \(p\notin S\) 处 \(v_p(u)=j\in\{1,\ldots,5\}\)，
+则 \(\chi_\bullet(u)\) 在 \(p\) 处单位上的局部特征阶为
+\(6/\gcd(6,j)>1\)。\(\Theta\) 中的特征在该处是非分歧的，
+因此无法消去此局部特征。因此，\(\mathcal X_u\) 中的一个表示
+只有在 \(u\) 的支集位于 \(S\) 上时才能诱导主特征。
+这样的无六次幂因子的行只有有限多个，包括单位因子。
+对当前探测器将其移除；每个应用都必须单独估计这些有界的物理行。
+
+固定 \(0<d_{\min}<d_{\max}<\infty\)，记 \(U=Z^d\)，其中
+\(d_{\min}\le d\le d_{\max}\)。当前二元组中的行满足 \(q_u\asymp U\)，
+比较常数固定。令
+\[
+ 0<\tau\le d_{\min}/100,\qquad T_1=Z^\tau>2,\qquad
+ 0<e<10^{-3},\qquad I=\lceil1/e\rceil+2.
+\]
+\(\tau\) 的取值将在已知固定高度阶数之后选定。目前它独立于 \(Z\) 固定。
+特别地 \(T_1\le U^{1/100}\)。
+
+\begin{lemma}[带缓冲的无零点分箱]\label{lem:buffered-bins}
+对每个保留的行 \(u\)，存在一个指标 \(i\in\{1,\ldots,I-1\}\)
+与一个格点
+\[
+ a\in(51/100+e\mathbb Z_{\ge0})\cap[51/100,1]
+\]
+具有下述性质。对 \(j=1,\ldots,I\)，令
+\[
+ M_j(u)=\max\left(\{51/100\}\cup
+ \left\{\Re\rho:
+ \begin{array}{l}
+  \psi\in\mathcal X_u,\quad L(\rho,\psi^*)=0,\\
+  \Re\rho\ge51/100,\quad |\Im\rho|\le3jT_1
+ \end{array}\right\}\right).
+\]
+则
+\[
+ a\le M_i(u)<a+e,\qquad M_{i+1}(u)<a+2e.
+\]
+若 \(a>51/100\)，则某个 \(\psi\in\mathcal X_u\) 有一个零点
+\(\rho=\sigma+i\gamma\)，满足
+\[
+ a\le\sigma<a+e,\qquad |\gamma|\le3iT_1.
+\]
+对每个 \(\epsilon_1>0\)、每个 \(\psi\in\mathcal X_u\) 以及
+充分大的 \(Z\)，关于保留的行一致地，
+\[
+ |L_{\rm orig}(s,\psi)|+|L_{\rm orig}(s,\psi)^{-1}|
+ \ll_{\mathcal A,e,\epsilon_1} U^{\epsilon_1}
+ \quad
+ \left(\Re s\ge a+6e,\ |\Im s|\le(3i+2)T_1\right).
+\]
+在同一高度范围内的反射线上，
+\[
+ |L_{\rm orig}(1-a-6e+it,\psi)|
+ \ll_{\mathcal A,e,\epsilon_1}
+ U^{a-1/2+12e+\epsilon_1}(3+T_1)^C,
+\]
+其中 \(C\) 只依赖于固定的实带形域与域。
+可能的配对 \((i,a)\) 有 \(O_e(1)\) 个，独立于该行及其导子。
+\end{lemma}
+
+\begin{proof}
+每个最大值都存在：集合有限，每个非主本原 \(L\) 函数的零点
+在紧矩形中离散，且绝对 Euler 收敛排除了实部大于一的零点。
+序列 \(M_j(u)\) 单调不减且位于 \([51/100,1]\) 中。若其
+\(I-1\) 个增量中的每一个都超过 \(e\)，则
+\[
+ M_I(u)-M_1(u)>(I-1)e>1,
+\]
+这是不可能的。选取一个满足 \(M_{i+1}(u)-M_i(u)\le e\) 的指标，
+并将 \(M_i(u)\) 在所给格点上向下取整。这给出两个不等式。
+当 \(a>51/100\) 时，最大值 \(M_i(u)\) 由某个实际零点达到，
+给出 \(\rho\)。此推理允许零点位于直线一上。
+
+对 \(|t|\le(3i+2)T_1\)，以 \(2+it\) 为中心、半径为 \(2-a-2e\)
+的闭圆盘具有至少 \(a+2e\) 的实部。其半径小于 \(3/2<T_1\)，
+因此其中每一点的虚部绝对值小于 \(3(i+1)T_1\)。
+因此界 \(M_{i+1}(u)<a+2e\) 排除了此圆盘中每个本原函数的每个零点。
+引理~\ref{lem:logarithmic-control} 控制半径为 \(2-a-6e\) 的同心圆盘。
+以中心 \(2+i\Im s\) 应用它，并在更右处使用绝对 Euler 收敛。
+由于 \(Q_\psi\ll_{\mathcal A}U\) 且 \((3+|t|)^2\ll_e U^{1/50}\)，
+该引理中任意小的幂可取为使其余贡献为 \(U^{\epsilon_1/2}\)。
+该引理之后关于多项式大小删去 Euler 乘积的估计提供另一个
+\(U^{\epsilon_1/2}\)。
+
+对于最后的断言，引理~\ref{lem:hecke-strip-growth} 的证明中
+回顾的本原函数方程 \cite[方程 (1.1)]{GZ} 将
+\(1-a-6e+it\) 处的值与 \(a+6e-it\) 处的共轭本原函数相关联。
+共轭表示属于 \(\mathcal X_u\)。导子与 gamma 商至多贡献
+\[
+ Q_\psi^{a-1/2+6e}(3+|t|)^C.
+\]
+由前面的圆盘界，反射本原值具有任意小的 \(U\)-幂。
+最后，\(1-a-6e\ge-6e\)，因此在减少初步损失之后，
+删去乘积的上界为 \(U^{6e+\epsilon_1}\)。这证明了反射估计。
+\(i\) 与 \(a\) 的取值范围给出 \(O_e(1)\) 个配对。
+\end{proof}
+
+我们称 \((i,a)\) 为该行的分箱，并令
+\[
+ \delta=2a-1,\qquad 1/50\le\delta\le1.
+\]
+诱导 \(\mathcal X_u\) 中某个表示的每个本原特征都是有限阶 Hecke 特征。
+\(\beta_*\) 的定义连同 \(\beta_*>51/100\) 因此给出
+\(M_i(u)\le\beta_*\)。特别地，该分箱满足精确不等式
+\[
+ a\le\beta_*,\qquad \delta\le2\beta_*-1.
+\]
+分箱 \(a=51/100\) 将由平凡行计数来界定。对 \(a>51/100\)，
+引理~\ref{lem:buffered-bins} 中的零点产生大的多项式，
+可对其应用矩。
+
+\begin{lemma}[逐点二元估计]\label{lem:detector-dyads}
+固定 \(r,m\) 的有界非负区间，并令
+\[
+ M_r=M_\psi(r;W_M),\qquad S_m=S_\psi(m;W_S)
+\]
+表示方程~\eqref{old-eq:1.1a} 与 \eqref{old-eq:1.1} 中的多项式，
+现在取基 \(U\)。设 \(\psi\in\mathcal X_u\)，非扭曲剖面在固定圆环上
+有有界光滑半范数，且任何纯范数扭曲的高度至多为 \((3i+1)T_1\)。
+进入同一 \(L\) 论证的所有额外 Mellin 频率要求其总绝对值至多为
+\(T_1/2\)。
+
+对每个 \(\epsilon>0\)，存在 \(e_0>0\)（只依赖于 \(\epsilon\)
+与有界长度区间）以及一个有限高度阶 \(A_{\mathcal A}\)
+（关于变动的行与剖面一致），使得当
+\[
+ 0<e<e_0,\qquad (1+T_1)^{A_{\mathcal A}}\le U^{\epsilon/10},
+\]
+下述估计对充分大的 \(Z\) 成立：
+\begin{equation}
+ |M_r|^2\ll_{\mathcal A,\epsilon}U^{\delta r+\epsilon},
+ \label{old-eq:6.2}
+\end{equation}
+\begin{equation}
+ |S_m|^2\ll_{\mathcal A,\epsilon}
+       U^{\delta\min(m,1-m)+\epsilon}.
+ \label{old-eq:6.3}
+\end{equation}
+外部尾部阶可在正数 \(\tau\) 之后选取。它不改变 \(A_{\mathcal A}\)。
+\end{lemma}
+
+\begin{proof}
+我们详细说明高度限制，因为完整的无限围道移动不能由该分箱
+来证明其合理性。对固定的圆环 \(W\)、有界实数 \(\sigma\)
+以及纯扭曲 \(y^{i\omega}\)，在直线 \(c+\sigma>1\) 上的 Mellin 反演给出
+\[
+ \begin{split}
+ &U^{-r/2}\sum_n\mu(n)\psi(n)
+       W(q_n/U^r)(q_n/U^r)^{-\sigma+i\omega}\\
+ &\quad=\frac1{2\pi i}\int_{(c)}
+  \mathcal MW(s)\,
+  U^{r(s+\sigma-i\omega-1/2)}
+  L_{\rm orig}(s+\sigma-i\omega,\psi)^{-1}\,ds.
+ \end{split}
+\]
+此处 \(\mathcal MW\) 是引理~\ref{lem:smooth-calculus} 中定义的
+Mellin 变换。该扭曲出现在 \(L\) 论证中，而不出现在估计其尾部的
+变换中。只将附加频率至多为 \(T_1\) 的指定份额的那部分移动到
+\(\Re(s+\sigma)=a+6e\)。水平连接段与移动的部分保持在
+引理~\ref{lem:buffered-bins} 的无零点矩形中。
+其界给出中心部分的 \(U^{(a-1/2+6e)r+\epsilon_1}\)。
+
+把剩余的尾部留在绝对线上，我们可以取之为
+\(\Re(s+\sigma)=2\)。在那里倒数 Euler 乘积绝对有界。
+在反向连接段上，倒数仍位于带缓冲的矩形内。
+由于实连接区间与长度区间有界，连接段上剩余的算术与尺度因子为
+\(O(U^B(1+|\Im s|)^J)\)，其中固定 \(B,J\) 在外部尾部阶之前选取。
+方程~\eqref{eq:pointwise-mellin-tail} 中的逐点 Mellin 界，
+以导数阶 \(N+\lceil J\rceil+1\) 应用于该紧实区间，
+将每个水平连接段界为 \(O(U^B T_1^{-N})\)。
+单独的竖直尾部由方程~\eqref{eq:late-fourier-tail} 具有相同的界。
+两个估计都适用于非扭曲剖面，关于所述族一致。
+由于 \(T_1=Z^\tau\)、\(\tau>0\)，且所有长度都位于固定的有界区间内，
+充分大的固定 \(N\) 使这些误差小于所断言的界。
+在规定的 \(\epsilon\) 下取 \(e\) 与 \(\epsilon_1\) 足够小，
+便证明了方程~\eqref{old-eq:6.2}。
+
+对普通多项式，同样的计算使用 \(L_{\rm orig}\) 而非其倒数。
+移动至 \(\Re(s+\sigma)=a+6e\) 给出
+\[
+ |S_m|\ll U^{(a-1/2+6e)m+\epsilon_1}
+          +O(U^B T_1^{-N}).
+\]
+或者将其中心部分移动至 \(\Re(s+\sigma)=1-a-6e\)。
+该函数为整函数，因为该行是非主的。引理~\ref{lem:buffered-bins}
+的反射估计给出
+\[
+ |S_m|\ll
+ U^{a-1/2+12e+\epsilon_1}
+ U^{(1/2-a-6e)m}(3+T_1)^C
+ +O(U^B T_1^{-N}).
+\]
+此处的连接段只需要全局上带形域界以及删去乘积的负带形域界，
+因为不存在倒数。它们给出如上固定的 \(B,J\)，因此逐点 Mellin 估计
+界定连接段，积分 Fourier 估计界定绝对线尾部。
+取更好的中心界，选取 \(N\) 也去支配当 \(m>1\) 时可能为负的指数，
+并使用所示的高度假设，便证明了方程~\eqref{old-eq:6.3}。
+小于 \(U\) 的本原导子会减小反射导子因子。
+原始的删去 Euler 因子已经包含在引理~\ref{lem:buffered-bins} 中。
+

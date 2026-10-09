@@ -1,6 +1,0 @@
-PAGE 80   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL R  y  230.7 x  478.9- 488.2
-      line: a nonzero normalizer. For the base correction that equation holds with A = 1 and R = 0 .
-CAL D  y  340.5 x  101.8- 110.2
-      line: lies in D . Thus Equation ( 10.17 ) holds with ℓ = 0 and height order zero. At the double residue

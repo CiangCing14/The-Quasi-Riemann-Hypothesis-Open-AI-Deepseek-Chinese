@@ -1,0 +1,542 @@
+设 $X>0$。 设 $V\in C^\infty(0,\infty)$，并且对每个
+$C>0$ 及每个整数 $j\ge0$，当
+$x\to0$ 时 $(x\partial_x)^jV(x)$ 为 $O_{C,j}(x^C)$，当 $x\to\infty$ 时为 $O_{C,j}(x^{-C})$。 定义
+\[
+ \widehat V(t)=\int_0^\infty V(x)x^t\,\frac{dx}{x}.
+\]
+待变换的磨光表达式是完备化和
+\[
+ \begin{split}
+ &\frac1{2\pi i}\int_{(a)}\widehat V(s-1/2)X^{s-1/2}T(s,\Psi)\,ds\\
+ &\quad=\sum_{\substack{n\ {\rm sf},\ b\\n,b\equiv1\ (3)\\(nb,\mathfrak E)=1}}
+ \frac{\gamma_2(n)\overline{\alpha(nb^3)}\Psi(nb^3)}
+      {\sqrt{q_n}\,q_b}
+ V\!\left(\frac{q_nq_b^3}{X}\right),\qquad a>1.
+ \end{split}
+\]
+此等式由绝对收敛与 Mellin 反演推得。
+特征作用在整个指标 $nb^3$ 上，其取零的值保留；
+$n$ 与 $b$ 可以有公共素因子。
+
+反射检验函数定义为
+\[
+ K=\frac{(2\pi)^4}{27},\qquad
+ R(t)=\prod_{\pm}\frac{\Gamma(1+t\pm1/6)}{\Gamma(1-t\pm1/6)},
+\]
+\[
+ V^\sharp(x)=\frac1{2\pi i}\int_{(\sigma)}
+       \widehat V(-t)R(t)(Kx)^{-t}\,dt\qquad(\sigma\ge0).
+\]
+定义 $V^\sharp$ 的积分绝对收敛，且与 $\sigma\ge0$ 无关。
+
+乘积 $T$ 具有整函数延拓。 在每个固定竖直
+带形域上它具有多项式增长，其中常数允许依赖于
+$L,\Psi_0,\mathcal P,(j_p)$ 及该带形域。 存在一组固定的三重
+尖点系数函数，从 $\lambda^{-4}\mathcal O\setminus\{0\}$ 到
+$\mathbb C$，由证明中的 theta 展开构造。 同一
+三重函数用于算术数据、尺度与检验剖面的所有选择。
+对上述每个固定的算术选择，存在一族有限的项，
+按 (1) 中的方式编号，独立于
+$X$、$V$ 及围道参数 $a>1$。 在每一项中，$d$ 取自
+这组三重函数，而 $\vartheta$ 是 $\mathcal O$ 的一个加性特征，
+模一个仅依赖于 $L$ 的固定模；它们按扇区的依赖关系
+恰如 (3) 所述，其余数据具有性质 (1)--(3)。
+对这些项及每个 $a>1$，恒等式为
+\begin{equation}\label{eq:reflection}
+ \begin{aligned}
+ &\frac1{2\pi i}\int_{(a)}\widehat V(s-1/2)X^{s-1/2}T(s,\Psi)\,ds\\
+ &\quad=\sum_{\text{terms}}\zeta
+ \sum_{0\ne\mu\in\lambda^{-4}\mathcal O}
+ \frac{d(\mu)\alpha(\mu)\vartheta(\lambda^4\mu)}{\sqrt{q_\mu}}
+ \prod_{p\ {\rm active}}B_p(\lambda^4\mu)
+ V^\sharp\!\left(\frac{q_\mu X}{q_c^2}\right).
+ \end{aligned}
+\end{equation}
+每个内和绝对收敛。 这些项具有以下
+精确性质。
+
+\begin{enumerate}
+\item 一项由 $h_0\bmod L$ 及活跃素数的子集确定。
+每个 $j_p\ne0$ 的 $p$ 都是活跃的，而 $j_p=0$ 的素数可以是
+活跃的或非活跃的。 记 $r=\prod_{p\ {\rm active}}p$。 则
+$c=c_Fr$，其中 $c_F$ 是
+$\lambda^2h_0/L$ 的既约分母，附以一个正规化单位。 于是 $c_F$ 遍历一个
+固定的有限集，且其素因子整除 $L$。 共有
+$O_{\mathfrak L}(2^{|\mathcal P|})$ 项，或在把下一式中
+每个 Ramanujan 因子拆成它的两个被加项之后为
+$O_{\mathfrak L}(4^{|\mathcal P|})$ 项。
+
+\item 局部列因子为
+\[
+ B_p(x)=\begin{cases}
+ \chi_p(x)^{-j_p-2},&j_p\ne0,4,\\
+ q_p^{-1/2}(-1+q_p1_{p\mid x}),&j_p=4,\\
+ q_p^{-1/2}\chi_p(x)^{-2},&j_p=0\text{ and }p\text{ is active}.
+ \end{cases}
+\]
+函数 $d$ 是三个固定尖点系数函数之一。
+把 $u$ 记作 Eisenstein 单位，它们的支撑与大小满足
+\begin{equation}
+ \operatorname{supp}d\subset
+ \{u\lambda^k n b^3:k\ge-4,\ n,b\equiv1\pmod3,\ n\ {\rm sf}\},
+ \qquad |d(\mu)|\le27\,3^{k/6}|b|.
+ \label{old-eq:4.3}
+\end{equation}
+该界是针对被支撑指标所展示的表示而言的。
+它允许 $n$ 与 $b$ 有公共素数，并且除
+$\lambda$ 处所展示的限制外，对 $L$ 的素数不施加任何排除。
+特征 $\vartheta$ 是 $\mathcal O$ 的一个商
+模一个仅依赖于 $L$ 的固定模的加性特征。
+
+\item 标量 $\zeta$ 与 $\mu$ 无关，且满足
+$|\zeta|\le1/81$。 其关于移动素数的依赖可以精确给出。
+对 $m\not\equiv0\pmod6$，置
+\[
+ \tau_{p,m}^{\pm}=q_p^{-1/2}\sum_{y\bmod p}\chi_p(y)^m e(\pm y/p),
+ \qquad |\tau_{p,m}^{\pm}|=1.
+\]
+对每个活跃的 $p$，由
+\[
+ \sigma_p=\lambda^2c/p,\qquad
+ \epsilon_p=-\big((\lambda^3c/p)\sigma_p\big)^{-1},
+\]
+定义模 $p$ 的单位，并置
+\[
+ \omega_{p,j}=\begin{cases}
+ \tau_{p,j}^{-}\tau_{p,j+2}^{+}\chi_p(\epsilon_p)^{-j-2},&j\ne0,4,\\
+ \tau_{p,4}^{-},&j=4,\\
+ -\tau_{p,2}^{+}\chi_p(\epsilon_p)^{-2},&j=0.
+ \end{cases}
+\]
+$\tau$ 的下标按模六读取。 令
+$M=\lambda^{12}L^4$，存在一个绝对值为一的数 $\kappa_F$，
+仅依赖于 $h_0$ 及 $r$ 模 $M^2$ 的类，使得
+\begin{equation}\label{eq:reflection-row-phase}
+ \zeta=-\frac i{81}\bar\alpha(c)^2\widehat\phi(h_0)\bar\kappa_F
+ \prod_{p\ {\rm inactive}}(1-q_p^{-1})
+ \prod_{p\ {\rm active}}\chi_p(\sigma_p)^{-2}\omega_{p,j_p}.
+\end{equation}
+在 $h_0$ 与 $r\bmod M^2$ 的有限多个类中的每一个类里，$d$
+与 $\vartheta$ 都是固定的。 因此在该扇区内它们是公共列
+因子。 除所展示的尺度 $q_c^2$ 外，
+$B_p$ 之外的所有其他移动素数依赖都包含在标量
+$\zeta$ 中，而 $\zeta$ 可以依赖于整个活跃集。
+
+分支约定对具有相同 $L$ 与 $\Psi_0$ 的所有局部素数集
+同时成立。 特别地，若把一个好素数 $p$ 以指数零加入
+局部集并宣布其为非活跃的，则所得
+分支具有相同的 $c_F,c,d,\vartheta,\kappa_F$，在每个
+其他活跃素数处的数据相同，并与 $p$ 缺席的分支具有相同的核。
+其标量乘以 $1-q_p^{-1}$。 这种相容性包括每个
+$h_0$，而不只是模 $L$ 的单位类。
+\end{enumerate}
+
+\emph{变换后检验函数的界。}
+对 $A\ge0$ 及整数 $B\ge0$，置
+\[
+ \mathfrak M_{A,B}(V)=
+ \sup_{-A\le\eta\le1/4}\int_{\mathbb R}
+       (1+|u|)^B|\widehat V(\eta+iu)|\,du.
+\]
+对每个整数 $j\ge0$，
+\begin{equation}\label{eq:reflection-kernel}
+ |(x\partial_x)^jV^\sharp(x)|
+ \ll_{A,j}\min\{x^{1/4},(1+x)^{-A}\}
+       \mathfrak M_{A,\lceil4A\rceil+j+2}(V).
+\end{equation}
+若 $\chi\in C_c^\infty(0,\infty)$ 固定，$Y>0$，且 $J\ge0$ 为
+整数，则
+\begin{equation}\label{eq:reflection-annular-fourier}
+ \int_{\mathbb R}(1+|u|)^J
+ \left|\int_0^\infty\chi(y)V^\sharp(Yy)y^{-iu}\frac{dy}{y}\right|du
+ \ll_{A,J,\chi}\min\{Y^{1/4},(1+Y)^{-A}\}
+       \mathfrak M_{A,\lceil4A\rceil+J+4}(V).
+\end{equation}
+这些都是有限光滑半范数。 更精确地，
+\begin{equation}\label{eq:reflection-test-seminorm}
+ \mathfrak M_{A,B}(V)\ll_{A,B}
+ \int_0^\infty(1+x^{-A}+x^{1/4})
+       \bigl(|V(x)|+|(x\partial_x)^{B+2}V(x)|\bigr)\frac{dx}{x}.
+\end{equation}
+把 $V(x)$ 换成 $x^{iu_0}V(x)$ 至多使
+$\mathfrak M_{A,B}$ 乘以 $(1+|u_0|)^B$。
+\end{proposition}
+
+\begin{proof}
+我们首先通过有限多个平移后的 theta 值来表达特征掩码。
+随后变换它们的有理尖点，并计算所得的自守因子与局部
+Fourier 因子；最后的 Mellin 比较给出反射恒等式
+及其变换后检验函数的界。
+
+\emph{固定的 theta 输入。}
+设 $\Gamma=\mathrm{SL}_2(\mathcal O)$，
+$\Gamma_1(3)=\{g\in\Gamma:g\equiv I\pmod3\}$，且
+$\Gamma_2=\langle\mathrm{SL}_2(\mathbb Z),\Gamma_1(3)\rangle$。
+\cite[方程 (5.4)、(5.7)、(5.9) 与 (5.12)--(5.17)]{DR}
+中无条件成立的公式给出
+$\mathbb H^3=\mathbb C\times\mathbb R_{>0}$ 上的光滑三次 theta 函数 $\theta$，满足
+\[
+ \theta(gw)=\kappa(g)\theta(w)\quad(g\in\Gamma_2),\qquad
+ \kappa\!\begin{pmatrix}a&b\\c&\delta'\end{pmatrix}
+   =\left(\frac ca\right)_3\quad
+   \left(\begin{pmatrix}a&b\\c&\delta'\end{pmatrix}\in\Gamma_1(3),\ c\ne0\right).
+\]
+这里 $\kappa$ 在 $\mathrm{SL}_2(\mathbb Z)$ 上为一，且在 $\Gamma_1(3)$ 中
+左下元素为零的元素上为一。 下标 $3$
+表示通常的三次剩余符号；对好素数 $p\notin S$，
+有 $(x/p)_3=\chi_p(x)^2$。
+这些自守与系数公式不假设任何关于 $L$ 函数零点的
+条件。
+
+置
+\[
+ \mathsf L(t)=\begin{pmatrix}1&0\\t&1\end{pmatrix},\qquad
+ (t_0,t_1,t_2)=(0,\omega^2,\omega),\qquad
+ \Theta_b(w)=\theta(\mathsf L(t_b)w).
+\]
+若 $v\in\mathbb Z+3\mathcal O$，则 $\mathsf L(v)$ 是
+$\mathrm{SL}_2(\mathbb Z)$ 的一个元素与
+$\Gamma_1(3)$ 中一个自守因子为一的下平移之积。 对
+上平移有类似断言成立。 因此
+\[
+ \theta(\mathsf L(\lambda)w)=\Theta_1(w),\qquad
+ \theta(\mathsf L(-\lambda)w)=\Theta_2(w),
+\]
+因为 $\lambda-\omega^2=2+3\omega$ 且
+$-\lambda-\omega=-1-3\omega$。 若 $u_0=s+t\omega$，其中
+$0\le s,t<3$，且 $E=\bigl(\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}\bigr)$，
+则
+\[
+ \begin{pmatrix}u_0&-1\\1&0\end{pmatrix}=E\mathsf L(-u_0),
+ \qquad -u_0-t_t\in\mathbb Z+3\mathcal O,
+\]
+从而 $\theta\bigl(\bigl(\begin{smallmatrix}u_0&-1\\1&0\end{smallmatrix}\bigr)w\bigr)
+=\Theta_t(w)$。 这些是下文所需的仅有的尖点代表元。
+
+对其中任一个，由
+\begin{equation}\label{eq:reflection-cusp-expansion}
+ \bar\theta(H(z,v))=C_H(v)+
+ \sum_{\mu\ne0}d_H(\mu)vK_{1/3}(4\pi|\mu|v)\check e(\mu z).
+\end{equation}
+定义 $d_H$。 这里 $C_H(v)$ 与 $z$ 无关。
+三个函数 $\Theta_0,\Theta_1,\Theta_2$ 分别是
+~\cite{DR} 中的 $F_1,F_{19},F_{10}$。 其附录~A 的第 $1,19,10$ 行
+用其方程 (5.7)、(5.13) 与 (5.14) 中的 $\tau,\tau_1,\tau_2$
+表达它们的系数。 在其记号中，共轭
+展开使用 $\overline{d_j(-\mu)}$，如它们的方程 (5.16)。
+那些公式给出
+方程~\eqref{old-eq:4.3} 中的支撑包含。 为完整起见，$\tau$ 在
+$\mu=u\lambda^k n b^3$ 处可能的两个大小为
+\[
+ 3^{k/6+8/3}|b|\quad\hbox{and}\quad3^{k/6+3}|b|,
+\]
+而 $\tau_1,\tau_2$ 的大小为 $9|b|$ 且 $k=-4$。
+这里 Gauss 和仅使用三次符号，包括在 $S$ 中的素数处。
+为明确其定义域，对每个主无平方因子 $n$，如
+~\cite[方程 (1.7)]{DR} 中那样定义
+\begin{equation}\label{eq:reflection-cubic-source-gauss}
+ \widetilde g_3(n)=q_n^{-1/2}\sum_{v\bmod n}
+       \left(\frac vn\right)_3\check e(v/n),
+ \qquad \widetilde g_3(1)=1.
+\end{equation}
+通常的三次符号在除 $\lambda$ 外的每个素数处有定义，
+在非单位上取值为零，并在分母中按乘性延拓。
+每个主 $n$ 都与 $\lambda$ 互素。 在 $n$ 的每个素因子处
+三次特征非平凡，且 $\check e(v/n)=e(\lambda v/n)$ 是本原的，
+因为 $\lambda$ 在那里是单位。 因此有限域 Gauss 恒等式与
+中国剩余定理给出 $|\widetilde g_3(n)|=1$，对每个
+这样的无平方因子 $n$ 成立。 这包括范数为 $4$ 的主素数 $-2$；
+不使用以该数为分母的六次特征。 又，只要 $(t,n)=1$，
+变量替换 $y=tv$ 给出
+\[
+ q_n^{-1/2}\sum_{v\bmod n}\left(\frac vn\right)_3\check e(tv/n)
+       =\left(\frac tn\right)_3^{-1}\widetilde g_3(n).
+\]
+这涵盖了其他源系数族中的扭曲 $t=\lambda^2,\omega\lambda^2,\omega^2\lambda^2$。
+于是所有三个尖点族中出现的未正规化 Gauss 和
+其大小均为 $|n|$。 从而
+上面展示的每个系数大小至多为
+$27\,3^{k/6}|b|$，包括 $k=-4$。 这些公式只要求
+$n$ 无平方因子且 $n,b$ 为主；它们不要求
+$(n,b)=1$。 $nb^3$ 的素赋值还表明它由这样的 $n,b$
+的表示（当存在时）是唯一的。 特别地，当
+这些变量有公共素数或含有被排除在素数求和之外的素数时，同样的界
+仍然成立。
+
+在无穷远处，条件 $x=\lambda^3\mu\equiv1\pmod3$ 恰好分离出
+$\mu=\lambda^{-3}nb^3$，其中 $n,b$ 为主且 $n$ 无平方因子。
+无穷远处的支撑有 $\lambda^3\mu\in\mathcal O$；~\cite{DR}
+方程 (5.7) 中其他每个分歧
+指数都使 $x$ 被 $\lambda$ 整除，而剩余
+一对中的负号给出 $x\equiv-1\pmod3$。 在被分离出的指标处，$\bar\theta$
+中的系数为
+\begin{equation}\label{eq:reflection-infinity-coefficient}
+ d_I(\lambda^{-3}nb^3)=3^{5/2}|b|\widetilde g_3(n).
+\end{equation}
+这是未加掩码的源公式，对每个主无平方因子 $n$
+与每个主 $b$ 成立，它们之间没有互素条件。 仅当
+$(n,S)=1$ 时，它才可以用整体六次记号表达：在 $\gamma_2(n)$ 中作替换
+$y=\lambda v$ 给出
+\begin{equation}\label{eq:reflection-cubic-sextic-conversion}
+ \widetilde g_3(n)=\left(\frac\lambda n\right)_3^{-1}\gamma_2(n)
+       =\chi_n(\lambda)^{-2}\gamma_2(n)\qquad((n,S)=1).
+\end{equation}
+~\cite[方程 (1.5)]{DR} 中的三次补充律使
+$(\lambda/x)_3$ 在所有主 $x$ 上模 $9$ 周期。 在与 $S$ 互素的
+主元素上它等于 $\chi_x(\lambda)^2$。 $\mathcal X$ 中的特征在与 $\mathfrak E$
+互素的主元素上模其导子周期，而
+零条件 $(x,\mathfrak E)\ne1$ 模 $\mathfrak E$ 周期。
+因此一个具有素支撑 $S$ 的充分可整除的 $L$ 对
+固定有限族的每个成员都适用。 这在选择移动局部素数
+之前验证了它的选取。
+
+\emph{带零延拓的有限 Fourier 反演。}
+对 $j\in\{0,\ldots,5\}$ 定义
+\[
+ C_{p,j}(h)=q_p^{-1}\sum_{x\bmod p}\chi_p(x)^j e(-hx/p).
+\]
+由 $e$ 给出的特征配对在
+$\mathcal O/(p)$ 上非退化。 在 Gauss 和中作变量替换，并利用
+非平凡乘性特征的正交性，给出
+\begin{equation}\label{eq:reflection-local-fourier}
+ C_{p,j}(h)=\begin{cases}
+ q_p^{-1/2}\tau_{p,j}^{-}\chi_p(h)^{-j},&j\ne0,\ h\ne0,\\
+ 0,&j\ne0,\ h=0,\\
+ -q_p^{-1},&j=0,\ h\ne0,\\
+ 1-q_p^{-1},&j=0,\ h=0.
+ \end{cases}
+\end{equation}
+这里及下文 $h=0$ 表示 $h\equiv0\pmod p$。 $\chi_p$ 的每个非平凡幂
+在素数 $p$ 处都是本原的，因此通常的有限域
+Gauss 和恒等式给出 $|\tau_{p,m}^{\pm}|=1$。
+
+$\mathcal O/(L)$ 上及每个 $\mathcal O/(p)$ 上的
+Fourier 反演现在给出
+\[
+ \phi(x)\prod_p\chi_p(x)^{j_p}
+  =\sum_h C(h)e\!\left(x\left(h_0/L+\sum_p h_p/p\right)\right),
+ \qquad C(h)=\widehat\phi(h_0)\prod_pC_{p,j_p}(h_p).
+\]
+这用到了每个加性频率，包括非单位 $h_0$ 与零局部
+频率。 我们不引用
+\cite[引理~5.2 与推论~5.1]{DR} 中的扭曲公式，其单位 Fourier 支撑假设
+对这些掩码未必成立。 以其无穷远系数 $x=\lambda^3\mu\in\mathcal O$
+上带有该自守因子的 theta 函数是有限和
+\begin{equation}\label{eq:reflection-translated-theta}
+ \mathcal F(z,v)=\sum_hC(h)\bar\theta(z+z_h,v),\qquad
+ z_h=\lambda^2\left(h_0/L+\sum_p h_p/p\right).
+\end{equation}
+对孤立的无穷远指标 $x=nb^3$，$\phi$ 的分段定义
+首先丢弃每个满足 $(nb,\mathfrak E)\ne1$ 的项。 这是
+在整个完备化指标上的掩码：$(nb^3,\mathfrak E)=1$ 当且仅当 $n$
+与 $b$ 都是 $\mathfrak E$-单位。 仅在这个剩余的域上，我们才使用
+完全乘性，包括 $\chi_b(\lambda)^6=1$，写出
+\[
+ \phi(nb^3)\prod_p\chi_p(nb^3)^{j_p}
+ =\chi_n(\lambda)^2\Psi(n)\Psi(b)^3
+ \qquad((nb,\mathfrak E)=1).
+\]
+当 $n,b$ 有公共移动素数时它仍然成立，因为相应的
+局部幂保持其零值，包括 $j_p=0$ 的情形。 对于
+被丢弃的项，完备化系数直接定义为零；
+那里不计算 $\chi_n(\lambda)$ 的任何值。 在保留域上
+结合方程~\eqref{eq:reflection-infinity-coefficient} 与
+\eqref{eq:reflection-cubic-sextic-conversion}，现在
+把直接的 Mellin 级数与乘积 $T$ 等同起来。 对偶系数
+函数 $d_H$ 保持方程~\eqref{old-eq:4.3} 中的完整源支撑；
+不在它们上面放置 $S$-掩码。
+
+固定 $h_0$，并恰在 $h_p\ne0$ 时称 $p$ 为活跃的。
+方程~\eqref{eq:reflection-local-fourier} 迫使所有 $j_p\ne0$ 的
+素数都是活跃的。 对每个 $h_0\bmod L$ 选取一次
+代表元及既约表达式
+$\lambda^2h_0/L=a_F/c_F$。 把分子与分母乘以
+一个单位，当 $\lambda\mid c_F$ 时把分子正规化为 $1\pmod3$，
+否则把分母正规化为 $1\pmod3$。 由于每个活跃
+素数都是主的，该单位仅依赖于 $h_0$。
+对 $r=\prod_{p\ {\rm active}}p$，方程~\eqref{eq:reflection-translated-theta}
+随后给出
+\begin{equation}\label{eq:reflection-cusp-fraction}
+ z_h=\frac ac,\qquad c=c_Fr,\qquad
+ a=a_Fr+\lambda^2c_F\sum_{p\mid r}(r/p)h_p.
+\end{equation}
+在整除 $c_F$ 的素数处，分子同余于 $a_Fr$ 且
+是单位。 在 $p\mid r$ 处，它同余于
+$\lambda^2c_F(r/p)h_p$，同样是单位。 因此这个分数是
+既约的，即使 $h_0$ 模 $L$ 是非单位。 允许空乘积
+$r=1$。 把任一提升换成另一个会使 $z_h$ 改变
+$\lambda^2\mathcal O=3\mathcal O$ 中的一个元素，即 $\theta$ 的一个周期。
+
+\emph{尖点矩阵及其自守因子的选取。}
+接下来的构造对刚得到的每个既约尖点分数确定
+自守因子与反射加性相位。
+置 $M=\lambda^{12}L^4$。 对每个活跃的 $p$，中国剩余
+定理容许把所选的非零类 $h_p\bmod p$ 提升为满足
+$h_p\equiv0\pmod{M^2}$。 把 $r$ 限制到模 $M^2$ 的一个类。
+方程~\eqref{eq:reflection-cusp-fraction} 表明 $a$ 此时模 $Mc_F$ 固定；
+事实上其移动项被 $M^2c_F$ 整除，而 $a_Fr$ 模 $M^2$ 固定，
+且由于 $c_F$ 在相差一个单位的意义下整除 $L$，$M^2$ 被 $Mc_F$ 整除。
+它还表明，当 $\lambda\mid c$ 时 $a\equiv1\pmod3$，否则
+$c\equiv1\pmod3$。
+
+由以下相容的局部同余选取 $\delta'$：
+\[
+ \begin{array}{ll}
+ \delta'\equiv a^{-1}\pmod{Mc_F}
+       &\text{在整除 }c_F\text{ 的每个素数处},\\
+ \delta'\equiv0\pmod M
+       &\text{在整除 }M\text{ 但不整除 }c_F\text{ 的每个素数处},\\
+ \delta'\equiv a^{-1}\pmod p& (p\mid r).
+ \end{array}
+\]
+第一行指 $Mc_F$ 的所示素幂部分。
+所有逆都存在，因为 $a/c$ 既约。 置
+$b=(a\delta'-1)/c$ 及 $g=\bigl(\begin{smallmatrix}a&b\\c&\delta'\end{smallmatrix}\bigr)$。
+则 $g\in\Gamma$，且用 $c$ 除 $a\delta'-1$ 给出
+\[
+ b\equiv0\pmod M\text{ 在 }c_F\text{ 的素数处},\qquad
+ b\equiv-c^{-1}\pmod M\text{ 在 }M\text{ 的其他素数处}.
+\]
+于是 $a,b,c,\delta'$ 在整除 $L$ 的每个素数的所需幂处
+有固定剩余，与类 $h_p$ 无关。
+每当在剩余符号计算中出现零元素时，
+可以先把 $z_h$ 平移 $\lambda^2M^2\mathcal O$，然后
+给 $\delta'$ 加上组合同余模的一个倍数。
+这些改变保持所有展示的同余，并避开使
+某个元素为零的有限多个取值。 它们不改变平移后的
+theta 函数。
+
+有三种情形，由 $v_\lambda(c)$ 区分。
+若 $3\mid c$，置 $H=I$。 则 $G=g\in\Gamma_1(3)$，而对主 $a$
+与 $r$ 的主素数应用三次
+互反律给出
+\begin{equation}\label{eq:reflection-cusp-case-zero}
+ \kappa(G)=\left(\frac{c_F}{a}\right)_3
+             \left(\frac ar\right)_3.
+\end{equation}
+若 $v_\lambda(c)=1$，取唯一的 $u_0\in\{\lambda,-\lambda\}$
+使 $u_0\equiv c\pmod3$，并置 $H=\mathsf L(u_0)$；由于
+$\mathcal O/(\lambda)\simeq\mathbb F_3$，这就是两种可能。
+上面的同余表明 $G=gH^{-1}\in\Gamma_1(3)$。
+记 $A=a-u_0b$。 $A$ 与 $a$ 都是主的，且它们互素：
+$(a,b)=1$ 且 $(a,u_0)=1$。 行列式方程给出
+\[
+ a(c-u_0\delta')=cA-u_0,
+ \qquad bc\equiv-1\pmod a.
+\]
+由此，对 $a,A$ 应用三次互反律，得到
+\[
+ \begin{split}
+ \kappa(G)
+ &=\left(\frac{-u_0}{A}\right)_3
+          \left(\frac aA\right)_3^{-1}\\
+ &=\left(\frac{-u_0}{A}\right)_3
+          \left(\frac{c/u_0}{a}\right)_3
+  =\left(\frac{-u_0}{A}\right)_3
+          \left(\frac{c_F/u_0}{a}\right)_3
+          \left(\frac ar\right)_3.
+ \end{split}
+\]
+对第二个等式，把 $A$ 模 $a$ 约化并使用
+$(A/a)_3=(-u_0b/a)_3=(u_0/a)_3(c/a)_3^{-1}$；$-1$ 的三次符号
+为一。 最后设 $(\lambda,c)=1$。 选取
+$u_0=s+t\omega\equiv a\pmod3$ 且 $0\le s,t<3$，并置
+$H=\bigl(\begin{smallmatrix}u_0&-1\\1&0\end{smallmatrix}\bigr)$。
+这里 $c\equiv1$、$\delta'\equiv0$ 且 $b\equiv-1\pmod3$，所以
+\[
+ G=gH^{-1}=\begin{pmatrix}-b&a+bu_0\\-\delta'&c+\delta'u_0\end{pmatrix}
+       \in\Gamma_1(3).
+\]
+$-b$ 与 $c$ 都是主的。 此外 $-bc=1-a\delta'\equiv1\pmod9$。
+把 $\delta'=u\lambda^k\delta_0$ 分解，其中 $\delta_0$ 为主。
+补充律给出 $(u\lambda^k/(1-a\delta'))_3=1$；三次
+互反律给出 $(\delta_0/(1-a\delta'))_3=1$，因为互反后
+分子为 $1\pmod{\delta_0}$。 于是
+\[
+ \left(\frac{\delta'}{-bc}\right)_3=1,
+ \qquad
+ \kappa(G)=\left(\frac{\delta'}{-b}\right)_3
+          =\left(\frac{\delta'}c\right)_3^{-1}
+          =\left(\frac ac\right)_3
+          =\left(\frac a{c_F}\right)_3\left(\frac ar\right)_3.
+\]
+最后一个逆使用了 $a\delta'\equiv1\pmod c$。
+
+在三种情形中我们都证明了
+\begin{equation}\label{eq:reflection-multiplier}
+ \kappa(G)=\kappa_F\prod_{p\mid r}\chi_p(a)^2,
+ \qquad |\kappa_F|=1.
+\end{equation}
+当活跃的 $h_p$ 在固定扇区内变动时，因子 $\kappa_F$ 保持不变。
+若 $3\mid c$，它为 $(c_F/a)_3$：单位与
+$\lambda$-幂因子由 $a\bmod9$ 确定，而互反律
+由 $a$ 在 $c_F$ 的素数处的剩余确定其余的固定素数因子。 在中间情形中它为
+$(-u_0/A)_3((c_F/u_0)/a)_3$，由 $A=a-u_0b$ 与 $a$ 的固定
+剩余以同样的方式确定。 在最后一种情形中它为 $(a/c_F)_3$，
+直接由固定的分母 $c_F$ 与
+$a\bmod c_F$ 确定。 因此 $a,b,c,\delta'$ 所展示的同余
+仅用 $h_0$ 与 $r\bmod M^2$ 就确定了 $\kappa_F$。
+它们也确定了三个函数 $\Theta_b$ 中被选中的那一个。
+
+\emph{反射加性相位。}
+记 $x=\lambda^4\mu$ 及 $D_F=\lambda^3c_F$。 在每个 $p\mid r$ 处，
+方程~\eqref{eq:reflection-cusp-fraction} 给出
+$a\equiv\sigma_ph_p\pmod p$。 因此
+$\delta'\equiv\sigma_p^{-1}h_p^{-1}\pmod p$。 对
+$D_Fr$ 的互素因子作加性中国剩余给出精确恒等式
+\begin{equation}\label{eq:reflection-additive-phase}
+ \begin{split}
+ \check e(-\delta'\mu/c)
+ &=e(-\delta'x/(D_Fr))\\
+ &=\vartheta(x)\prod_{p\mid r}e(\epsilon_ph_p^{-1}x/p),
+ \qquad
+ \vartheta(x)=e(-\delta'_F r^{-1}x/D_F).
+ \end{split}
+\end{equation}
+这里 $\delta'_F$ 是 $\delta'$ 模 $D_F$ 的类，而
+$\vartheta$ 的公式中的 $r^{-1}$ 模 $D_F$ 取值。
+例如，$p$ 处的局部分子为
+$-\delta'(D_Fr/p)^{-1}=\epsilon_ph_p^{-1}$；这验证了符号
+与 $\lambda$ 的幂次。 所选的同余固定了 $\delta'_F$，
+因为 $D_F$ 整除相应的局部模，而扇区固定了
+$r^{-1}\bmod D_F$。 因此有限多个 $D_F$ 的一个公倍数
+是所有特征 $\vartheta$ 的固定模。
+
+对式~\eqref{eq:reflection-multiplier} 取共轭贡献
+$\bar\kappa_F\prod_{p\mid r}\chi_p(\sigma_p)^{-2}\chi_p(h_p)^{-2}$。
+对 $j\ne0$，乘以
+式~\eqref{eq:reflection-local-fourier} 使局部和变为
+\[
+ q_p^{-1/2}\tau_{p,j}^{-}
+ \sum_{h\ne0}\chi_p(h)^{-j-2}e(\epsilon_ph^{-1}x/p).
+\]
+置 $y=h^{-1}$ 后，该和是次数为 $j+2$ 的 Gauss 和。
+若 $j\ne4$，其值为
+$q_p^{1/2}\tau_{p,j+2}^{+}\chi_p(\epsilon_px)^{-j-2}$，在
+$p\mid x$ 处也如此，因为那时两边都为零。 若 $j=4$，它是
+Ramanujan 和
+\[
+ \sum_{y\ne0}e(\epsilon_pxy/p)=-1+q_p1_{p\mid x}.
+\]
+对活跃的 $j=0$，同样的替换给出
+\[
+ -q_p^{-1}\sum_{h\ne0}\chi_p(h)^{-2}e(\epsilon_ph^{-1}x/p)
+ =-q_p^{-1/2}\tau_{p,2}^{+}\chi_p(\epsilon_px)^{-2}.
+\]
+这些恰好是 $\omega_{p,j}B_p(x)$；非活跃的零指数
+贡献 $1-q_p^{-1}$。 这证明了每个局部因子，包括
+其零延拓。 $h_0$ 与活跃子集的选择至多给出
+$q_L2^{\#\{p:j_p=0\}}$ 项。 拆分 $j_p=4$ 的因子
+至多把它乘以 $2^{\#\{p:j_p=4\}}$，从而证明了所述的
+计数。
+
+在这些局部和之前构造的分母与固定扇区数据
+仅通过 $h_0$ 与活跃根基
+$r$ 依赖于局部素数集；其余活跃频率依赖恰为刚求和
+的局部依赖。 我们对每个 $h_0$ 使用相同的代表元
+与正规化分数，并在这些数据重现时使用相同的固定扇区选择：
+尖点函数、固定加性特征与 $\kappa_F$。 一个缺席素数
+与非活跃的零指数素数具有相同的活跃根基；
+因此它们其余活跃的 $\sigma_p,\epsilon_p$ 也相同。
+非活跃系数 $1-q_p^{-1}$ 是唯一的改变。
+这证明了陈述中的同时分支相容性。

@@ -1,4 +1,0 @@
-PAGE 98   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
-
-CAL P  y  190.2 x  270.8- 276.7
-      line: p ∈P i

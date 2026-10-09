@@ -1,9 +1,0 @@
-命题~\ref{prop:parameter-order} 和
-方程~\eqref{eq:shared-principal-nonvanishing} 验证了
-命题~\ref{lem:continuation-criterion} 的假设，其中
-\(\sigma_0=7/8\)、\(J_\eta=J_{\mathrm{II},\eta}\)，且
-\(f_\eta=f_{\mathrm{II},\eta}\)。这与 \(\beta_*>7/8\) 矛盾；
-因此 \(\beta_*\le7/8\)。命题~\ref{prop:hecke-dirichlet-transfer}
-在 \(\sigma_0=7/8\) 处将本原赫克结论推广到所有
-有限阶赫克与狄利克雷 \(L\) 函数，允许主极点，
-并证明了定理~\ref{thm:main}。

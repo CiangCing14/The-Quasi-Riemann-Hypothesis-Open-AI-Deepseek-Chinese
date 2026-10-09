@@ -1,4 +1,0 @@
-PAGE 186   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
-
-CAL A  y  446.0 x  178.1- 184.0
-      line: nality factor (1 + T 1 ) A A is kept explicit here. We verify the additional target-dependent height

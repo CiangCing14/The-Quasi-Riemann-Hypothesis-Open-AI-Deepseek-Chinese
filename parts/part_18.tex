@@ -1,0 +1,549 @@
+我们接下来说明两种变换中所使用的支集与局部化约定。对实际的理想或非零元素 \(a\)，记
+\(\widehat a=\log_Zq_a\)。对于已命名的标量中心，一个带上标的量表示其所示理想的实际对数范数。下面引入的所有理想中心
+都是来自固定二进分划的非负中心。已经固定的穿刺点以及下方引入的理想 \(q_0\)，均按其实际对数范数使用，
+而不使用独立取整的中心。
+
+两种变换中引入的每一个单独二进区间都有一个固定的紧归一化支集。若 \(a\) 是它的理想而 \(a_{\rm cen}\)
+是其已命名的对数中心，则我们使用
+\begin{equation}\label{eq:inverse-ratio-bounds}
+ |\log_Zq_a-a_{\rm cen}|\le\eta.
+\end{equation}
+这一约定适用于原来的 \(n_i,b_i,f\) 窗口，也适用于每个被提取的理想二进区间在其引入之时。乘积
+与商的误差是这些单个误差之和；下方的新的剩余窗口具有明确陈述的界 \(4\eta\)、\(6\eta\)
+和 \(4\eta\)。这些估计涉及固定的紧归一化比值区间，而不是比值为 \(Z^\eta\) 的圆环。
+
+为清楚起见，这些区间在整个有限深度上被一致地固定如下。在每一次因式分解处，选取新的单独光滑
+截断，使其在商的支集上等于一，并把这些截断的完整支集、Fourier 分离中所用的较大截断的完整支集、
+以及放大后的标号窗口的完整支集都包含进来。还要包含下方所用的有界裁剪族。端点的乘积与商
+定位初始商支集，例如 \(b=hh'\) 的、剩余 \(n\) 的、以及子列与标号的支集。将此构造迭代
+\(D\) 层得到紧归一化比值区间的一个有限集合 \(\mathcal I_D\)。若 \(L_{\rm win}\) 是它们端点的最大绝对
+对数，则阈值
+\(\log Z\ge L_{\rm win}/\eta\) 蕴含
+方程~\eqref{eq:inverse-ratio-bounds} 以及下方指定的所有新支集界。当一个正和被放大后，其新加入的
+列或标号不必再满足某个旧父乘积恒等式。它们在此结点与下一结点处的范数界直接来自 \(\mathcal I_D\) 中
+完整独立的新窗口。分离出的范数幂不改变这些支集。
+
+我们使用引理~\ref{lem:smooth-calculus}中公共同联合 Fourier 演算的如下特殊化。
+在某个待从列中分离的耦合光滑因子中出现的每个归一化范数，都是某一环境剖面的坐标 \(y_1,\ldots,y_d\)。
+留在权重中的一个导出的外掩码或标号截断仍处于外部，不需要剖面坐标。把当前的
+单个二进截断和新的列截断保持在反演之外，直到使用它们的加权 Cauchy 不等式处。将
+耦合剖面乘以更大的单个截断 \(\Omega_j\)，后者在这些保留下来的截断的完整支集上等于一。
+对所得的紧剖面 \(\mathfrak H\)，在求和任何当前行或标号之前定义
+\begin{equation}\label{eq:inverse-log-fourier}
+ \begin{split}
+ \widehat{\mathfrak H}(\boldsymbol t)
+   &=\int_{\mathbb R^d}\mathfrak H(e^{u_1},\ldots,e^{u_d})
+             e^{-i\boldsymbol t\cdot\boldsymbol u}\,d\boldsymbol u,\\
+ \mathfrak H(\boldsymbol y)
+   &=(2\pi)^{-d}\int_{\mathbb R^d}\widehat{\mathfrak H}(\boldsymbol t)
+          \prod_{j=1}^dy_j^{it_j}\,d\boldsymbol t.
+ \end{split}
+\end{equation}
+范数之间的算术关系限制此恒等式的取值点，而不限制其密度。外模态留在外权重中；对于
+两个列坐标，第一个测试接收 \(y_1^{it_1}\)，第二个接收 \(y_2^{-it_2}\)，其共轭提供
+\(y_2^{it_2}\)。所有归一化实逆根幂都包含在耦合剖面中，因此最终的列测试不包含第二份拷贝。
+
+这一约定还使一致性定量化。记
+\(D_j=y_j\partial_{y_j}\)。在固定的对数矩形上，用 \((1-\Delta)^{m_0}\) 分部积分，对 \(2m_0>J+d\)，给出
+\begin{equation}\label{eq:inverse-fourier-moment}
+ \int_{\mathbb R^d}|\widehat{\mathfrak H}(\boldsymbol t)|
+        (1+|\boldsymbol t|)^J\,d\boldsymbol t
+ \ll_{J,d,\mathrm{box}}\max_{|\boldsymbol a|\le2m_0}
+             \|D^{\boldsymbol a}\mathfrak H\|_\infty.
+\end{equation}
+对于一个固定的径向 Schwartz Fourier 核 \(K\)，每个
+\(\sup_{x\ge0}|(x\partial_x)^jK(x)|\) 都有限，并且
+\[
+ D^{\boldsymbol a}K\!\left(A\prod_jy_j^{e_j}\right)
+ =\left(\prod_je_j^{a_j}\right)
+   (x\partial_x)^{|\boldsymbol a|}K(x)
+       \big|_{x=A\prod_jy_j^{e_j}}.
+\]
+因此这些分离半范数对每个标量 \(A>0\) 都是一致的，
+而不含 \(Z\) 的导数阶幂。归一化实幂在固定盒上具有
+有界的 Euler 导数，而继承的范数挠动只有固定的多项式高度代价。没有把列相关核比值中的
+锐截断放进这样的剖面里。
+对于 Poisson 步骤中的径向 Fourier 核，这些正是引理~\ref{lem:kernel-seminorms}的
+归一化核界与方程~\eqref{eq:normalized-kernel-profile}。
+
+我们将使用的粗略尾部估计是，对 \(Y\ge1\) 与 \(A>1\)，
+\begin{equation}\label{eq:inverse-raw-tail}
+ \sum_{h\ne0:\,a q_h>Y}|K(aq_h)|
+ \ll_A(1+a^{-1})Y^{1-A}\qquad(a>0).
+\end{equation}
+事实上，壳层 \(2^jY<a q_h\le2^{j+1}Y\) 包含
+\(O(1+2^jY/a)\) 个格点，而核在该处为
+\(O_A((2^jY)^{-A})\)。对两个几何级数求和即证明该
+展示式；同样的论证适用于固定格
+\(\lambda^{-4}\mathcal O\)。该证明只用了大自变量
+界 \(|K(x)|\ll_Ax^{-A}\)（\(x\ge1\)），因此它也适用于该尾部上的
+反射核。下文只用一个实际比值不等式来证明：对一个扇区固定的外行球，其补集对每个
+被支持的原始列对都包含在此尾部中。该补集在非互素延拓之前、以及 Fourier 取绝对值之前
+被移除。完整光滑核保留在球内，其非光滑掩码
+保持在 Fourier 反演之外，直到相关的加权 Cauchy
+不等式处。尾部阶数与粗略原始计数在最后固定。
+
+\paragraph{第一次 Poisson 变换。}
+展开方程~\eqref{eq:canonical-block} 中的平方。置
+\[
+ \mathfrak B=\operatorname{rad}(b_1b_2),\qquad
+ n_i=\mathfrak A_i C u_i\quad(i=1,2),
+\]
+其中 \(\mathfrak A_i=(n_i,\mathfrak B)\)，而 \(C\) 是
+\(n_1/\mathfrak A_1\) 与 \(n_2/\mathfrak A_2\) 的最大公因数。则
+\(\mathfrak A_i\mid\mathfrak B\)，而 \(u_1,u_2\) 是无平方因子的，
+彼此互素，且与 \(C\mathfrak B\) 互素。设 \(A_i,B\)
+为 \(\mathfrak A_i,C\) 的固定中心，并记
+\(\widehat A_i=\log_Zq_{\mathfrak A_i}\)，\(\widehat B=\log_Zq_C\)。
+对 \(p\mid\mathfrak B\)，定义
+\[
+ a_{ip}=1_{p\mid\mathfrak A_i},\qquad
+ \pi_p=v_p(b_1b_2)\bmod2,\qquad
+ t_p=a_{1p}-a_{2p}+3\pi_p\bmod6,
+\]
+并置 \(R_1=\prod_{t_p\ne0}p\)。其中心为 \(R\)，且
+\(\widehat R=\log_Zq_{R_1}\)。
+行特征及其剩余的零掩码恰为
+\begin{equation}\label{eq:first-masked-data}
+ \psi_1=\chi_{u_1}\bar\chi_{u_2}
+               \prod_{t_p\ne0}\chi_p^{t_p},\qquad
+ m_1=u_1u_2R_1,\qquad
+ R_{\rm mask}=C\mathfrak B/R_1.
+\end{equation}
+事实上，\(u_1,u_2\) 处的指数为 \(1,-1\)；共同的
+非 \(\mathfrak B\) 因子 \(C\) 的指数为零但保留其
+掩码；而 \(p\mid\mathfrak B\) 处的指数为 \(t_p\)。每个
+非零局部幂都是非主的、模 \(p\) 本原的，且具有
+互不相交的支集。因此除非 \(m_1=1\)，\(\psi_1\) 是本原的。
+每个原始列掩码与两个因子
+\(\beta(b_1,f)\overline{\beta(b_2,f)}\) 都保留在表达式中。
+
+以 \(K=Z^M\) 应用引理~\ref{lem:masked-poisson}，并记其
+除子为 \(d_k\mid C\mathfrak B/R_1\)，中心为 \(\delta\) 且
+\(\widehat\delta=\log_Zq_{d_k}\)。在这个真正的互素表达式上，
+实际导子长度为
+\begin{equation}\label{eq:first-poisson-lengths}
+ \widehat L_1=\widehat n_1+\widehat n_2-\widehat A_1-\widehat A_2
+                    -2\widehat B+\widehat R.
+\end{equation}
+实际的核自变量为 \(Z^Mq_h/(q_{d_k}q_{m_1})\)，而
+Poisson 前因子的指数为 \(M-\widehat\delta-\widehat L_1/2\)。
+我们尚未截断或对该核做 Fourier 分离。
+
+若 \(m_1=1\)，则 \(u_1=u_2=1\) 且对每个
+\(p\mid\mathfrak B\) 有 \(t_p=0\)。后一条件迫使 \(\pi_p=0\)
+且 \(a_{1p}=a_{2p}\)。因此 \(n_1=n_2\) 且 \(b_1b_2\) 是
+一个平方。即使计及全部 \(O(Z^{2\ell+\epsilon})\) 对 \(b_1,b_2\)、
+全部 \(O(Z^{r+\epsilon})\) 个相等列、全部 \(O(Z^{V+\epsilon})\)
+个标号、以及 \(O(Z^M)\) 行，方程~\eqref{eq:canonical-block} 中的
+归一化也给出 \(O(Z^{M+\epsilon})\)。
+若 \(r<0\) 但其固定圆环列窗口非空，则
+\(Z^{-r}\) 由其固定上端点界定，因此其理想计数
+仍为 \(O(Z^r)\)，常数固定。
+标记与保留下来的掩码不会使此界超出一个小幂。
+当非零主项在下方被恢复时，它们
+将带有与非主项相同的外球掩码；引理~\ref{lem:masked-poisson} 的最后一
+部分以同样的代价界定它们。
+
+我们接下来识别其列系数。对于互素的无平方因子主元 \(a,b\)，
+CRT 与互反律给出
+\[
+ \gamma_2(ab)=\gamma_2(a)\gamma_2(b)
+       \chi_a(b)^2\chi_b(a)^2
+ =\gamma_2(a)\gamma_2(b)\chi_b(a)^4.
+\]
+在第一个 Poisson 根中，涉及 \(u_1\) 的因子（包括
+除子与频率）为
+\[
+ \gamma_1(u_1)\overline{\chi_{u_1}(h)}
+ \chi_{u_1}(d_kR_1)\prod_{t_p\ne0}\chi_{u_1}(p^{t_p}),
+\]
+至多相差一个固定射线因子。这可通过把
+\(u_1\) 与 \(p\) 之间的 CRT 因子写成
+\(\chi_{u_1}(p)\chi_p(u_1)^{t_p}\) 并利用互反律得到。在
+共轭的第二侧，\(t_p\) 被替换为 \(-t_p\)。\(u_1,u_2\) 之间的交叉
+因子是互反律因子
+\(\mathcal R(u_1,u_2)\)，而不是零延拓符号的商。
+
+置 \(P_T=\prod_{t_p\ne0}p^{t_p}\)，视其在固定射线群中。
+方程~\eqref{eq:signal} 与
+方程~\eqref{eq:G-quadratic-refinement} 表明剩余的
+双列射线因子是
+\[
+ G(u_1u_2^{-1})\mathcal R(u_1u_2^{-1},P_T).
+\]
+例如，在把因子放入共轭的第二
+多项式之前，原始的第二个 Gauss-信号因子为
+\(\mu(u_2)\chi_{u_2}(-1)\overline{G(u_2)}\)。其相应的
+写在该多项式内的因子为
+\(\mu(u_2)\chi_{u_2}(-1)G(u_2)\)。又有
+\(G(u_2^{-1})=\chi_{u_2}(-1)\overline{G(u_2)}\)。
+这些恒等式给出所展示的商。固定
+\(P_T\) 的射线类，并在有限射线群上对所示函数做 Fourier 展开。其每一侧的因子都是真正的乘法射线
+特征，记作 \(\nu_i\)。它们的个数与系数的范数
+只依赖于固定射线群。
+
+定义
+\[
+ E=\prod_{\pi_p=1}p^{a_{1p}+a_{2p}},\qquad
+ \widetilde h=hf^2E.
+\]
+\(f\) 处的原始四次幂等于
+\(\overline{\chi_{u_i}(f^2)}\)，包含零点。把位置
+先分配给 \(b_i,\mathfrak A_i,C\)。在 \(p\mid\mathfrak B\) 处、侧 \(i\) 上剩余的局部因子具有指数
+\[
+ 4a_{ip}+1_{t_p\ne0}(1\mathbin{\pm}t_p)
+          +\pi_p(a_{1p}+a_{2p})\pmod6.
+\]
+正号属于第一侧。直接化简在两侧给出相同的
+答案：
+\[
+ \begin{array}{c|cc|c|c}
+ \pi_p&a_{1p}&a_{2p}&t_p&\text{两侧的指数}\\ \hline
+ 0&0&0&0&0\\
+ 0&1&0&1&0\\
+ 0&0&1&5&0\\
+ 0&1&1&0&4\\
+ 1&0&0&3&4\\
+ 1&1&0&4&4\\
+ 1&0&1&2&4\\
+ 1&1&1&3&4
+ \end{array}
+\]
+定义 \(\xi(n)\) 为对 \(p\mid\mathfrak B\) 取
+\(\chi_n(p)\) 的乘积，其指数取最后一列中相应的指数。
+指数零仍表示 \(p\) 处的穿刺点。该计算
+证明 \(\xi\) 对两侧是公共的，且不依赖于 \(h,f,C\)。
+在这些分配之后，侧 \(i\) 上的非主系数为
+\begin{equation}\tag{C}\label{eq:first-poisson-column}
+ \mu(u_i)\nu_i(u_i)\rho(u_i)
+ \overline{\chi_{u_i}(\widetilde h)}
+ \chi_{u_i}(C)^4\chi_{u_i}(d_k)\xi(u_i)\mathfrak d_i(u_i).
+\end{equation}
+它还表明，涉及变动
+\(b_i,\mathfrak A_i\) 的每个特征都属于 \(\xi\) 或 \(\widetilde h\) 中的某一个；
+它们的其他因子是外系数。
+
+第一次变换产生了方程~\eqref{eq:first-poisson-column} 中的
+逆型列系数。我们接下来在形成第二次变换的
+正行范数之前，把其四次幂因子收集进一个无平方因子标号。
+
+\paragraph{从立方中保留四次幂标号。}
+唯一地写 \(b_1b_2=q^2s\)，其中 \(s\) 无平方因子，并定义
+\[
+ J_2=\prod_{\substack{\pi_p=0\\a_{1p}=a_{2p}=1}}p,\qquad
+ J=sJ_2,\qquad q=J_2q_0.
+\]
+\(J_2\) 的每个素数在 \(b_1b_2\) 中都具有正的偶赋值，
+故 \(J_2\mid q\)。理想 \(s,J_2\) 互素且无平方因子；
+因此 \(J\) 无平方因子。设 \(j\ge0\) 为 \(J\) 的中心，并置
+\[
+ \widehat s=\log_Zq_s,\quad \widehat j_2=\log_Zq_{J_2},\quad
+ \widehat j=\log_Zq_J=\widehat s+\widehat j_2,\quad
+ \widehat\ell_{\rm pair}=(\widehat b_1+\widehat b_2)/2.
+\]
+理想恒等式 \(b_1b_2=q_0^2J_2^2s\) 恰好给出
+\begin{equation}\label{eq:inverse-cube-actual}
+ \widehat c:=\log_Zq_{q_0}
+   =\widehat\ell_{\rm pair}-\widehat s/2-\widehat j_2\ge0,
+ \qquad
+ 4\widehat\ell_{\rm pair}-2\widehat s+\widehat j_2
+   =4\widehat c+5\widehat j_2\ge0.
+\end{equation}
+上面的表现在证明精确的零延拓恒等式
+\begin{equation}\label{eq:retained-cube-label}
+ \xi(n)=\chi_n(J)^4\,1_{(n,\operatorname{rad}q_0)=1}.
+\end{equation}
+事实上，指数为四的素数恰是 \(sJ_2\) 的那些；
+\(\mathfrak B\) 的每一个其他素数都整除 \(q_0\)。同时属于
+\(J\) 与 \(q_0\) 的素数只是重复了已由
+\(\chi_n(J)^4\) 提供的零。我们将固定 \(q_0\)，但把 \(J\) 留到稍后的
+平均中。模 \(q_0\) 贡献一个穿刺点，且不
+属于固定射线群。
+对固定的 \(J,q_0\)，\(s,J_2\) 的选取、因式分解
+\(b_1b_2=q_0^2J_2^2s\)、以及理想 \(\mathfrak A_i\) 都只有
+除子重数。
+
+我们现在局部化真正的第一次 Poisson 表达式，在其延拓
+互素支集或取绝对 Fourier 积分之前。局部表给出
+精确的实际范数恒等式
+\[
+ \widehat R-\widehat A_1-\widehat A_2+\widehat E
+       =\widehat s-2\widehat j_2.
+\]
+对 \(y=hf^2E\)，蕴含
+\(Z^Mq_h/(q_{d_k}q_{m_1})\le Z^\tau\) 与
+方程~\eqref{eq:first-poisson-lengths} 给出
+\[
+ \begin{split}
+ \widehat y
+ &\le \widehat n_1+\widehat n_2-2\widehat B-M
+       +\widehat s-2\widehat j_2+\widehat\delta+2\widehat f+\tau\\
+ &\le \widehat n_1+\widehat n_2-2\widehat B-M
+       +4\widehat\ell_{\rm pair}-\widehat j
+       +\widehat\delta+2\widehat f+\tau.
+ \end{split}
+\]
+第二个不等式是方程~\eqref{eq:inverse-cube-actual}。
+按如下定义形式中心与包住它的外行尺度
+\begin{equation}\label{eq:enlarged-first-frequency}
+ H_c=2r-2B-M+4\ell+2V+\delta-j,\qquad
+ H_{\rm use}=H_c+12\eta+\tau.
+\end{equation}
+相对于 \(H_c\)，最后一个实际上界具有误差
+\[
+ (\widehat n_1-r)+(\widehat n_2-r)-2(\widehat B-B)
+ +2(\widehat b_1-\ell)+2(\widehat b_2-\ell)
+ -(\widehat j-j)+(\widehat\delta-\delta)+2(\widehat f-V),
+\]
+其在方程~\eqref{eq:inverse-ratio-bounds} 下的正最大值为
+\(12\eta\)。因此实际比值不等式对每个被支持的原始列对
+蕴含 \(q_y\le Z^{H_{\rm use}}\)。
+
+在该原始表达式上只插入外掩码
+\[
+ \mathcal B_1(h)=1_{0<q_{hf^2E}\le Z^{H_{\rm use}}}.
+\]
+对每个被支持的对，其补集包含在实际核
+尾部 \(Z^Mq_h/(q_{d_k}q_{m_1})>Z^\tau\) 中；应用
+方程~\eqref{eq:inverse-raw-tail} 舍弃该补集，其中
+原始计数与阶数在下方固定。不插入比值不等式的
+示性函数。在 \(\mathcal B_1=1\) 内保留完整光滑核，
+包括比值大于 \(Z^\tau\) 的那些对。该掩码依赖于
+\(h,f,E\) 与固定扇区，但在所指出的提取之后，
+不依赖于 \(u_1,u_2\)。若 \(H_{\rm use}<0\)，其非零球为空，
+同样的尾部比较舍弃每个非零频率。任何为了统一公式而
+现在被恢复的主非零项都带有这同一个掩码。
+它们的绝对贡献由已经估计过的完整主项恢复所界定。
+
+通过
+\[
+ 1_{(u_1,u_2)=1}=\sum_{t'\mid(u_1,u_2)}\mu(t'),\qquad u_i=t'x_i,
+ \qquad \widehat t=\log_Zq_{t'}.
+\]
+移除条件 \((u_1,u_2)=1\)。
+设 \(t\) 为其固定的非负中心。
+此反演是在交叉相位已被替换为
+上述固定射线函数之后进行的。这些函数、不变的外
+掩码 \(\mathcal B_1\)、所有剩余的
+零延拓局部因子、以及光滑核中的形式乘积
+\(q_{u_1}q_{u_2}q_{R_1}\) 也为非互素的 \(u_1,u_2\) 定义了一个表达式。
+它在互素支集上与 Poisson 求和一致；所展示的除子恒等式随后恰好恢复
+该支集。对新引入的非互素对，不宣称任何本原 Poisson 公式。
+无平方因子性保留了穿刺点 \((x_i,t')=1\)。在 \(t'\) 处分配的位置是外
+系数，而其他位置构成 \(x_i\) 上的标记。
+
+插入 \(q_h\) 的二进区间，来自一个对所有 \(f,E\) 公共的固定分划，
+而不是为那些标号重新取心的分划。掩码 \(\mathcal B_1\)
+蕴含 \(q_h\le q_{hf^2E}\le Z^{H_{\rm use}}\)，因此在有界保留尺度范围内只有
+对数多个这样的二进区间。
+把 \(\mathcal B_1\) 保持在每次 Fourier 反演之外。定义
+\[
+ s_i=r-A_i-B-t,\qquad
+ \kappa_i=M-2r-2\ell-V-\delta+A_i+B-R/2.
+\]
+在因式分解表达式上的恒等式 \(n_i=\mathfrak A_iCt'x_i\)
+给出 \(|\widehat x_i-s_i|\le4\eta\)。完整的新的 \(x_i\)-支集
+包含在 \(\mathcal I_D\) 中，因此同一界在分离之后直接
+在该支集上成立，而不只在原来的乘积支集上成立。
+当前前因子中所用的重构形式乘积也
+包含在那里。
+
+\paragraph{分离第一次变换后的乘积。}
+我们在应用 Cauchy 之前记录实际前因子。它恰好
+按两个列侧分裂为
+\[
+ Z^{-r-2\ell-V}Z^{M-\widehat\delta-\widehat L_1/2}
+       =Z^{\widehat\kappa_1/2}Z^{\widehat\kappa_2/2},
+ \quad
+ \widehat\kappa_i=M-r-2\ell-V-\widehat\delta-\widehat n_i
+                  +\widehat A_i+\widehat B-\widehat R/2.
+\]
+方程~\eqref{eq:inverse-ratio-bounds} 在每一侧给出
+\begin{equation}\label{eq:inverse-first-prefactor-error}
+ \widehat\kappa_i\le\kappa_i+\tfrac92\eta.
+\end{equation}
+五个误差权重是 \(1,1,1,1,1/2\)。我们现在用一个联合剖面中的所有实逆根来实现此
+归一化。
+固定第一个二进、射线与位置模式 \(\sigma\)，并设 \(h_1\)
+为其裸-\(h\) 二进区间的中心。使用九个独立的
+归一化坐标
+\[
+ \boldsymbol y=(y_{A_1},y_{A_2},y_C,y_d,y_R,y_t,y_h,y_{x_1},y_{x_2})
+ =\left(\frac{q_{\mathfrak A_1}}{Z^{A_1}},
+ \frac{q_{\mathfrak A_2}}{Z^{A_2}},\frac{q_C}{Z^B},
+ \frac{q_{d_k}}{Z^\delta},\frac{q_{R_1}}{Z^R},\frac{q_{t'}}{Z^t},
+ \frac{q_h}{Z^{h_1}},\frac{q_{x_1}}{Z^{s_1}},\frac{q_{x_2}}{Z^{s_2}}\right).
+\]
+在形式 \(u_a=t'x_a\) 表达式上的精确完整根与核自变量为
+\begin{equation}\label{eq:inverse-first-root-kernel}
+ \begin{split}
+ \frac{Z^{-r-2\ell-V}Z^M}
+ {q_{d_k}\sqrt{q_{R_1}}q_{t'}\sqrt{q_{x_1}q_{x_2}}}
+ &=Z^{(\kappa_1+\kappa_2)/2}
+ y_d^{-1}y_R^{-1/2}y_t^{-1}(y_{x_1}y_{x_2})^{-1/2},\\
+ \frac{Z^Mq_h}{q_{d_k}q_{R_1}q_{t'}^2q_{x_1}q_{x_2}}
+ &=A_{{\rm ker},1}\frac{y_h}{y_dy_Ry_t^2y_{x_1}y_{x_2}},\\
+ A_{{\rm ker},1}&=Z^{M+h_1-\delta-R-2t-s_1-s_2}.
+ \end{split}
+\end{equation}
+选取新的截断 \(\omega_{x,a}\)，使其在旧的
+\(W\)-支集除以单个 \(\mathfrak A_a,C,t'\)
+支集上等于一，并
+将它们保留在列中。把每个当前外
+二进截断保留在反演之外。设 \(\Omega_{1,\alpha}\) 为更大的
+截断，在这些保留下来的截断的完整支集上等于一。
+以 \(\mathcal K_1=\mathcal F\Phi\)，定义单个紧剖面
+\begin{equation}\label{eq:inverse-first-profile}
+ \begin{split}
+ \mathfrak H_{1,\sigma}(\boldsymbol y)={}&Z^{-9\eta/2}
+ \prod_\alpha\Omega_{1,\alpha}(y_\alpha)
+ y_d^{-1}y_R^{-1/2}y_t^{-1}(y_{x_1}y_{x_2})^{-1/2}\\
+ &\times W(y_{A_1}y_Cy_ty_{x_1})
+       \overline{W(y_{A_2}y_Cy_ty_{x_2})}
+ \mathcal K_1\!\left(A_{{\rm ker},1}
+       \frac{y_h}{y_dy_Ry_t^2y_{x_1}y_{x_2}}\right).
+ \end{split}
+\end{equation}
+此剖面外的标量恰为
+\(\prod_{a=1}^2Z^{(\kappa_a+9\eta/2)/2}\)。
+特别地，剖面包含每个实根一次，即便
+实际列范数不同时也是如此。其变换由
+方程~\eqref{eq:inverse-log-fourier} 在环境九维
+盒上定义，早于任何实际 \(f,h\) 或外理想被求和。
+\(b_a,f,J,E,q_0\) 的范数在方程~\eqref{eq:first-poisson-column} 之后只出现在外系数、特征、掩码
+或单个截断中；它们不需要额外的耦合剖面坐标。
+
+为在 \(t'\) 处揭示算术提取，置 \(y=hf^2E\) 并
+\[
+ B_{1,a}(t';y)=\mu(t')\nu_a(t')\rho(t')\overline{\chi_{t'}(y)}
+       \chi_{t'}(CJ)^4\chi_{t'}(d_k)1_{(t',\operatorname{rad}q_0)=1}.
+\]
+设 \(\varepsilon_1=1\) 且 \(\varepsilon_2=-1\)。对于一个固定的第一
+Fourier 模态 \(\boldsymbol t\)，剩余的多项式恰为
+\begin{equation}\label{eq:inverse-first-polynomial}
+ \begin{split}
+ P_a(y)={}&\sum_{x\ {\rm sf}}\mu(x)\nu_a(x)\rho(x)
+       \overline{\chi_x(y)}\chi_x(CJ)^4\chi_x(d_k)
+       1_{(x,\operatorname{rad}q_0t')=1}\\
+ &\qquad\times\mathfrak d_{I_a}(x)\omega_{x,a}(q_x/Z^{s_a})
+                  (q_x/Z^{s_a})^{\varepsilon_a it_{x_a}}.
+ \end{split}
+\end{equation}
+乘法性用在无平方因子互素因子上，然后通过
+所展示的零延拓使用；没有特征在零点处被除。
+互 gcd 反演带来的那一个额外 \(\mu(t')\) 是外的。
+以有序列表
+\((b_a,\mathfrak A_a,C,t';x)\) 应用方程~\eqref{eq:inverse-slot-priority}。整除 \(x\) 的一个存留素数
+已经与 \(b_a,\mathfrak A_a,C,t'\) 互素：\(\mathfrak B\) 的每个素数
+都在 \(J\operatorname{rad}q_0\) 中，而所展示的
+四次幂与穿刺点提供这些零点。因此
+\(\mathfrak d_{I_a}\) 具有原来的单个系数与
+列表，而分配得到的素数恒等式与优先掩码留在外部。
+
+以下是第一次分离分量的完整结构。设
+\(\Omega_\sigma\) 由
+\(b_1,b_2,\mathfrak A_1,\mathfrak A_2,C,d_k,t',f,h\) 以及分配得到的
+位置素数组成，受其重构关系与单个
+支集约束。特别地
+\(\mathfrak A_a\mid\mathfrak B\)、\((C,\mathfrak B)=1\)，且
+\(d_k\mid C\mathfrak B/R_1\)，而 \(R_1,E,J,q_0\) 是导出的，
+不是自由指标。
+设 \(\mathcal A_{1,\sigma}\) 为分配得到的原始
+系数与优先掩码的乘积，在第二侧取共轭，并设
+\(\psi_{1,\sigma}^{\rm out}\) 为所有保留下来的外
+二进截断的乘积。设 \(e_\sigma\) 为在前面
+旧重数 \(w(f)\) 的无商 CRT 提取中得到的乘积，即两个原始
+\(\beta\) 因子、其包含 \((b_a,f)=1\) 的立方掩码、
+提取出的零掩码、以及在旧外理想处的
+有限 Gauss、单位、互反律与第一射线因子，排除所展示的 \(\mu(d_k)\) 与 \(B_{1,a}\)。
+它不依赖于 \(x_1,x_2\)；其定义由该乘积给出，
+而不是由除以方程~\eqref{eq:inverse-first-polynomial} 给出。
+记 \(\mathcal O_1=\{A_1,A_2,C,d,R,t,h\}\)，置
+\[
+ w_{1,\sigma}(\omega;\boldsymbol t)
+ =e_\sigma(\omega)\mu(d_k)\mu(t')B_{1,1}(t';y)
+       \overline{B_{1,2}(t';y)}\mathcal B_1(h)
+       \mathcal A_{1,\sigma}(\omega)\psi_{1,\sigma}^{\rm out}(\omega)
+       \prod_{\alpha\in\mathcal O_1}y_\alpha^{it_\alpha}.
+\]
+对于带掩码、恢复主项的形式第一分量，Fourier
+反演给出精确恒等式
+\begin{equation}\label{eq:inverse-first-separated}
+ \begin{split}
+ \mathcal T_{1,\sigma}=(2\pi)^{-9}\int_{\mathbb R^9}
+ &\widehat{\mathfrak H}_{1,\sigma}(\boldsymbol t)
+ \sum_{\omega\in\Omega_\sigma}w_{1,\sigma}(\omega;\boldsymbol t)\\
+ &\times Z^{(\kappa_1+9\eta/2)/2}P_1(y)
+       \overline{Z^{(\kappa_2+9\eta/2)/2}P_2(y)}\,d\boldsymbol t.
+ \end{split}
+\end{equation}
+展开这两个多项式恢复两个列模态；七个
+外模态恢复方程~\eqref{eq:inverse-first-profile} 的其他坐标。
+其较大的截断在保留支集上等于一，而新的截断在
+旧窗口非零处等于一。这逐项验证了该恒等式。
+原始 \(\beta\) 因子与每个外掩码仍在该
+完整和中。
+
+\paragraph{第一个正优函数。}
+对任何有限或绝对收敛的加权和，我们使用
+\begin{equation}\tag{D}\label{eq:weighted-cauchy}
+ \left|\sum_\omega w_\omega U_1(\omega)\overline{U_2(\omega)}\right|
+ \le\prod_{i=1}^2
+       \left(\sum_\omega|w_\omega||U_i(\omega)|^2\right)^{1/2}.
+\end{equation}
+首先在整个
+\(\Omega_\sigma\) 上对每个固定模态以 \(U_i=Z^{(\kappa_i+9\eta/2)/2}P_i\)
+应用此式。只有现在才绝对地界定外因子。其纯算术量至多是一个单独分配的 \(Z^{\pi_\beta}\) 乘以旧重数
+与绝对位置乘积；保留支集给出
+\(\mathcal B_1(h)1_{(C,J)=1}\)。特别地，尚未假定
+\(\beta(b,f)\) 的任何因式分解。
+
+对每个固定旧外重构与非零 \(y=\widetilde h\)，
+关系 \(y=hf^2E\) 蕴含 \(f^2E\mid(y)\)。若其重数
+至多 \(C_0d_{\mathcal O}(f)^{C_0}\)，则
+\begin{equation}\label{eq:inverse-old-label-fibre}
+ \sum_{f^2E\mid(y)}w(f)
+ \le C_0d_{\mathcal O}((y))^{C_0+1}
+ \le C_{\pi_{\rm old}}Z^{\pi_{\rm old}}
+ \qquad(0<q_y\le Z^{H_{\rm use}}).
+\end{equation}
+最后这个界是一致的，因为 \(H_{\rm use}\) 保持在有界
+范围内；\(h=y/(f^2E)\) 于是作为元素被唯一确定。
+这是一个旧标号纤维界，而不是依赖于
+后来新标号的重数。
+多项式 \(P_i(y)\) 不再依赖于 \(f\) 或
+单个 \(b_i,\mathfrak A_i\)，只依赖于 \(J,q_0\)、固定
+二进长度 \(A_i\) 以及固定射线扇区：这正是
+方程~\eqref{eq:first-poisson-column} 与
+\eqref{eq:retained-cube-label}，其中范数剖面已分离。
+在第一次加权 Cauchy 不等式之后，\(\mathcal B_1\) 就是
+\(1_{0<q_y\le Z^{H_{\rm use}}}\)。在此正和阶段，且只有现在，用固定的非负径向 Schwartz 函数
+\(\Phi_+(q_y/Z^{H_{\rm use}})\) 优控它，后者对至多为一的自变量
+至少为一。非空球有 \(H_{\rm use}\ge0\)，因此第二个 Poisson
+尺度恰为 \(Z^{H_{\rm use}}\ge1\)。该优函数不是作为
+等式替换到原来的带符号表达式中。更精确地说，设
+\(\mathfrak O_\sigma\) 由
+\[
+ o=(b_1,b_2,\mathfrak A_1,\mathfrak A_2,C,d_k,t';
+       \text{旧分配位置素数}),
+\]
+组成，保留其完整的单个支集、不依赖于 \(f,h,x\) 的源重构
+关系、分配得到的优先掩码以及
+\((C,J)=1\)。设 \(w_o^+\) 为其分配素数的绝对原始
+系数的乘积，并在此集合外取零。它是
+非负的且不依赖于 \(y\)。每个第一正侧至多
+为 \(C Z^{\pi_\beta+\pi_{\rm old}}\)，乘以其标量
+\(Z^{\kappa_i+9\eta/2}\)，再乘以显式正优函数
+\begin{equation}\label{eq:inverse-first-majorant}
+ \mathcal S_{i,\sigma,\boldsymbol t}
+ =\sum_{o\in\mathfrak O_\sigma}w_o^+
+    \sum_{y\in\mathcal O}\Phi_+(q_y/Z^{H_{\rm use}})|P_i(y)|^2.
+\end{equation}
+在此正步骤，旧的 \(h\) 截断与模态、以及依赖于 \(y\) 的
+\(B_{1,a}\) 的零点，可通过其上界移除。
+因此第一次加权 Cauchy 不等式与旧标号纤维界
+已从此正优函数以及每个
+后续外集合中移除了旧的 \(f,h\)；它们原来的 \(-V\) 归一化仍留在
+\(\kappa_i\) 中。在接下来的计数之后，我们对它的 \(y\)-和
+应用第二次 Poisson 变换。

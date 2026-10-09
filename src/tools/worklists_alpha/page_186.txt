@@ -1,3 +1,0 @@
-PAGE 186   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 1 glyph(s) A1 | zh 0
-   \mathcal A  y  446.0 x  178.1   line: nality factor (1 + T 1 ) A A is kept explicit here. We verify the additional target-dependent height

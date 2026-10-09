@@ -1,0 +1,436 @@
+为下面的直接计数分离出原有的主贡献。在真正的非主、互素 Poisson 表达式上，
+在作任何非互素延拓或 Fourier 取绝对值之前，只保留外掩码
+\[
+ \mathcal B_{\rm init}(h')=1_{0<q_{d'h'}\le Z^{M_{\rm init}}}.
+\]
+对每一对受支持的配对，其余集都包含在上面的实际比值尾部中。方程~\eqref{eq:inverse-raw-tail}
+连同下面指定的独立初始原始计数与阶，恰好把该余集舍弃掉。在掩码内部保留完整的光滑核，不使用
+依赖于列的比值选择子。该掩码依赖于 \(d',h'\)、固定的重叠与扇区，但不依赖于残余列。若
+\(M_{\rm init}<0\)，其非零球为空，同样的尾部比较会舍弃每个非零频率；否则所保留的行参数非负。
+
+实际的归一化因子与 Poisson 前因子按如下方式在两侧分裂
+\[
+ Z^{-D'}Z^{m-\widehat\theta-\widehat L_{\rm init}/2}
+   =Z^{\widehat\kappa_1^{\rm init}/2}
+      Z^{\widehat\kappa_2^{\rm init}/2},
+ \quad
+ \widehat\kappa_i^{\rm init}=m-D'-\widehat\theta-\widehat c_i+\widehat B.
+\]
+因此实际的侧指数满足
+\begin{equation}\label{eq:initial-poisson-prefactor}
+ \widehat\kappa_i^{\rm init}\le\kappa_c^{\rm init}+3\eta,
+ \qquad \kappa_c^{\rm init}=m-2D'+P_1.
+\end{equation}
+所有归一化的实逆根都将保留在下面的单个联合剖面中，而不再出现在最终的子检验中。主列具有
+直接的对角界 \(O(Z^{m+\epsilon})\)，对于有界非空的负 \(D'\)-窗口亦然。任何被恢复到形式公式中的
+主非零频率都带有相同的 \(\mathcal B_{\rm init}\) 掩码，并由引理~\ref{lem:masked-poisson} 中的
+完整主恢复所界定，因为 \(Z^m\ge1\)。
+
+插入来自对所有 \(d'\) 都相同的某一划分的 \(q_{h'}\) 频率二进块，而不是按标号重新中心的
+划分。外掩码蕴含 \(q_{h'}\le Z^{M_{\rm init}}\)，因此在有界的保留范围内只有对数多个二进块。
+设 \(H\) 为这样一个裸频率二进块的中心，并设 \(\psi_C,\psi_{d'},\psi_{h'}\) 为当前
+\(C,d',h'\) 二进块上保留的各个截断函数，在其归一化范数处取值。
+
+方程~\eqref{eq:initial-residual-polynomial} 中的定向现已固定。第二次典范 Poisson 变换中的
+计算把 \(\mu(z)\gamma_{-1}(z)\) 替换为
+\(\bar\alpha(z)\gamma_2(z)\chi_z(-1)\overline{G(z)}\)。在第二侧，共轭内的因子具有射线因子
+\(\overline{G(z)}\)；结合 CRT 交叉相位，相对射线因子为 \(G([z_2][z_1]^{-1})\)。用上面固定的
+群公式展开它，并在一个固定的射线被加项中置
+\[
+ \nu_*=\nu_0\overline\vartheta,\qquad
+ A_*(z)=\bar\alpha(z)\gamma_2(z)\nu_*(z),\qquad
+ \mathcal K_{\rm init}=\mathcal F\Phi_{\rm init}.
+\]
+对于固定重叠、这些二进块与射线被加项的预备图案 \(\Sigma_0\)，并在较早的模式固定不变的
+情况下，带掩码且恢复主项后的非零分量恰为
+\begin{equation}\label{eq:initial-formal-component}
+ \begin{split}
+ \mathcal T^{\rm init}_{\Sigma_0}={}&
+ \sum_{\substack{C\ {\rm sf},\ d'\mid C\\h'\ne0}}
+ \psi_C\psi_{d'}\psi_{h'}\mu(d')\widehat G(\vartheta)
+ \mathcal B_{\rm init}(h')1_{(C,j)=1}\\
+ &\times\sum_{\substack{z_1,z_2\ {\rm sf}\\(z_1z_2,Cj)=1}}
+ 1_{(z_1,z_2)=1}
+ A_*(z_1)\overline{A_*(z_2)}
+ \overline{\chi_{z_1}(d')}\chi_{z_1}(h')
+ \chi_{z_2}(d')\overline{\chi_{z_2}(h')}\\
+ &\times\mathfrak d_0(Cz_1)\overline{\mathfrak d_0(Cz_2)}
+ W_0(q_Cq_{z_1}/Z^{D'})\overline{W_0(q_Cq_{z_2}/Z^{D'})}\\
+ &\times\frac{Z^{-D'}Z^m}{q_{d'}\sqrt{q_{z_1}q_{z_2}}}
+ \mathcal K_{\rm init}\!\left(
+       \frac{Z^mq_{h'}}{q_{d'}q_{z_1}q_{z_2}}\right).
+ \end{split}
+\end{equation}
+确实，对于 \(S\) 之外的无平方因子 \(C\)，有 \(|\mu(C)\nu_0(C)|^2=1\)，公共行因子恰为
+\(1_{(u,C)=1}\)，其 Poisson 展开贡献了那个 \(\mu(d')\)。所展示的两个分子因子分别是本原特征
+\(\overline{\chi_{z_1}}\chi_{z_2}\) 及其 Fourier 变换的因子。有限射线和通过 \(G(1)=1\) 恢复主
+配对。该恢复的代价以及在此等式之前被去掉的原始余集已在上面分别界定。
+
+对与 \(Cj\) 互素的所有单独无平方因子 \(z_1,z_2\)，用所展示的各个 \(A_*\) 因子、特征、
+形式乘积范数、完整核与不变的外球来定义方程~\eqref{eq:initial-formal-component} 中的被加项。
+它在互素区域上一致。插入完整的恒等式
+\[
+ 1_{(z_1,z_2)=1}=\sum_{s\mid(z_1,z_2)}\mu(s),\qquad z_a=sn_a,
+\]
+在作任何逐因子界定之前。设 \(v\ge0\) 为一个无平方因子 \(s\)-二进块的中心，
+\(\widehat v=\log_Zq_s\)，\(\psi_s\) 为其保留的各个截断函数。诸 \(n_a\) 无平方因子且与 \(s\)
+互素，但不必彼此互素。这一形式延拓并不对非互素导子应用 Poisson 求和。对于无平方因子且互素的
+\(s,n\)，CRT 与保零恒等式 \(\overline{\chi_n(d')}=\chi_n(d')\chi_n(d')^4\) 恰好给出
+\begin{equation}\label{eq:initial-common-extraction}
+ \begin{split}
+ A_*(sn)\overline{\chi_{sn}(d')}\chi_{sn}(h')
+ ={}&A_*(s)\overline{\chi_s(d')}\chi_s(h')\\
+ &\times A_*(n)\chi_n(d'h')\chi_n(d's)^4.
+ \end{split}
+\end{equation}
+四次幂包含了 CRT 因子 \(\chi_n(s)^4\)。在重叠上它把残余系数定义为零，而不必在非
+无平方因子的理想上计算 \(\gamma_2\)。由于在 \(S\) 之外 \(|A_*(s)|=1\)，所提取的两个标量给出
+\[
+ |A_*(s)\overline{\chi_s(d')}\chi_s(h')|^2
+ =1_{(s,d'h')=1}=1_{(s,h')=1}
+ \quad\text{when }d'\mid C,\ (s,C)=1.
+\]
+原有的残余与重叠排除条件还给出 \(1_{(C,j)=1}1_{(s,Cj)=1}\)。因此，除所指定的系数、
+各个截断函数与单位相位之外，外算术权重恰为
+\begin{equation}\label{eq:initial-outer-arithmetic}
+ \mu(d')\mu(s)\widehat G(\vartheta)\mathcal B_{\rm init}(h')
+ 1_{(C,j)=1}1_{(s,Cj)=1}1_{(s,h')=1}.
+\end{equation}
+所有这些因子在加权 Cauchy 中始终保留。置
+\[
+ t=C/d',\qquad k=d'h',\qquad f=d's,\qquad
+ \rho_{t,j}(n)=1_{(n,\operatorname{rad}(tj))=1}.
+\]
+方程~\eqref{eq:initial-common-extraction} 中关于 \(n\) 的因子，连同 \(\rho_{t,j}\)，
+恰好提供了在 \(C,s,j\) 处的原有排除条件以及 \(d',h'\) 处的分子零点。在非零支集上，\(t,d',s,n\)
+两两互素。对这一有序列表中的每个标记应用方程~\eqref{eq:inverse-slot-priority}。所指定的素数
+及其优先掩码保持在外侧。一个存活的素数已通过 \(\chi_n(f)^4\) 与 \(d's\) 互素，并通过
+\(\rho_{t,j}\) 与 \(tj\) 互素，因此其原有的各个列表与系数可以保留。其标记是容量为 \(z_0\) 的
+原有子搜集，而非依赖于行或标号的残余系数。
+
+因此，替换 \(k=d'h'\)、\(f=d's\) 以及穿刺 \(\rho_{t,j}\) 已经提供了典范的特征类与系数
+类。我们仍需要一个公共的分离剖面、外重数界，以及所得区间的容许性。
+
+把 \(\mathcal B_{\rm init}\) 保持在完整核与旧窗口的公共 Fourier 分离之外。精确的形式子中心
+与完整的新支集界为
+\begin{equation}\label{eq:initial-canonical-lengths}
+ \begin{gathered}
+ N_c^{\rm init}=D'-B-v,\qquad V_c^{\rm init}=\theta+v,\qquad
+ F_c^{\rm init}=D'-P_1,\\
+ |\widehat n-N_c^{\rm init}|\le3\eta,\qquad
+ |\widehat f-V_c^{\rm init}|\le2\eta.
+ \end{gathered}
+\end{equation}
+在已因子化的项上，这些界由 \(c=Csn\) 与 \(f=d's\) 得到。完整的新列截断与放大的标号窗口
+也包含在 \(\mathcal I_D\) 中，因此同样的界对之后由正性加入的独立项也直接成立。新截断上重构的
+形式乘积 \(c=Csn\) 也被包含在其中，因此初始前因子界在其整个分离侧上成立。
+
+通过 \(s\)-二进块与槽分支固定一个加细 \(\Sigma\)，并保持较早的模式 \(\boldsymbol\upsilon\)
+固定不变。在求和任何实际的外理想之前，使用六个独立坐标
+\[
+ (x_C,x_d,x_s,x_h,x_1,x_2)
+ =\left(\frac{q_C}{Z^B},\frac{q_{d'}}{Z^\theta},
+ \frac{q_s}{Z^v},\frac{q_{h'}}{Z^H},
+ \frac{q_{n_1}}{Z^{N_c^{\rm init}}},
+ \frac{q_{n_2}}{Z^{N_c^{\rm init}}}\right).
+\]
+设 \(I_C,I_d,I_s,I_h\) 为四个当前各个截断函数的完整支集。选取 \(\omega_{n,a}\)，使其在
+\(W_0\) 的支集除以 \(I_CI_s\) 上等于一，其固定完整支集位于一个包络区间 \([a,b]\) 中，且其上
+端点满足 \(b\ge1\)。选取非负的 \(\omega_f\)，使其在 \(I_dI_s\) 上等于一，并具有固定的完整支集
+\(I_f\)。当前的四个二进块截断与 \(\omega_f\) 保持在求逆之外，而 \(\omega_{n,a}\) 保持在列中。
+设 \(\Omega_{{\rm init},\alpha}\) 为更大的截断函数，使其在相应的四个当前截断与两个新截断的完整
+支集上等于一。这些完整支集、\(I_f\) 以及其上的形式乘积 \(Csn\) 就是已经包含在 \(\mathcal I_D\)
+中的窗口。这些支集没有一个依赖于当前的外元组或 Fourier 模式。
+
+保持 \(V_c^{\rm init}\ge0\)。仅当所保留的行分量非零时才进入某个子项，这蕴含
+\(M_{\rm init}\ge0\)。这与下面结构性的外集合是分开的关口，后者即使当行球为空时也可能包含零权重
+的元组。独立地，若某个完整的新子列窗口不包含无平方因子理想，则其多项式为零，该分量被略去。
+对保留的非空子项定义
+\[
+ N_{\rm init}=\max(0,N_c^{\rm init}),\qquad
+ \delta_{\rm init}=N_{\rm init}-N_c^{\rm init}\in[0,3\eta],\qquad
+ F_{\rm init}=N_{\rm init}+V_c^{\rm init}=F_c^{\rm init}+\delta_{\rm init}.
+\]
+对于非空的负中心窗口，\(q_n\ge1\) 且方程~\eqref{eq:initial-canonical-lengths} 给出
+\(\delta_{\rm init}\le3\eta\)，而其支集上端点给出 \(Z^{\delta_{\rm init}}\le b\)。若
+\(N_c^{\rm init}\ge0\)，则 \(\delta_{\rm init}=0\)，且后一不等式由 \(b\ge1\) 得到。因此在每个
+保留情形中都有 \(1\le Z^{\delta_{\rm init}}\le b\)。截断函数
+\(\omega_{n,a}(Z^{\delta_{\rm init}}y)\) 的支集在 \([a/b,b]\) 中，且具有一致有界的 Euler 半范数。
+其重标度只依赖于固定的中心，而不依赖于当前的行或标号，其完整的截断族包含在 \(\mathcal I_D\) 中。
+
+在形式分解 \(z_a=sn_a\) 上，完整的根与核自变量恰为
+\begin{equation}\label{eq:initial-root-kernel}
+ \begin{split}
+ \frac{Z^{-D'}Z^m}{q_{d'}q_s\sqrt{q_{n_1}q_{n_2}}}
+ &=Z^{\kappa_c^{\rm init}}x_d^{-1}x_s^{-1}(x_1x_2)^{-1/2},\\
+ \frac{Z^mq_{h'}}{q_{d'}q_s^2q_{n_1}q_{n_2}}
+ &=A_{{\rm ker},{\rm init}}\frac{x_h}{x_dx_s^2x_1x_2},\\
+ A_{{\rm ker},{\rm init}}&=Z^{m+H-\theta-2(D'-B)}.
+ \end{split}
+\end{equation}
+对于第一个等式，使用 \(N_c^{\rm init}=D'-B-v\) 与
+\(\kappa_c^{\rm init}=m-2D'+B-\theta\)。等价地，其根为
+\(x_d^{-1}x_C(x_{c_1}x_{c_2})^{-1/2}\)，其中 \(x_{c_a}=x_Cx_sx_a\)。定义这个联合剖面
+\begin{equation}\label{eq:initial-joint-profile}
+ \begin{split}
+ \mathfrak H_{{\rm init},\Sigma,\boldsymbol\upsilon}(\boldsymbol x)
+ ={}&Z^{-3\eta}\prod_\alpha\Omega_{{\rm init},\alpha}(x_\alpha)
+ x_d^{-1}x_s^{-1}(x_1x_2)^{-1/2}\\
+ &\times W_0(x_Cx_sx_1)\overline{W_0(x_Cx_sx_2)}
+ \mathcal K_{\rm init}\!\left(
+ A_{{\rm ker},{\rm init}}\frac{x_h}{x_dx_s^2x_1x_2}\right).
+ \end{split}
+\end{equation}
+其外侧标量恰为 \(Z^{\kappa_c^{\rm init}+3\eta}\)。旧的 \(c\)-窗口是耦合的，因此位于此
+剖面中，所有归一化实逆根与完整核亦然。没有实根同时也被放入子检验中。
+
+对 \(\boldsymbol\xi=(\xi_C,\xi_d,\xi_s,\xi_h,\xi_1,\xi_2)\)，置
+\(z_n=q_n/Z^{N_{\rm init}}\)，再次令 \(\varepsilon_1=1,\varepsilon_2=-1\)，并定义
+\[
+ W_a^{\rm init}(z)=\omega_{n,a}(Z^{\delta_{\rm init}}z)
+                       z^{\varepsilon_a i\xi_a}.
+\]
+若 \(\mathfrak d_a'\) 为 \(a\) 侧上存活的子搜集，则精确的未归一化子多项式为
+\begin{equation}\label{eq:initial-child-polynomial}
+ Q^{\rm init}_{a,t,j,\boldsymbol\xi}(k,f)
+ =\sum_{n\ {\rm sf}}A_*(n)\rho_{t,j}(n)
+ \chi_n(k)\chi_n(f)^4\mathfrak d_a'(n)
+ W_a^{\rm init}(q_n/Z^{N_{\rm init}}).
+\end{equation}
+其固定的有限特征、穿刺、乘积标记与检验都独立于 \(k,f\)。两侧可以有不同的检验与子搜集，
+但二者具有相同的典范系数类。
+
+设 \(\Omega_\Sigma\) 由
+\[
+ \omega=(C\ {\rm sf},d'\mid C,s\ {\rm sf},h'\ne0;
+                      \text{所指定的槽素数})
+\]
+组成，带有保留的各个支集与槽分支。它没有当前列指标。函数 \(t,k,f\) 是上面定义的乘积；
+该集合可以在施加所展示的外零掩码之前取定，后者将出现在权重中。设
+\(\mathcal A_\Sigma^{\rm init}(\omega)\) 为 \(\mathfrak d_0\) 的所有指定系数及其优先掩码的乘积，
+在第二侧取共轭。剩余的完整外权重为
+\begin{equation}\label{eq:initial-outer-weight}
+ \begin{split}
+ V_\Sigma^{\rm init}(\omega;\boldsymbol\xi)={}&
+ \mu(d')\mu(s)\widehat G(\vartheta)\mathcal B_{\rm init}(h')
+ 1_{(C,j)=1}1_{(s,Cj)=1}1_{(s,h')=1}
+ \mathcal A_\Sigma^{\rm init}(\omega)\\
+ &\times\psi_C(x_C)\psi_{d'}(x_d)\psi_s(x_s)\psi_{h'}(x_h)
+ \omega_f(q_f/Z^{V_c^{\rm init}})\\
+ &\times x_C^{i\xi_C}x_d^{i\xi_d}x_s^{i\xi_s}x_h^{i\xi_h}
+ Z^{i\delta_{\rm init}(\xi_1+\xi_2)}.
+ \end{split}
+\end{equation}
+截断函数 \(\omega_f\) 在每个原标号乘积上等于一，因此其插入在分离之前是一个等式。每个
+M\"obius 因子有一份拷贝，射线系数也各有一份。特别地，\((s,h')\) 处的公共零点仍然存在。
+
+设 \(\mathcal T_\Sigma^{\rm init}\) 为由方程~\eqref{eq:initial-formal-component} 通过完整的
+M\"obius 与优先展开得到的固定 \(s\)-二进块与槽被加项。其精确的分离恒等式为
+\begin{equation}\label{eq:initial-separated-identity}
+ \begin{split}
+ \mathcal T_\Sigma^{\rm init}={}&
+ Z^{\kappa_c^{\rm init}+3\eta}(2\pi)^{-6}
+ \int_{\mathbb R^6}
+ \widehat{\mathfrak H}_{{\rm init},\Sigma,\boldsymbol\upsilon}
+       (\boldsymbol\xi)\\
+ &\quad\times\sum_{\omega\in\Omega_\Sigma}
+ V_\Sigma^{\rm init}(\omega;\boldsymbol\xi)
+ Q^{\rm init}_{1,t,j,\boldsymbol\xi}(k,f)
+ \overline{Q^{\rm init}_{2,t,j,\boldsymbol\xi}(k,f)}
+ \,d\boldsymbol\xi.
+ \end{split}
+\end{equation}
+确实 \(x_a=Z^{\delta_{\rm init}}z_{n_a}\)。两个列模式，连同方程~\eqref{eq:initial-outer-weight}
+的最后一个因子，恰为 \(x_1^{i\xi_1}x_2^{i\xi_2}\)，而其余四个模式为外侧的。Fourier 反演恢复
+完整的剖面；其更大的截断函数在保留支集上等于一，而新列截断在旧的 \(W_0\) 窗口非零处等于一。
+方程~\eqref{eq:initial-root-kernel} 恢复完整的前因子与核。方程~\eqref{eq:initial-common-extraction}
+与优先展开逐项恢复每个算术因子。完整新窗口中的额外组合在此复恒等式中通过旧窗口在 Cauchy 之前相消。
+
+方程~\eqref{eq:initial-separated-identity} 中的变换是从固定环境剖面中选取的，先于任何实际
+\(C,d',s,h'\) 的求值，因而也先于任何 \(t,k,f\) 的求值。它依赖于 \(\Sigma,Z\)、固定的检验，
+以及较早的模式 \(\boldsymbol\upsilon\)，且可能依赖于已经冻结的 \(j\)，但不依赖于任何当前外
+理想或重编号的行或标号。裸的 \(h'\) 范数是一个坐标；导出的行与标号只出现在外掩码或所展示的
+特征中。关系 \(C=td'\) 仅限制求值点。由方程~\eqref{eq:inverse-fourier-moment}，对每个固定的
+\(J\)，存在固定的 \(L,b_0\) 使得
+\[
+ \int_{\mathbb R^6}
+ |\widehat{\mathfrak H}_{{\rm init},\Sigma,\boldsymbol\upsilon}
+       (\boldsymbol\xi)|(1+|\boldsymbol\xi|)^J\,d\boldsymbol\xi
+ \ll (1+|\boldsymbol\upsilon|)^L,\qquad
+ \int_{\mathbb R^{1+|I_0|}}|\widehat{\mathfrak H}_{{\rm ov},j}(\boldsymbol\upsilon)|
+       (1+|\boldsymbol\upsilon|)^L\,d\boldsymbol\upsilon
+ \ll p_{b_0}(W).
+\]
+第一个界使用了固定的归一化根以及完整核对于每个正 \(A_{{\rm ker},{\rm init}}\) 的一致
+Euler 界；\(W_0\) 只有多项式级的 \(\boldsymbol\upsilon\)-依赖性。第二个界在固定的 \(j\)-乘积区间
+上一致。在需要时取更大的 \(L\)，也能控制较早的行空间 Minkowski 不等式。任何导数阶数都不
+引入 \(Z\) 的幂。
+
+方程~\eqref{eq:initial-separated-identity} 现在把该分量表示为具有典范形状的多项式，其公共
+Fourier 密度在当前外理想求值之前就已选定。剩下的工作是界定正纤维与源测度、由源见证验证子项的
+容许性，并在引理~\ref{lem:marked} 中恢复归一化。
+
+在确定用于子项的某个商之前，先在整个 \(\Omega_\Sigma\)（包括所有商 \(t\)）上应用
+方程~\eqref{eq:weighted-cauchy}。只有在此之后才取绝对权重。所保留的 \((s,C)=1\) 与
+\(d'\mid C\) 使 \(f=d's\) 无平方因子，权重的所有其他因子都由一个固定常数界定。因此
+\[
+ |V_\Sigma^{\rm init}(\omega;\boldsymbol\xi)|
+ \ll\mathcal B_{\rm init}(h')\mu^2(f).
+\]
+对固定的 \(t,f,k\)，恒等式
+\[
+ d'\mid f,\qquad s=f/d',\qquad C=td',\qquad h'=k/d'
+       \quad\text{若该商是一个元素}
+\]
+表明该重构在槽之前至多有 \(d_{\mathcal O}(f)\) 种选择。这里 \(K_{\rm slot}\) 再次表示原槽数
+的固定界。至多 \(2K_{\rm slot}\) 个所指定的残余素数整除 \(tf\)。它们的选取至多花费
+\([d_{\mathcal O}(t)d_{\mathcal O}(f)]^{2K_{\rm slot}}\)。较早的重叠素数已经冻结，并在重叠
+三角形中被计数。因此，即便纤维的实际大小依赖于 \(k\)，它也被下式界定：
+\begin{equation}\label{eq:initial-fibre}
+ D_{\rm init}(f)C_{\rm init}(t),\qquad
+ D_{\rm init}(f)=d_{\mathcal O}(f)^{1+2K_{\rm slot}},\qquad
+ C_{\rm init}(t)=d_{\mathcal O}(t)^{2K_{\rm slot}}.
+\end{equation}
+不存在独立的 \(d',s\) 计数，也不存在第二个频率计数。
+
+设 \(\Omega_\Sigma^{\rm src}\) 为刚才使用的结构性外集合，在独立的正行或标号加入之前，
+并忽略单位 Fourier 相位，定义互异源商之集
+\[
+ \mathfrak T_\Sigma=\{t=C/d':\omega\in\Omega_\Sigma^{\rm src}\}.
+\]
+它在所有当前行与标号上一次性投影得到，而不对固定的 \(k,f\) 重新定义。每个成员在 \(C,d'\)
+二进块上都有一个源见证，因此 \(\log_Zq_t=\widehat B-\widehat\theta\le P_1+2\eta\)。所含的
+范数球把它的基数界定为
+\(\#\mathfrak T_\Sigma\ll Z^{P_1+2\eta+\pi_{{\rm count},{\rm init}}}\)；它不被用作替代的子
+区域。在非空扇区中 \(P_1+2\eta\ge0\)，因为它界定了某个存在理想的范数。
+在这一有界范围上的除数界给出归一化测度
+\begin{equation}\label{eq:initial-normalized-quotients}
+ d\nu_\Sigma^{\rm init}(t)
+ =Z^{-P_1-2\eta}\sum_{t\in\mathfrak T_\Sigma}C_{\rm init}(t)\delta_t,
+ \qquad
+ \|\nu_\Sigma^{\rm init}\|
+ \ll Z^{\pi_{{\rm count},{\rm init}}+\pi_{{\rm fib},{\rm init}}}.
+\end{equation}
+此集合与测度忽略单位 Fourier 相位，并对整个当前行与标号求和是公共的。非空关口与这一
+结构投影保持分离。
+
+对固定模式，令
+\begin{equation}\label{eq:initial-positive-child}
+ \mathcal H_{a,t}^{\rm init}
+ =\sum_{\substack{f\ {\rm sf}\\q_f/Z^{V_c^{\rm init}}\in I_f}}
+ D_{\rm init}(f)\sum_{\substack{k\in\mathcal O\\0<q_k\le Z^{M_{\rm init}}}}
+ |Q^{\rm init}_{a,t,j,\boldsymbol\xi}(k,f)|^2
+ =Z^{F_{\rm init}}\mathcal E_{a,t}^{\rm init}.
+\end{equation}
+这是具有相同行球的方程~\eqref{eq:canonical-energy}；若取更大的固定典范球，该等式被相应的
+上界取代。纤维估计与加权 Cauchy 给出
+\begin{equation}\label{eq:initial-weighted-count}
+ \left|\sum_{\omega\in\Omega_\Sigma}V_\Sigma^{\rm init}Q_1\overline{Q_2}\right|
+ \ll Z^{P_1+2\eta}
+ \prod_{a=1}^2
+ \left(\int_{\mathfrak T_\Sigma}\mathcal H_{a,t}^{\rm init}
+                         \,d\nu_\Sigma^{\rm init}(t)\right)^{1/2}.
+\end{equation}
+这里 \(Q_a=Q^{\rm init}_{a,t,j,\boldsymbol\xi}(k,f)\)。只有正的外 \(f,k\) 求和被放大到其
+完整的固定窗口；内部的 \(\rho_{t,j}\)、标记与新检验保持不变。权重 \(D_{\rm init}\) 只依赖于
+\(f\)。新的外球恰为 \(1_{0<q_k\le Z^{M_{\rm init}}}\)。因此使用一致子项界时，所展示的商计数
+指数引入一次，归一化质量也引入一次。
+
+固定的穿刺恰在 \(\operatorname{rad}(tj)\) 处。对每个 \(t\in\mathfrak T_\Sigma\)，其源界
+与固定重叠界给出
+\begin{equation}\label{old-eq:4.13}
+ Q_{\rm init}:=\log_Zq_{\mathfrak r_\rho}
+ \le\widehat B-\widehat\theta+\widehat j\le P_1+G+3\eta.
+\end{equation}
+共享的穿刺素数只会减小这个界。当加入正的新标号或行时它仍然成立，因为这些加入不改变
+\(t,j\)，也不删除它们内部的穿刺。
+
+固定的形式中心满足
+\[
+ \begin{aligned}
+ F_c^{\rm init}-M_c^{\rm init}-(P_1+G)-z_0&=m-r-2z+2G,\\
+ 4F_c^{\rm init}-3M_c^{\rm init}-6z_0&=3m-2r-8z+10G+2P_1.
+ \end{aligned}
+\]
+利用带标记的前提、\(G\ge0\)、\(P_1\ge-2\eta\)、方程~\eqref{eq:inverse-initial-row} 与
+\eqref{old-eq:4.13}，以及有利的截断符号。实际的典范余量为
+\begin{equation}\label{eq:inverse-initial-margins}
+ \begin{aligned}
+ F_{\rm init}-M_{\rm init}-Q_{\rm init}-z_0
+   &\ge c_1+\delta_{\rm init}-9\eta-\tau_{\rm init}
+     \ge c_1-9\eta-\tau_{\rm init},\\
+ 4F_{\rm init}-3M_{\rm init}-6z_0
+   &\ge c_2+4\delta_{\rm init}-22\eta-3\tau_{\rm init}
+     \ge c_2-22\eta-3\tau_{\rm init}.
+ \end{aligned}
+\end{equation}
+其中的 \(22\eta\) 由可能为负的 \(2P_1\) 贡献的 \(4\eta\) 与行的包围三份拷贝贡献的
+\(18\eta\) 组成。
+
+还有一个显式的能量计算。仅对 \(t\in\mathfrak T_\Sigma\) 应用典范界，因为在那里前面的穿刺
+与余量检查成立。方程~\eqref{eq:initial-positive-child} 与 \eqref{eq:initial-weighted-count}
+于是把未缩放的带符号外和界定为
+\[
+ C(\boldsymbol\upsilon,\boldsymbol\xi)
+ Z^{P_1+2\eta+2F_{\rm init}+\epsilon_c}
+ \|\nu_\Sigma^{\rm init}\|.
+\]
+那一个质量是方程~\eqref{eq:initial-normalized-quotients} 的质量；标号 \(d's\) 仍留在
+子平均之中。公共 Fourier 密度用上面的统一加权界单独积分一次。这把互异的冻结商计数一次，
+其见证重数已经包含在纤维权重中。
+形式恒等式
+\[
+ \kappa_c^{\rm init}+P_1+2F_c^{\rm init}=m
+\]
+在恢复子归一化并应用带损失 \(\epsilon_c\) 的典范界之后给出每侧的指数
+\begin{equation}\label{eq:inverse-initial-energy}
+ \begin{split}
+ &m+3\eta+2\eta+2\delta_{\rm init}+\pi_{\rm init}+\epsilon_c\\
+ &\qquad\le m+11\eta+\pi_{\rm init}+\epsilon_c.
+ \end{split}
+\end{equation}
+这里 \(\pi_{\rm init}\) 是自由选取的局部分歧、二进与分离损失的合计，包括所指定重叠的
+分歧损失与互异分配 \(\pi_{{\rm count},{\rm init}},\pi_{{\rm fib},{\rm init}}\)。它们是一个合计
+的各部分，而不是重复的容许量。两份截断拷贝来自恢复的归一化和子指数。不存在 \(\tau_{\rm init}\)
+能量因子：行的放大发生在典范子项内部，并在其余量检验中被计入。初始加权 Cauchy 取几何平均，
+且重叠三角形已由 \(Z^{-G}\) 相消。
+
+我们明确给出参数与尾部的阶。设 \(r_{\max},z_{\max},m_{\max}\) 界定带标记的范围，设
+\(s_{\rm slot}\) 界定槽数，并置 \(D_{\max}=r_{\max}+z_{\max}\)。置 \(\bar c=\min(c_1,c_2)\)
+并选取典范余量 \(c_*=\bar c/2\)。对 \(\eta,\tau_{\rm init}\le1/100\)，适用于该应用的先验有效
+起始界为
+\[
+ M_{\max}=2D_{\max}+1,\qquad N_{\max}=V_{\max}=D_{\max}+1.
+\]
+确实，\(P_1\ge-2\eta\) 给出 \(M_{\rm init}\le2D_{\max}+10\eta+\tau_{\rm init}\)，而
+\(F_{\rm init}\le D_{\max}+5\eta\) 界定了两个非负的子参数。在方程~\eqref{eq:inverse-parameter-order}
+中以 \(\epsilon_c=\epsilon/2\) 作出选择，并额外施加
+\[
+ \eta,\tau_{\rm init}\le\bar c/100,\qquad
+ \eta\le\epsilon/88,\qquad \pi_{\rm init}\le\epsilon/8.
+\]
+在施加这两组界之后，可以取 \(\tau_{\rm init}=\tau\)。方程~\eqref{eq:inverse-initial-margins}
+于是给出两个余量至少为 \(3\bar c/4>c_*\)，因此引理~\ref{lem:canonical-moment} 适用。方程
+~\eqref{eq:inverse-initial-energy} 至多给其 \(\epsilon_c=\epsilon/2\) 损失增加 \(\epsilon/4\)。
+
+在这些有界初始范围固定之后，选取能实现目标 \(\pi_{\rm init}\) 的辅助输入指数，然后再选取
+初始尾部与 Fourier 高度的阶。
+
+对于独立的初始原始尾部，受支持的列满足 \(q_{c_i}\le C Z^{D_{\max}}\)，而
+\(D'\in[-z_{\max},D_{\max}]\)。在真正的初始展开上置 \(a=Z^m/(q_{d'}q_{z_1z_2})\)。由于
+\(m\ge0\)、\(d'\mid C\) 且 \(c_i=Cz_i\)，
+\[
+ a^{-1}\le q_{d'}q_{z_1z_2}
+       \le q_{c_1}q_{c_2}/q_C\le C Z^{2D_{\max}}.
+\]
+显式的粗略指数
+\[
+ B_{\rm crude,init}=10\{1+m_{\max}+(s_{\rm slot}+1)(D_{\max}+1)\}
+\]
+即使没有相消也界定了所有原始的非频率因子。为验证这一点，归一化至多花费 \(z_{\max}\)，
+两个列计数花费 \(2D_{\max}\)，\(d'\)-除数计数至多 \(D_{\max}\)，而 \(1+a^{-1}\) 至多
+\(2D_{\max}\)。两个残余标记至多花费 \(2s_{\rm slot}D_{\max}\)，用到
+\(d_{\mathcal O}(c)^{s_{\rm slot}}\le q_c^{s_{\rm slot}}\)。即便在计入重叠对及其所指定系数
+而不计其相消权重时，也至多花费 \(2z_{\max}+2s_{\rm slot}z_{\max}\)。Poisson 前因子至多花费
+\(m_{\max}\)。其和至多为
+\(m_{\max}+(8+4s_{\rm slot})D_{\max}<B_{\rm crude,init}\)。

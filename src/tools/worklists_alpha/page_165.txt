@@ -1,4 +1,0 @@
-PAGE 165   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 2 glyph(s) P2 | zh 0
-   \mathcal P  y   73.2 x  155.9   line: average remains |P| − 1 P , so a bound uniform in the frozen p introduces no prime-count
-   \mathcal P  y   78.7 x  202.0   line: p ∈P

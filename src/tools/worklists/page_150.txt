@@ -1,4 +1,0 @@
-PAGE 150
-counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 1}
-
-BAR       y  509.6 x  507.1- 510.1 

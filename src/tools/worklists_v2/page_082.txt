@@ -1,5 +1,0 @@
-PAGE 82   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 1 glyph(s) D1 | zh 0
-   \mathcal D  y   73.2 x  303.9   line: For the large rows, (2 , 2 , v ) with v > 2 lies in D . The same all-height local bound verifies
-
----- Chinese file today: \substack x0, line breaks \\ x0 ----

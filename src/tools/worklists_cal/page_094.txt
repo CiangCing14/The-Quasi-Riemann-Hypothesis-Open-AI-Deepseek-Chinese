@@ -1,6 +1,0 @@
-PAGE 94   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL O  y  355.0 x  247.1- 255.8
-      line: where both stars mean squarefree in O , and the coefficients are arbitrary complex numbers [ 17 ,
-CAL H  y  719.2 x  134.0- 143.3
-      line: Proof. Write H for the left side of Equation ( 14.7 ). First remove the complete moving row-mark

@@ -1,0 +1,542 @@
+对 $z\in F$，定义
+\[
+ e(z)=\exp\bigl(2\pi i\operatorname{Tr}_{F/\mathbb Q}(z/\lambda)\bigr).
+\]
+它到 $\mathbb C$ 的延拓为
+$e(z)=\exp(4\pi i\operatorname{Im}z/\sqrt3)$。测度
+$d\mu(z)=(2/\sqrt3)\,dx\,dy$ 使 $\mathcal O$ 关于配对
+$(z,y)\mapsto e(zy)$ 自对偶。事实上，将 $y=u+v\omega$ 写为实 $u,v$，条件
+$e(y)=e(\omega y)=1$ 说明 $v,u-v\in\mathbb Z$，因此
+$y\in\mathcal O$；且 $\mathcal O$ 关于 $d\mu$ 的余体积为一。圆盘中的格点计数，
+随后除以六个单位，给出无限制的
+理想计数
+\[
+ \#\{\mathfrak a:q_{\mathfrak a}\le H\}
+ =\frac{\pi H}{3\sqrt3}+O(\sqrt H+1)\qquad(H\ge0).
+\]
+例如，其误差可由用
+$O(\sqrt H+1)$ 个固定基本平行四边形覆盖圆盘边界得到。
+
+若 $p\notin S$ 为素数，则其剩余域阶为 $P=q_p\equiv1\pmod6$：
+六个单位根在该域中仍互不相同。定义六次
+符号 $\chi_p(a)=(a/p)_6$ 为满足下式的唯一六次单位根
+\[
+ \chi_p(a)\equiv a^{(P-1)/6}\pmod p\quad(p\nmid a),
+ \qquad \chi_p(a)=0\quad(p\mid a).
+\]
+对 $S$ 之外的某一主元 $c=\prod p^{v_p(c)}$，定义
+$\chi_c(a)=\prod_{p\mid c}\chi_p(a)^{v_p(c)}$，并对每个
+$a$ 置 $\chi_1(a)=1$。对每个整数 $j$，包括 $j=0$ 与负 $j$，记号
+$\chi_c(a)^j$ 在 $(a,c)=1$ 时表示其通常的幂，否则表示零。
+因此被六整除的指数对应函数
+$1_{(a,c)=1}$，而非常数函数一。平方 $\chi_c^2$ 是
+三次符号。对无平方因子的 $c$，置
+\[
+ \gamma_j(c)=q_c^{-1/2}\sum_{v\bmod c}\chi_c(v)^j e(v/c),
+ \qquad \gamma_j(1)=1.
+\]
+
+\begin{lemma}[固定分子给出射线特征]
+\label{lem:fixed-numerator-ray}
+固定 $0\ne a\in\mathcal O$。在素理想 $\mathfrak p\nmid6a$ 处，令
+$(a/\mathfrak p)_6$ 为与
+$a^{(q_{\mathfrak p}-1)/6}\pmod{\mathfrak p}$ 同余的唯一六次单位根；在 $S$ 之外的素处它即为
+$\chi_p(a)$。扩张 $F(a^{1/6})/F$ 是有限阿贝尔的，且在
+$6a$ 的素因子之外非分歧，并且
+\[
+ \frac{\operatorname{Frob}_{\mathfrak p}(a^{1/6})}{a^{1/6}}
+       =(a/\mathfrak p)_6,
+\]
+其中 $\operatorname{Frob}_{\mathfrak p}$ 是算术 Frobenius。因此该符号到与 $6a$
+互素的理想上的乘法延拓是一个
+有限阶射线特征，其导子的支集在
+$6a$ 的素因子上。并未断言其在那些素处的导子指数有界。
+这一等同仅在与 $6a$ 互素的理想上成立；当好的理想 $A$ 与 $a$ 相交时，
+它并不抹去 $\chi_A(a)$ 的指定零点。
+
+特别地，为每个
+$\mathfrak p\in S$ 选取一个生成元 $\pi_{\mathfrak p}$。在 $S$ 之外的主元理想上，特征
+\[
+ A\longmapsto\chi_A\left(u\prod_{\mathfrak p\in S}
+                       \pi_{\mathfrak p}^{v_{\mathfrak p}}\right),
+ \qquad u\in\mathcal O^\times,\quad v_{\mathfrak p}\ge0,
+\]
+属于同一个有限射线特征族，具有公共模
+支集在 $S$ 上；该族由 $u$ 与剩余
+$v_{\mathfrak p}\pmod6$ 决定。
+\end{lemma}
+
+\begin{proof}
+令 $\xi^6=a$。由于 $F$ 含所有六次单位根，$X^6-a$ 的所有根
+都落在 $F(\xi)$ 中，且
+$\sigma\mapsto\sigma(\xi)/\xi$ 将其 Galois 群嵌入 $\mu_6$。
+因此该扩张是阿贝尔的。$6a$ 之外的素处非分歧；
+例如这可由 $X^6-a$ 的判别式推出，该判别式的支集
+在 $6a$ 上。在这样的素处，算术 Frobenius 在
+剩余域上由 $x\mapsto x^{q_{\mathfrak p}}$ 刻画。因此它在
+$\xi$ 上的商约化为 $a^{(q_{\mathfrak p}-1)/6}$。约化在
+$6$ 之外的 $\mu_6$ 上单射，从而证明了所显示的等式。
+Artin 映射的乘法性给出关于理想的断言。Artin 互反律使该
+映射分解过一个射线群，其模的支集在整除
+$6a$ 的素因子上；这些正是
+\cite[第 VIII 章，(5.3) 与 (5.5)]{MilneCFT} 中的幂剩余与射线群断言。
+
+对于最后的论断，$S$ 之外的理想 $A$ 与每个
+$\pi_{\mathfrak p}$ 以及与每个单位都互素。因此其符号在那里没有零点，
+且每个 $\chi_A(\pi_{\mathfrak p})\in\mu_6$ 的幂仅
+依赖于 $v_{\mathfrak p}\pmod6$。在此约化之后至多有
+$6^{|S|+1}$ 个可能的所显示分子。对每个应用
+第一个断言，并取其射线模的公共倍数。
+它们的素支集全部包含于 $S$，因为 $S$ 含有
+$6$ 之上的素理想。
+\end{proof}
+
+本引理中"固定"一词至关重要：含变动
+好素处的分子并不因此进入一个独立于 $Z$ 而固定的射线群。
+其特征及其自然零点支集仍是变动数据。
+
+在基 $Z>1$ 处，实对数长度为 $n$ 的朴素多项式为
+\begin{equation}
+ S_\psi(n;W)=Z^{-n/2}\sum_l\psi(l)W(q_l/Z^n),
+ \label{old-eq:1.1}
+\end{equation}
+而对数长度为 $r$ 的中心正规化逆多项式为
+\begin{equation}
+ M_\psi(r;W)=Z^{-r/2}\sum_n\mu(n)\psi(n)W(q_n/Z^r).
+ \label{old-eq:1.1a}
+\end{equation}
+两个定义中都保留了 $\psi$ 中的每个掩码。在基 $U$ 处，当
+$\psi(n)=\nu(n)\chi_n(u)$ 时，我们也将后一多项式记为
+$M_u(U^r;W)$，或在 $D=U^r$ 时记为 $M_u(D;W)$。
+
+环形检验函数是一个光滑函数，其支集位于 $(0,\infty)$ 的一个固定紧
+子区间内。环形剖面或耦合剖面的族仅
+与固定的对数支集以及对所引用的每个对数导数的一致界一起使用。
+精确的分离范数
+由引理~\ref{lem:smooth-calculus} 给出。在两个朴素因子的乘积中，
+两个因子具有相同的行特征，包括相同的固定有限射线
+扭转。在绝对值内对整体因子取共轭允许
+相反取向；仅对其系数的一部分取共轭则不允许。
+
+我们采用如下一致性约定。对数长度取值于固定的
+有界集合，且每个估计允许任意指定的正幂次损失。
+范数尺度的指数仅依赖于那些实参数范围、
+严格余量以及指定的损失。
+记 $\mathcal A$ 为此固定的算术数据：固定有限特征的完备零延拓
+表示、其定义模与用于表示它们的固定有限射线群、
+被排除的集合，以及任何固定的
+算术正规化。它的选取独立于 $Z$、当前各行
+以及被平均的标记，尽管它可以依赖于先前固定的
+目标。有限半范数阶、多项式高度阶、
+隐含常数与下阈值可以依赖于 $\mathcal A$。它们
+在所声明的变动的模与外标记各自的所述范围内是一致
+的，即使某个外标记在某次行求和期间被固定。
+
+对非零理想 $\mathfrak a$，令
+$d_{\mathcal O}(\mathfrak a)=\#\{\mathfrak d:\mathfrak d\mid\mathfrak a\}$，
+其中计数包含所有整理想因子，包括与
+$S$ 相交者；并对 $0\ne f\in\mathcal O$ 置
+$d_{\mathcal O}(f)=d_{\mathcal O}((f))$。
+非负重数 $w(f)$ 称为除子有界的，仅当
+\[
+ w(f)\le C\,d_{\mathcal O}(f)^C
+\]
+对某个固定的 $C\ge1$ 成立，该 $C$ 独立于 $Z$、当前各行与被平均的
+标记。常数 $C$ 可以依赖于 $\mathcal A$。
+该约定不放松任何要求 $w$ 仅依赖于
+$f$ 的独立条件。对每个 $\delta>0$，它蕴含 $w(f)\ll_{C,\delta}q_f^\delta$
+一致成立。事实上，对范数充分大的素理想 $\mathfrak p$，
+由 $e\ge1$ 时 $e+1\le2^e$ 可知，对每个整数 $e\ge0$ 有 $(e+1)^C\le q_{\mathfrak p}^{\delta e}$。
+对其余有限多个素理想中的每一个，
+$\sup_{e\ge0}(e+1)^Cq_{\mathfrak p}^{-\delta e}<\infty$；在 $f$ 的素因子分解上
+乘这些界即证得该断言。
+
+\subsection{Gauss 和与有限互反相位}
+
+我们首先计算素 Gauss 和。这也固定了
+所有后续公式中三次符号的取向。
+
+\begin{lemma}[素 Gauss 恒等式]\label{lem:prime-gauss-identities}
+设 $p$ 为 $S$ 之外某素理想的主生成元，并置
+$H=\chi_p$、$P=q_p$。则
+\[
+ \gamma_2(p)^3=-\alpha(p),\qquad
+ \gamma_1(p)\gamma_2(p)
+   =\overline{H(4)}\gamma_3(p)\gamma_2(p)^3.
+\]
+对 $j\not\equiv0\pmod6$，有 $|\gamma_j(p)|=1$。
+\end{lemma}
+
+\begin{proof}
+令 $k=\mathcal O/(p)$，令 $\psi(x)=e(x/p)$ 为其非平凡加性
+特征。对 $k^\times$ 的乘法特征 $A$，按零
+延拓，置
+\[
+ \tau(A)=\sum_{x\in k}A(x)\psi(x),\qquad
+ J(A,B)=\sum_{x\in k}A(x)B(1-x).
+\]
+若 $A$ 非主，则变量替换 $x=ty$ 给出
+\[
+ |\tau(A)|^2
+ =\sum_{t\in k^\times}A(t)\sum_{y\in k^\times}\psi((t-1)y)=P.
+\]
+内和在 $t=1$ 时为 $P-1$，否则为 $-1$，且
+$\sum_{t\in k^\times}A(t)=0$。取共轭还给出
+$\tau(A)\tau(\overline A)=A(-1)P$。当 $AB$ 非主时，按 $x+y$ 对乘积
+$\tau(A)\tau(B)$ 分组给出
+\[
+ \tau(A)\tau(B)=J(A,B)\tau(AB).
+\]
+$x+y=0$ 的组为零，因为 $AB$ 非主；对非零
+的和，除以 $x+y$ 给出所显示的 Jacobi 因子。特别地
+若 $A,B,AB$ 均非主，则 $|J(A,B)|=\sqrt P$。
+
+$4x(1-x)=y$ 的解数为 $1+H^3(1-y)$。将 $H(y)$
+乘此恒等式求和，并利用 $\sum_yH(y)=0$，给出
+$J(H,H^3)=H(4)J(H,H)$。记 $\tau_j=\tau(H^j)$。
+Gauss--Jacobi 恒等式与 $\tau_2\tau_4=P$ 现在给出
+\[
+ \frac{\tau_1\tau_3}{\tau_4}
+   =H(4)\frac{\tau_1^2}{\tau_2},\qquad
+ \tau_1\tau_2=\overline{H(4)}\frac{\tau_3\tau_2^3}{P}.
+\]
+这里 $H^2(-1)=1$，因为 $-1$ 是三次方。
+
+尚需固定三次 Jacobi 和，包括其单位。置
+$m=(P-1)/3$。$H^2$ 的定义在 $k$ 中给出
+\[
+ J(H^2,H^2)\equiv\sum_{x\in k}x^m(1-x)^m=0\pmod p.
+\]
+事实上该多项式的次数为 $2m<P-1$，且每个次数小于 $P-1$ 的单项式在 $k$ 上的和
+为零（在 $k$ 中；常数情形为 $k$
+中的 $P=0$）。Jacobi 和属于 $\mathcal O$，其绝对
+值为 $\sqrt P$。
+
+对 $x\ne0,1$，选取 $j_x\in\{0,1,2\}$ 使得
+$H^2(x(1-x))=\omega^{j_x}$。在这些 $x$ 上 $x$ 与 $1-x$ 的乘积
+均为 $-1$，故 $\prod_{x\ne0,1}x(1-x)=1$。因此
+$\sum_{x\ne0,1}j_x\equiv0\pmod3$。由于
+\[
+ \omega^j\equiv1+j(\omega-1)\pmod{(\omega-1)^2},
+ \qquad ((\omega-1)^2)=(3),
+\]
+我们得到 $J(H^2,H^2)\equiv P-2\equiv-1\pmod3$。被 $p$ 整除
+与范数相等蕴含 $J(H^2,H^2)=up$，其中 $u$ 为单位。由于 $p$
+是主元且六个单位的模 $3$ 剩余互不相同，该同余式
+迫使 $u=-1$。最后，
+$\tau_2^3=J(H^2,H^2)\tau_2\tau_4=-pP$。将两个 Gauss 恒等式
+除以 $\sqrt P$ 的适当幂即证得本引理。
+\end{proof}
+
+剩余的相位是二次的。其下文的计算即使对
+非无平方因子或非主元的奇元素也有效。
+
+\begin{lemma}[二次四项公式]\label{lem:quadratic-four-term}
+对非零奇 $c\in\mathcal O$，定义
+\[
+ \Gamma(c)=|c|^{-1}\sum_{x\bmod c}e(x^2/c).
+\]
+则
+\begin{equation}\label{eq:quadratic-four-term}
+ \Gamma(c)=\frac12\sum_{y\bmod2\mathcal O}e(-cy^2/4).
+\end{equation}
+对 $c=a+b\omega$，右端为
+$(1+i^{-b}+i^a+i^{b-a})/2$。特别地 $\Gamma$ 仅依赖于
+$c\bmod4\mathcal O$，且对每个奇 $v$ 有 $\Gamma(cv^2)=\Gamma(c)$。
+模 $4$ 的单位有平方子群 $\{1,\omega,\omega^2\}$ 与
+平方类代表元 $1,-1,\lambda,-\lambda$。函数
+$\Gamma$ 在这些单位上从不取零，且
+$\mathfrak r(a,b)=\Gamma(ab)/(\Gamma(a)\Gamma(b))$ 满足
+\begin{equation}\label{eq:reciprocity-four-class}
+ \begin{gathered}
+ \begin{array}{c|rrrr}
+  c&1&-1&\lambda&-\lambda\\ \hline
+  \Gamma(c)&1&1&i&-i
+ \end{array}\\
+ \mathfrak r((-1)^e\lambda^f,(-1)^g\lambda^h)
+       =(-1)^{eh+fg+fh},\qquad e,f,g,h\in\{0,1\}.
+ \end{gathered}
+\end{equation}
+因此 $|\Gamma(c)|=1$，且 $\mathfrak r$ 是
+平方类群上的对称 $\{\pm1\}$-值双特征。
+\end{lemma}
+
+\begin{proof}
+使用核为 $e(-zy)$、测度为 $d\mu$ 的 Fourier 变换。
+对 $\varepsilon>0$，在 $\mathcal O$ 上对
+$f_\varepsilon(z)=e(z^2/c)e^{-\pi\varepsilon|z|^2}$ 应用 Poisson 求和。直接 Gauss
+积分给出，其中 $r_\varepsilon=1+3q_c\varepsilon^2/16$，
+\[
+ \widehat f_\varepsilon(y)
+ =\frac{|c|}{2\sqrt{r_\varepsilon}}
+    e^{-\pi\varepsilon q_c|y|^2/(4r_\varepsilon)}
+    e\bigl(-cy^2/(4r_\varepsilon)\bigr).
+\]
+为验证正规化，将 $z$ 旋转 $c$ 的辐角的一半。所得的
+实二元 Gauss 的二次矩阵为
+\[
+ \begin{pmatrix}
+ \varepsilon&-4i/(\sqrt3|c|)\\
+ -4i/(\sqrt3|c|)&\varepsilon
+ \end{pmatrix},
+ \qquad \det=\frac{16r_\varepsilon}{3q_c}.
+\]
+其特征值为具有正实部的共轭对。行列式的正平方
+根、$d\mu$ 中的因子 $2/\sqrt3$ 以及配方
+给出上述公式。
+
+置 $I_\varepsilon=\int_{\mathbb C}e^{-\pi\varepsilon|z|^2}d\mu(z)
+=2/(\sqrt3\varepsilon)$。对固定理想 $(b)$、固定类 $v\bmod b$
+以及 $a>0$，在 $b\mathcal O$ 上的 Gauss Poisson 求和给出
+\[
+ \frac1{I_\varepsilon}\sum_{z\in v+b\mathcal O}
+             e^{-\pi a\varepsilon|z|^2}
+ \longrightarrow\frac1{a q_b}\qquad(\varepsilon\downarrow0).
+\]
+零对偶向量给出极限，每个非零对偶向量都
+指数级小。相位 $e(z^2/c)$ 模 $c$ 周期。
+因此 Poisson 恒等式正规化后的左端趋于
+$\Gamma(c)/|c|$。
+
+在右端可将 $r_\varepsilon$ 替换为 $1$。对固定 $c$，
+来自相位的总误差至多为
+\[
+ C_c\varepsilon^2\sum_{y\in\mathcal O}|y|^2
+                         e^{-C_c^{-1}\varepsilon|y|^2}=O_c(1),
+\]
+因为该和为 $O_c(\varepsilon^{-2})$。振幅误差为
+$O_c(\varepsilon)$，阻尼误差由同样的格点估计亦然。
+三者均为 $o(I_\varepsilon)$。相位 $e(-cy^2/4)$ 模
+$2\mathcal O$ 周期。在前述 Gauss 均值中取 $b=2$、$a=q_c/4$；
+其四个类的每个正规化均值均为 $1/q_c$。正规化后的右
+端因此趋于 $(2|c|)^{-1}\sum_{y\bmod2}e(-cy^2/4)$，这证明了
+方程~\eqref{eq:quadratic-four-term}。
+
+模 $2$ 的代表元 $0,1,\omega,\omega^2$ 给出所断言的
+四项表达式。乘以奇 $v$ 置换这些类，
+故同一公式给出 $\Gamma(cv^2)=\Gamma(c)$。模 $4$ 的单位
+群的阶为 $12$。模 $4$ 的提升的平方仅依赖于其
+模 $2$ 的类，且其三种可能的平方为 $1,\omega,\omega^2$。
+论断中的四个代表元模该子群互不相同；
+又 $\lambda^2=-3\equiv1\pmod4$。将四项表达式在
+它们上求值给出该表。将 $\Gamma(ab)/(\Gamma(a)\Gamma(b))$ 在两个
+生成元 $-1,\lambda$ 上求值给出所显示的指数，证明了最后的
+论断。
+\end{proof}
+
+\begin{lemma}[六次互反律与固定 Gauss 相位]
+\label{lem:fixed-gauss-phase}
+对 $S$ 之外互素的主元 $a,b$，
+\[
+ \chi_b(a)=\mathcal R(a,b)\chi_a(b),\qquad
+ \mathcal R(a,b)=\mathfrak r(a,b).
+\]
+在 $S$ 之外的所有主元对上，包括非互素对，按
+方程~\eqref{eq:reciprocity-four-class} 的双特征 $\mathfrak r$
+定义 $\mathcal R$。在 $S$ 之外的每个主元指标上定义
+\[
+ G(c)=\overline{\chi_c(4)}\Gamma(c).
+\]
+其模为一，且分解过一个支集在 $2,3$ 上的固定射线群。
+对所有这样的 $v,w$，
+\begin{equation}\label{eq:G-quadratic-refinement}
+ G(vw)=G(v)G(w)\mathcal R(v,w),\qquad G(1)=1.
+\end{equation}
+此外 $G(v^2)=\chi_v(4)$，且在好素处
+\begin{equation}\label{eq:fixed-gauss-phases}
+ G(p^3)=\gamma_3(p),\qquad
+ \mathcal R(p,p)=\gamma_3(p)^2=\chi_p(-1).
+\end{equation}
+在 $S$ 之外的每个主元 $n$ 上，有
+$\chi_n(-1)=\mathcal R(n,n)$。对角线 $t\mapsto\mathcal R(t,t)$ 是
+固定射线群的特征。在方程~\eqref{eq:reciprocity-four-class}
+的平方类记号中，它是 $\mathfrak r(-1,n)$，其中
+$-1$ 表示其模 $4$ 的剩余平方类，而非
+单位理想 $(-1)$ 的理想射线类。
+对无平方因子的 $c$，完备 Gauss 恒等式为
+\begin{equation}\label{eq:signal}
+ \gamma_2(c)^3=\mu(c)\alpha(c),\qquad
+ \gamma_1(c)\gamma_2(c)=\mu(c)\alpha(c)G(c),\qquad
+ G(c)=\overline{\chi_c(4)}\gamma_3(c),\quad |G(c)|=1.
+\end{equation}
+$G$ 在非无平方因子指标上的所有出现均指刚定义的有限射线
+函数，而非非无平方因子的 Gauss 和。
+\end{lemma}
+
+\begin{proof}
+在好素处，在剩余域中计数平方根给出
+\[
+ \sum_{x\bmod p}e(x^2/p)
+ =\sum_{y\bmod p}(1+\chi_p(y)^3)e(y/p)
+ =\sum_{y\bmod p}\chi_p(y)^3e(y/p).
+\]
+不含特征的加性和为零。因此
+$\Gamma(p)=\gamma_3(p)$，且对单位 $u$ 将 $x^2/p$ 替换为 $ux^2/p$
+使该和乘以 $\chi_p(u)^3$。对无平方因子的 $c$，将剩余表示为
+$\sum_{p\mid c}(c/p)x_p$ 在两个和中给出
+\[
+ \Gamma(c)=\prod_{p\mid c}\chi_p(c/p)^3\Gamma(p),\qquad
+ \gamma_3(c)=\prod_{p\mid c}\chi_p(c/p)^3\gamma_3(p).
+\]
+平方中的交叉项在加性特征下为整。
+因此对无平方因子的 $c$ 有 $\Gamma(c)=\gamma_3(c)$。特别地，对互不相同的
+好素处 $p,q$，
+\[
+ \frac{\Gamma(pq)}{\Gamma(p)\Gamma(q)}
+ =\chi_p(q)^3\chi_q(p)^3.
+\]
+
+我们使用如下精确形式的三次互反律：对互素的主元
+$a,b$，有 $(a/b)_3=(b/a)_3$；见 \cite[方程 (1.4)]{DR}。因此
+商 $\chi_b(a)/\chi_a(b)$ 是一个符号。在 $p,q$ 处其三次方为
+$\chi_q(p)^3\chi_p(q)^3$，故此符号等于 $\mathfrak r(p,q)$。
+两个变元的乘法性与双特征性质将该
+等式推广到每个互素主元对。用 $\mathfrak r$ 在
+非互素对上的定义不涉及零符号的除法。
+
+元素 $-2$ 是主元，且 $-1$ 是三次方。因此三次互反律
+给出
+\[
+ \chi_c(4)=(2/c)_3=(-2/c)_3=(c/(-2))_3.
+\]
+这是 $c\bmod2$ 的特征。连同 $\Gamma$ 对
+$c\bmod4$ 的依赖，这证明了 $G$ 是固定射线群上的函数（例如模 $12$
+的射线群在此已足够）。事实上，若两个主元
+生成元表示模 $12$ 的同一射线类，则其商与一个模 $12$
+同余于一的元素相差一个单位；模 $3$ 约化
+迫使该单位为 $1$。因此这些生成元有相同的
+模 $4$ 剩余。其乘法性
+加细即为 $\mathfrak r$ 的定义。由于
+$\Gamma(v^2)=1$，且 $\chi_v(4)$ 的阶整除三，
+$G(v^2)=\overline{\chi_v(4)}^{\,2}=\chi_v(4)$。该表还给出
+\[
+ \Gamma(p)^2=(-1)^{(q_p-1)/2}=\chi_p(-1).
+\]
+对最后的等式，使用
+$\chi_p(-1)=(-1)^{(q_p-1)/6}$ 以及这些奇偶性的相等。
+现 $\Gamma(p^3)=\Gamma(p)$，且
+$\overline{\chi_p(4)}^{\,3}=1$，证明了 $G(p^3)=\gamma_3(p)$。最后
+$\mathcal R(p,p)=1/\Gamma(p)^2=\Gamma(p)^2$，因为该平方是一个符号。
+
+对对称的符号值双特征，其对角线是乘法的：
+\[
+ \mathcal R(vw,vw)
+ =\mathcal R(v,v)\mathcal R(v,w)^2\mathcal R(w,w)
+ =\mathcal R(v,v)\mathcal R(w,w).
+\]
+素恒等式因此给出：对 $S$ 之外的每个主元
+$n$，有 $\mathcal R(n,n)=\chi_n(-1)$。在平方类 $(-1)^e\lambda^f$ 上，
+该表给此对角线与 $\mathfrak r(-1,n)$ 都赋予值 $(-1)^f$。
+这里对 $-1$ 的使用是在剩余平方类群中；理想 $(-1)$
+是理想射线类群中的单位元，在此并未被代入。
+
+对 $S$ 之外互素的无平方因子主元 $a,b$，中国剩余定理给出
+\[
+ \gamma_j(ab)=\chi_a(b)^j\chi_b(a)^j\gamma_j(a)\gamma_j(b).
+\]
+将剩余表示为 $bx+ay$，其中 $x\bmod a$、
+$y\bmod b$，即得此式。对 $j=2$ 的因子取三次方得一。
+$j=1$ 与 $j=2$ 的因子之积为
+$(\chi_a(b)\chi_b(a))^3=\mathcal R(a,b)$。来自
+引理~\ref{lem:prime-gauss-identities} 的素恒等式，随后由
+方程~\eqref{eq:G-quadratic-refinement}，因此按素因子个数
+归纳证明了方程~\eqref{eq:signal}。
+\end{proof}
+
+对于后面的元素行，固定来自
+引理~\ref{lem:fixed-numerator-ray} 的生成元 $\pi_{\mathfrak p}$。每个 $0\ne m\in\mathcal O$ 有
+唯一表达式
+\[
+ m=u m_S m_{\mathrm{good}},\qquad
+ m_S=\prod_{\mathfrak p\in S}\pi_{\mathfrak p}^{v_{\mathfrak p}(m)},
+\]
+其中 $u$ 是单位，$m_{\mathrm{good}}$ 是 $(m)$ 在 $S$ 之外部分的
+主元生成元。在 $S$ 之外的每个主元 $A$ 上，乘法性
+与六次互反律给出保零恒等式
+\begin{equation}\label{eq:row-fixed-ray-reduction}
+ \chi_A(m)=\chi_A(u m_S)\mathcal R(A,m_{\mathrm{good}})
+       \prod_{p\mid m_{\mathrm{good}}}\chi_p(A)^{v_p(m)}.
+\end{equation}
+对 $(A,m_{\mathrm{good}})=1$，这是刚才证明的互反公式；
+若它们相交，则两端为零，且 $\mathcal R$ 按其
+单独定义的双特征求值。一旦好的部分的固定射线类与
+$S$-赋值模六固定，右端的头两个因子
+就取值于 $A$ 的一个固定有限特征族。关于
+好素处的乘积保留变动的特征因子及其全部零点。
+
+固定有限阿贝尔射线群上的每个函数都有有限 Fourier
+展开（用其特征）。例如，若 $\phi:T\to\mathbb C$，则
+\[
+ \phi(v)=\sum_{\theta\in\widehat T}a_\theta\theta(v),\qquad
+ a_\theta=\frac1{|T|}\sum_{u\in T}\phi(u)\overline{\theta(u)}.
+\]
+Parseval 与 Cauchy--Schwarz 将 $\sum_\theta|a_\theta|$ 界为
+$|T|^{1/2}\max_T|\phi|$。在 $T\times T$ 上应用同一论断将
+$\mathcal R(a,b)$ 分离为特征的乘积的有限和。
+这些展开在非互素主元对处仍然有效，因为
+那里的 $\mathcal R$ 是固定射线双特征，而非符号商。
+例如，对好素处 $p$ 与 $S$ 之外的每个主元 $n$，
+\[
+ \chi_n(p)\overline{\chi_p(n)}
+       =\mathcal R(p,n)1_{(n,p)=1}.
+\]
+在互素对上这是六次互反律，在其余对上两端
+均为零。因此变动局部特征的抵消可能留下
+互素指示函数与固定射线相位两者；二者皆不可舍去。
+
+\subsection{光滑范数剖面}
+
+以下约定使特征多项式估计中的光滑依赖性
+成为定量的。它们区分固定检验函数的导数与谱高度的幂。
+当 Fourier 尾部仅在高度范围选定之后
+才被移除时，这一区分是必要的。
+
+对 $(0,\infty)^d$ 上对数支集位于固定紧集
+$\Omega\subset\mathbb R^d$ 中的剖面 $w$，置
+\[
+ w_{\log}(\boldsymbol u)=w(e^{u_1},\ldots,e^{u_d}),\qquad
+ p_j(w)=\sum_{|\alpha|\le j}\sup_{\boldsymbol u\in\mathbb R^d}
+                  |\partial^\alpha w_{\log}(\boldsymbol u)|.
+\]
+我们始终约定 $w_{\log}$ 光滑且支集在 $\Omega$ 中。
+定义
+\[
+ \widehat w(\boldsymbol t)=\int_{\mathbb R^d}w_{\log}(\boldsymbol u)
+                    e^{-i\boldsymbol t\cdot\boldsymbol u}\,d\boldsymbol u,
+ \qquad
+ \|w\|_{J,\mathrm{sep}}
+ =\int_{\mathbb R^d}|\widehat w(\boldsymbol t)|
+                    (1+|\boldsymbol t|)^J\,d\boldsymbol t.
+\]
+对固定的有限元组 $\boldsymbol w=(w_1,\ldots,w_r)$（其维数可以
+各不相同但均固定），我们使用
+$p_j(\boldsymbol w)=1+\sum_{i=1}^r p_j(w_i)$。
+
+\begin{lemma}[光滑微积分]\label{lem:smooth-calculus}
+对整数 $J\ge0$，
+\[
+ \|w\|_{J,\mathrm{sep}}\ll_{J,d,\Omega}p_{J+d+2}(w).
+\]
+对数 Fourier 反演分离任何固定的范数单项式。更
+精确地，若 $x_j=c_j\prod_{\ell=1}^r y_\ell^{a_{j\ell}}$，其中 $c_j,y_\ell>0$、
+实指数 $a_{j\ell}$ 固定，则
+\[
+ w(x_1,\ldots,x_d)=\frac1{(2\pi)^d}\int_{\mathbb R^d}
+ \widehat w(\boldsymbol t)\prod_j c_j^{it_j}
+       \prod_\ell y_\ell^{i\sum_j a_{j\ell}t_j}\,d\boldsymbol t.
+\]
+若此公式中的系数测度对一族
+行是公共的，则只要该分离界的高度增长至多为
+$(1+|\boldsymbol t|)^J$，Minkowski 不等式就利用 $\|w\|_{J,\mathrm{sep}}$ 将任何分离的行 $\ell^2$ 界
+通过积分传递。
+
+对单位盒 $I\subset\mathbb R^d$ 与 $I+[-1,1]^d$ 上的光滑标量函数
+$F$，
+\begin{equation}\label{eq:parameter-sobolev}
+ \sup_I|F|^2\ll_d
+ \sum_{\alpha\in\{0,1\}^d}
+ \int_{I+[-1,1]^d}|\partial^\alpha F|^2.
+\end{equation}
+因此，在相应的导数界之下，多项式范围内尺度的逐行
+选择代价为 $\log Z$ 的幂，而绝对值至多 $T_1$ 的范数扭转高度的
+逐行选择代价为 $1+T_1$ 的固定幂。

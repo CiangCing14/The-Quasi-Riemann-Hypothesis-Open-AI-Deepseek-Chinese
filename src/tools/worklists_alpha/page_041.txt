@@ -1,6 +1,0 @@
-PAGE 41   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 2 glyph(s) F1 I1 | zh 0
-   \mathcal F  y   86.7 x  477.2   line: log-length ranges, and the fixed support box, but not on the moving frozen local set F . Norm
-   \mathcal I  y  644.0 x  510.3   line: row scalar and the common dual coefficient. Only now enlarge the positive row norm from I
-EUFM -> \mathfrak : pdf 1 glyph(s) m1 | zh 0
-   \mathfrak m  y  589.9 x  376.0   line: The finite set of possible c depends only on L . Consequently m ( Y ) ≪ Z − ( T 0 − v − 3 ℓ b − e λ ) + / 4 .

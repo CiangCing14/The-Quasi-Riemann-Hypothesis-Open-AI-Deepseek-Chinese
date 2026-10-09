@@ -1,9 +1,0 @@
-PAGE 40   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 5 glyph(s) U3 I2 | zh 0
-   \mathcal U  y  342.6 x  476.2   line: The supports and invoked seminorms are fixed uniformly over the block. Denote by U ( R )
-   \mathcal I  y  369.7 x  337.2   line: and multiplied by W ( y , y , y ) . The original row set I consists of the allowed R for which
-   \mathcal U  y  591.9 x  160.1   line: U ( R ) = Z − ν 0 ρ ( R ) X β ( n, b ) χ ( nb ) 3 F ( y , y , y ) . (5.32)
-   \mathcal U  y  726.3 x  121.5   line: X |U ( R ) | 2 ≪ Z E 0 + ϵ p ( W ) 2 M ( V ) 2 ,
-   \mathcal I  y  741.9 x  105.1   line: R ∈I H (5.34)
-EUFM -> \mathfrak : pdf 1 glyph(s) M1 | zh 0
-   \mathfrak M  y  726.4 x  272.6   line: X |U ( R ) | 2 ≪ Z E 0 + ϵ p ( W ) 2 M ( V ) 2 ,

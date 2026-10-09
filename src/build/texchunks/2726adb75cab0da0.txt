@@ -1,9 +1,0 @@
-\[
- \gamma_2(p)^3=-\alpha(p),\qquad
- \gamma_1(p)\gamma_2(p)
-   =\overline{H(4)}\gamma_3(p)\gamma_2(p)^3.
-\]
-对于 $j\not\equiv0\pmod6$，有 $|\gamma_j(p)|=1$。
-\end{lemma}
-\begin{proof}
-设 $k=\mathcal O/(p)$，并设 $\psi(x)=e(x/p)$ 为其非平凡加法特征。对于 $k^\times$ 的一个乘法特征 $A$，将其零延拓后，令

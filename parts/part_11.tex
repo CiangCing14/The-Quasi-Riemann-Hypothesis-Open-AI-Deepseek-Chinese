@@ -1,0 +1,503 @@
+外部因子，包括 $q_u^{-z_0}$ 以及
+方程~\eqref{eq:stage-central-contours} 中的实位移，贡献
+\[
+ l_x(1/2-z_0)+a+z_0-1-a l_y-dz_0+(16-6l_y)e.
+\]
+方程~\eqref{eq:stage-central-bound} 增加
+$d(R+\delta/2+\varepsilon_c)+\ell(z_0-1/2)+g+\varepsilon_c$。
+倒数增加 $d\varepsilon_d$。减去
+$C(\sigma_0)=\sigma_0+l_x/2-1+h/6$ 并利用
+$h=1-l_x+\ell$，给出方程~\eqref{eq:stage-high-exponent} 以及
+方程~\eqref{eq:stage-central-contribution} 中的其余项。
+逐点对数重数被 $Z^{\varepsilon_p}$ 界住，对充分大的 $Z$。这就证明了该断言。
+\end{proof}
+
+该引理把修正的两种用途区分开来。它的全纯性以及
+全高度优势函数为在按逐点大小细分各行之前所进行的围道移动提供了依据。
+方程~\eqref{eq:stage-central-bound} 中的各片段仅在移动之后使用；它们
+可以用局部除法来定义，而这类除法的非零性已在那个被保留的区域上得到证明。
+这样的除法在该区域之外不提供任何延拓或尾部界。对于基础修正仅有一个
+片段，而引理~\ref{lem:buffered-bins} 给出中心假设中出现的反射分子
+因子 $U^{\delta/2+12e+\epsilon}$。
+
+\subsection{提取主信号}
+
+中间行估计剩下主行以及两个外部范数区间。我们首先跨过主行中的
+两个标量极点。下面的表述还记录了另一个修正具有相同目标信号的
+精确条件。
+
+\begin{lemma}[主信号的提取]
+\label{lem:principal-residue-interface}
+假设定义~\ref{def:stage-high-data} 与
+方程~\eqref{eq:shared-principal-nonvanishing}。固定
+$\sigma_0\in[7/8,1)$，其中 $\beta_*>\sigma_0$，且 $0<e<10^{-3}$。
+假设对每个 $\epsilon>0$，关于
+\[
+ \Re s=\beta_*+e,\qquad 19/20\le\Re w\le1+e,
+ \qquad 33/200\le\Re z\le1/6+e,
+\]
+上的所有虚部一致地，有
+\begin{equation}
+ |\mathfrak H_{\eta,1,Z}(s,w,z)|
+ \ll_{\eta,e,\epsilon} Z^{\ell\Re z+\epsilon}
+  (1+|\Im s|+|\Im w|+|\Im z|)^{J_{\eta,e,\epsilon}},
+ \label{eq:principal-correction-bound}
+\end{equation}
+其中 $J_{\eta,e,\epsilon}$ 有限，并在任何外部尾部阶之前固定。
+还假设对每个充分大的实 $Z$ 有 $A_\eta(Z)\ne0$，
+对每个 $\epsilon>0$ 有
+$|A_\eta(Z)|^{-1}\ll_{\eta,\epsilon}Z^\epsilon$，并且在
+$\Re s=\beta_*+e$ 上关于 $\Im s$ 一致地，
+\begin{equation}
+ \mathfrak H_{\eta,1,Z}(s,1,1/6)
+ =H_\eta(s)Z^{\ell/6}A_\eta(Z)(1+\mathcal R_{\eta,Z}(s)).
+ \label{eq:principal-correction-residue}
+\end{equation}
+这里或者 $\mathcal R_{\eta,Z}$ 恒等于零，或者存在一个数
+$\mu>0$，独立于 $\eta$ 选取，使得
+$|\mathcal R_{\eta,Z}(s)|\ll_\eta Z^{-\mu}$ 在该整条直线上成立。
+
+设 $\mathscr P_\eta(Z)$ 为
+方程~\eqref{eq:stage-high-identity} 的 $u=1$ 项，并定义
+\[
+ f_\eta(Z)=\frac1{2\pi i}\int_{(2)}
+    Z^{C(s)}e^{(s-5/6)^2}\frac{H_\eta(s)}{L_F^S(s,\eta)}\,ds.
+\]
+于是 $c_S>0$，且对每个 $\epsilon>0$，
+\begin{align}
+ \frac{\mathscr P_\eta(Z)}{c_SA_\eta(Z)}-f_\eta(Z)
+ \ll_{\eta,e,\epsilon}{}&
+ Z^{C(\beta_*)+(1+h)e-l_y/20+\epsilon}
+ +Z^{C(\beta_*)+e-h/600+\epsilon}\notag\\
+ &+Z^{C(\beta_*)+e-\mu+\epsilon}.
+ \label{eq:principal-remainder-bound}
+\end{align}
+当 $\mathcal R_{\eta,Z}$ 恒等于零时，最后一项被省略。
+隐含常数与下阈值可以依赖于目标，但所显示的实指数不依赖。
+\end{lemma}
+
+\begin{proof}
+对 $u=1$，高恒等式中的标量因子是
+\[
+ \frac{\zeta_F^S(6z)\zeta_F^S(w)}{L_F^S(s,\eta)}.
+\]
+在绝对围道上分离出该项。移动到
+$\Re s=\beta_*+e$、$\Re w=1+e$ 以及 $\Re z=1/6+e$。
+倒数保持在 $\Re s>\beta_*$ 中，且两个 zeta 自变量都保持在 1 的右侧。
+这些路径位于 $\mathcal D_2$ 中，故修正全纯。全高度优势函数以及
+引理~\ref{lem:external-contour-tails} 为水平极限提供了依据。
+
+将 $w$ 移到 $19/20$，跨过它在 $w=1$ 处的单极点。在该留数中把 $z$ 移到
+$33/200=1/6-1/600$，跨过它在 $z=1/6$ 处的单极点。
+未取留数的 $w$ 积分保持 $\Re z=1/6+e$。所有这些路径都位于
+$\mathcal D_2$ 中，且 $M(z)$ 在 $\Re z>0$ 上全纯。
+于是所陈述的两个标量极点是仅被跨过的极点。倒数始终保持在
+它的全局直线上，即使当 $\eta$ 是主特征时也是如此。
+用于界定尾部的每一条延拓的竖直 $w$- 轴或 $z$- 轴都严格位于其标量极点的
+一侧；$w=1$ 与 $z=1/6$ 只作为留数出现，且水平连接具有大的非零高度。
+在这些轴上 zeta 函数具有固定的多项式界。因此
+引理~\ref{lem:external-contour-tails} 的积分估计与迹估计可以在其优势函数中
+没有未移除极点的情况下适用。
+在 $w$ 留数之后，它的 Mellin 因子已成为常数
+$\widehat W_1(1)$。剩余的高度使用
+方程~\eqref{eq:external-two-dimensional-kernel} 中的二维核，其中
+$(y_1,y_2)=(\Im(s+z),\Im z)$；它的迹估计为随后的 $z$-连接提供了依据。
+
+在主围道上，方程~\eqref{eq:principal-correction-bound} 与外部幂给出原始指数
+\[
+ \frac{l_x}{2}+\Re s-1+h\Re z+l_y(\Re w-1).
+\]
+对未取留数的 $w$ 积分这是
+$C(\beta_*)+(1+h)e-l_y/20$；对 $w$ 留数中剩余的 $z$ 积分它是
+$C(\beta_*)+e-h/600$。$\Re s=\beta_*+e$ 上的倒数具有其固定目标导子的
+任意小幂次以及高度的固定多项式，依据
+引理~\ref{lem:logarithmic-control} 和~\ref{lem:deleted-euler-factors}。
+检验函数对这些高度幂进行积分。要求修正中与 $A_\eta^{-1}$ 中的小幂次
+充分小，即给出方程~\eqref{eq:principal-remainder-bound} 的前两项。
+
+标量留数的乘积是 $c_S$：$\zeta_F^S(6z)$ 在 $1/6$ 处的留数是
+$\zeta_F^S(v)$ 在 1 处的留数的六分之一。$c_S$ 的正性在定义正规化时
+已被证明。
+
+在双重留数处，外部幂是
+\[
+ X^{1/3}Z^{s-5/6}Z^{\ell/6}=Z^{C(s)},
+ \qquad \Phi(s+1/6-1)=e^{(s-5/6)^2}.
+\]
+因此方程~\eqref{eq:principal-correction-residue} 使正规化的双重留数成为
+\[
+ \frac1{2\pi i}\int_{(\beta_*+e)}
+ Z^{C(s)}e^{(s-5/6)^2}\frac{H_\eta(s)}{L_F^S(s,\eta)}
+          (1+\mathcal R_{\eta,Z}(s))\,ds.
+\]
+当存在时，误差因子在该直线上被估计；全局倒数界与 Gauss 函数给出
+$O_{\eta,e,\epsilon}(Z^{C(\beta_*)+e-\mu+\epsilon})$。
+不需要对该误差因子作延拓。
+
+只把主积分向右移到 $\Re s=2$。由 $\beta_*$ 的定义以及在一之外的
+绝对 Euler 收敛性，倒数在 $\Re s>\beta_*$ 上全纯。在主极点处它的倒数
+有一个零点，因此该情形不增加留数。函数 $H_\eta$ 由
+引理~\ref{lem:local-euler} 在该处全纯，并由
+方程~\eqref{eq:shared-principal-nonvanishing} 在该处有界。全局倒数估计在
+固定的实带形域上关于高度是一致多项式的，而 Gauss 函数是
+$O(e^{-(\Im s)^2})$。因此矩形围道的水平边趋于零，移动后的积分恰好是
+$f_\eta(Z)$。
+这也涵盖 $\beta_*=1$ 的情形。三个余项给出所断言的界。
+\end{proof}
+
+本引理中的函数 $H_\eta$ 是未修改的标量 Euler 乘积在双重留数处的修正。
+只有当另一个完整修正以非零正规化因子验证
+方程~\eqref{eq:principal-correction-residue} 时，它才被允许使用。对基础修正，
+该方程以 $A_\eta=1$ 与 $\mathcal R_{\eta,Z}=0$ 成立。在任何应用中正规化的
+物理量是 $\mathscr I_\eta/(c_SA_\eta)$；对它的直接估计以及这一主比较都必须
+使用同一正规化因子。在此除法之后，原始的中央界与外部行界只获得一个
+任意小的附加幂次，依据关于 $A_\eta^{-1}$ 的假设。
+
+\paragraph{基础修正。}
+
+取 $l_x=l_y=h=1/2$ 与 $\ell=0$。在
+引理~\ref{lem:principal-residue-interface} 的主矩形上，局部修正对每个高度
+一致有界，因为该矩形位于 $\mathcal D_2$ 中。因此
+方程~\eqref{eq:principal-correction-bound} 以 $\ell=0$ 与高度阶零成立。
+在双重留数处它恰好满足
+\[
+ \mathfrak H_{\eta,1,Z}(s,1,1/6)=H_\eta(s)
+       =H_\eta(s)Z^{\ell/6}\cdot1\cdot(1+0).
+\]
+因此 $A_\eta=1$，且留数误差恒等于零。在行 $u=1$ 中，外部因子
+$q_u^{-z}\overline{\xi(u)}$ 为 1；唯一的因子 $1/6$ 已由
+$\zeta_F^S(6z)$ 的留数包含在 $c_S$ 中。因此
+引理~\ref{lem:principal-residue-interface} 仅有它的两个余项。
+它们在损失之前的节省是
+\[
+ m_w=\frac{l_y}{20}=\frac1{40},\qquad
+ m_z=\frac h{600}=\frac1{1200}.
+\]
+
+\subsection{小行范数与大行范数}
+
+带缓冲的分箱估计仅在正行指数的有界区间上需要。下面的直接界覆盖它的
+两个补集。它们要求对完整修正给出显式的绝对估计，并且不使用它的中央分解。
+
+\begin{lemma}[外部行范数]
+\label{lem:outer-row-tails}
+假设定义~\ref{def:stage-high-data}。固定
+$\sigma_0\in[7/8,1)$，其中 $\beta_*>\sigma_0$，$0<e<10^{-3}$，
+$z_0=17/50$，以及 $d_{\min}>0$。对一个二进数 $U\ge1$，设
+$\mathscr R_\eta(U;Z)$ 表示方程~\eqref{eq:stage-high-identity} 中物理行
+$U\le q_u<2U$ 的贡献，省略 $u=1$。
+
+假设对每个 $\epsilon>0$，对所有满足 $q_u\le2Z^{d_{\min}}$ 的这样的行，
+并且在 $(\Re s,\Re w,\Re z)=(\beta_*+e,1/2,z_0)$ 上关于所有虚部一致地，
+\begin{equation}
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_{\eta,e,\epsilon}
+ Z^{\ell z_0+\epsilon}q_u^\epsilon
+ (1+|\Im s|+|\Im w|+|\Im z|)^{J_{\eta,e,\epsilon}}.
+ \label{eq:small-correction-bound}
+\end{equation}
+于是，对每个 $\epsilon>0$ 与 $1\le U\le Z^{d_{\min}}$，
+\begin{equation}
+ |\mathscr R_\eta(U;Z)|
+ \ll_{\eta,e,\epsilon}
+ Z^{C(\beta_*)+h(z_0-1/6)-l_y/2+e+\epsilon}
+       U^{63/50+\epsilon}.
+ \label{eq:small-row-bound}
+\end{equation}
+特别地，这些二进块的和是
+\begin{equation}
+ \ll_{\eta,e,\epsilon}
+ Z^{C(\beta_*)+h(z_0-1/6)-l_y/2+e+(63/50)d_{\min}+\epsilon}.
+ \label{eq:small-row-sum}
+\end{equation}
+
+对另一端，假设对每个固定的 $v>2$ 与 $\epsilon>0$，对每个物理行，
+在 $(\Re s,\Re w,\Re z)=(2,2,v)$ 上关于所有虚部一致地，
+\begin{equation}
+ |\mathfrak H_{\eta,u,Z}(s,w,z)|
+ \ll_{\eta,v,\epsilon}
+ Z^{\ell v+\epsilon}q_u^\epsilon
+ (1+|\Im s|+|\Im w|+|\Im z|)^{J_{\eta,v,\epsilon}}.
+ \label{eq:large-correction-bound}
+\end{equation}
+记 $B_0=l_x/2+1+l_y$。于是，对每个二进块 $U$，
+\begin{equation}
+ |\mathscr R_\eta(U;Z)|
+ \ll_{\eta,v,\epsilon}Z^{B_0+hv+\epsilon}U^{1+\epsilon-v}.
+ \label{eq:large-row-bound}
+\end{equation}
+对每个固定的 $\zeta>0$，若 $\epsilon<v-1$，它在 $U>Z^{h+\zeta}$ 上的和是
+\begin{equation}
+ \ll_{\eta,v,\epsilon}
+ Z^{B_0+(h+\zeta)(1+\epsilon)-\zeta v+\epsilon}.
+ \label{eq:large-row-sum}
+\end{equation}
+因此，固定一个充分大的 $v$ 可使这最后一项贡献小于 $Z$ 的任意预定幂。
+\end{lemma}
+
+\begin{proof}
+由引理~\ref{lem:principal-residue-interface} 之前的分类，所考虑的每一行
+都具有非主分子。
+对有界的单位行，分母可能是主特征；然而由
+引理~\ref{lem:logarithmic-control} 的主特征特化，它的倒数在
+$\Re s=\beta_*+e$ 上全纯且有界。
+对所有行，节~\ref{sec:detector} 中的导子界与删除根式界，连同
+引理~\ref{lem:deleted-euler-factors}，给出 $q_u$ 的任意小幂次以及该倒数的
+固定高度多项式。
+
+对一个小的二进块，把它的有限和移到
+$(\Re s,\Re w,\Re z)=(\beta_*+e,1/2,z_0)$。
+倒数保持全局。分子是整函数，且标量 zeta 自变量保持在 1 的右侧。
+这些路径可以取在 $\mathcal D_1(3/8)$ 中：在终点处
+$\Re(s+w)=\beta_*+e+1/2>1+3/8$，其余不等式是直接的。
+全高度修正界以及引理~\ref{lem:external-contour-tails} 为这些移动提供了
+依据。在最终直线上，方程~\eqref{eq:hecke-growth} 与删除界给出非主分子的
+$U^{3/5+\epsilon}$ 乘以固定高度多项式。该二进块中有 $O(U)$ 个元素行
+（包含单位因子），且
+$q_u^{-z_0}\ll U^{-z_0}$。修正由
+方程~\eqref{eq:small-correction-bound} 界住。检验函数对所有固定高度幂
+进行积分。所得的行幂之外的指数，相对于 $C(\beta_*)$，是
+\[
+ h(z_0-1/6)-l_y/2+e,
+\]
+而行幂是 $1+3/5-z_0=63/50$。要求各分量的小幂次之和等于所显示的
+$\epsilon$ 即证明方程~\eqref{eq:small-row-bound}。行指数是正的，因此
+在减小预备损失之后，到 $Z^{d_{\min}}$ 的二进求和给出
+方程~\eqref{eq:small-row-sum}。
+
+对每个固定的 $Z$ 与大的二进块，把它的有限行和移到绝对直线
+$(2,2,v)$。从 $(3,3,2)$ 出发的路径保持在 $\Re s,\Re w\ge2$ 与
+$\Re z\ge2$ 中，因此标量因子在该处全纯。对这个固定的二进块，选取
+$D$ 足够大以使其各行包含在 $q_u\le Z^D$ 中；
+方程~\eqref{eq:stage-all-height-majorant} 与外部迹界使其水平极限趋于零。
+仅用于证明这一等式成立的常数可以依赖于该固定的二进块。由
+方程~\eqref{eq:large-correction-bound}，最终直线上的估计关于该二进块一致。
+标量 $L$-因子在该处绝对有界，$\zeta_F^S(6z)$ 也如此，且
+方程~\eqref{eq:large-correction-bound} 适用。外部幂，包括修正但不包括
+行计数，是
+\[
+ l_x(1/2-v)+1+v+l_y+\ell v=B_0+hv.
+\]
+$O(U)$ 个行与 $q_u^{-v}$ 给出 $U^{1-v}$；检验函数对固定高度多项式
+进行积分。这就证明了方程~\eqref{eq:large-row-bound}。因为
+$1+\epsilon-v<0$，对其几何二进尾部求和给出
+方程~\eqref{eq:large-row-sum}。对固定的 $\zeta>0$，该指数中 $v$ 的系数是
+$-\zeta$，这就证明了最后一个断言。
+原始行级数在其起始直线上绝对收敛，且所显示的界给出一个绝对可求和的
+最终尾部，因此各个二进围道恒等式可以相加。数 $v$ 以及它所要求的有限
+检验阶在 $Z$ 趋于无穷之前固定。
+\end{proof}
+
+\paragraph{第一阶段的各外部区间。}
+
+取 $l_x=l_y=h=1/2$、$\ell=0$、$d_{\min}=1/63$ 与
+$\zeta=1/1000$，如同在中间行估计中一样。对小行，直线
+$(\beta_*+e,1/2,z_0)$ 位于 $\mathcal D_1(3/8)$ 中，因为
+$\beta_*>11/12$。局部界 $\mathcal H_{\eta,u}\ll_\epsilon q_u^\epsilon$，
+关于所有高度一致，对所有指定的行验证了
+方程~\eqref{eq:small-correction-bound}，其高度阶为零。
+于是方程~\eqref{eq:small-row-sum} 在损失之前具有如下相对指数：
+\[
+ h(z_0-1/6)-\frac{l_y}{2}+\frac{63}{50}d_{\min}
+ =\frac{13}{150}-\frac14+\frac1{50}
+ =-\frac{43}{300}.
+\]
+对大行，$(2,2,v)$ 且 $v>2$ 位于 $\mathcal D_2$ 中。相同的全高度局部界
+对每个物理行验证了方程~\eqref{eq:large-correction-bound}。这里
+$B_0=l_x/2+1+l_y=7/4$，因此方程~\eqref{eq:large-row-sum} 具有指数
+\[
+ \frac74+\frac{501}{1000}(1+\epsilon)-\frac v{1000}+\epsilon.
+\]
+当固定的数 $v$ 增大时它趋于 $-\infty$。例如，当
+$\epsilon\le10^{-6}$ 时 $v=4000$ 使它小于 $-1$，而
+$C_{\mathrm I}(\beta_*)\ge1/4$。这绰绰有余地提供了下面所需的节省。
+三个区间 $U\le Z^{d_{\min}}$、$Z^{d_{\min}}<U\le Z^{h+\zeta}$ 与
+$U>Z^{h+\zeta}$ 覆盖每个物理二进块。行 $u=1$ 已被指派给主项。
+
+\section{\texorpdfstring{$11/12$}{11/12} 结论}
+\label{sec:eleven-twelfths-conclusion}
+
+对正规化的基础探针，中央估计、主项提取与外部行估计现在给出如下
+在可调损失之前的余量：
+\[
+\begin{array}{c|c}
+ \text{contribution}&\text{相对于 }C_{\mathrm I}(\beta_*)\\\hline
+ \text{intermediate rows}&1021/25000\\
+ \text{unresidued principal }w\text{ integral}&1/40\\
+ \text{remaining principal }z\text{ integral}&1/1200\\
+ \text{small rows}&43/300\\
+ \text{large rows }(v=4000)&>1
+\end{array}
+\]
+最小的余量来自主 $z$ 余项。在所有实损失之后我们保留一个公共的正余量，
+然后对每个目标选取分析高度。物理和与信号不依赖于该高度。
+
+\subsection{选取最终高度}
+
+前面的估计把实幂次与分析高度 $T_1$ 的有限幂次分离开来。下面的初等步骤
+记录了为对每个目标获得一个幂次节省所需的选择次序。
+
+\begin{lemma}[高度与外部阶的延迟选择]
+\label{lem:late-height-closure}
+固定 $\sigma_0\in(1/2,1)$，其中 $\Delta_0=\beta_*-\sigma_0>0$，
+以及一个仿射函数 $C(s)=s+c$。假设某应用中所有实参数与有限结构选择
+都已被固定，独立于 $\eta$。假设存在公共的数 $m>0$ 与
+$0<\omega<\Delta_0$，使得对每个本原有限阶目标，独立于 $T_1$ 的函数
+$J_\eta,f_\eta$ 满足
+\[
+ |J_\eta(Z)|\ll_\eta Z^{C(\sigma_0)+\omega}.
+\]
+假设在经过有限次估计求和之后，对每个整数 $N\ge0$，
+\begin{equation}
+ |J_\eta(Z)-f_\eta(Z)|
+ \ll_{\eta,N} Z^{C(\beta_*)-m}(1+T_1)^{A_\eta}
+       +Z^{B_\eta}T_1^{-N},
+ \label{eq:late-height-hypothesis}
+\end{equation}
+其中 $A_\eta\ge0$ 且 $B_\eta$ 有限且独立于 $N$。
+假设存在一个数 $\tau_{0,\eta}>0$，它在该目标的实选择与有限剖面阶之后、
+但在 $N$ 与 $Z$ 之前固定，使得只要 $T_1=Z^\tau$ 且
+$0<\tau\le\min\{d_{\min}/100,\tau_{0,\eta}\}$，该估计对充分大的 $Z$ 成立，
+其中 $d_{\min}>0$ 固定。
+这个附加的上限可以编码某个先前估计中的高度条件，例如
+引理~\ref{lem:detector-dyads} 中的那个。
+下阈值可能依赖于 $\eta,N,\tau$。增大 $N$ 被假定只改变外部检验半范数，
+而不改变 $A_\eta$ 或方程~\eqref{eq:late-height-hypothesis} 中已固定的实幂次。
+
+于是 $\tau$ 与 $N$ 可以在 $\eta$ 之后选取，使得
+\[
+ |J_\eta(Z)-f_\eta(Z)|\ll_\eta Z^{C(\beta_*)-m/2}.
+\]
+特别地，公共节省 $\sigma=m/2$ 与所显示的低估计一起，具有
+命题~\ref{lem:continuation-criterion} 所要求的目标量词。
+\end{lemma}
+
+\begin{proof}
+对该固定的目标选取
+\[
+0<\tau_\eta\le
+ \min\left\{\frac{d_{\min}}{100},\tau_{0,\eta},
+                 \frac{m}{4(A_\eta+1)}\right\},
+ \qquad T_1=Z^{\tau_\eta}.
+\]
+于是 $(1+T_1)^{A_\eta}\ll_\eta Z^{m/4}$，因此
+方程~\eqref{eq:late-height-hypothesis} 中的第一项是
+$O_\eta(Z^{C(\beta_*)-3m/4})$。接着选取一个固定的整数 $N$，使得
+\[
+ B_\eta-N\tau_\eta<C(\beta_*)-m/2.
+\]
+这是可能的，因为 $\tau_\eta>0$ 且 $B_\eta$ 有限。第二项随后由所需的
+幂次界住。在这些选择之后提高对 $Z$ 的下阈值。$m$ 与 $\omega$ 都在
+目标之前固定，而 $\tau_\eta,N$ 与阈值可以依赖它。由于 $J_\eta$ 与
+$f_\eta$ 不含 $T_1$，这就在不改变任一函数的情况下证明了所断言的
+族范围指数。
+\end{proof}
+
+\begin{proposition}[平衡的高估计]
+\label{prop:balanced-high}
+在假设 $\Delta_1>0$ 之下，对每个本原有限阶目标 $\eta$ 与所有充分大的
+$Z$，
+\[
+ |J_{\mathrm I,\eta}(Z)-f_{\mathrm I,\eta}(Z)|
+ \ll_\eta Z^{C_{\mathrm I}(\beta_*)-1/4800}.
+\]
+所显示的节省独立于目标；隐含常数与下阈值可以依赖它。
+\end{proposition}
+
+\begin{proof}
+取 $l_x=l_y=h=1/2$、$\ell=0$ 与 $C=C_{\mathrm I}$。
+精确恒等式与局部修正在节~\ref{sec:shared-analytic-estimates} 的开头
+已被验证；方程~\eqref{eq:balanced-central-contribution} 估计它的中间行，
+而该处的主项与外部的特化给出上面列出的余量。剩下的是选取它们的损失。
+
+\paragraph{选择次序。}
+我们给出一个公共损失预算。置
+\[
+ m_0=\frac1{1200},\qquad \epsilon_*=10^{-6},\qquad
+ m=\frac1{2400},\qquad \omega=\frac{\Delta_1}{2}.
+\]
+刚刚证明的无误差的中央、小、主与大的节省都至少是 $m_0$。在目标之前
+固定所显示的几何、行区间与 $v=4000$。在行计数、分子、局部修正、
+带缓冲的倒数、中央重数以及每个主或外部估计中要求损失 $\epsilon_*$。
+为 $O(\log Z)$ 个物理二进块保留进一步的损失 $\epsilon_*$。见证对与
+幂部分的相对数已被包含在所要求的行计数损失中；$O_e(1)$ 个分箱与固定的
+呈现选择只付出常数。
+
+为获得所要求的行计数损失，首先依据 $\epsilon_*$ 选取它的预备见证、
+二进与筛法损失，使其充分小。这些选择独立于目标。
+确实，见证长度误差具有绝对的系数，而
+命题~\ref{prop:sextic-row-count} 的优化中的仿射斜率是一致有界的。
+实际二进端点中依赖目标的常数只乘以 $1/\log U$，这只会改变一个固定
+常数或下阈值。在包络的预饱和区间 $0\le r,m\le22$ 上应用
+引理~\ref{lem:detector-dyads}：零点探测器的末尾乘积截断在它证明较短的
+见证长度之前是 $O(U^{21})$。它的数 $e_0$ 只依赖于所要求的二进损失与
+这些有界区间。因此我们仍可以在目标之前固定
+\[
+ 0<e<\min\{10^{-3},\epsilon_*,e_0\}.
+\]
+
+以 $\epsilon_r=\epsilon_n=\epsilon_H=\epsilon_*$，这给出
+$\varepsilon_c\le15\epsilon_*$。由于 $d\le501/1000<1$，
+方程~\eqref{eq:balanced-central-contribution} 中的显式中央损失，连同保留的
+物理二进块损失，至多为
+\[
+ 13\epsilon_*+2(15\epsilon_*)+\epsilon_*+\epsilon_*+\epsilon_*
+ =46\epsilon_*<\frac1{4800}=\frac{m_0}{4}.
+\]
+两个主损失至多为 $(3/2+1)\epsilon_*$ 与
+$2\epsilon_*$；小行损失至多为 $2\epsilon_*$。每一个都小于
+$m_0/4$。所显示的大行估计已经用掉了它要求的
+损失。因此所有这些项，在除以固定的 $c_S$ 之后，保留
+至少 $3m_0/4=1/1600$（在高度因子之前）。我们只使用
+$m=1/2400$，在下面留出进一步的幂次 $1/4800$。
+
+剩下要检查高度假设何时成立。设
+$\epsilon_{\rm det}>0$ 为上面所选定的固定二进损失，并且，在
+固定一个目标之后，设 $A_{{\rm det},\eta}$ 支配它使用
+引理~\ref{lem:detector-dyads} 时的有限多个阶。置
+\[
+ \tau_{0,\eta}
+ =\frac{d_{\min}\epsilon_{\rm det}}
+        {20(A_{{\rm det},\eta}+1)}>0.
+\]
+对 $0<\tau\le\tau_{0,\eta}$ 与充分大的 $Z$，
+\[
+ (1+Z^\tau)^{A_{{\rm det},\eta}}
+ \le Z^{d_{\min}\epsilon_{\rm det}/10}
+ \le U^{\epsilon_{\rm det}/10}
+ \qquad(d\ge d_{\min}).
+\]
+这在物理范围上一致地验证了探测器高度条件。来自
+$1+Z^\tau\le2Z^\tau$ 的固定因子被下阈值吸收。我们还如分箱所要求地
+施加 $\tau\le d_{\min}/100$。
+用于建立各见证的内部尾部阶是在这个 $\tau$ 之后选取的，并且与下面的
+最终外部阶 $N$ 分开。
+它们的增大不会改变所保留的剖面或高度阶。那些内部选择所引入的任何固定
+常数都通过提高下阈值而被吸收进未使用的幂次 $1/4800$ 中，而下阈值可以
+依赖于 $\eta$ 与 $\tau$。
+
+对每个最终的整数 $N\ge0$，引理~\ref{lem:fixed-bin-contour}
+把被丢弃的高部分与连接界住为
+$O_{\eta,N}(Z^{B_\eta}T_1^{-N})$，其中 $B_\eta$ 在 $N$ 之前固定。
+有界的实区间与行区间以及有限的分箱集合允许对所有中央二进块取同一个
+$B_\eta$。
+把 $O(\log Z)$ 个二进块求和可以通过把 $B_\eta$ 增加一来吸收，
+同样在 $N$ 之前。合并前面的估计给出
+\[
+ |J_{\mathrm I,\eta}(Z)-f_{\mathrm I,\eta}(Z)|
+ \ll_{\eta,N}Z^{C_{\mathrm I}(\beta_*)-m}(1+T_1)^{A_\eta}
+       +Z^{B_\eta}T_1^{-N}
+\]
+对某个有限的 $A_\eta,B_\eta$，只要
+$0<\tau\le\min\{d_{\min}/100,\tau_{0,\eta}\}$ 且 $Z$ 充分
+大。两个函数都独立于 $T_1$。
+命题~\ref{prop:balanced-low}，以损失 $\omega$ 应用并除以
+同一个固定的 $c_S$，提供
+\[
+ |J_{\mathrm I,\eta}(Z)|\ll_\eta
+ Z^{1/4+\omega}=Z^{C_{\mathrm I}(11/12)+\omega},
+ \qquad 0<\omega<\Delta_1.
+\]
+引理~\ref{lem:late-height-closure} 的所有假设现在都被验证。
+它给出命题中所断言的节省 $m/2=1/4800$。
+\end{proof}

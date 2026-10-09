@@ -1,6 +1,0 @@
-PAGE 59   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 4 glyph(s) A3 X1 | zh 0
-   \mathcal X  y  100.3 x  307.9   line: after reducing its preliminary losses, there are ψ ∈X , a zero ρ = σ + iγ as in Lemma 8.1 , dyadic
-   \mathcal A  y  155.5 x  411.4   line: r m A ,ϵ
-   \mathcal A  y  221.0 x  237.8   line: r A ,ϵ m A ,ϵ
-   \mathcal A  y  221.0 x  347.5   line: r A ,ϵ m A ,ϵ

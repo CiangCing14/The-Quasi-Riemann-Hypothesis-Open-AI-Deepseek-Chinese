@@ -1,0 +1,469 @@
+\begin{proof}
+首先，利用行 Hilbert 空间中的三角不等式移除不活跃的槽位。在这样的槽位上，
+绝对系数质量为
+\[
+ \sum_{p\in\mathcal P_i}q_p^{-1}\ll_\epsilon Z^\epsilon,
+\]
+在任何固定限制下都一致成立，包括有界或零长度列表的情形。因此只需证明这些
+素数固定时的一致界。每个这样的分支都有各自的导子、尖点扇形与核尺度，且不活
+跃素数不出现在导子中。它先前的碰撞排除现在成为一个固定的行限制。
+
+固定 \(f,\rho,k_{\rm pow},k_{\rm sup}\)、非槽位的局部选择、\(h_0\)，以及残余
+行乘积与活跃槽位乘积模整个 \(M_{\rm ref}^2\) 的各个类。同时固定对偶指标的
+单位和分歧指数。不再有非槽位的 \(j=4\) 标号被平均。我们只在对活跃多元组的
+原始求和内部，使用方程~\eqref{eq:unmarked-structural-block} 中的代数冻结基提取。
+推论~\ref{cor:marked-reflection} 及随后的相位分离使得这一提取在各个多元组之间是
+同时的：在各自分离的扇形固定后，基系数对于残余行和多元组是共同的，而其余标量
+分离为一个行因子和一个多元组因子。我们并不对每个多元组分别应用数值的无标记估计。
+
+该结构提取给出公共中心系数
+\[
+ Z^{-v/2-\ell_b-e_\lambda/3-(S_0+B_0)/2}
+\]
+乘以正规化的逆根因子和有界系数。其 \(N_0\)-指派仅从无平方因子的对偶理想中提取
+一个被迫的 \(j=4\) 素数，即使立方理想与之共享该素数；整个共享的立方部分仍保留
+在其残余范数与系数中。其 \(B_0\)-指派从立方理想中提取一次出现，并留下因子
+\(q_p^{-1/2}\)。这些都是关于完整源支撑的陈述，包括 \(S\) 的允许素数。方程
+~\eqref{eq:marked-reflection} 中的每个活跃标记列贡献 \(q_p^{-1/2}\)。由于
+\(q_P/Z^{z_a}\) 落在一个固定紧区间内，这证明了方程~\eqref{old-eq:4.5} 中的
+逐多元组系数指数。
+
+我们现在记录公共剖面的精确标记实例。设 \(F_{\rm act},N_F,B_F\) 为具有对数
+范数 \(A_0,N_0,B_0\) 的实际冻结乘积。令 \(R=k_{\rm res}\)，
+\(P=\prod_{i\ {\rm active}}p_i\)。分支分母与一个被支撑的对偶指标为
+\[
+ c=c_FF_{\rm act}RP,\qquad
+ \mu=u\lambda^{h_\lambda}N_Fn(B_Fb)^3.
+\]
+取固定的分块中心，定义
+\[
+ \begin{gathered}
+ y_R=q_R/Z^H,\quad y_n=q_n/Z^v,\quad
+ y_b=q_b/Z^{\ell_b},\quad y_i=q_{p_i}/Z^{z_i},\\
+ Y=\frac{q_{\lambda^{h_\lambda}N_FB_F^3}X Z^vZ^{3\ell_b}}
+          {q_{c_FF_{\rm act}}^2Z^{2H}\prod_{i\ {\rm active}}Z^{2z_i}}
+   =q_{c_F}^{-2}Z^{v+3\ell_b+e_\lambda-T_d}.
+ \end{gathered}
+\]
+乘性给出精确恒等式
+\begin{equation}\label{eq:reflection-actual-annuli}
+ \frac{q_\mu X}{q_c^2}
+       =Yy_ny_b^3y_R^{-2}\prod_{i\ {\rm active}}y_i^{-2}.
+\end{equation}
+即使 \(N_F\) 与 \(b\) 共享素数，它仍然成立。\(Y\) 中所有冻结因子都是其实际
+乘积，而每个移动的范数仍是一个坐标。因此，实际的行截断以及各个对偶与槽位截断
+将核自变量置于
+\[
+ [C_{\rm ker}^{-1},C_{\rm ker}]
+       Z^{v+3\ell_b+e_\lambda-T_d}
+\]
+之中，其中 \(C_{\rm ker}\ge1\) 仅依赖于固定支撑区间与公共固定模。特别地，这一
+比较没有使用任何由正性添加的较短行。
+
+令 \(D_{\rm ker}=T_d-v-3\ell_b-e_\lambda\)。在这个实际圆环域的完整乘积上，
+引理~\ref{lem:reflection-common-profile} 允许从整个齐次线性行向量中提取出因子
+\[
+ m_{\rm ker}=Z^{-(D_{\rm ker})_+/4}
+\]
+出来，其固定半范数常数至多乘上一个因子 \(C_{\rm ker}^{1/4}\)。正规化剖面具有
+有界的固定 Euler 半范数；并不声称任何非齐次的多元组半范数会变小。该剖面包含
+来自结构提取的正规化逆根，以及所有其他公共光滑范数窗口。
+
+尾部在真正的、未分离的求和上被移除。若
+\(\log Z\ge2\log C_{\rm ker}/\tau_{\rm ref}\)，则每个中心超出量大于
+\(\tau_{\rm ref}\) 的整个二进块都具有大于 \(Z^{\tau_{\rm ref}/2}\) 的实际核
+自变量。以格 \(\lambda^{-4}\mathcal O\)、\(a=X/q_c^2\) 和
+\(U=Z^{\tau_{\rm ref}/2}\) 应用引理~\ref{lem:lattice-kernel-tail}。在完整源
+支撑上，第 I 部分所用的系数界给出
+\[
+ |d(\mu)|/\sqrt{q_\mu}\le27q_\lambda^{4/3}.
+\]
+每个基或标记局部因子在丢弃其指示函数后至多为 \(q_p^{1/2}\)。有界的行、多元组
+与局部对数长度区间、局部分支计数以及 \(1+a^{-1}\) 具有固定的多项式代价
+\(Z^{B_{\rm tail}}\)，其中 \(B_{\rm tail}\) 的选取独立于核的阶。对于任何期望的
+节省 \(D>0\)，在该壳引理中选择
+\[
+ A>1+\frac{2(B_{\rm tail}+D)}{\tau_{\rm ref}}
+\]
+可使这些整个二进块的绝对总和为 \(O(Z^{-D})\) 乘以一个有限的检验半范数。范数
+扭转为该半范数带来固定的多项式高度代价。壳求和计入了所有被丢弃的对偶指标，
+因此对于该尾部没有使用任何在保留对偶长度处的计数。它在 Fourier 绝对化之前被
+移除。
+
+对于保留下来的二进块，对那一个联合剖面应用公共剖面引理与方程
+~\eqref{eq:reflection-common-minkowski}，该联合剖面位于方程
+~\eqref{eq:reflection-actual-annuli} 中。其密度
+对整个当前行 Hilbert 空间（包括活跃多元组求和）是共同的：实际的行、对偶与
+各个槽位范数是它的坐标，而不是分别选取的测度的参数。完整的固定支撑盒控制
+每一个被调用的加权 Fourier 范数与高度代价。在分离模式处，范数幂的绝对值为一，
+并保持行、多元组与对偶系数之间的独立性。只有在分离的非负行范数内部，才允许
+将行集从原来的圆环域扩大为 \(q_R\ll Z^H\)，对新增的行使用相同的分离公式。
+那里从不计算核。
+
+在提取公共系数之后、使用 \(m_{\rm ker}^2\) 之前，分离后的平方范数被如下量界住
+\[
+ Z^{-v-2\ell_b-2e_\lambda/3-S_0-B_0+\epsilon}\mathcal N,
+\]
+其中
+\begin{equation}\label{old-eq:4.6a}
+ \begin{split}
+ \mathcal N={}&
+ \sum_{\substack{k_{\rm res}\ {\rm sf}\\q_{k_{\rm res}}\ll Z^H}}
+ \left|
+ \sum_{\boldsymbol p}
+ \frac{a(\boldsymbol p)}{\sqrt{q_P}}1_{(P,k_{\rm res})=1}
+ \sum_{\substack{n\ {\rm sf}\\b}}
+ \beta(n,b)\chi_{k_{\rm res}}(nb)^3
+              \chi_P(n)^{-2}1_{(P,b)=1}
+ \right|^2,\\
+ &P=\prod_{i\ {\rm active}}p_i,\qquad q_P\asymp Z^{z_a}.
+ \end{split}
+\end{equation}
+理想 \(n,b\) 保持其所述二进范数与固定系数限制。在提取公共界之后，
+\(|a(\boldsymbol p)|,|\beta(n,b)|\le1\)。
+
+在调用范数界之前，我们验证两条独立性假设。每个残余素数都具有指数 \(j=1\)，
+每个活跃槽位都是一个整指标的 \(j=0\) 标记，而所有其他活跃素数都被冻结。分离的
+完整 \(M_{\rm ref}^2\) 类固定了尖点系数与加性因子。方程
+~\eqref{eq:reflection-pair-phase} 消去每个行-槽位相位，而前面的标记反射讨论将
+所有行-行、槽位-槽位与冻结相互作用指派给一个行标量或一个多元组标量。角向导子
+标量以同样的方式分离。剩余的源与冻结局部列仅依赖于完整提取出的对偶指标；它们
+在某个冻结因子处的零点给出固定的行、多元组或对偶限制。最后，精确的保零列恒等
+式除特征零点外只留下 \(1_{(P,k_{\rm res})=1}\) 与 \(1_{(P,b)=1}\)。因此 \(a\)
+独立于 \(k_{\rm res},n,b\)，而 \(\beta\) 独立于 \(k_{\rm res},\boldsymbol p\)，
+恰如方程~\eqref{old-eq:4.6a} 所要求。函数 \(a\) 在这一范数步骤不必保持乘积形式。
+
+以
+\[
+ K=Z^H,\qquad N=Z^v,\qquad B=Z^{\ell_b},\qquad L=Z^{z_a}.
+\]
+应用引理~\ref{lem:hybrid-energy}。将具有相同 \(P\) 的多元组归类只花费一个除数
+因子。由于
+\[
+ v+z_a-u=\max\{v,z_a,2(v+z_a)/3\},
+\]
+混合界与外部系数给出指数
+\[
+ \max(H,v+\ell_b)-S_0-B_0+z_a-u-\ell_b-2e_\lambda/3.
+\]
+直到此时，平方标量 \(m_{\rm ker}^2\) 才提供方程~\eqref{old-eq:4.6} 中的最后
+一项。这证明了固定部分的断言。
+
+每个幂数理想都唯一地可以写为 \(x^2y^3\)，其中 \(y\) 无平方因子。理想计数与
+\(\sum_yq_y^{-3/2}<\infty\) 给出 \(O\)-二进块中有 \(O(Z^{O/2})\) 个这样的
+理想。被支撑的无平方因子部分整除 \(S f\mathfrak r_\rho\) 的根基，因此在所述
+区间中有 \(O(Z^\epsilon)\) 种选择；局部选择具有相同的除数界。对局部展开逐行
+应用除数 Cauchy，随后对这些固定部分作正求和，因此使 \(O/2+\epsilon\) 只增加
+一次。活跃多元组已在混合范数内部，不再计入。这证明了聚合断言。
+\end{proof}
+
+对原始行长度的依赖可以在不将 \(H\) 与 \(M-O\) 等同的情况下被界住。在一个
+活跃非槽位素数处，对 \(2A_0-N_0-S_0-4B_0\) 的贡献如下：
+\[
+ \begin{array}{c|c}
+ \text{local choice}&\text{其对数范数的系数}\\ \hline
+ j\text{ odd, or }j=2&2\\
+ j=0\text{ active}&1\\
+ j=4\text{ 小或指派给 }n&1\\
+ j=4\text{ assigned to }b&-2\\
+ j=0\text{ inactive}&0.
+ \end{array}
+\]
+一个残余行素数通过 \(2H\) 贡献二。逐素数地，这些系数被以下估值所界
+\[
+ (q_k^2/q_{k_{\rm pow}})\,q_fq_{\mathfrak r_\rho}.
+\]
+确实，行估值为 \(e\ge2\) 的幂数素数在第一个因子中具有估值 \(e\)，一个无平方
+因子的行素数具有估值二，而一个仅属于无平方因子的 \(f\) 或属于
+\(\mathfrak r_\rho\) 的素数具有估值一。交叠只会增大这一上界的估值。固定的被
+排除素数只贡献一个固定因子 \(C_S\ge1\)。等价地，对素数求和给出实际的范数
+不等式
+\[
+ q_{k_{\rm res}}^2 Z^{2A_0-N_0-S_0-4B_0}
+ \le C_S\frac{q_k^2}{q_{k_{\rm pow}}}\,q_fq_{\mathfrak r_\rho}.
+\]
+选取固定的 \(C_f\ge1\) 使得 \(q_f\le C_fZ^V\)，并令
+\(C_{\rm width}=C_H^2C_SC_k^2C_OC_f\)。前面的不等式与 \(T_d\) 的定义蕴含
+\begin{equation}\label{eq:common-width-charge}
+ T_d-S_0-B_0
+ \le 2M-O+Q+V-N_*+2z_a+
+       \frac{\log C_{\rm width}}{\log Z}.
+\end{equation}
+
+对于空的槽位列表，\(z_a=u=0\)。选取 \(\eta>0\)，然后取 \(Z\) 充分大，使得
+两个已展示的常数误差至多为 \(\eta\)，且 \(e_\lambda\ge-\eta\)；后者由
+\(\log Z\ge4\log q_\lambda/\eta\) 推出。在一个保留下来的二进块上，方程
+~\eqref{old-eq:4.6} 与 \(v+3\ell_b+e_\lambda\le T_d+\tau_{\rm ref}\) 给出
+\[
+ E_{\rm ref}
+ \le O/2+\max\{H,T_d-S_0-B_0\}+\tfrac53\eta+\tau_{\rm ref}.
+\]
+对于第一个分支，在使用 \(e_\lambda\) 的下界后丢弃非正项；对于第二个分支，使用
+\(v\le T_d-3\ell_b-e_\lambda+\tau_{\rm ref}\)。该最大值对每个自变量都是递增的。
+因此我们可以对其第一个自变量使用方程~\eqref{eq:actual-residual-row-dyad}，
+对其第二个自变量使用方程~\eqref{eq:common-width-charge}，然后对对数多个实际
+\(H\)-二进块求和。取 \(\eta,\tau_{\rm ref}\) 以及局部小幂次损失关于
+\(\epsilon\) 充分小，即证明
+\begin{equation}\label{eq:completed-moment}
+ \sum_{0<q_k\ll Z^M}'|\mathcal T_1(Z^{N_*};k)|^2
+ \ll Z^{O/2+\max\{M-O,\,2M-O+Q+V-N_*\}+\epsilon}.
+\end{equation}
+求和上的撇号将幂数部分限制在其 \(O\)-二进块内。一个有界的对偶区间包含在
+第一项中；空区间可忽略。没有使用任何等式 \(H=M-O\)。
+
+\section{补偿的低阶估计}\label{sec:compensated-low}
+
+我们现在界住方程~\eqref{eq:compensated-probe-definition} 中定义的有限补偿探针。
+它的精确低阶分离有两个因子。我们首先通过直接应用引理~\ref{lem:reflected-energy}，
+在求和标记槽位之后界住完备化行。然后我们为来自节~\ref{sec:probe} 的加性多项式
+证明一个定量的 Gram 界。Cauchy--Schwarz 将把这些估计结合起来给出指数 $3/16$。
+
+\subsection{标记的完备化行}
+
+对于一个固定的重标子集 $J$，其标记子集为 $J^c$，令
+\begin{equation}
+ \begin{gathered}
+ d=\sum_{i\in J}\ell_i,\qquad
+ X'=X/q_{p_J}\asymp XZ^{-d},\qquad
+ Y'=Y/q_{p_J}\asymp YZ^{-d},\\
+ M'=M-2d,\qquad \ell'=\ell-d,\qquad 0\le d\le\ell=1/6.
+ \end{gathered}
+ \label{old-eq:5.2}
+\end{equation}
+对于槽位素数的无平方因子乘积 $D$，定义标记的完备化级数
+\[
+ T_D(s_0,\psi)=\sum_{\substack{c\ {\rm sf}\\n}}
+ \gamma_2(c)\overline{\alpha(cn^3)}\psi(cn^3)
+ 1_{D\mid cn^3}q_c^{-s_0}q_n^{-3s_0+1/2}.
+\]
+理想 $c,n$ 是与 $S$ 互素的原始理想，由它们的主生成元表示，其中 $c$ 无平方
+因子；它们可以共享素数。所有特征幂保持其原始的零延拓。对于空乘积 $D=1$，
+这就是完备化的 $T(s_0,\psi)$。
+对于这个固定的 $J$，令
+\[
+\begin{split}
+ B^J_{m,\sigma}(Z)=
+ \sum_{p_i\in\mathcal P_i(Z),\ i\notin J}
+ \prod_{i\notin J}\overline{\eta(p_i)}W_i(q_{p_i}/P_i)
+ \sum_{\theta\in\widehat T}a_\theta\frac1{2\pi i}
+ \int_{(4)} &(Zq_{p_{J^c}})^t\Phi(t)\\
+ &\cdot T_{p_{J^c}}(t+1/2,
+             \nu_\sigma\theta\chi_\bullet(m))\,dt.
+\end{split}
+\]
+因此，在标记槽位求和之后，$B^J$ 恰好是方程
+~\eqref{eq:compensated-probe-definition} 的 $J$ 求和项的完备化行因子。固定
+多元组 $p_J$ 在其低阶分离中只影响 $X',Y'$。
+
+\begin{lemma}[补偿的完备化行范数]\label{lem:probe-row-norm}
+对每个 $\epsilon>0$、每个固定的重标子集 $J$ 以及每个 $\sigma\in T$，其中
+$Q=q_{b_*}X'Y'\asymp Z^{M'}$，
+\begin{equation}
+ \sum_{0<q_m\ll Q}|B^J_{m,\sigma}(Z)|^2
+       \ll Z^{M'+((d-1/6)/4)_++\epsilon}
+       =Z^{M'+\epsilon}.
+ \label{old-eq:5.4}
+\end{equation}
+该界对于固定的重标多元组是一致的，并且没有依赖于幸存槽位网格的损失。
+\end{lemma}
+
+\begin{proof}
+令 $A=cn^3$，并对 $i\notin J$ 令 $\varrho_i=q_{p_i}/P_i$。由于即使 $c,n$
+共享素数也有 $q_A=q_cq_n^3$，且
+$q_{p_{J^c}}=Z^{\ell'}\prod_{i\notin J}\varrho_i$，对定义 $B^J$ 的已展示
+积分作 Mellin 反演，即给出物理光滑因子
+\[
+ \begin{gathered}
+ V\!\left(\frac{q_A}{Zq_{p_{J^c}}}\right)
+ =W_{\mathrm G}\!\left(\frac{r}{\prod_{i\notin J}\varrho_i}\right),\\
+ r=\frac{q_A}{Z^{1+\ell'}}.
+ \end{gathered}
+\]
+这里 $V=W_{\mathrm G}$ 是引理~\ref{lem:gaussian-annular} 的 Gauss 函数。
+空乘积等于一。
+
+对该引理中固定的平移分划 $\chi$ 作用于 $r$。在圆环域 $r=e^kx$ 上，保留
+单一联合剖面
+\[
+ w_{k,J}(x,\boldsymbol\varrho)
+ =\chi(\log x)W_{\mathrm G}\!\left(
+       \frac{e^kx}{\prod_{i\notin J}\varrho_i}\right)
+       \prod_{i\notin J}W_i(\varrho_i).
+\]
+$x$ 及所有 $\varrho_i$ 的对数在该支撑上都落在固定的紧集中。因此 Gauss
+函数自变量的对数为 $k+O_{\rm fixed}(1)$。引理~\ref{lem:gaussian-annular}
+中的导数估计，结合这一有界平移与固定槽位窗口，对每个固定的
+$\kappa_{\mathrm G}>0$、$A_{\rm cnt},B_{\rm cnt},C_{\rm ann}\ge0$、
+$D_{\rm tail}>0$ 以及固定半范数阶 $j$ 给出
+\[
+ \begin{gathered}
+ \sum_{k\in\mathbb Z}e^{A_{\rm cnt}|k|}p_j(w_{k,J})<\infty,
+ \\
+ Z^{B_{\rm cnt}}
+ \sum_{|k|>\kappa_{\mathrm G}\log Z-C_{\rm ann}}
+       e^{A_{\rm cnt}|k|}p_j(w_{k,J})
+       \ll Z^{-D_{\rm tail}}.
+ \end{gathered}
+\]
+这些常数可以依赖于固定的槽位系统，但不依赖于其移动的素数标号。在一个圆环域
+$\log r=k+O(1)$ 上，行 $\ell^2$ 范数的一个绝对界至多为
+$Z^{B_{\rm cnt}}e^{A_{\rm cnt}|k|}p_j(w_{k,J})$，其中指数固定，这由初等的
+行、槽位与理想计数得到。选取 $C_{\rm ann}$ 大于 $\chi$ 的固定对数半径，并且
+只丢弃满足 $|k|>\kappa_{\mathrm G}\log Z+C_{\rm ann}$ 的整个圆环域。对它们的
+范数界求和后再平方，得到小于任何给定 $Z^{-1}$ 的幂次。每个满足
+$|\log_Z r|\le\kappa_{\mathrm G}$ 的圆环域都被保留。
+
+对于每个剩余的圆环域，保留在 $w_{k,J}$ 的支撑上等于一的固定各个环形截断，
+并对这一完整剖面应用引理~\ref{lem:smooth-calculus}。它的对数 Fourier 反演
+使用一个对每一行和每个幸存槽位多元组都共同的系数密度。正规化的槽位比值在
+分离之前仍是联合剖面的变量；它们并不索引分别选取的密度。对于固定的 Fourier
+变量，所得每个槽位系数是原始算术系数 $\overline{\eta(p_i)}$ 与一个个环形截断
+及范数幂的乘积。它保持有界，并且独立于该行以及所有其他槽位。完备化因子是在
+长度
+\[
+ N_*=1+\ell'+\theta_N,\qquad
+ \theta_N=\frac{k}{\log Z},\qquad
+ |\theta_N|\le\kappa_{\mathrm G}+O_{\rm fixed}(1/\log Z).
+\]
+处的一个环形检验。这些保留下来的长度落在固定的有界区间内。由已展示的 Gauss
+估计，加权 Fourier 范数具有可和的总量；小的环形权重留在这个齐次的单剖面
+Fourier 范数中，而不在一个非齐次的多元组半范数中。Minkowski 不等式将分离的
+行范数穿过这一公共密度。当检验尺度被重新居中时，现有的
+$q_c^{-1/2}q_n^{-1}$ 正规化保持不变，因此不引入 $e^k$ 的额外幂次。选取
+$\kappa_{\mathrm G}$ 处于最终的 $\epsilon$ 余量之内。对每个固定的 $\theta$，
+引理~\ref{lem:reflection-row-sectors} 提供 $\nu_\sigma\theta\chi_\bullet(m)$
+的行-扇形归约，并带有每个原始零掩码。它覆盖所有非零元素行，包括与 $S$ 相交
+的那些；在这一行范数中没有使用因子 $\xi(m)$。行球仅通过
+$Q=q_{b_*}X'Y'$ 依赖于固定的重标多元组 $p_J$，并且独立于幸存的标记槽位与
+对偶变量。物理槽位集保持互不相交，其分离系数为乘积形式。因此，对 $\theta$
+作有限三角不等式并应用引理~\ref{lem:reflected-energy}，即给出方程
+~\eqref{old-eq:4.6} 在这一实际 $N_*$ 处的指数，其中保留参数
+$\tau_{\rm ref}$ 以及独立规定的输出与分离损失全都至多为小的
+$\epsilon_0>0$。我们在固定行部分求和之后使用指数 $E_{\rm ref}$；它们的计数
+已包含在 $E_{\rm ref}+\epsilon_0$ 中，主指数为 $O/2$，不再重复计入。
+
+这里 $f=1$，且穿刺点为 $\rho=1$，因此唯一移动的非槽位素数就是该行的素数。
+在引理~\ref{lem:reflected-energy} 的有限单位与反射扇形分裂之后，冻结其范数
+长度为 $O$ 的幂数部分以及其支撑在 $S$ 上的估值一部分，并将其残余的无平方
+因子良好乘积分裂为范数 $\asymp Z^H$ 的\emph{实际}二进块。设
+$\epsilon_Z=O_{\rm fixed}(1/\log Z)$ 非负且充分大，以包含本计算中所有固定的
+环形与固定导子对数偏移。则
+\[
+ H\le M'-O+\epsilon_Z,\qquad
+ \Delta_H=M'-O-H\ge-\epsilon_Z,\qquad O\ge-\epsilon_Z.
+\]
+实际的行与对偶环形截断被保留在一个联合剖面中，而其公共 Fourier 密度被分离。
+小的核振幅在行范数平方之前从该齐次密度中提取，只有到那时才可以按方程
+~\eqref{eq:reflection-common-minkowski} 那样扩大正的筛法求和。特别地，方程
+~\eqref{old-eq:4.6} 中的核节省使用这一 $H$；它不会在任何由正扩大新增的较短
+行上重新计算。
+
+在该能量估计的记号中，计入 $A_0$ 的每个移动非槽位素数都以至少二的指数整除
+幂数行部分。因此，将其精确范数与幂数二进块相比较，以及任何固定导子的贡献，
+给出
+\[
+ 2A_0\le O+\epsilon_Z,\qquad N_0\le A_0,\qquad z_a\le\ell'.
+\]
+在实际完备化尺度处可用的对偶长度为
+\[
+ T_d=2H+2A_0+2z_a-1-\ell'-\theta_N-N_0-3B_0.
+\]
+由于 $M'+\ell'-1=-3d$，直接相减给出
+\[
+ T_d-(H-3d)
+ =H-M'+2A_0+2(z_a-\ell')-N_0-3B_0-\theta_N
+ \le 2\epsilon_Z+|\theta_N|.
+\]
+如同反射能量的证明中那样，在正的 Mellin 平移之后，低于某个固定负长度的对偶
+区间可忽略，而有界的边界区间只花费任意小的幂次。这些二进块中的源对偶理想
+$n,b$ 保持方程~\eqref{old-eq:4.3} 的支撑：它们可以共享素数，并且可以含有
+$S$ 的允许素数；不施加 $n$ 与 $b$ 之间任何额外的 $S$-掩码或互素条件。在每个
+剩余的对偶二进块上，令 $y=v+3\ell_b+e_\lambda$。保留性给出
+$y\le T_d+\epsilon_0$，而非零单位区间在增大其固定常数后给出
+$v,\ell_b,e_\lambda\ge-\epsilon_Z$。由此推出
+\[
+ \max(H,v+\ell_b)=H+O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z).
+\]
+
+记 $s_{\rm hyb}=\min\{v,z_a,(v+z_a)/3\}$，即方程~\eqref{old-eq:4.7} 中称为
+$u$ 的量。若 $s_{\rm hyb}=z_a$，则 $-S_0-B_0+z_a-s_{\rm hyb}\le0$，核项
+非正，且
+\[
+ -\ell_b-\frac{2e_\lambda}{3}\le\frac53\epsilon_Z.
+\]
+这里单独的 $O$ 是幂数行的对数长度。由此推出
+\[
+ \begin{aligned}
+ E_{\rm ref}&\le O/2+H+O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z)\\
+ &=M'-O/2-\Delta_H+O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z).
+ \end{aligned}
+\]
+否则 $s_{\rm hyb}\ge v/2-O(\epsilon_Z)$，而有界的单位区间蕴含
+\[
+ s_{\rm hyb}+\ell_b+\frac{2e_\lambda}{3}
+       +\frac{(T_d-y)_+}{2}
+ \ge \frac y4+\frac{(T_d-y)_+}{2}-O(\epsilon_Z)
+ \ge \frac{T_d}{4}-O(\epsilon_Z).
+\]
+最后一个不等式对 $y\le T_d$ 与 $y\ge T_d$ 分别成立。这里，平方后的核节省是
+这样得到的：先从公共 Fourier 密度中提取 $\min\{1,Z^{(y-T_d)/4}\}$，然后才
+对行范数平方。相对于 $M'$，在剩余的 $+z_a$ 之前的节省恰好为
+\begin{equation}
+ \begin{split}
+ O/2+\Delta_H+S_0+B_0+T_d/4
+ ={}&\frac{2M'+2z_a-1-\ell'+2\Delta_H-\theta_N}{4}\\
+    &+\frac{2A_0-N_0+B_0+4S_0}{4}.
+ \end{split}
+ \label{old-eq:5.3}
+\end{equation}
+第二个分子非负。由于 $z_a\le\ell'$，这一分支中的能量至多为
+\[
+ \begin{aligned}
+ &M'+\frac{1+3\ell'-2M'-2\Delta_H+\theta_N}{4}
+       +O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z)\\
+ &\qquad=M'+\frac{d-1/6-2\Delta_H+\theta_N}{4}
+       +O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z).
+ \end{aligned}
+\]
+在使用 $O\ge-\epsilon_Z$ 并吸收 $\theta_N$ 之后，两个上界为
+\[
+ \begin{gathered}
+ M'-\Delta_H+O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z),\\
+ M'+\frac{d-1/6-2\Delta_H}{4}
+       +O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z).
+ \end{gathered}
+\]
+它们关于 $\Delta_H$ 非增。由于 $\Delta_H\ge-\epsilon_Z$，其形式的
+$\Delta_H=0$ 取值将每个实际二进块界到至多 $O(\epsilon_Z)$，无论是否出现端点
+二进块。因此它们的最大值至多为
+$M'+((d-1/6)/4)_++O(\epsilon_0+\kappa_{\mathrm G}+\epsilon_Z)$。在 $d=1/6$
+时有 $\ell'=z_a=0$，而被截断的单位区间落在第一个分支中；有界的负单位二进块
+只改变 $\epsilon_Z$。在规定的 $\epsilon$ 余量内选取 $\epsilon_0$ 与
+$\kappa_{\mathrm G}$，然后增大固定数据下阈值，使得 $\epsilon_Z$ 也落在其中。
+对对数多个行与对偶二进块求和即证明该引理。
+\end{proof}
+
+\subsection{加性 Gram 界}
+
+我们接下来估计区间 $Y'^2/Q\ge1$ 中的加性因子。引理
+~\ref{lem:full-correlation} 的完整相关性保留了决定其消去与例外频率二者的
+碰撞零点。
+
+\begin{proposition}[一个定量的加性 Gram 界]\label{prop:probe-gram}
+固定算术数据 $S,T,b_*,\xi$、环形权重 $W_1$，以及一个射线类 $\sigma\in T$。
+设 $Q,Y'\ge1$ 处于 $Z$ 中固定的多项式区间内，并假设
+\[
+ P_a=Y'^2/Q\ge1.
+\]
+对于实高度 $\nu$，按节~\ref{sec:probe} 中的定义令 $A_m=A_{m,\sigma,\nu}(Y')$。
+对每个固定的行球 $q_m\ll Q$ 和每个 $\epsilon>0$，有
+\begin{equation}
+ \sum_{q_m\ll Q}|A_m|^2
+ \ll (1+|\nu|)^{J_{\mathrm{Gr}}}\frac Q{Y'}
+       \left(1+P_a^{1/6}+\frac{P_a^2}{Y'}\right)Z^\epsilon.
+ \label{eq:gram-quantitative}
+\end{equation}
+这里 $J_{\mathrm{Gr}}$ 是一个固定半范数阶，独立于移动尺度以及 $\nu$。同一
+断言对射线系数 $1_{s\in\sigma}\chi_s(b_*)/\xi(s)$ 的任意固定有限线性组合也
+成立。不声称任何任意的、依赖于行的算术系数。
+\end{proposition}

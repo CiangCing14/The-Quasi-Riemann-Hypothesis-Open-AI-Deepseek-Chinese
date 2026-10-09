@@ -1,8 +1,0 @@
-由对数范数的定义，
-\[
- Y=q_{c_F}^{-2}Z^{v+3\ell_b+e_\lambda-T_0}.
-\]
-可能的 $c_F$ 的有限集合只依赖于 $L$。因此
-$\mathfrak m_A(Y)\ll_L Z^{-(T_0-v-3\ell_b-e_\lambda)_+/4}$。
-在三维中应用引理~\ref{lem:reflection-common-profile}，并将方程~\eqref{eq:reflection-common-minkowski}应用于该结构恒等式。
-单一密度对所有 $R$ 是共同的，因为 $W$ 以行和两个对偶范数作为坐标。在每个傅里叶模式处，范数幂的绝对值为一，可以吸收到有界的行标量和共同的对偶系数中。只有现在才将正的行范数从 $\mathcal I_H$ 扩大到无平方因子的好 $R$，且 $q_R\ll Z^H$，同时保留任何固定的限制。对新增的行不使用任何核估计。

@@ -1,6 +1,0 @@
-PAGE 161   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL R  y  496.4 x  348.3- 357.5
-      line: √ X G ( r , h ) X C √ D τ ( a ) τ ( b ) R ( a, b ) G ( a, h ) G ( b, − h )
-CAL R  y  661.5 x  190.5- 199.8
-      line: changes χ ( b ) χ ( a ) into R ( a, b ) ; the remaining factors are precisely τ ( a ) τ ( b ) . This proves

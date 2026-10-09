@@ -1,5 +1,0 @@
-PAGE 33   (pdf glyphs vs Chinese macros)
-EUFM -> \mathfrak : pdf 3 glyph(s) M3 | zh 0
-   \mathfrak M  y  716.9 x  164.3   line: x 1 / 4 M ( V ) , M ( V ) , x − A M ( V ) .
-   \mathfrak M  y  716.9 x  257.4   line: x 1 / 4 M ( V ) , M ( V ) , x − A M ( V ) .
-   \mathfrak M  y  716.9 x  370.0   line: x 1 / 4 M ( V ) , M ( V ) , x − A M ( V ) .

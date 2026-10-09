@@ -1,0 +1,538 @@
+\begin{lemma}[带掩码的矩形抵消]
+\label{lem:centered-lattice-cancellation}
+设 \(\vartheta\) 取遍一个固定的有限集合，其元素为导子素理想
+属于 \(\mathcal S\) 的有限阶射线特征。设
+\(\mathfrak R_*\) 无平方因子且 \(q_{\mathfrak R_*}\le Z^{B_*}\)，
+其中 \(B_*\) 固定，并设 \(W_1,W_2\) 为固定圆环上的
+光滑剖面。对 \(X>0\) 与 \(t\in\mathbb R\)，定义
+\[
+ \mathcal L_i(X,t):=
+ \sum_l\vartheta(l)1_{(l,\mathfrak R_*)=1}
+           q_l^{it}W_i(q_l/X).
+\]
+则
+\begin{align}
+ \mathcal L_i(X,t)
+ &=c_{\vartheta,\mathfrak R_*}X^{1+it}I_i(t)
+   +O\left(Z^{\epsilon_1}(1+|t|)^J\right),
+ \label{old-eq:2.18d}\\
+ |\mathcal L_i(X,t)|&\ll X.
+ \label{old-eq:2.18e}
+\end{align}
+这里 \(J\) 固定，各常数只用到有限多个半范数，
+\(c_{\vartheta,\mathfrak R_*}\) 与 \(X,t\) 无关，而
+\(I_i(t)\) 等于一个固定测度常数乘以
+\(\int_0^\infty W_i(y)y^{it}\,dy\)。
+这两个估计对 \(X>0\)、对所述的掩码以及对所述有限
+特征集都一致。
+
+设 \(D_{\mathbf b}\) 如
+方程~\eqref{old-eq:2.18a} 中那样，并令
+\[
+ U_i=X_i/q_{\mathfrak b_i},\qquad
+ V_i=Y_i/q_{\mathfrak b_i},\qquad
+ T=U_1U_2=V_1V_2.
+\]
+若对 \(i=1,2\) 及某个 \(r\ge0\) 有 \(U_i,V_i\ge Z^r\)，
+则
+\begin{equation}
+ \begin{split}
+ T^{-1/2}\left|
+ \sum_{l_1,l_2}
+ \vartheta(l_1)\vartheta(l_2)
+ 1_{(l_1l_2,\mathfrak R_*)=1}
+ q_{l_1l_2}^{it}D_{\mathbf b}(l_1,l_2)
+ \right|
+ \ll Z^{\epsilon_1}(1+|t|)^{2J}T^{1/2}Z^{-r}.
+ \end{split}
+ \label{old-eq:2.18f}
+\end{equation}
+若没有非负的下方长度，则同一表达式为
+\(O(T^{1/2})\)。
+\end{lemma}
+
+\begin{proof}
+首先略去掩码。表示 \(\mathcal S\) 之外的理想的那些主生成元，
+连同固定的特征权
+\(\vartheta\)，构成固定格中的有限加权剩余类
+集合。在该格上应用 Poisson 求和于
+\[
+ f_{X,t}(z)=q_z^{it}W_i(q_z/X)
+           =X^{it}f_t(z/\sqrt X),\qquad
+ f_t(z)=q_z^{it}W_i(q_z).
+\]
+Fourier 变换为
+\(X^{1+it}\widehat f_t(\sqrt X\,\xi)\)。
+由于 \(f_t\) 支在固定圆环上，对任意固定的 \(J_0>2\) 分部
+积分给出
+\[
+ |\widehat f_t(\xi)|
+ \ll_{J_0} (1+|t|)^{J_0}(1+|\xi|)^{-J_0},
+\]
+这里用到 \(W_i\) 的有限多个半范数。对 \(X\ge1\)，在固定对偶格的
+非零点上的求和因此为
+\[
+ \ll (1+|t|)^{J_0} X
+       \sum_{\xi\ne0}(1+\sqrt X|\xi|)^{-J_0}
+ \ll (1+|t|)^{J_0}
+\]
+必要时增大 \(J_0\)。对 \(0<X<1\)，格和及其零频主项都由固定
+圆环上的绝对计数知为 \(O(1)\)。零频为
+\(c_\vartheta X^{1+it}I_i(t)\)，其中 \(c_\vartheta\) 是这些
+剩余类的固定加权平均。这就证明了
+方程~\eqref{old-eq:2.18d} 的无掩码版本。
+
+现用容斥插入掩码。首先从
+\(\mathfrak R_*\) 中去掉它位于 \(\mathcal S\) 中的素理想，因为每个
+求和理想已经避开它们。于是下文用到的所有除子
+都在 \(\mathcal S\) 之外。记 \(\mathcal L_i^0\) 为
+无掩码的和，由积性给出
+\[
+ \mathcal L_i(X,t)
+ =\sum_{d\mid\mathfrak R_*}
+       \mu(d)\vartheta(d)q_d^{it}\mathcal L_i^0(X/q_d,t).
+\]
+主系数为
+\[
+ c_{\vartheta,\mathfrak R_*}
+ =c_\vartheta\sum_{d\mid\mathfrak R_*}
+             \frac{\mu(d)\vartheta(d)}{q_d}.
+\]
+提取出的 \(q_d^{it}\) 抵消了
+\(X/q_d\) 处主项中的 \(q_d^{-it}\)。这证明
+该系数与 \(X\) 和 \(t\) 都无关。
+各误差至多乘以除子的个数
+\(\#\{d:d\mid\mathfrak R_*\}\ll_{\epsilon_1,B_*}Z^{\epsilon_1}\)。
+系数本身也由多项式大小的 Euler 乘积估计而有
+\(Z^{\epsilon_1}\) 界。这证明了
+方程~\eqref{old-eq:2.18d}。
+
+对方程~\eqref{old-eq:2.18e}，在原和中取绝对值。
+它在一个固定的正常数尺度以下为空；只要
+它非空，固定圆环上的理想计数就给出 \(O(X)\)
+个点。这对 \(t\) 和掩码都一致。
+
+方程~\eqref{old-eq:2.18f} 中的带掩码和恰为
+\[
+ \mathcal L_1(U_1,t)\mathcal L_2(U_2,t)
+ -\mathcal L_1(V_1,t)\mathcal L_2(V_2,t).
+\]
+方程~\eqref{old-eq:2.18d} 中的两个乘积主项都为
+\(c_{\vartheta,\mathfrak R_*}^2T^{1+it}I_1(t)I_2(t)\)。
+它们相互抵消。每个含有一个误差的交叉项被
+\(Z^{\epsilon_1}(1+|t|)^{2J}\) 乘以 \(U_1,U_2,V_1,V_2\) 之一
+所界，而误差的乘积在减弱次要幂损失后有同样的
+界。若四个尺度都不小于 \(Z^r\)，则每个至多为 \(TZ^{-r}\)，
+且由 \(T\ge Z^{2r}\) 有 \(1\le TZ^{-r}\)。
+因此差为
+\(O(Z^{\epsilon_1}(1+|t|)^{2J}TZ^{-r})\)。
+除以 \(T^{1/2}\) 即证得
+方程~\eqref{old-eq:2.18f}。当没有非负的下方长度
+可用时，方程~\eqref{old-eq:2.18e} 将每个乘积界为 \(O(T)\)，
+即得最后一项断言。
+\end{proof}
+
+将此引理应用于每个已分配的例外子结点。关于其系数
+与公共掩码的假设由
+引理~\ref{lem:centered-coefficient-invariant} 得到；特别地，主项
+在同一行、掩码与整体乘积范数
+幂下、在取任何绝对值之前就相互抵消。初始时四个普通长度
+都不小于 \(L\)。在所选的 \(\mathfrak t\)-因子
+被移去之前，\(c_2\) 一侧的下方普通长度至少为
+\(L-c-w-c_2\)，名义总长度为 \(\alpha_1=a_0-c_2\)：
+没有任何一个普通长度损失超过由
+两个真正的公共支撑与放大器所提取的总量 \(c+w+c_2\)。另一侧
+有关于 \(d_2\) 的类似界。令
+\[
+ r=(L-c-w-\min(c_2,d_2))_+,
+\]
+并称具有此参考节省的一侧为第一侧，同时一并重标
+其相关的原始数据。若 \(\widetilde r_1<r\)，则每个
+所选的普通长度满足 \(a_{1,i}\le\widetilde r_1\)，于是
+四个形式上的后普通尺度都有对数长度至少
+\(r-a_{1,i}\ge r-\widetilde r_1>0\)。在这些精确的等乘积形式尺度上
+应用方程~\eqref{old-eq:2.18f}。
+若 \(\widetilde r_1\ge r\)（含相等），或若 \(r=0\)，则使用
+同一引理中全尺度绝对体积的兜底。在此分支中没有形式
+中心尺度被截断，且一个恒为零的
+矩形保留在形式差中。由此得到的节省为
+\((r-\widetilde r_1)_+\)。以另一侧的绝对体积，
+这给出对每个低端点除子二进段的聚合界，
+\begin{equation}
+ \begin{split}
+ &\sum_{\mathfrak t,\mathbf J}
+ |c_{\mathfrak t,\mathbf J}(h')|
+ |P_{C,\mathfrak t,\mathbf J}(h')
+       P_{D,\mathfrak t,\mathbf J}(h')|\\
+ &\hspace{15mm}\ll
+ Z^{a_0-b_2-r+2\theta_N+\epsilon_1}.
+ \end{split}
+ \label{old-eq:2.18}
+\end{equation}
+这里及以下均理解为分离高度中的一个固定多项式。为验证
+该界，原始系数与体积给出
+参考指数 \(a_0-b_2+e_1+e_2\) 与减少量
+\(-\widetilde r_1-\widetilde r_2\)，而除子计数给出
+\(t_-\)。方程~\eqref{eq:centered-divisor-boundary} 给出
+单行不等式
+\begin{equation}
+ \begin{split}
+ t_- -\widetilde r_1-\widetilde r_2-(r-\widetilde r_1)_+
+ &=(t_- -\widetilde r_2)-\max(r,\widetilde r_1)\\
+ &\le\omega_2-r.
+ \end{split}
+ \label{old-eq:2.18h}
+\end{equation}
+加上 \(e_1+e_2\) 后至多剩下
+\(e_1+(e_2+\omega_2)-r\le2\theta_N-r\)。
+受除子界约束的分配只贡献 \(\epsilon_1\)，
+这就证明了方程~\eqref{old-eq:2.18}。
+这适用于人工项，即使商仍保留
+\(\mathfrak t\)-素理想，因为系数引理在每个
+矩形差内保持公共掩码、相等的乘积尺度与一个范数幂。
+
+活跃槽只在有限变换移去其 Gauss 系数之后才求和。
+它们未正规化的绝对和贡献
+\(O_N(\prod_{i\ {\rm live}}P_i)\)。将其与名义
+原始正规化因子结合，就给出
+方程~\eqref{eq:centered-raw-normalization} 中完整的 \(e_j\) 体积因子，如上面
+所包含；它不会被替换为因子乘积的正规化因子。Fourier 测度在其
+标签之前就已固定，因此对这些标签取条件既不改变公共掩码
+也不改变中心节省。零条件槽标量
+仅在本绝对界中被丢弃。
+
+令 \(v=c+w+\min(c_2,d_2)\)。由
+方程~\eqref{old-eq:2.17}，\(F_1+F_2\) 至少为
+\(2v/3-3\sigma-5\delta_{{\rm fr},1}/6\)，因为
+\(b_2\ge\min(c_2,d_2)\)。
+方程~\eqref{old-eq:2.18} 中的中心节省现在把
+例外亏空（除 \(3\sigma\) 以及所记录的
+频率与聚合支撑扰动之外）界为
+\begin{equation}
+ A-\tfrac56M-\tfrac23v-(L-v)_+
+ \le (A-M)_+.
+ \label{old-eq:2.19}
+\end{equation}
+事实上，对 \(0\le v\le L\) 左端为
+\(A-5M/6-L+v/3\)，它随 \(v\) 递增；对
+\(v\ge L\) 它为 \(A-5M/6-2v/3\)，它递减。
+其最大值在 \(v=L=M/4\) 处取得，等于 \(A-M\)。
+对正槽，方程~\eqref{old-eq:3.9} 蕴含
+\(A\le M\)。对零槽核心，
+方程~\eqref{old-eq:2.1h} 给出 \(A-M\le\delta\)。
+因此中心例外项只需要终端
+损失 \(3\sigma\)，或在填充核心中为 \(\delta+3\sigma\)。
+额外的 \(\delta_{{\rm fr},1}\)、\(\delta_{{\rm fr},2}\)、
+与 \(\theta_N\) 项包含在同一个 \(C_*\xi\)
+阶段余量中。
+连同方程~\eqref{old-eq:2.12}，这就在当前宽度下完成了
+中心阶段。
+
+\subsection{有限归纳的完成}
+
+我们通过验证量词次序与有限归纳来收尾。
+每个非终端调用都指向一个子结点，其名义宽度 \(M'\) 见
+方程~\eqref{old-eq:2.13}，至少比其父结点低 \(\sigma\)。
+所声明的行宽为 \(M'_{\rm act}\)，且所有非例外
+矩输入长度都在指定的支撑与截断
+操作之后取定。例外原始尺度保持为形式的，不被截断。
+两个频率包围、聚合支撑误差以及这些
+截断至多把宽度比较改变 \(C_*\xi\)。将其
+选在 \(\sigma/2\) 以下。于是每个非空子结点都有非负
+宽度，并留出其长度为 \(\sigma/4\) 的带。空的
+非零频率区间被丢弃；恰在尺度一以下的非空形式区间已由其
+外含长度与截断误差所包含。
+
+在每个更小的宽度处，方程
+\eqref{old-eq:2.1a}--\eqref{old-eq:2.1b} 在自然正槽估计之前删除固定的额外掩码。
+无限制的零槽
+断言通过对至多两个平面作反射而从填充核心一次性
+地推出。中心比较只在其带中调用较早的非中心
+阶段，并利用其严格余量。每个 Gauss 范数至多
+有一次放大，其误差直接进入第二
+变换。方程~\eqref{old-eq:3.16} 对每个
+实际自然子结点调用一次，且在
+其所有边界缺陷都已包含在 \(F_{\rm act}\) 中之后。因此没有同带循环。
+上面定义的整数 \(D\) 把严格调用界为 \(D-2\)，
+因为每次都将宽度从至多为 \(M_{\max}\) 的初始
+宽度降低至少 \(\sigma/2\)。
+
+这里说明为何 \(C_*\) 与网格可以独立于
+固定的槽数来选取。方程~\eqref{eq:centered-aggregate-support}
+把任意槽子集的整个对数误差界为
+\(\theta_N=H_N/\log Z\)。每个被提取的普通幂都被精确
+度量，且一个非例外矩形中两种可能的普通截断中的每一种，
+在三角不等式之后，都有一个固定的
+端点误差。例外计算使用原始减少量与
+不交子集界，而不作截断。第一与第二频率包围只用到
+它们各自的一个聚合外尺度与一个公共行二进段。所有
+局部账本都是上面所展示的固定聚合长度列表中
+仿射表达式的仿射部分或正部。它们的数值
+Lipschitz 常数不依赖于 \(N\)；局部 \(F_2\)
+不等式与根式计数使用精确的素理想范数。特别地，
+正槽仿射表达式的变化至多为
+\begin{equation}
+ |\Delta M|+|\Delta A|+5|\Delta z|,
+ \label{old-eq:2.1j}
+\end{equation}
+因为 \(0\le6\kappa-1\le5\)。\(z\) 的总变化在
+使用此不等式之前已被聚合。这些观察给出
+一个数值 \(C_*\)，并按每阶段固定的运算次数
+而放大，使得所有频率、正规化与边界
+误差都被 \(C_*\xi\) 覆盖。单个贪心前缀至多贡献
+\(\eta\)，而非每个被移除的槽贡献一个 \(\eta\)。
+
+解析分离不引入 \(\xi\) 的导数阶数倍数。
+在固定的全乘积对数盒上，径向核为
+\(\widehat\Phi_i(R_{\rm sc}\exp(L(\mathbf x)))\)，其中 \(L\) 是
+行对数范数与整列对数范数中的一个固定
+线性型。每个导数都是 \(\widehat\Phi_i\) 的 Euler 导数的一个固定组合。
+引理~\ref{lem:kernel-seminorms} 对所有
+\(R_{\rm sc}>0\) 一致地界住它们，并具有任意指定的径向下衰减与导数阶数。
+对 \(R_{\rm sc}\le Z^\xi\) 不使用较弱的界 \(R_{\rm sc}^J\)。
+在其所展示的中心幂被提取之后，一个逆根
+在固定盒上为 \((q_u/Z^{a_0})^{-1/2}\)；其导数只付出
+依赖于 \(H_N\) 与其阶数的固定常数。
+引理~\ref{lem:smooth-calculus} 使用完整的加权 Fourier
+积分，而非在 \(Z^\xi\) 以下高度上的上确界。所需的某个
+高度阶数 \(J\) 可以依赖于 \(N\)，它提高一个输入
+半范数阶数与一个固定常数，而不提高一个 \(Z^{J\xi}\) 指数。
+反射类似地作用在至多两个具固定 gamma
+形状的平面上；更大的导数阶数提高有限的半范数与高度
+阶数，而上圆环的子份额 \(\xi/2\) 保持固定。
+方程~\eqref{old-eq:3.5} 中的固定多项式高度因子
+以所需有限阶数由这些加权 Fourier 测度积分，而不改变先前选定的 \(Z\) 的指数。
+
+离散标签计数也只使用一次。对一族公共支撑、除子或
+分配提取其所展示的指数后，在应用分离元组半范数之前，
+将其绝对加权计数测度除以该
+总质量。这就留下一个质量至多为 1 的
+测度；其已提取的指数不再在光滑范数中计入。
+每个 Fourier 测度由全乘积构造而对
+活跃标签是公共的。
+
+\paragraph{在指定槽数之前的选择。}
+按以下次序选取参数。首先，从有界
+实范围与 \(\epsilon\) 出发，选取 \(\rho,\sigma,\delta>0\)，其中
+\(\delta\) 相对于 \(\rho,\sigma\) 很小，使得
+\[
+ T_{\rm term}:=\rho+\delta+\rho/6+3\sigma+5\sigma/3<\epsilon/4.
+\]
+这界住一个终端宽度下界、对角或例外损失；
+所展示的频率与数值支撑修正则属于每阶段的
+\(\xi\) 余量。取如上所述的 \(D\) 与 \(C_*\ge1\)，
+仍在指定 \(N\) 或其固定剖面之前，选取
+\begin{equation}
+ \begin{aligned}
+ \xi&<\min\left\{\frac\delta2,\frac\rho{30},
+                  \frac{\sigma}{4C_*},
+                  \frac{\epsilon}{16C_*D}\right\},\\
+ \eta&<\min\left\{\frac\sigma6,
+                   \frac{\epsilon}{16C_*D}\right\},\qquad
+ \epsilon_0<\frac{\epsilon}{16C_*D}.
+ \end{aligned}
+ \label{old-eq:2.1i}
+\end{equation}
+这些选择使严格下降至少为 \(\sigma/2\)，保持
+比较余量与填充核心，并对
+\(\kappa\in[3/4,1]\) 一致。
+
+\paragraph{固定槽系统的选择。}
+现在固定任一个不依赖 \(Z\) 的 \(N\)、算术数据与剖面
+窗口。构造 \(H_N\) 以及直至深度 \(D\) 的有限
+全支撑盒。它们的固定因子 \(\exp(O(H_N))\) 归入
+常数。在施加最终阈值
+\(\log Z\ge C H_N/\xi\)、
+方程~\eqref{eq:centered-reflection-length} 中的阈值以及
+方程~\eqref{eq:centered-localization-threshold} 之后，所有出现的
+列、根式与掩码范数都有有界的对数范围，
+且与移动标签无关。在这些范围内，用局部份额选取每一个
+任意小的幂估计，使得一阶段内份额之和至多为 \(\epsilon_0\)。
+这些份额可以依赖于 \(N\)。
+例如，掩码删除中两个除子质量与至多 \(N\) 个冻结槽
+质量可以各用一个份额
+\(\epsilon_0/(10(N+2))\)。在素理想估计中，主
+平方指数恰为 \(\kappa z\)，围道位移
+代价为 \(2e z\)，其中 \(z\) 总量有界，而非 \(N\eta\)。为
+\(e\) 选取其被分配的份额；固定的特征展开与
+\(\log Z\) 的幂在一个依赖于 \(N\) 的阈值之后被吸收。
+同样的推理在个别 \(z_i\) 趋于零时适用，
+因为 \(P_i\ge1\)。对除子分配使用全局界
+\(\tau_{N+2}(v)^C\ll_{N,C,a}q_v^a\) 与
+\(C_N^{\omega(v)}\ll_{N,a}q_v^a\)，其中 \(a>0\) 充分小，
+而非在每个素理想处有固定损失。Rankin 的固定根式
+界用同样的局部份额处理。一个正规化的池
+平均在一阶段中只有其单次密度损失。
+
+归纳对这些原始 \(N\) 个槽的每个存活子集
+同时进行，且使用同一网格。为使这一点精确，对
+\(0\le d\le D-2\)，令
+\[
+ \mathcal E_d
+ :=T_{\rm term}+(d+1)C_*(\eta+\xi+\epsilon_0)
+\]
+为至多剩下 \(d\) 次严格调用时所允许的误差。
+一个终端组（含其有界的反射或比较
+预处理）的误差至多为 \(\mathcal E_0\)。一条严格边
+及其固定数目的同带运算使用子包络
+\(\mathcal E_{d-1}\) 加上至多
+\(C_*(\eta+\xi+\epsilon_0)\)，给出 \(\mathcal E_d\)。
+方程~\eqref{old-eq:2.5} 中的 Gauss 余量 \(\epsilon_G\) 表示这个合适的包络与
+当前的局部份额；它并非要求用一个依赖于 \(N\) 的损失与一个新网格重新应用矩
+引理。三角
+不等式把最大误差取到已计入的质量，
+而 Cauchy--Schwarz 对两个子结点的误差取平均。
+因此沿一条分支只发生一次终端损失，而不是在每个
+祖先处。由方程~\eqref{old-eq:2.1i}，最大路径误差至多为
+\(T_{\rm term}+C_*D(\eta+\xi+\epsilon_0)<\epsilon\)。
+
+最后，逆向穿过这 \(D\) 个阶段来选取所需有限核、反射、素理想与
+终端半范数以及多项式高度阶数。上面的完整加权 Fourier 估计与一致
+Euler 核估计使每个这样的选择都是有限的。为聚合支撑不等式、
+池分离与密度、原始频率尾部以及所有固定
+对数损失选取一个最终的下阈值。阶数、常数与阈值可以随
+\(N\) 与固定数据增长，但指数比较中的 \(\eta,\xi,D,C_*\)
+不增长。
+
+每个新的额外掩码支在冻结列或一个冻结
+放大器素理想上，且其对数范数在一阶段内按有界
+总长度增加。它在每个子行和中固定。
+那里唯一依赖于行的零点是该行的自然零点；
+所声明的移动零点保留在固定扭转中并仍被计数。
+在深度 \(D\) 上掩码保持为多项式范数。
+在例外行上，完整移动并集的冗余部分
+与行根式，连同这些额外掩码，构成
+公共的多项式大小 \(\mathfrak R_*\)；对它的格抵消
+是一致的。固定分子的射线引理控制
+\(\mathcal S\) 处的有限选择，而不把移动的好
+素理想吸收进固定模。
+
+当此估计与逆矩一起应用时，两个变量中的所有内部
+阶数（包括反射核阶数）都先被固定。引理~\ref{lem:smooth-calculus} 中较晚的外部 Fourier 尾部阶数
+位于这一内部传播之外：它只提高
+外部输入半范数，而不改变先前固定的内部高度阶数。这就证明了
+所断言的有限阶一致性。有限归纳证明了
+自然断言，而初始的掩码删除以其完整陈述形式证明了
+引理~\ref{lem:plain}。
+
+对于后面的物理应用，\(q=0\) 且行 \(u\)
+无六次幂因子。若 \(\mathcal S\) 之外的一个素理想在 \(u\) 中的
+赋值属于 \(1,\ldots,5\)，则其局部特征的阶为
+\(6/\gcd(6,v_p(u))>1\)，于是诱导特征不能属于
+\(\Theta\)。因此例外的物理行
+支在 \(\mathcal S\) 上；无六次幂因子性使这成为一个
+有限集，至多相差有限单位群。对于抽象的移动
+扭转，额外的例外行可以通过抵消产生。
+它们已被包含在方程~\eqref{eq:exceptional-row-count}
+与固定特征体积论证中。
+\section{素理想振幅与精化行计数}\label{sec:refined-row-counts}
+
+我们使用当前部分~II 的算术数据与
+方程~\eqref{eq:compensated-probe-definition} 的物理槽。用这些相同的固定
+数据实例化节~\ref{sec:detector} 的共享
+零点探测器。下文的主因子与误差因子属于
+方程~\eqref{eq:dynamic-compensated-decomposition} 中所保留的动态分解；
+在该区域之外不宣称任何个别的局部
+商。每个所保留的外部坐标都服从
+方程~\eqref{eq:stage-height-allocation} 中的单一高度分配。
+
+\subsection{素理想振幅}\label{sec:amplitudes}
+
+对尺度为 \(P_i=Z^{\ell_i}\) 的一个主物理槽，将其
+中心因子写为
+\[
+ Q_i(u;z)=P_i^{-1/2}\sum_{p\in1_T}
+   \overline{\chi_p(u)}W_i(q_p/P_i)(q_p/P_i)^{z-1}.
+\]
+命题~\ref{prop:probe-errors} 中的主部分 \(\mathcal Q_i\) 恰为
+\[
+ \mathcal Q_i(u;z)=-\sum_{p\in1_T}\overline{\chi_p(u)}q_p^{z-1}W_i(q_p/P_i)
+ =-P_i^{z-1/2}Q_i(u;z).
+\]
+如节~\ref{sec:compensation} 中那样，每个对 \(p\in1_T\) 的求和都保留
+同样的允许集 \(\mathcal P_i(Z)\)，包括它对 \(S\) 的排除。
+原始零延拓被保留，因此整除 \(u\) 的素理想
+不对此主槽有贡献。\(z\) 的实部
+位于一个固定有界范围内，其虚部是由
+公共高度余量限制的外部频率之一。
+
+\begin{lemma}[分箱中的素理想界]\label{lem:bin-prime-bound}
+在引理~\ref{lem:detector-dyads} 的假设下，且素理想
+圆环的 Mellin 频率已包含在其累积余量中，
+对每个 \(\epsilon_1>0\)
+\[
+ |Q_i(u;z)|\ll_{\mathcal A,e,\epsilon_1}
+ U^{\epsilon_1}P_i^{a-1/2+O(e)}.
+\]
+隐含的 \(O(e)\) 对 \(51/100\le a\le1\) 与
+固定实范围一致。它对行中的每个主槽都
+成立。
+\end{lemma}
+
+\begin{proof}
+展开 \(1_{p\in1_T}=|T|^{-1}\sum_{\theta\in\widehat T}\theta(p)\)。
+每个所得的素理想特征都属于 \(\mathcal X_u\)。
+引理~\ref{lem:logarithmic-control} 应用于带缓冲的圆盘，
+把其在 \(\Re s=a+8e\) 上的对数导数界为
+\(O_{\mathcal A,e}(\log U)\)；被删除乘积的对数导数
+有同样的界。相应的光滑 von Mangoldt 圆环的
+Mellin 反演只在所保留的中心范围内平移，在
+正规化之后给出
+\(U^{\epsilon_1}P_i^{a-1/2+O(e)}\)。
+纯扭转 \((q_p/P_i)^{i\Im z}\) 在附加的 Mellin 频率
+被截断之前被转译为对数导数变量。连接段的实
+长度有界。在它们之上，对数导数为
+\(O_{\mathcal A,e}(\log U)\)，位于其所分配的缓冲内，而
+在起始直线 \(\Re s=2\) 上它
+是绝对有界的。对连接段的无扭转变换应用
+方程~\eqref{eq:pointwise-mellin-tail} 中的逐点估计，
+对绝对直线尾部应用方程~\eqref{eq:late-fourier-tail}。
+在它们的固定
+多项式尺度与高度界之后选取外部阶数，即得所断言的估计。
+
+要从 von Mangoldt 系数过渡到素理想，将
+圆环权除以 \(\log(P_i y)\)。在固定圆环上，
+\[
+ (y\partial_y)^j\frac1{\log(P_i y)}
+ =\frac{(-1)^j j!}{\{\log(P_i y)\}^{j+1}},
+\]
+因此对充分
+大的 \(P_i\) 这保持每个固定的光滑半范数，而不引入依赖
+导数阶数的 \(P_i\) 幂。有界的 \(P_i\) 由绝对
+计数处理。素理想幂
+在中心正规化之后贡献 \(P_i^{o(1)}\)，因为它们在
+范数圆环中的个数为 \(O(P_i^{1/2+o(1)})\)。
+多项式大小的穿刺及其零延拓已
+包含在对数导数中。这证明了该界。
+\end{proof}
+
+下面是一个精确的振幅细分。选取固定的分箱宽度
+\(\vartheta>0\)。在槽长度固定之后，先减小 \(e\) 与 \(\epsilon_1\)，
+使得对所有充分大的 \(Z\)，前面的界至多为
+\(P_i^{\delta/2+\vartheta}\)。
+这是可能的，因为
+\(\log U/\log P_i=d/\ell_i\) 对每个固定网格保持在
+一个固定有界范围内。对一个满足 \(Q_i\ne0\) 的主槽，令
+\[
+ g_i=\min\left\{\frac{\delta}{2},
+   \max\left(0,\vartheta
+     \left\lfloor\frac{\log|Q_i|}{\vartheta\log P_i}\right\rfloor
+   \right)\right\}.
+\]
+若 \(Q_i=0\) 则令 \(g_i=0\)，并且对来自
+方程~\eqref{old-eq:5.13e} 的误差槽也令 \(g_i=0\)。则对一个主槽，
+\[
+ |Q_i|\le P_i^{g_i+\vartheta},\qquad
+ g_i>0\ \Longrightarrow\ |Q_i|\ge P_i^{g_i}.
+\]
+对 \(g_i=0\) 的槽不宣称下界。
+有限多个可能的向量 \((g_i)\)（端点值可能取 \(\delta/2\)）
+将各行划分为振幅
+分箱。用下式定义它们的长度加权平均：
+\begin{equation}
+ q=\frac{\sum_i\ell_i g_i}{\ell},\qquad
+ 0\le q\le\delta/2,\qquad \ell=\sum_i\ell_i.
+ \label{old-eq:6.6}
+\end{equation}
+此 \(q\) 记录素理想振幅；它不是辅助四阶矩中记为 \(q\) 的导子
+指数。

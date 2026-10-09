@@ -1,0 +1,516 @@
+在任何单个 \(L\)-自变量中，分离变量只有有限多个。给每个变量分配 \(T_1/2\) 这一单项配额中的一个固定份额；不要在相继的移位处重新分配该配额。行估计中所用的剖面窗口与有限高度阶都在 \(N\) 之前固定。引理~\ref{lem:smooth-calculus} 在增大 \(N\) 时只对未扭变的分离剖面求导，这便证明了最后的断言。
+\end{proof}
+
+\subsection{同时的饱和见证}
+
+在一个选定的零点处，下面的截断逆构造产生一个乘积，其平方大小至少为 $U^{\delta(r+m)-\epsilon}$。
+逐点估计将同一乘积界为 $U^{\delta(r+\min(m,1-m))+\epsilon}$。由于 $\delta\ge1/50$，
+这两个界迫使 $m\le1/2+O(\epsilon)$。于是每个因子都在指定的损失范围内达到其自身的逐点指数；
+这就是下一命题中所断言的饱和性。
+
+\begin{proposition}[两个饱和见证]\label{prop:detector-witness}
+设 \(u\) 有一个分箱 \((i,a)\)，其中 \(a>51/100\)，并假设引理~\ref{lem:detector-dyads} 的损失与高度假设。
+对每个 \(t\in[1,3/2]\)，以及每个指定的 \(\epsilon>0\)，
+在缩减其初步损失之后，存在
+\(\psi\in\mathcal X_u\)、如引理~\ref{lem:buffered-bins} 那样的一个零点 \(\rho=\sigma+i\gamma\)、
+二进长度 \(D=U^r\)、\(N=U^m\)，以及公共行特征 \(\psi\) 的两个多项式 \(M_r,S_m\)，使得
+\begin{equation}\label{eq:detector-note}
+ r\le t+O(1/\log U),\qquad
+ r+m\ge t-O(1/\log U),\qquad
+ |M_rS_m|^2\gg_{\mathcal A,\epsilon}
+ U^{\delta(r+m)-\epsilon}.
+\end{equation}
+它们的长度与各自的值也满足
+\begin{equation}\label{eq:saturated-witness}
+ \begin{gathered}
+ t-\tfrac12-O(\epsilon)\le r\le t+O(1/\log U),
+ \qquad 0\le m\le\tfrac12+O(\epsilon),\\
+ |M_r|^2\gg_{\mathcal A,\epsilon}U^{\delta r-\epsilon},
+ \qquad
+ |S_m|^2\gg_{\mathcal A,\epsilon}U^{\delta m-\epsilon}.
+ \end{gathered}
+\end{equation}
+在所述参数范围内，\(O(\epsilon)\) 项中的常数是绝对的。两个多项式具有相同的扭变高度
+\(\gamma-\nu\)，其中 \(|\nu|\le cT_1\)，\(c>0\) 固定且取自累积频率配额之内。
+它们的未扭变剖面构成一个一致光滑的环形族。
+对每一行，两个见证都使用一个表示 \(\psi_{u,\vartheta,\varsigma}\)，由一个固定的有限集合
+\((\vartheta,\varsigma)\)，取自固定有限集合
+\(\Theta\times\{-1,1\}\) 中的标号选取。表示本身随 \(u\) 变化。
+二进对同样可以逐行地从 \(O((\log U)^2)\) 种可能性中分别选取。
+\end{proposition}
+
+\begin{proof}
+截断逆与 Gamma 积分构造是经典零点探测器的一种形式；比较 \cite[附录 C]{MP}
+与 \cite[第~13.1 节]{GM}。此处所需的带缓冲的行相关矩形与
+同时下界将在下面建立。选取由该分箱给出的零点 \(\rho\)，并令
+\[
+ D_*=U^t,\qquad Y_*=U^{20}.
+\]
+设 \(V_{\le}\) 为一个固定的光滑函数，在
+\([0,1]\) 上等于一、在 \([2,\infty)\) 上等于零。定义
+\[
+ C_\psi(s)=\sum_l\mu(l)\psi(l)V_{\le}(q_l/D_*)q_l^{-s},
+ \qquad
+ J=\frac1{2\pi i}\int_{(2)}
+       Y_*^z\Gamma(z)L_{\rm orig}(\rho+z,\psi)
+       C_\psi(\rho+z)\,dz.
+\]
+行特征是非主特征，故 \(L_{\rm orig}\) 为整函数。
+将直线移至 \(\Re z=-1/4\) 只穿过
+\(\Gamma(z)\) 在零处的极点，且其留数为零，因为
+\(L_{\rm orig}(\rho,\psi)=0\)。方程~\eqref{eq:hecke-growth} 中的全局带形界，
+连同被删除的 Euler 因子，将新直线界为
+\[
+ U^{-5}U^2D_*^{\,1-\sigma+1/4+o(1)}T_1^2.
+\]
+事实上 \(\Re(\rho-1/4)\ge26/100>0\)，故被删除的乘积具有
+任意小的 \(U\)-幂；刻意取弱的
+\(U^2\) 包含了本原导子界。有限
+多项式利用理想计数由所示 \(D_*\) 的幂界出。最后，所加高度中的固定多项式
+对 \(\Gamma(-1/4+iv)\) 可积，因为
+\((1+|\gamma+v|)^2\le(1+|\gamma|)^2(1+|v|)^2\)。
+对 \(1\le t\le3/2\) 一致地有
+\[
+ -3+t(5/4-\sigma)
+ \le-3+\frac32\left(\frac54-\frac{51}{100}\right)
+ =-\frac{189}{100}.
+\]
+于是 \(J=o(1)\)。这一 Gamma 积分只使用全局上
+界，不消耗任何倒数高度配额。
+
+在原始直线上，绝对收敛性与指数的 Mellin 公式
+给出
+\[
+ J=\sum_{l,k}\mu(l)\psi(lk)V_{\le}(q_l/D_*)
+       (q_lq_k)^{-\rho}e^{-q_lq_k/Y_*}.
+\]
+对 \(1<q_n\le D_*\)，\(\psi(n)q_n^{-\rho}\) 的系数
+为 \(\sum_{l\mid n}\mu(l)=0\)。对 \(n=1\) 它为一。
+当 \(q_n>D_*\) 时，\(V_{\le}(2q_n/D_*)=0\)。
+因此插入 \(1-V_{\le}(2q_lq_k/D_*)\) 恰好
+移除单位贡献 \(e^{-1/Y_*}=1+o(1)\)。
+所得尾部具有绝对值 \(1+o(1)\)。
+用这样一个固定的光滑终端截断函数乘它——该函数对
+\(q_lq_k\le U^{21}\) 等于一、对 \(q_lq_k\ge2U^{21}\) 等于零——将其改变
+\(o(1)\)；这由 \(Y_*=U^{20}\)、指数衰减
+以及理想计数可得。
+
+用固定的光滑二进划分将 \(q_l\asymp D\)、\(q_k\asymp N\)
+划分。相关的对共有 \(O((\log U)^2)\) 个，
+其支集满足
+\[
+ D\ll D_*,\qquad DN\gg D_*,\qquad DN\ll U^{21}.
+\]
+以 \(x=q_l/D\)、\(y=q_k/N\)，一对的剖面为
+\[
+ W_1(x)V_{\le}(Dx/D_*)\,W_2(y)\,H_{D,N}(xy),
+\]
+其中 \(\Omega\) 是一个固定的环形截断函数，在
+\(W_1,W_2\) 的支集之积上等于一，且
+\[
+ H_{D,N}(s)=\Omega(s)
+   [1-V_{\le}(2DNs/D_*)]e^{-DNs/Y_*}
+   V_{\rm term}(DNs/U^{21}).
+\]
+每个固定的对数导数在
+\(D,N,U\) 中一致有界。在截断过渡处其自变量有界，而
+指数的对数导数等于其自变量的一个多项式乘以该指数。
+对数 Fourier 反演因此给出
+\[
+ \begin{split}
+ H_{D,N}(xy)&=\frac1{2\pi}\int_{\mathbb R}
+      \widehat H_{D,N}(\nu)x^{i\nu}y^{i\nu}\,d\nu,\\
+ \int_{|\nu|>cT_1}|\widehat H_{D,N}(\nu)|
+       (1+|\nu|)^J\,d\nu&\ll_{J,N_0,c}T_1^{-N_0}
+ \end{split}
+\]
+对每个固定的 \(J,N_0\)。整条直线上的系数 \(L^1\)-范数
+也一致有界。两个
+有限多项式的平凡界具有固定的 \(U\)-幂，因为它们的长度
+被 \(U^{21+o(1)}\) 界住。在 \(\tau>0\) 固定之后，选取
+\(N_0\) 使得被丢弃的 Fourier 尾部为 \(o(1)\)。
+
+剩余积分之和的绝对值有
+正的下界。二进对的数目与
+一致的 \(L^1\)-范数表明，对一对以及一个
+\(|\nu|\le cT_1\)，两个未正规化块之积具有
+绝对值 \(\gg(\log U)^{-2}\)。两个剖面都具有
+相同的高度 \(\gamma-\nu\)：
+\[
+ \begin{split}
+ W_M(x)&=W_1(x)V_{\le}(Dx/D_*)x^{-\sigma-i(\gamma-\nu)},\\
+ W_S(y)&=W_2(y)y^{-\sigma-i(\gamma-\nu)}.
+ \end{split}
+\]
+第一个额外的截断函数仍属于逆环形剖面
+且不产生第二个频率。通过中心正规化移除因子
+\(D^{1/2-\sigma}\) 与 \(N^{1/2-\sigma}\)
+得到
+\[
+ |M_rS_m|^2\gg(\log U)^{-4}(DN)^{2\sigma-1}
+ \ge U^{\delta(r+m)-\epsilon}
+\]
+对充分大的 \(U\)。支集不等式给出
+方程~\eqref{eq:detector-note} 中的两个长度界。
+
+对这些剖面应用引理~\ref{lem:detector-dyads}，选取其
+损失小于当前的 \(\epsilon\)。将
+乘积下界与两个上界比较给出
+\[
+ \delta\{m-\min(m,1-m)\}
+   =2\delta(m-1/2)_+\ll\epsilon.
+\]
+由于 \(\delta\ge1/50\)，这蕴含
+\(m\le1/2+O(\epsilon)\)，其中常数为绝对常数。
+支集不等式随后给出
+\(r\ge t-1/2-O(\epsilon)\)。
+将乘积下界依次除以各个上
+界，即得
+方程~\eqref{eq:saturated-witness} 中的两个各自下界。只有二进支集
+误差是 \(O(1/\log U)\)；所有其他损失都是任意小的
+固定幂。引理~\ref{lem:smooth-calculus} 允许所述的
+逐行选择，且带有一个固定的多项式高度因子。
+\end{proof}
+
+\section{六次筛法的行计数}\label{sec:sextic-row-count}
+
+零点探测器为底箱之上的每一行提供一个大的逆多项式。我们现在把该下界
+转化为物理行的计数。我们首先按主约定证明所需的无平方因子六次大筛法，
+使用 Blomer、Goldmakher 与 Louvel~\cite[第 3 节]{BGL} 的范数递归方法。然后我们
+固定一个物理行中素因子赋值至少为二的部分，并把该筛法应用于其无平方因子
+因子。固定部分的大小也给出行数的一个独立上界；两个界中较好的一个给出所需的
+指数。
+
+\subsection{主约定下的六次大筛法}
+
+我们继续使用固定的有限素理想集合 $S$，它包含
+$6$ 之上的素理想以及所有固定的导子素理想。下一个引理中所有理想指标
+都与 $S$ 互素，并由其主生成元表示。特别地，“无平方因子”指的是
+$\mathcal O=\mathbb Z[\omega]$ 的理想，而非其有理范数。
+
+\begin{lemma}[六次大筛法]\label{lem:sextic-large-sieve}
+设 $K,D\ge1$，设 $\varsigma\in\{-1,1\}$，并设 $(c_n)$ 为以 $S$ 之外的无平方因子理想为指标的任意
+复数列。该数列独立于行 $k$ 而固定。对每个
+$\epsilon>0$，
+\begin{equation}\label{eq:sextic-large-sieve}
+ \sum_{\substack{k\ {\rm sf}\\q_k\le K}}
+ \left|\sum_{\substack{n\ {\rm sf}\\q_n\le D}}
+       c_n\chi_n(k)^{\varsigma}\right|^2
+ \ll_{S,\epsilon}(KD)^\epsilon
+       \bigl\{K+D+(KD)^{2/3}\bigr\}
+       \sum_{\substack{n\ {\rm sf}\\q_n\le D}}|c_n|^2.
+\end{equation}
+本公式中的每个符号在非单位元上取原来的零值。
+允许对行集合作固定的限制。允许通过对该系数列作零延拓来
+限制系数支集。这样的限制可以依赖于在行和之前固定的对象，
+但系数不得在其他方面依赖于 $k$。
+\end{lemma}
+
+\begin{proof}
+我们遵循 Blomer、Goldmakher 与
+Louvel \cite[第~3 节]{BGL} 的高阶大筛法递归，为当前的
+主正规化作局部验证。在有限 Fourier 计算中，
+各个剩余特征作用于元素；它们的单位平凡商
+就是我们把 Poisson 求和应用于其上的理想特征。
+
+对由主生成元表示的好理想 $a,b$，令
+\[
+ F_b(a)=\chi_a(b),\qquad J=\{1,2,4\}.
+\]
+这里使用的是原来的零延拓符号，即便当 $a$ 非无平方因子时也是如此。
+它在 $a$ 与 $b$ 中都是乘性的。在下面的每个幂中，包括六的倍数，
+非单位元仍然取值为零。
+对 $M>0$ 令
+\[
+ \mathcal I_M=\{a\text{ good}:M<q_a\le2M\},\qquad
+ \mathcal A_M=\{a\in\mathcal I_M:a\text{ squarefree}\}.
+\]
+对支集在 $\mathcal A_N$ 上的列写
+$\|\lambda\|_2^2=\sum_{b\in\mathcal A_N}|\lambda_b|^2$，并定义
+\begin{align*}
+ D_j(M,N)&=\sup_{\|\lambda\|_2=1}
+  \sum_{a\in\mathcal A_M}
+  \left|\sum_{b\in\mathcal A_N}\lambda_bF_b(a)^j\right|^2,\\
+ E_j(M,N)&=\sup_{\|\lambda\|_2=1}
+  \sum_{a\in\mathcal I_M}
+  \left|\sum_{b\in\mathcal A_N}\lambda_bF_b(a)^j\right|^2.
+\end{align*}
+空支集给出范数零。这些范数包含所有有限射线
+类。我们将为 $D_1$ 证明对称界；引理中的矩阵是它的转置，
+且两个长度互换。
+
+无平方因子范数 $D_j$ 是我们的目标。我们还需要 $E_j$，因为
+Poisson 求和会产生任意的求值理想。在其定义和中展开平方
+并对列特征配对，将把行长 $M$ 替换为一个阶为 $N^2/M$ 的对偶
+长度。然后幂分解把无限制的行和重新化为无平方因子范数。
+它选取一次幂或二次幂因子，因此指数 $j\in\{1,2,4\}$ 被保持在一起：
+该集合在 $j\mapsto2j\pmod6$ 下封闭。我们将利用这一循环来
+改进 $D_j$ 界中的一个临时指数。
+
+\medskip\noindent\emph{配对求和公式。}
+使用固定的有限群
+\[
+ \mathcal T=\ker\bigl((\mathcal O/36\mathcal O)^\times
+              \longrightarrow(\mathcal O/3\mathcal O)^\times\bigr),
+ \qquad t(b)=b\bmod36\mathcal O.
+\]
+主正规化将它们与模
+$36\mathcal O$ 的射线类等同起来：每个单位轨道都有一个模 $3$ 等于一的
+唯一代表。特别地 $t$ 是乘性的。这一细分
+是固定的，因为 $2$ 与 $3$ 之上的素理想属于 $S$。
+
+对全局单位 $u$ 与好素理想 $p$，模 $p$ 的约化给出
+$\chi_p(u)=u^{(q_p-1)/6}$。由于 $q_p\equiv1\pmod6$，对
+$b$ 的素因子相乘给出
+\begin{equation}\label{eq:sextic-sieve-unit-class}
+ \chi_b(u)=u^{(q_b-1)/6}.
+\end{equation}
+指数按模六来读：展开整数
+$1+6h$ 的乘积即证明指数的相等。因此相等的 $t$-类在
+六个全局单位上具有相同的限制。它们也具有相同的模
+$4$ 剩余，这控制着引理~\ref{lem:fixed-gauss-phase} 的互反因子
+$\mathcal R$。
+
+设 $b,c$ 为互素的无平方因子好理想，满足 $t(b)=t(c)$，并设
+$j\in J$。元素上的原始特征
+\[
+ \Theta_{b,c}^{(j)}(z)=\chi_b(z)^j\overline{\chi_c(z)^j}
+       \quad (z\bmod bc)
+\]
+由方程~\eqref{eq:sextic-sieve-unit-class} 在全局单位上平凡。
+因此它通过
+\[
+ \Psi_{b,c}^{(j)}((z))=\Theta_{b,c}^{(j)}(z).
+\]
+在理想上定义一个有限阶射线特征。
+对与 $bc$ 互素的分数理想，剩余符号在局部单位分数上求值；
+同样的单位相消使该定义与生成元无关。在每个好素理想处，六次剩余
+特征具有恰好为六的阶，因为剩余乘法群是
+循环的。因此其幂 $j$ 与 $-j$ 非平凡。CRT 表明
+$\Theta_{b,c}^{(j)}$ 具有原始导子 $bc$，且该射线特征具有
+相同的导子：略去一个素理想将会仅变化其剩余从而与这一非平凡性矛盾。
+它在与 $bc$ 相交的理想上作零延拓。
+对 $b=c=1$ 的一对，定义 $\Psi_{1,1}^{(j)}$ 为主特征。
+
+六次互反律，其因子由 $t(b)=t(c)$ 固定，对每个
+好理想 $a$ 给出
+\begin{equation}\label{eq:sextic-sieve-pair-values}
+ \Psi_{b,c}^{(j)}(a)=F_b(a)^j\overline{F_c(a)^j}.
+\end{equation}
+对互素的输入两个互反因子相消；在其他输入上
+两边均为零。利用算术预备中已定义的 Gauss 和，使用 $z=cv+bw$ 的 CRT 给出
+\begin{equation}\label{eq:sextic-sieve-pair-gauss}
+ \begin{split}
+ \Gamma_{b,c}^{(j)}
+ &:=q_{bc}^{-1/2}\sum_{z\bmod bc}\Theta_{b,c}^{(j)}(z)e(z/(bc))\\
+ &=\chi_b(c)^j\overline{\chi_c(b)^j}\gamma_j(b)\gamma_{-j}(c)
+  =\eta_{t(b),j}\gamma_j(b)\gamma_{-j}(c),
+ \end{split}
+\end{equation}
+其中 $\eta_{t(b),j}=\mathcal R(b,c)^j$ 只依赖于公共类。
+这里每个 $\gamma_{\pm j}$ 由素 Gauss 正交性与 CRT 具有模一。
+公式~\eqref{eq:sextic-sieve-pair-gauss} 保留了
+$\gamma_{-j}$ 本身，包括它在共轭下 $-1$ 处的因子。
+
+固定选取一个非负的 $W\in C_c^\infty((0,\infty))$，满足在
+$[1,2]$ 上 $W\ge1$。对算术预备中的 Fourier 变换与自对偶测度，
+令 $w(z)=W(|z|^2)$ 并通过
+\[
+ \widehat w(y)=\mathscr W(|y|^2).
+\]
+定义 $\mathscr W$。
+该变换是径向的、在零处光滑且快速递减。于是
+\begin{equation}\label{eq:sextic-sieve-transform-bounds}
+ \mathscr W(x)\ll_A(1+x)^{-A},\qquad
+ \int_{\mathbb R}|\mathcal M\mathscr W(\sigma+it)|\,dt<\infty
+       \quad(\sigma>0).
+\end{equation}
+这里 $\mathcal M$ 表示 Mellin 变换。第二个断言
+由 Mellin 积分中的分部积分得到；所有对数
+导数在零处有界、在无穷处快速
+递减。对 Fourier 变换作伸缩，$z\mapsto W(|z|^2/M)$ 给出
+$M\mathscr W(M|y|^2)$。
+
+对 $bc\ne1$，本原原始特征的有限 Fourier 反演为
+\[
+ \sum_{v\bmod bc}\Theta_{b,c}^{(j)}(v)e(vy/(bc))
+ =\overline{\Theta_{b,c}^{(j)}(y)}\sqrt{q_{bc}}\,
+       \Gamma_{b,c}^{(j)}.
+\]
+对非单位元 $y$，左边为零，因为一个非平凡的局部
+特征被对平凡的加性特征求和。对所给的
+$e$ 与 $d\mu$，基 $(1,\omega)$ 上的迹配对具有矩阵
+$\left(\begin{smallmatrix}0&1\\1&-1\end{smallmatrix}\right)$，行列式为
+$-1$，且 $\mathcal O$ 的 $d\mu$-余体积为一。于是
+$bc\mathcal O$ 的对偶为 $(bc)^{-1}\mathcal O$，而
+$bc\mathcal O$ 的余体积为 $q_{bc}$。
+陪集 Poisson 求和，随后除以每个理想的六个生成元，
+因此给出
+\begin{equation}\label{eq:sextic-sieve-pair-poisson}
+ \sum_{\mathfrak a\ne0}W(q_{\mathfrak a}/M)\Psi_{b,c}^{(j)}(\mathfrak a)
+ =\frac{M\Gamma_{b,c}^{(j)}}{\sqrt{q_{bc}}}
+   \sum_{\mathfrak a\ne0}\mathscr W(Mq_{\mathfrak a}/q_{bc})
+                 \overline{\Psi_{b,c}^{(j)}(\mathfrak a)}.
+\end{equation}
+这里两个和都在所有非零整理想上取。除以六
+利用了 $\Theta_{b,c}^{(j)}$ 的单位平凡性与权重的径向性。
+零频率消失，因为该特征非平凡。
+
+\medskip\noindent\emph{平方范数的 Poisson 变换。}
+对支集在 $\mathcal A_N$ 中一个 $t$-类上的 $\lambda$，令
+\[
+ Q_j(M,N;\lambda)=
+ \sum_{\substack{b,c\in\mathcal A_N\\(b,c)=1}}
+   \lambda_b\overline{\lambda_c}
+   \sum_{\mathfrak a\ne0}W(q_{\mathfrak a}/M)
+                         \Psi_{b,c}^{(j)}(\mathfrak a).
+\]
+我们断言，对每个 $\varepsilon>0$，
+\begin{equation}\label{eq:sextic-sieve-pair-norm}
+ \begin{split}
+ |Q_j(M,N;\lambda)|
+ &\ll_{S,\varepsilon}(2+MN)^\varepsilon\|\lambda\|_2^2\\
+ &\quad\times
+ \left\{M+\frac MN
+   \max_{\substack{1\le H\\
+       H\ll_{S,\varepsilon}(2+MN)^\varepsilon N^2/M}}
+       E_j(H,N)\right\}.
+ \end{split}
+\end{equation}
+最大值在二进壳层上取，若为空则为零。若 $N\le1$，
+只可能出现单位好理想，环形理想计数即证明
+$M$ 项。此外当 $M$ 低于某个固定正常数时 $Q_j=0$，
+因为 $W$ 具有固定的支集上端点，而非零理想的范数
+至少为一。
+
+设 $N>1$ 并正规化 $\|\lambda\|_2=1$。则 $Q_j$ 中的每一对
+都是非平凡的且 $q_{bc}\asymp N^2$。应用
+方程~\eqref{eq:sextic-sieve-pair-poisson} 并对对偶理想取三角
+不等式。对小的 $\delta>0$ 令
+$Z=(2+MN)^\delta$。Cauchy 给出 $(\sum_b|\lambda_b|)^2\ll N$。
+由方程~\eqref{eq:sextic-sieve-transform-bounds}，
+$q_{\mathfrak a}>ZN^2/M$ 的部分，对任意 $A>1$，至多为
+\[
+ M\sum_{q_{\mathfrak a}>ZN^2/M}(Mq_{\mathfrak a}/N^2)^{-A}
+ \ll N^2Z^{1-A}.
+\]
+若截断低于一，同样的界成立。取 $A$ 大便使
+其成为任意负幂误差。
+
+在剩余的求和中写 $\mathfrak a=a_0\mathfrak s$，其中 $a_0$ 为好理想、
+$\mathfrak s$ 的支集在 $S$ 上，并为每个固定的 $\mathfrak s$ 选取一个生成元 $s_0$。
+方程~\eqref{eq:sextic-sieve-pair-values}
+与~\eqref{eq:sextic-sieve-pair-gauss} 给出分离的因子
+\[
+ \overline{\Psi_{b,c}^{(j)}(a_0\mathfrak s)}
+ =\overline{F_b(a_0)^j}F_c(a_0)^j
+       \overline{\chi_b(s_0)^j}\chi_c(s_0)^j.
+\]
+所有 $\chi_b(s_0)$ 具有模一。将 $a_0$ 分成壳层
+$a_0\in\mathcal I_H$，其中 $H\ll ZN^2/(Mq_{\mathfrak s})$，并
+在 $\Re w=\delta$ 上插入 $\mathscr W$ 的
+Mellin 反演。除一个依赖于
+$M,q_{a_0},q_{\mathfrak s}$ 的有界因子外，两个
+系数列为
+\[
+ A_b=\lambda_b\gamma_j(b)\overline{\chi_b(s_0)^j}
+                    q_b^{-1/2+\delta+it},\qquad
+ B_b=\overline{\lambda_b}\gamma_{-j}(b)\chi_b(s_0)^j
+                    q_b^{-1/2+\delta+it}.
+\]
+它们在 $a_0$ 求和过程中固定，且具有绝对值
+$\ll N^{-1/2+\delta}|\lambda_b|$。通过 M\"obius 反演
+检测 $(b,c)=1$ 并在 $a_0$ 中应用 Cauchy 给出
+\begin{align*}
+ &\sum_{a_0\in\mathcal I_H}
+  \left|\sum_{\substack{b,c\in\mathcal A_N\\(b,c)=1}}
+       A_bB_c\overline{F_b(a_0)^j}F_c(a_0)^j\right|\\
+ &\quad\le E_j(H,N)\sum_{\mathfrak d}
+   \left(\sum_{\mathfrak d\mid b}|A_b|^2\right)^{1/2}
+   \left(\sum_{\mathfrak d\mid b}|B_b|^2\right)^{1/2}
+ \ll N^{-1+3\delta}E_j(H,N).
+\end{align*}
+这里除数界吸收了关于 $\mathfrak d$ 的求和。对整个
+第一个多项式取共轭使用相同的 $E_j$ 范数。满足
+$H<1$ 的因子只有单位求值理想，并满足 $E_j(H,N)\ll N$。
+$\mathfrak s$ 与二进壳层的选择只有 $\log(2+ZN^2)$ 的固定幂次
+多种，因为 $S$ 固定且非零
+$Q_j$ 有 $M$ 有下界。方程~\eqref{eq:sextic-sieve-transform-bounds}
+对 $t$ 变量求积分。以 $\varepsilon$ 为准取 $\delta$ 足够小
+即证明方程~\eqref{eq:sextic-sieve-pair-norm}，
+包括其 $M$ 项上允许的全局损失。
+
+我们现在把这一配对估计应用于 $E_j$。按
+$t$ 划分其内和，插入 $W$，并展开平方。将两个无平方因子指标写为
+$db,dc$，其中 $d$ 是它们的 gcd、$(b,c)=1$ 且 $(d,bc)=1$。它们的剩余
+类一致，因为 $t$ 是乘性的。指标乘性与
+方程~\eqref{eq:sextic-sieve-pair-values} 在每个好理想 $a$ 上给出
+\[
+ F_{db}(a)^j\overline{F_{dc}(a)^j}
+   =1_{(a,d)=1}\Psi_{b,c}^{(j)}(a).
+\]
+令 $\mathfrak s_S=\prod_{\mathfrak p\in S}\mathfrak p$。对 $(a,\mathfrak s_Sd)=1$ 作 M\"obius 反演
+将 $a$ 写为 $a=\mathfrak r\mathfrak a$，其中
+$\mathfrak r\mid\mathfrak s_Sd$。为每个固定的 $\mathfrak r$ 选取一个生成元 $r_0$。
+$\Psi$ 在 $\mathfrak r$ 处的值分离为
+$\chi_b(r_0)^j\overline{\chi_c(r_0)^j}$，于是公共剩余列为
+\[
+ \lambda'_b=\lambda_{db}1_{(b,d)=1}\chi_b(r_0)^j,
+ \qquad |\lambda'_b|\le|\lambda_{db}|.
+\]
+它的支集在 $\mathcal A_{N/q_d}$ 中一个类上。以长度 $M/q_{\mathfrak r}$
+与 $N/q_d$ 应用方程~\eqref{eq:sextic-sieve-pair-norm}。求和后的系数
+质量为至多
+\[
+ \sum_d\sum_{\mathfrak r\mid\mathfrak s_Sd}\sum_b|\lambda_{db}|^2
+ \le d_{\mathcal O}(\mathfrak s_S)
+       \sum_m d_{\mathcal O}(m)^2|\lambda_m|^2
+ \ll_{S,\delta}(2+N)^\delta\|\lambda\|_2^2.
+\]
+写 $\Delta_{\mathrm r}=q_{\mathfrak r}$ 与 $\Delta_{\mathrm d}=q_d$，我们有
+$1\le\Delta_{\mathrm d}\le2N$ 与 $1\le\Delta_{\mathrm r}\le q_{\mathfrak s_S}\Delta_{\mathrm d}$。
+我们得到递归接口
+\begin{equation}\label{eq:sextic-sieve-norm-reflection}
+ \begin{split}
+ E_j(M,N)
+ &\ll_{S,\varepsilon}(2+MN)^\varepsilon
+ \max_{\substack{1\le\Delta_{\mathrm d}\le2N\\
+                 1\le\Delta_{\mathrm r}\le q_{\mathfrak s_S}\Delta_{\mathrm d}}}
+ \left\{\frac M{\Delta_{\mathrm r}}\right.\\
+ &\qquad\left.+
+ \frac{M\Delta_{\mathrm d}}{N\Delta_{\mathrm r}}
+ \max_{\substack{1\le H\\
+       H\ll_{S,\varepsilon}(2+MN)^\varepsilon
+              N^2\Delta_{\mathrm r}/(M\Delta_{\mathrm d}^2)}}
+       E_j(H,N/\Delta_{\mathrm d})\right\}.
+ \end{split}
+\end{equation}
+最大值可以限制在非空范围上。这是 \cite[引理~3.2--3.3]{BGL} 中
+gcd 与 Poisson 步骤的组合；这里使用的每个序列在其范数
+和内都是公共的，且 $S$ 保持固定。
+
+\medskip\noindent\emph{初始界与幂界。}
+行包含给出 $D_j\le E_j$。Hilbert 空间对偶性与六次
+互反律，按有限 $t$-类分裂一个矩阵变量，给出
+\begin{equation}\label{eq:sextic-sieve-norm-symmetry}
+ D_j(M,N)\ll_S D_j(N,M).
+\end{equation}
+相位取单位值，且非互素元素在两个方向上都为零。
+我们还有初始估计
+\begin{equation}\label{eq:sextic-sieve-norm-initial}
+ D_j(M,N)\ll_S M^2+N\qquad(M,N\ge1).
+\end{equation}
+事实上，对无平方因子行 $a$，有限 Fourier 反演在每个 $b$ 上，
+包括非单位元，给出
+\[
+ \chi_a(b)^j=\frac1{\sqrt{q_a}\gamma_{-j}(a)}
+       \sum_{x\bmod a}\overline{\chi_a(x)^j}e(xb/a).
+\]
+Cauchy 至多耗费 $\#(\mathcal O/(a))^\times/q_a\le1$。来自
+$a\in\mathcal A_M$ 的既约分数 $x/a$ 在模 $\mathcal O$ 下互不相同
+且彼此间隔
+至少 $1/(2M)$：$x/a-y/c-h$ 的一个非零分子具有绝对值
+至少为一，而 $|ac|\le2M$；模 $\mathcal O$ 的相等迫使
+相同的主分母与剩余。引理~\ref{lem:planar-additive-sieve} 的对偶，
+其系数生成元位于球 $q_b\le2N$ 内，证明了方程~\eqref{eq:sextic-sieve-norm-initial}。
+

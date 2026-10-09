@@ -1,0 +1,530 @@
+节~\ref{par:reflection-marks} 中的带标记反射将用到下列关于活跃素数对的依赖关系。由于
+\[
+ \epsilon_p=-\lambda^{-5}(c/p)^{-2}\pmod p,
+\]
+存在一个绝对值为 1 的标量 $\xi_{p,j}$，它依赖于 $p,j$，但不依赖于任何其他活跃素数，使得
+\begin{equation}\label{eq:reflection-cross-prime-phase}
+ \chi_p(\sigma_p)^{-2}\omega_{p,j}
+       =\xi_{p,j}\chi_p(c/p)^{2j+2}.
+\end{equation}
+对 $j=4$，这用到了 $2j+2\equiv-2\pmod6$；对其他指数，代入 $\epsilon_p$ 的表达式即得。
+于是另一个活跃素数对 $p$ 处相位的贡献，其指数模六恰为 $2j+2$。特别地，活跃指数
+$j=1$ 具有列耦合 $\chi_p(x)^{-3}=\chi_p(x)^3$。
+
+\emph{Mellin 正规化与延拓。}
+令
+\[
+ J(s)=\int_0^\infty
+       \left.\partial_{\bar z}\mathcal F(z,v)\right|_{z=0}
+       v^{2s-1}\,dv.
+\]
+\cite[引理~5.3]{DR} 中用到的 Bessel 恒等式为
+\[
+ \int_0^\infty K_{1/3}(y)y^{w-1}\,dy
+  =2^{w-2}\Gamma((w-1/3)/2)\Gamma((w+1/3)/2)
+       \qquad(\Re w>1/3).
+\]
+在 $\Re s>1$ 上系数和绝对收敛，因此我们可以逐项求导并逐项积分它们的展开式。
+由于 $\partial_{\bar z}\check e(\mu z)=2\pi i\bar\mu\check e(\mu z)$，
+取 $w=2s+1$ 的恒等式给出
+\[
+ J(s)=\frac i4(2\pi)^{-2s}\Gamma(s+1/3)\Gamma(s+2/3)
+       \sum_{0\ne\mu\in\lambda^{-3}\mathcal O}d_I(\mu)\phi(\lambda^3\mu)
+          \prod_p\chi_p(\lambda^3\mu)^{j_p}
+          \bar\alpha(\mu)q_\mu^{-s}.
+\]
+首先如上所述用整指标掩码把范围限制到 $(nb,\mathfrak E)=1$，
+再代入方程~\eqref{eq:reflection-infinity-coefficient} 与
+\eqref{eq:reflection-cubic-sextic-conversion}。利用
+$q_{\lambda^{-3}}=27^{-1}$ 与 $\bar\alpha(\lambda^{-3})=-i$ 得到
+\begin{equation}\label{eq:reflection-direct-mellin}
+ J(s)=\frac{3^{5/2}}4\left(\frac{27}{(2\pi)^2}\right)^s
+       \Gamma(s+1/3)\Gamma(s+2/3)T(s,\Psi).
+\end{equation}
+
+对于一个平移项 $z_h=a/c$，使用上面构造的矩阵 $g=GH$。由
+\cite[方程 (5.1)]{DR}，$g^{-1}$ 在双曲空间上的坐标作用给出
+\[
+ g^{-1}(z+a/c,v)=
+ \left(-\frac{\delta'}c-\frac{\bar z}{c^2(v^2+|z|^2)},
+               \frac{v}{q_c(v^2+|z|^2)}\right).
+\]
+在 $z=0$ 处，其第一个坐标关于
+$\bar z$ 的导数为 $-(cv)^{-2}$；其共轭坐标
+与竖直坐标关于 $\bar z$ 的导数均为零。
+因此链式法则与 $\bar\theta(gw)=\bar\kappa(G)\bar\theta(Hw)$
+给出
+\[
+ \left.\partial_{\bar z}\bar\theta(z+a/c,v)\right|_{z=0}
+ =-\frac{\bar\kappa(G)}{c^2v^2}
+   \left.\partial_z\bar\theta(H(z,1/(q_cv)))\right|_{z=-\delta'/c}.
+\]
+特别地，该导数从方程~\eqref{eq:reflection-cusp-expansion} 中的每个尖点展开里消去了 $C_H(v)$。
+代入该展开式，再在积分中作 $v\mapsto1/(q_cv)$，
+对 $\Re s<0$ 给出贡献
+\begin{equation}\label{eq:reflection-reflected-mellin}
+ \begin{split}
+ -\frac i4(2\pi)^{2s-2}\bar\alpha(c)^2q_c^{1-2s}\bar\kappa(G)
+ \prod_{\pm}\Gamma(3/2-s\pm1/6)\\
+ {}
+ \times\sum_{\mu\ne0}d_H(\mu)\alpha(\mu)
+       \check e(-\delta'\mu/c)q_\mu^{-(1-s)}.
+ \end{split}
+\end{equation}
+为直接验证该标量，在应用 Bessel 积分之前，
+因子为 $-2\pi i c^{-2}q_c^{2-2s}$，剩余的积分为
+$\int_0^\infty u^{2-2s}K_{1/3}(4\pi|\mu|u)\,du$。
+取 $w=3-2s$ 的 Bessel 恒等式，连同
+$c^{-2}=\bar\alpha(c)^2/q_c$，恰好给出所显示的式子。
+
+我们在此对延拓与围道运算一并给出论证。
+方程~\eqref{old-eq:4.3} 中的系数界蕴含
+当 $\Re(1-s)>1$ 时反射级数绝对收敛：各自的优函数为
+\[
+ \sum_n^{\rm sf}q_n^{-(1-\Re s)},\qquad
+ \sum_b q_b^{1/2-3(1-\Re s)},\qquad
+ \sum_{k\ge-4}3^{k(1/6-(1-\Re s))}.
+\]
+每个都在该区域内收敛。固定支集对 $|\mu|$ 有正的下界。
+$K_{1/3}$ 及其所有导数的指数衰减、
+系数界以及直接展开式蕴含，每个平移导数的每一对数导数在
+$v\to\infty$ 时指数衰减。刚才得到的
+链式法则公式同样蕴含在 $v\to0$ 时的指数衰减，其中常数取决于
+固定的平移项。现在对
+$\log v$ 反复分部积分表明，$J$ 是整函数，且在每个固定带形域上其衰减快于
+$|\Im s|$ 的任意幂。
+
+方程~\eqref{eq:reflection-direct-mellin} 右端含倒数 gamma
+函数，把 $T$ 延拓为整函数。其
+直接级数在 $1$ 右侧的任何直线上有界。
+方程~\eqref{eq:reflection-reflected-mellin} 与 Stirling 公式
+给出 $0$ 左侧任何直线上的多项式界；两个 gamma 乘积的指数
+部分相消。在这样的直线之间的带形域上，
+$J$ 的快速界与倒数 gamma 因子首先给出
+$|T(\sigma+it)|\ll (1+|t|)^C e^{\pi|t|}$，其中 $C$ 为某个常数。
+用 $B+s$ 的足够高次幂去除 $T$，其中 $B$ 的选取使得
+$B+s$ 在该带形域上无零点，再乘以 $e^{\varepsilon s^2}$。
+对每个
+$\varepsilon>0$，一个不断扩大的矩形的两条水平边趋于零。最大模原理，随后令
+$\varepsilon\to0$，把两条竖直边上的多项式界转移到该带形域上。这就证明了所述的多项式带形增长。
+
+把方程~\eqref{eq:reflection} 左端的积分从
+$\Re s=a$ 移到 $\Re s=1/2-\sigma<0$，其中 $\sigma>1/2$。
+整函数延拓、多项式带形界与快速的 Mellin 衰减
+保证了这一移动：将方程~\eqref{eq:pointwise-mellin-tail} 应用于 $V$ 的
+加权对数导数，使水平连接部分趋于零。代入
+方程~\eqref{eq:reflection-reflected-mellin} 除以
+方程~\eqref{eq:reflection-direct-mellin} 的结果，并令 $t=1/2-s$，
+给出 gamma 商 $R(t)$ 与因子
+\[
+ -\frac i{81}\bar\alpha(c)^2q_\mu^{-1/2}
+       \left(\frac{Kq_\mu X}{q_c^2}\right)^{-t}.
+\]
+确实 $(2\pi)^{4s-2}27^{-s}3^{-5/2}
+=3^{-4}K^{-t}$，且 $q_c^{1-2s}q_\mu^{s-1}
+=q_\mu^{-1/2}(q_\mu/q_c^2)^{-t}$。
+反射系数级数在这条直线上
+绝对收敛，因此可以与积分交换。利用方程~\eqref{eq:reflection-additive-phase}
+与已算出的 Gauss 和对其有限的局部因子求和，即证明方程~\eqref{eq:reflection} 与
+方程~\eqref{eq:reflection-row-phase}。由于 $|\phi|\le1$，我们有
+$|\widehat\phi(h_0)|\le1$；该标量中其余每个因子的
+绝对值至多为 1。这就证明了 $|\zeta|\le1/81$。
+
+\emph{变换后测试函数的统一估计。}
+$R(t)$ 分子的第一个负极点为 $-5/6$。
+分母中倒数 gamma 函数是整函数。因此定义 $V^\sharp$ 的
+被积函数在 $\Re t>-5/6$ 上全纯。
+在 $-1/4\le\sigma\le A$ 上，Stirling 公式给出
+\[
+ |R(\sigma+iu)|\ll_A(1+|u|)^{4\sigma}.
+\]
+该估计对有界的 $u$ 也一致，因为此闭带形域
+没有分子极点。方程~\eqref{eq:pointwise-mellin-tail} 使
+$\widehat V$ 在每个竖直带形域上逐点快速衰减。因此矩形
+围道移动在 $-1/4\le\Re t\le A$ 内有效，
+包括在任意两条非负直线之间。作用
+$(x\partial_x)^j$ 贡献 $(-t)^j$。三条直线
+$-1/4,0,A$ 把所得积分分别界以
+\[
+ x^{1/4}\mathfrak M_{A,\lceil4A\rceil+j+2}(V),\quad
+ \mathfrak M_{A,\lceil4A\rceil+j+2}(V),\quad
+ x^{-A}\mathfrak M_{A,\lceil4A\rceil+j+2}(V).
+\]
+的常数倍。把它们结合起来即证明方程~\eqref{eq:reflection-kernel}。
+快速的大 $x$ 界，在 $A$ 任意大时，还使得当
+$V^\sharp$ 表示在零线上时，方程~\eqref{eq:reflection} 中的每个
+对偶和绝对收敛。因此核围道的移动不需要对一个条件收敛的
+Dirichlet 级数作逐项移动。
+
+对于方程~\eqref{eq:reflection-annular-fourier}，令
+$f_Y(v)=\chi(e^v)V^\sharp(Ye^v)$。它的支集位于一个固定的紧
+区间上。对其 Fourier 变换分部积分 $J+2$ 次
+并对 $|u|\le1$ 使用平凡界，给出
+\[
+ \int_{\mathbb R}(1+|u|)^J|\widehat f_Y(u)|\,du
+ \ll_J\sum_{j=0}^{J+2}\|f_Y^{(j)}\|_{L^1(\mathbb R)}.
+\]
+Leibniz 法则与方程~\eqref{eq:reflection-kernel} 把每个
+范数界以方程~\eqref{eq:reflection-annular-fourier} 的右端，
+因为 $e^v$ 始终位于 $(0,\infty)$ 的一个固定紧子区间内。
+最后，对 $|u|\ge1$，分部积分 $B+2$ 次给出
+\[
+ |\widehat V(\eta+iu)|
+ \le |\eta+iu|^{-B-2}
+       \int_0^\infty|(x\partial_x)^{B+2}V(x)|x^\eta\frac{dx}{x}.
+\]
+对 $|u|\le1$ 使用相应的未求导积分。
+在 $-A\le\eta\le1/4$ 上，
+$x^\eta\le1+x^{-A}+x^{1/4}$，这证明了
+方程~\eqref{eq:reflection-test-seminorm}。恒等式
+$\widehat{x^{iu_0}V}(\eta+iu)=\widehat V(\eta+i(u+u_0))$
+与 $1+|u|\le(1+|u+u_0|)(1+|u_0|)$ 给出所述的范数扭转
+界。特别地，Gaussian 测试函数
+$V(x)=(2\sqrt\pi)^{-1}\exp(- (\log x)^2/4)$，其 Mellin 变换为
+$e^{t^2}$，直接满足本命题的假设。
+\end{proof}
+
+\subsection{元素行与固定扇区}
+
+为了把反射应用于特征 $A\mapsto\chi_A(m)$，我们把固定的补充相位与该行
+的好素因子分离开来。这种分离在每个共享的好素数处保留了零点。
+
+\begin{lemma}[非零行的固定射线扇区]
+\label{lem:reflection-row-sectors}
+设 $\Psi_{\rm base}$ 取遍一个固定的有限族，其元素为导子支集在 $S$ 上的有限射线
+特征，并在与 $S$ 互素的主元素之外按零延拓。使用引理~\ref{lem:fixed-numerator-ray} 中
+对 $\mathfrak l\in S$ 的固定生成元 $\pi_{\mathfrak l}$。
+对 $0\ne m\in\mathcal O$，唯一地写为
+\[
+ m=u m_Sm_{\rm good},\qquad
+ m_S=\prod_{\mathfrak l\in S}\pi_{\mathfrak l}^{v_{\mathfrak l}(m)},\qquad
+ m_{\rm good}=\prod_{p\notin S}p^{v_p(m)},
+\]
+其中好素数生成元是主的，$u$ 是单位。对每个
+与 $S$ 互素的主元素 $A$ 有
+\begin{equation}\label{eq:reflection-row-reduction}
+ \chi_A(m)=\chi_A(u m_S)\mathcal R(A,m_{\rm good})
+       \prod_{p\mid m_{\rm good}}\chi_p(A)^{v_p(m)}.
+\end{equation}
+右端的所有幂都保留其零值，包括当
+$v_p(m)\equiv0\pmod6$ 时。固定 $u$、赋值 $v_{\mathfrak l}(m)$ 模六，
+以及 $m_{\rm good}$ 在 $\mathcal R$ 分解所通过的固定射线群中的类。
+在这样的扇区中，定义
+\begin{equation}\label{eq:reflection-sector-character}
+ \Psi_0^{[m]}(A)=
+ \begin{cases}
+ \Psi_{\rm base}(A)\chi_A(u m_S)\mathcal R(A,m_{\rm good}),
+       &A\equiv1\pmod3,\ (A,S)=1,\\
+ 0,&\text{otherwise}.
+ \end{cases}
+\end{equation}
+非零分支属于一个固定的有限族，其元素为导子支集在 $S$ 上的有限射线
+特征。因此命题~\ref{prop:completed-reflection} 中的单个
+$\mathfrak E,L$ 对这些扇区全部适用。局部素数集包含每个 $p\mid m_{\rm good}$，
+其指数为 $v_p(m)$ 模六，即使该指数为零时也是如此。
+没有可移动的好素数被吸收进 $L$。
+\end{lemma}
+
+\begin{proof}
+若 $(A,m_{\rm good})=1$，乘性性与引理~\ref{lem:fixed-gauss-phase} 中的对称互反
+因子给出方程~\eqref{eq:reflection-row-reduction}。若共享一个好素数，
+则两端都为零：左端是 $\chi_A(m)$ 的零延拓，
+而右端的局部因子即使对六整除的指数也为零。
+这就证明了该恒等式在所陈述的整个定义域上成立。
+
+在此定义域上 $\chi_A(u m_S)$ 仅依赖于 $u$ 以及 $S$-赋值
+模六，因为每个分子因子都是模 $A$ 的单位。对
+有限多个代表元
+$d=u\prod_{\mathfrak l\in S}\pi_{\mathfrak l}^{e_{\mathfrak l}}$，
+$0\le e_{\mathfrak l}<6$ 中的每一个，引理~\ref{lem:fixed-numerator-ray} 都把
+$A\mapsto\chi_A(d)$ 等同于一个有限射线特征，其导子的支集
+位于 $6d$ 上方的素数处，且全部落在 $S$ 中。一旦好射线类固定，
+$A\mapsto\mathcal R(A,m_{\rm good})$ 便是支集在 $2,3$ 上方素数处的
+某个固定有限族特征之一。它们与基础特征的
+有限族之积给出所述的固定族。取其导子与 $S$-掩码的
+公倍数，即得公共的 $\mathfrak E$，进而得到 $L$。完备化系数中
+额外的好的局部剩余符号因子被放入 $\mathcal P$，并在共享
+素数处以相同的零约定合并；它们不改变此固定模。
+该论证要求 $m\ne0$，并且对行
+$m=0$ 不作任何局部素数断言。
+\end{proof}
+
+\subsection{公共剖面与格尾部}
+
+反射级数有一个依赖于其行的尺度。我们把这种
+依赖保留在一个联合光滑剖面中，直到 Fourier 反演之后；
+这给出整个行范数的一个系数测度。
+
+\begin{lemma}[公共环形核剖面]
+\label{lem:reflection-common-profile}
+设 $V$ 满足命题~\ref{prop:completed-reflection} 的假设。
+固定一个整数 $d\ge1$、一个紧集 $\Omega\subset\mathbb R^d$，以及
+实指数 $a_1,\ldots,a_d$。设 $W$ 是一个对数支集
+在 $\Omega$ 中的光滑剖面，对给定块中的所有行公共，并设 $Y>0$ 在该块内
+固定。令
+\[
+ h(\boldsymbol y)=\prod_{i=1}^d y_i^{a_i},\qquad
+ F_Y(\boldsymbol y)=W(\boldsymbol y)V^\sharp(Yh(\boldsymbol y)),\qquad
+ \mathfrak m_A(Y)=\min\{Y^{1/4},(1+Y)^{-A}\}.
+\]
+对 $A\ge0$ 与整数 $j,J\ge0$，
+\begin{align}
+ p_j(F_Y)&\ll_{A,j,d,\Omega,\boldsymbol a}
+ \mathfrak m_A(Y)p_j(W)
+ \mathfrak M_{A,\lceil4A\rceil+j+2}(V),
+ \label{eq:reflection-common-profile}\\
+ \|F_Y\|_{J,\mathrm{sep}}&\ll_{A,J,d,\Omega,\boldsymbol a}
+ \mathfrak m_A(Y)p_{J+d+2}(W)
+ \mathfrak M_{A,\lceil4A\rceil+J+d+4}(V).
+ \label{eq:reflection-common-measure}
+\end{align}
+这里 $p_j$ 是单个剖面的齐次半范数，而非一个多元组的
+非齐次半范数。常数与 $Y$ 无关，也与该块内
+实际的范数标号无关。
+\end{lemma}
+
+\begin{proof}
+在 $W$ 的支集上，单项式 $h$ 被仅依赖于 $\Omega$ 与指数的
+正常数从上、下界住。作用在 $V^\sharp(Yh(\boldsymbol y))$ 上的每个
+算子 $y_i\partial_{y_i}$ 等于 $a_i$ 乘以 $V^\sharp$ 在 $Yh(\boldsymbol y)$ 处的
+Euler 导数。它不产生 $Y$ 的额外幂次。Leibniz 法则与
+方程~\eqref{eq:reflection-kernel} 证明
+方程~\eqref{eq:reflection-common-profile}。取
+$j=J+d+2$ 应用引理~\ref{lem:smooth-calculus} 给出
+方程~\eqref{eq:reflection-common-measure}。
+\end{proof}
+
+以下是范数方面的推论，包括其运算次序。设
+$\mathcal I$ 为原来的行集，并假设一个行向量 $\mathcal U$
+关于整个剖面 $F_Y$ 是线性的。该剖面包含其行与列范数变量的
+完整固定对数盒的截断。
+假设同时进行的对数 Fourier 反演用对每行公共的一个密度
+来表示该向量。在相关的算术
+系数独立性被验证之后，写
+$F_Y=\mathfrak m_A(Y)\widetilde F_Y$。Minkowski 给出
+\begin{equation}\label{eq:reflection-common-minkowski}
+ \|\mathcal U\|_{\ell^2(\mathcal I)}
+ \le \frac{\mathfrak m_A(Y)}{(2\pi)^d}
+       \int_{\mathbb R^d}|\widehat{\widetilde F_Y}(\boldsymbol t)|
+       \|B(\boldsymbol t)\|_{\ell^2(\mathcal I)}\,d\boldsymbol t.
+\end{equation}
+这里 $B(\boldsymbol t)$ 是分离后的行向量，其范数幂的
+绝对值都为 1。此不等式背后的恒等式是
+$\ell^2(\mathcal I)$ 中的一个 Bochner 积分；只要分离后的范数具有所述的
+多项式高度增长，上面的有限分离范数就确保其绝对可积性。对各行
+分别选取的密度的统一界不会给出这一恒等式。
+只有在该不等式右端的非负范数内部，行集才可在随后
+被扩大，此时对新增的行使用 $B$ 的同一分离公式。
+对新增的行，不断言核的自变量与 $Y$ 之间的任何比较。
+把此不等式平方给出因子
+$\mathfrak m_A(Y)^2$。若只使用小自变量界，则同一论证
+容许更弱的标量 $\min\{1,Y^{1/4}\}$，其平方为
+$\min\{1,Y^{1/2}\}$。正规化后的剖面具有有界的多元组半范数；
+它们并不被断言为小量，因为该多元组半范数包含一个常数
+1。已经展开的二次表达式中出现一次的核，反而只贡献
+其标量一次，而不自动贡献其平方。
+
+命题~\ref{prop:completed-reflection} 中的 Gaussian 测试函数在那里
+以及在引理~\ref{lem:reflection-common-profile} 中都直接可用：只有后一引理中的
+联合因子 $W$ 需要紧对数支集。若改为
+对 Gaussian 本身应用紧支集演算，
+引理~\ref{lem:gaussian-annular} 提供所需的绝对可和
+环形分解。
+
+\begin{lemma}[格核尾部]\label{lem:lattice-kernel-tail}
+设 $\Lambda$ 为 $\mathcal O$ 或 $\lambda^{-4}\mathcal O$。假设
+$K:(0,\infty)\to\mathbb C$ 对 $x\ge1$ 满足 $|K(x)|\le C_Ax^{-A}$，
+其中 $A>1$。则对 $a>0$ 与 $U\ge1$，
+\begin{equation}\label{eq:lattice-kernel-tail}
+ \sum_{\substack{0\ne\mu\in\Lambda\\a q_\mu>U}}|K(aq_\mu)|
+ \ll_A C_A(1+a^{-1})U^{1-A}.
+\end{equation}
+对 $K=V^\sharp$ 可取
+$C_A\ll_A\mathfrak M_{A,\lceil4A\rceil+2}(V)$。
+\end{lemma}
+
+\begin{proof}
+层 $2^jU<a q_\mu\le2^{j+1}U$ 含有
+$O(1+2^jU/a)$ 个任一固定格的点。其贡献至多为
+$C_A(1+2^jU/a)(2^jU)^{-A}$。对两个几何级数求和得到
+$O_A(C_A(U^{-A}+a^{-1}U^{1-A}))$，由于 $U\ge1$ 即蕴含所显示的式子。
+最后的断言由方程~\eqref{eq:reflection-kernel} 得到。
+\end{proof}
+
+\subsection{完备化指标的二次范数}
+
+下一个估计界住反射在一个无平方因子因子与一个立方之积上
+所留下的二次特征。我们从引入的筛法开始。对于在
+某个包含 \(6\) 上方素数的固定集合之外的
+无平方因子主理想，二次核 \(\chi_a(b)^3\) 满足
+\begin{equation}\label{eq:quadratic-large-sieve}
+ \sum_{\substack{a\ {\rm sf}\\q_a\le U}}
+ \left|\sum_{\substack{b\ {\rm sf}\\q_b\le V}}
+             c_b\chi_a(b)^3\right|^2
+ \ll_\epsilon (UV)^\epsilon(U+V)\sum_b|c_b|^2.
+\end{equation}
+这是 Goldmakher--Louvel 的二次大筛法
+\cite[定义 1 与定理 1.1]{GL}。为验证其族假设，
+设 \(\vartheta_a((x))\) 表示在
+\((x)\) 的主生成元处取值所得的二次剩余符号。把 \(x\) 调整到其主
+生成元贡献
+\(\varepsilon_\lambda(x)^{e(a)}\)，其中 \(\varepsilon_\lambda\) 是
+模 \(\lambda\) 的非平凡特征，且
+\(e(a)=(q_a-1)/2\bmod2\)。\(\omega\) 的幂不贡献任何东西，
+因为它们是平方。因此 CRT 给出精确的本原导子
+\(a\lambda^{e(a)}\) 与平凡的无穷型。我们使用本原的
+诱导特征：所显示的
+公式首先指定它在 \(\lambda\)-单位上的限制，而当
+\(e(a)=0\) 时在 \(\lambda\) 处的因子不出现。这不改变
+方程~\eqref{eq:quadratic-large-sieve} 中任何指标上的取值。
+在一个固定的模 \(4\) 主平方
+类中，两个
+指标具有相同的 \(e(a)\)；对这样的互素指标，本原
+乘积的导子恰为它们之积。互反因子是
+方程~\eqref{eq:reciprocity-four-class} 的固定双特征 \(\mathcal R\)。
+这些正是所引定理的
+族条件。有限射线划分与
+转置对偶给出所显示取向下的方程~\eqref{eq:quadratic-large-sieve}。
+
+对行集的一个固定限制使正的外层和减小。
+对系数支集的一个固定限制通过把
+被省略的系数置零来实现。这两个观察都不容许一个任意
+同时依赖于行与列的掩码。下一个归约
+解决了由完备化指标的平方因子所产生的
+碰撞掩码。
+
+\begin{lemma}[完备化指标的二次归约]
+\label{lem:completed-quadratic-reduction}
+设 $K,N,B\ge1$。设 $\mathcal I$ 为任意一族满足 $q_k\ll K$ 的
+无平方因子主好理想 $k$。设 $n$ 取遍满足 $q_n\asymp N$ 的无平方因子主理想，
+并设 $b$ 取遍满足
+$q_b\asymp B$ 的主理想。理想 $n,b$ 可以包含 $S$ 中除
+$\lambda$ 以外的素数。设 $\beta(n,b)$ 为任意的、不依赖于 $k$ 的复系数。
+允许对 $\mathcal I$ 的固定限制以及对
+$(n,b)$-支集的固定限制。
+
+唯一地写 $b=gt^2$，其中 $g$ 无平方因子，并令
+$c=(n,g)$，$n=cm$，$g=ch$。于是 $c,m,h$ 两两互素且
+无平方因子。固定一组二进区间
+\[
+ q_c\asymp C,\qquad q_g\asymp G,\qquad q_t\asymp T,
+ \qquad B\asymp GT^2,
+\]
+其中所有比较常数都固定。设 $\mathcal Q_{C,G,T}(\beta)$
+为在 $k\in\mathcal I$ 上对（限制到该组区间的 $(n,b)$-和的）绝对值平方求和，
+其被加项为
+$\beta(n,b)\chi_k(nb)^3$。对一个无平方因子的好理想 $r$ 与固定的 $t$，
+设 $\mathcal D_r(t)$ 为三元组 $(c',m,h)$ 的集合，使得
+\[
+ c=rc',\qquad n=rc'm,\qquad b=rc'ht^2
+\]
+属于原来的支集且属于这些区间，并满足所述的
+$c,m,h$ 的无平方因子性与两两互素性。则
+\begin{equation}\label{eq:completed-quadratic-reduction}
+ \begin{split}
+ \mathcal Q_{C,G,T}(\beta)
+ \ll_\epsilon{}&(KNB)^\epsilon T
+ \sum_{q_t\asymp T}\ 
+ \sum_{\substack{r\ {\rm sf},\ (r,S)=1\\q_r\ll\min(K,C)}}
+ \left(\frac K{q_r}+\frac{NG}{C^2}\right)\frac C{q_r}
+ \sum_{(c',m,h)\in\mathcal D_r(t)}
+       |\beta(rc'm,rc'ht^2)|^2.
+ \end{split}
+\end{equation}
+空商区间贡献为零；所有有界区间，包括
+单位理想，都由固定的比较常数纳入。允许固定的射线
+扇区与有界的行标量。特别地，若
+$|\beta(n,b)|\le1$，则
+\begin{equation}\label{eq:completed-quadratic-norm}
+ \sum_{k\in\mathcal I}
+ \left|\sum_{n,b}\beta(n,b)\chi_k(nb)^3\right|^2
+ \ll_\epsilon (KNB)^\epsilon(K+NB)NB.
+\end{equation}
+常数可以依赖于固定支集的比较以及 $S$，但
+对系数以及允许的支集限制是一致的。
+\end{lemma}
+
+\begin{proof}
+分解式 $b=gt^2$ 允许 $g$ 与 $t$ 共享素因子。由于
+$nb=c^2mht^2$，零约定给出精确恒等式
+\begin{equation}\label{eq:completed-quadratic-zero-mask}
+ \chi_k(nb)^3=\chi_k(mh)^3\,1_{(k,ct)=1}.
+\end{equation}
+确实，一个平方在所显示的二次特征下具有六次幂；
+它在单位上为 1，在碰撞处为零。因此该恒等式当
+$n$ 或 $g$ 与 $t$ 共享一个素因子时也成立。
+
+对所选的区间有 $O(T)$ 个可能的 $t$。Hilbert 空间 Cauchy
+给出
+\[
+ \left\|\sum_{q_t\asymp T}F_t\right\|_2^2
+ \ll T\sum_{q_t\asymp T}\|F_t\|_2^2.
+\]
+在正的和中固定 $t$。条件 $(k,t)=1$ 现在是一个固定的行
+限制。对剩下的条件使用完整恒等式
+\[
+ 1_{(k,c)=1}=\sum_{r\mid(k,c)}\mu(r).
+\]
+对每个 $k$，可能的 $r$ 的个数至多为 $d_{\mathcal O}(k)$。
+逐行 Cauchy 随后对 $k$ 求和，代价为 $(KNB)^\epsilon$，
+并给出对固定的无平方因子好 $r$ 的正和。写
+$k=rk'$ 与 $c=rc'$。无平方因子性给出固定的行限制
+$(k',r)=1$ 与系数限制 $(c',r)=1$；满足
+$(r,t)>1$ 的项为零，否则 $(k',t)=1$ 是另一个固定的行限制。
+在单个 $r$-被加项中不再有剩余的 $(k',c')$ 条件：
+完整的碰撞掩码已被展开。一旦 $r$ 固定，$k$
+的固定射线扇区就成为 $k'$ 的固定扇区。
+
+因子 $\chi_r(mh)^3$ 是一个有界的列因子。把 $m,h$
+的支集在 $S$ 上的无平方因子部分与其好部分分开：
+$m=m_Sm_{\rm g}$ 与 $h=h_Sh_{\rm g}$。$m_S,h_S$ 只有有限多种
+选择。它们的符号是有界的行因子，而
+$j=m_{\rm g}h_{\rm g}$ 是无平方因子的好的，范数为 $O(NG/C^2)$。
+对固定的 $r,t,m_S,h_S$，按 $j$ 把剩余的列分组。若 $C_j$
+为所得的系数，则二次大筛法给出
+\[
+ \sum_{k'}\left|\sum_j C_j\chi_{k'}(j)^3\right|^2
+ \ll_\epsilon (KNB)^\epsilon
+       \left(\frac K{q_r}+\frac{NG}{C^2}\right)\sum_j|C_j|^2.
+\]
+外层的和可以保留其全部固定限制。在一个非空区间上，
+最后所显示式中的两个商长度都被一个固定正常数从下界住；
+把它们替换为各自与 1 的最大值只改变
+比较常数。
+
+对每个 $j$，分解为 $m_{\rm g},h_{\rm g}$ 的方式数是
+除数有界的。在其区间中有 $O(C/q_r)$ 个可能的 $c'$。因此对这两种
+选择作 Cauchy 给出
+\[
+ \sum_j|C_j|^2
+ \ll_\epsilon (KNB)^\epsilon\frac C{q_r}
+ \sum_{(c',m,h)\in\mathcal D_r(t)}
+          |\beta(rc'm,rc'ht^2)|^2.
+\]
+来自 $\chi_r$ 的有界列因子仅在这个正和中被丢弃。
+固定的坏部分符号是单位模的行因子，
+并在应用筛法之前已从外层的模中移除。
+这里的理想 $m,h$ 是原来的理想，
+由它们固定的 $S$-部分重构得到；$c'$ 的 $S$-部分未受影响。
+把各式结合即证明方程~\eqref{eq:completed-quadratic-reduction}。
+
+现在假设 $|\beta|\le1$。理想计数给出
+\[
+ \#\mathcal D_r(t)\ll
+       \frac C{q_r}\frac NC\frac GC.
+\]
+对 $q_r\asymp r_0$，它与前一个因子 $C/q_r$ 之积为
+$O(NG/r_0^2)$。在此区间中有 $O(r_0)$ 个可能的 $r$ 与 $O(T)$ 个
+可能的 $t$。由于 $B\asymp GT^2$，它们对方程~\eqref{eq:completed-quadratic-reduction} 的贡献
+至多为
+\[
+ (KNB)^\epsilon\frac{NB}{r_0}
+       \left(\frac K{r_0}+\frac{NG}{C^2}\right)
+ \ll (KNB)^\epsilon NB(K+NB).
+\]
+这里 $r_0,C,T$ 在一个非空区间上被从下界住，且 $G\ll B$。
+$C,G,T,r_0$ 的二进选择个数对范数区间是
+对数的。在 $C,G,T$ 块上作 Hilbert 空间三角不等式，随后对
+$\epsilon$ 重新标度，即证明方程~\eqref{eq:completed-quadratic-norm}。
+\end{proof}
+

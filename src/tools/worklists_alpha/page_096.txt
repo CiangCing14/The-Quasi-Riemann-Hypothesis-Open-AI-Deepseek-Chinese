@@ -1,4 +1,0 @@
-PAGE 96   (pdf glyphs vs Chinese macros)
-EUFM -> \mathfrak : pdf 2 glyph(s) r2 | zh 0
-   \mathfrak r  y  402.6 x  335.9   line: Z r ρ k
-   \mathfrak r  y  473.5 x  490.1   line: Split the valuation-one primes into the squarefree product k supported on S ∪ supp( f r ) and

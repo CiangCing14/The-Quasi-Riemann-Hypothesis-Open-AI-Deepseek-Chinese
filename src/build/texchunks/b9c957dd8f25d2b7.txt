@@ -1,4 +1,0 @@
-\section{带饱和见证的零点检测器}\label{sec:detector}
-高展开式中包含一个对六次方无因子行 \(u\) 的求和。
-我们将每个非主行与其所确定的有限特征表示族的一个带缓冲的无零矩形相关联。
-只要所得的分箱位于一个固定下界之上，一个零点就产生一个逆多项式和一个具有同时下界的普通多项式。 这些见证随后可以用不同的均值估计来计数。 这里的解析输入是引理~\ref{lem:logarithmic-control}、引理~\ref{lem:smooth-calculus} 的光滑演算，以及方程~\eqref{eq:hecke-growth} 中的全局增长估计，连同引理~\ref{lem:deleted-euler-factors} 的删除欧拉因子界。

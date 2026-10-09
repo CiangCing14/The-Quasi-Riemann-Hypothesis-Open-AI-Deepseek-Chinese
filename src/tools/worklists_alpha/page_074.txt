@@ -1,8 +1,0 @@
-PAGE 74   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 6 glyph(s) D3 B3 | zh 0
-   \mathcal D  y  181.6 x  149.5   line: The domain D in the lemma is important. Suppose a reciprocal is bounded only while the
-   \mathcal B  y  415.6 x  492.7   line: with β > σ , put z = 17 / 50 , and let U = Z d with 0 < d ≤ d ≤ d < ∞ . Let B be a
-   \mathcal B  y  483.4 x  416.7   line: heights |ℑ s | ≤ c T , |ℑ w | ≤ c T and |ℑ z | ≤ c T . The contribution of B on the starting lines
-   \mathcal B  y  593.1 x  480.6   line: Proof. Section 8 gives a ≤ β , including the floor bin. Isolate the finite sum over B on the
-   \mathcal D  y  620.2 x  229.1   line: β + 20 e . These moves stay in D ( ϵ ) for a fixed positive ϵ , the two numerator arguments
-   \mathcal D  y  735.3 x  473.0   line: ℜ w ≥− 6 e > − 1 / 100 and ℜ z = z . Thus the correction remains holomorphic in D ( ϵ ) , for

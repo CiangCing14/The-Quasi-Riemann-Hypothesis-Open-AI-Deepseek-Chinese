@@ -1,0 +1,253 @@
+\section{引言}\label{sec:introduction}
+
+令 $F=\mathbb Q(\sqrt{-3})$，设 $\mathcal O$ 为其整数环，并记 $N\mathfrak a=|\mathcal O/\mathfrak a|$ 为非零整理想的范数。模一个非零整理想 $\mathfrak f$ 的有限阶 Hecke 特征 $\eta$ 是模 $\mathfrak f$ 的射线类群的一个特征，并零延拓到与 $\mathfrak f$ 不互素的理想上。这与通常的有限阶伊代尔定义一致：复位不贡献任何非平凡有限阶连续特征 \cite[第 VI 章，第 1 节]{MilneCFT}。对 $\Re s>1$，置
+\[
+ L_F(s,\eta)=\sum_{\mathfrak a\ne0}
+       \frac{\eta(\mathfrak a)}{(N\mathfrak a)^s}
+ =\prod_{\mathfrak p}
+       \left(1-\eta(\mathfrak p)(N\mathfrak p)^{-s}\right)^{-1}.
+\]
+同一记号也用以表示其亚纯延拓。对模 $q$ 的 Dirichlet 特征 $\chi$（在非单位上零延拓），我们同样写
+\[
+ L(s,\chi)=\sum_{n\ge1}\frac{\chi(n)}{n^s}
+ \qquad(\Re s>1)
+\]
+然后将其亚纯延拓；模 $1$ 的特征给出黎曼 zeta 函数 $\zeta(s)$。此处的问题是一致排除：寻找一个常数 $\sigma_0<1$，它与特征、其导子及高度无关，使得这些函数在 $\Re s>\sigma_0$ 内无零点。
+
+仅对 $\zeta$ 而言，存在固定的 $\sigma_0<1$ 使得 $\zeta(s)\ne0$ 于 $\Re s>\sigma_0$，这称为拟黎曼假设 \cite[第 1 节]{BCSS}。它要求一个在每个高度都成立的间隙，而不仅仅是在 $\Re s=1$ 上的非零。关于所有 Dirichlet 特征的相应一致表述出现在 \cite[第 288 页，方程 (1.4) 及其后一段]{FG} 中。
+
+这些函数与素数分布之间的联系有着悠久的历史。Dirichlet 在 1837 年关于每个既约等差数列中素数无穷多的证明引入了分离剩余类的特征 $L$ 级数 \cite{Dirichlet}。Riemann 1859 年的论文将 $\zeta$ 的零点与素数分布联系起来，并提出了临界线猜想 \cite{Riemann}。Hadamard 和 de la Vall\'ee Poussin 于 1896 年独立证明了 $\zeta$ 在 $\Re s=1$ 上无零点，从而得到素数定理 \cite{Hadamard,ValleePoussin}。Hecke 随后发展了特征 zeta 函数及其在数域上的解析理论 \cite{Hecke}。
+
+Hecke $L$ 函数的经典无零点区域随着导子或高度的增大而逼近直线 $\Re s=1$，并可能允许一个单实例外零点；关于阿贝尔扩张的一个精确形式由 \cite[定理 3.1]{TZ} 给出。这类区域不能给出固定半平面内的一致排除。零点密度估计处理的是另一个问题：它们给出位于给定竖直线右侧的零点数目的上界。例如，Guth 和 Maynard 的大值估计改进了 $\zeta$ 的零点密度界 \cite[定理 1.2]{GM}，但这些零点密度界并不排除每一个零点。
+
+\begin{theorem}\label{thm:main}
+$F=\mathbb Q(\sqrt{-3})$ 上的每个有限阶 Hecke $L$ 函数在 $\Re s>7/8$ 内无零点。对每个 Dirichlet $L$ 函数（包括 $\zeta(s)$）同样成立。允许主特征在 $s=1$ 处有极点。
+\end{theorem}
+
+特别地，定理~\ref{thm:main} 肯定地解决了拟黎曼假设：$\zeta$ 的非平凡零点（即其在 $0<\Re s<1$ 中的零点）实部的上确界至多为 $7/8$。边界 $\Re s=7/8$ 不包含在内，而 $(7/8,1)$ 中的任何例外实零点均被排除。该定理并未建立黎曼假设或其推广形式，后者将非平凡零点置于 $\Re s=1/2$ 上。黎曼假设仍然未决 \cite{Clay}。
+
+Kubota 的 metaplectic 理论与 Patterson 的三次 theta 级数提供了自守框架 \cite{Kubota,Patterson}。我们使用 Dunn 和 Radziwi\l\l{} 记录的无条件显式尖点展开 \cite[第 5 节与附录 A]{DR}；他们以 GRH 为条件的素数渐近不作为输入。相应的一阶矩渐近在一份独立手稿中被无条件证明 \cite[定理~1.1]{OpenAICubicFirstMoment}；该结果在此亦未被使用。命题~\ref{prop:completed-reflection} 推导出此处所用的反射，同时保留特征的零于非单位上的限制。
+
+特征大筛法论证建立在 Goldmakher 和 Louvel 的二次 Hecke 族估计 \cite[定义 1 与定理 1.1]{GL}、Blomer、Goldmakher 和 Louvel 的高阶范数递推 \cite[定理 1.3 与第 3 节]{BGL}，以及 Heath-Brown 的三次估计 \cite[定理 2]{HB} 之上。我们在引理~\ref{lem:sextic-large-sieve} 中证明此处所需的确切六次特殊化，利用配对的剩余特征在主生成元约定下实现该递推。Gao 和 Zhao 也记录了 Eisenstein 整数形式 \cite[引理 2.9]{GZSextic}。递推矩论证与 Heath-Brown 二次方法的框架相关 \cite[第 2 节]{HBQuadratic}。我们还使用通常的 Hecke 函数方程 \cite[方程 (1.1)]{GZ} 以及固定射线类中的素数计数 \cite[定理 1.1]{TZ}。
+
+第一阶段使用的平面加性大筛法是经典的；可与 Huxley 的多变量与数域不等式 \cite{Huxley} 以及 \cite[第 3 节，定理 3]{BaierBansal} 中的 Poisson 证明相比较。我们给出一个直接的 Eisenstein 格证明，以记录既约分数展开所需的正规化。David、de Faveri、Dunn 和 Stucky 结合 Patterson 系数、三次大筛法和磨光矩，证明一个三次 Hecke 族的正比例部分在 $s=1/2$ 处非零 \cite[定理 1.1 与第 1.2 节]{DFDS}。下面的零点探测器使用经典的截断逆机制；可与 \cite[附录 C]{MP} 相比较，而关于高阶特征的密度应用见 \cite[推论 1.6 与第 5 节]{BGL}。
+
+证明分为两个阶段，每个阶段都比较一个完备化三次 theta 和的两个表示，但在延拓论证中使用不同的正规化和。部分~\ref{part:eleven-twelfths} 在定理~\ref{thm:eleven-twelfths} 中证明相应的 $11/12$ 断言，已对两个族得到固定的无零点半平面。部分~\ref{part:seven-eighths} 从该结论出发，引入素数补偿、非对称尺度以及两个额外的矩估计。此处发展的贡献是构造这些相容的反射比较与 Poisson 比较（包括主留数），其正指数余量的选取独立于目标特征。
+
+\subsection*{证明概览}
+
+\paragraph{一个共同的延拓原理。}
+解析论证从 $F$ 上的本原有限阶 Hecke 特征族开始。令 $\beta_*$ 为 $1/2$ 与它们在 $1/2\le\Re s\le1$ 中零点实部的上确界；极点不包含在内。非本原特征在 $\Re s>0$ 中具有相同的可能零点，因为有限多个被略去的 Euler 因子在该处非零。若 $\beta_*$ 超过所提议的边界 $\sigma_0$，则任务是把每个目标倒数延拓跨过 $\beta_*$ 左侧一个共同的正距离。
+
+节~\ref{sec:analytic-reduction} 给出精确的判别准则。对每个目标 $\eta$ 及大的实尺度 $Z$，它在删去有限多个 Euler 因子并乘以一个有界远离零的全纯因子之后，将一个正规化特征和与一个包含 $1/L_F(s,\eta)$ 的 Mellin 积分相比较。对和的直接界以及其与该积分之差的幂次节省界蕴含所需的延拓。两部分在 Mellin 积分中使用 $Z$ 的不同仿射幂，应用同一原理：
+\[
+ C_{\mathrm I}(s)=s-\frac23,\qquad
+ C_{\mathrm{II}}(s)=s-\frac{11}{16}.
+\]
+因此共同的解析原理并不使两个正规化和相同。只有正的幂次余量必须独立于 $\eta$；固定特征的常数与下阈值可以依赖于它。
+
+\paragraph{完备化和。}
+节~\ref{sec:arithmetic} 建立 $\mathcal O$ 上的六次剩余特征，始终保留其在非单位上的零值。节~\ref{sec:probe} 中的基础和把这些特征与一个固定目标 $\eta$ 对光滑化的三次 theta Fourier 系数取平均。在 theta 展开中固定的重标度之后，完备化指标为 $cn^3$，其中 $c,n\in\mathcal O$ 模 $3$ 同余于 $1$ 且 $c$ 无平方因子。变量 $c$ 与 $n$ 可以共享素因子。此处完备化意味着保留完整的立方因子 $n^3$，而不是把指标限制到其无平方因子部分。目标特征与一个有限射线类相位作用在整个乘积 $cn^3$ 上，而不是分别作用在其两个因子上。
+
+所得完备化基础和有两个精确表示。命题~\ref{prop:completed-reflection} 中的反射变换其 theta 系数，同时在所得公式中保留特征的零点。Poisson 求和变换平均变量。其非零频率形如 $ua^6$，其中 $u,a\in\mathcal O$ 且 $u$ 无六次幂因子：即 $u$ 的每个素赋值至多为五。节~\ref{sec:local-euler} 随后通过 Hecke $L$ 函数的商与一个受控的 Euler 乘积来表示每个此类行的贡献。当 $u=1$ 时，该商包含目标函数的倒数。
+
+\paragraph{平衡的第一阶段。}
+在部分~\ref{part:eleven-twelfths} 中，两个平均尺度均为 $Z^{1/2}$。在反射一侧，基础和分离为一个完备化 theta 行与一个加性多项式。二次大筛法给出反射行的均方的界。展开加性多项式产生 $\mathbb C/\mathcal O$ 中的既约分数；它们的间距与系数质量给出所需的平面大筛法界。Cauchy--Schwarz 不等式把命题~\ref{prop:balanced-low} 中的两个范数结合起来。这一直接估计不使用后来的逆矩递推。
+
+在 Poisson 一侧，中间行按其范数以及对于每个行所确定的有限 Hecke 扭转族在有界高度矩形中零点的位置进行分组。节~\ref{sec:detector} 为这些族分配无零点矩形。当某个行实部有一个高于探测器固定下界的被选取的零点时，它产生两个大的 Dirichlet 多项式：一个带理想 M\"obius 系数，表示一个截断的倒数，另一个不带这些系数。它们有一个共同的行特征和一个共同的扭转高度。部分~\ref{part:eleven-twelfths} 在其行计数中仅使用逆多项式。在行的素赋值至少为二的部分被固定之后，六次大筛法应用于其无平方因子部分；命题~\ref{prop:sextic-row-count} 给出所得的计数。位于下界的行以及其余的小范数区间与大范数区间直接估计。
+
+主行单独处理。其留数连同局部 Euler 恒等式给出目标 Mellin 积分的一个非零标量倍数。在正规化之后，直接估计与剩余行估计以 $C_{\mathrm I}(s)=s-2/3$ 验证共同的延拓判别准则。这证明了定理~\ref{thm:eleven-twelfths}。即使对于关于 $\zeta$ 的推论，也需要整个族，因为 Poisson 行引入了目标的有限阶 Hecke 扭转。
+
+\paragraph{精细化的第二阶段。}
+部分~\ref{part:seven-eighths} 保留完备化支集与共有的算术恒等式，但修改基础和。选定的素因子提供局部补偿，以消去一个不需要的 Euler 贡献，且两个平均尺度不再相等。在新的留数计算与标量正规化之后，相应的 Mellin 信号使用 $C_{\mathrm{II}}(s)=s-11/16$。正规化和的低估计再次直接由反射能量与一个加性均方估计得出；节~\ref{sec:compensated-low} 对修改后的和证明它。
+
+高估计使用零点探测器提供的两个多项式。对于 $(0,\infty)$ 上光滑紧支的 $W$、尺度 $D>0$ 及有限阶 Hecke 特征 $\psi$，它们的基本形式为
+\[
+ D^{-1/2}\sum_{\mathfrak a\ne0}\mu(\mathfrak a)\psi(\mathfrak a)
+       W(N\mathfrak a/D),\qquad
+ D^{-1/2}\sum_{\mathfrak a\ne0}\psi(\mathfrak a)W(N\mathfrak a/D),
+\]
+其中 $\mu$ 是理想 M\"obius 函数。在探测器下界之上的指定中间范数区间中，每个保留下来的行都有一个大的逆多项式和一个大的普通多项式，二者有一个共同的行特征和扭转高度。对其矩的界限制了此类行的数目。节~\ref{sec:refined-row-counts} 结合这两个界，在较大的中间范数区间中使用整数幂与选定的素因子。小范数区间与大范数区间以及下界类仍为直接估计。
+
+这两个矩界需要分别归纳。节~\ref{sec:inverse} 证明一个逆多项式乘以互不相交素数集上的和的二阶矩估计（引理~\ref{lem:marked}）。其递推步骤使用两个有限 Poisson 变换以缩短行区间，反射能量提供终端界。节~\ref{sec:plain} 证明两个普通多项式之积的均方估计，同样带有允许的素因子（引理~\ref{lem:plain}）。通常的 Hecke 反射在每一阶段缩短长度区间；递推步骤使用两个有限 Poisson 变换。
+
+普通估计根据是否存在素因子而保留不同的行族。当存在它们时，它排除其本原诱导特征属于由目标与辅助射线特征生成的固定有限群的行；当不存在它们时，它仅排除主诱导特征。该有限族中的变换行在归纳中单独处理。直接的体积界处理非中心化乘积。对于具有相同两个剖面且尺度乘积相等的两个乘积之差，共同的主项相互抵消。此抵消仅用于该中心化表达式，而不用于有限诱导特征族中的每一个行。
+
+节~\ref{sec:conclusion} 把所得的行计数与补偿展开、其局部误差、围道尾部以及主留数结合起来。在正规化之后，它们的界在 $7/8$ 处验证延拓判别准则中的第二个比较。
+
+\paragraph{向 Dirichlet $L$ 函数的转移。}
+最终的转移在两个边界处相同。将 Dirichlet 特征 $\chi$ 与理想范数复合，得到 $F$ 上的一个 Hecke 特征。除去有限多个 Euler 因子之外，二次因子分解把其 $L$ 函数写为附属于 $\chi$ 与 $\chi\chi_{-3}$ 的 Dirichlet $L$ 函数之积，其中 $\chi_{-3}$ 是 $F/\mathbb Q$ 的二次特征。被略去的因子在 $\Re s>0$ 中非零，主极点单独处理。因此每个 Hecke 半平面都转移到所有 Dirichlet 特征，从而完成两个阶段。
+
+\subsection*{素域上的最小非剩余与平方根}
+
+固定的 Dirichlet 无零点半平面还使以下经典推论成为无条件的。
+
+\begin{corollary}\label{cor:nonresidues-square-roots}
+存在绝对常数 $A,C>0$，使得对每个奇素数 $p$，最小的正二次非剩余 $n(p)$ 满足
+\[
+ n(p)\le C(\log p)^A.
+\]
+特别地，$n(p)\ll_\delta p^\delta$ 对每个 $\delta>0$ 成立，从而证明 Vinogradov 的最小二次非剩余猜想 \cite[猜想 1.1]{TaoNonresidues}。给定一个奇素数 $p$ 以及二进制表示下的 $a\in\mathbb F_p$，存在一个运行时间为 $\log p$ 的多项式的确定性算法，返回 $a$ 的一个平方根或报告不存在平方根。
+\end{corollary}
+
+\begin{proof}
+由定理~\ref{thm:main} 与函数方程，每个本原 Dirichlet $L$ 函数的非平凡零点位于 $1/8\le\Re s\le7/8$。因此它们位于严格更大的带形域 $1/16<\Re s<15/16$ 中。这以 $\epsilon=7/16$ 提供了 Bhargava、Ivanyos、Mittal 和 Saxena 的弱 GRH 假设 \cite[猜想 6.3 与定理 6.7]{BIMS}。他们对最小二次非剩余的界给出所断言的不等式，例如取 $A=32$；此处无需优化。对每个 $\delta>0$ 的断言随之成立，因为 $\log p$ 的每个固定幂都是 $O_\delta(p^\delta)$。
+
+对于算法，先处理 $a=0$，并用 Euler 判别法检验非零的 $a$。若 $a$ 是平方数，则扫描 $2,3,\ldots$ 直到找到二次非剩余，用每个候选的 Legendre 符号检验之。刚刚证明的界使这成为多项式时间的确定性搜索；其停止规则不需要知道 $C$。将所得的二次非剩余用于 Tonelli--Shanks 算法 \cite[第 2.9 节，算法 3 与引理 2.9.5]{Galbraith}。所有剩余步骤都是确定性的，且是 $\log p$ 的多项式。将 $p-1=2^e u$ 写成 $u$ 为奇数，只需移除因子二，而不需要分解 $u$。
+\end{proof}
+
+\section{从一个共同信号到无零点半平面}
+\label{sec:analytic-reduction}
+
+证明的两部分使用相同的解析原理。一个特征和被直接估计，同时也与一个包含目标 $L$ 函数倒数的 Mellin 积分相比较。两个比较中的幂次节省随后把该倒数延拓跨过最右的可能零点。我们证明此原理对于可变边界成立，从而可以在 $11/12$ 与 $7/8$ 处应用它，而无需重复论证。
+
+全文设 $F=\mathbb Q(\sqrt{-3})$。只需考虑本原目标特征。事实上，由本原特征 $\eta$ 诱导的特征，其 $L$ 函数与 $L_F(s,\eta)$ 相差有限多个因子 $1-\eta(\mathfrak p)N\mathfrak p^{-s}$，它们在 $\Re s>0$ 时均非零。定义
+\begin{equation}
+ \beta_* = \sup\left(\{1/2\}\cup
+ \left\{\Re\rho:\begin{array}{l}
+  1/2\le\Re\rho\le1,\quad L_F(\rho,\eta)=0\\
+  \text{对某个本原有限阶 Hecke 特征 }\eta
+ \end{array}\right\}\right).
+ \label{old-eq:1.1b}
+\end{equation}
+极点不包含在内。Euler 乘积的绝对收敛排除了 $\Re s>1$ 中的零点，故 $1/2\le\beta_*\le1$。
+
+对素理想的有限集 $\mathcal S$，上标 $\mathcal S$ 表示相应的 Euler 因子已被删去：
+\[
+ L_F^{\mathcal S}(s,\eta)
+ =L_F(s,\eta)\prod_{\mathfrak p\in\mathcal S}
+       (1-\eta(\mathfrak p)N\mathfrak p^{-s}).
+\]
+局部值在分歧素理想处为零。所显示的每个因子在 $\Re s>0$ 时非零，故删去有限多个因子既不会在该处产生也不会移除零点。
+
+\begin{proposition}[从共同信号出发的延拓]
+\label{lem:continuation-criterion}
+固定 $\sigma_0\in(1/2,1)$，并假设 $\Delta_0=\beta_*-\sigma_0>0$。令 $C(s)=s+c$，其中 $c\in\mathbb R$ 固定。假设数 $\omega,\sigma$ 满足
+\[
+ 0<\omega<\Delta_0,\qquad \sigma>0
+\]
+可以独立于目标特征选取。对每个本原有限阶 Hecke 特征 $\eta$，假设存在有限集 $\mathcal S$、$\Re s>\sigma_0$ 上的全纯函数 $H_\eta$，以及对所有充分大的实数 $Z$ 定义的函数 $J_\eta(Z)$，使得
+\begin{equation}
+ \sup_{\Re s>\sigma_0}|H_\eta(s)-1|\le\frac12.
+ \label{eq:signal-euler-contract}
+\end{equation}
+对 $Z>0$，定义
+\begin{equation}
+ f_\eta(Z)=\frac1{2\pi i}\int_{\Re s=2}
+ Z^{C(s)}e^{(s-5/6)^2}
+ \frac{H_\eta(s)}{L_F^{\mathcal S}(s,\eta)}\,ds.
+ \label{eq:common-residue}
+\end{equation}
+假设当 $Z\to\infty$ 时，
+\begin{align}
+ |J_\eta(Z)|&\ll_\eta Z^{C(\sigma_0)+\omega},
+       \label{eq:low-probe-contract}\\
+ |J_\eta(Z)-f_\eta(Z)|&\ll_\eta Z^{C(\beta_*)-\sigma}.
+       \label{eq:high-probe-contract}
+\end{align}
+隐含常数、下阈值、被排除的集合以及函数 $H_\eta$ 可以依赖于 $\eta$。那么这些假设与 $\beta_*>\sigma_0$ 矛盾。
+\end{proposition}
+
+\begin{proof}
+令
+\[
+ \epsilon_*:=\min\{\Delta_0-\omega,\sigma\}>0.
+\]
+因为 $C$ 的斜率为一，三角不等式给出
+\begin{equation}
+ |f_\eta(Z)|\ll_\eta Z^{C(\beta_*)-\epsilon_*}
+ \qquad (Z\ge Z_{0,\eta}).
+ \label{eq:uniform-saving}
+\end{equation}
+此外 $\epsilon_*\le\Delta_0-\omega<\Delta_0$，故 $\beta_*-\epsilon_*>\sigma_0$。
+
+我们还需要 $Z\downarrow0$ 时的控制。由方程~\eqref{eq:signal-euler-contract}，$H_\eta$ 在 $\Re s>\sigma_0$ 上有界。倒数 Euler 乘积在 $\Re s\ge2$ 上绝对且一致有界。在每个固定带形域 $2\le\Re s\le B$ 上，方程~\eqref{eq:common-residue} 中的 Gauss 函数为 $O_B(e^{-(\Im s)^2})$。因此矩形上的 Cauchy 定理把围道移动到任意固定的 $B>2$，其中水平积分趋于零。从而
+\[
+ |f_\eta(Z)|\ll_{\eta,B}Z^{B+c}\qquad(0<Z\le1).
+\]
+由于 $B$ 任意，该信号在零处具有任意快的幂衰减。
+
+此界与方程~\eqref{eq:uniform-saving} 表明
+\[
+ F_\eta(s):=\int_0^\infty f_\eta(Z)Z^{-C(s)}\,\frac{dZ}{Z}
+\]
+在 $\Re s>\beta_*-\epsilon_*$ 上局部一致收敛。在每个紧子集上，选取 $B$ 大于零附近积分所出现的所有实部，并在无穷远处使用方程~\eqref{eq:uniform-saving}。因此 $F_\eta$ 在该半平面上全纯。
+
+我们在不移动围道跨过零点的前提下辨认此 Mellin 变换。令
+\[
+ A_\eta(s)=e^{(s-5/6)^2}
+             \frac{H_\eta(s)}{L_F^{\mathcal S}(s,\eta)}
+ \qquad(\Re s>1).
+\]
+函数 $A_\eta(2+it)$ 关于 $t$ 连续且可积。写 $Z=e^u$，则方程~\eqref{eq:common-residue} 变为
+\[
+ e^{-(2+c)u}f_\eta(e^u)
+   =\frac1{2\pi}\int_{\mathbb R}e^{itu}A_\eta(2+it)\,dt.
+\]
+由两个端点估计，左端关于 $u$ 可积。因此通常的 Fourier 反演给出 $F_\eta(2+it)=A_\eta(2+it)$ 对每个实 $t$ 成立。两端在 $\Re s>1$ 上全纯，故由恒等定理有
+\[
+ F_\eta(s)=e^{(s-5/6)^2}
+             \frac{H_\eta(s)}{L_F^{\mathcal S}(s,\eta)}
+ \qquad(\Re s>1).
+\]
+
+方程~\eqref{eq:signal-euler-contract} 蕴含在 $\Re s>\sigma_0$ 上 $|H_\eta(s)|\ge1/2$。因此
+\[
+ e^{-(s-5/6)^2}\frac{F_\eta(s)}{H_\eta(s)}
+ \qquad(\Re s>\beta_*-\epsilon_*)
+\]
+是 $1/L_F^{\mathcal S}(s,\eta)$ 的一个全纯延拓。数 $\epsilon_*$ 的选取独立于 $\eta$。由 $\beta_*$ 的定义，某个目标的零点 $\rho$ 满足 $\Re\rho>\beta_*-\epsilon_*$。其倒数在 $\rho$ 处有极点，而被删去的因子在该处非零。这与延拓矛盾。
+\end{proof}
+
+命题~\ref{lem:continuation-criterion} 中的高估计是相对于 $C(\beta_*)$ 而非相对于 $C(\sigma_0)$ 度量的。当某个行贡献达到低尺度但仍相对于假设的最右零点有幂次节省时，这一区别是重要的。部分~\ref{part:eleven-twelfths} 使用
+\[
+ \sigma_0=\frac{11}{12},\qquad C(s)=s-\frac23,
+ \qquad C(\sigma_0)=\frac14,
+\]
+而部分~\ref{part:seven-eighths} 使用
+\[
+ \sigma_0=\frac78,\qquad C(s)=s-\frac{11}{16},
+ \qquad C(\sigma_0)=\frac3{16}.
+\]
+只有正的幂次余量必须对目标一致。在两个应用中，固定特征的常数、被排除的集合以及充分大的下阈值都可以依赖于它。
+
+\clearpage
+\part{拟黎曼假设}
+\label{part:eleven-twelfths}
+
+\section{第一个无零点半平面}
+\label{sec:first-stage}
+
+我们首先利用基本的完备化三次 theta 和证明一个固定的无零点半平面。这分离出排除零点的机制，先于为更精细边界所需的额外估计被引入。
+
+\begin{theorem}[在 $11/12$ 处的半平面]
+\label{thm:eleven-twelfths}
+$F=\mathbb Q(\sqrt{-3})$ 上的每个有限阶 Hecke $L$ 函数在 $\Re s>11/12$ 内无零点。对每个 Dirichlet $L$ 函数（包括 $\zeta(s)$）同样成立。允许主特征在 $s=1$ 处有极点。
+\end{theorem}
+
+对 Hecke 断言，假设反证法有
+\begin{equation}
+ \Delta_1:=\beta_*-\frac{11}{12}>0.
+ \label{eq:first-stage-gap}
+\end{equation}
+证明将构造一个具有两个精确表示的特征和。三次 theta 反射在一个初等加性大筛法估计之后给出该和的界。Poisson 求和把同一个和表示为一个主 Mellin 信号与一族剩余特征行。一个零点探测器与六次大筛法控制这些行。这些估计以边界 $11/12$ 验证命题~\ref{lem:continuation-criterion}。
+
+方程~\eqref{old-eq:1.1b} 中的固定族是必要的，即使所需推论涉及 $\zeta$：Poisson 表示引入了目标的有限阶 Hecke 扭转。证明整个族范围的断言还提供了在部分~\ref{part:seven-eighths} 开头所使用的精确输入。
+
+\section{算术与解析预备}\label{sec:arithmetic}
+
+两部分使用相同的算术约定与解析估计。本节固定剩余符号，即使对于主幂也保留其零值，并证明用于变换特征和的 Gauss 恒等式与互反恒等式。随后它建立一个光滑范数剖面的演算，以及在一个已知无零点圆盘上 Hecke $L$ 函数的一致界。这些是平衡论证的共同预备。
+
+\subsection{算术记号与系数类}
+
+令 $F=\mathbb Q(\sqrt{-3})$，令
+$\omega=e^{2\pi i/3}$，并置
+\[
+ \mathcal O=\mathbb Z[\omega],\qquad
+ \lambda=\sqrt{-3}=\omega-\omega^2=1+2\omega.
+\]
+对元素 $a$ 记 $q_a=|a|^2=N_{F/\mathbb Q}(a)$，对 $a\ne0$ 记 $\alpha(a)=a/|a|$。同一记号 $q_{\mathfrak a}$ 表示一个非零理想的范数。环 $\mathcal O$ 关于此范数是欧几里得的：$\mathbb C$ 中的点到三角格 $\mathcal O$ 的距离至多为 $1/\sqrt3<1$，这给出欧几里得除法。特别地每个理想都是主的。六个单位是 $\{\pm1,\pm\omega,\pm\omega^2\}$，它们的像是 $\mathcal O/3\mathcal O$ 的六个单位。因此每个与 $3$ 互素的理想都有唯一的同余于 $1\pmod3$ 的生成元；我们称此生成元为主生成元。主生成元的乘积是主的。
+
+在下面的特征多项式估计中，行是特征多项式的外层指标，而列是求和于其内的一个理想指标或理想指标元组。标记是区分族中各部分的辅助指标。一个标记是被平均还是局部冻结是相对于当前和而言的；冻结它并不使它成为固定算术数据的一部分。
+
+对任何给定调用中的算术数据，从一开始就固定一个素理想的有限集 $S$，它包含 $6$ 之上的素数，以及该数据中每个有限阶特征表示的定模之素支集，和用于表示它们的固定有限射线群的素支集。对一个特征表示，其定模支集恰好由它被零延拓的素数组成，包括非本原表示中的任何冗余素数。一个固定特征包括其整个零延拓表示以及通过它被表示的有限射线群，所有这些都独立于 $Z$、当前行和被平均的标记而固定。固定数据可以依赖于事先固定的目标。特别地，每个这样的特征在 $S$ 之外的每个素数处模为一。我们还写 $\mathcal S=S$。我们称 $S$ 之外的素数为好素数，并称一个理想为好理想，若其所有素因子都位于 $S$ 之外。除非指定了不同的支集，理想和排除 $S$ 并使用主生成元。我们用 “sf” 表示无平方因子，用 $\mu$ 表示理想 M\"obius 函数。相比之下，元素行可以带有任意的素数幂和单位因子。

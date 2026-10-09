@@ -1,6 +1,0 @@
-PAGE 58   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 4 glyph(s) A2 M2 | zh 0
-   \mathcal A  y   77.2 x  271.1   line: m A ,ϵ
-   \mathcal A  y   95.4 x  486.8   line: A
-   \mathcal M  y  192.1 x  215.0   line: = M W ( s ) U r ( s + σ − iω − 1 / 2) L ( s + σ − iω, ψ ) − 1 ds.
-   \mathcal M  y  219.8 x   96.8   line: Here M W is the Mellin transform defined in Lemma 4.5 . The twist occurs in the L -argument,

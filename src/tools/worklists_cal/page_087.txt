@@ -1,4 +1,0 @@
-PAGE 87   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
-
-CAL A  y  289.8 x  489.8- 498.5
-      line: We use the plain and inverse polynomials, annular profiles, and fixed arithmetic datum A from

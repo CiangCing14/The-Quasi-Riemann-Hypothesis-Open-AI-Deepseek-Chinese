@@ -1,6 +1,0 @@
-PAGE 95   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL O  y   77.2 x  322.4- 329.1
-      line: O
-CAL H  y  220.9 x   96.5- 105.7
-      line: H ≪ ( KNBL ) ϵ X X X β ( n, b ) χ ′ ( nb ) 3 X √ D χ ′ ( n ) − 2 1 . (14.8)

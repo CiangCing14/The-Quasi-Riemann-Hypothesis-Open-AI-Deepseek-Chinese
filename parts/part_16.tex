@@ -1,0 +1,546 @@
+因此，方程~\eqref{eq:holomorphic-selected-tuple} 中的元组和在这个动态
+区域上分解为 $\mathcal H_{\eta,u}\prod_i\mathcal B_i$。代入
+$\mathcal B_i=\mathcal Q_i+\mathcal D_i$ 证明了
+方程~\eqref{eq:dynamic-compensated-decomposition}。这一分解
+不会被用来把修正延拓到当前区域之外。
+
+对 $p\nmid u$，方程~\eqref{old-eq:5.13b} 以及关于
+$\mathcal E_p$ 的估计给出
+\[
+ |H_p(\mathcal B_p+\overline{\chi_p(u)})|
+ \ll Q^{-x_r+2\vartheta}+Q^{-6z_r+2\vartheta}
+       +Q^{4-5x_r-6z_r+2\vartheta}
+       +Q^{1-w_r-6z_r+\vartheta}
+ \ll Q^{-51/100}.
+\]
+这四个指数分别被
+$-a-4e$、$-51/25+12e$、$49/25-5a-68e$，以及
+$a-51/25+12e$ 所界。除以有界的 $H_p$ 保持这一
+估计。每个槽中素数的个数依理想
+计数为 $O(P_i)$；因此其来自 $p\nmid u$ 的总贡献，包括
+$Q^{z-1}$，为 $O(P_i^{z_r-51/100+\epsilon})$。
+
+对 $p\mid u$，可能的标记只有除子那么多个。一个
+$\mathcal E_p$ 中的单项式在 $Q^{z-1}\mathcal B_p$ 中被乘以 $Q^{z-1+x}$，所以
+在分离出 $Q^z$ 之后，其指数为 $x_r-1$ 加上该单项式的指数。对于六次赋值表的
+非尾部边界项，这些指数在
+$e=0$ 时为
+\[
+\begin{array}{c|ccccc}
+ j&1&2&3&4&5\\\hline
+ &a-2&1/2-2a&-a,\ 1-3a&1/2-2a&2-5a.
+\end{array}
+\]
+在正的 $e$ 处，它们的变化分别是
+$+6e,-32e,(-26e,-48e),-42e,-80e$。在所述范围内它们都严格
+小于 $-1/2$。公共的 $R$ 项还要更小：
+它分离出 $Q^z$ 之后的指数至多为 $49/25-1-5a-80e<-1/2$。
+额外的赋值对与 $m$ 值的比值为
+$|R|\le Q^{-11/10}$ 与 $|V|=Q^{-51/25}$，所以它们的几何和
+保持这些界。带有额外
+$V$ 的严格第二族项在这一
+正规化之后也小于 $Q^{-1/2}$。
+
+唯一剩余的项是严格的
+$(e_0,l,k,m)=(1,0,1,0)$ 项，它对 $j\ge2$ 出现，为
+$-\eta(p)(Q-1)Q^{-x-w}$。它在分离出 $Q^z$ 之后的指数为 $-w_r$。
+显式的重标度项 $-Q^{-w}$ 在分离出 $Q^z$ 之后的指数为
+$-1-w_r<-1/2$，所以它无需进一步的估计。
+
+设 $\mathfrak f_u$ 为 $\psi_u^*$ 的导子。写
+$u=\epsilon_u\prod_{p\mid u}p^{j_p}$，其中 $\epsilon_u$ 是一个单位。
+对与 $uS$ 互素的主的 $n$，互反律给出
+\[
+ \chi_n(u)=\epsilon_u^{(q_n-1)/6}
+       \prod_{p\mid u}\mathcal R(p,n)^{j_p}\chi_p(n)^{j_p}.
+\]
+单位指数按模六来读。素因子公式可延拓到
+合数 $n$：当 $A\equiv B\equiv1\pmod6$ 时，
+\[
+ \frac{AB-1}{6}\equiv\frac{A-1}{6}+\frac{B-1}{6}\pmod6.
+\]
+因此单位因子只依赖于 $q_n$ 模 $36$，而
+$\mathcal R$ 乘积只依赖于 $n$ 模 $4$。结合
+$\mathcal R$ 与局部符号的乘性，
+所展示的范数同余式使右端在与 $6u$ 互素的
+整理想上具有乘性；将它延拓到它们的分式理想
+群。一个模
+$(36)\operatorname{rad}(u)$ 同余于一的生成元已经是主的，并使每个
+所展示的因子为一。因此这个特征有一个射线
+表示，其模为该固定的 $2,3$ 模乘以
+$\operatorname{rad}(u)$。它与
+引理~\ref{lem:fixed-numerator-ray} 的 Kummer 特征
+$\chi_\bullet(u)$ 在避开 $S$ 的理想上一致。这些特征诱导
+同一个本原特征：在主理想环
+$\mathcal O$ 中，中国剩余定理在共同模的每个射线类中
+提供一个避开额外有限集 $S$ 的表示元。在一个好的
+素数 $p\mid u$ 处，把该类以及所有其他好的剩余类固定为一，
+并通过中国剩余定理改变模 $p$ 的剩余。
+剩余的局部特征 $\chi_p^{j_p}$ 具有精确阶
+$6/\gcd(6,j_p)>1$。因此它在 $p$ 处的导子指数
+恰好为一：所展示的射线模只含 $p$ 的一次幂，
+而该特征不能下降到省略 $p$ 的模。
+这是一个局部断言；理想特征可能仍然需要
+$2,3$ 处固定的正规化模。
+
+由此可得，对任何由互不相同的选定分歧
+标记构成的集合 $J_0$，
+\begin{equation}\label{old-eq:5.13d}
+ q_{\mathfrak f_u}\ll_S q_{\operatorname{rad}(u)}
+       \le q_u\prod_{p\in J_0}q_p^{-(j_p-1)}.
+\end{equation}
+本原分子的函数方程
+\cite[方程 (1.1)]{GZ}、所假设的反射界，以及 Stirling
+给出一项代价
+$q_{\mathfrak f_u}^{A_*}U^\epsilon(3+T_1)^C$，其中
+\[
+ A_*=1/2-w_r=a-1/2+6e>0.
+\]
+在一个选定的 $p\mid u$ 处，本原特征已经取值
+为零，所以在那里恢复原来的局部因子恰好
+乘以一。其余被删去的 Euler 因子的根为
+$O_S(U)$，代价至多为 $U^{6e+\epsilon}$，因为 $w_r\ge-6e$。
+
+把一个误差槽的乘积展开为它们的互素素因子项、
+它们已经受界的分歧项，以及它们的严格分歧
+项。对于这一三角展开中的每个固定元组，设 $J_0$
+恰为其严格分歧标记。它们是互不相同的，因为
+槽的支撑彼此不交。在求和标记之前，把单一不等式
+方程~\eqref{old-eq:5.13d} 应用于整个 $J_0$。
+分子连同这些局部因子，
+包括每个选定素数处的 $q_p^{z-1}$，随后被以下诸式所界
+\[
+ U^{A_*+6e+\epsilon}(3+T_1)^C
+ \prod_{p\in J_0}q_p^{z_r-w_r-(j_p-1)A_*}
+ \le U^{a-1/2+12e+\epsilon}(3+T_1)^C
+       \prod_{p\in J_0}q_p^{z_r-1/2},
+\]
+因为 $j_p\ge2$ 且 $-w_r-A_*=-1/2$。因此不同的选定
+标记使用导子亏空的不同因子，并且这些
+界同时成立。对除子那么多个分歧标记求和代价为
+$U^\epsilon$，而互素标记具有更强的指数
+$z_r-51/100$。这证明了方程~\eqref{old-eq:5.13e}。
+
+这一论证只在误差标记上使用三角不等式。它从不改变
+物理行，也不改变任何主槽中的系数与掩码。
+与元组无关的因子 $\mathcal H_{\eta,u}$ 单独地
+依引理~\ref{lem:local-euler} 代价为 $U^\epsilon$。相对于主槽的
+中心尺度 $P_i^{z_r-1/2}$，一个误差槽因此在
+后续的行计数中没有正的振幅指数。
+\end{proof}
+
+\paragraph{主局部因子。}
+在引理~\ref{lem:local-euler} 的第二 Euler 区域中，取
+$u=1$ 且 $p\in1_T$。于是方程~\eqref{old-eq:5.13b} 中 $v=1$，
+且在对 $P_0$ 作同样固定的扩大之后 $H_p$ 有正下界。对于这一区域上的
+这条主行，定义 $\mathcal B_p=G_p/H_p$，并以与上面相同的槽和定义
+$\mathcal B_i$。下界与不交支撑给出分别的主分解
+\begin{equation}\label{eq:principal-slot-factorization}
+ \mathfrak H_{\eta,1,Z}(x,w,z)
+ =\mathcal H_{\eta,1}(x,w,z)\prod_{i=1}^K\mathcal B_i(1;x,w,z)
+ \qquad\text{在第二 Euler 区域中}.
+\end{equation}
+这并不把中心的主/误差分解延拓到其所述的
+动态区域之外。四个误差
+指数现在是
+\[
+ -x_r,\qquad -6z_r,\qquad 4-5x_r-6z_r,
+       \qquad 1-w_r-6z_r.
+\]
+在那个区域中每一个至多为 $-7/8$。因此主
+乘子满足
+\begin{equation}\label{eq:principal-local-approximation}
+ \mathcal B_p=-1+O(Q^{-7/8}),
+\end{equation}
+对所有虚部与目标单位相位一致。这
+是用于正规化主留数的局部估计。
+
+它也给出共享留数估计所需的绝对主修正。
+事实上这里 $G_p=H_p\mathcal B_p=O(1)$，而
+未选乘积依方程~\eqref{eq:unselected-local-product} 的第二区域
+形式有一个有界的正优函数。每个环形槽中的理想
+计数因此在第二 Euler 区域的每个固定实盒上，且对所有虚部一致地，给出
+\begin{equation}\label{eq:principal-local-tuple-bound}
+ |\mathfrak H_{\eta,1,Z}(x,w,z)|
+ \le\sum_{(p_i)\in\prod_i\mathcal P_i(Z)}
+       \prod_i\bigl[|W_i(q_{p_i}/P_i)|q_{p_i}^{z_r-1}|G_{p_i}|\bigr]
+       \prod_{\substack{p\notin S\\p\notin\{p_1,\ldots,p_K\}}}|H_p|
+ \ll \prod_iP_i^{z_r}=Z^{\ell z_r}.
+\end{equation}
+这里只用了分别的主行下界来获得局部
+逼近；它并未断言一般 $H_p$ 的非零性。
+
+\subsection{其余围道的绝对界}
+
+动态分解并非在共享解析估计所用的每条围道上都可用。
+下面的界转而保留每个
+选定因子 $G_p$，然后再取绝对值。
+
+\begin{lemma}[绝对局部元组界]
+\label{lem:compensated-absolute-local-bounds}
+设 $Z\ge2$，并设 $u$ 是非零的无六次幂因子行，满足 $(u,S)=1$ 且
+$q_u\asymp U\ge1$，比较常数为固定值。保留节~\ref{sec:compensation} 的
+固定物理槽系统。以下
+界对所有虚部与单位相位都一致。
+\begin{enumerate}
+\item 在
+\[
+ x_r=\beta_*+e,\qquad w_r=1/2,\qquad z_r=17/50,
+ \qquad 0<e\le10^{-3},
+\]
+有 $G_p=O(1)$ 在选定素数 $p\nmid u$ 处，且
+在选定素数 $p\mid u$ 处 $G_p\ll Q^{1/2}$。
+\item 对每个固定的 $z_\infty>2$，在
+\[
+ x_r=w_r=2,\qquad z_r=z_\infty,
+\]
+有 $G_p=O_{z_\infty}(1)$ 在每个选定素数处。
+\end{enumerate}
+在任一情形下，对全部选定元组的正和满足
+\begin{equation}\label{eq:absolute-local-tuple-bound}
+ \sum_{(p_i)\in\prod_i\mathcal P_i(Z)}
+       \prod_i\bigl[|W_i(q_{p_i}/P_i)|q_{p_i}^{z_r-1}|G_{p_i}|\bigr]
+       \prod_{\substack{p\notin S\\p\notin\{p_1,\ldots,p_K\}}}|H_p|
+ \ll_\epsilon U^\epsilon\prod_iP_i^{z_r}.
+\end{equation}
+常数可能依赖于固定数据、$e$，以及在第二种情形下
+依赖于 $z_\infty$，但不依赖于 $Z,u$ 或诸虚部。这些估计在
+$P_p$ 或 $H_p$ 的零点处仍然有效。
+\end{lemma}
+
+\begin{proof}
+两组直线都位于 $\epsilon_0=3/8$ 的第一 Euler 区域中。
+其逐素数的亏量估计给出 $H_p=O(1)$，而
+方程~\eqref{eq:unselected-local-product} 把所有未选因子的
+正乘积界为 $O_\epsilon(U^\epsilon)$。
+
+先考虑 $x_r=\beta_*+e$、$w_r=1/2$ 与 $z_r=17/50$。
+对选定的 $p\nmid u$，方程~\eqref{old-eq:5.13b} 给出
+\[
+ |G_p+\overline{\chi_p(u)}H_p|
+ \ll Q^{-x_r}+Q^{-6z_r}
+       +Q^{4-5x_r-6z_r}+Q^{1-w_r-6z_r}.
+\]
+这四个指数至多分别为
+$-7/8-e,-51/25,-483/200-5e,-77/50$。
+因此在不含 $u$ 处 $G_p=O(1)$，无需除以 $H_p$。
+
+对选定的 $p\mid u$，有 $W=D=0$ 且
+$\mathcal E_p=P_p^*$。方程~\eqref{old-eq:5.13c} 变为
+\[
+ G_p=\overline{\eta(p)}Q^x(1-V)\mathcal E_p-Q^{-w}H_p.
+\]
+在乘以 $Q^{x_r}$ 之后，局部表的严格项
+的指数至多为 $1-w_r=1/2$；对 $j=1$ 它还含有因子
+$V$。边界项 $J_j$ 的指数，按 $j=1,\ldots,5$ 的顺序，
+为
+\[
+ -\frac12,\quad \frac32-2x_r,\quad
+ \left(\frac32-2x_r,\,2-3x_r\right),\quad
+ 2-3x_r,\quad 3-5x_r.
+\]
+它们分别被
+$-1/2,-1/4-2e,(-1/4-2e,-5/8-3e),-5/8-3e,-11/8-5e$
+从上界。公共的 $R$ 项的指数为
+$4-5x_r-6z_r\le-483/200-5e$。几何族中所有进一步的项
+都减小这些幂次，因为
+$|R|\le Q^{-329/100-6e}$ 且 $|V|=Q^{-51/25}$。
+最后 $Q^{-w}H_p=O(Q^{-1/2})$。因此在 $u$ 上 $G_p\ll Q^{1/2}$，
+在 $H_p$ 的零点处亦然。
+
+整除 $u$ 的标记有除子那么多个，而一个槽含有 $O(P_i)$
+个理想。因此它的正和为
+\begin{equation}\label{eq:small-line-positive-slot}
+ \sum_{p\in\mathcal P_i(Z)}
+       |W_i(q_p/P_i)|q_p^{z_r-1}|G_p|
+ \ll P_i^{z_r}+U^\epsilon P_i^{z_r-1/2}
+ \ll U^\epsilon P_i^{z_r}.
+\end{equation}
+利用未选乘积的正优函数，并把所要求的 $\epsilon$
+分配在固定数目的槽之间，证明了
+第一组直线上的方程~\eqref{eq:absolute-local-tuple-bound}。
+
+现在固定 $x_r=w_r=2$ 且 $z_r=z_\infty>2$。对不含
+$u$ 的选定素数，方程~\eqref{old-eq:5.13b} 中的四个指数为
+$-2,-6z_\infty,-6-6z_\infty,-1-6z_\infty$，所以
+$G_p=O_{z_\infty}(1)$。在 $u$ 上，乘以
+$Q^{x_r}$ 之后的严格项指数至多为 $1-w_r=-1$。边界指数为
+$-2,-5/2,(-4,-4),-11/2,-7$，公共的 $R$ 指数为
+$-6-6z_\infty$，且 $|R|=Q^{-8-6z_\infty}$、$|V|=Q^{-6z_\infty}$。
+重标度项为 $O(Q^{-2})$。于是 $G_p=O_{z_\infty}(1)$ 在 $u$ 上
+也成立。一个正的槽和因此为 $O_{z_\infty}(P_i^{z_\infty})$。
+结合方程~\eqref{eq:unselected-local-product}，这证明了
+第二组直线上的方程~\eqref{eq:absolute-local-tuple-bound}。
+\end{proof}
+
+
+方程~\eqref{eq:compensated-poisson-identity} 提供刚刚在低端受界的物理函数的完整高
+表示。
+命题~\ref{prop:probe-errors} 与分子联合控制误差因子，
+而引理~\ref{lem:compensated-absolute-local-bounds} 提供
+其余围道上的界。主要因子是命题~\ref{prop:probe-errors} 中所展示的
+素多项式。为计数那些这些因子与一个探测器见证
+都很大的行，我们接下来证明
+节~\ref{sec:refined-row-counts} 中所用的逆矩与四阶矩估计。
+
+\section{带素因子的逆矩}\label{sec:inverse}
+
+我们现在对一个乘以独立加权素数和的
+逆 Dirichlet 多项式作界。该估计适用于节~\ref{sec:detector} 中的逆见证
+连同来自局部补偿的选定主因子。
+其证明使用节~\ref{sec:marked-energy} 的完备化行能量。
+最后一次放大给出在更长列长度上无六次幂因子行的
+无标记估计。
+
+\subsection{带标记估计的陈述}
+
+设 \(\nu\) 是一个固定的有限阶射线特征，其完整的
+零延拓定义模的素支撑在 \(S\) 中。这整个
+表示属于固定的算术数据；一个局部冻结的
+移动零点支撑转而作为穿刺保留，其根
+包含在下面的显式范数界中。
+固定一个符号 \(\varepsilon_\chi\in\{1,-1\}\)，并令
+\[
+ \psi_u(n)=\nu(n)\chi_n(u)^{\varepsilon_\chi}.
+\]
+这一定义中仅有的掩码是固定的排除以及
+\(\chi_n(u)\) 的零延拓。
+对光滑环形函数 \(W\)，定义
+\[
+ M_u(Z^r;W)=Z^{-r/2}\sum_n\mu(n)\psi_u(n)W(q_n/Z^r).
+\]
+对固定的有限槽集合 \(I\)，设 \(\mathcal P_i\) 是 \(S\) 之外互不相交的
+素数集，满足对
+\(p\in\mathcal P_i\) 有 \(q_p\asymp Z^{z_i}\)。这些集合与系数 \(a_i(p)\)
+与 \(u\) 无关，且 \(|a_i(p)|\le1\)。给定固定的光滑环形
+函数 \(W_i\)，令
+\[
+ Q_u=\prod_{i\in I}Z^{-z_i/2}
+       \sum_{p\in\mathcal P_i}a_i(p)\psi_u(p)W_i(q_p/Z^{z_i}),
+ \qquad z=\sum_{i\in I}z_i.
+\]
+空乘积为一。
+由三角不等式，整个乘积 \(M_uQ_u\) 的固定有限和也是允许的，
+只要每个求和项在其逆与其所有槽中使用一个共同的
+\(\nu\)。
+
+\begin{lemma}[带标记的逆矩]\label{lem:marked}
+固定非负参数 \(m,r,z_i\) 的有界范围、\(|I|\) 的一个界，
+以及正常数 \(c_1,c_2\)。假设
+\[
+ r+2z\le m-c_1,\qquad 2r+8z\le3m-c_2.
+\]
+则对每个 \(\epsilon>0\)，
+\begin{equation}\label{old-eq:4.1}
+ \sum_{\substack{u\in\mathcal O\\0<q_u\ll Z^m}}
+       |M_u(Z^r;W)Q_u|^2\ll Z^{m+\epsilon}.
+\end{equation}
+隐含常数可能依赖于固定算术数据、\(c_1,c_2\)、
+有界参数范围，以及检验函数的有限多个光滑半范数，
+但对素支撑及其有界系数一致。
+该断言对任一公共符号 \(\varepsilon_\chi\) 成立，且对
+槽的每个子集族成立。检验函数的范数扭曲对其高度
+具有固定的多项式代价。对单个
+槽长度除其所述素支撑的存在性外没有下界，
+对这些长度也没有网格条件。
+\end{lemma}
+
+证明经过下面定义的典范族，其中
+一个四次幂剩余符号在一个额外的无平方因子
+理想上取平均。引理~\ref{lem:canonical-moment} 通过最终应用
+引理~\ref{lem:reflected-energy} 以及一个使用两次带掩码
+Poisson 变换的递归步骤来证明。在主贡献与尾部
+被处理之后，保留部分用该族的、具有更短行范围的新的可容许和来界。
+一个使用一次带掩码 Poisson 变换的单独初始化
+随后推出引理~\ref{lem:marked}，而
+最后一小节给出其对无六次幂因子行的更长无标记
+推论。
+
+\subsection{典范估计}
+
+使用节~\ref{sec:marked-energy} 中定义的固定穿刺、无平方因子系数、行特征，
+以及乘积形式标记。额外的
+无平方因子标记现在被取平均，权重为除子有界的且
+仅依赖于该标记。
+
+下面是由两次 Poisson 变换所封闭的陈述。
+其穿刺界是假设的一部分，因为一个冻结的移动
+模不能当作固定算术数据的一部分来处理。
+关于递归 Poisson 大筛框架，可比较
+\cite[节~2]{HBQuadratic}、\cite[节~4]{HB}，以及
+\cite[节~4--7]{GL}；当前的带标记递归将在下面证明。
+
+\begin{lemma}[典范带标记估计]\label{lem:canonical-moment}
+固定 \(M,N,V,z_0\) 的有界非负范围、槽数的一个界，
+以及 \(c_*>0\)。设 \(f\) 取遍 \(S\) 之外、
+满足 \(q_f\asymp Z^V\) 的无平方因子理想。设 \(w\) 是仅依赖于
+\(f\) 的非负函数，满足对某个固定的
+\(C\ge1\) 有 \(w(f)\le C d_{\mathcal O}(f)^C\)。\(C\) 与 \(w\) 的选择都不依赖于 \(Z\)、
+当前各行，或任何其他被平均的变量。下面的隐含常数
+可能依赖于 \(C\)，但对所有满足这一
+固定界的 \(w\) 一致。设 \(\nu\) 是一个固定的
+乘性有限射线特征，其完整的零延拓定义
+模的素支撑在 \(S\) 中，并设
+\(\rho(n)=1_{(n,\mathfrak r_\rho)=1}\) 是一个固定穿刺。二者都
+与 \(k,f\) 无关。设 \(\mathfrak d\) 具有方程~\eqref{old-eq:4.2} 中的
+乘积形式，其不交固定素数表的总
+长度至多为 \(z_0\)，系数有界且与 \(k,f\) 无关。
+不允许其他依赖于行的列系数或穿刺。
+不存在额外的剩余系数 \(b(n)\)，即使是
+与 \(k,f\) 无关的也没有：任意有界权重仅
+允许作为所述单个素槽系数的乘积出现。
+
+令 \(F_0=N+V\)。假设
+\begin{equation}\label{eq:invariant}
+ \begin{gathered}
+ q_{\mathfrak r_\rho}\le Z^{F_0-M-z_0-c_*},\\
+ 3M+6z_0+c_*\le4F_0.
+ \end{gathered}
+\end{equation}
+对每个光滑环形 \(W\) 与每个 \(\epsilon>0\)，定义
+\begin{equation}\label{eq:canonical-energy}
+ \begin{split}
+ \mathcal E={}&Z^{-V}\sum_f w(f)
+ \sum_{\substack{k\in\mathcal O\\0<q_k\ll Z^M}}
+ \Biggl|Z^{-N/2}\sum_{n\ {\rm sf}}
+ \bar\alpha(n)\gamma_2(n)\nu(n)\rho(n)\\
+ &\hspace{24mm}\times
+ \chi_n(k)\chi_n(f)^4\mathfrak d(n)W(q_n/Z^N)\Biggr|^2.
+ \end{split}
+\end{equation}
+则 \(\mathcal E\ll Z^{F_0+\epsilon}\)。该常数在所述范围内对所有移动模
+与冻结的外部理想一致。
+它依赖于有限多个光滑半范数，并对分离的范数扭曲高度
+具有固定的多项式依赖。对槽的所有子集族（使用原来的上界 \(z_0\)），
+包括空集族，同样的结论成立。
+\end{lemma}
+
+节~\ref{sec:marked-energy} 中的反射能量为该族提供
+最终估计。其余范围将被归约到
+具有更短行的同一族。在两次 Poisson
+变换之前，我们给出在有限归纳中传播光滑
+半范数与高度阶的通用解析法则。
+
+\subsection{半范数与高度阶的有限传播}\label{sec:moment-propagation}
+
+我们使用下面关于有限估计序列的抽象陈述。它
+并不断言任何特定的算术归约具备其假设。
+其目的是精确地陈述，对变换后的剖面与
+Fourier 系数测度，哪些一致界足以在外部高度截断之前
+选定所有内部的导数阶。
+
+记 $\langle\boldsymbol t\rangle=1+|\boldsymbol t|$。设一个有限有根
+有向图没有有向环，且每条有向路径至多有
+$D$ 条边。在每个顶点 $v$ 处设
+$\mathcal N_v(Z,\boldsymbol w,\boldsymbol t)$ 是一个非负量，其中
+$Z\ge1$，$\boldsymbol w$ 是固定的有限环形剖面元组，
+而 $\boldsymbol t$ 是有限维高度向量。剖面
+维数、支撑与高度维数可能依赖于 $v$，但在整个
+图中固定。这些量中允许有额外的标记；
+下面每个界都要求对那些标记一致。
+
+\begin{lemma}[有限半范数传播]\label{lem:finite-seminorm-propagation}
+假设在每个顶点处有一个终端界
+\[
+ \mathcal T_v(Z,\boldsymbol w,\boldsymbol t)
+ \le C_v Z^{a_v}p_{j_v}(\boldsymbol w)^{b_v}
+                   \langle\boldsymbol t\rangle^{h_v}
+\]
+其中 $a_v$ 为固定实数，$j_v,b_v,h_v$ 为有限非负数。再假设
+\[
+ \begin{split}
+ \mathcal N_v(Z,\boldsymbol w,\boldsymbol t)
+ \le{}&\mathcal T_v(Z,\boldsymbol w,\boldsymbol t)\\
+ &+\sum_{e:v\to v'}Z^{a_e}\int_{\mathbb R^{d_e}}
+ |K_e(Z,\boldsymbol w,\boldsymbol t;\boldsymbol\xi)|
+ \mathcal N_{v'}\bigl(Z,\boldsymbol W_e,
+       A_e\boldsymbol t+B_e\boldsymbol\xi\bigr)\,d\boldsymbol\xi,
+ \end{split}
+\]
+其中 $A_e,B_e$ 是固定有界线性映射，而
+$\boldsymbol W_e=\boldsymbol W_e(Z,\boldsymbol w,\boldsymbol t,
+\boldsymbol\xi)$ 是子剖面元组。允许空边和。
+假设对每条边成立以下两个界。
+
+对每个固定的 $j$，存在有限非负数
+$m_e(j),b'_e(j),c'_e(j)$ 与常数 $C_{e,j}$ 使得
+\[
+ p_j(\boldsymbol W_e)
+ \le C_{e,j}p_{m_e(j)}(\boldsymbol w)^{b'_e(j)}
+       \langle\boldsymbol t\rangle^{c'_e(j)}
+       \langle\boldsymbol\xi\rangle^{c'_e(j)}.
+\]
+对每个固定的 $H\ge0$，存在有限非负数
+$\ell_e(H),b_e(H),c_e(H)$ 与常数 $C_{e,H}$ 使得
+\[
+ \int_{\mathbb R^{d_e}}|K_e(Z,\boldsymbol w,\boldsymbol t;
+            \boldsymbol\xi)|\langle\boldsymbol\xi\rangle^H
+                         \,d\boldsymbol\xi
+ \le C_{e,H}p_{\ell_e(H)}(\boldsymbol w)^{b_e(H)}
+                 \langle\boldsymbol t\rangle^{c_e(H)}.
+\]
+半范数指标可以向上取整为整数。所有这些常数与
+指标对 $Z$ 与额外标记一致；指数 $a_v,a_e$
+是固定实数，与所要求的半范数与高度阶无关。
+
+则存在有限的 $J,B,H$ 与 $C$，使得在根 $v_0$ 处，
+\[
+ \mathcal N_{v_0}(Z,\boldsymbol w,\boldsymbol t)
+ \le C Z^E p_J(\boldsymbol w)^B\langle\boldsymbol t\rangle^H,
+ \qquad
+ E=\max_{v_0\to\cdots\to v}
+       \left(a_v+\sum_{e\text{ 在路径上}}a_e\right).
+\]
+指标 $J,B,H$ 可以沿至多 $D$ 个阶段向后选取。
+特别地，它们在施加任何限制
+$|\boldsymbol t|\le T_1=Z^\tau$ 之前就已固定。
+
+对积分中有限个子乘积，同样的结论成立。
+确切地说，一个边项可以改为具有以下形式
+\[
+ Z^{a_e}\int_{\mathbb R^{d_e}}|K_e|
+ \prod_{r=1}^{r_e}
+ \mathcal N_{v_{e,r}}\bigl(Z,\boldsymbol W_{e,r},
+       A_{e,r}\boldsymbol t+B_{e,r}\boldsymbol\xi\bigr)^{\theta_{e,r}}
+ \,d\boldsymbol\xi,
+\]
+其中 $r_e\ge1$ 是固定整数，$\theta_{e,r}\ge0$ 固定，所有子项都有更小的
+剩余深度，且每个子剖面满足其自身版本的
+所述剖面界。联合系数测度满足同样的
+加权界。在此情形下，由下式递归定义范数指数
+\[
+ E_v=\max\left\{a_v,\ \max_e
+             \left(a_e+\sum_{r=1}^{r_e}\theta_{e,r}E_{v_{e,r}}\right)\right\}.
+\]
+结论在 $E=E_{v_0}$ 时成立。这一形式包含来自 Cauchy--Schwarz 的两个非负
+子估计的平方根。
+\end{lemma}
+
+\begin{proof}
+在终端顶点处，该断言就是其所述界。假设某个子项
+已经被以下诸式所界
+$C Z^{E'}p_{J'}(\boldsymbol W_e)^{B'}
+ \langle A_e\boldsymbol t+B_e\boldsymbol\xi\rangle^{H'}$。
+由于线性映射有界，
+\[
+ \langle A_e\boldsymbol t+B_e\boldsymbol\xi\rangle^{H'}
+ \ll_e\langle\boldsymbol t\rangle^{H'}
+              \langle\boldsymbol\xi\rangle^{H'}.
+\]
+子剖面界把幂 $B'c'_e(J')$ 加到这两个高度指数中的每一个上，
+并把其剖面因子替换为
+$p_{m_e(J')}(\boldsymbol w)^{B'b'_e(J')}$。使用系数测度
+界，取
+$H_e=H'+B'c'_e(J')$。这条边的贡献至多为
+\[
+ C_e Z^{a_e+E'}
+ p_{\max\{m_e(J'),\ell_e(H_e)\}}(\boldsymbol w)^{B'b'_e(J')+b_e(H_e)}
+ \langle\boldsymbol t\rangle^{H_e+c_e(H_e)}.
+\]
+每个所展示的指标都是有限的。在这些指标与
+有限多条出边上的终端指标中取最大值，必要时增大
+剖面指数，因为 $p_j(\boldsymbol w)\ge1$。
+这证明了父界，其指数等于经过该顶点的
+最大路径指数。对无环图作反向归纳完成了
+证明。这些选择都没有涉及外部截断或滞后的
+导数阶。

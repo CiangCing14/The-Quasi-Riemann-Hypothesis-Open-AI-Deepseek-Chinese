@@ -1,0 +1,293 @@
+下面我们记录两个剩余卷积的精确正规化。令
+\[
+ \alpha_1=a_0-c_2,\qquad \alpha_2=a_0-d_2,\qquad
+ \frac{\alpha_1+\alpha_2}{2}=a_0-b_2.
+\]
+在当前双变换阶段的入口处，令 \(\mathcal I_{\rm in}\) 为其活动槽集，并令 \(X_1,X_2\) 为其第一个矩形的形式尺度。它们的精确约定为 \(X_1X_2\prod_{i\in\mathcal I_{\rm in}}P_i=Z^A\)。
+对于边 \(j\in\{1,2\}\)，令 \(\mathcal F_j\) 为来自该入口集、被第一次和第二次真正的公共支集抽取所冻结的槽，令 \(\mathcal I_j\) 为在最终 \(\mathfrak t\)-分配之前仍然活动的槽，并令 \(Q_{{\rm plain},j}\) 为在这些步骤以及放大器处抽取出的 plain 幂的精确范数之积。在祖先阶段被移除的槽不包含在 \(\mathcal F_j\) 中。令 \(T_j\) 为其矩形中两个 plain 尺度的公共形式 pre-\(\mathfrak t\) 乘积；对于非中心化输入则使用其唯一的形式 plain 乘积。在使用槽比值之前，丢弃一个冻结槽的剖面为零的项，该项由其冻结数据恒为零，与行标号和活动标号无关。
+完全抽取给出精确恒等式
+\[
+ \begin{aligned}
+ Z^{A-\alpha_j}
+   &=Q_{{\rm plain},j}\prod_{i\in\mathcal F_j}q_{p_i},\\
+ T_j\prod_{i\in\mathcal I_j}P_i
+   &=\frac{Z^A}{Q_{{\rm plain},j}\prod_{i\in\mathcal F_j}P_i}
+     =Z^{\alpha_j+e_j},\\
+ e_j&=\sum_{i\in\mathcal F_j}\log_Z(q_{p_i}/P_i),
+ \qquad |e_j|\le\theta_N.
+ \end{aligned}
+\]
+放大器对此计算只贡献精确的 plain 幂。每个较早的冻结槽只出现一次，即使它与某个 plain 共享其素因子。已经分离出去的逆根、核以及固定的正规化常数仍位于 \(e_j\) 之外。
+
+对于边 \(j\)，令 \(d_{j,i}\) 为在 plain \(i\) 中选出的最终 \(\mathfrak t\)-素因子之积，并令 \(\mathcal J_j\subseteq\mathcal I_j\) 为新冻结的槽。令
+\[
+ a_{j,i}=\log_Zq_{d_{j,i}},\qquad
+ \widetilde r_j=a_{j,1}+a_{j,2}+\sum_{i\in\mathcal J_j}z_i\ge0,
+ \qquad
+ \omega_j=\sum_{i\in\mathcal J_j}\log_Z(q_{p_i}/P_i).
+\]
+相应的形式尺度在两个矩形中都除以 \(q_{d_{j,i}}\)。一个在两个不同 \(\mathfrak t\)-素因子处选取同一个素槽的分配，或一个剖面值为零的新冻结槽，由冻结数据恒为零，并在使用这些比值界之前被丢弃。其他所有被抽取出的零点都保留，直到下文所述的非负或绝对值估计。
+
+使用下端点除子二进区间 \(T\le q_{\mathfrak t}<2T\)，\(T\ge1\)，并令 \(t_-:=\log_ZT\)。每个二进区间包含 \(O(Z^{t_-})\) 个理想。边 \(j\) 上实际选出的乘积被 \(\mathfrak t\) 整除，故
+\begin{equation}
+ \begin{aligned}
+ \widetilde r_j+\omega_j
+ &=\log_Z\left(q_{d_{j,1}d_{j,2}}
+                  \prod_{i\in\mathcal J_j}q_{p_i}\right)
+ \ge\log_Zq_{\mathfrak t}\ge t_-,\\
+ |\omega_j|&\le\theta_N,\qquad |e_j+\omega_j|\le\theta_N
+ \quad(j=1,2).
+ \end{aligned}
+ \label{eq:centered-divisor-boundary}
+\end{equation}
+最后一个不等式使用了当前阶段入口槽的不相交子集 \(\mathcal F_j\) 与 \(\mathcal J_j\)。它不包含祖先槽或固定的分离常数。
+
+记 \(T'_j=T_j/q_{d_{j,1}d_{j,2}}\)，则 post 形式因子之积与名义原始子尺度为
+\begin{equation}
+ T'_j\prod_{i\in\mathcal I_j\setminus\mathcal J_j}P_i
+   =Z^{\alpha_j+e_j-\widetilde r_j},\qquad
+ N_{{\rm post},j}=Z^{\alpha_j-\widetilde r_j}.
+ \label{eq:centered-raw-normalization}
+\end{equation}
+定义 \(P_{C,\mathfrak t,\mathbf J}(h')\) 与
+\(P_{D,\mathfrak t,\mathbf J}(h')\) 为其剩余卷积乘以 \(N_{{\rm post},j}^{-1/2}\)。相对于名义 pre-正规化因子 \(Z^{-\alpha_j/2}\)，边 \(j\) 上的精确抽取系数为 \(Z^{-\widetilde r_j/2}\)，除去冻结槽的幅度、保留的抽取行标量以及已经分离的外因子。这些原始子项保留形式带符号矩形，并非矩引理的调用；其形式对数长度可能为负。尚未发生裁剪。
+
+因子分配对固定的 \(N\) 是除子有界的；其总和使用 \(C_N^{\omega(\mathfrak t)}
+\ll_{N,a}q_{\mathfrak t}^a\)（对任意固定的 \(a>0\)）来界定，而不是在每个素因子处花费一个固定指数。有界列范围中的 \(O(\log Z)\) 个除子二进区间使用其现有的对数份额。这些离散损失与数值项 \(\theta_N\) 分开。
+
+为精确起见，抽取 \(Z^{g_2-t_2}\) 之后的另一个公共行标量为
+\[
+ v_{{\rm part},\lambda}(h')=
+ \omega_\lambda(q_{G_cV_{\rm id}}q_{h'}/T_\lambda)
+ 1_{\rm part}(h')
+ \frac{F(D_2,E_2;G_cV_{\rm id}h')}{Z^{g_2-t_2}}\zeta(h'),
+ \qquad |\zeta(h')|\le1,
+\]
+其中 \(\zeta\) 包含该二进区间与这些 Fourier 参数的分离行相位。它在保留的划分与包围球之外为零，且 \(|v_{{\rm part},\lambda}|\le1\)。
+随后的估计逐个二进区间地进行，然后用已经允许的 \(O(\log Z)\) 质量求和。按照诱导特征是否属于 \(\Theta\) 来拆分已经因子化的行和。在 \(\Theta\) 之外的行上，Cauchy--Schwarz 给出两个非负子范数；在 \(\Theta\) 中的行上，取逐点的绝对乘积。只有在这些步骤中，才可以把公共行权、划分标量或抽取行标量的绝对值界以 1，并把行放大到公共的 \(m'_{\rm act}\) 球。这可能会纳入违反先前单位限制的额外例外行，但下文的仅关于特征的计数把它们包含在内。两侧使用相同的合格类，并与方程~\eqref{old-eq:2.14} 比较。
+
+首先考虑其子诱导特征位于 \(\Theta\) 之外的行。两侧具有相同的合格条件，因为它们的特征相差 \(\Theta\) 中的一个成员。
+在这样的行上，首先用一个中心化子范数以其两个矩形的范数之和为其界；对于非中心化子项则只有一个矩形。对于固定的一边 \(j\) 与矩形 \(\varrho\)，将其 pre 与 post 形式 plain 尺度写为 \(S_{\varrho,i}\) 与 \(S'_{\varrho,i}=S_{\varrho,i}/q_{d_{j,i}}\)。在当前行、除子与活动标号之前，为每个当前的 plain 剖面类型选择一个固定的上支集端点 \(B_i\)。仅当对某个 \(i\) 有 \(S'_{\varrho,i}B_i<1\) 时才略去该矩形；此时那个 plain 因子在每个非零整理想上为零。保留等号以及所有其他的剖面、掩码、行标量或算术零点。此检验与行标号和活动标号无关。
+
+对于保留的矩形，令 \(x_i=\log_ZS_{\varrho,i}\) 与 \(y_i=x_i-a_{j,i}\)。固定的端点检验与 \(a_{j,i}\ge0\)，在把 \(H_N\) 放大以包含上端点对数的两个正部之后，给出精确的裁剪恒等式
+\begin{equation}
+ \begin{aligned}
+ \pi_{0,j,\varrho}&=\sum_{i=1}^2(-x_i)_+,\qquad
+ \pi_{j,\varrho}=\sum_{i=1}^2(-y_i)_+,
+ \qquad 0\le\pi_{0,j,\varrho}\le\pi_{j,\varrho}\le\theta_N,\\
+ r_{{\rm clip},j,\varrho}
+ &=\sum_{i\in\mathcal J_j}z_i+
+       \sum_{i=1}^2\bigl((x_i)_+-(y_i)_+\bigr)
+ =\widetilde r_j-(\pi_{j,\varrho}-\pi_{0,j,\varrho})\ge0,\\
+ A_{{\rm clip},j,\varrho}
+ &=\sum_{i=1}^2(y_i)_++\sum_{i\in\mathcal I_j\setminus\mathcal J_j}z_i
+ =\alpha_j+e_j-\widetilde r_j+\pi_{j,\varrho}\\
+ &=\alpha_j+e_j+\pi_{0,j,\varrho}-r_{{\rm clip},j,\varrho}.
+ \end{aligned}
+ \label{eq:centered-clipped-rectangle}
+\end{equation}
+特别地，裁剪后的总和从其自身的裁剪前总和 \(\alpha_j+e_j+\pi_{0,j,\varrho}\) 减少了 \(r_{{\rm clip},j,\varrho}\)。不同的矩形可以有不同的裁剪后总和。一个保留的亚单位尺度位于固定区间 \([1/B_i,1]\) 内，因此其膨胀到尺度一保持有限的半范数界。行特征、公共掩码以及存活的槽权不变。从 pre-正规化因子 \(Z^{-\alpha_j/2}\) 到该标准裁剪乘积的精确系数为
+\[
+ Z^{(A_{{\rm clip},j,\varrho}-\alpha_j)/2}
+ =Z^{(-r_{{\rm clip},j,\varrho}+e_j+\pi_{0,j,\varrho})/2}.
+\]
+对于固定的一对保留矩形，略去其矩形下标。于是方程~\eqref{eq:centered-divisor-boundary} 把配对的除子计数与这些系数界以
+\begin{equation}
+ \begin{split}
+ t_- -\frac{r_{{\rm clip},1}+r_{{\rm clip},2}}2
+     +\frac{e_1+\pi_{0,1}+e_2+\pi_{0,2}}2
+ &\le\frac{(e_1+\omega_1)+\pi_1+(e_2+\omega_2)+\pi_2}{2}\\
+ &\le2\theta_N.
+ \end{split}
+ \label{eq:centered-clipped-shell}
+\end{equation}
+每边至多有两个矩形，因此至多四对这样的配对；它们的三角因子固定。对于带符号的差，不使用公共的裁剪缩减。
+
+在 \(c_2\) 一侧，在最后一次互素抽取之前，名义总长度为 \(A'=\alpha_1=A-c-w-c_2\)。对于正槽参数，
+\begin{equation}
+ \begin{split}
+ (A'-M')-(A-M)
+ &=g+w-d-c_2-(K_0-K)-w_o+g_2-t_2\\
+ &\le6(w+\ell)+\delta_{{\rm fr},1}.
+ \end{split}
+ \label{old-eq:3.14}
+\end{equation}
+为证明该不等式，首先使用 \(g_2-t_2\le c_2\)。
+在放大的主范数中，\(w=w_o=0\)，且
+\[
+ g=J_++2\sigma
+ \le d+(K_0-K)+6\ell+\delta_{{\rm fr},1}.
+\]
+对于误差，\(g\le d+(K_0-K)+\sigma+\delta_{{\rm fr},1}\)，故超出量至多为 \(w-w_o+\sigma+\delta_{{\rm fr},1}\)。这些不等式使用了 \(d+K_0-K\ge-\delta_{{\rm fr},1}\) 以及正部的 \(1\)-Lipschitz 性质。方程~\eqref{old-eq:2.9} 中的三种选择，连同 \(\ell_p\ge\sigma/6\)，给出 \(w-w_o+\sigma\le6w\)。这就证明了方程~\eqref{old-eq:3.14}。
+
+对于每个保留的裁剪矩形，如果没有槽存活，则在所声明的宽度 \(M'_{\rm act}\) 处应用已完成的、无限制的零槽断言。如果槽存活，首先应用方程~\eqref{old-eq:2.1a}--\eqref{old-eq:2.1b} 中的代数掩码删除。它把该标准裁剪乘积表示为自然乘积，并且只减小其非负仿射表达式。对于每个实际乘积，在两个频率包络、\(\mathfrak t\)-分配以及掩码删除之后，令 \(A_{\rm act},z_{\rm act}\) 为其所声明的总和与槽长度，并令
+\[
+ F_{\rm act}
+ =\bigl(A_{\rm act}-M'_{\rm act}+(6\kappa-1)z_{\rm act}\bigr)_+.
+\]
+父项满足方程~\eqref{old-eq:3.9}。在此掩码删除之前，令 \(z'\le z\) 为裁剪矩形的存活槽长度。方程~\eqref{old-eq:3.14} 与 \eqref{eq:centered-clipped-rectangle}，连同 \(M'_{\rm act}\ge M'\)，给出
+\[
+ \begin{split}
+ A_{{\rm clip},j,\varrho}-M'_{\rm act}+(6\kappa-1)z'
+ &\le \alpha_j-M'+(6\kappa-1)z
+       +e_j+\pi_{j,\varrho}-\widetilde r_j-(M'_{\rm act}-M')\\
+ &\le6(w+\ell)+\delta_{{\rm fr},1}+e_j+\pi_{j,\varrho}.
+ \end{split}
+\]
+在另一侧互换 \(c_2,d_2\) 后同样的计算成立。
+取正部然后删除固定掩码因此给出
+\[
+ F_{\rm act}\le6(w+\ell)+\delta_{{\rm fr},1}
+                 +(e_j+\pi_{j,\varrho})_+
+ \le6(w+\ell)+\delta_{{\rm fr},1}+2\theta_N.
+\]
+这里 \(z_{\rm act}\le z'\le z\)。所有展示的账目都使用固定的一列聚合长度
+\[
+ A,z,c,d,p,R,E,s_0,K,w,w_o,g,\ell,c_2,d_2,p_2,g_2,t_2,V.
+\]
+它们的仿射系数与正部 Lipschitz 常数是数值的，且与 \(N\) 无关。因此，一旦施加了聚合阈值，所展示的频率、原始正规化以及矩形裁剪界就被包含在 \(C_*\xi\) 中，其中 \(C_*\ge1\) 固定且与 \(N\) 无关。此固定误差界的存在性在比较长度之前使用单个 \(\theta_N=H_N/\log Z\)，而不是 \(N\) 个独立的 \(\xi\) 副本。我们在下文放大 \(C_*\)，以覆盖一个阶段中固定数目的运算。
+
+如果 \(F_{\rm act}>0\)，则从该乘积中移除整槽，直到剩余乘积满足方程~\eqref{old-eq:3.9} 或直到没有槽剩余。这里的移除指对整条选出的素多项式应用逐点界方程~\eqref{old-eq:3.5}；不冻结任何素标号。一个被移除的长度为 \(d\) 的槽使 \(A_{\rm act}+(6\kappa-1)z_{\rm act}\) 减少 \(6\kappa d\)，并对平方的 \(Z\)-指数贡献 \(\kappa d\)，而固定的半范数与高度因子单独保留。由于每个槽的长度至多为 \(\eta\)，把正的活动长度排序，并取达到 \(F_{\rm act}/(6\kappa)\) 的第一个前缀。其前一个前缀小于该阈值，且其最后一个槽的长度至多为 \(\eta\)。如果没有前缀达到该阈值，则移除所有槽，其总和更小。因此恰好只有一个槽会造成超调，且总移除长度 \(d_z\) 满足
+\begin{equation}
+ \begin{split}
+ d_z&\le\min\left\{z_{\rm act},
+                     \frac{F_{\rm act}}{6\kappa}+\eta\right\},\\
+ \kappa d_z&\le\frac{F_{\rm act}}6+\kappa\eta
+ \le\Delta_{\rm child}+\frac{\delta_{{\rm fr},1}}6
+                       +\frac{\theta_N}{3}+\eta.
+ \end{split}
+ \label{old-eq:3.16}
+\end{equation}
+如果在到达仿射边界之前槽就消失，则剩余的 plain 长度可以任意；这正是已完成的、较小宽度的零槽断言包含所有长度的原因。否则对剩余乘积应用正槽归纳。其槽仍然具有原来的系数类，其诱导行仍然位于 \(\Theta\) 之外。Cauchy--Schwarz 对两个分别裁剪的子项的误差取平均，因此它们可能不同的矩形与槽集不会使 \(\eta\) 加倍。将方程~\eqref{old-eq:3.16} 与方程~\eqref{eq:centered-clipped-shell} 中的配对系数界以及 \(M'_{\rm act}-M'\le\delta_{{\rm fr},2}\) 结合，超出子包络的严格边界尺度代价至多为
+\begin{equation}
+ \delta_{{\rm fr},2}+\frac{\delta_{{\rm fr},1}}6
+        +\eta+\frac{7\theta_N}{3}.
+ \label{eq:centered-child-edge-cost}
+\end{equation}
+如果没有槽存活，同样的界成立，而无需贪心代价。数值项 \(\theta_N\) 与两个频率修正在使用方程~\eqref{old-eq:2.14} 时，给出继承自方程~\eqref{old-eq:2.7} 的 \(\epsilon_G\) 储备中的单个 \(O(\xi+\eta)\) 边界损失；现有的局部小幂与固定解析因子保持分开。逐点估计对整个被移除的乘积只请求一次；其内部的小幂份额可能依赖于 \(N\)。这一次贪心运算只在实际子项的所有边界缺陷都已被纳入 \(F_{\rm act}\) 之后才发生。对于 \(d_2\) 一侧的论证与互换 \(c_2,d_2\) 后相同。
+
+我们现在仅使用更小的宽度就界定了所有诱导特征位于 \(\Theta\) 之外的子行。对于剩余的行，接下来的计数与体积界处理非中心化范围；中心化范围使用系数引理中保留的减项。
+
+\subsection{诱导特征位于 \texorpdfstring{\(\Theta\)}{Theta} 的行}
+
+在本小节中，当子行的诱导特征属于 \(\Theta\) 时，称其为\emph{例外}的。由系数引理，两个分离边要么都是例外的，要么都不是。现有的完整展示移动支集中的每个素因子都是一个公共列零点，每个额外的公共穿刺点亦然。这在起初成立，在第一个变换中对 \(\mathfrak e,\mathfrak r\) 仍然成立，并且对放大器的素因子仍然成立。对于一个非零的真正第二分配，因子 \(\tau_1(D_2),\tau_1(E_2)\) 以及旧的公共掩码因此迫使其完全的根基与所有那些支集不相交。此结论是在把任何冻结标量替换为上界之前得出的。人为的剩余延拓保持 \(D_2,E_2\) 与那些掩码固定，无法使一个不可能的分配复活。
+
+我们明确给出固定素因子处行因子的有限射线约化。如方程~\eqref{eq:row-fixed-ray-reduction} 中那样，把一个非零行写为 \(h'=\varepsilon h_{\mathcal S}h_{\rm good}\)，其中 \(\varepsilon\) 是一个单位，另外两个因子分别支在 \(\mathcal S\) 及其补集上。对于与 \(\mathcal S\) 互素的原始元素 \(n\)，互反律给出（保留每个零点）
+\[
+ \chi_n(h')=\chi_n(\varepsilon h_{\mathcal S})
+   \mathcal R(n,h_{\rm good})
+   \prod_{p\mid h_{\rm good}}\chi_p(n)^{v_p(h')}.
+\]
+由引理~\ref{lem:fixed-numerator-ray}，在固定单位以及 \(\mathcal S\)-赋值模六之后，第一个因子属于一个支在 \(\mathcal S\) 上的有限射线特征族。在固定好射线扇区之后，第二个因子属于固定的互反族。我们不把任何移动的好素因子吸收进这个固定族。第一个因子所提供的族不必包含于 \(\Theta\) 中；这样的选择只是有限多个。每个剩余的展示好素因子都具有其实际的局部六次指数，非平凡指数在该素因子处分歧。
+
+令 \(v_1\) 为在 \(V\) 中计数的、其相等重数为 1 的素因子的根基长度，并令 \(f=2v_1\)。在这样的素因子处，行中的固定因子 \(G_cV_{\rm id}\) 的赋值为 2。该素因子处不存在现有的移动特征，而 \(\Theta\) 的每个特征在那里都是非分歧的。因此六次互反律表明，例外诱导要求
+\[
+ v_p(h')+2\equiv0\pmod6,\qquad\text{that is,}\qquad
+ v_p(h')\equiv4\pmod6.
+\]
+更一般地，在 \(\mathcal S\) 之外的每个素因子处，例外诱导为 \(v_p(h')\) 指定一个模六的单剩余类，由冻结的移动特征与 \(G_cV_{\rm id}\) 决定。在它们的支集之外该剩余为零。对于在 \(\mathcal S\) 处的有限多个选择以及单位与固定射线数据，\(h'\) 的理想因此具有唯一形式
+\[
+ (h')=\mathfrak h_0\mathfrak v^6,
+\]
+其中 \(\mathfrak h_0\) 固定且无六次幂因子。所展示的赋值四条件给出 \(q_{\mathfrak h_0}\ge Z^{4v_1}=Z^{2f}\)。在通常的有界尺度约定下，到 \(q_{h'}\ll Z^{m'_{\rm act}}\) 为止的理想计数现在对每个非空范围给出更强的界 \(O(Z^{(m'_{\rm act}-2f)/6+\epsilon_1})\)。我们只使用较弱的界
+\begin{equation}
+ \#\{h':q_{h'}\ll Z^{m'_{\rm act}},\ \text{exceptional}\}
+ \ll Z^{(m'_{\rm act}-f)/6+\epsilon_1}
+ \le Z^{(m'-f)/6+\delta_{{\rm fr},2}/6+\epsilon_1}.
+ \label{eq:exceptional-row-count}
+\end{equation}
+如果该指数描述的是小于 1 的尺度，则被强制的理想 \(\mathfrak h_0\) 使该范围除在同一个有界尺度边界处之外为空。此论证包含主特征以及 \(\Theta\) 的所有其他成员。在旧的移动素因子处的附加条件只能使计数减小。它还覆盖了在正性之后把划分标量界住时所纳入的行。在单位素因子处，这样的新增行可以是例外的，即便它在原划分中缺失；不使用来自单位集 \(t_2\) 的任何额外强制节省。
+
+在例外行上，对每一对已经分配的子项取绝对乘积，并乘以方程~\eqref{eq:exceptional-row-count}。令 \(c_{\mathfrak t,\mathbf J}(h')\) 表示其中心抽取系数与有界的抽取标量。对于具有原始减项 \(\widetilde r_1,\widetilde r_2\) 的分配，取绝对值后 \(|c_{\mathfrak t,\mathbf J}(h')|\ll_N
+ Z^{-(\widetilde r_1+\widetilde r_2)/2}\)。使用绝对体积而非抵消，边 \(j\) 上未正规化的 plain 差在每个正形式尺度处都是 \(O(T'_j)\)，包括亚单位尺度，且未正规化的活动槽贡献 \(O_N(\prod_{i\in\mathcal I_j\setminus\mathcal J_j}P_i)\)。因此方程~\eqref{eq:centered-raw-normalization} 给出原始正规化体积
+\[
+ |P_{j,\mathfrak t,\mathbf J}(h')|
+ \ll_N N_{{\rm post},j}^{-1/2}T'_j
+             \prod_{i\in\mathcal I_j\setminus\mathcal J_j}P_i
+ =Z^{(\alpha_j-\widetilde r_j)/2+e_j}
+\]
+至相差固定的半范数与高度因子，其中 \(j\) 表示其 \(C\) 或 \(D\) 一侧。因此，对于一个已分配对与一个下端点除子二进区间（包括其计数），指数为
+\[
+ a_0-b_2+e_1+e_2+t_- -\widetilde r_1-\widetilde r_2
+ \le a_0-b_2+e_1+(e_2+\omega_2)
+ \le a_0-b_2+2\theta_N.
+\]
+这里方程~\eqref{eq:centered-divisor-boundary} 给出 \(t_- -\widetilde r_2\le\omega_2\)，且 \(\widetilde r_1\ge0\)。从而
+\[
+ \sum_{\mathfrak t,\mathbf J}
+ |c_{\mathfrak t,\mathbf J}(h')|
+ |P_{C,\mathfrak t,\mathbf J}(h')
+       P_{D,\mathfrak t,\mathbf J}(h')|
+ \ll Z^{a_0-b_2+2\theta_N+\epsilon_1}.
+\]
+所展示的和对一个固定的下端点除子二进区间求和；其分配已经被包含在 \(\epsilon_1\) 中。它并未断言在 M\"obius 分配之前存在独立的乘积。从参考体积与名义例外计数中减去内部允许量，给出精确的代数恒等式
+\begin{equation}
+ \frac{m'-f}{6}+a_0-b_2-(M'+\Delta_{\rm child})
+ =A-\frac56M-F_1-F_2,
+ \label{old-eq:2.15}
+\end{equation}
+其中
+\begin{equation}
+ \begin{aligned}
+ F_1&=c/6+5\{d+(K_0-K)\}/6+w/3+\widetilde q/6
+       +w_o+\mathcal B_c-5g/6+\ell,\\
+ F_2&=2b_2-\tfrac56g_2-p_2+t_2+V/6+f/6.
+ \end{aligned}
+ \label{old-eq:2.16}
+\end{equation}
+实际超出量由方程~\eqref{old-eq:2.15} 中的名义表达式加上 \(\delta_{{\rm fr},2}/6+2\theta_N+\epsilon_1\) 为其界。
+为显式验证，方程~\eqref{old-eq:2.15} 的左端首先等于
+\[
+ a_0-2b_2+p_2-w-\mathcal B_c-\ell
+       -\tfrac56m'-q'-f/6.
+\]
+代入方程~\eqref{old-eq:2.13} 与 \(K=2A-c-d+R+E-m-(K_0-K)\) 给出方程~\eqref{old-eq:2.15}--\eqref{old-eq:2.16}。
+
+以下下界正是完全的公共支集不消耗可用指数的原因：
+\begin{equation}
+ F_1\ge\tfrac23(c+w)-3\sigma-\tfrac56\delta_{{\rm fr},1},\qquad
+ F_2\ge\tfrac23b_2.
+ \label{old-eq:2.17}
+\end{equation}
+为证明第一个，令 \(D_0=d+K_0-K\)，初始设 \(g=J_+\) 与 \(\ell=0\)，并回忆 \(J=D_0-c-2w+w_o\)。当 \(J\ge0\) 时，直接化简给出
+\[
+ F_1=c+2w+\widetilde q/6+w_o/6+\mathcal B_c
+       \ge c+2w.
+\]
+当 \(J<0\) 时，使用 \(\widetilde q\ge R\) 与
+\[
+ \mathcal B_c+\widetilde q/6
+ \ge (3c-5D_0)_+/6-\tfrac56\delta_{{\rm fr},1}.
+\]
+事实上，左端至少为 \(\{(3c-5d-R)_++R\}/6\)，而它至少为 \((3c-5d)_+/6\)，同时 \(D_0\ge d-\delta_{{\rm fr},1}\)。正部是 \(1\)-Lipschitz 的，给出所展示的修正。由此推出
+\[
+ F_1\ge
+ \frac{c+5D_0+(3c-5D_0)_+}{6}+\frac w3
+       -\frac56\delta_{{\rm fr},1}
+ \ge\frac23(c+w)-\frac w3-\frac56\delta_{{\rm fr},1}.
+\]
+实际选择满足 \(g\le J_++2\sigma\) 与 \(\ell\ge0\)。因此方程~\eqref{old-eq:2.10} 把来自 \(2(c+w)/3\) 的额外损失界以
+\[
+ w/3+5\sigma/3+\tfrac56\delta_{{\rm fr},1}
+ \le22\sigma/9+\tfrac56\delta_{{\rm fr},1}
+ <3\sigma+\tfrac56\delta_{{\rm fr},1}.
+\]
+
+对于方程~\eqref{old-eq:2.17} 中的第二个不等式，从 \(F_2\) 的定义逐素因子计算。以该素因子的对数范数为单位，贡献为
+\[
+ \begin{array}{c|c|c}
+ \text{common case}&F_2&b_2\\ \hline
+ i=i,\ 6\nmid i,\ \text{unit}&7i/6&i\\
+ i=i,\ 6\nmid i,\ \text{nonunit}
+       &(7i-5)/6+\tfrac13 1_{i=1}&i\\
+ i=i,\ 6\mid i,\ \text{either}&7i/6-1&i\\
+ i>j_0,\ 6\mid j_0,\ \text{unit}
+       &i+j_0/6-1&(i+j_0)/2 .
+ \end{array}
+\]
+第二行中额外的 \(1/3\) 是 \(f/6\)。第一行超过 \(2b_2/3\)。在第二行，等号在 \(i=1\) 处成立，且对于 \(i\ge2\)，差为 \((3i-5)/6\ge0\)。在第三行，差为 \((i-2)/2\ge0\)，因为 \(i\ge6\)。在最后一行，差为 \((4i-j_0-6)/6\ge0\)，因为 \(j_0\ge6\) 且 \(i\ge j_0+1\)。求和即证明该断言。
+
+对于非中心化范围 \(A\le5M/6\)，方程~\eqref{old-eq:2.15}--\eqref{old-eq:2.17} 把名义例外超出量界以 \(3\sigma+5\delta_{{\rm fr},1}/6\)。上文记录的实计数与聚合支集修正是在固定的阶段允许量中的进一步 \(O(\xi)\) 项。连同对角估计与较小宽度的估计，这就在当前宽度处以保留的终端损失证明了非中心化阶段。因此先前构造的比较可以使用该阶段。剩下要估计的是当 \(A>5M/6\) 时的中心化例外项。
+
+对于一个固定例外行的一个分离边，固定活动槽标号。于是引理~\ref{lem:centered-coefficient-invariant} 给出在两个 plain 变量中以及在两个矩形项中相同的特征、穿刺点与范数幂。下一个引理表明，每个 plain 和中 \(X^{1+it}\) 的系数与 \(X\) 无关，因此两个乘积主项在尺度之积相等时一致。
+

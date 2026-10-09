@@ -1,5 +1,0 @@
-\[
- \tau(A)=\sum_{x\in k}A(x)\psi(x),\qquad
- J(A,B)=\sum_{x\in k}A(x)B(1-x).
-\]
-若 $A$ 非主特征，变量替换 $x=ty$ 给出

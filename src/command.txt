@@ -1,8 +1,0 @@
-Resume this session with:
-  hermes --resume 20261009_113716_5b3bd3
-  hermes -c "估算 deepseek v4 flash 翻译 199页论文成本"
-
-Session:        20261009_113716_5b3bd3
-Title:          估算 deepseek v4 flash 翻译 199页论文成本
-Duration:       35m 40s
-Messages:       330 (11 user, 308 tool calls)

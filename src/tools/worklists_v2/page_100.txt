@@ -1,8 +1,0 @@
-PAGE 100   (pdf glyphs vs Chinese macros)
-EUFM -> \mathfrak : pdf 4 glyph(s) r4 | zh 0
-   \mathfrak r  y  379.2 x   84.7   line: Sf r , so it has O ( Z ϵ ) choices in the stated ranges; the local choices have the same divisor bound.
-   \mathfrak r  y  599.7 x  324.3   line: k k pow f r ρ
-   \mathfrak r  y  628.7 x  430.7   line: prime has valuation two, and a prime belonging only to the squarefree f or to r has valuation one.
-   \mathfrak r  y  689.3 x  376.5   line: k 0 0 0 0 S f r ρ
-
----- Chinese file today: \substack x0, line breaks \\ x5 ----

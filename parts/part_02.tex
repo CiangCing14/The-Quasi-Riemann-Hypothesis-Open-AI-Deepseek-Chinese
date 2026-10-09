@@ -1,0 +1,513 @@
+对 $T_1\ge1$ 与整数 $J,N\ge0$，
+\begin{equation}\label{eq:late-fourier-tail}
+ \int_{|\boldsymbol t|>T_1}|\widehat w(\boldsymbol t)|
+             (1+|\boldsymbol t|)^J\,d\boldsymbol t
+ \le T_1^{-N}\|w\|_{J+N,\mathrm{sep}}.
+\end{equation}
+在 Mellin 约定
+$\mathcal MW(s)=\int_0^\infty W(y)y^s\,dy/y$ 下，纯扭转满足
+\[
+ \mathcal M[W(y)y^{i\omega}](s)=\mathcal MW(s+i\omega).
+\]
+设 $D_y=y\partial_y$，设 $I\subset\mathbb R$ 为紧集，并设 $N\ge0$
+为整数。假设下述积分有限，且在 $N$ 次对数分部积分中的边界项
+消失。则对
+$\sigma\in I$ 与 $T\in\mathbb R$ 一致地，
+\begin{equation}\label{eq:pointwise-mellin-tail}
+ |\mathcal MW(\sigma+iT)|
+ \ll_{I,N}(1+|T|)^{-N}
+     \sum_{j=0}^N\int_0^\infty y^\sigma|D_y^jW(y)|\,\frac{dy}{y}.
+\end{equation}
+对每个这样的 $I$，这些假设对环状 $W$ 成立。当 $W$ 在零点处光滑、
+在无穷远处为 Schwartz 函数且 $I$ 是 $(0,\infty)$ 的紧子集时，它们
+同样成立。特别地，虚坐标固定的水平围道衔接由此逐点界估计，而
+不只是由方程~\eqref{eq:late-fourier-tail} 中的积分尾部估计。
+
+下面的联合版本也将有用。对使右端有限的可测函数
+$a(v),b(w)$，以及整数 $J,N\ge0$，
+\begin{equation}\label{eq:joint-gaussian-slice}
+ \begin{split}
+ &\int_{\mathbb R^2}e^{-(T+v)^2}|a(v)b(w)|
+       (1+|T|+|v|+|w|)^J\,dv\,dw\\
+ &\quad\ll_{J,N}(1+|T|)^{-N}
+       \sup_v(1+|v|)^{J+N}|a(v)|
+       \int_{\mathbb R}(1+|w|)^J|b(w)|\,dw.
+ \end{split}
+\end{equation}
+因此，两个高度之和中的一个 Gaussian 与另外两个高度中快速下降的
+Mellin 变换之乘积，在固定高度切片上具有快速的逐点衰减。对积分
+尾部，线性映射 $(t_1,t_2,t_3)\mapsto(t_1+t_2,t_2,t_3)$ 可逆，故该
+乘积的所有固定加权 $L^1$ 矩也控制原始高度中盒子的补集。再附加
+有限多个分离频率以及这三个变元的固定线性平移，通过块三角变量
+替换得到相同的结论。
+
+在 Mellin 变量中平移纯扭转后，被 $Z^B(1+|\boldsymbol t|)^J$ 界定
+的、被舍弃的分离被积函数的绝对尾部至多为
+$Z^BT_1^{-N}\|w\|_{J+N,\mathrm{sep}}$。这里 $B$ 与 $J$ 必须在选定
+$N$ 之前固定。一致光滑的分离剖面的进一步导数改变的是这最后一个
+半范数，而不是先前固定的高度阶。在与 $T_1$ 可比的高度处、实长度
+有界的衔接上，阶为 $N+\lceil J\rceil$ 的
+方程~\eqref{eq:pointwise-mellin-tail} 给出 $Z^BT_1^{-N}$ 乘以外部
+测试函数的相应有限加权导数范数，只要其他因子在那里具有所述的界。
+当那些外部范数一致时，这是 $O(Z^BT_1^{-N})$。
+\end{lemma}
+
+\begin{proof}
+对满足 $2m>J+d$ 的整数 $m$，分部积分给出
+\[
+ (1+|\boldsymbol t|^2)^m\widehat w(\boldsymbol t)
+ =\int_{\mathbb R^d}(1-\Delta)^m w_{\log}(\boldsymbol u)
+                       e^{-i\boldsymbol t\cdot\boldsymbol u}\,d\boldsymbol u.
+\]
+其绝对值被 $\Omega$ 的体积乘以 $C_{m,d}p_{2m}(w)$ 界定。加权积分
+有限，因为 $2m>J+d$；可选取 $2m\le J+d+2$。Fourier 反演给出单项式
+公式。对 $\ell^2$ 中的行向量 $B(\boldsymbol t)$，那里所用的精确
+不等式为
+\[
+ \left\|\frac1{(2\pi)^d}\int\widehat w(\boldsymbol t)
+                 B(\boldsymbol t)\,d\boldsymbol t\right\|_{\ell^2}
+ \le\frac1{(2\pi)^d}\int|\widehat w(\boldsymbol t)|
+                 \|B(\boldsymbol t)\|_{\ell^2}\,d\boldsymbol t.
+\]
+
+在一维情形，微积分基本定理、将基点在对扩大后的区间上取平均，
+以及 Cauchy--Schwarz 给出
+$\sup_I|F|^2\ll\int_{I+[-1,1]}(|F|^2+|F'|^2)$。在每个坐标上依次
+应用它，即证明方程~\eqref{eq:parameter-sobolev}。由于所有项非负，
+它可以在导数积分之前按行求和。长度 $O(\log Z)$ 的对数尺度区间
+需要 $O(\log Z)$ 个单位区间；高度区间 $[-T_1,T_1]$ 需要
+$O(1+T_1)$ 个区间。关于对数尺度的导数插入 $yW'(y)$，连同中心
+正规化的常数导数一起插入。正规化扭转 $y^{it}$ 的导数插入
+$\log y$ 的幂。这些仍是有界半范数的环状剖面。例如，若固定参数的
+平方行界为 $O((1+|t|)^H)$ 且有 $d_t$ 个高度参数，则覆盖与积分
+至多花费 $(1+T_1)^{H+d_t}$ 的固定倍数。
+
+在 $|\boldsymbol t|>T_1$ 上有
+$(1+|\boldsymbol t|)^{-N}\le T_1^{-N}$，这证明了
+方程~\eqref{eq:late-fourier-tail}。Mellin 平移由其定义立即得出。
+为证明方程~\eqref{eq:pointwise-mellin-tail}，置
+$F_\sigma(u)=e^{\sigma u}W(e^u)$。对 $|T|\ge1$，分部积分给出
+\[
+ \mathcal MW(\sigma+iT)=(-iT)^{-N}
+              \int_{\mathbb R}F_\sigma^{(N)}(u)e^{iTu}\,du,
+ \qquad
+ F_\sigma^{(N)}(u)=e^{\sigma u}\sum_{j=0}^N
+       \binom Nj\sigma^{N-j}D_y^jW(e^u).
+\]
+取绝对值即给出紧实带形域上的界。对 $|T|<1$，在增大常数后绝对值
+积分给出该界。所述两类 $W$ 具有所需的端点衰减：第一类中紧支集即
+足够，而第二类中 $-\infty$ 处的 $e^{\sigma u}$ 与 $+\infty$ 处的
+Schwartz 衰减即足够。
+
+对 方程~\eqref{eq:joint-gaussian-slice}，利用
+\[
+ 1+|T|\le(1+|T+v|)(1+|v|),\qquad
+ 1+|T|+|v|+|w|\le2(1+|T+v|)(1+|v|)(1+|w|).
+\]
+将 $(1+|T|)^N$ 移至左端，逐点界定加权的 $a(v)$，并将剩余的多项式
+权重对 $T+v$ 中的 Gaussian 积分。剩余的 $w$ 积分即为所展示者。
+这证明了联合界以及所断言的衔接估计。对积分断言，映射
+$(t_1,t_2,t_3)\mapsto(t_1+t_2,t_2,t_3)$ 及其逆都有固定的算子范数。
+因此原始变量中的固定多项式权重被变换后变量中的固定多项式权重
+界定。在盒子的补集上，插入该权重的额外逆幂，并分别对 Gaussian 与
+两个 Mellin 因子积分。附加的块三角映射具有相同的性质，因为它的
+所有系数及其逆的系数都是固定的。
+
+依赖于公共乘积（如 $y_1y_2$）的核在单项式公式中对两个变量给出
+相同的范数幂；这保持等乘积尺度的差。非光滑算术掩码没有这种导数
+界，因此必须在本引理应用之前予以处理。
+\end{proof}
+
+\begin{lemma}[Gaussian 环状分解]\label{lem:gaussian-annular}
+置
+\[
+ W_{\mathrm G}(y)=\frac1{2\sqrt\pi}
+                         \exp\bigl(-\tfrac14(\log y)^2\bigr).
+\]
+该函数不是环状的。选取固定的 $\chi\in C_c^\infty(\mathbb R)$
+使得 $\sum_{k\in\mathbb Z}\chi(u-k)=1$，并定义
+\[
+ W_{{\mathrm G},k}(y)=W_{\mathrm G}(y)\chi(\log y-k),\qquad
+ w_k(x)=W_{\mathrm G}(e^k x)\chi(\log x).
+\]
+剖面 $w_k$ 有一个固定的紧对数支集，且对每个固定的 $A\ge0$ 与整数
+$j\ge0$，
+\begin{equation}\label{eq:gaussian-annular-sum}
+ \sum_{k\in\mathbb Z}e^{A|k|}p_j(w_k)<\infty.
+\end{equation}
+因此，在 $y=e^k x$ 之后，可在每个环带上应用
+引理~\ref{lem:smooth-calculus}，且所得的加权分离范数可和。对固定的
+$\kappa>0$、$A,B,C_0\ge0$ 与 $M>0$，还有
+\[
+ Z^B\sum_{|k|>\kappa\log Z-C_0}e^{A|k|}p_j(w_k)\ll Z^{-M}
+       \qquad(Z\to\infty).
+\]
+直接地，$\mathcal MW_{\mathrm G}(s)=e^{s^2}$，且
+方程~\eqref{eq:pointwise-mellin-tail} 中的加权对数导数在每个紧实
+带形域上一致有限。
+\end{lemma}
+
+\begin{proof}
+这样的分拆由将 $[-1/2,1/2]$ 上为正的非负紧支光滑函数的整数平移
+正规化得到。设 $\operatorname{supp}\chi\subset[-C,C]$。
+$W_{\mathrm G}(e^k x)$ 的每个对数导数是 $k+\log x$ 的多项式乘以
+同一 Gaussian。故乘积法则给出
+\[
+ p_j(w_k)\le C_j(1+|k|)^j
+             \exp\bigl(-\tfrac14((|k|-C)_+)^2\bigr).
+\]
+对每个固定的 $A$，乘以 $e^{A|k|}$ 后它可和。第一断言随之成立，而
+分离范数由引理~\ref{lem:smooth-calculus} 得到。在剖面的对数
+Fourier 变换中，对一个环带作缩放只插入单位相位 $e^{-ikt}$，故它
+不改变这些范数；周围的多项式的任何实正规化保持显式。在所指示的
+尾部上，乘以 $Z^Be^{A|k|}$ 后的最后界的对数至多为
+$-c\kappa^2(\log Z)^2+O(\log Z)$，其中 $c>0$ 固定；对 Gaussian
+尾部求和即证明对每个 $M$ 的所述估计。最后，置 $u=\log y$ 并在其
+Gaussian 积分中配方得到 $\mathcal MW_{\mathrm G}(s)=e^{s^2}$。
+同一 Gaussian 在 $L^1(\mathbb R)$ 中界定每个
+$e^{\sigma u}(d/du)^jW_{\mathrm G}(e^u)$，对 $\sigma$ 在紧区间上
+一致。
+\end{proof}
+
+我们记录伴随这一分离的两类核的显式有限阶连续性陈述。它们不对
+算术变换作任何断言；该变换必须提供所述的核及其可用的实直线。
+
+\begin{lemma}[Fourier 核与 Mellin 核的有限半范数]
+\label{lem:kernel-seminorms}
+对 $\mathbb R^d$ 上的 Schwartz 函数 $f$，置
+\[
+ s_j(f)=\sum_{|\alpha|,|\beta|\le j}
+             \|x^\alpha\partial^\beta f(x)\|_{L^1(\mathbb R^d)}.
+\]
+对每个 $A\ge0$ 与多重指标 $\beta$，通常的 Fourier 变换满足
+\[
+ \sup_\xi(1+|\xi|)^A|\partial^\beta\widehat f(\xi)|
+ \ll_{A,\beta,d}s_{\lceil A\rceil+|\beta|}(f).
+\]
+对任何固定的非退化线性 Fourier 配对，相同的结论在常数作固定改变后
+成立。对写为 $\widehat f(\xi)=F(|\xi|^2)$ 的径向变换，任何预先
+给定的界
+\[
+ \sup_{r\ge0}(1+r)^A|(r\partial_r)^jF(r)|
+\]
+因此被 $f$ 的有限多个 Schwartz 半范数控制。
+
+对 Mellin 断言，设 $m(s)$ 在固定的闭竖直带形域上全纯，并假设在
+那里一致地 $|m(\sigma+it)|\le C(1+|t|)^h$，其中 $h\ge0$ 固定。
+在该带形域中一条可用的直线 $\Re s=\sigma$ 上定义
+\[
+ K_W(x)=\frac1{2\pi i}\int_{(\sigma)}\mathcal MW(-s)m(s)x^{-s}\,ds,
+\]
+其中 $W$ 具有使该积分绝对收敛所需的有限加权对数导数，且对数
+分部积分中的边界项消失。对每个整数 $j\ge0$，
+\[
+ |(x\partial_x)^jK_W(x)|
+ \ll x^{-\sigma}\int_{\mathbb R}
+       |\mathcal MW(-\sigma-it)|(1+|t|)^{h+j}\,dt.
+\]
+右端的积分被有限多个 $y^{-\sigma}|(y\partial_y)^kW(y)|\,dy/y$ 的
+积分界定，对 $\sigma$ 在固定带形域中一致。对 $W(y)y^{i\omega}$，
+同一位界至多额外花费因子 $(1+|\omega|)^{h+j}$。乘以固定的环状
+截断后，这些结论也界定 $y\mapsto K_W(Ry)$ 的每个固定对数半范数，
+带有因子 $R^{-\sigma}$。
+\end{lemma}
+
+\begin{proof}
+对 $\widehat f$ 求导插入 $x^\beta$，而在 $\xi$ 中乘以单项式在对
+$x^\beta f$ 作 Fourier 变换之前对其求导。Fourier 变换的 $L^1$ 界、
+乘积法则，以及将 $(1+|\xi|)^A$ 用次数至多为 $\lceil A\rceil$ 的
+单项式的有限和来界定，给出第一断言。对径向函数，$r\partial_r$
+对应于 $(\xi\cdot\partial_\xi)/2$。展开其 $j$ 次幂给出 Fourier
+导数的有限多个多项式倍数，故第一断言给出径向的那个。固定的线性
+坐标变换只改变其常数。
+
+对 Mellin 断言，在绝对收敛积分下求导插入 $(-s)^j$。在固定带形域
+上它被常数乘以 $(1+|t|)^j$ 界定。写 $y=e^u$，并将
+$e^{-\sigma u}W(e^u)$ 的 Fourier 变换分部积分超过 $h+j+1$ 次。
+乘积法则将所得的 $L^1$ 导数用所述的加权对数导数界定，因为
+$\sigma$ 取值于固定集合。对纯扭转，Mellin 被积函数是
+$\mathcal MW(-\sigma-it+i\omega)$。作替换 $v=t-\omega$ 并利用
+$(1+|v+\omega|)^{h+j}\le(1+|v|)^{h+j}(1+|\omega|)^{h+j}$。
+最后，固定环状截断的乘积法则与 $Ry$ 的链式法则给出最后断言。
+\end{proof}
+
+\subsection{Hecke 函数的增长与对数控制}
+
+圆盘估计仅在该圆盘中的零点被排除之后才会应用。下面的初等增长界
+为复分析论证提供输入，并明确哪些常数关于导子是一致的。当 $\psi$
+是 Hecke 特征时，$L(s,\psi)$ 简记 $L_F(s,\psi)$。本小节中
+$\Gamma(s)$ 表示 Euler gamma 函数；有限二次函数 $\Gamma(c)$ 被
+限制在上面的算术恒等式中。
+
+\begin{lemma}[Hecke 带形域增长]\label{lem:hecke-strip-growth}
+设 $\psi$ 是 $F$ 的本原非主有限阶 Hecke 特征，其导子范数为 $Q$。
+则
+\begin{equation}\label{eq:hecke-growth}
+ |L(\sigma+it,\psi)|\ll Q^{3/5}(3+|t|)^2,
+ \qquad-1/10\le\sigma\le11/10.
+\end{equation}
+对主特征，带 $Q=1$ 的同一界对 $(s-1)\zeta_F(s)/(s+1)$ 成立，在
+$s=1$ 处使用可去值。
+\end{lemma}
+
+\begin{proof}
+有限阶特征具有平凡无穷类型，因为 $\mathbb C^\times$ 连通。此情形
+下的本原 Hecke 函数方程为
+\[
+ \Lambda(s,\psi)=(3Q)^{s/2}(2\pi)^{-s}\Gamma(s)L(s,\psi),\qquad
+ \Lambda(s,\psi)=\varepsilon(\psi)\Lambda(1-s,\overline\psi),
+ \quad |\varepsilon(\psi)|=1.
+\]
+这是 \cite[方程 (1.1)]{GZ} 中所述平凡无穷类型的本原特征的函数
+方程；非主 $L(s,\psi)$ 为整函数。绝对 Euler 收敛将
+$L(11/10+it,\psi)$ 关于 $Q,t$ 一致地界定。在 $\Re s=-1/10$ 上
+应用函数方程与 Stirling 公式给出
+\[
+ |L(-1/10+it,\psi)|\ll Q^{3/5}(3+|t|)^{6/5}.
+\]
+对有界 $t$ 的估计由 gamma 商在该直线上的连续性得到，故那里的
+常数也是一致的。
+
+为完整起见，使用带形域原理所需的增长假设可直接由格 theta 积分
+得到。设 $\mathfrak f=(f)$ 为导子，并定义周期剩余特征
+$\phi(a)=\psi((a))$（当 $(a,\mathfrak f)=1$ 时），否则取值为零。
+对主导子 $(1)$，置 $\phi(a)=1$ 对所有 $a$ 成立，包括 $a=0$。
+由于理想类群平凡，导子为一的没有非主特征。模 $\mathfrak f$ 的
+周期性由射线特征性质得到；$\phi$ 在六个单位上平凡，因为对单位
+$u$ 有 $(u)=(1)$。因此，对 $\Re s>1$，
+\[
+ 6\pi^{-s}\Gamma(s)L(s,\psi)
+ =\int_0^\infty\bigl(\Theta_\phi(v)-\phi(0)\bigr)v^{s-1}\,dv,
+ \qquad
+ \Theta_\phi(v)=\sum_{a\in\mathcal O}\phi(a)e^{-\pi vq_a}.
+\]
+因子六计算每个理想的生成元个数。若
+$\widehat\phi(h)=Q^{-1}\sum_{a\bmod f}\phi(a)e(-ha/f)$，
+有限 Fourier 反演与 Gaussian Poisson 求和给出
+\[
+ \Theta_\phi(v)=\frac{2}{\sqrt3v}
+ \sum_{h\bmod f}\widehat\phi(h)
+ \sum_{b\in\mathcal O}
+    \exp\left(-\frac{4\pi|b-h/f|^2}{3v}\right).
+\]
+改变生成元 $f$ 只是对有限和重作指标。对每个固定的导子，非零对偶
+向量有正的最小长度。令 $A_\phi=2\widehat\phi(0)/\sqrt3$，这证明了
+\[
+ \Theta_\phi(v)=A_\phi v^{-1}+O_\phi(v^{-1}e^{-c_\phi/v})\quad(0<v\le1),
+ \qquad
+ \Theta_\phi(v)=\phi(0)+O_\phi(e^{-c_\phi v})\quad(v\ge1)
+\]
+其中 $c_\phi>0$。将 Mellin 积分在 1 处拆分因而给出
+\[
+ \begin{split}
+ 6\pi^{-s}\Gamma(s)L(s,\psi)
+ ={}&\frac{A_\phi}{s-1}-\frac{\phi(0)}s
+ +\int_0^1\bigl(\Theta_\phi(v)-A_\phi/v\bigr)v^{s-1}\,dv\\
+ &+\int_1^\infty\bigl(\Theta_\phi(v)-\phi(0)\bigr)v^{s-1}\,dv.
+ \end{split}
+\]
+两个积分都是整函数，且在每个有界实带形域上关于高度有界，常数可
+依赖于固定的导子。因此 $1/\Gamma(s)$ 的 Stirling 公式对
+$L(s,\psi)$ 在该带形域上给出至多指数级的高度增长。在主情形，乘以
+$(s-1)/(s+1)$ 后相同的结论成立。带形域原理只用到对每个固定导子的
+这种定性增长。
+
+为了明确看出固定导子的增长常数不进入一致带形域界，置
+\[
+ H_Q(s)=Q^{-3/5}\frac{L(s,\psi)}{(s+2)^2}.
+\]
+它在闭带形域上全纯，并由已证明的界在两条竖直边界直线上被一个
+绝对常数 $C$ 界定。对 $\delta>0$，对
+$H_Q(s)\exp(\delta(s-1/2)^2)$ 在高度为 $T$ 的矩形上应用最大值
+原理。在竖直边上，指数的模至多为 $e^{9\delta/25}$，因为
+$|\Re s-1/2|\le3/5$。在水平边上其模至多为
+$e^{\delta(9/25-T^2)}$，当 $T\to\infty$ 时它比定性的固定 $Q$
+指数增长更快地趋于零。先对此固定的 $Q,\delta$ 令 $T\to\infty$，
+然后令 $\delta\downarrow0$。结果是 $|H_Q(s)|\le C$ 在整个带形域
+上成立，且对每个 $Q$ 有相同的常数。乘以 $Q^{3/5}|s+2|^2$ 即
+证明方程~\eqref{eq:hecke-growth}。
+
+对主函数，因子 $(s-1)/(s+1)$ 消去其在带形域中唯一的极点，并在
+边界上有界。其函数方程给出带 $Q=1$ 的相同边界界。该方程也可由
+前面的 Poisson 公式取 $\phi=1$ 得到：写 $v=2t/\sqrt3$ 后，theta
+关系为 $\Theta_\phi(2t/\sqrt3)=t^{-1}\Theta_\phi(2/(\sqrt3t))$，
+其拆分的 Mellin 积分在 $s\mapsto1-s$ 下不变。对
+$(s-1)\zeta_F(s)/((s+1)(s+2)^2)$ 应用相同的阻尼矩形论证。
+\end{proof}
+
+\begin{lemma}[对数控制]\label{lem:logarithmic-control}
+设 $\psi$ 是导子范数为 $Q$ 的本原非主有限阶 Hecke 特征，并置
+$\mathcal L(s)=L(s,\psi)$。对主特征置 $Q=1$ 与
+$\mathcal L(s)=(s-1)\zeta_F(s)/(s+1)$，在 1 处取其可去值。固定
+$a\in[1/2,1]$ 与 $0<e<10^{-3}$。假设 $\mathcal L$ 在以 $2+it$
+为心、半径为 $2-a-2e$ 的开圆盘中没有零点。则在半径为
+$2-a-6e$ 的闭同心圆盘上一致地，
+\begin{equation}\label{eq:disk-control}
+ |\mathcal L(s)|+|\mathcal L(s)^{-1}|
+ \ll_{e,\epsilon}\{2Q(3+|t|)^2\}^{\epsilon}.
+\end{equation}
+在半径为 $2-a-8e$ 的圆盘上还有
+\[
+ |\mathcal L'(s)/\mathcal L(s)|\ll_e\log\{2Q(3+|t|)^2\}.
+\]
+特别地，对每个固定的 $b\ge\beta_*$ 与 $v>0$，这些界在
+$\Re s\ge b+v$ 上成立，常数依赖于 $v,\epsilon$（并以 $s$ 的高度
+代替 $t$）。在主情形，倒数界传递到 $1/\zeta_F$；上界与对数导数界
+是对正规化函数 $\mathcal L$ 而言的。
+\end{lemma}
+
+\begin{proof}
+写 $R_j=2-a-je$ 与 $\mathcal C=2Q(3+|t|)^2$。这里所用的所有圆盘
+都落在 $\Re s>1/2$ 中，主正规化因子在那里全纯。在无零点圆盘上，
+选取全纯对数 $g=\log\mathcal L$，其在中心附近的值是 Euler 对数，
+并在主情形连同正规化因子的对数一起选取。值 $g(2+it)$ 一致有界。
+引理~\ref{lem:hecke-strip-growth} 与 $11/10$ 右方的 Euler 收敛
+给出
+\[
+ \Re g(s)=\log|\mathcal L(s)|\ll\log\mathcal C
+       \qquad(|s-(2+it)|\le R_3).
+\]
+可能的高度与 $t$ 相差至多 $3/2$，这已包含在 $\mathcal C$ 中。
+在半径 $R_3,R_4$（其差为 $e$）上的 Borel--Carath\'eodory 现在
+给出在半径 $R_4$ 的圆盘上 $|g|\ll_e\log\mathcal C$。
+
+在固定半径 $r_0=49/100$ 的圆盘上，$\Re s\ge151/100>1$。绝对收敛
+的 Euler 对数在那里一致有界。对主函数，$(s-1)/(s+1)$ 的对数在该
+圆盘上也有界，使用其在 $\Re s>1$ 中的分支。由于
+$r_0<R_6<R_4$，对 $g$ 应用 Hadamard 三圆定理给出
+\[
+ \max_{|s-(2+it)|\le R_6}|g(s)|
+ \ll_e(\log\mathcal C)^\theta,
+ \qquad
+ \theta=\frac{\log(R_6/r_0)}{\log(R_4/r_0)}<1.
+\]
+对固定的 $e$，在紧区间 $1/2\le a\le1$ 上的连续性使 $\theta$
+一致地小于一。对每个 $\epsilon>0$，
+$\exp(C_e(\log\mathcal C)^\theta)\ll_{e,\epsilon}\mathcal C^\epsilon$。
+将其应用于 $e^g$ 与 $e^{-g}$ 二者即证明
+方程~\eqref{eq:disk-control}。在半径 $R_6$ 与 $R_8$ 之间的 Cauchy
+估计给出对 $g'=\mathcal L'/\mathcal L$ 的所述界。
+
+对全局断言，先设 $\beta_*\le b\le1$。选取
+$0<e<\min(10^{-3},v/8)$ 并置 $a=b$。半径 $R_2$ 的圆盘包含在
+$\Re s>b+2e>\beta_*$ 中，故由 $\beta_*$ 的定义与超过一的绝对
+Euler 收敛它是无零点的。半径 $R_8$ 的圆盘覆盖其中心高度处的点
+$b+v\le\Re s\le2$；Euler 收敛覆盖 $\Re s\ge2$。前面的常数关于
+$b$ 一致。若 $b>1$，则 $\Re s\ge1+v$ 上的 Euler 收敛足够。最后
+\[
+ \frac1{\zeta_F(s)}=\frac{s-1}{s+1}\mathcal L(s)^{-1},
+ \qquad \left|\frac{s-1}{s+1}\right|\le1\quad(\Re s\ge0),
+\]
+这证明了主倒数断言。
+\end{proof}
+
+\begin{lemma}[被删除的 Euler 因子]\label{lem:deleted-euler-factors}
+设 $R$ 是无平方因子理想，且对 $p\mid R$ 有 $|a_p|\le1$。置
+$D_R(s)=\prod_{p\mid R}(1-a_pq_p^{-s})$。对固定的 $\sigma_0>0$ 与
+每个 $\epsilon>0$，
+\[
+ |D_R(s)|+|D_R(s)^{-1}|\ll_{\sigma_0,\epsilon}q_R^\epsilon
+       \qquad(\Re s\ge\sigma_0).
+\]
+在有界实带形域上，关于高度一致地有，
+\[
+ |D_R(s)|\ll_\epsilon q_R^{(-\Re s)_++\epsilon},
+ \qquad
+ \left|\frac{D_R'(s)}{D_R(s)}\right|
+ \ll_{\sigma_0}\log(2q_R)\quad(\Re s\ge\sigma_0).
+\]
+特别地，有界 $B$ 的支集 $q_R\le Z^B$ 在固定的正实半平面上以 $Z$
+的任意预先给定的正幂为代价。对非本原函数
+$L(s,\psi^*)D_R(s)$，在应用对数控制时必须同时包含本原导子与删除
+根 $R$。
+\end{lemma}
+
+\begin{proof}
+每个因子在 $\Re s>0$ 上非零。对 $\Re s\ge\sigma_0$，其绝对值与其
+逆的绝对值都至多为 $(1-q_p^{-\sigma_0})^{-1}$。对充分大的 $q_p$
+（依赖于 $\sigma_0,\epsilon$），
+$-\log(1-q_p^{-\sigma_0})\le\epsilon\log q_p$。有限多个较小的素数
+贡献一个固定常数。这证明了第一个估计。对任何实 $\sigma$，
+\[
+ \prod_{p\mid R}(1+q_p^{-\sigma})
+ \le q_R^{(-\sigma)_+}2^{\#\{p:p\mid R\}}
+ \ll_\epsilon q_R^{(-\sigma)_++\epsilon}.
+\]
+最后的不等式通过分离出满足 $q_p<2^{1/\epsilon}$ 的有限多个素数
+得到。最后，对数求导给出
+\[
+ \left|\frac{D_R'}{D_R}(s)\right|
+ \le\sum_{p\mid R}\frac{\log q_p}{q_p^{\sigma_0}-1}
+ \ll_{\sigma_0}\log(2q_R).
+\]
+若 $q_R\le Z^B$，选取第一个估计中的指数小于 $Z$ 的期望指数除以
+$B$ 的有界值；$B=0$ 的情形立即成立。这证明了对被删除因子的所述
+解释。
+\end{proof}
+
+\section{完备化的三次反射与无标记行能量}
+\label{sec:completed-reflection}
+
+本节首先变换 Gauss 系数的完备化和，同时在其特征中保留每一个零
+延拓。然后它将该恒等式与二次大筛法结合，以界定其在任意非零元素
+行上的均方。在行长度与完备化长度相等时，结果是平衡论证所需的界
+$Z^{1+\epsilon}$。
+
+theta 函数及其在三个固定尖点处的 Fourier 系数是来自 Dunn 与
+Radziwi{\l}{\l}~\cite[第~5 节与附录~A]{DR} 的无条件输入。
+原始的系数与尖点计算见
+Patterson~\cite[定理~8.1 与第~7--8 节]{Patterson}；这里的
+正式输入仍为~\cite{DR} 中的公式。下面的有限变换推导带掩码的公式，
+包括其局部因子与相位。后面的均方论证只在固定其有限尖点扇区之后
+才使用该相位。
+
+\subsection{完备化反射}
+
+写
+\[
+ \check e(z)=\exp\bigl(2\pi i(z+\bar z)\bigr),
+ \qquad e(z)=\check e(z/\lambda)\qquad(z\in\mathbb C).
+\]
+在 $F$ 上，$\check e$ 中的指数为
+$2\pi i\operatorname{Tr}_{F/\mathbb Q}z$。对每个整数指数，剩余
+特征的幂在非单位处理解为零。特别地，$\chi_p(x)^0=1_{p\nmid x}$。
+
+\begin{proposition}[完备化三次反射]
+\label{prop:completed-reflection}
+固定一族导子支集在 $S$ 上的有限射线特征 $\mathcal X$。选取一个
+固定的整模 $\mathfrak E$，其素支集恰为 $S$，且被该族中的每个导子
+整除。在主元素上，将 $\mathcal X$ 的每个成员在 $\mathfrak E$-单位
+之外作零延拓。选取单个 $L\in\mathcal O\setminus\{0\}$，其素支集为
+$S$，满足 $(18)\mid(L)$ 与 $\mathfrak E\mid(L)$，且大到足以使对
+每个 $\Psi_0\in\mathcal X$，$\mathcal O$ 上的函数
+\[
+ \phi(x)=
+ \begin{cases}
+ \chi_x(\lambda)^2\Psi_0(x),&x\equiv1\pmod3,\ (x,\mathfrak E)=1,\\
+ 0,&\text{otherwise},
+ \end{cases}
+ \qquad
+ \widehat\phi(h)=q_L^{-1}\sum_{x\bmod L}\phi(x)e(-hx/L)
+\]
+为 $L$-周期的。零分支的取值不涉及任一特征的计算。由三次补充
+定律与射线周期性，这样的 $L$ 之选择存在，如以下所验证。
+$\mathfrak E$ 与 $L$ 二者对整个族都是固定的，在任何运动的素数被
+选取之前。固定一个成员 $\Psi_0\in\mathcal X$ 并置
+$\mathfrak L=(L)$。设 $\mathcal P$ 是任意不整除 $L$ 的互异主素数
+的有限集，对每个 $p\in\mathcal P$ 选取
+$j_p\in\{0,1,\ldots,5\}$，并在主元素上置
+\[
+ \Psi(n)=\Psi_0(n)\prod_{p\in\mathcal P}\chi_p(n)^{j_p}.
+\]
+下面的乘积中，两个变量之间不施加互素条件：
+\[
+ \begin{split}
+ D(s,\Psi)&=\sum_{\substack{n\equiv1\ (3)\\(n,\mathfrak E)=1}}^{\rm sf}
+       \gamma_2(n)\bar\alpha(n)\Psi(n)q_n^{-s},\\
+ L_0(s,\Psi)&=\sum_{\substack{b\equiv1\ (3)\\(b,\mathfrak E)=1}}
+       \bar\alpha(b)^3\Psi(b)^3q_b^{-3s+1/2},
+       \qquad T(s,\Psi)=L_0(s,\Psi)D(s,\Psi).
+ \end{split}
+\]
+两个级数及其乘积对 $\Re s>1$ 绝对收敛。
+

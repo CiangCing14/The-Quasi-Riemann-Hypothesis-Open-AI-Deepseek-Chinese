@@ -1,3 +1,0 @@
-PAGE 66   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 1 glyph(s) I1 | zh 0
-   \mathcal I  y   73.2 x  486.2   line: where a , . . . , a are pairwise coprime and squarefree, and a is arbitrary. Insert a ∈I and

@@ -1,6 +1,0 @@
-PAGE 141
-counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 3}
-
-BAR       y  523.4 x   84.7-  87.7 
-BAR       y  748.8 x  182.2- 185.2 
-BAR       y  748.8 x  205.9- 209.0 

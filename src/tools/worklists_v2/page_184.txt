@@ -1,6 +1,0 @@
-PAGE 184   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 2 glyph(s) B1 A1 | zh 0
-   \mathcal B  y  345.8 x  229.2   line: # B ≪ U e ( r ) − δr + ϵ (1 + T ) A A ,
-   \mathcal A  y  346.6 x  346.8   line: # B ≪ U e ( r ) − δr + ϵ (1 + T 1 ) A A ,
-
----- Chinese file today: \substack x0, line breaks \\ x1 ----

@@ -1,4 +1,0 @@
-PAGE 89   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 2 glyph(s) O1 R1 | zh 0
-   \mathcal O  y  326.5 x   89.3   line: j ∈O , put
-   \mathcal R  y  489.8 x  316.5   line: F ( Cn , Cn ; Ck ) = χ ( k ) χ ( − k ) R ( n , n ) L ( n , n ; k ) ,

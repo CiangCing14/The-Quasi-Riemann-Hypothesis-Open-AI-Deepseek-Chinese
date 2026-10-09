@@ -1,3 +1,0 @@
-PAGE 141   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 1 glyph(s) I1 | zh 0
-   \mathcal I  y  394.4 x  376.3   line: and the bounded clipping families described above, and form I , L . Include the product

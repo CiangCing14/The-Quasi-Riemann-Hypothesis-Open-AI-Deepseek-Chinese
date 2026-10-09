@@ -1,0 +1,580 @@
+选择 \(T_{\rm init}>1+B_{\rm crude,init}\)，然后
+\[
+ A_{\rm init}>1+(B_{\rm crude,init}+T_{\rm init})/\tau_{\rm init}.
+\]
+方程~\eqref{eq:inverse-raw-tail} 使原始
+\(\mathcal B_{\rm init}=0\) 补集为 \(O(Z^{-T_{\rm init}})\)，其中
+半范数与多项式高度因子固定。该阶数在
+带标记区间与 \(\tau_{\rm init}\) 之后选取，但在初始
+Fourier 高度阶数之前、最终 \(Z\) 阈值之前选取。若
+\(\tau_{\rm init}=\tau\)，则取这个
+单独的粗略界与规范尾部所要求的阶数之最大值。外球内保留的
+完整核具有在规范分离中已使用的统一 Euler 界。最终阈值还强制
+\(\mathcal I_D\) 中完整的初始支撑
+比。
+
+主计数具有指数 \(m\)，每个非主项现在
+已被 \(Z^{m+\epsilon}\) 界定。该论证保留所有元素
+行与每个原始掩码，适用于子集以及任一公共
+定向，并保持任意有界且行无关的素
+系数。公共分离测度给出所述的有限
+半范数与多项式高度一致性。这证明了
+方程~\eqref{old-eq:4.1}。
+\end{proof}
+
+\subsection{无六次幂因子行上的放大}
+
+我们首先在所有元素行上提取一个无标记的推论。在
+引理~\ref{lem:marked} 中，取 \(Z=H,\ m=1\)、无槽位，且
+\(r=\log_H D\)。若对某个固定 \(c>0\) 有 \(H\ge D^{1+c}\)，则
+\(1-r\ge c/(1+c)\)；第二个所需余量也为正。
+对 \(D\le H^{\epsilon/4}\)，直接界
+\(|M_u(D;W)|^2\ll D\) 已足够。否则起始长度
+位于一个远离零的固定有界区间内。有界的 \(H,D\)
+直接处理。对 \(H,D\ge1\)，我们得到
+\begin{equation}\label{eq:raw-moment}
+ \sum_{\substack{u\in\mathcal O\\0<q_u\le H}}
+ \left|D^{-1/2}\sum_n\mu(n)\nu(n)\chi_n(u)^{\varepsilon_\chi}
+                         W(q_n/D)\right|^2
+ \ll_{c,\epsilon,W} H(HD)^\epsilon,\qquad H\ge D^{1+c}.
+\end{equation}
+固定的算术数据与所述的半范数包含在
+常数的依赖关系中。
+
+\begin{lemma}[六次幂放大]\label{lem:inverse-amplification}
+设 \(\nu,W,\varepsilon_\chi\) 与零延拓如
+引理~\ref{lem:marked} 所述，无素槽位。设 \(U,D\ge1\)，并对满足
+\(q_u\asymp U\)、且理想 \((u)\) 的每个素
+赋值至多为五的元素 \(u\) 求和。对每个固定的
+\(c>0\) 与 \(\epsilon>0\)，置
+\[
+ H=\max(2U,D^{1+c}),\qquad P=(H/U)^{1/6}.
+\]
+则
+\begin{equation}\label{eq:amplified-note}
+ \sum_u|M_u(D;W)|^2
+ \ll \frac HP(UD)^\epsilon
+ \ll \max\{U,U^{1/6}D^{5(1+c)/6}\}(UD)^\epsilon.
+\end{equation}
+隐含常数只依赖于 \(c,\epsilon\)、固定的
+算术数据以及 \(W\) 的有限多个半范数。特别地，
+对 \(D=U^r\)，其中 \(r\) 属于一个固定有界非负区间，对
+每个 \(\epsilon>0\)，指数可写为
+\[
+ \sum_u|M_u(U^r;W)|^2\ll U^{e(r)+\epsilon},
+ \qquad e(r)=\max\{1,(1+5r)/6\}.
+\]
+两个断言都允许在每一行中使用单独的检验函数
+\(W_{\sigma_u,t_u}(y)=W(y)y^{-\sigma_u+it_u}\)，其中
+\(\sigma_u\) 位于一个固定紧区间、\(|t_u|\le T_1\)，
+代价为 \((1+T_1)^A\)，\(A\) 固定。
+\end{lemma}
+
+\begin{proof}
+首先，方程~\eqref{eq:raw-moment} 与
+引理~\ref{lem:smooth-calculus} 蕴含逐行尺度界
+\begin{equation}\label{eq:inverse-scale-supremum}
+ \sum_{\substack{v\in\mathcal O\\0<q_v\le C H}}
+       \sup_{0<D'\le D}|M_v(D';W)|^2
+ \ll H(HD)^\epsilon,\qquad H\ge\max(2,D^{1+c}).
+\end{equation}
+事实上，足够小的尺度在环形
+支撑内没有理想。关于 \(\log D'\) 的求导将
+\(W(y)\) 替换为 \(-W(y)/2-yW'(y)\)。引理~\ref{lem:smooth-calculus} 中的
+一维 Sobolev 不等式，继之以对这两个检验函数使用的
+方程~\eqref{eq:raw-moment}，控制了
+单位对数区间上的上确界。这样的区间有
+\(O(\log(2+D))\) 个。对 \(H\) 的一个固定放大
+处理它们的端点，直接的小尺度界处理
+初始区间。这证明了
+方程~\eqref{eq:inverse-scale-supremum}。
+
+在固定集合 \(S\) 之外的理想计数给出至少 \(c_S P\) 个
+满足 \(q_a\le P\) 的主理想 \(a\)，其中固定的 \(c_S>0\)。
+对有界的 \(P\)，这可在缩小 \(c_S\) 之后得到，因为
+单位理想可用；对大的 \(P\)，它由去掉有限多个素数后的
+正密度理想计数得到。
+
+对无平方因子的 \(n\)，通过
+\(n=dm\) 分离整除 \(a\) 的素数，其中 \(d\mid\operatorname{rad}a\) 且 \((m,a)=1\)。
+借助零延拓，
+\[
+ \psi_{ua^6}(m)=\psi_u(m)1_{(m,a)=1}.
+\]
+当 \(u,a\) 共享素数时这也成立：两侧在
+整除 \(m\) 且整除 \(u\) 或 \(a\) 的素数处同时为零，否则
+六次幂为一。因此分离后的列给出
+恒等式
+\begin{equation}\label{eq:sixth-power-column-identity}
+ M_u(D;W)=\sum_{d\mid\operatorname{rad}a}
+       \mu(d)\psi_u(d)q_d^{-1/2}M_{ua^6}(D/q_d;W).
+\end{equation}
+系数质量至多为 \(d_{\mathcal O}(a)\ll_\delta P^\delta\)。
+由此
+\[
+ |M_u(D;W)|^2\ll_\delta
+ P^{2\delta}\sup_{0<D'\le D}|M_{ua^6}(D';W)|^2.
+\]
+
+对这些 \(a\) 平均该界并对 \(u\) 求和。映射
+\((u,a)\mapsto ua^6\) 在这些对上单射。事实上，在
+每个素数处，模六的赋值恢复
+无六次幂因子理想 \((u)\) 的赋值，而它除以六的商
+恢复 \(a\) 的赋值。\(a\) 的主生成元
+随后确定元素 \(u\)，包括其单位。该论证
+不要求 \((u,a)=1\)。又
+\(q_{ua^6}\ll UP^6\ll H\)。因此
+方程~\eqref{eq:inverse-scale-supremum} 给出
+\[
+ \sum_u|M_u(D;W)|^2
+ \ll \frac HP(UD)^\epsilon
+ =U^{1/6}H^{5/6}(UD)^\epsilon,
+\]
+只要预先选取的 \(\delta\) 与幂次损失足够小。由于
+\(H=\max(2U,D^{1+c})\)，这就是
+方程~\eqref{eq:amplified-note}。对有界的 \(r\)，选取
+\(c>0\) 充分小，其依据是 \(r\) 的界与
+所需的幂次损失；所述的 \(e(r)\) 公式随之成立。
+
+最后，在固定环形支撑上，\(W_{\sigma,t}\) 关于 \(\sigma,t\) 的
+导数插入 \(\log y\) 的有界幂。在 \(\sigma\) 上的一个
+有界覆盖与 \(t\) 中 \(O(1+T_1)\) 个单位区间上应用
+引理~\ref{lem:smooth-calculus} 中的参数 Sobolev 不等式，
+在积分导数之前先对行矩求和。已经证明的有限半范数界
+具有固定的多项式高度阶数。该覆盖与
+这些导数因而给出因子 \((1+T_1)^A\)，其中
+\(A\) 固定，且对每一行中单独的 \((\sigma_u,t_u)\) 一致成立。
+同样的论证适用于带标记估计，其中检验参数为任意
+固定有限个数，而其素系数
+在各行间保持固定。
+\end{proof}
+
+在后续应用中，\(T_1=Z^{\tau_\eta}\) 中的正指数
+在固定阶数 \(A\) 之后选取。
+因此它可取得足够小，以适配预留的幂次
+损失。这种使用逐行检验参数的做法不允许任意
+依赖于行的素系数。
+
+\section{带短素因子的四阶矩}\label{sec:plain}
+
+精细化的行计数需要对两个普通
+特征多项式之积与短素多项式之积给出一个四阶矩估计。我们在此
+证明该估计。当没有素多项式时，两个普通多项式无长度限制；
+否则允许的长度位于
+一个仿射区域中。两个有限 Fourier 变换在较小的有效宽度下返回
+同类乘积。然而某些变换后的行
+诱导出一个固定
+有限族中的特征。它们的普通乘积可以有体积量级的主项。
+因此对较长的输入，我们减去一个与之有相同
+尺度乘积的比较乘积。通过变换保持其公共特征、掩码与范数
+幂，使那些主项相消。该估计
+本身针对原始的、未中心化的乘积。
+
+我们使用节~\ref{sec:arithmetic} 的记号与节~\ref{sec:additional-arithmetic} 的
+系数约定。特别地，
+各行为元素 \(k\in\mathcal O\)，其中 \(0<q_k\ll Z^m\)，且
+\[
+ \psi_k(n)=\tau(n)\chi_n(k),\qquad M=m+q.
+\]
+特征 \(\tau\) 在行和内部固定。其所有展示的移动剩余符号因子的
+素支撑，在约去因子或将指数模六约简之前的并集，
+范数至多
+为 \(Z^q\)。每个展示的因子都保留其零延拓，
+包括被约去或被六整除的因子。冗余的零
+只有在精确
+因式分解保留每个存活的局部与固定射线相位时，才可用一个额外的穿孔掩码表示。该
+掩码是与一个范数至多
+为 \(Z^B\) 的无平方因子理想互素的指示函数，其中 \(B\) 有界，在当前行和内固定；
+同一掩码用于两个普通因子以及每个素因子。
+它可依赖于先前冻结的标记，但不依赖于变化中的行。
+多项式中的所有理想都在固定集合 \(\mathcal S\) 之外。
+
+固定一个由有限阶射线特征组成的有限群 \(\Theta\)，其
+导子素数属于 \(\mathcal S\)。它包含固定的
+扭以及用于分离固定互反
+相位的所有特征。因此它亦包含补充特征
+\(n\mapsto\chi_n(-1)\)：由
+方程~\eqref{eq:fixed-gauss-phases} 与固定的双特征
+表，该特征为对角特征
+\(n\mapsto\mathcal R(n,n)\)。一个诱导特征属于
+\(\Theta\) 意味着它等于 \(\Theta\) 某个成员的
+本原诱导特征，而非所选零延拓
+表示相等。那些表示的所有零仍留在多项式中。
+设 \(\mathcal R_0\) 为使
+\(\psi_k\) 诱导非主特征的行。对 \(z>0\)，设
+\(\mathcal R_z\) 为使 \(\psi_k\) 的诱导特征
+不属于 \(\Theta\) 的行。记
+\begin{equation}
+ A=n_1+n_2+z.
+ \label{old-eq:3.1}
+\end{equation}
+
+\begin{lemma}[带短素因子的四阶矩]\label{lem:plain}
+设 \(3/4\le\kappa\le1\)。设 \(n_1,n_2\ge0\)，并设
+\(Q=\prod_{i\in\mathcal I}Q_{\psi_k,i}\) 为方程~\eqref{old-eq:1.2} 中
+素多项式的一个有限乘积，长度为
+\(z_i\ge0\)，总长度为 \(z=\sum_{i\in\mathcal I}z_i\)。
+它们的底层素支撑在施加公共
+掩码与行零延拓之前两两不交。它们的系数是
+有限射线特征的固定有限线性组合。对每个
+正长度槽位，其展开具有形式
+\[
+ \nu_i(n)=\sum_{j=1}^{J_i}c_{ij}\vartheta_{ij}(n),
+ \qquad\vartheta_{ij}\in\Theta,
+\]
+其中该有限列表及其系数独立于
+\(Z\) 与行而固定。行与掩码假设即为刚刚所述的。
+
+对每个 \(\epsilon>0\)，存在槽位网格 \(\eta>0\)，使得
+若对每个 \(i\) 有 \(z_i\le\eta\)，则
+\begin{equation}
+ \sum_{k\in\mathcal R_z}
+ \left|S_{\psi_k}(n_1;W_1)S_{\psi_k}(n_2;W_2)Q\right|^2
+ \ll Z^{M+\epsilon}
+ \label{old-eq:2.1}
+\end{equation}
+在以下任一情形下成立：
+\begin{enumerate}
+\item \(z=0\)。对有限非负
+      长度 \(n_1,n_2\) 无限制，对导子也无下界。
+\item \(z>0\) 且
+\begin{equation}
+ n_1+n_2+6\kappa z=A+(6\kappa-1)z\le M.
+ \label{old-eq:3.9}
+\end{equation}
+      若 \(\kappa<1\)，另外假设
+      \(\beta_*\le(1+\kappa)/2\)。若 \(\kappa=1\)，则无需
+      无零点假设。
+\end{enumerate}
+对空槽位列表，\(Q=1\)。若 \(z=0\) 且列表包含
+零长度槽位，则它们的尺度有界，绝对计数
+将它们吸收进常数；因此零槽位断言
+具有同样的强度。所有实长度参数在给定的有界
+集合中取值。网格只依赖于这些集合与 \(\epsilon\)，对
+\(\kappa\in[3/4,1]\) 一致成立。对每个固定的与 \(Z\) 无关的算术
+数据 \(\mathcal A\) 与固定槽位数，该界使用有限多个
+光滑半范数以及分离范数扭
+高度中的一个固定多项式。它们的阶数以及该界本身，对所述范围内的
+所有移动模、容许掩码与冻结外标记
+一致成立。
+\end{lemma}
+
+对 \(7/8\) 界的应用取 \(\kappa=2\beta_*-1\)，故
+本引理中的无零点假设以等号成立。我们保留这个
+动态值，而不将它替换为 \(11/12\) 界提供的值 \(5/6\)，
+因为精细化的行计数使用由此得到的仿射
+容量。下面的证明使用
+节~\ref{sec:finite-correlations} 的有限 Gauss 恒等式、
+引理~\ref{lem:smooth-calculus} 与引理~\ref{lem:logarithmic-control}。
+在其有界尺度上通过绝对计数吸收任何零长度槽位；
+此后 \(z=0\) 表示没有存活槽位剩余。我们首先
+作两个保持行族的化归。
+
+后续的归纳针对有效宽度 \(M=m+q\)，其中所有零槽位
+带在正槽位带之前完成。在每个带内先证明区间
+\(A\le5M/6\)。这个阈值来自那些
+诱导特征属于 \(\Theta\) 的变换后的行：计数
+它们的六次幂形式并
+用体积界定它们的普通乘积，在公共支撑节省之前留下超额
+\(A-5M/6\)。反射处理
+某些较长的输入；其余的化归为等乘积尺度
+差，其相消去除了该超额。
+
+\subsection{固定掩码与反射}
+
+当一个特征的零恰好由它的
+本原导子素数、它的冗余行根与所声明的移动
+根素数以及 \(\mathcal S\) 中的固定素数组成时，称它是\emph{自然的}。这里
+冗余素数是使诱导特征非分歧、
+但展示的零延拓乘积仍为零的素数。展示的
+被六整除的幂在非单位元上仍为零。若固定扭的一个冗余因子
+未包含在所声明的移动根中，
+则先将它精确分解为其剩余相位与一个互素
+指示函数，并把该指示函数放入一个无平方因子理想
+\(\mathfrak R\)，其中 \(q_{\mathfrak R}\le Z^B\)，在整个
+行和内固定。特别地，固定扭
+与变化因子 \(\chi_n(k)\) 之间的相消不会被重新归类为
+每一行单独选取的额外穿孔。
+
+设 \(\psi_k^0\) 为删去这些
+额外穿孔后所得的自然特征，并设 \(T_k(X)\) 表示其在尺度 \(X\) 处的中心
+正规化普通和。记 \(S_{k,\mathfrak R}(X)\)
+为带额外掩码的和。乘性，包括零
+延拓，给出恒等式
+\begin{align}
+ S_{k,\mathfrak R}(X)
+ &=\sum_{d\mid\mathfrak R}\mu(d)\psi_k^0(d)q_d^{-1/2}
+                  T_k(X/q_d),
+ \label{old-eq:2.1a}\\
+ Q_{k,i,\mathfrak R}
+ &=Q_{k,i}^{\,0}
+   -P_i^{-1/2}\sum_{\substack{p\mid\mathfrak R\\p\ {\rm prime}}}
+       \psi_k^0(p)\nu_i(p)W_i^{\rm slot}(q_p/P_i),
+ \qquad P_i=Z^{z_i}.
+ \label{eq:prime-mask-erasure}
+\end{align}
+例如，第一个恒等式可由代入
+\(\sum_{d\mid(n,\mathfrak R)}\mu(d)\) 并记 \(n=dl\) 得到。
+商 \(l\) 在 \(d\) 的素数处不受限制；其上保留着原来的
+自然零延拓。
+
+将这些恒等式同时应用于两个普通因子与所有
+槽位。若冻结槽位构成 \(J\subseteq\mathcal I\)，普通
+除数为 \(d_1,d_2\)，则依赖于行的标量其
+模至多为一。剩余系数之绝对值至多
+为一个固定剖面常数乘以
+\[
+ q_{d_1d_2}^{-1/2}\prod_{i\in J}P_i^{-1/2}.
+\]
+所得自然乘积的长度为
+\[
+ A'=A-\log_Zq_{d_1d_2}-\sum_{i\in J}z_i,\qquad
+ z'=z-\sum_{i\in J}z_i.
+\]
+其诱导特征不变。若 \(z'>0\)，则
+方程~\eqref{old-eq:3.9} 的左侧已减小；若 \(z'=0\)，则零槽位
+断言无长度限制，且
+\(\mathcal R_z\subseteq\mathcal R_0\)。
+
+对每个固定的 \(\epsilon_1>0\)，
+\begin{equation}
+ \sum_{d\mid\mathfrak R}q_d^{-1/2}
+ \le \prod_{p\mid\mathfrak R}(1-q_p^{-1/2})^{-1}
+ \ll_{\epsilon_1,B} Z^{\epsilon_1}.
+ \label{old-eq:2.1b}
+\end{equation}
+这由引理~\ref{lem:deleted-euler-factors} 得到。冻结槽位对应的
+质量也是 \(Z^{\epsilon_1}\)：在其环形支撑上，
+\(P_i^{-1/2}\ll q_p^{-1/2}\)，同一个乘积界定对
+\(p\mid\mathfrak R\) 的求和。槽位数固定。Minkowski
+不等式因此将方程~\eqref{old-eq:2.1} 化归为
+同一宽度下的自然断言，代价为任意小的幂次
+损失。低于一的非空环形尺度有一个
+正且依赖于剖面的下界，并可重新标度为一。
+在这次重新标度之后，其新的非负长度为
+\(\max\{n_i-\log_Zq_{d_i},0\}\le n_i\)，故所断言的
+仿射表达式不增仍然成立。
+
+我们接着精确记录用于自然特征的反射。
+设 \(\psi_k^*\) 为诱导 \(\psi_k^0\) 的本原特征，
+并设 \(\mathfrak R_{0,k}\) 为其冗余自然根。
+\(\mathfrak R_{0,k}\) 的素数与本原
+导子不交。若 \(Q_k\) 为该导子范数，置
+\(C_k=3Q_k/(2\pi)^2\)，即函数
+方程中的导子尺度。\(\mathcal S\) 之外素数处的驯顺性给出
+\begin{equation}
+ C_kq_{\mathfrak R_{0,k}}
+ \ll_{\mathcal S,\tau_{\rm fixed}} Z^M.
+ \label{old-eq:2.1c}
+\end{equation}
+事实上，每个好的素数至多贡献一次，或贡献给
+本原导子，或贡献给冗余根。它们的并
+包含在行根与所声明的移动
+根之并中，其范数至多为 \(q_kZ^q\)。由
+引理~\ref{lem:fixed-numerator-ray}，一行的单位部分与
+\(\mathcal S\) 支撑部分，当在主且与 \(\mathcal S\) 互素的元素上求值时若赋值模六约简，
+则取值于一个固定有限射线
+族。因此 \(\mathcal S\) 中所有素数只贡献一个固定
+因子。
+
+将引理~\ref{lem:hecke-strip-growth} 的证明中所记录的本原 Hecke 函数方程
+应用于 \(\psi_k^*\)，利用其中所述的
+\(L(s,\psi_k^*)\) 的整性。设 \(\varepsilon_k\) 为其根数，
+故 \(|\varepsilon_k|=1\)。Mellin 反演与一次围道移动表明
+\(\psi_k^*\) 在 \(X\) 处的正规化普通和等于根数乘以
+\(C_k/X\) 处的共轭
+特征和，其变换后的剖面 \(W^\sharp\)
+由下式定义
+\[
+ \mathcal M W^\sharp(s)
+ =\mathcal M W(1-s)\frac{\Gamma(s)}{\Gamma(1-s)}.
+\]
+Mellin 变换约定采用
+引理~\ref{lem:smooth-calculus} 中的约定。伽马函数之商只在
+非正整数处有极点、在正整数处有零点。将反 Mellin 围道向左移动给出
+在零处的非负整数幂展开；向右移动给出
+在无穷处的任意衰减。因此 \(W^\sharp\) 及其
+Euler 导数在零处有界且在
+无穷处快速递减。高度断言也是定量的。对
+\(W_\omega(y)=W(y)y^{i\omega}\)，恒等式
+\(\mathcal M W_\omega(s)=\mathcal M W(s+i\omega)\) 将所有
+高度依赖性放入快速递减 Mellin
+变换的一个平移中。在每条固定竖直线上，伽马之商与
+每个固定数目的 Euler 导数在
+积分高度上具有多项式增长。因此对平移后的 Mellin 衰减
+积分给出 \(1+|\omega|\) 的一个固定多项式，其
+次数只依赖于固定围道与导数阶数。
+引理~\ref{lem:smooth-calculus} 中在紧实带形域上的逐点 Mellin 分部积分估计
+保证这些移动中的水平
+连接；并不使用积分后的 Fourier 尾部来
+界定固定的水平迹。这证明了反射所需的
+有限半范数与多项式高度界。
+
+在反射之前删去冗余 Euler 因子并在之后以
+几何方式恢复它们，给出
+\[
+ T_k(X;W)
+ =\varepsilon_k
+ \sum_{\substack{d_0\mid\mathfrak R_{0,k}\\
+                  \operatorname{rad}(h_0)\mid\mathfrak R_{0,k}}}
+ \frac{\mu(d_0)\psi_k^*(d_0)\overline{\psi_k^*(h_0)}}
+      {\sqrt{q_{d_0}q_{h_0}}}\,
+ T_{\overline{\psi_k^0}}
+   \left(\frac{C_kq_{d_0}}{Xq_{h_0}};W^\sharp\right),
+ \qquad |\varepsilon_k|=1.
+\]
+该几何级数被
+\(\prod_{p\mid\mathfrak R_{0,k}}(1-q_p^{-1/2})^{-1}\) 绝对界定。
+因此其总系数质量，连同 \(d_0\)
+求和，为 \(Z^{\epsilon_1}\)。各尺度为
+\begin{equation}
+ Y=\frac{C_kq_{d_0}}{Xq_{h_0}},\qquad
+ d_0\mid\mathfrak R_{0,k},\quad
+ \operatorname{rad}(h_0)\mid\mathfrak R_{0,k}.
+ \label{old-eq:2.1d}
+\end{equation}
+由方程~\eqref{old-eq:2.1c}，存在固定的 \(C_{\mathcal A}\ge1\)
+使得
+\[
+ C_kq_{\mathfrak R_{0,k}}\le C_{\mathcal A}Z^M,\qquad
+ Y\le C_{\mathcal A}Z^{M-\log_ZX}.
+\]
+
+剖面 \(W^\sharp\) 可划分为光滑环带。
+在其主尺度之下，中心正规化在相对尺度为 \(2^{-j}\) 的环带上
+给出可和系数 \(O(2^{-j/2})\)。
+在该尺度之上，快速衰减给出任意可和的幂。
+固定一个小长度容差 \(\xi>0\)。在上方环带经过
+放大 \(Z^{\xi/2}\) 后截断；足够多的固定导数
+通过绝对计数使被略去的部分可忽略。主尺度
+低于 \(Z^{-\xi}\) 者同样可忽略。若某个保留的环带
+剖面具有固定的上支撑端点 \(B\)，则能
+包含非零整理想的尺度 \(S\) 满足 \(SB\ge1\)。在这样的
+尺度上，
+\[
+ \max(S,1)\le\max(1,B)S.
+\]
+因此将一个保留的次单位尺度替换为尺度一，代价为这个固定
+乘性因子。所有这些断言对移动标记都一致成立。
+
+依赖于行的选择 \(d_0,h_0\) 由其系数
+质量处理，随后在所得到的尺度上取逐行上确界。
+引理~\ref{lem:smooth-calculus} 使用 \(O((\log Z)^2)\) 个单位盒
+与剖面的导数，界定两个
+多项式范围尺度上的上确界。行特征及其自然零
+保持不变：反射之后，在该整个因子的绝对值内部
+取其共轭，将共轭特征替换为
+原特征并共轭其剖面。该操作
+有效，因为乘积的绝对值在
+共轭一个因子时不变。
+
+设 \(C_{\rm ref}\ge1\) 包含 \(C_{\mathcal A}\)、固定的环形
+端点乘子、一个反射因子与任何配对未反射因子的
+对数盒乘子，以及保留剖面类型的 \(\max(1,B)\)。
+该常数在数据与剖面类型确定之后固定，独立于
+\(Z\) 与移动标记。对
+\(n=\log_ZX\)，每个满足前述支撑
+检验的保留尺度，在允许的裁剪与盒放大之后，其声明的
+非负长度为
+\begin{equation}
+ n_{\rm ref}\le M-n+\frac\xi2+\frac{\log C_{\rm ref}}{\log Z}
+ \le M-n+\xi
+ \qquad\left(\frac{\log C_{\rm ref}}{\log Z}\le\frac\xi2\right).
+ \label{eq:centered-reflection-length}
+\end{equation}
+当 \(M-n\) 略微为负时这也是一个线性界；若其
+右侧为负，则不存在这样的保留尺度。较小的
+上方环带范围只改变用于被丢弃尾部的固定衰减、半范数与高度
+阶数。
+
+对 \(z=0\)，将每个长度超过 \(M/2\) 的原始因子
+反射一次，另一个因子保持不变。方程~\eqref{eq:centered-reflection-length}
+界定每个保留的反射因子；未反射因子的固定盒乘子
+包含在 \(C_{\rm ref}\) 中。在前述
+环形截断与尺度盒放大之后，所得长度
+满足
+\begin{equation}
+ n_i^*\le M/2+\xi,\qquad
+ A^*=n_1^*+n_2^*\le M+2\xi\le M+\delta,
+ \label{old-eq:2.1h}
+\end{equation}
+只要 \(2\xi\le\delta\)。我们称其为带衬垫的零槽位核心。
+这里 \(\delta\) 是在
+宽度下界与步长之后于下文选取的正衬垫参数。
+在边界 \(M/2\) 处没有重复反射。反射
+与尺度上确界在中心化之前取；对更晚的、其本原诱导特征
+位于 \(\Theta\) 之外的已中心化项，先
+对其两个矩形应用三角不等式。对
+本原诱导特征属于 \(\Theta\) 的中心化差，不应用这样的上确界。
+
+\subsection{素估计与归纳次序}\label{sec:weighted}
+
+对 \(\kappa<1\)，置 \(s_\kappa=(1+\kappa)/2\)。在假设
+\(s_\kappa\ge\beta_*\) 下，引理~\ref{lem:logarithmic-control} 的
+全局部分给出，对每个固定的 \(e>0\)，
+\begin{equation}
+ \frac{L'}{L}(s_\kappa+e+it,\psi)
+ \ll_e \log\!\bigl(2Q_\psi(3+|t|)^2\bigr)
+ \label{old-eq:3.4}
+\end{equation}
+其中 \(\psi\) 为本原非主诱导特征。
+为估计尺度为 \(P\) 的素环带，对
+一个光滑 von Mangoldt 和作 Mellin 反演并将其围道移到
+\(\Re s=s_\kappa+e\)。移动区域内没有极点，
+且 Mellin 变换具有任意衰减，故
+方程~\eqref{old-eq:3.4} 将新积分界定为
+\(P^{s_\kappa+e}\) 乘以导子的一个对数与
+高度的一个固定多项式。指数至少为二的素幂
+贡献 \(O(P^{1/2+\epsilon_1})\)。对大的 \(P\)，将
+环形权除以 \(\log(Py)\) 便将 von Mangoldt 权替换为
+素权；其光滑半范数在环带有界。
+有界的 \(P\) 由绝对计数估计。将每个
+正长度系数按命题中的特征 \(\vartheta_{ij}\)
+展开。若本原诱导行特征
+\(\psi\notin\Theta\) 使 \(\psi\vartheta_{ij}\) 为主，则
+\(\psi=\vartheta_{ij}^{-1}\in\Theta\)，矛盾。故
+所得每个槽位特征在 \(\mathcal R_z\) 上都是非主的。
+
+在抹去额外掩码之后，固定一个正槽位列表并置
+\(\boldsymbol W=(W_i^{\rm slot})_{i\in\mathcal I}\)。对正规化
+扭高度 \(\boldsymbol\omega=(\omega_i)_{i\in\mathcal I}\)，定义
+\[
+ Q_{\boldsymbol\omega}
+ =\prod_{i\in\mathcal I}\left\{P_i^{-1/2}
+   \sum_{p\ {\rm prime}}\psi_k^0(p)\nu_i(p)W_i^{\rm slot}(q_p/P_i)
+                       (q_p/P_i)^{i\omega_i}\right\}.
+\]
+对每个 \(\epsilon_1>0\)，中心正规化与在这个
+固定列表上的乘法，在 \(e\) 与所有附属损失足够小时，
+给出有限的 \(j,b,h\ge0\) 与一个常数 \(C\)，使得
+\begin{equation}
+ |Q_{\boldsymbol\omega}|^2
+ \le C Z^{\kappa z+\epsilon_1}p_j(\boldsymbol W)^b
+                 (1+|\boldsymbol\omega|)^h
+ \qquad(k\in\mathcal R_z,\ z>0).
+ \label{old-eq:3.5}
+\end{equation}
+这里 \(j\) 可向上取整为一个整数，且 \(2s_\kappa-1=\kappa\)。
+各阶数与 \(C\) 可依赖于固定数据、槽位数、损失
+以及任何固定的所要求内部对数或正规化扭
+导数，但不依赖于 \(Z\)、移动标记、行或数值
+高度。指数 \(\kappa z+\epsilon_1\) 独立于
+这些导数与高度阶数。事实上，在分部积分之前将每个纯扭
+在其 Mellin 变量中平移。未扭 Mellin 变换的加权
+积分随后贡献一个有限
+半范数与 \(\boldsymbol\omega\) 中的一个固定多项式，而
+围道位移对平方指数恰好贡献 \(2ez\)。
+对数导数保持环形，正规化扭
+导数只插入对数剖面变量的幂。
+冗余自然根只包含
+\(O(\log Z)\) 个素数，故删去它使一个正规化槽位
+改变 \(O(P_i^{-1/2}\log Z)\) 乘以其固定剖面因子；这
+在所声明的幂次损失之内，因为 \(P_i\ge1\)。对 \(\kappa=1\)，
+绝对素计数给出方程~\eqref{old-eq:3.5}，无需
+无零点假设，且对未微分的纯扭有 \(h=0\)，
+其模为一。对 \(\kappa<1\)，假设仍为
+\(\beta_*\le(1+\kappa)/2\)。损失的选择对
+\(\kappa\in[3/4,1]\) 一致，因为长度区间有界。在
+方程~\eqref{old-eq:3.5} 的每一次后续使用中，其固定半范数与高度
+因子保留在加权 Fourier 估计中；它不被包含
+在 \(Z\) 的指数中。

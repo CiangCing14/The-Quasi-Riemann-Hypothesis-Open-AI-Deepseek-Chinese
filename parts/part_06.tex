@@ -1,0 +1,476 @@
+$S$ 中素点处的本原特征 $\xi$ 将迫使 Poisson 频率与 $S$ 互素。相伴随的
+正规化消去了由辅助模 $b_*$ 引入的单位因子。对完备化指标 $A=cn^3$，因子
+$\mathcal R(A,s)$ 消去 $A$ 与 $s$ 之间的跨素互反相位，而
+$\overline{G(A)}$ 消去 $A$ 内剩余的配对相位。我们在
+节~\ref{sec:local-euler} 中逐系数验证这些消去。
+
+定义在谱参数 $t+1/2$ 处的修正行为
+\[
+ T_{m,s,\eta}(t)=
+ \sum_{\substack{c\ {\rm sf}\\n}}
+ \gamma_2(c)\overline{\alpha(cn^3)}\Psi_{m,s,\eta}(cn^3)
+ \overline{G(cn^3)}q_c^{-1/2-t}q_n^{-1-3t}.
+\]
+此处及以下理想变量均避开 $S$。特别地，$\Xi(a)^{-1}$ 中的每个因子都在一个
+单位上取值。值 $G(cn^3)$ 是方程~\eqref{eq:G-quadratic-refinement} 中的有限
+射线延拓，当 $cn^3$ 非无平方因子时亦然。
+
+固定非负且非零的函数 $W_0,W_1\in C_c^\infty(0,\infty)$，并令
+$\Phi(t)=e^{t^2}$。定义
+\begin{equation}\label{eq:general-probe}
+\begin{aligned}
+ I_\eta(X,Y,Z)={}&\frac1Y\sum_s
+ \frac{W_1(q_s/Y)\chi_s(b_*)}
+      {\tau\xi(s)\sqrt{q_{b_*}q_sX}}\\
+ &\quad\cdot\sum_{m\in\mathcal O}
+       \xi(m)q_s^{-1/2}g_{\chi_s}(s,-m)
+       W_0\!\left(\frac{q_m}{q_{b_*}q_sX}\right)
+       \frac1{2\pi i}\int_{(4)}
+             Z^t\Phi(t)T_{m,s,\eta}(t)\,dt.
+\end{aligned}
+\end{equation}
+此定义中的掩码去除了 $S$ 处的非单位。方程~\eqref{eq:general-probe} 中所有
+求和都在所示的直线上绝对收敛；由于权重是环形的，$m$ 与 $s$ 的求和是有限的。
+
+修正项的固定有限 Fourier 展开为
+\[
+ \overline{G(A)}=\sum_{\theta\in\widehat T}a_\theta\theta(A),
+ \qquad
+ a_\theta=\frac1{|T|}\sum_{v\in T}
+                 \overline{G(v)}\,\overline{\theta(v)}.
+\]
+Parseval 与 Cauchy--Schwarz 给出
+$\sum_\theta|a_\theta|\le |T|^{1/2}$。对射线类
+$\sigma\in T$，选取代表元 $s_\sigma$ 并令
+\[
+ \begin{aligned}
+ \nu_\sigma(a)&=\eta(a)\Xi(a)^{-1}\mathcal R(a,s_\sigma)
+       \quad ((a,S)=1),\\
+ B_{m,\sigma}(Z)&=\sum_{\theta\in\widehat T}a_\theta
+ \frac1{2\pi i}\int_{(4)}Z^t\Phi(t)
+       T(t+1/2,\nu_\sigma\theta\chi_\bullet(m))\,dt.
+ \end{aligned}
+\]
+将 $\nu_\sigma$ 在离开与 $S$ 互素的主元素处按零延拓，且不在那里计算
+$\Xi(a)^{-1}$。这里的函数 $T$ 是方程~\eqref{eq:reflection} 中的完备化乘积，
+带有其原有的零掩码。由于对 $s\in\sigma$ 有
+$\mathcal R(A,s)=\mathcal R(A,s_\sigma)$，修正行所示的 Mellin 积分在该类上
+处处等于 $B_{m,\sigma}(Z)$。
+
+对 $m\ne0$，中心 Mellin 恒等式
+\eqref{eq:unmarked-central-mellin} 给出直接的特别化
+\[
+ B_{m,\sigma}(Z)=\sum_{\theta\in\widehat T}a_\theta
+       \mathcal C_{V_{\rm G}}(Z;m,\nu_\sigma\theta).
+\]
+特征 $\nu_\sigma\theta$ 构成一个固定的有限族，其导子与定义模的支撑都包含在
+$S$ 中。它们不必通过 $T$ 分解。它们原有的零延拓即为完备化行矩中的那些，
+因此该估计直接适用于这一行求和族。行 Hilbert 空间中的三角不等式只需付出
+固定因子 $\sum_\theta|a_\theta|$ 的代价。该估计所用的行扇区转换保留了在共享
+好素点处的零点，包括行赋值被六整除的情形。
+
+记 $Q=q_{b_*}XY$。选取 $(0,\infty)$ 上光滑且具紧支集的函数 $\Omega$，它在
+$W_1(q_s/Y)W_0(q_m/(q_{b_*}q_sX))$ 的支撑上可能出现的每个 $q_m/Q$ 值处都等于
+一。对 $v\in\mathbb R$，令
+\[
+ A_{m,\sigma,v}(Y)=\frac1Y\sum_{s\in\sigma}
+ \frac{W_1(q_s/Y)\chi_s(b_*)}{\tau\xi(s)}
+ (q_s/Y)^{-1/2+iv}q_s^{-1/2}g_{\chi_s}(s,-m).
+\]
+我们对 $W_0$ 的 Mellin 约定为
+$\widehat W_0(iv)=\int_0^\infty W_0(r)r^{iv}\,dr/r$。由于
+$q_m/(q_{b_*}q_sX)=(q_m/Q)/(q_s/Y)$，Mellin 反演给出精确恒等式
+\begin{equation}\label{eq:low-separated}
+ I_\eta(X,Y,Z)=\frac{Q^{-1/2}}{2\pi}
+ \sum_{\sigma\in T}\int_{\mathbb R}\widehat W_0(iv)
+ \sum_{m\ne0}\Omega(q_m/Q)\xi(m)(q_m/Q)^{-iv}
+                 A_{m,\sigma,v}(Y)B_{m,\sigma}(Z)\,dv.
+\end{equation}
+被略去的 $m=0$ 项由 $W_0$ 的环形支撑而消失。因子 $(q_m/Q)^{-iv}$ 的绝对值为
+一。在 $A$ 中，算术系数是固定的，且其有界性与 $m,v$ 无关；对 $v$ 的全部依赖
+都出现在环形变量的范数幂中。
+
+Gauss 型 $V_{\rm G}$ 的 Mellin 变换为 $e^{t^2}$，并直接满足反射假设。因此
+引理~\ref{lem:unmarked-completed-moment} 无需对该检验函数作环形分解即可适用。
+
+\subsection{平衡低估计}
+
+对于平衡估计，完备化行矩已经给出了 $B_{m,\sigma}(Z)$ 的均方界。尚需给出加性
+因子 $A_{m,\sigma,v}(Y)$ 的界。它的 Gauss 展开给出 $\mathbb C/\mathcal O$ 中
+互不相同的既约分数；它们之间的分离度与系数质量给出了所需的均方。平面加性
+大筛法是经典的；可比较 Huxley 的多变量与数域不等式 \cite{Huxley} 以及
+\cite[第~3 节，定理~3]{BaierBansal} 中的 Poisson 证明。我们给出格点证明
+以记录此处所用的正规化。
+
+\begin{lemma}[平面加性大筛法]
+\label{lem:planar-additive-sieve}
+令 $0<\delta\le1$，$Q\ge1$，并令 $z_1,\ldots,z_J$ 为 $\mathbb C/\mathcal O$
+中满足
+\[
+ \inf_{n\in\mathcal O}|z_j-z_k-n|\ge\delta
+ \qquad(j\ne k).
+\]
+的有限点集。则对任意复数 $a_1,\ldots,a_J$，
+\[
+ \sum_{\substack{m\in\mathcal O\\q_m\le Q}}
+ \left|\sum_{j=1}^J a_j e(mz_j)\right|^2
+ \ll (Q+\delta^{-2})\sum_{j=1}^J|a_j|^2.
+\]
+隐含常数对上面固定的格、加性特征与自对偶测度是绝对的。行球中允许 $Q$ 的固定
+倍数，只需改变该常数。
+\end{lemma}
+
+\begin{proof}
+当 $J=0$ 时断言显然成立。由自对偶性，特征 $e(mz_j)$ 在
+$\mathbb C/\mathcal O$ 上有良好定义。对其余情形在 $\mathbb C$ 中选取代表元。
+我们使用 Fourier 变换
+\[
+ \widehat F(y)=\int_{\mathbb C}F(x)e(-xy)\,d\mu(x),\qquad
+ \check\phi(x)=\int_{\mathbb C}\phi(y)e(xy)\,d\mu(y).
+\]
+选取非负的 $\phi\in C_c^\infty(\mathbb C)$，其积分为一，支撑在原点周围一个
+足够小的圆盘内。由于 $|e(xy)-1|\le (4\pi/\sqrt3)|x||y|$，可选取其支撑使得
+\[
+ |\check\phi(x)-1|\le\frac12\qquad(|x|\le1).
+\]
+于是 $F(x)=4|\check\phi(x)|^2$ 是非负 Schwartz 函数，且 $F(x)\ge1$ 在单位圆盘
+上成立。若 $\widetilde\phi(y)=\overline{\phi(-y)}$，则 Fourier 反演与乘积
+公式（卷积就 $d\mu$ 取）给出
+\[
+ \widehat F=4\phi*\widetilde\phi.
+\]
+特别地，$\widehat F$ 有界，且支撑在某个固定半径 $L$ 的圆盘内。这正是我们所需
+的带限优函数。
+
+令 $R=\sqrt Q$。$F$ 的正性首先给出
+\[
+ \sum_{q_m\le Q}\left|\sum_j a_je(mz_j)\right|^2
+ \le \sum_{m\in\mathcal O}F(m/R)
+                    \left|\sum_j a_je(mz_j)\right|^2.
+\]
+右端所有求和都绝对收敛。对任意 $z\in\mathbb C$，映射 $x\mapsto F(x/R)e(xz)$
+在 $y$ 处的 Fourier 变换为 $R^2\widehat F(R(y-z))$。因子 $R^2$ 是实二维伸缩的
+Jacobian；由于 $d\mu$ 在 $\mathcal O$ 上的余体积为一，不出现格体积因子。
+因此 Poisson 求和将右端展开为
+\[
+ R^2\sum_{j,k}a_j\overline{a_k}
+       \sum_{n\in\mathcal O}
+       \widehat F\bigl(R(n-z_j+z_k)\bigr).
+\]
+
+对每个固定的 $j$，内层求和中的项只有在提升 $z_k+n$ 位于 $z_j$ 的距离 $L/R$
+之内时才可能非零。所有提升的集合
+$\{z_k+n:1\le k\le J,\ n\in\mathcal O\}$ 在 $\mathbb C$ 中是
+$\delta$-分离的。由假设，不同的类具有该性质，而同一类的两个不同提升之差为
+一个非零 Eisenstein 整数，其绝对值至少为一，从而至少为 $\delta$。在以半径
+$L/R$ 的圆盘内、以提升为中心、半径 $\delta/3$ 的圆盘互不相交，且位于半径
+$L/R+\delta/3$ 的同心圆盘内。比较它们的 Euclid 面积可将这些提升的数目界为
+\[
+ \left(1+\frac{3L}{R\delta}\right)^2
+ \ll 1+(R\delta)^{-2}.
+\]
+将 $j$ 与 $k$ 互换后同样的界成立。在 Poisson 展开中取绝对值，使用
+$\widehat F$ 的固定界，再使用 $2|a_ja_k|\le |a_j|^2+|a_k|^2$，我们得到
+\[
+ \sum_{q_m\le Q}\left|\sum_j a_je(mz_j)\right|^2
+ \ll R^2\bigl(1+(R\delta)^{-2}\bigr)\sum_j|a_j|^2.
+\]
+由于 $R^2=Q$，这就是所断言的估计。将 $Q$ 换为固定倍数即证明最后的陈述。
+\end{proof}
+
+我们将该估计应用于 Gauss 和中的完整剩余类。特征按零延拓在这里很重要：它使
+这些分数相对于所展示的模是既约的，而不仅仅相对于某个诱导导子。
+
+\begin{lemma}[平衡加性范数]
+\label{lem:balanced-additive-norm}
+固定探针的算术数据、环形权重 $W_1$、射线类 $\sigma\in T$ 以及行球常数
+$C>0$。对 $Y,Q\ge1$ 及每个实 $v$，多项式 $A_{m,\sigma,v}(Y)$ 满足
+\[
+ \sum_{\substack{m\in\mathcal O\\q_m\le CQ}}
+       |A_{m,\sigma,v}(Y)|^2
+ \ll_{\mathcal A,W_1,C}\frac{Q+Y^2}{Y}.
+\]
+该界对 $v$ 一致。特别地，当 $Q=q_{b_*}Y^2$ 时，
+\[
+ \sum_{q_m\le CQ}|A_{m,\sigma,v}(Y)|^2
+ \ll_{\mathcal A,W_1,C}\frac QY.
+\]
+\end{lemma}
+
+\begin{proof}
+对 $S$ 之外的主元素 $s$，令 $r_s=q_s/Y$ 且
+\[
+ c_\sigma(s)=1_{s\in\sigma}\frac{\chi_s(b_*)}{\tau\xi(s)}.
+\]
+逆只在与 $S$ 互素的这些元素上取值。这里 $|\tau|=1$、$|\xi(s)|=1$、
+$|\chi_s(b_*)|=1$，因为 $b_*$ 的支撑在 $S$ 上。因此
+$|c_\sigma(s)|\le1$。$A$ 的定义与 Gauss 展开给出精确恒等式
+\[
+ A_{m,\sigma,v}(Y)
+ =Y^{-3/2}\sum_s c_\sigma(s)W_1(r_s)r_s^{-1+iv}
+       \sum_{d\bmod s}\chi_s(d)e(-md/s).
+\]
+该求和取遍 $S$ 之外的主理想。对每个这样的 $s$，特征 $\chi_s(d)$ 恰在
+$(d,s)>1$ 时为零，否则其绝对值为一。这也包括非无平方因子的 $s$：被六整除的
+局部指数是该素点处单位的指示函数，而非常值函数一。对 $s=1$，包含单个剩余类，
+且 $\chi_1=1$。
+
+我们验证：对作出贡献的配对，分数 $d/s$ 模 $\mathcal O$ 互不相同。设
+$(d,s)=(d',s')=1$ 且 $d/s-d'/s'\in\mathcal O$。则 $ss'$ 整除 $ds'-d's$。
+将此整除性模 $s$ 约化，并使用 $d$ 模 $s$ 的逆，得到 $s\mid s'$。对称论证给出
+$s'\mid s$。$S$ 之外理想的主生成元是唯一的，故 $s=s'$；原同余式随即给出
+$d=d'\pmod s$。同一结论也包含单位模的情形。改变剩余代表元只会将其分数平移
+$\mathcal O$ 的一个元素。
+
+固定 $0<r_-<r_+$，使 $\operatorname{supp}W_1\subset[r_-,r_+]$。对两个不同的
+作出贡献的分数及每个 $n\in\mathcal O$，Eisenstein 整数 $ds'-d's-nss'$ 非零。
+因此
+\[
+ \left|\frac d s-\frac{d'}{s'}-n\right|
+ =\frac{|ds'-d's-nss'|}{|ss'|}
+ \ge\frac1{|ss'|}\ge\frac1{r_+Y}.
+\]
+最后的不等式用到 $q_s,q_{s'}\le r_+Y$。因此这些分数在 $\mathbb C/\mathcal O$
+中是 $\delta_Y$-分离的，其中 $\delta_Y=\min(1,r_+^{-1})/Y\le1$。
+
+将展开后的多项式写作 $\sum_{s,d}a_{s,d}e(-md/s)$（只保留单位剩余类），其系数
+的平方质量为恰好
+\[
+ \begin{split}
+ \sum_{s,d}|a_{s,d}|^2
+ &=Y^{-3}\sum_s |c_\sigma(s)W_1(r_s)|^2r_s^{-2}
+       \varphi_{\mathcal O}(s),\\
+ \varphi_{\mathcal O}(s)
+ &:=\#(\mathcal O/s\mathcal O)^\times,\qquad
+ \varphi_{\mathcal O}(1):=1.
+ \end{split}
+\]
+该表达式中不依赖于 $v$。由于
+$\varphi_{\mathcal O}(s)\le q_s\le r_+Y$、在支撑上 $r_s\ge r_-$，且满足
+$q_s\le r_+Y$ 的理想有 $O(Y)$ 个，该质量为 $O(Y^{-1})$。将
+引理~\ref{lem:planar-additive-sieve} 应用于以 $\delta_Y$ 分离的点 $-d/s$，
+即证明了第一个界。最后 $q_{b_*}\ge1$，故 $Q=q_{b_*}Y^2$ 蕴含
+$Q+Y^2\le2Q$，从而证明第二个。
+\end{proof}
+
+加性范数现在恰好具有与无标记完备化行范数配对所需的尺度。下面的命题对原探针
+完成该配对。
+
+\begin{proposition}[平衡低估计]
+\label{prop:balanced-low}
+固定用于定义 $I_\eta$ 的算术数据与光滑权重。对每个 $\epsilon>0$，当
+$Z\to\infty$ 时，
+\[
+ \bigl|I_\eta(Z^{1/2},Z^{1/2},Z)\bigr|
+ \ll_{\mathcal A,\epsilon} Z^{1/4+\epsilon}.
+\]
+该指数与目标特征无关；隐含常数与下阈值可能依赖于它固定的算术数据。
+\end{proposition}
+
+\begin{proof}
+令 $X=Y=Z^{1/2}$ 且 $Q=q_{b_*}XY=q_{b_*}Z$。方程~\eqref{eq:low-separated} 中
+的函数 $\Omega$ 有界，且其支撑在 $(0,\infty)$ 的一个固定紧子区间内。因此该
+恒等式中的所有行都落在 $0<q_m\le C_\Omega Q$ 中，其中 $C_\Omega$ 为固定常数。
+
+引理~\ref{lem:unmarked-completed-moment} 的特别化 $M=N=1$，继之以定义
+$B_{m,\sigma}$ 的有限射线分解，对每个 $\epsilon_1>0$ 给出
+\[
+ \sum_{0<q_m\le C_\Omega Q}|B_{m,\sigma}(Z)|^2
+ \ll_{\mathcal A,\epsilon_1} Z^{1+\epsilon_1}.
+\]
+事实上，$q_{b_*}$ 固定，故行球是 $M=1$ 球的固定倍数。完备化尺度为 $Z$，在该
+引理中即为 $N=1$。该引理直接适用于定义 $B$ 的完备化积分中的 Gauss 型剖面；
+由行 Hilbert 空间中的三角不等式，对射线特征的固定有限 Fourier 求和只需付出
+固定因子的代价。特别地，此应用保留了原有的行零掩码。
+
+对方程~\eqref{eq:low-separated} 中的行求和应用 Cauchy--Schwarz。因子
+$(q_m/Q)^{-iv}$ 的绝对值为一，$|\xi(m)|\le1$（带上其零延拓），且 $\Omega$
+有界。引理~\ref{lem:balanced-additive-norm} 对 $v$ 一致，而 $B$ 与 $v$ 无关。
+由于 $W_0$ 光滑且为环形，
+$\int_{\mathbb R}|\widehat W_0(iv)|\,dv<\infty$。因此对 $\sigma\in T$ 的有限
+求和给出
+\[
+ \begin{split}
+ |I_\eta(X,Y,Z)|
+ &\ll_{\mathcal A,\epsilon_1}
+ Q^{-1/2}\left(\frac QY\right)^{1/2}Z^{1/2+\epsilon_1/2}\\
+ &=Z^{1/4+\epsilon_1/2}.
+ \end{split}
+\]
+取 $\epsilon_1=2\epsilon$ 即证明命题。
+\end{proof}
+
+\section{Poisson 表示及其 Euler 因子}
+\label{sec:poisson-representation}
+
+直接估计现在已具备。为将探针与命题~\ref{lem:continuation-criterion} 中的
+Mellin 信号作比较，我们回到相互独立的正常数尺度 $X,Y,Z$，并在元素变量 $m$
+上应用 Poisson 求和。所得的行以频率的无六次幂因子部分为指标。我们将把每行
+分解为 Hecke $L$ 函数与一个全纯 Euler 乘积；行 $u=1$ 将包含目标函数的倒数。
+
+\subsection{精确的 Poisson 级数}
+
+修正项 $\overline{G(A)}$ 与 $m$ 无关，而完备化行中变化的特征恰为
+$\chi_A(m)$（包括其零点）。于是 Poisson 求和使用完整模 $sb_*A$，即使 $s$ 与
+$A$ 共享素点。展开 $s$-Gauss 和，并先对一个模 $b_*A$ 的剩余类的提升求和。
+这些提升施加 $H\equiv b_*Ad\pmod s$，并给出系数
+\begin{equation}\label{eq:local-F}
+ F(s,A,H)=\sum_{\substack{d\bmod s\\H\equiv b_*Ad\pmod s}}
+ \chi_s(d)g_{\xi\chi_A}\!\left(b_*A,\frac{H-b_*Ad}{s}\right).
+\end{equation}
+事实上，$\xi(m)\chi_A(m)q_s^{-1/2}g_{\chi_s}(s,-m)$ 模 $sb_*A$ 的有限 Fourier
+变换为 $q_s^{1/2}F(s,A,H)$。行尺度 $q_{b_*}q_sX$ 的 Poisson 前因子为
+$X/q_A$。在方程~\eqref{eq:general-probe} 中外层平方根正规化之后（把其单独的
+$Y^{-1}$ 留在外面），它们的乘积为 $X^{1/2}/(q_{b_*}^{1/2}q_A)$。这也验证了
+变换中所有 $q_s$ 的因子。
+
+在 $b_*$ 的素点处，除非 $(H,S)=1$，本原 Gauss 和为零。因此它也去除了
+$H=0$。每个剩余元素都有唯一的表达式 $H=ua^6$，其中 $u$ 是无六次幂因子的
+元素（包括其单位因子），$a$ 是某理想的主生成元。记 $\sum_u^{(6)}$ 为对满足
+$(u,S)=1$ 的这种非零 $u$ 的求和。
+
+令 $\widetilde W_0(|y|^2)$ 为 $W_0(|y|^2)$ 相对于节~\ref{sec:arithmetic} 中
+固定的自对偶测度与特征的平面 Fourier 变换。Poisson 之后的径向 Fourier 变量
+为 $Xq_H/q_A$。令
+\[
+ M(z)=\int_0^\infty\widetilde W_0(r)r^{z-1}\,dr,
+ \qquad
+ \widehat W_1(w)=\int_0^\infty W_1(r)r^{w-1}\,dr.
+\]
+零点处的光滑性与 Schwartz 衰减表明 $M$ 对 $\Re z>0$ 全纯。在每个紧的正实带
+形域上，它在 $\Im z$ 方向具有任意阶多项式衰减：$e^{(\Re z)v}\widetilde
+W_0(e^v)$ 的每个导数对 $v$ 都可积，且在该带形域上一致，故可反复分部积分。
+同样的论证给出 $\widehat W_1$ 在每个固定实带形域上的任意阶多项式衰减。
+
+我们将需要严格正性
+\begin{equation}\label{eq:radial-mellin-positive}
+ M(1/6)>0.
+\end{equation}
+这里给出一个不需要 Fourier 变换自身非负的证明。对 $0<\sigma<1$，
+\[
+ |y|^{2\sigma-2}=\frac1{\Gamma(1-\sigma)}
+             \int_0^\infty t^{-\sigma}e^{-t|y|^2}\,dt.
+\]
+左端与 $\widetilde W_0(|y|^2)$ 的配对绝对可积。Fubini 与 Fourier 对偶将其
+表示为
+\[
+ \frac1{\Gamma(1-\sigma)}\int_0^\infty t^{-\sigma}
+ \int_{\mathbb C}W_0(|x|^2)
+       \frac{2\pi}{\sqrt3\,t}
+       \exp\!\left(-\frac{4\pi^2|x|^2}{3t}\right)
+                  d\mu(x)\,dt>0.
+\]
+由于 $W_0$ 非负且非零，内层积分对每个 $t>0$ 严格为正。绝对可积性或者由
+Fourier 侧所示的表示式得到，或者由此侧 $W_0$ 的环形支撑得到。极坐标积分将原
+配对等同于 $(2\pi/\sqrt3)M(\sigma)$，从而证明方程
+~\eqref{eq:radial-mellin-positive}。
+
+在两个权重 Mellin 反演之后，令 $x=t+1-z$。对满足 $(u,S)=1$ 的非零无六次幂
+因子 $u$，定义
+\begin{equation}\label{eq:local-full-series}
+ \mathcal F_{\eta,u}(x,w,z)=
+ \sum_{\substack{c\ {\rm sf}\\n,s,a}}
+ K_\eta(c,n,s,a;u)\,
+ q_c^{-1/2-x}q_n^{-1-3x}q_s^{-w}q_a^{-6z},
+\end{equation}
+其中 $A=cn^3$，且保留全部正规化的系数为
+\begin{equation}\label{eq:local-full-coefficient}
+ K_\eta(c,n,s,a;u)=
+ \frac{F(s,A,ua^6)\chi_s(b_*)}
+ {\sqrt{q_{b_*}}\tau\xi(s)\overline{\xi(u)}}
+ \gamma_2(c)\overline{\alpha(A)G(A)}
+ \eta(A)\Xi(A)^{-1}\mathcal R(A,s).
+\end{equation}
+为方便起见，定义公共 Mellin 权重
+\[
+ \mathcal W(X,Y,Z;x,w,z)=
+ X^{1/2-z}Z^{x+z-1}Y^{w-1}
+ \Phi(x+z-1)M(z)\widehat W_1(w).
+\]
+例如，直线 $\Re x=3$、$\Re w=3$、$\Re z=2$ 对应原来的直线 $\Re t=4$，并
+处于绝对收敛区域。完整的高阶恒等式为
+\begin{equation}\label{eq:probe-poisson-identity}
+ \begin{split}
+ I_\eta(X,Y,Z)=\frac1{(2\pi i)^3}
+ \int_{(3)}\int_{(3)}\int_{(2)}
+ &\mathcal W(X,Y,Z;x,w,z)\\
+ &\cdot\sum_u^{(6)}q_u^{-z}\overline{\xi(u)}
+             \mathcal F_{\eta,u}(x,w,z)\,dz\,dw\,dx.
+ \end{split}
+\end{equation}
+可以通过初等界 $|F(s,A,H)|\le q_sq_{b_*A}$ 以及环形权重来论证这些直线上的
+所有交换。特别地，方程~\eqref{eq:low-separated} 与
+\eqref{eq:probe-poisson-identity} 是同一探针的恒等式，而不是分别选取检验
+表达式的估计。
+
+
+\subsection{标量 Euler 恒等式}
+\label{sec:local-euler}
+
+接下来我们计算方程~\eqref{eq:local-full-coefficient} 中的系数。我们的目标是
+证明该高阶级数是目标 $\eta$ 的标量 Euler 乘积。该计算还单独记录了完备化指标
+$A$ 在给定素点处取正赋值的项。我们保留每个射线相位，直到它被消去或被指派给
+某个局部因子。
+
+固定满足 $(u,S)=1$ 的非零无六次幂因子行 $u$ 以及素点 $p\notin S$。令
+\begin{equation}\label{eq:local-parameters}
+ \begin{gathered}
+ Q=q_p,\qquad j=v_p(u)\in\{0,\ldots,5\},\qquad
+ \rho=\chi_p(u/p^j),\qquad \omega_p=\chi_p(-1),\\
+ a_p=\overline{\alpha(p)}^3\eta(p)^3,\qquad
+ b_p=\overline{\alpha(p)}^2\eta(p)^2\overline{\chi_p(4)},
+ \qquad b_p^3=a_p^2,\\
+ V=Q^{-6z},\qquad R=a_p^2Q^{4-6x-6z},\qquad
+ W_{\rm loc}=\rho Q^{-w}.
+ \end{gathered}
+\end{equation}
+值 $\rho,a_p,b_p$ 的绝对值为一，且 $\omega_p\in\{1,-1\}$。对 $p$ 不施加任何
+射线类限制。
+
+\paragraph{有限标量及其单位因子。}
+记 $G_r=g_{\chi_p^r}(p,1)$，其中 $G_0=-1$，并对 $1\le r\le5$ 令
+$\gamma_r=Q^{-1/2}G_r$。对 $t\ge1$ 与 $j'\ge0$，对一个模 $p$ 的剩余类的提升
+求和给出
+\[
+ g_{\chi_p^r}(p^t,p^{j'})=
+ \begin{cases}
+ Q^{t-1}G_r1_{j'=t-1},&6\nmid r,\\
+ Q^t1_{j'\ge t}-Q^{t-1}1_{j'\ge t-1},&6\mid r.
+ \end{cases}
+\]
+第二行是主特征（按零延拓）的 Ramanujan 和。正交性还给出
+$G_1G_{-1}=\omega_pQ$。
+
+令 $e_0=v_p(c)\in\{0,1\}$、$l=v_p(n)$、$t=e_0+3l$、$k=v_p(s)$、
+$m=v_p(a)$，故 $v_p(H)=j'=j+6m$。方程~\eqref{eq:local-F} 在 $p$ 处的部分
+（在恢复其单位因子之前）为
+\begin{equation}\label{eq:local-scalar-definition}
+ C_p(t,k,j')=
+ \sum_{\substack{d\bmod p^k\\p^{j'}\equiv p^td\pmod{p^k}}}
+ \chi_p^k(d)
+ g_{\chi_p^t}\!\left(p^t,\frac{p^{j'}-p^td}{p^k}\right).
+\end{equation}
+在模一时，此公式中的两个因子都表示一。其完整计算为
+\begin{equation}\label{eq:local-scalar-values}
+ C_p(t,k,j')=
+ \begin{cases}
+ 1,&t=k=0,\\
+ 1_{j'=0},&t=0,\ k>0,\\
+ g_{\chi_p^t}(p^t,p^{j'}),&t>0,\ k=0,\\
+ \omega_p^{-1}G_1g_{\chi_p^{t-1}}(p^t,p^{j'-1}),
+                      &t>0,\ k=1,\ j'\ge1,\\
+ 0,&\text{otherwise}.
+ \end{cases}
+\end{equation}
+对 $t=0$ 与 $k>0$，同余式固定 $d=p^{j'}$ 模 $p^k$，其零延拓特征恰在
+$j'=0$ 时非零。对第四行，同余式首先迫使 $j'\ge1$。展开内层 Gauss 和，对
+$d\bmod p$ 的求和为
+\[
+ \sum_{d\bmod p}\chi_p(d)e(-vd/p)
+       =\omega_p^{-1}G_1\chi_p(v)^{-1}
+       \qquad(p\nmid v),
+\]
+这使 Gauss 特征从 $\chi_p^t$ 变为 $\chi_p^{t-1}$。若 $t>0$ 且 $k\ge2$，
+允许的提升 $d=d_0+p^{k-1}v$ 不改变 $\chi_p^k(d)$，但其 Gauss 相位为
+$e(-yv/p)$，其中 Gauss 变量 $y$ 是单位。它们的和为零。这证明了方程
+~\eqref{eq:local-scalar-values}，包括 Gauss 特征为主特征且按零延拓的情形。

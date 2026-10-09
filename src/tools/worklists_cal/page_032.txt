@@ -1,6 +1,0 @@
-PAGE 32   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 1
-
-CAL F  y  244.9 x  284.3- 292.2
-      line: J ( s ) = ∂ F ( z, v ) | v 2 s − 1 dv.
-CAL O  y  385.6 x  320.4- 327.1
-      line: 0 ̸ = µ ∈ λ − 3 O p

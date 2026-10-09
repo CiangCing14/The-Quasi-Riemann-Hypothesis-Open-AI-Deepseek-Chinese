@@ -1,0 +1,541 @@
+\begin{proof}
+用固定的非负径向 Schwartz 函数对行球作控制。
+令 $r_s=q_s/Y'$，并在与 $S$ 互素的主元素上令
+$c_\sigma(s)=1_{s\in\sigma}\chi_s(b_*)/(\tau\xi(s))$，在求逆特征之前于其他地方
+以零延拓。该多项式的精确环形改写为
+\[
+ A_m=Y'^{-3/2}\sum_s c_\sigma(s)W_1(r_s)r_s^{-1+i\nu}
+                          g_{\chi_s}(s,-m).
+\]
+因此展开后的平方具有公共正规化 $Y'^{-3}$，联合环形剖面包含因子
+$W_1(r_{s_1})r_{s_1}^{-1+i\nu}W_1(r_{s_2})r_{s_2}^{-1-i\nu}$。
+记 $s_1=Cn_1$、$s_2=Cn_2$，其中 $(n_1,n_2)=1$。对行变量作 Poisson 求和得到
+因子 $Q/(q_{s_1}q_{s_2})$，而两个未正规化的 Gauss 和的完备
+变换为 $q_{s_1}q_{s_2}F(s_1,s_2;j)$。因此它给出精确的前置因子
+$Q/Y'^3$ 以及方程~\eqref{eq:correlation-lift} 的相关性
+$F(Cn_1,Cn_2;Ck)$。
+这里 $F$ 再次表示方程~\eqref{old-eq:2.11} 的完整相关性，
+而不是方程~\eqref{eq:local-F} 的局部系数。
+第一个 Fourier 核的宗量与 $q_Cq_k/P_a$ 同阶。
+
+在互素的剩余上，该相关性中的因子 $L_C$ 满足
+$|L_C|\le q_C$。对于随后的带符号延拓，使用其指定的
+有界延拓，它在两列上都以模 $\operatorname{rad}C$ 为周期，包括 $C$ 与某一列
+有公共素因子的情形。当 $C$ 的某个素因子同时整除两列时，其值
+定义为零；这是对该延拓的定义，而非关于此处真实
+相关性的断言。在作任何逐因子的估计之前，插入完整的
+M\"obius 恒等式
+\[
+ 1_{(n_1,n_2)=1}=\sum_{d\mid n_1,\ d\mid n_2}\mu(d)
+\]
+并记 $n_i=dm_i$。此时不对 $m_1,m_2$ 施加互素条件。
+非零项满足 $(d,Ck)=1$。在整个这一步中使用 $\mathcal R(n_1,n_2)$ 的固定
+射线延拓；零剩余特征之商将没有定义。
+
+我们为该系数指定一个公共固定模。对 $k\ne0$
+利用单位约定和引理~\ref{lem:fixed-numerator-ray} 的固定 $S$-素生成元，记
+$k=\zeta k_Sk_{\mathrm{good}}$，其中
+$k_S=\prod_{\mathfrak p\in S}\pi_{\mathfrak p}^{e_{\mathfrak p}}$
+且 $k_{\mathrm{good}}=\prod_{p\notin S}p^{e_p}$。对于 $S$ 之外的某个主
+剩余理想 $m$，互反律给出
+\[
+ \begin{split}
+ \chi_m(k)&=\kappa_{\zeta,\boldsymbol e}(m)
+       \mathcal R(k_{\mathrm{good}},m)
+       \prod_{p\mid k_{\mathrm{good}}}\chi_p(m)^{e_p},\\
+ \kappa_{\zeta,\boldsymbol e}(m)
+       &=\chi_m(\zeta)\prod_{\mathfrak p\in S}
+             \chi_m(\pi_{\mathfrak p})^{e_{\mathfrak p}\bmod6}.
+ \end{split}
+\]
+每个显式给出的好的局部幂在公共素因子上都保留其零点，
+包括 $6\mid e_p$ 的情形。引理~\ref{lem:fixed-numerator-ray}
+把这有限多个 $\kappa_{\zeta,\boldsymbol e}$ 放在一个支撑于 $S$ 的固定
+射线群中。此外 $\mathcal R(k_{\mathrm{good}},m)$
+属于一个关于 $m$ 的固定有限族。
+
+一次性选取 $\mathfrak l_{\rm fixed}$，使其包含主类
+模与 $S$ 零掩码、$A_m$ 中每个固定射线
+系数的模、$\mathcal R$ 在每个变量中的一个周期，
+以及前面所有
+$\kappa_{\zeta,\boldsymbol e}$ 特征的导子。该
+延拓系数在主类之外，或在求逆特征之前的某个固定
+非单位元处取零。该模与 $C,d,k$ 无关，且
+它在 $S$ 处可能有比 $\operatorname{rad}(k)$ 更高的幂次。在应用互反律之后，
+关于 $m_1,m_2$ 的联合算术
+系数以如下模为周期
+\[
+ \mathfrak r=\operatorname{lcm}
+   (\mathfrak l_{\rm fixed},\operatorname{rad}C,\operatorname{rad}(k)),
+ \qquad q_{\mathfrak r}\ll_{\rm fixed}q_Cq_k.
+\]
+若 $k$ 在 $C$ 与 $\mathfrak l_{\rm fixed}$ 之外的一个素因子处有不可被六整除的
+赋值 $e_p$，则称 $k$ 为非例外的。在该
+素因子处，第一剩余列具有非主零延拓
+因子 $\chi_p(m_1)^{e_p}$，至多相差一个单位标量。提升、固定
+相位以及其他素因子在模 $p$ 下与 $m_1$ 无关。
+它的完备均值，从而由中国剩余定理得到的完备联合均值，
+为零。用 $d$ 作代换
+不改变这一结论，因为 $(d,k)=1$。赋值可被六整除处的
+主零掩码在例外情形中仍然存在。
+
+频率 $k=0$ 只贡献对角项：相关性
+强制 $n_1=n_2=1$，且等于 $\varphi(C)$。范数与 $Y'$
+同阶的可能 $C$ 有 $O(Y')$ 个，每个满足
+$\varphi(C)\le q_C\ll Y'$。因此其贡献为
+$O(Q/Y')$。
+
+对 $k\ne0$，把 Fourier 宗量分成二进壳层
+$q_Cq_k/P_a\asymp R$，其中 $R=1,2,4,\ldots$，且第一个壳层
+包含所有至多为二的宗量。为 $q_C\asymp C_0$ 与
+$q_d\asymp D_0$ 选取二进中心 $C_0,D_0\in\{1,2,4,\ldots\}$，
+其中第一个二进段包含有界的单位范围。
+使用名义正剩余尺度
+\[
+ N=Y'/(C_0D_0),\qquad
+ \mathcal Q=q_{\mathfrak r}\ll_{\rm fixed}RP_a.
+\]
+实际剩余范数落在 $N$ 的固定倍数之内；名义值
+$N$ 允许小于一。固定任意 $A>2$ 与 $B>2$。
+对每个固定的 $C,d,k$，两列的那个联合环形剖面 $W_R$
+使下文所用的有限多个齐次单剖面半范数被
+$O_{B,J_{\mathrm{Gr}}}((1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B})$ 所界，其中固定了一个
+$J_{\mathrm{Gr}}$，它是在选定这些导数阶数以及 $A,B$ 之后选取的。这
+可由对第一个 Fourier 核求导得到，其 Schwartz 衰减吸收由此产生的每个
+$R$ 的幂次；范数幂次的导数只付出
+$1+|\nu|$ 的固定幂次。这个因子 $R^{-B}$ 保留在单剖面
+Fourier 估计中，并在下文的线性格和中出现一次；
+不使用小的非齐次元组半范数。
+
+设 $a_{C,d,k}$ 为该周期算术系数。对
+非例外频率，其正规化完备 Fourier 变换，
+在两个剩余变量上取正规化 $\mathcal Q^{-2}$，
+绝对值至多为 $q_C$，并在 $(0,0)$ 处取零。由于
+$\mathcal O$ 的每个理想都是主理想，周期格具有
+线性尺度 $\mathcal Q^{1/2}$。因此四维格 Poisson 求和
+给出，对上述 $A$，
+\begin{equation}
+ \left|\sum_{\mathbf m\in\mathcal O^2}
+       a_{C,d,k}(\mathbf m)W_R(\mathbf m/\sqrt N)\right|
+ \ll (1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B}q_C N^2
+             \min\{1,(\mathcal Q/N)^A\}.
+ \label{eq:gram-periodic-poisson}
+\end{equation}
+当 $N\ge\mathcal Q$ 时，零频率消失，其他
+对偶向量的线性尺度为 $(N/\mathcal Q)^{1/2}$。阶为
+$2A>4$ 的 Fourier
+衰减把它们的和界定在 $(\mathcal Q/N)^A$ 之内。
+当 $N<\mathcal Q$ 时，使用两个环形区域中的点计数。非空的
+次单位圆环有 $N$ 被一个固定正常数从下方界定，
+因此它仍包含 $O(N)$ 个格点；低于该常数时它
+是空的。这就在对 $a_{C,d,k}$ 不作任何本原性或张量积假设的情况下
+证明了方程~\eqref{eq:gram-periodic-poisson}。
+
+令 $K_R=RP_a/C_0$。固定的壳层比较常数给出
+$q_k\le C_{\rm sh}K_R$，其中 $C_{\rm sh}>0$ 固定。因此
+当 $K_R<C_{\rm sh}^{-1}$ 时非零频率范围为空。在
+非空范围上，初等的格计数给出
+\[
+ \#\{k:0<q_k\le C_{\rm sh}K_R\}
+       \ll_{\rm fixed}K_R+\sqrt{K_R}+1\ll_{\rm fixed}K_R.
+\]
+因此在这些二进段上 $C,d,k$ 有 $O(C_0D_0K_R)$ 种选择。把
+方程~\eqref{eq:gram-periodic-poisson} 乘以这个计数以及
+公共前置因子，至多得到
+\[
+ (1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B}\frac Q{Y'}\frac{RP_a}{C_0D_0}
+       \min\left\{1,\left(\frac{RP_aC_0D_0}{Y'}\right)^A\right\}.
+\]
+对 $\Lambda=Y'/(RP_a)$，所需的二进正和为
+\[
+ \sum_{i,j\ge0}2^{-i-j}\min\{1,(2^{i+j}/\Lambda)^A\}
+ =\sum_{n\ge0}(n+1)2^{-n}\min\{1,(2^n/\Lambda)^A\}
+ \ll_A\frac{1+\log(2+\Lambda)}{\Lambda}.
+\]
+当 $\Lambda\ge1$ 时，在 $2^n\asymp\Lambda$ 处把两个几何尾部
+拆开；当 $\Lambda<1$ 时，左边有界，而
+显式给出的右边大于一个正常数。
+因此非例外频率贡献
+\[
+ \ll (1+|\nu|)^{J_{\mathrm{Gr}}}\frac Q{Y'}\frac{P_a^2}{Y'}Z^\epsilon
+\]
+在求和 $R$ 之后，选取固定的 $B>2$。
+
+剩下的是计数例外非零频率。它们满足
+$(k)=a_1^6e$，其中 $e$ 无六次幂因子，且支撑在 $C$ 的
+素因子与固定支撑上。可能的 $e$ 至多有
+$6^{\omega(C)+O_S(1)}\ll_\epsilon q_C^\epsilon$ 个。
+对其中每个，壳层界 $q_k\le C_{\rm sh}K_R$ 只允许
+$q_{a_1}\le(C_{\rm sh}K_R/q_e)^{1/6}$。若该范围非空，
+其上界至少为一，理想计数给出
+$O_{\rm fixed}(K_R^{1/6})$ 种选择；若 $q_e>C_{\rm sh}K_R$ 则
+它为空。单位因子只付出一个固定因子。因此这样
+的元素 $k$ 有 $O_\epsilon(K_R^{1/6}q_C^\epsilon)$ 个，包括
+$K_R$ 的有界次单位范围。
+
+使用 $K_R=RP_a/C_0$、$|L_C|\le q_C$ 以及平凡的
+两列点计数。在乘以 $Q/Y'^3$ 之前，这些二进段上的
+贡献为
+\[
+ \ll (1+|\nu|)^{J_{\mathrm{Gr}}} R^{-B}Z^\epsilon
+       Y'^2(RP_a)^{1/6}C_0^{-1/6}D_0^{-1}.
+\]
+在缩减任意小幂次之后，关于 $C_0,D_0$ 的求和收敛，
+且对同一个固定的 $B>2$，关于 $R$ 的求和也收敛。这
+给出项 $(Q/Y')P_a^{1/6}Z^\epsilon$。加上对角项
+与非例外项即证明了该命题。
+\end{proof}
+
+\subsection{下界的完成}
+
+现在把前面两个估计应用于精确低分离格式中同一个
+重标度和式的两个因子。
+
+\begin{proposition}[补偿的低估计]\label{prop:probe-low}
+对于方程~\eqref{eq:compensated-probe-definition} 中的探针、
+方程~\eqref{old-eq:5.1} 中的几何构型以及每个
+$\epsilon>0$，
+\begin{equation}
+ |I_{\eta,\mathrm{modified}}(Z)|
+       \ll Z^{l_x/2+b/12+\epsilon}=Z^{3/16+\epsilon}.
+ \label{old-eq:5.10}
+\end{equation}
+该指数与目标及槽网格无关；常数与下阈值可以
+依赖于固定的算术数据、槽系统以及光滑检验函数。
+\end{proposition}
+
+\begin{proof}
+对于固定的重标度子集与元组，令 $Q=q_{b_*}X'Y'$。
+其分离为方程~\eqref{eq:low-separated}，其中含
+$A_{m,\sigma,v}(Y')$ 与 $B^J_{m,\sigma}(Z)$。令
+$r_J=q_{p_J}/Z^d$；固定的环形支撑给出
+$0<c_J\le r_J\le C_J<\infty$，且对元组一致成立。确切地说，
+\[
+ \begin{gathered}
+ X'=Z^{l_x-d}/r_J,\qquad Y'=Z^{l_y-d}/r_J,\\
+ Q=q_{b_*}Z^{M'}/r_J^2,\qquad
+ P_a=Y'^2/Q=q_{b_*}^{-1}Z^{1/8}.
+ \end{gathered}
+\]
+特别地，当 $Z\ge q_{b_*}^8$ 时 $P_a\ge1$。放大所允许的
+固定数据下阈值，使得 $Q,Y'\ge1$ 对元组比值也一致
+成立；这是可能的，因为 $M'\ge1/2$ 且
+$l_y-d\ge5/16$。剩余的长度不等式为
+\[
+ l_x-d\ge3/16,\qquad l_y-d\ge5/16,
+ \qquad l_y-d-11b/6\ge1/12.
+\]
+最后一个给出
+\[
+ \frac{Y'}{P_a^{11/6}}
+ =q_{b_*}^{11/6}r_J^{-1}Z^{l_y-d-11b/6}
+       \gg_{\rm fixed}Z^{1/12},
+\]
+从而 $P_a^2/Y'\ll P_a^{1/6}$。因此命题~\ref{prop:probe-gram}
+给出
+\begin{equation}
+ \sum_{q_m\ll Q}|A_{m,\sigma,v}(Y')|^2
+ \ll (1+|v|)^{J_{\mathrm{Gr}}}(Q/Y')P_a^{1/6}Z^\epsilon.
+ \label{old-eq:5.6}
+\end{equation}
+在行和上应用 Cauchy--Schwarz、引理~\ref{lem:probe-row-norm}，
+以及 $(1+|v|)^{J_{\mathrm{Gr}}/2}|\widehat W_0(iv)|$ 的可积性，现在
+把该元组的未重标度分离界定在 $Z^\epsilon$ 乘以
+\[
+ \begin{aligned}
+ Q^{-1/2}\bigl[(Q/Y')P_a^{1/6}\bigr]^{1/2}
+       \bigl[Z^{M'}\bigr]^{1/2}
+ &=\bigl[Z^{M'}/Y'\bigr]^{1/2}P_a^{1/12}\\
+ &=r_J(X')^{1/2}P_a^{1/12}.
+ \end{aligned}
+\]
+由于 $r_J$ 有界，这等于
+$O((X')^{1/2}P_a^{1/12}Z^\epsilon)$。
+
+对 $d=\sum_{i\in J}\ell_i$，重标度元组至多有 $Z^{d+\epsilon}$ 个，
+系数为 $O(Z^{-3d/2})$，且
+$(X')^{1/2}\asymp X^{1/2}Z^{-d/2}$。因此总的
+附加指数为
+\begin{equation}
+ f(d)=d-3d/2-d/2=-d\le0.
+ \label{old-eq:5.5}
+\end{equation}
+选取各分量估计中的小幂次，使其总和落在
+指定的 $\epsilon$ 之内。对有限多个子集求和即证明
+方程~\eqref{old-eq:5.10}。对于方程~\eqref{eq:part-II-mellin-target} 中
+已定义的 $C=C_{\mathrm{II}}$，用于主信号的
+正规化满足
+\begin{equation}
+ \begin{gathered}
+ C_{\mathrm{II}}(s)=l_x/2+s-1+h/6=s-11/16,\\
+ C_{\mathrm{II}}(7/8)=3/16=l_x/2+b/12.
+ \end{gathered}
+ \label{old-eq:5.11}
+\end{equation}
+因此，在第 II 部分所假设的矛盾之下，这个下界比
+$Z^{C_{\mathrm{II}}(\beta_*)}$ 小一个精确幂次
+$\Delta=\beta_*-7/8$，至多相差任意指定的 $\epsilon$。
+\end{proof}
+
+\section{局部补偿及其误差}
+\label{sec:local-compensation}
+
+节~\ref{sec:compensation} 中的物理修正已经
+由其分离的低表示作了估计。我们现在确定其
+完整的 Euler 修正，并界定两式运算所留下的局部误差。
+全文之中，局部记号 $P_p,P_p^*,H_p,V,W,D,R$ 沿用
+引理~\ref{lem:local-euler} 中的含义；在共享的解析估计中，其变量
+$x$ 记作 $s$。固定一个非零且无六次幂因子的物理行 $u$，满足
+$(u,S)=1$。所有槽素因子都属于节~\ref{sec:compensation}
+的集合 $\mathcal P_i(Z)$；对每个这样的素因子令 $Q=q_p$。如
+引理~\ref{lem:local-euler} 那样，记 $x_r=\Re x$、$w_r=\Re w$、$z_r=\Re z$。
+$P_p^*$ 中的因子 $W_{\rm loc}=\rho Q^{-w}$ 与
+$W=\chi_p(u)Q^{-w}$ 不同：当 $p\mid u$ 时，后者与 $D$ 都为零，而
+前者保留其单位相位。
+
+\subsection{完整的全纯修正}
+
+对固定的槽素因子 $p$，把完备化指标限制在
+$p\mid A$ 会在高次级数中把 $P_p$ 换成 $P_p^*$。把
+$Z$ 变为 $ZQ$ 会使其 Mellin 权乘以 $Q^{x+z-1}$。因此
+在 $P_p$ 有定义且非零的点处，方程~\eqref{eq:compensated-probe-definition}
+的标记项具有乘子
+$\overline{\eta(p)}Q^{x+z-1}P_p^*/P_p$。重标度项具有乘子
+\[
+ Q^{-3/2}Q^{-(1/2-z)}Q^{-(w-1)}=Q^{z-w-1}.
+\]
+因此，在同一轨迹上，两式运算的精确局部乘子为
+\begin{equation}\label{old-eq:5.13}
+ Q^{z-1}\mathcal B_p,\qquad
+ \mathcal B_p=\overline{\eta(p)}Q^xP_p^*/P_p-Q^{-w}.
+\end{equation}
+把联合局部替换定义为
+\begin{equation}\label{old-eq:5.13c}
+ G_p=
+ \frac{(\overline{\eta(p)}Q^x-Q^{-w})(1-V)(1-W)P_p^*
+       -Q^{-w}(1-VW)}{1-D}.
+\end{equation}
+在 Euler 区域内使方程~\eqref{old-eq:5.13} 中原始商有定义的
+点处，有 $G_p=H_p\mathcal B_p$。
+所显示的公式在该商无定义处也定义了
+$G_p$。右边既没有 $P_p$
+分母，也没有 $1-W$ 分母。引理~\ref{lem:local-euler} 中的界 $|R|,|V|,|D|<1$
+连同其关于 $P_p^*$ 的公式表明，
+$G_p$ 在两个所述的 Euler 区域内全纯，包括在 $P_p$ 或 $H_p$
+的零点处。
+
+在 Euler 区域内使所选商有定义的点处，
+把完整的槽
+乘子记作
+\[
+ \mathcal B_i(u;x,w,z)=\sum_{p\in\mathcal P_i(Z)}
+           W_i(q_p/P_i)q_p^{z-1}\mathcal B_p.
+\]
+用于移动围道的修正是在不使用这些商的情况下定义的：
+\begin{equation}\label{eq:holomorphic-selected-tuple}
+ \mathfrak H_{\eta,u,Z}(x,w,z)=
+ \sum_{(p_i)\in\prod_i\mathcal P_i(Z)}
+ \prod_{i=1}^K\bigl[W_i(q_{p_i}/P_i)q_{p_i}^{z-1}G_{p_i}\bigr]
+ \prod_{\substack{p\notin S\\p\notin\{p_1,\ldots,p_K\}}}H_p.
+\end{equation}
+这是在提取出方程~\eqref{eq:probe-high} 中标量商之后的完整修正。为验证这一断言，
+固定一个允许的元组并令 $\mathcal P=\{p_1,\ldots,p_K\}$。在
+绝对起始线上，所选运算把 $P_p$ 换成
+\begin{equation}\label{eq:selected-local-operation}
+ \overline{\eta(p)}Q^{x+z-1}P_p^*-Q^{z-w-1}P_p
+ =\frac{1-D}{(1-V)(1-W)}Q^{z-1}G_p.
+\end{equation}
+该等式来自把
+$P_p-P_p^*=(1-V)^{-1}+W/(1-W)$ 代入
+方程~\eqref{old-eq:5.13c}。它提取出与在未被选中的素因子处相同的标量局部因子
+$(1-V)^{-1}(1-W)^{-1}(1-D)$。每个被选中的
+素因子恰出现一次，因为槽
+支撑互不相交。因此该元组的完备因子是
+方程~\eqref{eq:probe-high} 中的标量商乘以方程
+~\eqref{eq:holomorphic-selected-tuple} 中它对应的被加项。这一推理不涉及
+除以 $P_p$ 或 $H_p$。在 Euler 区域内使所有
+原始被选商都有定义的点处，同一个有限和也分解为
+$\mathcal H_{\eta,u}\prod_i\mathcal B_i$。
+
+每个被加项中未被选中的乘积在两个 Euler
+区域内都正规收敛。更定量地，在方程
+~\eqref{eq:local-region-one} 的任意固定子区域中，令
+$\epsilon_H=\min(\epsilon_0,1/50)>0$。引理
+~\ref{lem:local-euler} 中逐素因子的缺陷界给出，且对所选元组一致成立，
+\begin{equation}\label{eq:unselected-local-product}
+ \prod_{\substack{p\notin S\\p\notin\mathcal P}}|H_p|
+ \le
+ \prod_{\substack{p\notin S\\p\nmid u}}
+       (1+Cq_p^{-1-\epsilon_H})
+ \prod_{p\mid u}(1+Cq_p^{-\epsilon_H})
+ \ll_\epsilon q_u^\epsilon.
+\end{equation}
+第一个正乘积由理想计数收敛，第二个
+满足除数乘积界。略去被选中的因子只会从这些
+正控制项中去掉因子。在第二个 Euler 区域中，同样的
+论证使用相应的缺陷指数 $-363/200$ 与 $-33/40$。
+因此方程~\eqref{eq:unselected-local-product} 在那里也成立，
+并有相应的正控制项。这些上界并不
+断言 $H_p$ 非零。
+
+对每个固定的 $Z$，方程~\eqref{eq:holomorphic-selected-tuple} 是
+若干个乘积的有限和，这些乘积由全纯的被选因子与正规
+收敛的未被选乘积组成。因此它在两个 Euler 区域内每一点的
+某个邻域上全纯。它还满足
+定义~\ref{def:stage-high-data} 中的全高度要求。
+事实上，在任一区域内的固定实盒上，$P_p^*$ 的公式以及
+有界地远离零的分母给出 $|G_p|\ll Q^B$，其中
+$B$ 固定，且对所有虚部与单位相位一致成立。一个槽中有
+$O(P_i)$ 个理想，且在那里 $q_p\asymp P_i$。因此有限元组
+和与方程~\eqref{eq:unselected-local-product} 给出
+\begin{equation}\label{eq:compensated-all-height-majorant}
+ |\mathfrak H_{\eta,u,Z}(x,w,z)|
+ \ll_\epsilon q_u^\epsilon\prod_iP_i^{z_r+B}
+ \ll_\epsilon q_u^\epsilon Z^{B'}.
+\end{equation}
+其中 $B'$ 在该盒上固定。对 $q_u\le Z^D$，这就是
+方程~\eqref{eq:stage-all-height-majorant}，即便高度指数
+为零。这里的所有常数都在以后任何分部积分阶数之前
+固定。
+
+现在把精确有限运算与
+方程~\eqref{eq:probe-poisson-identity} 及 \eqref{eq:probe-high}
+结合，给出
+\begin{equation}\label{eq:compensated-poisson-identity}
+\begin{split}
+ I_{\eta,\mathrm{modified}}(Z)
+ ={}&\frac1{(2\pi i)^3}\int_{(3)}\int_{(3)}\int_{(2)}
+       \mathcal W(X,Y,Z;x,w,z)\\
+ &\quad\cdot\sum_u^{(6)}q_u^{-z}\overline{\xi(u)}
+       \frac{\zeta_F^S(6z)L^S(w,\chi_\bullet(u))}
+       {L^S(x,\eta\overline{\chi_\bullet(u)})}
+       \mathfrak H_{\eta,u,Z}(x,w,z)\,dz\,dw\,dx.
+\end{split}
+\end{equation}
+该恒等式在所示直线上绝对收敛，因为对
+固定的 $Z$，它由有限多个绝对收敛的重标度
+基础探针恒等式得到。它没有额外的外部 Euler 因子。它
+对物理表达式 $I_{\eta,\mathrm{modified}}$ 验证了定义~\ref{def:stage-high-data}
+的精确高表示，其几何构型为方程~\eqref{old-eq:5.1}。特别地，
+$l_x/2-1+h/6=17/96-1+13/96=-11/16$，正如
+方程~\eqref{eq:part-II-mellin-target} 所要求。它正是
+命题~\ref{prop:probe-low} 中所界定的那个探针的恒等式。每个延拓
+都使用方程~\eqref{eq:holomorphic-selected-tuple} 中的完整修正，
+而不是各个商的某个整体定义乘积。
+
+\subsection{动态局部误差}
+
+在恒等射线素因子处，来自 $T$ 的每个固定相位都等于一，尽管
+$\eta(p)$ 可以是任意单位。先假设 $p\nmid u$ 并令
+$v=\chi_p(u)$。则 $D=\eta(p)v^{-1}Q^{-x}$，且
+$\overline{\eta(p)}Q^xD=v^{-1}$。利用
+$v^{-1}W=Q^{-w}$ 与 $\mathcal E_p=P_p^*+D$ 可得到精确的
+正规化相消
+\begin{equation}\label{old-eq:5.13b}
+\begin{split}
+ G_p+v^{-1}H_p={}&
+ \frac{(1-V)(1-W)}{1-D}
+ \Bigl[(v^{-1}-Q^{-w})\{V/(1-V)-D\}\\
+ &\hspace{17mm}+(\overline{\eta(p)}Q^x+v^{-1}-Q^{-w})
+                    \mathcal E_p\Bigr].
+\end{split}
+\end{equation}
+这是一个关于 Euler 区域内全纯局部表达式的恒等式。
+在这些区域内，在原始商的轨迹上其左边为
+$H_p(\mathcal B_p+v^{-1})$。
+为在该轨迹上直接看出相消，在正规化之前把
+$P_p^*=-D+\mathcal E_p$ 与
+$P_p=(1-V)^{-1}+W/(1-W)+P_p^*$ 代入左边。
+常数 $-v^{-1}$、$v^{-1}-Q^{-w}$ 与
+$(v^{-1}-Q^{-w})W/(1-W)=Q^{-w}$ 之和为零。
+所得有理恒等式只含分母 $1-R$、$1-V$
+与 $1-D$，它们在 Euler 区域内非零；因此它给出
+那里所显示的全纯恒等式。
+对 $p\mid u$，主项由原来的零延拓为零，
+方程~\eqref{old-eq:5.13c} 反而变为
+\[
+ G_p=
+ \overline{\eta(p)}Q^x(1-V)\mathcal E_p-Q^{-w}H_p.
+\]
+
+我们现在给出对剩余误差槽的界。其解析
+输入被明确陈述：反射的本原分子在
+所保留的高度处必须很小。用当前的固定数据以及
+$\Theta=\langle\eta,\widehat T\rangle$ 实例化节~\ref{sec:detector}，
+并使用其零延拓表示 $\nu(n)\chi_n(u)^\varsigma$，其中
+$\nu\in\Theta$ 且 $\varsigma\in\{-1,1\}$。分子
+$\chi_\bullet(u)$ 及其共轭属于 $\mathcal X_u$，
+固定乘子为 $1\in\Theta$；而分母
+$\eta\overline{\chi_\bullet(u)}$ 属于 $\mathcal X_u$，固定
+乘子为 $\eta\in\Theta$。因此那里的带缓冲估计，连同
+引理~\ref{lem:deleted-euler-factors} 的逆删除因子界，
+在保留高度处提供了下文所需的反射分子假设：对于
+下文所用的点，$\Re(1-w)=a+6e$ 且
+$|\Im(1-w)|\le T_1$，位于带缓冲的矩形内。恒等射线
+限制使每个固定的 $T$ 相位在
+槽素因子处都等于一，同时不改变物理行或任何非单位零点。
+
+\begin{proposition}[动态局部误差与导子分配]
+\label{prop:probe-errors}
+设 $51/100\le a\le1$、$0<e\le10^{-3}$，并取
+\[
+ x_r=a+16e,\qquad w_r=1-a-6e,\qquad z_r=17/50.
+\]
+选择 $P_0$ 关于 $e$ 与固定数据充分大。
+对于 $U,T_1\ge1$ 以及无六次幂因子、满足 $(u,S)=1$、
+$q_u\asymp U$ 的行 $u$，设 $\psi_u^*$
+为诱导 $\chi_\bullet(u)$ 的本原特征。设
+$\mathcal W_u$ 为
+$\{w:\Re w=w_r,\ |\Im w|\le T_1\}$ 的任意子集。假设 $\psi_u^*$
+非主，且对 $w\in\mathcal W_u$ 一致成立，
+\[
+ |L(1-w,\overline{\psi_u^*})|\ll U^\epsilon
+\]
+其中幂次为任意指定的小量。
+对于该行在所示动态区域上，用其前面的槽和定义 \(\mathcal B_i\)，
+把每个 \(\mathcal B_p\) 解释为 \(G_p/H_p\)，
+其中 \(G_p\) 来自方程~\eqref{old-eq:5.13c}。所述的
+\(P_0\) 选取使那里对每个槽素因子都有 \(H_p\ne0\)，正如证明开头
+所证。该命题只在这个动态区域上断言各别的延拓。
+把一个槽的主部与误差部分别定义为
+\[
+ \mathcal Q_i(u;z)=
+       -\sum_{p\in\mathcal P_i(Z)}W_i(q_p/P_i)q_p^{z-1}\overline{\chi_p(u)},
+ \qquad
+ \mathcal D_i(u)=\mathcal B_i(u;x,w,z)-\mathcal Q_i(u;z).
+\]
+则对槽的每个子集 $I$ 以及同样的点 $w\in\mathcal W_u$，
+\begin{equation}\label{old-eq:5.13e}
+ \left|L^S(w,\chi_\bullet(u))\prod_{i\in I}\mathcal D_i(u)\right|
+ \ll U^{a-1/2+O(e)+\epsilon}(3+T_1)^C
+       \prod_{i\in I}P_i^{z_r-1/2+O(e)+\epsilon}.
+\end{equation}
+主部保留物理行、所有零掩码以及
+固定的恒等射线限制。特别地，其中心
+正规化为
+\[
+ \mathcal Q_i(u;z)=-P_i^{z-1/2}
+       \left(P_i^{-1/2}\sum_{p\in\mathcal P_i(Z)}
+          \overline{\chi_p(u)}W_i(q_p/P_i)(q_p/P_i)^{z-1}\right).
+\]
+在同样的点 $w\in\mathcal W_u$ 处，且仅在这个动态区域上，
+完整修正是有如下有限分解
+\begin{equation}\label{eq:dynamic-compensated-decomposition}
+ \mathfrak H_{\eta,u,Z}
+ =\mathcal H_{\eta,u}\prod_{i=1}^K(\mathcal Q_i+\mathcal D_i)
+ =\mathcal H_{\eta,u}
+   \sum_{I\subseteq\{1,\ldots,K\}}
+       \prod_{i\in I}\mathcal D_i\prod_{i\notin I}\mathcal Q_i.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+在这个区域中 $\vartheta=(-w_r)_+\le6e$。引理~\ref{lem:local-euler} 的
+证明中的估计强化为：当 $p\nmid u$ 时
+$H_p-1=O(Q^{-1-10e})$，当 $p\mid u$ 时
+$H_p-1=O(Q^{-10e})$。增大固定的 $P_0$，使
+所有这些素因子满足 $|H_p-1|<1/2$。方程~\eqref{old-eq:5.13c} 中的全纯
+因子 $G_p$ 除以 $H_p$，
+现在在整个区域上定义了 $\mathcal B_p$。当 $w_r<0$ 时有界地远离零的
+是 $H_p$，而不是可能奇异的原始因子 $P_p$。
+

@@ -1,6 +1,0 @@
-PAGE 44   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL C  y  641.5 x  176.3- 182.0
-      line: C ( Z ; m, ν ) = Z t e t 2 T ( t + 1 / 2 , νχ ( m )) dt.
-CAL C  y  751.9 x  246.9- 252.7
-      line: X |C ( Z ; m, ν ) | 2 ≪ Z 1+ ϵ M ( V ) 2 . (5.39)

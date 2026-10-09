@@ -1,0 +1,530 @@
+现在我们来具体说明该归纳法，包括在其最小宽度处的估计。选取一个宽度下限 \(\rho>0\)、一个宽度步长 \(\sigma>0\)，
+然后取 \(\delta>0\)，它们相对于最终的
+\(\epsilon\) 都很小，且 \(\delta\ll\min(\rho,\sigma)\)。精确的损失
+选取将在深度被界定之后进行。将 \(M\) 的有界
+范围划分为长度为 \(\sigma/4\) 的连续带。
+首先按宽度递增的顺序证明所有零槽带，然后
+证明所有正槽带。在零槽带内，首先证明
+\(A\le5M/6\) 的非中心化断言，然后证明
+方程~\eqref{old-eq:2.1h} 中的带填充核心。反射随后给出该带内
+所有零槽长度。在正槽带内，首先
+证明在方程~\eqref{old-eq:3.9} 约束下
+\(A\le5M/6\) 的非中心化断言，然后
+通过中心化证明该区域的剩余部分。因此，一个已完成的前一带
+包含了无限制的零槽断言。设 \(M_{\max}\) 界定
+初始宽度范围，并定义
+\[
+ D=2+\left\lceil 2M_{\max}/\sigma\right\rceil.
+\]
+下文证明的严格宽度递减将表明，在一条分支上至多出现 \(D-2\)
+次非终端调用。
+
+当 \(M\le\rho\) 时，带填充的零槽核心可由绝对
+计数得到：有 \(O(Z^m)\) 行，且平方乘积为
+\(O(Z^{A+\epsilon_1})\)。它在 \(M\) 之上的指数至多为
+\(A-q\le\rho+\delta\)。对于正槽，将已完成的
+零槽估计与方程~\eqref{old-eq:3.5} 结合起来。在
+方程~\eqref{old-eq:3.9} 的区域内，\(A\ge z\)，从而
+\begin{equation}
+ z\le\frac{M}{6\kappa}\le\frac{2M}{9},
+ \qquad \kappa z\le\frac M6.
+ \label{old-eq:3.6}
+\end{equation}
+因此正槽的额外终端指数至多为
+\(\rho/6\)。通过选取足够小的 \(\rho,\delta\)，可以使这些终端指数小于
+保留的最终损失。
+
+对于高于下限的宽度，下文的两变换估计将
+首先证明非中心化范围 \(A\le5M/6\)。我们现在解释为什么
+剩余的输入可以与该范围进行比较。设
+\begin{equation}
+ L=M/4.
+ \label{old-eq:2.2}
+\end{equation}
+对于 \(A>5M/6\)，比较长度 \(L,A-z-L\) 都至少
+为 \(L\)。在正槽情形下，
+\((6\kappa-1)z\le M-A<M/6\)，且 \(6\kappa-1\ge7/2\)；因此
+\(z<M/21<M/20\)。这也表明 \(A-z>2L\)。
+
+如果一个原始素长度是 \(b<L\)，则反射另一个因子。
+如果两者都至少为 \(L\)，则引入
+其长度 \(L,A-z-L\) 且具有相同两个剖面的比较；
+仅当单独估计该比较时才反射其较长的因子。在两种情形下，
+经过该反射后的总长度至多为
+\[
+ b+\{M-(A-z-b)\}+z+\xi
+ \le 3M/2-A+2z+\xi,
+\]
+其中 \(b\le L\)。方程~\eqref{eq:centered-reflection-length}
+将截断的反射尺度与成对的未反射盒
+乘子包含在同一个 \(\xi\) 中；被丢弃的尾部具有所述
+固定阶的界。因此
+\begin{equation}
+ A_{\rm comp}\le3M/2-A+2z+\xi.
+ \label{old-eq:3.11}
+\end{equation}
+对于 \(z=0\)，这给出
+\(5M/6-A_{\rm comp}\ge M/6-\xi\)。对于 \(z>0\)，利用
+\((6\kappa-1)z\le M-A\)、\(A>5M/6\) 和 \(z<M/20\) 得到
+\begin{equation}
+ \begin{aligned}
+ A_{\rm comp}&\le\frac{23}{30}M+\xi,\\
+ A_{\rm comp}+(6\kappa-1)z
+ &\le\frac52M-2A+2z+\xi\le\frac{14}{15}M+\xi.
+ \end{aligned}
+ \label{eq:comparison-uncentered-margin}
+\end{equation}
+在 \(\xi\) 项之前，每个所需边界都有至少 \(M/15\) 的余量。
+选取 \(\xi\le\rho/30\)。在
+方程~\eqref{eq:centered-reflection-length} 中的阈值之后，单位盒乘子
+已包含在 \(\xi\) 中，因此每个保留的反射
+比较都在该相同宽度处调用先前证明的非中心化断言。
+这也完成了具有短于 \(L\) 的因子的原始情形。
+
+在剩余的情形下，令 \(X_i=Z^{n_i}\)，
+\(Y_1=Z^L\)，以及 \(Y_2=X_1X_2/Y_1\)。则
+\(X_1X_2=Y_1Y_2\)，且四个素长度都至少为 \(L\)。
+从原始乘积中减去未反射的比较，
+留下各槽的公共乘积 \(Q\)；将结果记为
+\(\Delta_k\)。乘性与等乘积正规化
+给出显式公式
+\[
+ \begin{split}
+ \Delta_k
+ =\frac{Q}{\sqrt{X_1X_2}}\sum_{l_1,l_2}\psi_k(l_1l_2)
+ \bigl\{
+ &W_1(q_{l_1}/X_1)W_2(q_{l_2}/X_2)\\
+ -{}&W_1(q_{l_1}/Y_1)W_2(q_{l_2}/Y_2)
+ \bigr\}.
+ \end{split}
+\]
+比较在原始允许
+行上有界。整个 \(\Delta_k\) 的平方范数非负，
+因此随后可以将其扩大到光滑行球中的所有行。在
+非中心化情形下，改为扩大原始
+乘积的平方范数。因此下文的 Poisson 变换从不
+应用于选择例外或非例外行的指示函数。
+
+\subsection{中心化系数及其支集}
+
+我们在变换其行范数的同时，将减法保留为一个系数。对于固定的理想
+\(\mathbf b=(\mathfrak b_1,\mathfrak b_2)\)，定义
+\begin{equation}
+ D_{\mathbf b}(l_1,l_2)
+ =
+ \prod_{i=1}^2W_i(q_{\mathfrak b_i}q_{l_i}/X_i)
+ -
+ \prod_{i=1}^2W_i(q_{\mathfrak b_i}q_{l_i}/Y_i),
+ \qquad X_1X_2=Y_1Y_2.
+ \label{old-eq:2.18a}
+\end{equation}
+一个分配 \(\mathbf b\) 记录了已从两个素
+变量中提取的素幂。如果它的条件对
+某个矩形不可能成立，则该矩形在相应的
+和上的剖面为零；但方程~\eqref{old-eq:2.18a} 中的形式差
+仍被保留。
+
+保留这些公共数据的理由在
+例外情形中已经显现。对于固定的 \(\vartheta\in\Theta\)、公共掩码
+\(\mathfrak R_*\) 和公共范数幂 \(q_l^{it}\)，下文证明的格点
+估计有主项
+\[
+ \sum_l\vartheta(l)1_{(l,\mathfrak R_*)=1}q_l^{it}W_i(q_l/T)
+ =c_{\vartheta,\mathfrak R_*}T^{1+it}I_i(t)+\text{error},
+\]
+其中 \(c_{\vartheta,\mathfrak R_*}\) 不依赖于 \(T\) 或 \(t\)。
+这里 \(I_i(t)\) 是一个固定的测度常数乘以
+\(\int_0^\infty W_i(y)y^{it}\,dy\)。
+因此乘积主项为
+\(c_{\vartheta,\mathfrak R_*}^2T_1^{1+it}T_2^{1+it}I_1(t)I_2(t)\)，
+当 \(T_1T_2\) 一致时，两个矩形一致。
+引理~\ref{lem:centered-lattice-cancellation} 将量化剩余的
+误差。该消去仅用于在 \(\Theta\) 中诱导
+特征的变换行上；下文的公共系数在所有行上都被保留，
+直到稍后进行情形划分。
+
+对于剩余的槽集合 \(\mathcal I'\)，记
+\(\Pi=\prod_{i\in\mathcal I'}p_i\)。具有公共
+特征和掩码的系数指的是如下形式的系数
+\begin{equation}
+ \begin{split}
+ &\left(\prod_{i\in\mathcal I'}
+       \nu_i(p_i)W_i^{\rm slot}(q_{p_i}/P_i)\right)
+ D_{\mathbf b}(l_1,l_2)\,
+ \tau_1(u)q_u^{it}
+ 1_{(u,\mathfrak R)=1}1_{s\mid u},\\
+ &\hspace{40mm}u=\Pi l_1l_2.
+ \end{split}
+ \label{eq:centered-coefficient-form}
+\end{equation}
+这里 \(\tau_1\) 是一个固定的有限射线
+特征与移动剩余符号因子的零延拓乘积；\(\mathfrak R\) 是一个
+固定的无平方因子额外掩码；\(s\) 是一个固定的无平方因子理想；且
+\(t\in\mathbb R\)。当 \(s=1\) 时，条件 \(s\mid u\) 被省略。
+各槽保留其原初互不相交的基础
+支集。它们可以与任一素变量共享素因子。
+
+这些公共数据在 \emph{完整} 乘积上按乘法分解。
+对于任意理想 \(v_1,\ldots,v_r\)，即使有公共素因子，
+\[
+ \chi_{\prod v_i}(h)=\prod_i\chi_{v_i}(h),\quad
+ q_{\prod v_i}^{it}=\prod_iq_{v_i}^{it},\quad
+ 1_{(\prod v_i,\mathfrak R)=1}
+   =\prod_i1_{(v_i,\mathfrak R)=1}.
+\]
+第一个恒等式包含所有零：一个出现的素因子若其总
+指数被六整除，则给出零延拓的主
+因子，而非常数一。同样的乘性对
+\(\tau_1\) 成立。在完整乘积上取值的固定射线特征也
+按每个变量上相同的特征进行分解。
+
+我们固定一个支集约定，它也将控制槽网格
+量词。设 \(N\) 为原始的固定槽数，并
+选取包含每个 \(W_i^{\rm slot}\) 支集的固定区间 \([a_i,b_i]\)。令
+\(h_i=\max\{|\log a_i|,|\log b_i|\}\)。选取一个固定数
+\(H_N\)，至少为 \(\sum_i h_i\)，将其扩大以包含两个素
+剖面窗、\(\log C_{\rm ref}\)、固定的算术正规化、相对的二进
+盒，以及经过 \(D\)
+个运算阶段的有限多个支集扩大。数 \(H_N\) 可以
+依赖于所有固定数据和 \(N\)，但不依赖于 \(Z\) 或任何移动标签。
+对于活或冻结槽的每个子集 \(I\)，
+\begin{equation}
+ \left|\log\prod_{i\in I}\frac{q_{p_i}}{P_i}\right|
+ \le\sum_{i\in I}h_i\le H_N,
+ \qquad \theta_N:=\frac{H_N}{\log Z}.
+ \label{eq:centered-aggregate-support}
+\end{equation}
+每个残差完整乘积除以其名义乘积尺度都落在
+\(\exp([-H_N,H_N])\) 中，其中 \(H_N\) 就固定的运算列表
+被增大一次。两个矩形都使用同一个盒。提取出的
+素素幂使用其精确范数，且一个冻结槽仅贡献
+其比值 \(q_p/P_i\) 一次。如果一个非空且小于一的素尺度
+被截断为一，则其误差至多为该素
+窗固定端点的对数除以 \(\log Z\)，每个素计一次。
+因此，一个完整的槽子集或一次完整的除子提取贡献
+一个聚合的 \(O(\theta_N)\) 边界误差，而不是为每个槽或素各贡献一份
+预设容差。
+
+\subsection{第一个 Poisson 变换及其目标界}\label{sec:plain-first-transform}
+
+我们现在估计非中心化乘积或上面选定的中心化
+差二者之一。令 \(H=Z^m\) 和 \(X=Z^A\)。选取一个
+固定的非负光滑径向函数，它支配行球。
+任一矩形中的完整指标乘积的范数落在一个固定的
+\(X\) 倍数内。本小节中所有指数的比较
+首先在固定的二进范数区间上进行。它们有界的
+相对宽度使对数长度改变 \(O(1/\log Z)\)；
+最终损失讨论包含这些改变。
+
+我们对两个 Poisson 公式使用以下公共局部化。
+固定一个对 \(q>0\) 的非负光滑二进划分
+\(\sum_\lambda\omega_\lambda(q/T_\lambda)=1\)，
+其中每个权支撑在 \(C_d^{-1}\le q/T_\lambda\le1\) 内，
+\(C_d\) 固定。一个
+扇区为有限的聚合外范数列表固定二进盒，
+而非为每个槽单独设一个盒。设 \(T_{\rm sec}\) 为
+该扇区中名义频率尺度的上确界。它与
+任一组外标签处尺度之比至多为一个固定的
+\(C_{\rm sec}\)。恰好保留其支集满足
+下式的那些完整权
+\[
+ 0<q\le T_{\rm sec}Z^{\xi/2}.
+\]
+它们的并集包含在 \(q\le C_dT_{\rm sec}Z^{\xi/2}\) 中；
+每个被丢弃的权都支撑在 \(T_{\rm sec}Z^{\xi/2}\) 之上。
+该选取仅依赖于扇区，从不依赖于活列。
+在 \(N\) 和支集数据固定之后，取 \(Z\) 足够大使得
+\begin{equation}
+ 2\theta_N+\frac{\log(C_dC_{\rm sec})}{\log Z}<\frac\xi4.
+ \label{eq:centered-localization-threshold}
+\end{equation}
+对 \(C_{\rm sec}\) 做一次固定扩大即可覆盖所有有限多个
+扇区端点因子。
+
+下面给出一个直接的尾部界，它为在
+真实和上进行此运算提供依据。在两个应用中，核自变量都至少为
+\(q/(e^{2H_N}T_{\rm sec})\)。因此在每个被丢弃的权上，由
+方程~\eqref{eq:centered-localization-threshold}，它至少为 \(Z^{\xi/4}\)。
+引理~\ref{lem:kernel-seminorms} 给出任意衰减
+\((1+\text{argument})^{-B}\)。对第一个公式使用
+\(|G(a,h)|\le q_a^{1/2}\)，对第二个使用有限
+定义 \(|F(u,v;j)|\le q_uq_v\)。绝对理想计数和
+固定因子数的除子界将一个扇区中所有原始
+列和前因子界在 \(C_NZ^{B_0}\) 乘以一个关于所保留高度的固定
+多项式之内，其中 \(B_0\) 仅依赖于
+有界的总长度和所选取的辅助幂份额。尺度为 \(T\) 的
+格范数二阶有 \(O(1+T)\) 个频率。
+因此对被丢弃的二阶求和径向衰减给出
+\(C_{N,B}Z^{B_1-B\xi/4}\) 乘以该高度多项式，其中有界
+\(B_1\) 不依赖于 \(B\) 和 \(N\)，且当 \(B>1\) 时几何和
+收敛。选取 \(B\) 足够大以获得任意指定的幂次
+节省，包括冻结外标签的多项式个数。
+这是对原始项的绝对界，在任何
+非互素延拓或 Fourier 绝对化之前。它既不使用
+稍后的 \(s\)-根式节省，也不使用分解的非互素恒等式。
+在保留的权上，完整的平滑核被保留；没有插入将
+行范数与两个活列范数相比较的尖锐
+条件。低于第一个非零格范数的保留范围
+是空的，除了一个由下文截断
+约定覆盖的有界边界二阶。
+
+在第一个行 Poisson 公式的零频率处，一个特征均值
+非零仅当它在每个素因子处的指数模
+六为零。特别地，在两个完整指标乘积的乘积中，
+没有素因子以总重数一出现。因此该乘积
+是一个幂理想。范数为 \(O(X^2)\) 的这类乘积有
+\(O_\epsilon(X^{1+\epsilon})\) 个：每个幂理想是一个平方
+乘以一个无平方因子理想的立方，对后者求和给出
+通常的直到范数 \(Y\) 的 \(O(Y^{1/2+\epsilon})\) 界。
+对固定因子数的分配是除子有界的。
+中心因子为 \(X^{-1}\)，且行均值的大小至多
+为 \(H\)。因此零频率为 \(O(Z^{m+\epsilon_1})\)。
+
+对于非零频率，将两个完整乘积写为 \(Ca,Db\)，
+其中 \(C,D\) 包含它们完整的公共素支撑，且
+\[
+ (a,b)=1,\qquad (ab,CD)=1.
+\]
+在每个公共素处，固定它在每个素变量中的精确
+赋值，以及它是否由某个槽提供。除掉这些赋值
+会将该素加到该侧 \emph{每个} 剩余因子的掩码中。
+提供该素的槽被冻结并移除。此描述
+即使某个槽和一个或两个素变量都提供了该素时仍然有效。
+分配是对系数一次性作出的，因此同样的理想
+\(\mathfrak b_i\) 出现在 \(D_{\mathbf b}\) 的两项中。
+不可能的分配是零项。特别地，一个被旧的移动零或公共掩码
+强制为零的标量，在施加这些支集条件之前
+不会被替换为其绝对上界。
+
+设 \(c,d\) 为 \(C,D\) 的对数范数，\(p\) 为
+它们公共根式的对数范数。设 \(\mathfrak r\) 为
+净指数模六非零的公共素的乘积；它的对数
+范数为 \(R\)。相应的特征
+\(\xi_{\mathfrak r}\) 模 \(\mathfrak r\) 本原。
+在互补公共行掩码的 M\"obius 展开中，
+记 \(\mathfrak e\) 为所选除子，\(E\) 为其
+对数范数。特别地
+\[
+ R\le p,\qquad E\le p-R.
+\]
+
+设 \(A_C(a)\) 和 \(A_D(b)\) 为所分配的卷积
+系数，其中公共特征 \(\tau\) 被省略。它们
+包含所有剖面、活槽系数和固定掩码；在
+中心化情形下，每个都包含整个所分配的差。
+设
+\[
+ \tau_C(a)=\tau(a)\chi_a(\mathfrak e\mathfrak r)
+                       \xi_{\mathfrak r}(a),\qquad
+ \tau_D(b)=\tau(b)\chi_b(\mathfrak e\mathfrak r)
+                       \overline{\xi_{\mathfrak r}(b)}.
+\]
+剩余类 Poisson，连带来自节~\ref{sec:arithmetic} 的自对偶格
+测度，对此分配给出如下非零频率表达式，
+至多相差一个在冻结标签中有界模的标量：
+\begin{equation}
+ \begin{split}
+ \frac{H}{Xq_{\mathfrak e}\sqrt{q_{\mathfrak r}}}
+ \sum_{h\ne0}G_{\xi_{\mathfrak r}}(\mathfrak r,h)
+ \sum_{(a,b)=1}
+ &\frac{A_C(a)\overline{A_D(b)}}{\sqrt{q_aq_b}}\,
+ \tau_C(a)\overline{\tau_D(b)}
+ \overline{\mathcal R(a,b)}\,
+ G(a,h)\overline{G(b,-h)}
+ \\
+ &\quad\cdot
+ \widehat\Phi_1\left(
+    \frac{Hq_h}{q_{\mathfrak e}q_{\mathfrak r}q_aq_b}
+                    \right).
+ \end{split}
+ \label{eq:first-poisson-bridge}
+\end{equation}
+这里 \(G_{\xi_{\mathfrak r}}\) 是正规化的本原 Gauss
+和，其模至多为一。为验证正规化，代换
+\(k=\mathfrak e k'\) 和模
+\(\mathfrak r ab\) 的 Poisson 给出 \(H/(q_{\mathfrak e}q_{\mathfrak r}q_aq_b)\)。
+三个未正规化的 Gauss 和恢复
+\(\sqrt{q_{\mathfrak r}q_aq_b}\)。全局平方中心
+正规化为 \(X^{-1}\)。对于相位，对两两互素的模
+\(a,b,\mathfrak r\) 的 CRT 给出
+\[
+ \chi_a(b\mathfrak r)\overline{\chi_b(a\mathfrak r)}
+       \xi_{\mathfrak r}(ab).
+\]
+代换 \(k=\mathfrak e k'\) 给出
+\(\chi_a(\mathfrak e)\overline{\chi_b(\mathfrak e)}\)，至多相差一个
+在冻结标签中的标量。互反律将
+\(\chi_a(b)\overline{\chi_b(a)}\) 变为
+\(\overline{\mathcal R(a,b)}\)；剩余的因子恰为
+\(\tau_C(a)\overline{\tau_D(b)}\)。这证明了
+方程~\eqref{eq:first-poisson-bridge}。每个新特征作用于
+其整个残差乘积。它新的移动素属于
+所提取的支集，并穿刺每个残差因子。它们完整的所示
+并集被计入，即便在 \(\mathfrak r\) 处的因子在单位上相消。
+
+新的完整所示移动支集的对数范数至多为
+\(\widetilde q=q+R+E\)，包括在
+\(\mathfrak r\) 处任何相消的因子。它的名义频率尺度恰为
+\[
+ T_1(C,D,\mathfrak e,\mathfrak r)
+ =\frac{q_{\mathfrak e}q_{\mathfrak r}X^2}
+        {Hq_Cq_D}=Z^{K_0},
+ \qquad K_0=2A-c-d+R+E-m.
+\]
+乘积支集约定给出
+\(q_a/(X/q_C),q_b/(X/q_D)\in\exp([-H_N,H_N])\)，因此对于
+外扇区中 \(T_1\) 的上确界，方程~\eqref{eq:first-poisson-bridge} 中的
+自变量至少为
+\(q_h/(e^{2H_N}T_{\rm sec})\)。将前述整二进局部化
+应用于此真实的互素桥。如果 \(K=\log_ZT_\lambda\)
+是一个保留二进的上长度，则
+\begin{equation}
+ \widetilde q=q+R+E,\qquad
+ K\le K_0+\delta_{{\rm fr},1},\qquad
+ 0\le\delta_{{\rm fr},1}:=\frac\xi2+
+       \frac{\log(C_dC_{\rm sec})}{\log Z}<\xi.
+ \label{old-eq:2.3}
+\end{equation}
+上面已估计的零频率是
+原始公共光滑行球的零项；它不会在截断的
+行区域上被恢复。稍后的账目保留可能的不等式
+\(K_0-K\ge-\delta_{{\rm fr},1}\)。
+
+对于每个保留的二进和每个真实的公共支撑分配，定义
+\(\mathcal C_1(a,b;h)\) 为完整的桥求和项，它也适用于各自
+与 \(CD\) 不交且被旧掩码允许的非互素
+残差对。使用固定的双特征 \(\mathcal R(a,b)\)、完整的
+零延拓 \(G(a,h),G(b,-h)\)、所示整乘积特征，
+以及相同的二进权、核、逆根和形式乘积范数。
+CRT 仅在 \((a,b)=1\) 时将此定义与
+真实求和项等同。在每个有限列壳上，精确恒等式为
+\[
+ \sum_{(a,b)=1}\mathcal C_1(a,b;h)
+ =\sum_{a,b}\mathcal C_1(a,b;h)\sum_{s\mid a,b}\mu(s).
+\]
+完整的无平方因子 M\"obius 和消去人为的非互素
+对。在估计独立因子之前插入它，并令
+\(s_0=\log_Zq_s\)。
+在正规化的行范数与两个整乘积范数中分离固定射线相位
+和所有光滑因子。在这些变量中，核为固定对数盒上的
+\(\widehat\Phi_1(R_{\rm sc}x/(y_1y_2))\)。如果它的聚合尺度比 \(R_{\rm sc}\)
+在该扇区上变化，则将那单个正规化的外比作为另一个坐标
+纳入。截断值在
+方程~\eqref{eq:centered-aggregate-support} 的公共乘积圆环上选取，且在固定活槽
+标签之前。因此一个 Fourier 系数测度对各行和
+所有活标签都是公共的。它提供行相位以及每个
+整列上仅一个范数幂，连同冻结外范数中的相位。它不
+在两个素变量或两个矩形上引入单独的幂。
+完整的核和逆根一直保留到此分离为止；
+在 \(D_{\mathbf b}\) 内取它们的绝对上确界将不会
+保持该系数。仅在此分离之后对 \(h\) 应用 Cauchy--Schwarz，
+也只有到这时才使用 \(|G_{\xi_{\mathfrak r}}|\le1\)。在 \(C\) 侧所得的正是范数为
+\[
+ \mathcal N_C=
+ \sum_{h\ne0}\omega_K(q_h/Z^K)
+ \left|Z^{-(A-c)/2}
+   \sum_{s\mid a}A_C(a)\tau_C'(a)q_a^{it}G(a,h)\right|^2,
+ \qquad \omega_K\ge0,
+\]
+且有一个类似的 \(D\) 范数。这里 \(\tau_C'\) 包含
+一个分离的固定射线特征。\(A_C\) 中所有固定掩码
+仍然存在。因此完整提取和乘性使
+方程~\eqref{eq:centered-coefficient-form} 中的系数保持不变，现在
+乘以 \(G(a,h)\)。特别地，两个矩形保留
+相同所分配的素幂、特征、穿刺和范数幂。
+
+这两个范数之外的因子的指数为
+\(m-A-R/2-E\)。公共支撑标签和
+M\"obius 标签的绝对数量具有指数 \(p+s_0+\epsilon_1\)。为一致地证明
+公共支撑计数的合理性，首先计数其根式，给出
+\(O(Z^{p+\epsilon_1})\)。对于多项式范数的固定根式 \(\mathfrak c\) 和
+任意固定的 \(T\)，Rankin 界给出
+\[
+ \#\{v:\operatorname{rad}(v)\mid\mathfrak c,\ q_v\le Z^T\}
+ \le Z^{aT}\prod_{\substack{r\mid\mathfrak c\\r\ {\rm prime}}}
+             (1-q_r^{-a})^{-1}
+ \ll Z^{aT+\epsilon_1}
+\]
+对每个固定的 \(a>0\)。选取 \(a\) 小，并使用
+多项式规模的 Euler 乘积估计。这将 \(C,D\) 中
+幂的选择界在任意小的幂之内。它们的
+分配以及 \(\mathfrak e\) 的选择具有除子有界的
+重数。最后有 \(O(Z^{s_0+\epsilon_1})\)
+个可能的 \(s\)。
+
+下文的容许量 \(\epsilon_G\) 表示
+当前归纳深度的误差包络，连同其局部小幂份额。
+这些包络将在有限归纳完成时相容地选取，
+整个过程使用相同的槽网格。
+我们将为平方 \(C\)
+范数证明以下充分界：
+\begin{equation}
+ \mathcal N_C\ll
+ Z^{A-c+\widetilde q+\mathcal B_c-s_0+\epsilon_G},
+ \qquad
+ \mathcal B_c=\max\{0,(3c-5d-R)/6\}.
+ \label{old-eq:2.5}
+\end{equation}
+类似的量为
+\(\mathcal B_d=\max\{0,(3d-5c-R)/6\}\)。
+此蕴含的完整指数账目为
+\[
+ \begin{aligned}
+ &(m-A-R/2-E)+(p+s_0)\\
+ &\quad+\tfrac12\{A-c+\widetilde q+\mathcal B_c-s_0
+                  +A-d+\widetilde q+\mathcal B_d-s_0\}\\
+ &=M+\tfrac12\{\mathcal B_c+\mathcal B_d-(c+d-2p-R)\}.
+ \end{aligned}
+\]
+最后一个花括号非正：
+\begin{equation}
+ \mathcal B_c+\mathcal B_d\le c+d-2p-R.
+ \label{old-eq:2.6}
+\end{equation}
+事实上，在重数为 \(i\ge j\ge1\) 的公共素处，令
+\(r=1_{6\nmid i-j}\)。只有 \(i\) 侧可以有正的
+局部分子。它的贡献至多为
+\((3i-5j-r)_+/6\)，而右侧贡献
+\(i+j-2-r\)。后者非负。如果前者为
+正，则它们的差的六倍为
+\(3i+11j-12-5r\)，它非负：当 \(r=0\) 时它至少为
+\(2\)，当 \(r=1\) 时有 \(i\ge j+1\)，给出至少
+\(0\)。一个和的正部至多为各部分正部之和。乘以
+每个素的对数范数并求和即证明方程~\eqref{old-eq:2.6}。因此只剩下
+建立方程~\eqref{old-eq:2.5}。
+
+\subsection{扩大 Gauss 行范数}\label{sec:plain-gauss-enlargement}
+
+本小节描述第二个变换将应用于其上的三个可能的正范数。
+设 \(w\) 表示从 \(C\) 列中移除的长度，\(w_o\le w\) 为
+该移除所产生的额外移动根式长度。令
+\(a_0=A-c-w\)。当大小为
+\(Z^{-w_o}\) 的平方提取系数已被移除时，方程~\eqref{old-eq:2.5}
+允许无权的剩余范数具有指数
+\begin{equation}
+ \Lambda_c=
+ a_0+\widetilde q+w_o+w+\mathcal B_c-s_0+\epsilon_G.
+ \label{old-eq:2.7}
+\end{equation}
+这恰为 \(A-c+\widetilde q+\mathcal B_c-s_0+\epsilon_G+w_o\)。
+
+对于初始范数，当 \(w=w_o=0\) 且 \(a_0=A-c\) 时，第一个
+变换在固定 \(\Pi\) 并省略其外标量后
+给出如下条件求和项：
+\begin{equation}
+ Z^{-a_0/2}\sum_{l_1,l_2}
+ D_{\mathbf b}(l_1,l_2)\tau_1(l_1l_2)q_{l_1l_2}^{it}
+ 1_{(\Pi l_1l_2,\mathfrak R)=1}1_{s\mid\Pi l_1l_2}
+ G(\Pi l_1l_2,h).
+ \label{old-eq:2.18c}
+\end{equation}
+在此多项式被平方之前，各槽和被恢复。
+省略第二个矩形的同样陈述适用于
+非中心化乘积。下文的局部计算将表明，
+所提取的项在其缩短后的长度 \(a_0=A-c-w\) 处保持此形式。
+
+定义
+\begin{equation}
+ J=d-c+(K_0-K)-2w+w_o,\qquad J_+=\max(J,0).
+ \label{old-eq:2.8}
+\end{equation}

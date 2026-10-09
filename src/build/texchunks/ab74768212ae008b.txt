@@ -1,8 +1,0 @@
-\[
- |\tau(A)|^2
- =\sum_{t\in k^\times}A(t)\sum_{y\in k^\times}\psi((t-1)y)=P.
-\]
-内层和对 $t=1$ 为 $P-1$，否则为 $-1$，并且
-$\sum_{t\in k^\times}A(t)=0$。共轭还给出
-$\tau(A)\tau(\overline A)=A(-1)P$。当 $AB$ 非主特征时，将
-乘积 $\tau(A)\tau(B)$ 按 $x+y$ 分组得到

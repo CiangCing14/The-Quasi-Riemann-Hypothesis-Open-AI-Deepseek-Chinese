@@ -1,8 +1,0 @@
-PAGE 171   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 0
-
-CAL J  y  614.0 x  171.3- 177.0
-      line: i ∈J j i =1
-CAL I  y  655.1 x  224.7- 229.4
-      line: i =1 i ∈I j \J j
-CAL J  y  655.1 x  237.5- 243.2
-      line: i =1 i ∈I j \J j

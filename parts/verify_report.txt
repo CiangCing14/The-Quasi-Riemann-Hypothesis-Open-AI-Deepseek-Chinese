@@ -1,0 +1,32 @@
+part_00 L48-607: OK
+part_01 L608-1152: ZH-EXTRA $1$x1; $C$x1 | para#10 [ZH-EXTRA $C$] | para#27 [ZH-EXTRA $1$]
+part_02 L1153-1717: ZH-EXTRA $u$x1 | para#19 [ZH-EXTRA $u$]
+part_03 L1718-2263: ZH-EXTRA $M^2$x1; $\zeta$x1 | para#5 [ZH-EXTRA $\zeta$] | para#16 [ZH-EXTRA $M^2$]
+part_04 L2264-2814: OK
+part_05 L2815-3372: OK
+part_06 L3373-3926: OK
+part_07 L3927-4490: OK
+part_08 L4491-5035: ZH-EXTRA $a$x1 | para#26 [ZH-EXTRA $a$]
+part_09 L5036-5581: ZH-EXTRA $A$x1 | para#18 [ZH-EXTRA $A$]
+part_10 L5582-6141: OK
+part_11 L6142-6699: OK
+part_12 L6700-7248: ZH-EXTRA $1$x3 | para#2 [ZH-EXTRA $1$] | para#7 [ZH-EXTRA $1$]
+part_13 L7249-7805: OK
+part_14 L7806-8362: OK
+part_15 L8363-8917: OK
+part_16 L8918-9471: OK
+part_17 L9472-10030: ZH-EXTRA $N$x1 | para#10 [ZH-EXTRA $N$]
+part_18 L10031-10619: OK
+part_19 L10620-11204: OK
+part_20 L11205-11757: OK
+part_21 L11758-12318: OK
+part_22 L12319-12902: OK
+part_23 L12903-13447: OK
+part_24 L13448-13997: OK
+part_25 L13998-14544: OK
+part_26 L14545-15094: OK
+part_27 L15095-15649: OK
+part_28 L15650-16195: OK
+part_29 L16196-16463: OK
+
+bad parts: [1, 2, 3, 8, 9, 12, 17]

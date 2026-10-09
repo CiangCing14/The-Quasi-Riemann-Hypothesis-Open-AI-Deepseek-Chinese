@@ -1,4 +1,0 @@
-PAGE 66   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
-
-CAL I  y   73.2 x  486.2- 492.2
-      line: where a , . . . , a are pairwise coprime and squarefree, and a is arbitrary. Insert a ∈I and

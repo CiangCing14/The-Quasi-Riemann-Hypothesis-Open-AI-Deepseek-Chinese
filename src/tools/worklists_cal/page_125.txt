@@ -1,6 +1,0 @@
-PAGE 125   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
-
-CAL I  y  298.3 x  158.1- 164.1
-      line: a finite collection I of compact normalized-ratio intervals. If L is the maximum absolute
-CAL I  y  352.5 x  392.4- 398.3
-      line: next node come directly from the full independent fresh windows in I . Separated norm powers

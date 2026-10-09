@@ -1,7 +1,0 @@
-PAGE 70   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 5 glyph(s) A2 W2 H1 | zh 0
-   \mathcal A  y  131.4 x  105.6   line: A 0
-   \mathcal A  y  212.7 x  383.9   line: A
-   \mathcal W  y  466.8 x  259.1   line: I ( Z 1 / 2 , Z 1 / 2 , Z ) = W ( Z 1 / 2 , Z 1 / 2 , Z ; s, w, z )
-   \mathcal H  y  504.4 x  416.1   line: · X q − z ξ ( u ) F H ( s, w, z ) dz dw ds.
-   \mathcal W  y  551.0 x  148.0   line: W ( X, Y, Z ; s, w, z ) = X 1 / 2 − z Z s + z − 1 Y w − 1 e ( s + z − 1) 2 M ( z ) W ( w ) .

@@ -1,7 +1,0 @@
-PAGE 166   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 5 glyph(s) R3 B2 | zh 0
-   \mathcal B  y  108.1 x  367.0   line: ( K + g − ℓ − s ) − ( a + q + w + w + B − s )
-   \mathcal B  y  124.7 x  365.8   line: = ( A − M ) − d − ( K − K ) − w −B + g − ℓ (18.31)
-   \mathcal R  y  471.8 x  321.3   line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .
-   \mathcal R  y  471.8 x  362.3   line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .
-   \mathcal R  y  471.8 x  280.2   line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .

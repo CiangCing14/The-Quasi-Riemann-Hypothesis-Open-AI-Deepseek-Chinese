@@ -1,9 +1,0 @@
-PAGE 57   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 7 glyph(s) A4 X3 | zh 0
-   \mathcal A  y  257.5 x  505.5   line: ψ A
-   \mathcal X  y  334.8 x  281.8   line: a + 6 e − it . The conjugate presentation is in X . The conductor and gamma quotient contribute
-   \mathcal X  y  488.5 x  326.4   line: Every primitive character inducing a presentation in X is a finite-order Hecke character. The
-   \mathcal X  y  627.3 x  488.1   line: denote the polynomials of Equations ( 4.2 ) and ( 4.1 ) , now at base U . Suppose ψ ∈X , the
-   \mathcal A  y  699.1 x  167.3   line: A
-   \mathcal A  y  718.3 x  333.3   line: 0 < e < e 0 , (1 + T 1 ) A A ≤ U ϵ/ 10 ,
-   \mathcal A  y  766.4 x  294.4   line: r A ,ϵ

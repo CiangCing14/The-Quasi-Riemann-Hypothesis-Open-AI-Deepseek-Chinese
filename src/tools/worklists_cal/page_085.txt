@@ -1,4 +1,0 @@
-PAGE 85   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
-
-CAL S  y  148.6 x  222.5- 227.6
-      line: S Q S Q S Q

@@ -1,0 +1,521 @@
+我们需要如下近单调性，它在大筛法递推中也被用到，见 \cite[引理~4.4 和注记~5]{GL} 与
+\cite[引理~3.1]{BGL}：
+\begin{equation}\label{eq:sextic-sieve-norm-monotone}
+ D_j(M_1,N)\ll_S D_j(M_2,N)
+ \quad\text{if }M_2\ge C M_1\log(2M_1N),\quad M_1,M_2,N\ge1.
+\end{equation}
+下面给出一个直接验证。对于零范数，该断言是显然的。
+否则，为 $D_j(M_1,N)$ 选取一个使系数取极大的单位系数向量，
+并在 $3M_1/2$ 处把行壳层拆分；其中一部分
+至少承载其一半的质量。令 $L=M_2/M_1$。对第一部分使用范数落在
+$(L,4L/3]$ 中的好素理想，对第二部分使用范数落在
+$(2L/3,L]$ 中的素理想。于是当 $p\nmid a$ 时 $ap\in\mathcal A_{M_2}$。固定域上的
+素理想定理给出 $P\gg_S L/\log L$ 个这样的素数。范数不超过 $2x$ 的理想至多包含其中
+$d_x=\log(2x)/\log(2L/3)$ 个。对
+$S_a(v)=\sum_bv_bF_b(a)^j$ 与 $p\nmid a$，乘性给出
+\[
+ S_a(\lambda)=S_{ap}\bigl((\lambda_b\overline{F_b(p)^j})_b\bigr)
+                  +S_a\bigl((\lambda_b1_{p\mid b})_b\bigr).
+\]
+第一个系数在 $p\mid b$ 处为零，否则消去 $p$ 处的因子。对所选取的行与
+素数取平方并求和，得到
+\[
+ \frac{P-d_{M_1}}2D_j(M_1,N)
+ \le2P D_j(M_2,N)+2d_ND_j(M_1,N).
+\]
+对所述的阈值，当 $C$ 充分大时
+$d_{M_1}+4d_N\le P/2$，这就证明了
+方程~\eqref{eq:sextic-sieve-norm-monotone}。
+
+我们以 \cite[引理~3.4--3.5]{BGL} 的幂分解与递推作结。假设对 $j\in J$ 同时地，
+对每个正的损失
+\begin{equation}\label{eq:sextic-sieve-inductive-bound}
+ D_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+       \{M^\alpha+N+(MN)^{2/3}\},\qquad \alpha>4/3,
+\end{equation}
+对 $M,N\ge1$ 成立；单位壳层直接满足同样的界。初始估计以 $\alpha=2$ 给出这一情形。
+把好的赋值理想唯一地写成
+\[
+ a=a_1a_2^2a_3^3a_4^4a_5^5a_6^6,
+\]
+其中 $a_1,\ldots,a_5$ 两两互素且无平方因子，$a_6$ 任意。代入
+$a_i\in\mathcal I_{X_i}$ 并令 $X=\prod_iX_i$；这里 $X_i\ge1/2$ 且
+$\prod_iX_i^i\asymp M$。选取 $\ell\in\{1,2\}$ 使得
+$X_\ell=\max(X_1,X_2)$。在其余各因子固定后，系数
+\[
+ \lambda'_b=\lambda_b\prod_{i\ne\ell}F_b(a_i)^{ij}
+\]
+的绝对值至多为 $|\lambda_b|$，而剩余的核恰为 $D_{j\ell\bmod6}(X_\ell,N)$ 的核。
+放大其固定的正行限制便得到这个范数界。这包含了六次幂因子的零点。
+集合 $J$ 在映射 $j\mapsto j\ell\bmod6$ 下封闭。
+对固定的理想计数，并在正和式中忽略它们的互素性，得到
+\begin{equation}\label{eq:sextic-sieve-norm-power}
+ E_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+ \max_{\boldsymbol X}
+ \min\left\{M^{1/3},(M/X_\ell)^{2/3}\right\}
+             D_{j\ell\bmod6}(X_\ell,N).
+\end{equation}
+为验证该因子，固定选择的数目是 $O(X/X_\ell)$。
+当 $\ell=1$ 时，它至多为一个常数倍的同时满足
+$(M/X_1)^{1/2}\ll(M/X_1)^{2/3}$ 与
+$(MX_2/X_1)^{1/3}\le M^{1/3}$ 的量；当 $\ell=2$ 时，它至多为一个常数
+倍的 $(MX_1^2/X_2^2)^{1/3}\le M^{1/3}\ll(M/X_2)^{2/3}$。
+盒子的数目是 $\log(2+M)$ 的一个固定幂。
+
+把方程~\eqref{eq:sextic-sieve-inductive-bound} 代入
+方程~\eqref{eq:sextic-sieve-norm-power}，得到
+\[
+ E_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+                    (M^\alpha+M^{1/3}N).
+\]
+化简前的三项分别被 $M^\alpha$、$M^{1/3}N$ 与 $(MN)^{2/3}$ 界住；
+最后一项依 $N\le M$ 或 $N\ge M$ 分别被前两项之一界住。把这一估计用于
+方程~\eqref{eq:sextic-sieve-norm-reflection}。所有辅助的非空
+尺度都被 $2+MN$ 的固定幂界住：这里 $N/\Delta_{\mathrm d}\ge1/2$ 且
+$H(N/\Delta_{\mathrm d})\ll_{S,\varepsilon}(2+MN)^{3+\varepsilon}$。
+单位列壳层直接满足同样的估计。因此
+可以把预备损失取得更小，以给出任意指定的最终损失。
+两个尺度因子为
+\[
+ \Delta_{\mathrm r}^{\alpha-1}\Delta_{\mathrm d}^{1-2\alpha}
+       \ll_S\Delta_{\mathrm d}^{-\alpha}\le1,
+ \qquad (\Delta_{\mathrm r}\Delta_{\mathrm d})^{-2/3}\le1.
+\]
+因此，对 $M,N\ge1$，
+\begin{equation}\label{eq:sextic-sieve-norm-recurrence}
+ D_j(M,N)\le E_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+       \{M+N^{2\alpha-1}M^{1-\alpha}+(MN)^{2/3}\}.
+\end{equation}
+
+令 $h=2-3/(3\alpha-1)=(2\alpha-5/3)/(\alpha-1/3)$ 且
+$\beta=2-2/(3\alpha-1)$。若 $M\ge N^h$，
+则方程~\eqref{eq:sextic-sieve-norm-recurrence} 中的中间项
+至多为 $(MN)^{2/3}$。若 $M<N^h$，则把
+方程~\eqref{eq:sextic-sieve-norm-monotone} 中的 $M$ 换成
+$N^h\log(2MN)$ 的一个固定倍数后应用之。那里的方程~\eqref{eq:sextic-sieve-norm-recurrence}
+给出 $(MN)^\varepsilon N^\beta$，因为
+$2(h+1)/3=\beta$ 且 $h<\beta$。于是两种情形下都有
+\[
+ D_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+                   \{M+N^\beta+(MN)^{2/3}\}.
+\]
+对称性以 $\beta$ 代替 $\alpha$ 给出方程~\eqref{eq:sextic-sieve-inductive-bound}，
+且对每个 $j\in J$ 同时成立。
+从 $2$ 出发，映射 $\alpha\mapsto2-2/(3\alpha-1)$ 递减趋于
+$4/3$。对于所要求的损失，取有限多次迭代，直到
+剩余的指数间隙小于该损失的一个固定比例，再
+把它吸收进 $(MN)^\varepsilon$。结合该界与其对称
+形式，在 $M\le N$ 时利用
+$M^{4/3}\le(MN)^{2/3}$，在 $N\le M$ 时利用相应的不等式，
+即证得
+\begin{equation}\label{eq:sextic-sieve-norm-shell}
+ D_j(M,N)\ll_{S,\varepsilon}(MN)^\varepsilon
+               \{M+N+(MN)^{2/3}\}\qquad(j\in J).
+\end{equation}
+
+对两个范数球作二进细分，并沿列
+壳层使用 Cauchy 不等式，可把方程~\eqref{eq:sextic-sieve-norm-shell} 转化为元素为
+$F_b(a)=\chi_a(b)$ 的球矩阵的同样
+界。对数
+因子被一个更小的预备损失吸收，而单位壳层
+则直接界住。方程~\eqref{eq:sextic-large-sieve}
+中 $\varsigma=1$ 的矩阵是这一矩阵在长度 $(D,K)$ 处的转置。
+复矩阵与其转置具有相同的算子范数，这由
+伴随恒等式继之以全向量共轭得到。该界关于两个长度
+对称，因此它恰好给出
+$K+D+(KD)^{2/3}$。对整个内和取共轭得到
+$\varsigma=-1$，零点不变。最后，固定的行限制
+只会去掉非负项，而固定的系数限制通过
+零延拓来实现。这就证明了引理的全部断言。
+\end{proof}
+
+\subsection{物理行及其逆见证}
+
+大筛法既已证得，剩下的就是把它应用于探测器见证。
+我们仅把该引理应用于物理行的无平方因子部分。无平方因子行因子与幂次行因子的
+分离也用于 \cite{BGL} 的推论 1.4 的
+证明；这里我们保留幂次因子的实际范数，因为它同时控制矩与行的数目。
+
+\begin{proposition}[六次大筛法行包络]\label{prop:sextic-row-count}
+固定算术数据 $\mathcal A$、有界的物理范围
+$d_{\min}\le d\le d_{\max}$，以及引理~\ref{lem:buffered-bins} 与~\ref{lem:detector-dyads} 的高度与损失假设。令
+$U=Z^d$ 并沿用这些引理中的记号 $T_1$。设 $\mathcal B$
+为任意一组被保留的无六次幂因子元素行 $u$，满足
+$q_u\asymp U$，且全部落在同一个分箱 $(i,a)$ 中，其中 $a>51/100$。令
+$\delta=2a-1$，从而 $1/50<\delta\le1$。
+
+对每个 $\epsilon>0$，在减小命题~\ref{prop:detector-witness} 中的预备损失之后，对所有充分大的 $Z$，
+\begin{equation}\label{eq:sextic-row-count}
+ \#\mathcal B\ll_{\mathcal A,\epsilon}
+ U^{R(\delta)+\epsilon}(1+T_1)^{A_{\mathcal A}},
+ \qquad
+ R(\delta)=\min\left\{1,
+       \max\left(1-\frac\delta2,\frac43-\delta\right)\right\}.
+\end{equation}
+有限的阶 $A_{\mathcal A}$ 关于物理二进区间、分箱以及所有移动的行都是一致的。
+它可以在 $T_1=Z^\tau$ 中的正指数被选定之前就固定下来。该估计对
+每一组固定的被保留外部参数以及原本的行限制都成立。隐含常数
+可以依赖于固定的比较常数以及有限多个共享剖面半范数。逐行的剖面选择
+恰为命题~\ref{prop:detector-witness} 与
+引理~\ref{lem:smooth-calculus} 所允许的那些；不允许任意的依赖于行的
+系数。
+
+下限分箱 $a=51/100$ 被排除在见证断言之外。对该
+分箱，初等界 $\#\mathcal B\ll_{\mathcal A}U$ 适用；它与数值
+$R(1/50)=1$ 相符。
+\end{proposition}
+
+\begin{proof}
+固定一个小的预备损失 $\epsilon_0>0$。对 $\mathcal B$ 中的每一行以 $t=1$ 应用
+命题~\ref{prop:detector-witness}。按其表示标签
+$\psi_{u,\nu,\varsigma}(n)=\nu(n)\chi_n(u)^{\varsigma}$ 及其多项式的二进长度对进行
+细分。表示标签只有固定有限多个，
+而数对则有 $O_{\mathcal A}((\log U)^2)$ 个。在其中一个这样的
+细分内，逆长度 $D=U^r$ 与数对 $(\nu,\varsigma)$
+都是固定的。在此细分中记
+\[
+ M_u(D;W)=D^{-1/2}\sum_n\mu(n)\nu(n)\chi_n(u)^{\varsigma}W(q_n/D)
+\]
+为该表示的逆多项式。见证给出
+\begin{equation}\label{eq:sextic-witness-spike}
+ \frac12-O(\epsilon_0)\le r\le1+O(1/\log U),
+ \qquad |M_u(D;W_u)|^2\gg_{\mathcal A,\epsilon_0}
+       U^{\delta r-\epsilon_0}.
+\end{equation}
+记号 $W_u$ 保留了被允许的逐行范数剖面参数。
+这里的多项式是所展示表示的原本多项式，
+而不是其本原诱导特征的多项式。我们首先在这些参数固定时对它取
+界，然后处理它们的逐行选择。
+
+对每个无六次幂因子的行，将其理想唯一地分解为
+\[
+ (u)=\mathfrak s\mathfrak w\mathfrak k,
+ \quad
+ \mathfrak s=\prod_{p\in S}p^{v_p(u)},\quad
+ \mathfrak w=\prod_{\substack{p\notin S\\2\le v_p(u)\le5}}p^{v_p(u)},
+ \quad
+ \mathfrak k=\prod_{\substack{p\notin S\\v_p(u)=1}}p.
+\]
+于是 $\mathfrak k$ 无平方因子，$(\mathfrak k,\mathfrak w)=1$，且
+$\mathfrak w$ 是幂次的，即其每个正的素
+赋值至少为二。$\mathfrak s$ 只有有限多种可能，
+因为它在固定集合 $S$ 上的赋值落于 $\{0,\ldots,5\}$。
+为这些理想各选取一个生成元 $s_{\mathfrak s}$。以 $w,k$ 记
+$\mathfrak w,\mathfrak k$ 的主生成元，则存在唯一的单位 $\upsilon$ 使得
+\[
+ u=\upsilon s_{\mathfrak s}wk.
+\]
+每当取行和时，我们都固定 $\mathfrak s$ 与 $\upsilon$。
+
+插入二进区间 $q_{\mathfrak w}\asymp V$，其中把单位理想
+包含在有界区间 $V=1$ 内。只可能有 $1\le V\ll_{\mathcal A}U$，
+且这样的区间有 $O_{\mathcal A}(\log U)$ 个。原本的圆环
+$q_u\asymp U$ 给出实际的剩余圆环
+\begin{equation}\label{eq:sextic-actual-row-annulus}
+ q_{\mathfrak k}=\frac{q_u}{q_{\mathfrak s}q_{\mathfrak w}}
+       \asymp_{\mathcal A}\frac UV.
+\end{equation}
+在构成和式时我们保留这一限制。只有在应用一个正的行界时，
+它才会被放大为球 $q_k\ll_{\mathcal A}U/V$。
+以 $\mathcal U_V$ 记当前见证细分中落在这一幂次部分
+二进区间内的行，并保留全部原有的物理限制。
+
+范数不超过 $V$ 的幂次理想的数目为 $O(V^{1/2})$。
+事实上，每个幂次理想都有唯一的表达式
+$\mathfrak v^2\mathfrak y^3$，其中 $\mathfrak y$ 无平方因子；这两个
+因子不必互素。由算术预备得到的理想计数给出
+\[
+ \#\{\mathfrak w:q_{\mathfrak w}\le V,\ \mathfrak w\ {\rm powerful}\}
+ \ll V^{1/2}\sum_{\mathfrak y}q_{\mathfrak y}^{-3/2}
+ \ll V^{1/2}.
+\]
+最后一个级数由同样的理想计数收敛。对于其所在二进区间内每一个固定的
+$\mathfrak w$，包含
+方程~\eqref{eq:sextic-actual-row-annulus} 的球有 $O_{\mathcal A}(U/V)$
+个理想。非空的圆环使 $U/V$ 被一个固定正
+常数从下界住，这也涵盖了单位剩余理想。由于 $(u)$ 的
+分解及其单位都是唯一的，这一幂次部分二进区间内的行的数目满足
+\begin{equation}\label{eq:sextic-stratum-cardinality}
+ \#\mathcal U_V\ll_{\mathcal A}U V^{-1/2}.
+\end{equation}
+在这个上界计数中丢弃任何定义 $\mathcal U_V$ 的限制
+只会增加行数。
+
+对固定的 $\mathfrak w,\mathfrak s,\upsilon$，令
+$v=\upsilon s_{\mathfrak s}w$。分子的乘性给出
+精确恒等式
+\begin{equation}\label{eq:sextic-frozen-mask}
+ \chi_n(u)^{\varsigma}
+   =\chi_n(v)^{\varsigma}\chi_n(k)^{\varsigma}.
+\end{equation}
+它包含了零延拓：若 $n$ 与任一因子有公共因子，则两端
+都为零，否则它就是通常的乘性。特别地，
+对固定的剖面 $W$，逆多项式是
+引理~\ref{lem:sextic-large-sieve} 中的行和，其系数为
+\[
+ c_n=D^{-1/2}\mu(n)\nu(n)\chi_n(v)^{\varsigma}W(q_n/D).
+\]
+因子 $\mu(n)$ 使各列保持无平方因子。因子
+$\chi_n(v)^{\varsigma}$ 保留了 $(n,v)>1$ 处的每一个原本的零点，且关于
+剩余行 $k$ 是固定的。唯一剩下的同时依赖于
+$n$ 与 $k$ 的零点是所展示的筛核自身的零点。
+限制 $(k,w)=1$，以及对固定外部参数从物理
+行集继承来的任何限制，在本应用中都是固定的行限制。
+我们不扩大 $S$ 使其包含 $w$ 的素因子。
+因此筛中的常数与 $w$ 无关，尽管
+其固定的系数掩码可能有很大的范数。
+
+公共的圆环支集与理想计数给出，关于固定的剖面参数一致地，
+\[
+ \sum_n|c_n|^2
+ \le D^{-1}\sum_{q_n\asymp D}|W(q_n/D)|^2\ll_{\mathcal A}1.
+\]
+同样的陈述对下面用到的有限多个剖面导数也成立，
+并带有相应的固定半范数。在把正剩余
+行和从其实际圆环放大到 $q_k\ll_{\mathcal A}U/V$ 之后应用
+引理~\ref{lem:sextic-large-sieve}。一个固定的
+放大使得行界在每个非空的商区间上至少为一，并
+包含圆环状的列支集。把结果对
+$\mathfrak w$ 的 $O(V^{1/2})$ 种选择与
+$\mathfrak s,\upsilon$ 的有限多种选择求和，得到
+\begin{equation}\label{eq:sextic-stratum-fixed-moment}
+ \sum_{u\in\mathcal U_V}|M_u(D;W)|^2
+ \ll_{\mathcal A,\epsilon_1}(UD)^{\epsilon_1}V^{1/2}
+ \left\{\frac UV+D+\left(\frac{UD}{V}\right)^{2/3}\right\}.
+\end{equation}
+这一推导中的所有系数序列在应用筛法的那个行
+和内部都是固定的。它们对 $\mathfrak w$ 的不同冻结取值可以不同，
+而这些取值只在那些正界之后才被求和。
+
+现在我们恢复方程~\eqref{eq:sextic-witness-spike} 中 $W_u$ 的逐行选择。
+这里探测器以 $t=1$ 使用，故 $D_*=U$。在表示与二进对固定
+之后，其逆剖面具有形式
+\[
+ W_{\rm dyad}(x)V_{\le}(Dx/U)x^{-\sigma-i\omega},
+ \qquad \omega=\gamma-\nu_F,
+\]
+其中 $W_{\rm dyad}$ 是固定的光滑二进截断，$\nu_F$ 是
+来自探测器的 Fourier 频率。
+因子 $V_{\le}(Dx/U)$ 对行和是公共的；变化的参数
+是 $\sigma\in[51/100,1]$ 与 $|\omega|\le(3i+1)T_1$。
+对任一参数求导会引入一个 $\log x$ 的幂，它在
+固定圆环上有界。用单位盒子覆盖这两个参数区间。这样的盒子至多有
+$1+T_1$ 的一个固定幂那么多。引理~\ref{lem:smooth-calculus} 中的参数 Sobolev
+不等式用剖面导数平方的积分的有限
+和界住一个盒子上的上确界。在这些积分之前先对行
+求和。在每个固定的参数取值处，求导只改变
+固定的剖面系数，引入所允许的对数
+权重或剖面导数。因此方程~\eqref{eq:sextic-stratum-fixed-moment}
+适用于每个这样的积分。这就证明了
+\begin{equation}\label{eq:sextic-stratum-moment}
+ \sum_{u\in\mathcal U_V}|M_u(D;W_u)|^2
+ \ll_{\mathcal A,\epsilon_1}(UD)^{\epsilon_1}(1+T_1)^{A_{\mathcal A}}
+ V^{1/2}\left\{\frac UV+D+
+       \left(\frac{UD}{V}\right)^{2/3}\right\}.
+\end{equation}
+导数的阶以及由此的 $A_{\mathcal A}$ 在选取
+$\tau$ 之前就已固定。高度区间与额外频率的
+总容许量恰为共享探测器估计中的那些；Sobolev
+步骤既不赋予新的频率容许量，也不改变围道。
+它不允许对每个 $k$ 分别选取系数。
+
+剩下的是把这个矩与独立的计数
+方程~\eqref{eq:sextic-stratum-cardinality} 结合起来。记
+\[
+ V=U^o,\qquad D=U^r,\qquad
+ e_o(r)=\frac o2+\max\left\{1-o,r,\frac{2(1-o+r)}3\right\}.
+\]
+这些是实际二进区间的参数。非空的二进区间有
+$0\le o\le1+O_{\mathcal A}(1/\log U)$；单位二进区间有 $o=0$。
+由于见证长度保持有界，方程~\eqref{eq:sextic-stratum-moment} 中 $UD$ 的任意小幂
+可以写成 $U$ 的任意小幂。用
+方程~\eqref{eq:sextic-witness-spike} 中的尖峰去除该方程，
+并同时使用
+方程~\eqref{eq:sextic-stratum-cardinality}，对这一细分给出
+\begin{equation}\label{eq:sextic-stratum-envelope}
+ \#\mathcal U_V
+ \ll U^{\min\{1-o/2,e_o(r)-\delta r\}+O(\epsilon_0)+\epsilon_1}
+       (1+T_1)^{A_{\mathcal A}},
+\end{equation}
+在必要时把记作 $\epsilon_1$ 的筛损失减小之后。
+
+我们首先在
+$0\le o\le1$ 与 $1/2\le r\le1$ 上计算此表达式中最大的指数。令 $x=1-o$ 且 $A=(1+x)/2$。则
+\[
+ e_o(r)-\delta r
+ =\max\left\{
+ A-\delta r,\quad
+ \frac{1-x}{2}+(1-\delta)r,\quad
+ \frac12+\frac x6+\left(\frac23-\delta\right)r
+ \right\}.
+\]
+$A$ 与三个实数的最大值的最小值，等于 $A$ 分别与这三个数的最小值的最大值。第一个这样的最小值是
+$A-\delta r\le1-\delta/2$。对固定的 $r$，第二个是
+$x$ 的一个递增与一个递减仿射函数的最小值。它们
+在 $x=(1-\delta)r\in[0,1]$ 处相交，故其关于 $x$ 的最大值为
+\[
+ \frac{1+(1-\delta)r}{2}\le1-\frac\delta2.
+\]
+第三个最小值中的两个函数都随 $x$ 增大。因此它关于
+$x$ 的最大值为
+\[
+ \min\left\{1,\frac23+\left(\frac23-\delta\right)r\right\}.
+\]
+这个关于 $r$ 的仿射表达式在两个端点处取值 $1-\delta/2$ 与
+$4/3-\delta$。由此推出，且等号在其中一个端点处取得，
+\begin{equation}\label{eq:sextic-envelope-optimization}
+ \max_{\substack{0\le o\le1\\1/2\le r\le1}}
+ \min\{1-o/2,e_o(r)-\delta r\}
+ =\min\left\{1,\max\left(1-\frac\delta2,\frac43-\delta\right)\right\}.
+\end{equation}
+这一计算关于 $0\le\delta\le1$ 是一致成立的。
+
+刚刚用到的函数是仿射函数的最大值与最小值，这些
+仿射函数的斜率在这些紧区间的固定邻域上一致有界。
+把实际的 $o$ 换成它在 $[0,1]$ 中的最近点，把
+实际的见证 $r$ 换成它在 $[1/2,1]$ 中的最近点，由
+方程~\eqref{eq:sextic-witness-spike} 与实际二进界，至多使
+指数改变 $O_{\mathcal A}(\epsilon_0+1/\log U)$。
+因此这一替换只在最后的优化中进行，而不在
+行和或其筛法应用中进行。就所指定的 $\epsilon$ 而言，选取 $\epsilon_0$ 与预备
+筛损失足够小。$O((\log U)^2)$ 个见证对与 $O(\log U)$ 个幂次部分二进区间只需
+再付出一个任意小的幂。对
+方程~\eqref{eq:sextic-stratum-envelope} 求和即证得
+方程~\eqref{eq:sextic-row-count}。
+
+最后，分箱 $a=51/100$ 不必包含实际的零点，因此那里
+不使用命题~\ref{prop:detector-witness}。对其物理圆环中的
+所有元素计数得到 $O_{\mathcal A}(U)$ 行。由于
+$1/50<1/3$，所展示的 $R$ 的公式给出 $R(1/50)=1$，与断言一致。
+\end{proof}
+
+为在高估计中使用，行包络具有如下显式形式
+\[
+ R(\delta)=
+ \begin{cases}
+  1,&0\le\delta\le1/3,\\
+  4/3-\delta,&1/3\le\delta\le2/3,\\
+  1-\delta/2,&2/3\le\delta\le1.
+ \end{cases}
+\]
+论证只用到逆见证。在这个行计数中，不需要关于
+与普通见证之乘积的任何估计。
+
+\section{高展开的解析估计}
+\label{sec:shared-analytic-estimates}
+
+行包络现在进入基础探针的 Poisson 表示。
+对于第一阶段的应应用，保留假设
+$\Delta_1=\beta_*-11/12>0$ 并令
+$X=Y=Z^{1/2}$。以 $s$ 记
+节~\ref{sec:local-euler} 中称为 $x$ 的第一个 Mellin 变量。方程~\eqref{eq:probe-poisson-identity}
+与~\eqref{eq:probe-high} 给出待估计的实际积分：
+\[
+\begin{split}
+ I_\eta(Z^{1/2},Z^{1/2},Z)
+ =\frac1{(2\pi i)^3}\int_{(3)}\int_{(3)}\int_{(2)}
+ &\mathcal W(Z^{1/2},Z^{1/2},Z;s,w,z)\\
+ &\cdot\sum_u^{(6)}q_u^{-z}\overline{\xi(u)}
+ \frac{\zeta_F^S(6z)L^S(w,\chi_\bullet(u))}
+      {L^S(s,\eta\overline{\chi_\bullet(u)})}
+ \mathcal H_{\eta,u}(s,w,z)\,dz\,dw\,ds.
+\end{split}
+\]
+这里
+\[
+ \mathcal W(X,Y,Z;s,w,z)=X^{1/2-z}Z^{s+z-1}Y^{w-1}
+ e^{(s+z-1)^2}M(z)\widehat W_1(w).
+\]
+各行是非零的无六次幂因子元素，带有其单位因子
+以及物理限制 $(u,S)=1$。两种特征表示都保留
+它们在整除 $u$ 的素数处的原本零点。基础探针的逐系数校准
+已包含在这一恒等式中。
+
+行 $u=1$ 包含目标函数的倒数。对于中间行范数，我们将固定一个带缓冲的分箱，把它的积分移到
+\[
+ \Re s=a+16e,\qquad \Re w=1-a-6e,\qquad \Re z=17/50,
+\]
+并在那里应用包络 $R(2a-1)$。除小的实部损失与一个固定的高度因子外，
+该围道上的分子对行范数 $q_u\asymp U$ 付出 $U^{a-1/2}$ 的代价；行包络控制
+这样的项出现多少。我们首先辨识主信号，然后实施
+这一移动围道及其具体的第一阶段估计。主留数
+与外层行范数的直接界完成了比较。
+
+\subsection{主行与正规化}
+
+我们辨识其分子为主的行。含有一个 $S$ 之外素因子的物理行，
+由 \hyperref[par:physical-row-ramification]{节~\ref*{sec:detector} 中的分歧论证}可知其分子非主。
+由于物理掩码强制 $(u,S)=1$，
+其余的行都是单位。若单位 $u\ne1$ 在 $F$ 中有六次根，
+则该根在每个素数处的赋值都为零，从而是 $F$ 的一个
+单位；而 $F$ 的每个单位的六次幂都为一。于是
+$F(u^{1/6})/F$ 是非平凡的。它是有限 Galois 扩张，因为 $F$ 包含
+六次单位根。对非单位 Frobenius 类应用 Chebotarev 定理
+可给出一个固定集合 $S$ 之外的素数，使得相应的
+六次特征非平凡 \cite[定理 1.1]{TZ}。由
+引理~\ref{lem:fixed-numerator-ray} 中的 Kummer 描述，这就是
+$\chi_\bullet(u)$。因此 $u=1$ 是唯一的主分子行。
+附着于一个有界单位行的分母可能是主的；它的
+倒数在一处有零点，将在下面保持在一条整体直线上。
+
+定义
+\begin{equation}
+ H_\eta(s)=\mathcal H_{\eta,1}(s,1,1/6),\qquad
+ c_S=\widehat W_1(1)M(1/6)
+       \left(\operatorname*{Res}_{v=1}\zeta_F^S(v)\right)^2/6.
+ \label{eq:shared-principal-data}
+\end{equation}
+引理~\ref{lem:local-euler} 使 $H_\eta$ 在 $\Re s>7/8$ 上全纯。
+其一致估计 $H_\eta=1+O(P_0^{-4/5})$ 允许在目标之前
+选取 $P_0$，因为局部界关于目标单位
+相位是一致的。固定 $P_0$ 足够大，使得
+\begin{equation}
+ \sup_{\Re s>7/8}|H_\eta(s)-1|\le\frac12.
+ \label{eq:shared-principal-nonvanishing}
+\end{equation}
+用这些素数扩大 $S$ 不改变固定的射线类群 $T$，
+因为局部恒等式中的校准是逐系数成立的。被
+排除的集合以及由此的特定函数 $H_\eta$ 可以在不同
+应用之间不同，但在一个应用内部，它们恰为
+所使用的那一个精确高表示的那些。
+
+常数 $c_S$ 为正。事实上 $\widehat W_1(1)>0$，因为
+$W_1$ 非负且非零，而由
+方程~\eqref{eq:radial-mellin-positive} 有 $M(1/6)>0$。$\zeta_F^S$ 的
+单极点具有正的留数：删除把 $\zeta_F$ 的正留数
+乘以 $\prod_{p\in S}(1-q_p^{-1})>0$。
+
+对第一阶段，令
+\[
+ C_{\mathrm I}(s)=s-\frac23,\qquad
+ J_{\mathrm I,\eta}(Z)=\frac{I_\eta(Z^{1/2},Z^{1/2},Z)}{c_S}.
+\]
+设 $f_{\mathrm I,\eta}$ 为
+方程~\eqref{eq:common-residue} 中的积分，其中 $C=C_{\mathrm I}$、
+$\mathcal S=S$，且函数 $H_\eta$ 如上定义。$w=1$ 与 $z=1/6$ 处的两个标量极点
+将给出 $c_S f_{\mathrm I,\eta}$；我们剩余的
+目标是为其他每一项取得一个公共的幂次节省，相对于
+$Z^{C_{\mathrm I}(\beta_*)}$ 来度量。
+
+\subsection{移动围道所用的精确恒等式}
+
+围道证明使用所示积分中完整的全纯修正。为把
+该证明复用于补偿探针，我们记下它所要求的
+恒等式与界。在当前的应应用中，修正
+是 $\mathcal H_{\eta,u}$，与 $Z$ 无关，而下面的参数
+是 $l_x=l_y=h=1/2$ 与 $\ell=0$。
+
+方程~\eqref{eq:probe-high} 中的标量商是高展开中
+同时决定移动围道与主留数的那一部分。我们保持该商
+固定，并明确陈述围绕它可以改变什么。令
+\[
+ \begin{split}
+ \mathcal D_1(\epsilon_0)=\{(s,w,z):{}&\Re s\ge51/100,\quad
+       \Re z\ge17/50,\quad \Re w\ge-1/100,\\
+       &\Re(s+w)\ge1+\epsilon_0\},\qquad \epsilon_0>0,\\
+ \mathcal D_2=\{(s,w,z):{}&\Re s\ge7/8,\quad
+       \Re z\ge33/200,\quad \Re w\ge19/20\}.
+ \end{split}
+\]
+这些是引理~\ref{lem:local-euler} 中的两个区域。下面所谓的实盒子，
+指的是 $(\Re s,\Re w,\Re z)$ 的 $\mathbb R^3$ 的一个紧矩形子集。

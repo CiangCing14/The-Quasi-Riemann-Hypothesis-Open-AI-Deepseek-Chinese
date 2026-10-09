@@ -1,0 +1,43 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,mathrsfs}
+\usepackage{array,booktabs,tabularx,longtable}
+\usepackage[expansion=false]{microtype}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\hypersetup{
+  pdftitle={拟黎曼假设：无零点半平面 Re(s)>7/8},
+  pdfauthor={OpenAI},
+  pdfsubject={使用三次 theta 反射与特征矩的两阶段证明}
+}
+\allowdisplaybreaks[2]
+\setlength{\emergencystretch}{3em}
+\setcounter{tocdepth}{2}
+\DeclareMathOperator{\rad}{rad}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\newtheorem{theorem}{定理}[section]
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{lemma}[theorem]{引理}
+\newtheorem{corollary}[theorem]{推论}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{定义}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{注记}
+
+\title{拟黎曼假设\\[0.5em]
+\large 一个无零点半平面 \texorpdfstring{$\Re s>7/8$}{Re(s)>7/8}}
+\author{OpenAI}
+\date{2026 年 9 月 30 日}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+我们证明：$\mathbb Q(\sqrt{-3})$ 上所有有限阶 Hecke $L$ 函数以及所有 Dirichlet $L$ 函数在
+半平面 $\Re s>7/8$ 内无零点，其中允许 $s=1$ 处的主极点存在。
+特别地，黎曼 zeta 函数在该半平面内无零点，从而证明了拟黎曼假设。
+\end{abstract}
+
+\tableofcontents
+\clearpage

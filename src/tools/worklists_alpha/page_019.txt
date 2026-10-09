@@ -1,8 +1,0 @@
-PAGE 19   (pdf glyphs vs Chinese macros)
-CMSY -> \mathcal : pdf 1 glyph(s) M1 | zh 0
-   \mathcal M  y  240.3 x   86.2   line: M W ( σ + iT ) = ( − iT ) − N F ( N ) ( u ) e iTu du, F ( N ) ( u ) = e σu X σ N − j D j W ( e u ) .
-MSBM -> \mathbb : pdf 4 glyph(s) R2 Z2 | zh 4
-   \mathbb R  y  250.9 x  216.9   line: R j
-   \mathbb R  y  608.4 x  321.0   line: This function is not annular. Choose a fixed χ ∈ C ∞ ( R ) such that P χ ( u − k ) = 1 , and define
-   \mathbb Z  y  614.5 x  403.7   line: c k ∈ Z
-   \mathbb Z  y  697.9 x  258.7   line: k ∈ Z

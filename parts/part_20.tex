@@ -1,0 +1,545 @@
+令 \(\mathcal T_{\sigma,i}\) 为由上述完整的 M\"obius 与槽展开从方程~\eqref{eq:inverse-second-formal-component} 得到的固定 \(v'\)-二进段、射线与槽求和项。子式所需的精确恒等式为
+\begin{equation}\label{eq:inverse-xi-identity}
+ \begin{split}
+ \mathcal T_{\sigma,i}={}&Z^{\lambda_c+18\eta+\tau}(2\pi)^{-6}
+ \int_{\mathbb R^6}\widehat{\mathfrak H}_{2,\sigma,\boldsymbol t}
+       (\boldsymbol\zeta)\\
+ &\quad\times\sum_{\xi\in\Xi_\sigma}V_\sigma(\xi;\boldsymbol\zeta)
+ Q_{1,\gamma,\boldsymbol\zeta}(k_{\rm new},f_{\rm new})
+ \overline{Q_{2,\gamma,\boldsymbol\zeta}(k_{\rm new},f_{\rm new})}
+ \,d\boldsymbol\zeta.
+ \end{split}
+\end{equation}
+为了验证它，展开这两个 \(Q\)。由于
+\(y_a=Z^{\delta_N}z_{n_a}\)，它们的模式连同方程~\eqref{eq:inverse-second-outer-weight} 的最后一个因子恰好是
+\(y_1^{i\zeta_1}y_2^{i\zeta_2}\)。其余四个模式是外部的。
+方程~\eqref{eq:inverse-log-fourier} 恢复完整剖面，
+其较大的截断在保留的支集上等于一。全新的
+列截断在旧 \(W_i\) 因子非零处等于一，
+而 \(\omega_f=1\) 在每个原始标号乘积上。因此标量与
+剖面恢复了完整根、完整核以及旧窗口。
+方程~\eqref{eq:inverse-second-extraction}、
+\eqref{eq:inverse-moving-characters} 和
+\eqref{eq:inverse-slot-priority} 逐项恢复算术因子。
+固定盒求和是有限的，而
+方程~\eqref{eq:inverse-fourier-moment} 为该积分提供依据。
+完整新窗口中的额外组合在此复 Fourier 恒等式中通过旧
+窗口在 Cauchy 之前相消；只有在稍后
+它们才被独立地保留在一个正和中。
+
+方程~\eqref{eq:inverse-xi-identity} 中的密度依赖于
+固定的扇区、\(Z\)、固定的检验函数与 \(\boldsymbol t\)，而不依赖于
+实际的 \(\gamma,k_{\rm new},f_{\rm new}\)。耦合核使用的是
+裸 \(k''\) 坐标，而非导出的行；后者只
+出现在特征与 \(\mathcal B_2\) 中。导出的标号只
+出现在特征及其外截断中。诸如
+\(g'=d_2r_g\) 的关系式限制的是求值点，而非变换。
+对每个固定的 \(B_{\rm ht},J_{\rm ht}\ge0\)，方程~\eqref{eq:inverse-fourier-moment} 中的 Euler 计算
+给出某个固定的 \(b\)，使得
+\begin{equation}\label{eq:inverse-joint-fourier-moments}
+ \int_{\mathbb R^9}\int_{\mathbb R^6}
+ |\widehat{\mathfrak H}_{1,\sigma}(\boldsymbol t)|
+ |\widehat{\mathfrak H}_{2,\sigma,\boldsymbol t}(\boldsymbol\zeta)|
+ (1+|\boldsymbol t|)^{B_{\rm ht}}(1+|\boldsymbol\zeta|)^{J_{\rm ht}}
+ \,d\boldsymbol\zeta\,d\boldsymbol t\ll p_b(W)^2.
+\end{equation}
+事实上，内层加权积分关于 \(\boldsymbol t\) 是多项式，
+因为 \(W_i\) 是一个固定截断乘以单位范数模式；将
+第一变换的界应用于该多项式阶再加 \(B_{\rm ht}\)。
+这些常数对每个实际理想和每个正
+核标量都是一致的，不含 \(Z\) 的高度阶幂。
+
+\paragraph{第二个 Cauchy 不等式与外层计数。}
+对每个固定的 Fourier 模式，以
+\(U_a=Z^{(\lambda_c+18\eta+\tau)/2}Q_{a,\gamma,\boldsymbol\zeta}\)
+在完整集合 \(\Xi_\sigma\) 上把方程~\eqref{eq:weighted-cauchy} 应用于第二个变换后的
+和。特别地，\(\mathcal B_2\)、\(|B_o|^2\)、\(|D_o|^2\) 与
+\(1_{(v',g'CJ)=1}\) 仍然在其权重中。它们保留了
+上面证明的 \(f_{\rm new}\) 的无平方因子性。权重中所有其他因子都由
+一个固定常数界定，
+包括原始指派槽系数的有界个数、
+固定射线系数、各个截断以及单位模式。
+因此，只有在 Cauchy 之后，绝对权重才满足
+\[
+ |V_\sigma(\xi;\boldsymbol\zeta)|
+ \ll \mathcal B_2(k'')\mu^2(f_{\rm new}).
+\]
+这一步使得新平均后的理想得以保持在
+无平方因子类中。
+
+我们首先记录控制一个纤维所需的精确重构。
+\begin{equation}\label{eq:poisson-divisor-reconstruction}
+ d_k\mid C\mathfrak B/R_1
+ \quad\Longrightarrow\quad
+ d_k\mid f_{\rm new}\operatorname{rad}q_0.
+\end{equation}
+为证明这一点，\(\mathfrak B/R_1\) 的一个素数有 \(t_p=0\)。
+局部表表明它具有偶奇偶性且 \(a_{ip}\) 相等。
+若两者都为一，它属于 \(J_2\)；若两者都为零，它属于
+\(\operatorname{rad}q_0\)。\(C\) 的素数已在
+\(f_{\rm new}\) 中。这就证明了该蕴含关系。因此 \(d_k\) 也
+在 \(f_{\rm new},q_0\) 被指定之后具有除子重数。
+一旦这些因子固定，\(k''\) 就由
+元素 \(k_{\rm new}=d_kd_2k''\) 唯一确定。
+
+设 \(K_{\rm slot}\) 界定原始的槽个数。在固定的
+\(\gamma=(q_0,t',r_g)\)、无平方因子的 \(f=f_{\rm new}\) 以及元素
+\(k=k_{\rm new}\) 下，权重非零的可能的 \(\xi\in\Xi_\sigma\) 的个数
+至多为一个固定常数乘以
+\(D_{K_{\rm slot}}(f)C_{K_{\rm slot}}(\gamma)\)，其中
+\begin{equation}\label{eq:inverse-new-fibre}
+ \begin{split}
+ D_{K_{\rm slot}}(f)&=d_{\mathcal O}(f)^{9+4K_{\rm slot}},\\
+ C_{K_{\rm slot}}(\gamma)&=
+ d_{\mathcal O}(q_0)^{5+2K_{\rm slot}}
+ d_{\mathcal O}(t')^{2K_{\rm slot}}
+ d_{\mathcal O}(r_g)^{2K_{\rm slot}},
+ \end{split}
+\end{equation}
+这里及下文 \(d_{\mathcal O}\) 表示理想除子计数。
+为完整起见，把 \(f\) 有序分配到
+\(J,C,d_2,v'\) 的代价为 \(4^{\omega(f)}=d_{\mathcal O}(f)^2\)，而
+拆分 \(J=sJ_2\) 的代价至多为 \(d_{\mathcal O}(f)\)。
+满足 \(b_1b_2=q_0^2J_2^2s\) 的 \(b_1,b_2\) 的选择
+至多耗
+\(d_{\mathcal O}(q_0)^2d_{\mathcal O}(f)^3\)；\(\mathfrak A_a\mid\operatorname{rad}(b_1b_2)\) 的两种选择
+至多耗
+\(d_{\mathcal O}(q_0)^2d_{\mathcal O}(f)^2\)。这些估计用到
+\(d_{\mathcal O}(IJ)\le d_{\mathcal O}(I)d_{\mathcal O}(J)\) 与
+\(d_{\mathcal O}(I^2)\le d_{\mathcal O}(I)^2\)。
+方程~\eqref{eq:poisson-divisor-reconstruction} 为 \(d_k\) 至多耗
+\(d_{\mathcal O}(q_0)d_{\mathcal O}(f)\) 种选择。
+于是 \(g'=d_2r_g\) 固定，而若其为整元素，则 \(k''=k/(d_kd_2)\) 是唯一的
+元素。至多 \(2K_{\rm slot}\) 个旧指派
+素数整除 \(q_0ft'\)，故它们的选择至多耗
+\([d_{\mathcal O}(q_0)d_{\mathcal O}(f)d_{\mathcal O}(t')]^{2K_{\rm slot}}\)。
+至多 \(2K_{\rm slot}\) 个新指派素数整除 \(fr_g\)，
+至多耗
+\([d_{\mathcal O}(f)d_{\mathcal O}(r_g)]^{2K_{\rm slot}}\)。
+另一个第一侧存活的槽在选取
+第一正侧时消失；被选中的存活槽在其
+新平方中出现两次，恰如这里所计。因此所展示的乘积
+控制该纤维，即使其实际大小依赖于 \(k\)。
+这里没有对旧 \(f,h\) 的计数，没有对
+\(J,C,d_2,v'\) 的独立计数，也没有第二次频率计数。
+
+方程~\eqref{eq:fixed-cube-count} 与相同的源见证
+把 \(\Gamma_\sigma\) 置于三个范数球的乘积之内
+\[
+ q_{q_0}\le Z^{\ell+R/2-j+5\eta/2},\qquad
+ q_{t'}\le Z^{t+\eta},\qquad q_{r_g}\le Z^{g-\theta+2\eta}.
+\]
+我们使用这些球仅为了界定不同三元组的个数，而非
+作为子式估计的替代区域。理想计数给出
+\begin{equation}\label{eq:canonical-fixed-count}
+ \#\Gamma_\sigma\le C Z^{C_c+11\eta/2+\pi_{\rm count}},\qquad
+ C_c=\ell+R/2-j+t+g-\theta.
+\end{equation}
+这里 \(\pi_{\rm count}\) 是单独选取的聚合量
+\(\pi\) 的一部分。在非空扇区中，这三个球的每个上指数
+都非负，因为它界定了一个存在理想的范数；
+因此理想计数中的常数项不增添边界幂。
+特别地，这里不计 \(J\)。这三个
+理想的区间都是有界的，故可调除子界在
+包含球上一致地给出
+\(C_{K_{\rm slot}}(\gamma)\ll Z^{\pi_{\rm fib}}\)。
+令 \(c_\sigma=C_c+11\eta/2\)，并引入
+真正与行和标号无关的测度
+\begin{equation}\label{eq:inverse-normalized-triples}
+ d\nu_\sigma(\gamma)=Z^{-c_\sigma}
+ \sum_{\gamma\in\Gamma_\sigma}C_{K_{\rm slot}}(\gamma)\delta_\gamma,
+ \qquad \|\nu_\sigma\|\ll Z^{\pi_{\rm count}+\pi_{\rm fib}}.
+\end{equation}
+
+\paragraph{正规范子式。}
+对固定的 Fourier 模式，定义正子式和
+\begin{equation}\label{eq:inverse-positive-child}
+ \begin{split}
+ \mathcal H_{a,\gamma}={}&
+ \sum_{\substack{f\ {\rm sf}\\q_f/Z^{V_c}\in I_f}}
+ D_{K_{\rm slot}}(f)
+ \sum_{\substack{k\in\mathcal O\\0<q_k\le Z^{M_{\rm ch}}}}
+ |Q_{a,\gamma,\boldsymbol\zeta}(k,f)|^2
+ =Z^{F_{\rm ch}}\mathcal E_{a,\gamma}.
+ \end{split}
+\end{equation}
+该等式是方程~\eqref{eq:canonical-energy} 用同一行球、标号权重
+\(D_{K_{\rm slot}}\) 以及
+方程~\eqref{eq:canonical-child-polynomial}
+与 \eqref{eq:canonical-child-data} 中检验函数与穿刺的正规化；若那里
+使用更大的固定行球，则该等式改为所需
+上界方向的一个不等式。权重仅依赖于 \(f\)。
+重指标之后，\(\mathcal B_2\) 恰是所展示的行球。
+只有如今为正的外层行和标号和
+被扩大为其完整固定窗口。各列使用其完整固定新
+窗口，但其穿刺、标记与检验函数未被删除或
+改变。刚证明的实际纤维控制给出
+\[
+ \begin{split}
+ \left|\sum_{\xi\in\Xi_\sigma}V_\sigma Q_1\overline{Q_2}\right|
+ &\le\prod_{a=1}^2
+       \left(\sum_{\xi\in\Xi_\sigma}|V_\sigma||Q_a|^2\right)^{1/2}\\
+ &\ll Z^{c_\sigma}\prod_{a=1}^2
+       \left(\int_{\Gamma_\sigma}\mathcal H_{a,\gamma}
+                    \,d\nu_\sigma(\gamma)\right)^{1/2}.
+ \end{split}
+\]
+这里 \(Q_a=Q_{a,\gamma,\boldsymbol\zeta}(k_{\rm new},f_{\rm new})\)。
+两个平方根各提供 \(Z^{c_\sigma/2}\)，因此有
+一个固定计数因子。一致子式界提供一份总
+质量 \(\|\nu_\sigma\|\)，而非其平方。子式界将
+仅用于 \(\gamma\in\Gamma_\sigma\)，利用已在
+方程~\eqref{eq:inverse-child-margins} 中验证的假设。
+
+\paragraph{能量指数。}
+形式中心满足精确恒等式
+\begin{equation}\label{eq:canonical-prefactor}
+ \kappa_i+\lambda_c+C_c+2F_c=F.
+\end{equation}
+这通过代入它们的定义与
+\(H_c=2r-2B-M+4\ell+2V+\delta-j\) 得出；所有抽取出的长度相消，结果
+为 \(r+3\ell+V=N+V\)。
+
+我们现在仅对
+\(\gamma\in\Gamma_\sigma\) 使用子式估计，因为对其已证明了前述的余量与行
+下降。若它在其中一致地给出
+\(\mathcal E_{a,\gamma}\ll C(\boldsymbol t,\boldsymbol\zeta)
+Z^{F_{\rm ch}+\epsilon_{\rm child}}\)，并具有其
+固定的多项式高度依赖，则由
+方程~\eqref{eq:inverse-positive-child} 与上面最终加权
+Cauchy 界可得
+\[
+ \left|\sum_{\xi\in\Xi_\sigma}V_\sigma Q_1\overline{Q_2}\right|
+ \ll C(\boldsymbol t,\boldsymbol\zeta)
+ Z^{c_\sigma+2F_{\rm ch}+\epsilon_{\rm child}}\|\nu_\sigma\|.
+\]
+正规化质量就是
+方程~\eqref{eq:inverse-normalized-triples} 中的那个；见证重数
+已在其纤维权重中。然后利用方程~\eqref{eq:inverse-joint-fourier-moments} 对
+公共 Fourier 密度积分一次。
+它不属于离散测度，也不为
+任何行或标号重新选取。因此真正的外层计数与其正规化
+质量各出现一次。平均后的 \(J,C,d_2,v'\) 留在正
+子式和中，不被另外计数。
+
+若某个子式被 \(Z^{F_{\rm ch}+\epsilon_{\rm child}}\) 界定，则
+第一前因子误差、第二前因子误差、固定计数以及
+恢复的正规化在每个正的第二个 Cauchy 侧给出
+\begin{equation}\label{eq:inverse-step-loss}
+ \begin{split}
+ &\kappa_i+\lambda_c+C_c+2F_{\rm ch}
+      +(\tfrac92+18+\tfrac{11}2)\eta+\tau+\pi+\epsilon_{\rm child}\\
+ &\qquad=F+28\eta+2\delta_N+\tau+\pi+\epsilon_{\rm child}\\
+ &\qquad\le F+40\eta+\tau+\pi+\epsilon_{\rm child}.
+ \end{split}
+\end{equation}
+\(\delta_N\) 的两份副本都出现：一份恢复子式列
+正规化，另一份出现在其断言的指数中。两个加权
+Cauchy 不等式各取其正侧的几何平均，故
+不会使这一损失加倍。第一个主界是
+\(Z^{M+\pi}\)，而上面第二个主界至多为
+\(Z^{F+26\eta+\tau+\pi}\)；两者都符合同一配额。
+
+参数 \(\pi\) 有一个独立的量词。设 \(J_{\rm step}\)
+为在一个固定的双 Poisson、双 Cauchy
+分解树中使用某个自由除子或筛法指数、以及对数二进计数的因子的最大次数，
+并在至多具有固定槽界的有穷多个指派上
+取最大。一旦 \(L_{\rm pow}\) 界定这类使用中每个尺度乘积的对数长度，
+就取每个自由输入指数至多为
+\(\pi/(2J_{\rm step}\max(1,L_{\rm pow}))\)。对充分大的 \(Z\)，
+至多 \(J_{\rm step}\) 个对数因子的乘积至多为
+\(Z^{\pi/2}\)。这些选择使所有非中心、非频率的局部
+损失至多为 \(CZ^\pi\)。它们包括被保留的公共频率
+二进段以及重构除子界。特别地，不同的
+配额 \(\pi_\beta,\pi_{\rm old},\pi_{\rm count},\pi_{\rm fib}\)
+以及有限并的二进配额都是这个单一聚合量的一部分，而不是重复的
+大小为 \(\pi\) 的配额。固定射线和与固定
+半范数常数是常数。同一约定定义了
+聚合终端损失 \(\pi_{\rm ref}\)。特别地，\(\pi\) 不隐藏
+\(\eta\) 或 \(\tau\) 的任何倍数。
+
+这就证明了条件化归约估计
+\eqref{eq:canonical-reduction-contract}，包括在作出下述选择后其公共测度与
+有限阶的一致性。剩下的是统一固定
+这些选择，并通过有限深度应用该归约。
+
+\paragraph{选择的次序与终止。}
+对所要求的规范指数 \(\epsilon_c=\epsilon\)，首先固定
+起始区间、检验函数、槽界、\(c_*\)，然后像证明开头那样固定 \(d,D\)。选取
+\begin{equation}\label{eq:inverse-parameter-order}
+ \begin{gathered}
+ \eta\le\min\{d/16,c_*/(14D),\epsilon_c/(160D),c_*/1000,1/100\},\\
+ \tau\le\min\{\epsilon_c/(4D),c_*/1000,1/100\},\qquad
+ \pi\le\epsilon_c/(4D),\qquad
+ \tau_{\rm ref},\pi_{\rm ref}\le c_*/1000.
+ \end{gathered}
+\end{equation}
+在两个 Poisson 比较中使用同一个 \(\tau\)。此时 \(\pi\)
+是目标聚合损失；其子输入指数只在此有界尺度
+区间已知后才选取。
+
+选取一直到深度 \(D\) 的各个截断，包括每个完整较大的或
+全新的支集以及上述有界裁剪族，并形成
+\(\mathcal I_D,L_{\rm win}\)。包括活跃槽的乘积
+区间以及终端常数
+\(C_{\rm res},C_{\rm width},C_{\rm ker}\)，并在整个深度上取最大。
+这是有限的，因为每段有有穷多个分解类型
+且有有穷多段。令
+\[
+ F_{\max}=N_{\max}+V_{\max}+11D\eta,\qquad
+ L_{\rm all}=100(1+M_{\max}+F_{\max}+z_{0,\max}+c_*).
+\]
+这些界定了所有被保留的尺度长度。确实，
+方程~\eqref{eq:inverse-row-decrease} 及其后的界给出
+\(M\le M_{\max}\) 与 \(N,V\le F_{\max}\)。非空列窗口有
+\(r\ge-\eta\)，故 \(\ell\le(F_{\max}+\eta)/3\)。所展示的父
+乘积把每个抽取出的除子长度界定为 \(2F_{\max}+6\eta\)。
+例如 \(d_k\mid C\operatorname{rad}(b_1b_2)\) 给出
+\(\delta\le r+2\ell+4\eta\)，而方程~\eqref{eq:enlarged-first-frequency}
+随后给出 \(H_{\rm use}\le7F_{\max}+18\eta+\tau\)。终端活跃
+导子支撑在行、\(f\)、穿刺与槽上；其
+总长度至多为 \(M_{\max}+2F_{\max}+z_{0,\max}\) 再加上
+已展示的比例配额。方程~\eqref{eq:inverse-terminal-width}
+与 \eqref{old-eq:4.4} 把被保留的终端对偶长度界定为
+\(4M_{\max}+4F_{\max}+2z_{0,\max}+3d+12\eta+\tau_{\rm ref}\)。
+在方程~\eqref{eq:inverse-parameter-order} 之下，所有这些界以及
+精确的导子乘积长度都低于 \(L_{\rm all}\)。
+我们现在可以取 \(L_{\rm pow}=L_{\rm all}\) 并选取
+实现 \(\pi\) 与 \(\pi_{\rm ref}\) 的子小指数。
+
+定义 \(B_{\rm crude}\) 为如下得到的最大指数：把任一原始 Poisson
+展开中每个有界的非频率理想或元素和（包括
+两个列和）替换为长度
+\(L_{\rm all}\) 处的格计数，并把每个显式范数因子（包括方程~\eqref{eq:inverse-raw-tail} 中的 \(1+a^{-1}\)）
+替换为其绝对上界。
+也把除子有界的系数与标记替换为其平凡多项式
+范数界。
+只排除频率核本身。这些展开含有
+固定有限个因子，故此定义了一个有限的统一数。
+
+对反射尾部，类似地用其有界的
+行、局部与活跃乘积计数以及 \(1+a^{-1}\)（其中 \(a=X/q_c^2\)）定义 \(B_{\rm ref}\)。
+不要在保留长度处计入被舍弃的对偶指标。
+相反，方程~\eqref{old-eq:4.3} 在其支集上给出
+\[
+ \frac{|d(\mu)|}{\sqrt{q_\mu}}
+ \le27q_\lambda^{-k/3}q_n^{-1/2}q_b^{-1}
+ \le27q_\lambda^{4/3}\qquad(k\ge-4).
+\]
+其他每个局部因子都由有界活跃素数上 \(q_p^{1/2}\) 的乘积界定，
+并在舍弃其指示函数后与 \(\mu\) 无关。因此 \(B_{\rm ref}\) 覆盖所有非核系数与
+有界计数，而剩余的 \(\mu\)-和是
+\(\lambda^{-4}\mathcal O\) 上无限制的格和。
+
+固定一个尾部节省 \(T>1+B_{\rm crude}+B_{\rm ref}\)。对每个 Poisson
+尾部，选取一个 Schwartz 阶
+\[
+ A>1+(B_{\rm crude}+T)/\tau.
+\]
+取 \(Y=Z^\tau\) 的方程~\eqref{eq:inverse-raw-tail} 随后使
+被舍弃的原始外球补集为 \(O(Z^{-T})\)，至多相差有穷多个
+输入半范数以及任何挠高中的一个固定多项式。对
+反射的整二进段尾部，实际辐角至少为
+\(Z^{\tau_{\rm ref}/2}\)；对
+\(\lambda^{-4}\mathcal O\) 使用同一格壳界并选取
+\[
+ A_{\rm ref}>1+2(B_{\rm ref}+T)/\tau_{\rm ref}.
+\]
+这就证明了被舍弃尾部的断言，而无需预设有
+对被舍弃对偶长度的任何界。
+
+接着，通过深度 \(D\) 反向选取有穷多个 Fourier 高度与光滑半范数阶，
+位于所选尾部阶与
+终端输入阶之上。正规化逆根是圆环上的固定实幂，
+而完整核在范数单项式处的 Euler 微分
+不引入尺度幂。方程~\eqref{eq:inverse-joint-fourier-moments}
+与 \eqref{eq:inverse-normalized-triples} 为每个正指标化 Cauchy 侧和提供
+公共系数测度。对这些和分别应用
+推论~\ref{cor:indexed-seminorm-propagation}，
+使用刚由引理~\ref{lem:smooth-calculus} 证明的子式剖面界，
+然后取所展示的几何
+平均。如已所示，两个平方根保留一份正规化离散质量，
+故真正的外层标号只被计一次。
+后续应用中任何外部高度截断
+都在此内部有限传播之后选取，而不插入其中。
+
+最后选取 \(Z\) 足够大，使 \(\log Z\ge L_{\rm win}/\eta\)、
+方程~\eqref{eq:inverse-terminal-width} 中 \(C_{\rm res},C_{\rm width}\) 的阈值、
+\(\log Z\ge2\log C_{\rm ker}/\tau_{\rm ref}\)、
+\(\log Z\ge4\log q_\lambda/\eta\)，以及短完备化中使用的固定 \(h\)-圆环阈值
+均成立。还要施加定义
+聚合局部损失的对数界以及输入引理的阈值。
+所有选择都先于此最终阈值，且只依赖于固定
+数据。有界的较小 \(Z\) 通过增大最终常数来处理。
+
+现在对 \(h\le D\) 有 \(c_h=c_*-7h\eta\ge c_*/2\)。
+方程~\eqref{eq:inverse-child-margins} 与
+\eqref{eq:inverse-row-decrease} 把每个被保留的非终端子式送到
+下一深度及其行上界。在深度 \(D\)，该上界为负，
+而每个被保留的行参数都非负。终端界
+至多为 \(Z^F\)；主项与递归项在指数上至多耗
+\(L_{\rm step}=40\eta+\tau+\pi\)。反向归纳在深度 \(h\) 给出
+\(Z^{F+(D-h)L_{\rm step}}\)，且
+\[
+ D L_{\rm step}\le\epsilon_c/4+\epsilon_c/4+\epsilon_c/4<\epsilon_c.
+\]
+这就证明了 \(\mathcal E\ll Z^{F_0+\epsilon}\)，并具有所声称的
+一致有限半范数与多项式高度依赖。
+\end{proof}
+
+\subsection{带标记矩的初始化}
+
+我们现在把引理~\ref{lem:marked} 中的逆多项式转换为
+规范族。只需一次 Poisson 变换。
+
+\begin{proof}[引理~\ref{lem:marked} 的证明]
+在乘积 \(M_u(Z^r;W)Q_u\) 中，令 \(P\) 为其
+槽素数的乘积，并置 \(j=(n,P)\)。\(n\) 与 \(P\) 都是
+无平方因子的。固定出现在 \(j\) 中的槽的子集，并写出
+\[
+ n=jn_0,\qquad P=jP_0,\qquad (n_0,P_0)=1.
+\]
+乘积 \(c=n_0P_0\) 是无平方因子的。恒等式
+\[
+ \mu(n_0)=\mu(c)\mu(P_0),\qquad
+ \psi_u(n)\psi_u(P)=\psi_u(j)^2\psi_u(c)
+\]
+在所有零延拓下成立。符号 \(\mu(P_0)\) 是
+存活槽上符号的乘积，可并入它们的
+有界系数。因此系数仍保持
+方程~\eqref{old-eq:4.2} 中的形式。
+
+对这个固定的指派子集，由其名义槽中心定义 \(G\)：
+\[
+ G=\sum_{i\ {\rm assigned}}z_i,\qquad
+ z_0=z-G,\qquad D'=r+z-2G.
+\]
+于是 \(G,z_0\ge0\)，而 \(z_0\) 恰是存活的名义上界。
+正规化满足
+\[
+ Z^{-(r+z)/2}=Z^{-G}Z^{-D'/2}.
+\]
+实际的 \(j\) 是指派素数的乘积，故
+\(q_j/Z^G\) 落在一个固定乘积区间中。理想计数至多给出
+\(CZ^G\) 种选择，尚需加上为指派单独选取的除子损失。
+行 Hilbert 空间中的三角不等式用
+\(Z^{-G}\) 抵消这一计数。整个因子 \(\psi_u(j)^2\) 是
+有界的行标量（包括其零点），并且是
+该空间中的一个压缩。剩余列与 \(j\) 互素，给出固定
+穿刺 \(1_{(c,j)=1}\)。
+
+以下是这一重叠归约所依据的精确恒等式。设
+\(I_0\) 为存活子集，并置
+\(y_j=q_j/Z^G\)、\(y_c=q_c/Z^{D'}\)，以及对
+每个槽 \(y_i=q_{p_i}/Z^{z_i}\)。在原始支集上，
+\[
+ \frac{q_n}{Z^r}=\frac{y_jy_c}{\prod_{i\in I_0}y_i}.
+\]
+对一个固定的指派元组，其对
+\(M_u(Z^r;W)Q_u\) 的贡献 \(\mathcal U_{u,j}\) 恰为
+\begin{equation}\label{eq:initial-overlap-polynomial}
+ \begin{split}
+ \mathcal U_{u,j}={}&\mu(j)
+ \prod_{i\notin I_0}a_i(p_i)W_i(y_i)\,
+ Z^{-G}\psi_u(j)^2 Z^{-D'/2}
+ \sum_{\substack{c\ {\rm sf}\\(c,j)=1}}\mu(c)\psi_u(c)\\
+ &\quad\times
+ \sum_{\substack{(p_i)\in\prod_{i\in I_0}\mathcal P_i\\P_0\mid c}}
+ \mu(P_0)\prod_{i\in I_0}a_i(p_i)W_i(y_i)
+ W\!\left(\frac{y_jy_c}{\prod_{i\in I_0}y_i}\right).
+ \end{split}
+\end{equation}
+确实，一个与 \(j\) 互素的无平方因子 \(c\)，连同
+满足 \(P_0\mid c\) 的存活元组，唯一地重构出
+\(n=j(c/P_0)\) 以及所规定的重叠。\(c\) 的
+无平方因子性已给出 \((c/P_0,P_0)=1\)，故未丢失进一步的
+条件。符号 \(\mu(P_0)\) 是各素数符号的乘积。
+这也表明，后续每个平方两侧的 \(j\)
+是同一个固定理想：前面的三角不等式是在
+该平方之前取的。
+
+恒等式 \(c=nP/j^2\) 把 \(y_c\) 置于一个固定紧区间中。
+若 \(D'\) 在有界
+非空窗口中略微为负，这仍有意义；\(D'\) 还不是规范参数。选取一个
+新的个体截断 \(\omega_c\)，在此完整商
+支集上等于一。对固定的 \(j\)，令 \(\Omega_c\) 在 \(\omega_c\) 的完整支集上
+等于一，并令 \(\Omega_i\) 在每个完整存活
+个体槽支集上等于一。单一的联合剖面
+\[
+ \mathfrak H_{{\rm ov},j}(y_c,(y_i)_{i\in I_0})
+ =\Omega_c(y_c)\prod_{i\in I_0}\Omega_i(y_i)
+ W\!\left(\frac{y_jy_c}{\prod_{i\in I_0}y_i}\right)
+\]
+在这些独立坐标中紧支撑。当前的
+截断 \(\omega_c\) 与个体因子 \(W_i(y_i)\) 留在
+其变换之外。因此，在维数
+\(1+|I_0|\) 下，方程~\eqref{eq:inverse-log-fourier} 把方程~\eqref{eq:initial-overlap-polynomial}
+精确地表示为同一指派标量与 \(Z^{-G}\psi_u(j)^2\) 乘以
+\[
+ (2\pi)^{-1-|I_0|}\int_{\mathbb R^{1+|I_0|}}
+ \widehat{\mathfrak H}_{{\rm ov},j}(\boldsymbol\upsilon)
+ Z^{-D'/2}\sum_{c\ {\rm sf}}\mu(c)\psi_u(c)1_{(c,j)=1}
+ \mathfrak d_{\boldsymbol\upsilon}(c)
+ \omega_c(y_c)y_c^{i\upsilon_c}\,d\boldsymbol\upsilon,
+\]
+其中 \(\mathfrak d_{\boldsymbol\upsilon}\) 具有原始存活
+列表与个体系数
+\(\mu(p)a_i(p)W_i(y_i)y_i^{i\upsilon_i}\)。展开标记并
+反转联合变换即可逐项证明该等式。
+不为实际存活元组选取测度。该测度可
+依赖于已固定的 \(j\)，但方程~\eqref{eq:inverse-fourier-moment}
+对其 \(y_j\) 在固定乘积区间中是一致的。对这一测度，
+在整个行 Hilbert 空间中使用 Minkowski
+不等式。
+在选用最终阈值之前，把 \(\omega_c\) 的完整支集、其较大的截断、
+存活槽支集以及 \(j\)-乘积区间纳入有限
+集合 \(\mathcal I_D\)。
+采用与规范证明相同的 \(\eta\) 约定，于是我们有
+\[
+ |\widehat c-D'|\le\eta,\qquad |\widehat j-G|\le\eta
+\]
+在下文实际使用的完整支集上成立，其中 \(\widehat c=\log_Zq_c\)。
+对符号
+\(\varepsilon_\chi=1\)，取整个剩余多项式的共轭，
+包括其有限特征、标记与检验函数；其行范数不变。
+对另一符号，保持不变。因此只需估计
+一个恰具有如下形式的多项式
+\begin{equation}\label{eq:initial-residual-polynomial}
+ \mathcal R_0(u)=Z^{-D'/2}\sum_{c\ {\rm sf}}
+ \mu(c)\nu_0(c)1_{(c,j)=1}\overline{\chi_c(u)}
+ \mathfrak d_0(c)W_0(q_c/Z^{D'}).
+\end{equation}
+这里 \(\nu_0\) 是一个固定的有限射线特征，\(\mathfrak d_0\)
+是上界 \(z_0\) 与那些个体系数
+或其共轭的乘积标记，而 \(W_0\) 是 \(\omega_c(y)y^{i\upsilon_c}\)
+或其共轭。它们都与行无关。
+
+用一个固定的非负径向 Schwartz
+函数 \(\Phi_{\rm init}\) 在尺度 \(Z^m\) 上控制原始行球，并展开其平方。设 \(C\) 为两列的
+最大公因子，并写出 \(c_i=Cz_i\)，其中 \(z_1,z_2\) 无平方因子
+且互素。置 \(\widehat c_i=\log_Zq_{c_i}\)，故前述
+支集界对每个 \(i=1,2\) 都适用。设 \(B\ge0\) 为 \(C\) 的中心，并写出
+\(\widehat B=\log_Zq_C\)。行特征具有本原模
+\(z_1z_2\) 与剩余零掩码 \(C\)。应用
+引理~\ref{lem:masked-poisson}，其中 \(d'\mid C\)。设 \(\theta\ge0\)
+为其中心，\(\widehat\theta=\log_Zq_{d'}\)。置
+\[
+ P_1=B-\theta\ge-2\eta,
+\]
+其中该不等式由 \(\widehat\theta\le\widehat B\) 以及
+两个 \(\eta\)-比例界推出。实际导子长度为
+\[
+ \widehat L_{\rm init}=\widehat c_1+\widehat c_2-2\widehat B,
+ \qquad |\widehat L_{\rm init}-2(D'-B)|\le4\eta.
+\]
+对正容差 \(\tau_{\rm init}\)，蕴含关系
+\(Z^mq_{h'}/(q_{d'}q_{z_1z_2})\le Z^{\tau_{\rm init}}\) 给出
+\[
+ \widehat{d'h'}\le2D'-m-2P_1+6\eta+\tau_{\rm init}.
+\]
+定义固定的形式行尺度与包围行尺度
+\begin{equation}\label{eq:inverse-initial-row}
+ M_c^{\rm init}=2D'-m-2P_1,\qquad
+ M_{\rm init}=M_c^{\rm init}+6\eta+\tau_{\rm init}.
+\end{equation}
+其中的 \(6\eta\) 有 \(4\eta\) 来自导子，\(2\eta\) 来自新行界中 \(d'\) 的两份副本。

@@ -1,5 +1,0 @@
-\[
- \sigma_p=\lambda^2c/p,\qquad
- \epsilon_p=-\big((\lambda^3c/p)\sigma_p\big)^{-1},
-\]
-并令
