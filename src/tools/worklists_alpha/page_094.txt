@@ -1,0 +1,4 @@
+PAGE 94   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) O1 H1 | zh 0
+   \mathcal O  y  355.0 x  247.1   line: where both stars mean squarefree in O , and the coefficients are arbitrary complex numbers [ 17 ,
+   \mathcal H  y  719.2 x  134.0   line: Proof. Write H for the left side of Equation ( 14.7 ). First remove the complete moving row-mark

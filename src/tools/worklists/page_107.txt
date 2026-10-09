@@ -1,0 +1,21 @@
+PAGE 107
+counts pdf: {'sum': 1, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 9}
+
+SUM       y  485.3 x  187.6- 203.4 
+          line: X | A m,σ,v ( Y ′ ) | 2 ≪ (1 + | v | ) J Gr ( Q/Y ′ ) P a 1 / 6 Z ϵ . (15.7)
+BRACK     y  555.4 x  200.7- 205.3 ch=[
+BRACK     y  555.4 x  261.7- 266.3 ch=]
+BRACK     y  555.4 x  279.5- 284.0 ch=[
+BRACK     y  555.4 x  304.4- 309.0 ch=]
+BRACK     y  555.4 x  336.7- 341.2 ch=[
+BRACK     y  555.4 x  379.2- 383.8 ch=]
+BAR       y  215.6 x  200.5- 203.6 
+BAR       y  215.6 x  264.2- 267.2 
+BAR       y  487.7 x  210.3- 213.3 
+BAR       y  487.7 x  263.3- 266.3 
+BAR       y  487.7 x  311.0- 314.1 
+BAR       y  487.7 x  319.8- 322.8 
+BAR       y  521.5 x  425.0- 428.0 
+BAR       y  521.5 x  433.7- 436.7 
+BAR       y  521.5 x  463.7- 466.7 
+BAR       y  521.5 x  499.7- 502.7 

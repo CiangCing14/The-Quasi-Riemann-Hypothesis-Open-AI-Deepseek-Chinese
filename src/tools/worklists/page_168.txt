@@ -1,0 +1,19 @@
+PAGE 168
+counts pdf: {'sum': 3, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 2, 'abs': 2}
+
+OVERLINE  y  553.4 x  322.5- 363.5 covers: 'R ( b, D 2 )'
+          line: F ( a, b ; j ) := F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j )
+OVERLINE  y  553.4 x  421.9- 455.0 covers: 'χ b ( − j )'
+          line: F ( a, b ; j ) := F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j )
+ACCENT    y  559.7 x  142.5- 148.5 
+          line: F e D 2 ,E 2 ( a, b ; j ) := F ( D 2 , E 2 ; j ) R ( a, E 2 ) R ( b, D 2 ) R ( a, b ) χ a ( j ) χ b ( − j )
+ACCENT    y  677.2 x  408.2- 414.3 
+          line: X C 2 ( a, b ; j ) F ( D 2 a, E 2 b ; j ) = t squarefree X µ ( t ) X | C 2 ( a, b ; j ) F e D 2 ,E 2 ( a, b ; j ) .
+SUM       y  669.6 x  127.2- 142.9 
+          line: X C 2 ( a, b ; j ) F ( D 2 a, E 2 b ; j ) = X µ ( t ) X C 2 ( a, b ; j ) F e D 2 ,E 2 ( a, b ; j ) .
+SUM       y  669.6 x  292.3- 308.0 
+          line: X C 2 ( a, b ; j ) F ( D 2 a, E 2 b ; j ) = X µ ( t ) X C 2 ( a, b ; j ) F e D 2 ,E 2 ( a, b ; j ) .
+SUM       y  669.6 x  344.2- 360.0 
+          line: X C 2 ( a, b ; j ) F ( D 2 a, E 2 b ; j ) = X µ ( t ) X C 2 ( a, b ; j ) F e D 2 ,E 2 ( a, b ; j ) .
+BAR       y  154.5 x  480.0- 483.0 
+BAR       y  688.1 x  347.0- 349.4 

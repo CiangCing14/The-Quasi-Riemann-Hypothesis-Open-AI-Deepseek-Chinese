@@ -1,0 +1,47 @@
+PAGE 63
+counts pdf: {'sum': 6, 'prod': 0, 'int': 1, 'sqrt': 0, 'overline': 4, 'hat': 1, 'abs': 15}
+
+OVERLINE  y  258.1 x  324.1- 357.8 covers: ')) = Θ ( j ) b,c ( y )'
+          line: X ( j ) ( j ) √ ( j )
+OVERLINE  y  263.8 x  366.8- 379.5 covers: 'q bc'
+          line: X Θ ( j ) ( v ) e ( vy/ ( bc )) = Θ ( j ) ( y ) √ q bc Γ ( j ) .
+OVERLINE  y  381.3 x  390.8- 424.2 covers: ')Ψ ( j ) b,c ( a )'
+          line: X ( j ) M Γ b,c X ( j )
+OVERLINE  y  481.1 x  298.6- 309.1 covers: 'λ c'
+          line: Q ( M, N ; λ ) = X λ λ X W ( q /M )Ψ ( j ) ( a ) .
+ACCENT    y  119.2 x  261.2- 267.3 
+          line: w b ( y ) = W ( | y | ) .
+SUM       y  260.3 x  201.6- 217.3 
+          line: X Θ ( b,c j ) ( v ) e ( vy/ ( bc )) = Θ ( b,c j ) ( y ) √ q bc Γ ( b,c j ) .
+SUM       y  383.5 x  168.1- 183.8 
+          line: X W ( q a /M )Ψ ( b,c j ) ( a ) = M √ Γ q b,c X W ( Mq a /q bc )Ψ ( b,c j ) ( a ) . (9.6)
+SUM       y  383.5 x  313.7- 329.4 
+          line: X W ( q a /M )Ψ ( b,c j ) ( a ) = M √ Γ q b,c X W ( Mq a /q bc )Ψ ( b,c j ) ( a ) . (9.6)
+SUM       y  479.1 x  263.9- 279.7 
+          line: Q j ( M, N ; λ ) = X λ b λ c X W ( q a /M )Ψ ( b,c j ) ( a ) .
+SUM       y  479.1 x  310.9- 326.7 
+          line: Q j ( M, N ; λ ) = X λ b λ c X W ( q a /M )Ψ ( b,c j ) ( a ) .
+SUM       y  741.1 x  235.0- 250.7 
+          line: M X ( Mq a /N 2 ) − A ≪ N 2 Z 1 − A .
+INT       y  157.8 x  276.0- 282.1 
+          line: W ( x ) ≪ (1 + x ) − A , Z |M W ( σ + it ) | dt < ∞ ( σ > 0) . (9.5)
+PAREN     y  322.8 x  106.7- 111.7 ch=(
+PAREN     y  322.8 x  133.4- 138.4 ch=)
+BAR       y   86.7 x  401.2- 404.3 
+BAR       y   86.7 x  409.8- 412.8 
+BAR       y  111.2 x  312.2- 315.2 
+BAR       y  111.2 x  321.0- 324.0 
+BAR       y  164.6 x  290.1- 293.2 
+BAR       y  164.6 x  354.2- 357.2 
+BAR       y  221.1 x  321.0- 324.0 
+BAR       y  221.1 x  329.8- 332.8 
+BAR       y  221.1 x  400.6- 403.6 
+BAR       y  221.1 x  409.2- 412.2 
+BAR       y  549.7 x  152.5- 155.5 
+BAR       y  549.7 x  214.2- 217.2 
+BAR       y  549.7 x  299.5- 304.9 
+BAR       y  549.7 x  311.3- 316.7 
+BAR       y  677.3 x  236.5- 242.0 
+BAR       y  677.3 x  248.4- 253.8 
+BAR       y  704.4 x  241.6- 244.6 
+BAR       y  704.4 x  255.1- 258.1 

@@ -1,0 +1,8 @@
+PAGE 17   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 0
+
+CAL R  y  165.2 x  167.0- 176.2
+      line: on T × T separates R ( a, b ) as a finite sum of products of characters. These expansions remain
+CAL R  y  178.7 x  278.0- 287.3
+      line: valid at noncoprime primary pairs because R there is the fixed-ray bicharacter, not a symbolic
+CAL R  y  215.4 x  295.1- 304.3
+      line: χ ( p ) χ ( n ) = R ( p, n )1 .

@@ -1,0 +1,29 @@
+PAGE 19   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 1 glyph(s) M1 | zh 0
+   \mathcal M  y  240.3 x   86.2   line: M W ( σ + iT ) = ( − iT ) − N F ( N ) ( u ) e iTu du, F ( N ) ( u ) = e σu X σ N − j D j W ( e u ) .
+MSBM -> \mathbb : pdf 4 glyph(s) R2 Z2 | zh 4
+   \mathbb R  y  250.9 x  216.9   line: R j
+   \mathbb R  y  608.4 x  321.0   line: This function is not annular. Choose a fixed χ ∈ C ∞ ( R ) such that P χ ( u − k ) = 1 , and define
+   \mathbb Z  y  614.5 x  403.7   line: c k ∈ Z
+   \mathbb Z  y  697.9 x  258.7   line: k ∈ Z
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\int at y 233.5 x 210.8
+    below[0]: σ
+    below[1]: R
+    below[2]: Taking absolute values gives the bound on a compact real strip.
+    above[0]: definition. To
+\sum at y 238.0 x 392.5
+    below[0]: j =0
+    below[1]: For | T | < 1
+    above[0]: N
+\sum at y 681.4 x 248.3
+    below[0]: k ∈ Z
+    below[1]: may be applied on each annulus after
+    above[0]: compact logarithmic
+\sum at y 748.6 x 215.7
+    below[0]: | k | >κ log Z − C
+    below[1]: 0
+    above[0]: summable. For fixed
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

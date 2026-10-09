@@ -1,0 +1,47 @@
+PAGE 149
+counts pdf: {'sum': 4, 'prod': 1, 'int': 1, 'sqrt': 0, 'overline': 1, 'hat': 5, 'abs': 8}
+
+OVERLINE  y  338.6 x  228.7- 242.0 covers: 'Q 2'
+          line: X V init Q Q ≪ Z P 1 +2 η Y Z H init dν init ( t )  . (17.83)
+ACCENT    y   91.9 x  373.2- 379.3 
+          line: has a source witness on the norm ball bounds its cardinality C, d ′ dyads, and therefore by # T ≪ Z P 1 +2 η log + π count Z q , t init = ; B b it − is θ b not ≤ P used 1
+ACCENT    y   91.8 x  391.8- 397.9 
+          line: has a source witness on the norm ball bounds its cardinality C, d ′ dyads, and therefore by # T ≪ Z P 1 +2 η log + π count Z q , t init = ; B b it − is θ b not ≤ P used 1
+ACCENT    y  463.6 x  283.7- 289.8 
+          line: Q init := log Z q r ρ ≤ B b − θ b + b j ≤ P 1 + G + 3 η. (17.84)
+ACCENT    y  463.4 x  304.2- 310.2 
+          line: Q init := log Z q r ρ ≤ B b − θ b + b j ≤ P 1 + G + 3 η. (17.84)
+ACCENT    y  463.8 x  321.9- 327.9 
+          line: Q init := log Z q r ρ ≤ B b − θ b + b j ≤ P 1 + G + 3 η. (17.84)
+SUM       y  150.5 x  237.2- 252.9 
+          line: dν Σ init ( t ) = Z − P 1 − 2 η X C init ( t ) δ t , ∥ ν Σ init ∥≪ Z π count , init + π fib , init . (17.81)
+SUM       y  237.3 x  195.6- 211.4 
+          line: H a,t init = X D init ( f ) X | Q init a,t,j, ξ ( k, f ) | 2 = Z F init E a,t init . (17.82)
+SUM       y  237.3 x  287.4- 303.2 
+          line: H a,t init = X D init ( f ) X | Q init a,t,j, ξ ( k, f ) | 2 = Z F init E a,t init . (17.82)
+SUM       y  336.5 x  172.1- 187.9 
+          line: X V Σ init Q 1 Q 2 ≪ Z P 1 +2 η Y Z H a,t init dν Σ init ( t )  1 / 2 . (17.83)
+PROD      y  336.5 x  298.7- 312.7 
+          line: X V Σ init Q 1 Q 2 ≪ Z P 1 +2 η Y Z H a,t init dν Σ init ( t )  1 / 2 . (17.83)
+INT       y  332.0 x  323.2- 329.3 
+          line: X V init Q Q ≪ Z P 1 +2 η Y 2 Z H init dν init ( t )  1 / 2 . (17.83)
+PAREN     y  331.5 x  315.2- 323.2 ch=(
+PAREN     y  331.5 x  404.3- 412.4 ch=)
+BAR       y  152.9 x  325.1- 330.5 
+BAR       y  152.9 x  349.8- 355.3 
+BAR       y  239.7 x  322.7- 325.7 
+BAR       y  239.7 x  383.3- 386.3 
+BAR       y  324.5 x  164.8- 168.5 
+BAR       y  331.0 x  164.8- 168.5 
+BAR       y  337.6 x  164.8- 168.5 
+BAR       y  344.1 x  164.8- 168.5 
+BAR       y  350.7 x  164.8- 168.5 
+BAR       y  357.2 x  164.8- 168.5 
+BAR       y  324.5 x  242.0- 245.7 
+BAR       y  331.0 x  242.0- 245.7 
+BAR       y  337.6 x  242.0- 245.7 
+BAR       y  344.1 x  242.0- 245.7 
+BAR       y  350.7 x  242.0- 245.7 
+BAR       y  357.2 x  242.0- 245.7 
+BAR       y  713.8 x  336.2- 341.6 
+BAR       y  713.8 x  360.9- 366.4 

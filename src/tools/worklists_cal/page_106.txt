@@ -1,0 +1,20 @@
+PAGE 106   calligraphic glyphs in the PDF: 9   \mathcal in the Chinese: 2
+
+CAL Q  y  195.1 x  342.9- 351.8
+      line: malized complete Fourier transform, with normalization Q − 2 on the two residue variables, has
+CAL O  y  208.6 x  403.3- 411.9
+      line: absolute value at most q and vanishes at (0 , 0) . Since every ideal of O is principal, the period
+CAL Q  y  222.2 x  179.4- 188.3
+      line: lattice has linear scale Q 1 / 2 . Four-dimensional lattice Poisson therefore gives, for this A ,
+CAL Q  y  255.3 x  425.5- 434.4
+      line: X a ( m ) W ( m / N ) ≪ (1 + | ν | ) J Gr R − B q N 2 min { 1 , ( Q /N ) A } . (15.5)
+CAL O  y  271.6 x  143.9- 150.6
+      line: m ∈O 2
+CAL Q  y  290.8 x  116.0- 124.9
+      line: For N ≥Q , the zero frequency vanishes and the other dual vectors have linear scale ( N/ Q ) 1 / 2 .
+CAL Q  y  290.8 x  497.1- 506.0
+      line: For N ≥Q , the zero frequency vanishes and the other dual vectors have linear scale ( N/ Q ) 1 / 2 .
+CAL Q  y  304.4 x  326.6- 335.5
+      line: Fourier decay of order 2 A > 4 bounds their sum by ( Q /N ) A . For N < Q , use the point count
+CAL Q  y  304.4 x  415.7- 424.6
+      line: Fourier decay of order 2 A > 4 bounds their sum by ( Q /N ) A . For N < Q , use the point count

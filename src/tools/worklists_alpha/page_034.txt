@@ -1,0 +1,17 @@
+PAGE 34   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) R3 O1 | zh 1
+   \mathcal O  y  437.4 x  483.3   line: prime to S . Use the fixed generators π for l ∈ S from Lemma 4.1 . For 0 ̸ = m ∈O , write
+   \mathcal R  y  524.3 x  269.5   line: χ ( m ) = χ ( um ) R ( A, m ) Y χ ( A ) v p ( m ) . (5.20)
+   \mathcal R  y  571.0 x  478.5   line: valuations v ( m ) modulo six, and the class of m in the fixed ray group through which R factors.
+   \mathcal R  y  610.1 x  252.4   line: ( Ψ ( A ) χ ( um ) R ( A, m ) , A ≡ 1 (mod 3) , ( A, S ) = 1 ,
+EUFM -> \mathfrak : pdf 7 glyph(s) l6 E1 | zh 0
+   \mathfrak l  y  437.5 x  288.3   line: prime to S . Use the fixed generators π for l ∈ S from Lemma 4.1 . For 0 ̸ = m ∈O , write
+   \mathfrak l  y  441.6 x  262.5   line: l
+   \mathfrak l  y  465.4 x  308.7   line: m = um m , m = Y π v l ( m ) , m = Y p v p ( m ) ,
+   \mathfrak l  y  471.7 x  304.2   line: S good S l good
+   \mathfrak l  y  481.5 x  282.4   line: l ∈ S p/ ∈ S
+   \mathfrak l  y  575.1 x  126.0   line: l good
+   \mathfrak E  y  664.4 x  238.3   line: supported on S . Therefore a single E , L in Proposition 5.1 works for all these sectors. The local
+MSBM -> \mathbb : pdf 2 glyph(s) R2 | zh 2
+   \mathbb R  y  153.7 x  385.0   line: (1 + | u | ) | f b Y ( u ) | du ≪ J ∥ f Y ∥ L 1 ( R ) .
+   \mathbb R  y  161.2 x  203.7   line: R

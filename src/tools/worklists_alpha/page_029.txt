@@ -1,0 +1,14 @@
+PAGE 29   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 7 glyph(s) O6 F1 | zh 0
+   \mathcal O  y   73.2 x  344.6   line: The character pairing furnished by e is nondegenerate on O / ( p ) . Changing variables in a Gauss
+   \mathcal O  y  213.4 x  185.9   line: Fourier inversion on O / ( L ) and on each O / ( p ) now gives
+   \mathcal O  y  213.4 x  280.4   line: Fourier inversion on O / ( L ) and on each O / ( p ) now gives
+   \mathcal O  y  322.5 x  173.3   line: coefficient x = λ 3 µ ∈O is the finite sum
+   \mathcal F  y  355.7 x  144.6   line: F ( z, v ) = X C ( h ) θ ¯ ( z + z , v ) , z = λ 2 h /L + X h /p . (5.12)
+   \mathcal O  y  735.3 x  134.4   line: element of λ 2 O = 3 O , a period of θ .
+   \mathcal O  y  735.3 x  163.4   line: element of λ 2 O = 3 O , a period of θ .
+EUFM -> \mathfrak : pdf 4 glyph(s) E4 | zh 0
+   \mathfrak E  y  405.5 x  122.6   line: which ( nb, E ) ̸ = 1 . This is a mask on the whole completed index: ( nb 3 , E ) = 1 if and only if
+   \mathfrak E  y  405.5 x  422.4   line: which ( nb, E ) ̸ = 1 . This is a mask on the whole completed index: ( nb 3 , E ) = 1 if and only if
+   \mathfrak E  y  419.1 x  155.4   line: both n and b are E -units. Only on that remaining domain do we use complete multiplicativity,
+   \mathfrak E  y  458.7 x  396.1   line: ϕ ( nb 3 ) Y χ ( nb 3 ) j p = χ ( λ ) 2 Ψ( n )Ψ( b ) 3 (( nb, E ) = 1) .

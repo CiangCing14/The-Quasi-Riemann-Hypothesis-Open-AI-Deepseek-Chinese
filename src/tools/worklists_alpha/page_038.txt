@@ -1,0 +1,6 @@
+PAGE 38   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) D2 C2 | zh 0
+   \mathcal D  y  344.4 x  320.6   line: j ( c ′ ,m,h ) ∈D r ( t )
+   \mathcal D  y  440.9 x  261.9   line: # D ( t ) ≪ .
+   \mathcal C  y  653.2 x  153.8   line: C ( X ; m, ν ) = X 2 √ cn 3 V c n . (5.30)
+   \mathcal C  y  756.0 x  160.5   line: C ( X ; m, ν ) = V ( s − 1 / 2) X s − 1 / 2 T ( s, νχ ( m )) ds. (5.31)

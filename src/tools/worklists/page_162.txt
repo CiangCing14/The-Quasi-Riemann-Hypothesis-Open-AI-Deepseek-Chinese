@@ -1,0 +1,37 @@
+PAGE 162
+counts pdf: {'sum': 5, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 2, 'abs': 8}
+
+ACCENT    y  151.4 x  108.9- 115.0 
+          line: q e = q + R + E, K ≤ K 0 + δ fr , 1 , 0 ≤ δ fr , 1 := 2 + log Z < ξ. (18.22)
+ACCENT    y  388.7 x  134.3- 140.4 
+          line: over the sector, the kernel is Φ b 1 include that single normalized outer ratio as another coordinate. ( R sc x/ ( y 1 y 2 )) on fixed logarithmic boxes. If its aggregate
+SUM       y  304.1 x  205.6- 221.4 
+          line: X C 1 ( a, b ; h ) = X C 1 ( a, b ; h ) X µ ( s ) .
+SUM       y  304.1 x  289.2- 304.9 
+          line: X C 1 ( a, b ; h ) = X C 1 ( a, b ; h ) X µ ( s ) .
+SUM       y  304.1 x  354.5- 370.2 
+          line: X C 1 ( a, b ; h ) = X C 1 ( a, b ; h ) X µ ( s ) .
+SUM       y  529.1 x  152.7- 168.5 
+          line: N C = X ω K ( q h /Z K ) Z − ( A − c ) / 2 X A C ( a ) τ C ′ ( a ) q a it G ( a, h ) , ω K ≥ 0 ,
+SUM       y  529.1 x  279.5- 295.3 
+          line: N C = X ω K ( q h /Z K ) Z − ( A − c ) / 2 X A C ( a ) τ C ′ ( a ) q a it G ( a, h ) , ω K ≥ 0 ,
+PROD      y  686.7 x  318.4- 332.3 
+          line: # { v : rad( v ) | c , q v ≤ Z T } ≤ Z aT Y (1 − q r − a ) − 1 ≪ Z aT + ϵ 1
+BAR       y  322.6 x  357.9- 360.2 
+BAR       y  491.8 x  114.3- 117.3 
+BAR       y  491.8 x  133.5- 136.5 
+BAR       y  517.1 x  227.1- 230.7 
+BAR       y  523.6 x  227.1- 230.7 
+BAR       y  530.2 x  227.1- 230.7 
+BAR       y  536.7 x  227.1- 230.7 
+BAR       y  543.3 x  227.1- 230.7 
+BAR       y  549.8 x  227.1- 230.7 
+BAR       y  547.6 x  285.9- 288.3 
+BAR       y  517.1 x  398.4- 402.0 
+BAR       y  523.6 x  398.4- 402.0 
+BAR       y  530.2 x  398.4- 402.0 
+BAR       y  536.7 x  398.4- 402.0 
+BAR       y  543.3 x  398.4- 402.0 
+BAR       y  549.8 x  398.4- 402.0 
+BAR       y  689.1 x  211.9- 214.9 
+BAR       y  705.2 x  324.7- 327.0 

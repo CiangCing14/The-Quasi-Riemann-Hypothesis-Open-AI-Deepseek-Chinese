@@ -1,0 +1,10 @@
+PAGE 122
+counts pdf: {'sum': 3, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 1}
+
+SUM       y  446.1 x  181.3- 197.0 
+          line: Z − N/ 2 X a ( n ) χ n ( k ) χ n ( f ) 4 d ( n ) W ( q n /Z N )
+SUM       y  481.0 x  174.2- 190.0 
+          line: = X µ ( h )¯ α ( h q ) 3 Ψ k ( h ) 3 T d h ( Z N /q h 3 ; k ) , d h ( A ) = d ( h 3 A ) . (17.10)
+SUM       y  554.6 x  330.4- 346.1 
+          line: Z − N/ 2 α ¯ ( c ) 3 Ψ k ( c ) 3 q c 1 / 2 X µ ( h ) .
+BAR       y  573.2 x  337.7- 340.0 

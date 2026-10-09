@@ -1,0 +1,10 @@
+PAGE 12
+counts pdf: {'sum': 2, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 3}
+
+SUM       y  335.2 x  299.1- 314.9 
+          line: S ψ ( n ; W ) = Z − n/ 2 X ψ ( l ) W ( q l /Z n ) , (4.1)
+SUM       y  393.8 x  286.8- 302.5 
+          line: M ψ ( r ; W ) = Z − r/ 2 X µ ( n ) ψ ( n ) W ( q n /Z r ) . (4.2)
+BAR       y  220.6 x  209.3- 211.7 
+BAR       y  220.6 x  217.3- 219.6 
+BAR       y  673.5 x  297.6- 300.6 

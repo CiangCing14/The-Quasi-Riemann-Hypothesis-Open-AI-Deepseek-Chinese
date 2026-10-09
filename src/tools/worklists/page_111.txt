@@ -1,0 +1,20 @@
+PAGE 111
+counts pdf: {'sum': 0, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 13}
+
+OVERLINE  y  206.1 x  138.5- 164.8 covers: 'χ p ( u ))'
+          line: | H ( B + χ ( u )) | ≪ Q − x r +2 ϑ + Q − 6 z r +2 ϑ + Q 4 − 5 x r − 6 z r +2 ϑ + Q 1 − w r − 6 z r + ϑ ≪ Q − 51 / 100 .
+PROD      y  520.3 x  291.0- 304.9 
+          line: χ n ( u ) = ϵ u ( q n − 1) / 6 Y R ( p, n ) j p χ p ( n ) j p .
+BAR       y   86.7 x  366.5- 369.5 
+BAR       y  100.3 x   70.9-  73.9 
+BAR       y  100.3 x  106.9- 110.0 
+BAR       y  207.2 x   92.1-  95.2 
+BAR       y  207.2 x  169.1- 172.1 
+BAR       y  287.8 x  118.6- 121.7 
+BAR       y  413.2 x  173.0- 176.1 
+BAR       y  413.2 x  184.4- 187.5 
+BAR       y  413.2 x  265.6- 268.6 
+BAR       y  413.2 x  277.4- 280.5 
+BAR       y  500.1 x  312.8- 315.1 
+BAR       y  538.8 x  296.5- 298.8 
+BAR       y  717.5 x  348.9- 352.0 

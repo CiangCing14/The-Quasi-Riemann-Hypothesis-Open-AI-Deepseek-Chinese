@@ -1,0 +1,21 @@
+PAGE 8
+counts pdf: {'sum': 0, 'prod': 1, 'int': 1, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 8}
+
+OVERLINE  y  165.1 x  254.4- 268.3 covers: '− 3) primitive'
+          line: Throughout the paper, F = Q ( √ − 3) . It suffices to consider primitive target characters.
+PROD      y  305.5 x  299.3- 313.3 
+          line: L S F ( s, η ) = L F ( s, η ) Y (1 − η ( p ) N p − s ) .
+INT       y  537.1 x  252.8- 258.9 
+          line: f ( Z ) = 1 Z Z C ( s ) e ( s − 5 / 6) 2 H η ( s ) ds. (2.3)
+PAREN     y  215.9 x  139.6- 147.7 ch=(
+PAREN     y  215.9 x  187.1- 195.3 ch=(
+PAREN     y  215.9 x  458.5- 466.7 ch=)
+PAREN     y  215.9 x  466.7- 474.7 ch=)
+BAR       y  494.1 x  272.4- 275.4 
+BAR       y  494.1 x  321.9- 324.9 
+BAR       y  594.9 x  266.9- 269.9 
+BAR       y  594.9 x  297.7- 300.8 
+BAR       y  613.4 x  226.5- 229.5 
+BAR       y  613.4 x  297.7- 300.8 
+BAR       y  732.0 x  209.9- 212.9 
+BAR       y  732.0 x  240.0- 243.0 

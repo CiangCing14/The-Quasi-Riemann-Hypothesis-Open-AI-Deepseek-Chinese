@@ -1,0 +1,24 @@
+PAGE 24
+counts pdf: {'sum': 2, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 1, 'abs': 5}
+
+ACCENT    y  575.2 x  359.5- 365.5 
+          line: ϕ ( x ) = 0 , otherwise , ϕ b ( h ) = q L − 1 x mod X L ϕ ( x ) e ( − hx/L )
+SUM       y  114.3 x  263.1- 278.9 
+          line: D D R ′ ( s ) ≤ X q log σ 0 − q p 1 ≪ σ 0 log(2 q R ) .
+SUM       y  567.7 x  420.4- 436.2 
+          line: ϕ ( x ) = ( χ x ( λ ) 2 Ψ 0 ( x ) , x ≡ 1 (mod 3) , ( x, E ) = 1 , ϕ b ( h ) = q L − 1 X ϕ ( x ) e ( − hx/L )
+PROD      y  682.4 x  304.9- 318.8 
+          line: Ψ( n ) = Ψ 0 ( n ) Y χ p ( n ) j p .
+PAREN     y  425.2 x  217.9- 222.9 ch=(
+PAREN     y  425.2 x  271.6- 276.6 ch=)
+BAR       y  108.8 x  209.3- 213.0 
+BAR       y  115.4 x  209.3- 213.0 
+BAR       y  121.9 x  209.3- 213.0 
+BAR       y  128.5 x  209.3- 213.0 
+BAR       y  108.8 x  244.9- 248.6 
+BAR       y  115.4 x  244.9- 248.6 
+BAR       y  121.9 x  244.9- 248.6 
+BAR       y  128.5 x  244.9- 248.6 
+BAR       y  132.8 x  268.7- 271.1 
+BAR       y  536.3 x   92.0-  95.1 
+BAR       y  536.3 x  149.2- 152.2 

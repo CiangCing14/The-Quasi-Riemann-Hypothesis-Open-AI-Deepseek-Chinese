@@ -1,0 +1,53 @@
+PAGE 143   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) U2 P1 | zh 0
+   \mathcal U  y  354.2 x  276.0   line: For a fixed assigned tuple, its contribution U to M ( Z r ; W ) Q is exactly
+   \mathcal U  y  379.1 x  150.0   line: U = µ ( j ) Y a ( p ) W ( y ) Z − G ψ ( j ) 2 Z − D ′ / 2 X µ ( c ) ψ ( c )
+   \mathcal P  y  441.8 x  251.8   line: ( p i ) ∈ Q P i i ∈ I 0 i ∈ I 0
+EUFM -> \mathfrak : pdf 4 glyph(s) H2 d2 | zh 0
+   \mathfrak H  y  625.8 x  176.5   line: H ( y , ( y ) ) = Ω ( y ) Y Ω ( y ) W j c
+   \mathfrak H  y  714.0 x  212.0   line: (2 π ) − 1 −| I 0 | H ( υ ) Z − D / 2 X µ ( c ) ψ ( c )1 d ( c ) ω ( y ) y iυ c d υ ,
+   \mathfrak d  y  714.0 x  382.8   line: (2 π ) − 1 −| I 0 | H ( υ ) Z − D / 2 X µ ( c ) ψ ( c )1 d ( c ) ω ( y ) y iυ c d υ ,
+   \mathfrak d  y  748.9 x  101.4   line: where d has the original surviving lists and individual coefficients µ ( p ) a ( p ) W ( y ) y iυ i . Expand-
+MSBM -> \mathbb : pdf 1 glyph(s) R1 | zh 1
+   \mathbb R  y  724.5 x  182.2   line: R 1+ | I 0 |
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 135.3 x 203.1
+    below[0]: i assigned
+    below[1]: is exactly the
+    below[2]: 0
+    above[0]: assigned subset define
+\prod at y 376.7 x 206.2
+    below[0]: i/ ∈ I
+    below[1]: 0
+    above[0]: tuple, its contribution
+\sum at y 376.7 x 376.4
+    below[0]: c sf
+    below[1]: ( c,j )=1
+    above[0]: W ) Q u is exactly
+\sum at y 423.2 x 226.2
+    below[0]: ( p ) ∈ Q P
+    below[1]: i i
+    below[2]: i ∈ I 0
+    below[3]: P | c
+    below[4]: 0
+    above[0]: i/ ∈ I
+    above[1]: 0
+\prod at y 423.2 x 292.6
+    below[0]: i ∈ I
+    below[1]: 0
+\prod at y 623.3 x 304.2
+    below[0]: i ∈ I
+    below[1]: 0
+    below[2]: coordinates.
+\int at y 707.0 x 176.2
+    below[0]: R
+    below[1]: 1+ | I 0 |
+    above[0]: i ) stay outside
+    above[1]: ( 17.67 )
+\sum at y 711.5 x 286.4
+    below[0]: c sf
+    above[0]: transform. Equation
+    above[1]: the same assigned
+
+---- Chinese file today: \substack x2, line breaks \\ x2 ----

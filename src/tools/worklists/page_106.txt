@@ -1,0 +1,41 @@
+PAGE 106
+counts pdf: {'sum': 3, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 0, 'abs': 15}
+
+OVERLINE  y  254.0 x  248.3- 258.2 covers: 'N'
+          line: X a ( m ) W ( m / √ N ) ≪ (1 + | ν | ) J Gr R − B q N 2 min { 1 , ( Q /N ) A } . (15.5)
+OVERLINE  y  405.3 x  346.8- 363.0 covers: 'K R + 1'
+          line: # { k : 0 < q ≤ C K } ≪ K + p K + 1 ≪ K .
+SUM       y  252.9 x  134.7- 150.4 
+          line: X a C,d,k ( m ) W R ( m / √ N ) ≪ (1 + | ν | ) J Gr R − B q C N 2 min { 1 , ( Q /N ) A } . (15.5)
+SUM       y  526.6 x  101.7- 117.4 
+          line: X 2 − i − j min { 1 , (2 i + j / Λ) A } = X ( n + 1)2 − n min { 1 , (2 n / Λ) A } ≪ A 1 + log(2 + Λ) Λ .
+SUM       y  526.6 x  250.7- 266.5 
+          line: X 2 − i − j min { 1 , (2 i + j / Λ) A } = X ( n + 1)2 − n min { 1 , (2 n / Λ) A } ≪ A 1 + log(2 + Λ) Λ .
+PAREN     y  464.0 x  334.5- 342.5 ch=(
+PAREN     y  464.0 x  391.6- 399.6 ch=)
+BAR       y  113.8 x  192.8- 195.8 
+BAR       y  113.8 x  201.9- 204.9 
+BAR       y  140.9 x  481.6- 484.7 
+BAR       y  140.9 x  490.7- 493.8 
+BAR       y  240.9 x  126.5- 130.1 
+BAR       y  247.5 x  126.5- 130.1 
+BAR       y  254.0 x  126.5- 130.1 
+BAR       y  260.6 x  126.5- 130.1 
+BAR       y  267.1 x  126.5- 130.1 
+BAR       y  273.7 x  126.5- 130.1 
+BAR       y  240.9 x  262.5- 266.1 
+BAR       y  247.5 x  262.5- 266.1 
+BAR       y  254.0 x  262.5- 266.1 
+BAR       y  260.6 x  262.5- 266.1 
+BAR       y  267.1 x  262.5- 266.1 
+BAR       y  273.7 x  262.5- 266.1 
+BAR       y  255.3 x  306.1- 309.2 
+BAR       y  255.3 x  315.2- 318.3 
+BAR       y  471.4 x  198.2- 201.2 
+BAR       y  471.4 x  207.3- 210.4 
+BAR       y  605.5 x  280.0- 283.0 
+BAR       y  605.5 x  289.1- 292.2 
+BAR       y  725.7 x  183.1- 186.1 
+BAR       y  725.7 x  200.6- 203.7 
+BAR       y  762.4 x  228.7- 231.8 
+BAR       y  762.4 x  237.9- 240.9 

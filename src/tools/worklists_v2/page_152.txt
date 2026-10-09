@@ -1,0 +1,17 @@
+PAGE 152   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 1 glyph(s) O1 | zh 0
+   \mathcal O  y  242.6 x  226.5   line: O δ
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 197.9 x 246.5
+    below[0]: d | rad a
+    below[1]: δ
+    below[2]: d ( a ) ≪ P .
+    above[0]: share primes:
+\sum at y 377.5 x 181.9
+    below[0]: u
+    below[1]: preliminary δ
+    above[0]: element u , including
+    above[1]: . Thus Equation
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

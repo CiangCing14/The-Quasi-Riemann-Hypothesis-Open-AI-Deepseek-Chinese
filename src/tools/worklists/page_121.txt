@@ -1,0 +1,36 @@
+PAGE 121
+counts pdf: {'sum': 5, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 18}
+
+OVERLINE  y  278.6 x  321.2- 334.1 covers: 'q m'
+          line: X ψ ( x ) e ( hx/m ) = √ q m γ ( ψ ; m ) ψ ¯ ( h ) .
+SUM       y   96.9 x  172.2- 187.9 
+          line: X ψ ( k )1 ( k,R )=1 Φ( q k /K )
+SUM       y  131.7 x  251.7- 267.4 
+          line: = Kγ √ ( ψ q ; m ) X µ ( d q ) ψ ( d ) X ψ ¯ ( h ) F Φ  Kq q q h  , (17.8)
+SUM       y  131.7 x  322.2- 338.0 
+          line: = Kγ √ ( ψ q ; m ) X µ ( d q ) ψ ( d ) X ψ ¯ ( h ) F Φ  Kq q q h  , (17.8)
+SUM       y  275.1 x  208.0- 223.7 
+          line: X ψ ( x ) e ( hx/m ) = √ q m γ ( ψ ; m ) ψ ¯ ( h ) .
+SUM       y  443.6 x  252.9- 268.7 
+          line: A X |F Φ( Aq h ) | ≪ Φ 1 .
+PAREN     y  126.6 x  379.7- 387.8 ch=(
+PAREN     y  126.6 x  412.7- 420.8 ch=)
+BAR       y  150.2 x  250.5- 252.9 
+BAR       y  188.2 x   70.9-  73.9 
+BAR       y  188.2 x  110.6- 113.6 
+BAR       y  229.8 x  222.9- 225.2 
+BAR       y  229.8 x  255.6- 258.0 
+BAR       y  338.5 x  347.5- 350.5 
+BAR       y  338.5 x  434.3- 437.3 
+BAR       y  338.5 x  490.5- 493.5 
+BAR       y  338.5 x  515.8- 518.8 
+BAR       y  352.1 x  156.0- 159.0 
+BAR       y  352.1 x  198.6- 201.7 
+BAR       y  352.1 x  455.6- 458.7 
+BAR       y  352.1 x  495.3- 498.4 
+BAR       y  365.6 x   89.5-  92.5 
+BAR       y  365.6 x  114.7- 117.8 
+BAR       y  365.6 x  196.9- 199.9 
+BAR       y  365.6 x  236.6- 239.6 
+BAR       y  446.0 x  270.5- 273.5 
+BAR       y  446.0 x  317.3- 320.3 

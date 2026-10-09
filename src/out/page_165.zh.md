@@ -11,10 +11,10 @@ $$\ll Z^{-a_0} Y_{\mathrm{col}}^{1/6} Y_{\mathrm{col}}^{1/2} \Big)^2 Z^{\epsilon
 18.6 第二次变换与更小宽度的乘积
 
 在展开平方之前恢复所有活跃槽的和。令 $B(u)$ 表示前述某个 Gauss 多项式中完整分配的卷积系数，包括其固定掩码与 $s$-整除条件。当使用中心化时，它包含整个差。其模满足 $q_u/Z^{a_0} \in \exp([-H_N, H_N])$。令 $\Phi_2$ 为定义最终行球的非负光滑径向函数。除素数密度中的 $Z^{o(1)}$ 损失外，待界定的范数为
-$$Z^{-\ell} \sum_h \Phi_2(q_h/Z^{K+g}) Z^{-a_0/2} \sum_u B(u)\tau_1(u) q_u^{it} G(u,h) \Bigg|^2.$$
+$$Z^{-\ell} \sum_h \Phi_2(q_h/Z^{K+g}) \left| Z^{-a_0/2} \sum_u B(u)\tau_1(u) q_u^{it} G(u,h) \right|^2.$$
 
 引理 13.3 中的 Fourier 恒等式给出其精确展开
-$$Z^{K+g-\ell-a_0} \sum_{u,v} \frac{B(u)B(v)\tau_1(u)\tau_1(v) q_u^{it} q_v^{-it}}{\sqrt{q_u q_v}} \sum_j F(u,v;j) \widehat{\Phi}_2\!\left(\frac{Z^{K+g} q_j}{q_u q_v}\right).$$
+$$Z^{K+g-\ell-a_0} \sum_{u,v} \frac{B(u)\overline{B(v)}\tau_1(u)\overline{\tau_1(v)} q_u^{it} q_v^{-it}}{\sqrt{q_u q_v}} \sum_j F(u,v;j) \widehat{\Phi}_2\!\left(\frac{Z^{K+g} q_j}{q_u q_v}\right).$$
 
 此处出现的核为
 $$\widehat{\Phi}_2\!\left(\frac{Z^{K+g} q_j}{q_u q_v}\right). \tag{18.30}$$

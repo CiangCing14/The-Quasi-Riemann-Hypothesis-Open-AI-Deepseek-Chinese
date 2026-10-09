@@ -1,0 +1,56 @@
+PAGE 138   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) B2 T2 A1 | zh 0
+   \mathcal B  y  286.3 x  418.6   line: V ( ξ ; ζ ) = w + µ ( d ) µ ( v ′ ) G ( ϑ ) | B ( g ′ ) | 2 | D ( v ′ ; d , k ′′ ) | 2 1 B ( k ′′ )
+   \mathcal A  y  304.4 x  179.3   line: × A ( ξ ) ψ ( y ) ψ ( y ) ψ ( y ) ψ ′′ ( y ) ω ( q /Z V c ) (17.56)
+   \mathcal T  y  397.6 x  107.2   line: Let T be the fixed v ′ -dyad, ray, and slot summand obtained from Equation ( 17.41 ) by the
+   \mathcal T  y  436.0 x  149.8   line: T = Z λ c +18 η + τ (2 π ) − 6 H ( ζ )
+   \mathcal B  y  643.8 x  252.4   line: latter appears only in characters and B . The derived label appears only in characters and its
+EUFM -> \mathfrak : pdf 8 glyph(s) d3 H3 A1 O1 | zh 0
+   \mathfrak d  y  120.8 x  409.3   line: W ′ ( z ) = ω ( Z δ N z ) z ε a iζ a , ν ′ = ν ϑ, d ′ = d ′ .
+   \mathfrak d  y  120.8 x  384.3   line: W ′ ( z ) = ω ( Z δ N z ) z ε a iζ a , ν ′ = ν ϑ, d ′ = d ′ .
+   \mathfrak d  y  191.1 x  327.0   line: × χ ( f ) 4 d ′ ( n ) W ′ ( q /Z N ch ) .
+   \mathfrak A  y  238.6 x  288.8   line: factors; all other phases involving the old b , A were placed in Equation ( 17.25 ) or in the old
+   \mathfrak O  y  343.5 x  348.2   line: All old pure arithmetic and priority masks are retained in O , with their nonnegative old coeffi-
+   \mathfrak H  y  436.1 x  281.0   line: T = Z λ c +18 η + τ (2 π ) − 6 H ( ζ )
+   \mathfrak H  y  696.5 x  184.1   line: | H ( t ) || H ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p ( W ) 2 . (17.58)
+   \mathfrak H  y  696.5 x  223.2   line: | H ( t ) || H ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p ( W ) 2 . (17.58)
+MSBM -> \mathbb : pdf 3 glyph(s) R3 | zh 3
+   \mathbb R  y  446.6 x  268.8   line: R 6
+   \mathbb R  y  707.0 x  150.6   line: R 9 R 6
+   \mathbb R  y  707.0 x  168.9   line: R 9 R 6
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 160.3 x 269.3
+    below[0]: n sf
+    below[1]: × χ ( f
+    below[2]: n new
+    above[0]: Z z ) z ,
+    above[1]: side is then
+\int at y 429.2 x 262.8
+    below[0]: 2 ,σ,
+    below[1]: R 6
+    below[2]: ( ξ ; ζ ) Q ( k
+    below[3]: σ 1 ,γ, ζ
+    above[0]: ray, and slot
+    above[1]: above. The
+\sum at y 459.0 x 207.2
+    below[0]: ξ ∈ Ξ
+    below[1]: σ
+    below[2]: Q ’s. Since
+    above[0]: λ +18 η + τ −
+    above[1]: c
+    above[2]: Z (2 π )
+\int at y 689.5 x 144.5
+    below[0]: R 9 R 6
+    below[1]: inner weighted
+    above[0]: Relations
+    above[1]: , J ≥ 0 , the
+    above[2]: ht
+\int at y 689.5 x 162.8
+    below[0]: 1
+    below[1]: R 9 R 6
+    below[2]: inner weighted
+    above[0]: Relations such
+    above[1]: ≥ 0 , the Euler
+
+---- Chinese file today: \substack x0, line breaks \\ x2 ----

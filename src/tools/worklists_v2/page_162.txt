@@ -1,0 +1,45 @@
+PAGE 162   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) C3 R1 N1 | zh 0
+   \mathcal C  y  213.2 x  431.3   line: For each retained dyad and genuine common-support allocation, define C ( a, b ; h ) to be the
+   \mathcal R  y  240.3 x  278.1   line: by the old masks. Use the fixed bicharacter R ( a, b ) , the full zero-extended G ( a, h ) , G ( b, − h ) , the
+   \mathcal C  y  306.4 x  229.2   line: X C ( a, b ; h ) = X C ( a, b ; h ) X µ ( s ) .
+   \mathcal C  y  306.4 x  306.8   line: X C ( a, b ; h ) = X C ( a, b ; h ) X µ ( s ) .
+   \mathcal N  y  531.5 x  122.1   line: N = X ω ( q /Z K ) Z − ( A − c ) / 2 X A ( a ) τ ′ ( a ) q it G ( a, h ) , ω ≥ 0 ,
+EUFM -> \mathfrak : pdf 5 glyph(s) c3 r1 e1 | zh 0
+   \mathfrak r  y  498.6 x  129.6   line: ξ r
+   \mathfrak c  y  650.1 x  520.1   line: common-support count uniformly, first count its radical, giving O ( Z p + ϵ 1 ) . For a fixed radical c
+   \mathfrak c  y  689.2 x  218.0   line: # { v : rad( v ) | c , q ≤ Z T } ≤ Z aT Y (1 − q − a ) − 1 ≪ Z aT + ϵ 1
+   \mathfrak c  y  705.3 x  327.0   line: r | c
+   \mathfrak e  y  760.6 x  134.1   line: the choice of e have divisor-bounded multiplicity. Finally there are O ( Z s 0 + ϵ 1 ) possible s .
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 304.1 x 205.6
+    below[0]: ( a,b )=1
+    below[1]: Möbius sum
+    above[0]: identifies this
+    above[1]: the exact identity
+\sum at y 304.1 x 289.2
+    below[0]: a,b
+    below[1]: the artificial
+    above[0]: definition with the
+    above[1]: is
+\sum at y 304.1 x 354.5
+    below[0]: s | a,b
+    below[1]: artificial noncoprime
+    above[0]: genuine summand
+\sum at y 529.1 x 152.7
+    below[0]: h =0 ̸
+    below[1]: is an analogous
+    above[0]: ξ r | ≤ 1 . The
+\sum at y 529.1 x 279.5
+    below[0]: s | a
+    below[1]: ′
+    below[2]: Here τ includes
+    above[0]: positive norm on the
+\prod at y 686.7 x 318.4
+    below[0]: r | c
+    below[1]: r prime
+    above[0]: its radical, giving
+    above[1]: bound gives
+
+---- Chinese file today: \substack x1, line breaks \\ x1 ----

@@ -1,0 +1,12 @@
+PAGE 162   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL C  y  213.2 x  431.3- 437.0
+      line: For each retained dyad and genuine common-support allocation, define C ( a, b ; h ) to be the
+CAL R  y  240.3 x  278.1- 287.4
+      line: by the old masks. Use the fixed bicharacter R ( a, b ) , the full zero-extended G ( a, h ) , G ( b, − h ) , the
+CAL C  y  306.4 x  229.2- 235.0
+      line: X C ( a, b ; h ) = X C ( a, b ; h ) X µ ( s ) .
+CAL C  y  306.4 x  306.8- 312.5
+      line: X C ( a, b ; h ) = X C ( a, b ; h ) X µ ( s ) .
+CAL N  y  531.5 x  122.1- 131.1
+      line: N = X ω ( q /Z K ) Z − ( A − c ) / 2 X A ( a ) τ ′ ( a ) q it G ( a, h ) , ω ≥ 0 ,

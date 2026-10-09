@@ -24,7 +24,7 @@ $$\begin{array}{cccc}
 
     对于两个奇数族 $t=6r+3$ 和 $t=6r+4$。它们的 $k=0$ 行要求 $j'=t-1$，而它们的 $k=1$ 行要求 $j'=t$。相位化简为
 
-$$\gamma_1\gamma_2=-\alpha(p)\chi_p(4)\gamma_3,\qquad \frac{\gamma_4}{\gamma_1}=-\frac{\alpha(p)}{G(p)}.$$
+$$\gamma_1\gamma_2=-\alpha(p)\overline{\chi_p(4)}\gamma_3,\qquad \frac{\gamma_4}{\gamma_1}=-\frac{\overline{\alpha(p)}}{G(p)}.$$
 
 第一式是 $p$ 处的式 (4.7)；第二式由第一式及 $\gamma_2\gamma_4=1$ 推出。代入给出最后四行，包括两个 $j=3$ 项。因此该表覆盖了全部五个分歧赋值以及 $j=0$。
 

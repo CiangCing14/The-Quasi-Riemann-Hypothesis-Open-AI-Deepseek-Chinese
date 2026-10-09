@@ -1,0 +1,16 @@
+PAGE 133   calligraphic glyphs in the PDF: 7   \mathcal in the Chinese: 0
+
+CAL B  y  315.1 x  232.8- 240.0
+      line: formal expression carry the same B mask; their absolute sum is bounded by the full principal
+CAL R  y  431.8 x  109.2- 118.5
+      line: roots is R ( z , z ) . Thus their combined ray factor is
+CAL R  y  456.3 x  315.8- 325.0
+      line: G ( a, b ) = χ ( − 1) G ( a ) G ( b ) R ( a, b ) = G ( ba − 1 ) .
+CAL R  y  480.8 x  315.1- 324.3
+      line: The last equality follows from Equation ( 4.5 ) and R ( a, a ) = χ ( − 1) , first on primes by Equa-
+CAL B  y  555.1 x  418.1- 425.3
+      line: Insert dyads of q ′′ from one partition common to all d , d . The mask B implies q ′′ ≤ Z M ch ,
+CAL K  y  620.2 x  434.0- 442.3
+      line: H = CJ, r = rad q t ′ , d = d , a ( z ) = α ¯ ( z ) γ ( z ) , K = F Φ ,
+CAL F  y  620.2 x  461.6- 469.5
+      line: H = CJ, r = rad q t ′ , d = d , a ( z ) = α ¯ ( z ) γ ( z ) , K = F Φ ,

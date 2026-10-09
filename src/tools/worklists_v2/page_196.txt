@@ -1,0 +1,8 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 170.3 x 361.3
+    below[0]: i
+    below[1]: affects only the
+    above[0]: in Section 20.1
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

@@ -1,0 +1,12 @@
+PAGE 40   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL U  y  342.6 x  476.2- 483.1
+      line: The supports and invoked seminorms are fixed uniformly over the block. Denote by U ( R )
+CAL I  y  369.7 x  337.2- 343.2
+      line: and multiplied by W ( y , y , y ) . The original row set I consists of the allowed R for which
+CAL U  y  591.9 x  160.1- 167.0
+      line: U ( R ) = Z − ν 0 ρ ( R ) X β ( n, b ) χ ( nb ) 3 F ( y , y , y ) . (5.32)
+CAL U  y  726.3 x  121.5- 128.3
+      line: X |U ( R ) | 2 ≪ Z E 0 + ϵ p ( W ) 2 M ( V ) 2 ,
+CAL I  y  741.9 x  105.1- 109.7
+      line: R ∈I H (5.34)

@@ -1,0 +1,30 @@
+PAGE 8   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) S6 | zh 0
+   \mathcal S  y  280.8 x  159.5   line: For a finite set S of prime ideals, a superscript S means that the corresponding Euler factors
+   \mathcal S  y  280.8 x  309.6   line: For a finite set S of prime ideals, a superscript S means that the corresponding Euler factors
+   \mathcal S  y  305.7 x  212.3   line: L S ( s, η ) = L ( s, η ) Y (1 − η ( p ) N p − s ) .
+   \mathcal S  y  323.5 x  308.3   line: p ∈S
+   \mathcal S  y  450.9 x  252.4   line: acter η , suppose there exist a finite set S , a holomorphic function H on ℜ s > σ , and a function
+   \mathcal S  y  550.5 x  356.0   line: η 2 πi L S ( s, η )
+EUFM -> \mathfrak : pdf 5 glyph(s) p5 | zh 5
+   \mathfrak p  y  192.5 x  216.1   line: by finitely many factors 1 − η ( p ) N p − s , all nonzero for ℜ s > 0 . Define
+   \mathfrak p  y  192.5 x  235.7   line: by finitely many factors 1 − η ( p ) N p − s , all nonzero for ℜ s > 0 . Define
+   \mathfrak p  y  308.0 x  347.1   line: L S ( s, η ) = L ( s, η ) Y (1 − η ( p ) N p − s ) .
+   \mathfrak p  y  308.0 x  366.7   line: L S ( s, η ) = L ( s, η ) Y (1 − η ( p ) N p − s ) .
+   \mathfrak p  y  323.5 x  298.6   line: p ∈S
+MSBM -> \mathbb : pdf 2 glyph(s) Q1 R1 | zh 2
+   \mathbb Q  y  163.0 x  232.5   line: Throughout the paper, F = Q ( − 3) . It suffices to consider primitive target characters.
+   \mathbb R  y  386.1 x  268.8   line: β − σ > 0 . Let C ( s ) = s + c , where c ∈ R is fixed. Suppose that numbers ω, σ satisfying
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 305.5 x 299.3
+    below[0]: p ∈S
+    below[1]: Each displayed
+    above[0]: a superscript S
+\int at y 537.1 x 252.8
+    below[0]: 2 πi
+    below[1]: ℜ s =2
+    above[0]: ℜ s>σ
+    above[1]: 0
+
+---- Chinese file today: \substack x0, line breaks \\ x1 ----

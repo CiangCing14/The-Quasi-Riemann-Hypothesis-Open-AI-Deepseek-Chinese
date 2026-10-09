@@ -1,0 +1,20 @@
+PAGE 155   calligraphic glyphs in the PDF: 9   \mathcal in the Chinese: 4
+
+CAL S  y  261.6 x  413.1- 419.7
+      line: conductor scale in the functional equation. Tameness at primes outside S gives
+CAL S  y  284.9 x  296.3- 301.4
+      line: k R 0 ,k S ,τ fixed
+CAL S  y  327.3 x  437.6- 444.2
+      line: moving radical, whose norm is at most q Z q . By Lemma 4.1 , the unit and S -supported parts
+CAL S  y  340.8 x  515.3- 521.9
+      line: of a row, with valuations reduced modulo six when evaluated on primary elements prime to S ,
+CAL S  y  354.4 x  331.9- 338.5
+      line: range over a fixed finite ray family. Thus all primes in S contribute only a fixed factor.
+CAL M  y  433.6 x  218.2- 231.3
+      line: M W ♯ ( s ) = M W (1 − s ) .
+CAL M  y  433.6 x  275.1- 288.2
+      line: M W ♯ ( s ) = M W (1 − s ) .
+CAL M  y  525.8 x  205.9- 219.0
+      line: W ( y ) y iω , the exact identity M W ( s ) = M W ( s + iω ) puts all height dependence in a translate
+CAL M  y  525.8 x  263.8- 276.9
+      line: W ( y ) y iω , the exact identity M W ( s ) = M W ( s + iω ) puts all height dependence in a translate

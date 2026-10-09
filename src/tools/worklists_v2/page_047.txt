@@ -1,0 +1,58 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 286.4 x 199.0
+    below[0]: ∈O j =1
+    below[1]: m
+    below[2]: q ≤ Q
+    below[3]: m
+    above[0]: complex numbers
+    above[1]: J
+\sum at y 286.4 x 224.4
+    below[0]: ∈O j =1
+    below[1]: m
+    below[2]: q ≤ Q
+    below[3]: m
+    above[0]: numbers a 1
+    above[1]: J
+\sum at y 286.4 x 358.9
+    below[0]: j =1
+    above[0]: J
+\int at y 402.9 x 189.2
+    below[0]: C
+    below[1]: ∞
+    below[2]: ϕ ∈ C (
+    above[0]: is immediate
+    above[1]: Choose representatives
+\int at y 402.9 x 351.7
+    below[0]: C
+    below[1]: supported in a
+    above[0]: characters e (
+    above[1]: other cases. We
+\sum at y 635.6 x 174.8
+    below[0]: q ≤ Q j
+    below[1]: m
+    below[2]: right converge
+    above[0]: Q . Positivity of
+\sum at y 635.6 x 200.1
+    below[0]: q ≤ Q j
+    below[1]: m
+    below[2]: converge
+    above[0]: Positivity of F first
+\sum at y 635.6 x 285.5
+    below[0]: m ∈O
+    below[1]: For any
+    above[0]: gives
+    above[1]: 2
+\sum at y 635.6 x 351.1
+    below[0]: j
+    below[1]: C
+    below[2]: z ∈ , the
+\sum at y 738.1 x 229.5
+    below[0]: j,k n
+    above[0]: no lattice-volume factor occurs because
+    above[1]: side as
+\sum at y 738.1 x 270.9
+    below[0]: n ∈O
+    above[0]: dµ
+
+---- Chinese file today: \substack x1, line breaks \\ x1 ----

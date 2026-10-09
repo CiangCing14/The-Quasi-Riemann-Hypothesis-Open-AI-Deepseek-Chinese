@@ -1,0 +1,12 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 335.2 x 299.1
+    below[0]: l
+    below[1]: polynomial of log-length
+    above[0]: real log-length
+\sum at y 393.8 x 286.8
+    below[0]: n
+    below[1]: definitions. At
+    above[0]: polynomial of
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

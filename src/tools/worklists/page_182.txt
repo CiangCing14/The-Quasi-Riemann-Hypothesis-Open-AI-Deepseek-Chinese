@@ -1,0 +1,31 @@
+PAGE 182
+counts pdf: {'sum': 2, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 1, 'abs': 8}
+
+OVERLINE  y  642.2 x  231.8- 251.9 covers: 'ν ( p )1'
+          line: ν ( p )1 = 1 X ( νθ )( p ) .
+OVERLINE  y  645.7 x  330.7- 336.8 covers: 'νθ'
+          line: ν ( p )1 p ∈ 1 = 1 X ( νθ )( p ) .
+ACCENT    y  664.9 x  321.8- 326.5 
+          line: θ ∈ T b
+SUM       y  163.8 x  375.2- 390.9 
+          line: q = P i ℓ ℓ i g i , 0 ≤ q ≤ δ/ 2 , ℓ = X ℓ i . (19.1)
+SUM       y  640.8 x  310.6- 326.4 
+          line: ν ( p )1 p ∈ 1 T = | T 1 | X ( νθ )( p ) .
+PROD      y  496.5 x  240.9- 254.9 
+          line: Y Q i ≥ U 2 qz − δ max i w i .
+BAR       y  100.3 x  198.5- 201.5 
+BAR       y  100.3 x  213.5- 216.6 
+BAR       y  100.3 x  344.9- 348.0 
+BAR       y  100.3 x  360.0- 363.0 
+BAR       y  487.8 x  226.6- 230.3 
+BAR       y  494.3 x  226.6- 230.3 
+BAR       y  500.9 x  226.6- 230.3 
+BAR       y  507.4 x  226.6- 230.3 
+BAR       y  514.0 x  226.6- 230.3 
+BAR       y  487.8 x  279.4- 283.0 
+BAR       y  494.3 x  279.4- 283.0 
+BAR       y  500.9 x  279.4- 283.0 
+BAR       y  507.4 x  279.4- 283.0 
+BAR       y  514.0 x  279.4- 283.0 
+BAR       y  650.7 x  293.6- 296.6 
+BAR       y  650.7 x  304.5- 307.5 

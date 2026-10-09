@@ -1,0 +1,4 @@
+PAGE 150   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) O1 B1 | zh 1
+   \mathcal O  y  636.4 x  450.1   line: max slot max O slot c slot
+   \mathcal B  y  735.3 x  233.3   line: Equation ( 17.21 ) makes the raw B = 0 complement O ( Z − T init ) , with fixed seminorm and

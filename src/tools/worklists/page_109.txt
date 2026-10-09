@@ -1,0 +1,30 @@
+PAGE 109
+counts pdf: {'sum': 1, 'prod': 4, 'int': 3, 'sqrt': 0, 'overline': 2, 'hat': 0, 'abs': 7}
+
+OVERLINE  y  500.3 x  235.5- 255.5 covers: 'ξ ( u )'
+          line: · X q − z ξ ( u ) ζ F S (6 z ) L S ( w, χ • ( u )) H ( x, w, z ) dz dw dx.
+OVERLINE  y  748.3 x  286.3- 306.1 covers: 'η ( p )'
+          line: + ( η ( p ) Q x + v − 1 − Q − w ) E i .
+SUM       y  498.9 x  201.3- 217.0 
+          line: · X q u − z ξ ( u ) ζ F S (6 S z ) L S ( w, χ • ( u )) H η,u,Z ( x, w, z ) dz dw dx.
+PROD      y  164.1 x  175.9- 189.8 
+          line: Y | H p | ≤ Y (1 + Cq p − 1 − ϵ H ) Y (1 + Cq p − ϵ H ) ≪ ϵ q u ϵ . (16.5)
+PROD      y  164.1 x  228.1- 242.1 
+          line: Y | H p | ≤ Y (1 + Cq p − 1 − ϵ H ) Y (1 + Cq p − ϵ H ) ≪ ϵ q u ϵ . (16.5)
+PROD      y  164.1 x  314.0- 328.0 
+          line: Y | H p | ≤ Y (1 + Cq p − 1 − ϵ H ) Y (1 + Cq p − ϵ H ) ≪ ϵ q u ϵ . (16.5)
+PROD      y  373.7 x  301.3- 315.2 
+          line: | H η,u,Z ( x, w, z ) | ≪ ϵ q u ϵ Y P i z r + B ≪ ϵ q u ϵ Z B ′ . (16.6)
+INT       y  456.9 x  215.8- 221.9 
+          line: I ( Z ) = 1 Z Z Z W ( X, Y, Z ; x, w, z )
+INT       y  456.9 x  235.0- 241.1 
+          line: I ( Z ) = 1 Z Z Z W ( X, Y, Z ; x, w, z )
+INT       y  456.9 x  254.2- 260.3 
+          line: I ( Z ) = 1 Z Z Z W ( X, Y, Z ; x, w, z )
+BAR       y  166.4 x  192.9- 195.9 
+BAR       y  166.4 x  209.8- 212.8 
+BAR       y  182.6 x  319.5- 321.8 
+BAR       y  334.4 x  164.4- 167.4 
+BAR       y  334.4 x  180.8- 183.8 
+BAR       y  376.0 x  195.4- 198.4 
+BAR       y  376.0 x  265.3- 268.3 

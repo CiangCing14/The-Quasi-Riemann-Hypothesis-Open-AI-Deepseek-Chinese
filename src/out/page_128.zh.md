@@ -8,7 +8,7 @@ $$\widehat{c} := \log_{\mathbb{Z}} \frac{q}{q_0} = \widehat{\ell}_{\mathrm{pair}
 $$\xi(n) = \chi_n(J)^4 \mathbf{1}_{(n,\mathrm{rad}\,q_0)=1}. \tag{17.25}$$
 事实上，指数为四的素数恰好是 $sJ_2$ 的那些素数；$B$ 的每个其他素数都整除 $q_0$。同时属于 $J$ 与 $q_0$ 的素数只是重复了 $\chi_n(J)^4$ 已经提供的零。我们将在稍后的平均中固定 $q_0$ 但保留 $J$。模 $q_0$ 贡献一个 punctures，且不属于固定 ray group。对于固定的 $J, q_0$，$s, J_2$ 的选取、分解 $b_1 b_2 = q_0^2 J_2^2 s$ 以及理想 $A_i$ 仅有除子重数。
 我们现在局部化真正的第一 Poisson 表达式，在延拓其互素支集或取绝对 Fourier 积分之前。局部表给出精确的实际范数恒等式
-$$\widehat{b_1} - A + \widehat{b_2} - B + \widehat{E} = \widehat{s} - 2\widehat{j_2}.$$
+$$\widehat{b_1} - \widehat{A} + \widehat{b_2} - B + \widehat{E} = \widehat{s} - 2\widehat{j_2}.$$
 对于 $y = hf^2 E$，蕴含 $Z^M q_h/(q_{\mathrm{dk}} q_{m1}) \le Z^\tau$ 与方程 (17.23) 给出
 $$\widehat{y} \le \widehat{n_1} + \widehat{n_2} - 2\widehat{B} - M + \widehat{s} - 2\widehat{j_2} + \widehat{\delta} + 2\widehat{f} + \tau$$
 $$\le \widehat{n_1} + \widehat{n_2} - 2\widehat{B} - M + 4\widehat{\ell}_{\mathrm{pair}} - \widehat{j} + \widehat{\delta} + 2\widehat{f} + \tau.$$

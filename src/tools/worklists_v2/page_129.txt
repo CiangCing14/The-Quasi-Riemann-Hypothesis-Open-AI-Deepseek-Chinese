@@ -1,0 +1,31 @@
+PAGE 129   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 7 glyph(s) B3 K2 I1 F1 | zh 0
+   \mathcal B  y  167.4 x  493.6   line: replaced by the fixed ray functions above. Those functions, the unchanged outer mask B , all
+   \mathcal B  y  275.8 x  186.2   line: those labels. The mask B implies q ≤ q ≤ Z H use , so there are only logarithmically many
+   \mathcal B  y  289.3 x  327.5   line: such dyads in the bounded retained scale range. Keep B outside every Fourier inversion. Define
+   \mathcal I  y  343.0 x  180.1   line: support is included in I , so this same bound holds directly on that support after separation,
+   \mathcal K  y  702.5 x   70.9   line: K = F Φ , define the single compact profile
+   \mathcal F  y  702.5 x   98.5   line: K = F Φ , define the single compact profile
+   \mathcal K  y  757.3 x  324.0   line: × W ( y y y y ) W ( y y y y ) K A h .
+EUFM -> \mathfrak : pdf 5 glyph(s) A4 H1 | zh 0
+   \mathfrak A  y  329.5 x  160.9   line: The identity n = A Ct ′ x on the factorized expression gives | x − s | ≤ 4 η . The full fresh x -
+   \mathfrak A  y  531.2 x  299.5   line: y = ( y , y , y , y , y , y , y , y , y ) =  A 1 , A 2 , C d k R 1 , t ′ , h , x 1 , x 2  .
+   \mathfrak A  y  531.2 x  325.9   line: y = ( y , y , y , y , y , y , y , y , y ) =  A 1 , A 2 , C d k R 1 , t ′ , h , x 1 , x 2  .
+   \mathfrak A  y  661.9 x  487.1   line: Choose fresh cutoffs ω equal to one on the old W -support divided by the individual A , C, t ′
+   \mathfrak H  y  723.9 x  115.2   line: H ( y ) = Z − 9 η/ 2 Y Ω ( y ) y − 1 y 1 / 2 y − 1 ( y y ) − 1 / 2
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 119.6 x 232.7
+    below[0]: t ′ | ( u ,u )
+    below[1]: 1 2
+    below[2]: center. This
+    above[0]: restoration
+    above[1]: 1 , u 2 ) = 1 by
+\prod at y 721.4 x 199.6
+    below[0]: α
+    below[1]: × W ( y y y y
+    below[2]: A C t x
+    above[0]: cutoffs equal
+    above[1]: single compact
+
+---- Chinese file today: \substack x0, line breaks \\ x2 ----

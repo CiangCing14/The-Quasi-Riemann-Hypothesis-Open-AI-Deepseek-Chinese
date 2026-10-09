@@ -1,0 +1,40 @@
+PAGE 145   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) B2 K2 F1 T1 | zh 0
+   \mathcal B  y  159.3 x  143.0   line: carry the same B mask and are bounded by the full principal restoration in Lemma 17.5 , since
+   \mathcal K  y  321.8 x  365.8   line: ν = ν ϑ, A ( z ) = α ¯ ( z ) γ ( z ) ν ( z ) , K = F Φ .
+   \mathcal F  y  321.8 x  401.9   line: ν = ν ϑ, A ( z ) = α ¯ ( z ) γ ( z ) ν ( z ) , K = F Φ .
+   \mathcal T  y  378.3 x  115.8   line: T init = X ψ ψ ′ ψ ′ µ ( d ′ ) G ( ϑ ) B ( h ′ )1
+   \mathcal B  y  378.3 x  285.7   line: T init = X ψ ψ ′ ψ ′ µ ( d ′ ) G ( ϑ ) B ( h ′ )1
+   \mathcal K  y  485.0 x  216.4   line: × √ K h .
+EUFM -> \mathfrak : pdf 2 glyph(s) d2 | zh 0
+   \mathfrak d  y  459.6 x  165.6   line: × d ( Cz ) d ( Cz ) W ( q q /Z D ) W ( q q /Z D ′ )
+   \mathfrak d  y  459.6 x  202.6   line: × d ( Cz ) d ( Cz ) W ( q q /Z D ) W ( q q /Z D ′ )
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 375.9 x 165.6
+    below[0]: ′
+    below[1]: C sf , d | C
+    below[2]: ′
+    below[3]: h =0 ̸
+    above[0]: Σ
+    above[1]: 0
+    above[2]: held fixed, the
+\sum at y 417.1 x 180.9
+    below[0]: z ,z sf
+    below[1]: 1 2
+    below[2]: ( z z ,Cj )=1
+    below[3]: 1 2
+    above[0]: ′
+    above[1]: ψ C ψ d
+    above[2]: ′
+    above[3]: C sf , d | C
+    above[4]: ′
+    above[5]: h =0 ̸
+\sum at y 631.9 x 271.6
+    below[0]: s | ( z ,z )
+    below[1]: 1 2
+    below[2]: ≥ 0
+    above[0]: characters, formal
+    above[1]: domain. Insert
+
+---- Chinese file today: \substack x2, line breaks \\ x6 ----

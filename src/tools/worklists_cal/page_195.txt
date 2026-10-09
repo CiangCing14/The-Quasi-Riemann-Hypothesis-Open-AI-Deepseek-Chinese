@@ -1,0 +1,4 @@
+PAGE 195   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL J  y  310.3 x  246.5- 253.9
+      line: Indeed, δ ≥ 1 / 50 , D ≥ 37 / 18 , and J ≥ 35 / 54 ; the dyadic lengths are bounded, and Proposi-

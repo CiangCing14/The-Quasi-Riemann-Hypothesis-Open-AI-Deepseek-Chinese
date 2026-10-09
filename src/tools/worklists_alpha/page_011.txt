@@ -1,0 +1,29 @@
+PAGE 11   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) O5 S1 | zh 5
+   \mathcal S  y  140.9 x  290.5   line: one at every prime outside S . We also write S = S . We call primes outside S good, and call
+   \mathcal O  y  229.4 x  515.4   line: Its extension to C is e ( z ) = exp(4 πi Im z/ 3) . The measure dµ ( z ) = (2 / 3) dx dy makes O
+   \mathcal O  y  256.5 x  292.0   line: e ( y ) = e ( ωy ) = 1 say v, u − v ∈ Z , hence y ∈O ; and the covolume of O for dµ is one. Lattice
+   \mathcal O  y  256.5 x  408.8   line: e ( y ) = e ( ωy ) = 1 say v, u − v ∈ Z , hence y ∈O ; and the covolume of O for dµ is one. Lattice
+   \mathcal O  y  529.7 x  383.4   line: Lemma 4.1 (Fixed numerators give ray characters) . Fix 0 ̸ = a ∈O . At a prime ideal p ∤ 6 a , let
+   \mathcal O  y  717.7 x  342.8   line: A 7−→ χ u Y π v p , u ∈O × , v ≥ 0 ,
+EUFM -> \mathfrak : pdf 16 glyph(s) p14 a2 | zh 15
+   \mathfrak a  y  297.5 x  193.8   line: # { a : q ≤ H } = √ + O ( H + 1) ( H ≥ 0) .
+   \mathfrak a  y  301.5 x  213.2   line: a
+   \mathfrak p  y  529.8 x  480.3   line: Lemma 4.1 (Fixed numerators give ray characters) . Fix 0 ̸ = a ∈O . At a prime ideal p ∤ 6 a , let
+   \mathfrak p  y  543.4 x   85.1   line: ( a/ p ) be the unique sixth root of unity congruent to a ( q p − 1) / 6 (mod p ) ; at a prime outside S this
+   \mathfrak p  y  543.4 x  390.9   line: ( a/ p ) be the unique sixth root of unity congruent to a ( q p − 1) / 6 (mod p ) ; at a prime outside S this
+   \mathfrak p  y  544.3 x  330.1   line: ( a/ p ) 6 be the unique sixth root of unity congruent to a ( q p − 1) / 6 (mod p ) ; at a prime outside S this
+   \mathfrak p  y  587.5 x  268.9   line: p = ( a/ p ) ,
+   \mathfrak p  y  590.9 x  332.1   line: p = ( a/ p ) ,
+   \mathfrak p  y  617.1 x  123.0   line: p
+   \mathfrak p  y  680.9 x  322.4   line: In particular, choose one generator π for each p ∈ S . On primary ideals outside S , the
+   \mathfrak p  y  684.8 x  269.3   line: p
+   \mathfrak p  y  716.8 x  280.3   line: A 7−→ χ u Y π v p , u ∈O × , v ≥ 0 ,
+   \mathfrak p  y  721.7 x  380.1   line: A  p  p
+   \mathfrak p  y  722.3 x  275.8   line: A  p  p
+   \mathfrak p  y  733.4 x  252.6   line: p ∈ S
+   \mathfrak p  y  766.4 x  247.4   line: p
+MSBM -> \mathbb : pdf 3 glyph(s) Q1 C1 Z1 | zh 3
+   \mathbb Q  y  211.6 x  324.6   line: e ( z ) = exp 2 πi Tr F/ Q ( z/λ ) .
+   \mathbb C  y  227.2 x  150.9   line: Its extension to C is e ( z ) = exp(4 πi Im z/ 3) . The measure dµ ( z ) = (2 / 3) dx dy makes O
+   \mathbb Z  y  254.3 x  227.1   line: e ( y ) = e ( ωy ) = 1 say v, u − v ∈ Z , hence y ∈O ; and the covolume of O for dµ is one. Lattice

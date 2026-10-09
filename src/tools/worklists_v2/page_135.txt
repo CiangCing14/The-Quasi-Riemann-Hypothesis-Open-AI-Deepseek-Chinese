@@ -1,0 +1,21 @@
+PAGE 135   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) I3 B2 C1 | zh 0
+   \mathcal C  y  104.6 x  293.8   line: ϑ ∈ C ray
+   \mathcal B  y  459.3 x  115.9   line: Keep B outside the Fourier separation of the full kernel and old windows. Let I , I , I , I
+   \mathcal I  y  527.0 x  144.3   line: window family I specified above. These full fresh child windows give the formal centers and
+   \mathcal I  y  620.9 x  509.1   line: f = JCd v ′ . The full fresh child cutoff and the full enlarged label window are included in I ,
+   \mathcal I  y  675.1 x  128.2   line: included in I ; thus the 4 η bound used in the second prefactor holds on the whole separated
+   \mathcal B  y  729.3 x  500.0   line: from any structural outer index set, which may contain zero-weight tuples even when B is
+EUFM -> \mathfrak : pdf 4 glyph(s) A2 O1 B1 | zh 0
+   \mathfrak O  y  283.2 x  123.5   line: belongs to O , | B ( g ′ ) | 2 forces ( g ′ , CJ ) = 1 , d | g ′ , and the retained zero of D , together with
+   \mathfrak B  y  418.7 x  225.9   line: survival exclusion because supp B ⊂ supp( Jq ) . The surviving mark is therefore an original
+   \mathfrak A  y  445.8 x   85.4   line: b , A assignment by this derived support, not a new independent prime choice.
+   \mathfrak A  y  607.4 x  435.6   line: On the factorized expression the bounds follow from the exact products n = A Ct ′ g ′ v ′ n and
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 84.3 x 288.2
+    below[0]: ϑ ∈ C
+    below[1]: b ray
+    below[2]: ray summand
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

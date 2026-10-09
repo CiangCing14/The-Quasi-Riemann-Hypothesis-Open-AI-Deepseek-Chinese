@@ -1,0 +1,23 @@
+PAGE 59   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) A3 X1 | zh 0
+   \mathcal X  y  100.3 x  307.9   line: after reducing its preliminary losses, there are ψ ∈X , a zero ρ = σ + iγ as in Lemma 8.1 , dyadic
+   \mathcal A  y  155.5 x  411.4   line: r m A ,ϵ
+   \mathcal A  y  221.0 x  237.8   line: r A ,ϵ m A ,ϵ
+   \mathcal A  y  221.0 x  347.5   line: r A ,ϵ m A ,ϵ
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 431.8 x 132.0
+    below[0]: l
+    below[1]: character is
+    above[0]: be a fixed smooth
+\int at y 427.3 x 321.2
+    below[0]: ∗
+    below[1]: 2 πi
+    below[2]: (2)
+    above[0]: on [0 , 1] and
+\sum at y 695.2 x 212.1
+    below[0]: l,k
+    below[1]: coefficient of ψ
+    above[0]: absolute
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

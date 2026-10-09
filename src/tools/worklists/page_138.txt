@@ -1,0 +1,37 @@
+PAGE 138
+counts pdf: {'sum': 2, 'prod': 0, 'int': 3, 'sqrt': 0, 'overline': 1, 'hat': 5, 'abs': 12}
+
+OVERLINE  y  460.3 x  346.3- 428.7 covers: 'Q 2 ,γ, ζ ( k new , f new )'
+          line: × X V ( ξ ; ζ ) Q ( k , f ) Q ( k , f ) d ζ . (17.57)
+ACCENT    y  257.2 x   92.3-  98.3 
+          line: complete row e h . The remaining separated outer annular weight weight is W a ′ is also independent of the new row and label. The
+ACCENT    y  291.5 x  232.3- 238.4 
+          line: V σ ( ξ ; ζ ) = w o + µ ( d 2 ) µ ( v ′ ) G b ( ϑ ) | B o ( g ′ ) | 2 | D o ( v ′ ; d 2 , k ′′ ) | 2 1 ( v ′ ,g ′ CJ V )=1 B 2 ( k ′′ )
+ACCENT    y  441.2 x  281.9- 288.0 
+          line: T σ,i = Z λ c +18 η + τ (2 π ) − 6 R 6 H b 2 ,σ, t ( ζ )
+ACCENT    y  701.5 x  185.0- 191.1 
+          line: R 9 R 6 | H b 1 ,σ ( t ) || H b 2 ,σ, t ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p b ( W ) 2 . (17.58)
+ACCENT    y  701.5 x  224.1- 230.2 
+          line: R 9 R 6 | H b 1 ,σ ( t ) || H b 2 ,σ, t ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p b ( W ) 2 . (17.58)
+SUM       y  160.3 x  269.3- 285.0 
+          line: Q a,γ, ζ ( k new , f new ) = X α ¯ ( n ) γ 2 ( n ) ν a ′ ( n ) ρ ′ ( n ) χ n ( k new )
+SUM       y  459.0 x  207.2- 222.9 
+          line: × X V σ ( ξ ; ζ ) Q 1 ,γ, ζ ( k new , f new ) Q 2 ,γ, ζ ( k new , f new ) d ζ . (17.57)
+INT       y  429.2 x  262.8- 268.8 
+          line: T = Z λ c +18 η + τ (2 π ) − 6 Z H ( ζ )
+INT       y  689.5 x  144.5- 150.6 
+          line: Z Z | H ( t ) || H ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p ( W ) 2 . (17.58)
+INT       y  689.5 x  162.8- 168.9 
+          line: Z Z | H ( t ) || H ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p ( W ) 2 . (17.58)
+BAR       y  286.3 x  253.7- 256.7 
+BAR       y  286.3 x  286.4- 289.5 
+BAR       y  286.3 x  294.2- 297.2 
+BAR       y  286.3 x  359.0- 362.1 
+BAR       y  696.4 x  181.1- 184.1 
+BAR       y  696.4 x  217.2- 220.2 
+BAR       y  696.4 x  220.2- 223.3 
+BAR       y  696.4 x  263.5- 266.5 
+BAR       y  696.4 x  289.5- 292.6 
+BAR       y  696.4 x  297.1- 300.1 
+BAR       y  696.4 x  341.5- 344.5 
+BAR       y  696.4 x  350.8- 353.8 

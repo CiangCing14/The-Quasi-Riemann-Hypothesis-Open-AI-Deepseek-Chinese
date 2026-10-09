@@ -1,0 +1,26 @@
+PAGE 92   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 18 glyph(s) Q6 P3 T3 R2 A2 B1 O1 | zh 1
+   \mathcal P  y  114.8 x  301.6   line: ( p i ) ∈ Q ′ P i i ∈ I ′
+   \mathcal T  y  235.8 x  149.2   line: T ( X ; k ) = X 2 √ k k d ( nb 3 ) V ( q q 3 /X ) . (14.2)
+   \mathcal R  y  369.3 x  254.4   line: ( ν ( A ) χ ( uk ) R ( A, k ) , A ≡ 1 (mod 3) , ( A, S ) = 1 ,
+   \mathcal R  y  464.2 x  239.5   line: has no extra reciprocity sign, since R ( A, f ) 4 = 1 . The puncture is the product of the local zero
+   \mathcal P  y  604.3 x  228.5   line: tion 5.1 , with base local prime set P , powers j , fixed multiplier ϕ , and test V . Put M = λ 12 L 4
+   \mathcal Q  y  617.8 x  185.3   line: for this invocation. Let Q be a finite set of distinct good primes disjoint from P . In the direct
+   \mathcal P  y  617.8 x  444.4   line: for this invocation. Let Q be a finite set of distinct good primes disjoint from P . In the direct
+   \mathcal T  y  631.4 x  430.3   line: completed coefficient sum, insert the factor Q 1 ; denote this sum by T ( X ; Ψ , V ) . It has
+   \mathcal Q  y  635.4 x  436.3   line: q ∈Q q | nb 3 Q
+   \mathcal Q  y  636.9 x  296.5   line: q ∈Q q | nb 3 Q
+   \mathcal T  y  702.6 x  142.1   line: T ( X ; Ψ , V ) = X ζ X √ Y B ( λ 4 µ )
+   \mathcal Q  y  706.6 x  148.1   line: Q Q √ p
+   \mathcal Q  y  706.6 x  237.7   line: Q Q √ p
+   \mathcal A  y  718.2 x  379.8   line: B 0 ̸ = µ ∈ λ − 4 O p ∈A 0
+   \mathcal B  y  718.2 x  220.4   line: B 0 ̸ = µ ∈ λ − 4 O p ∈A 0
+   \mathcal O  y  718.8 x  283.4   line: B 0 ̸ = µ ∈ λ − 4 O p ∈A 0
+   \mathcal A  y  754.5 x  307.9   line: q ∈A Q c
+   \mathcal Q  y  757.5 x  314.7   line: q ∈A Q
+EUFM -> \mathfrak : pdf 5 glyph(s) d4 r1 | zh 9
+   \mathfrak d  y   98.8 x  213.8   line: d ′ ( A ) = X Y a ( p )1 . (14.1)
+   \mathfrak d  y  235.9 x  357.7   line: T ( X ; k ) = X 2 √ k k d ( nb 3 ) V ( q q 3 /X ) . (14.2)
+   \mathfrak d  y  239.9 x  155.1   line: d √ ∗ n b
+   \mathfrak d  y  291.8 x   99.0   line: With d = 1 , this is the Mellin completion on the left of Equation ( 5.1 ). The Gaussian Mellin
+   \mathfrak r  y  437.2 x  389.4   line: the full reflection sector modulus is M 2 . All good primes of k, f, r remain in the local prime

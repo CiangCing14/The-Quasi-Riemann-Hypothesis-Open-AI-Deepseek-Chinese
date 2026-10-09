@@ -1,0 +1,17 @@
+PAGE 75   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) H3 D2 B1 | zh 0
+   \mathcal D  y  217.0 x  238.3   line: and the other inequalities defining D (10 e ) still hold. The real part of the reciprocal argument
+   \mathcal H  y  479.0 x  468.6   line: For the base correction, Lemma 7.1 verifies the hypotheses of Lemma 10.3 . Indeed |H | ≪ q ϵ
+   \mathcal D  y  654.4 x  411.0   line: for any ϵ > 0 . This also holds in the floor bin. The central point lies in D (10 e ) , so the stronger
+   \mathcal H  y  667.9 x  238.3   line: local estimate in Lemma 7.1 gives |H | ≪ U ϵ H there, for any ϵ > 0 . Consequently
+   \mathcal H  y  694.5 x  215.4   line: X | L S ( w, χ ( u )) H ( s, w, z ) | ≪ U R ( δ )+ δ/ 2+12 e + ϵ r + ϵ n + ϵ H (1 + T ) A ′ η .
+   \mathcal B  y  710.1 x  143.6   line: u ∈B
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 692.1 x 133.3
+    below[0]: u ∈B
+    below[1]: ′ is finite and is
+    above[0]: ϵ n > 0 .
+    above[1]: estimate in Lemma
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

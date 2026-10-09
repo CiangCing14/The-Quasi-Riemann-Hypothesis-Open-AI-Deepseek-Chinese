@@ -1,0 +1,12 @@
+PAGE 112
+counts pdf: {'sum': 0, 'prod': 4, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 1}
+
+PROD      y  123.5 x  315.3- 329.3 
+          line: q f u ≪ S q rad( u ) ≤ q u Y q p − ( j p − 1) . (16.11)
+PROD      y  354.9 x  208.9- 222.9 
+          line: U A ∗ +6 e + ϵ (3 + T 1 ) C Y q p z r − w r − ( j p − 1) A ∗ ≤ U a − 1 / 2+12 e + ϵ (3 + T 1 ) C Y q p z r − 1 / 2 ,
+PROD      y  354.9 x  426.3- 440.2 
+          line: U A ∗ +6 e + ϵ (3 + T 1 ) C Y q p z r − w r − ( j p − 1) A ∗ ≤ U a − 1 / 2+12 e + ϵ (3 + T 1 ) C Y q p z r − 1 / 2 ,
+PROD      y  602.5 x  241.2- 255.1 
+          line: H η, 1 ,Z ( x, w, z ) = H η, 1 ( x, w, z ) Y B i (1; x, w, z ) in the second Euler region . (16.12)
+BAR       y  223.3 x  144.6- 147.6 

@@ -1,0 +1,53 @@
+PAGE 161   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) R2 | zh 0
+   \mathcal R  y  496.4 x  348.3   line: √ X G ( r , h ) X C √ D τ ( a ) τ ( b ) R ( a, b ) G ( a, h ) G ( b, − h )
+   \mathcal R  y  661.5 x  190.5   line: changes χ ( b ) χ ( a ) into R ( a, b ) ; the remaining factors are precisely τ ( a ) τ ( b ) . This proves
+EUFM -> \mathfrak : pdf 36 glyph(s) r23 e12 b1 | zh 0
+   \mathfrak b  y  227.6 x  248.9   line: for the coefficient, so the same ideals b occur in the two terms of D . An impossible allocation
+   \mathfrak r  y  281.8 x  132.0   line: radical. Let r be the product of common primes whose net exponents are nonzero modulo six;
+   \mathfrak r  y  295.3 x  445.5   line: its logarithmic norm is R . The corresponding character ξ is primitive modulo r . In the Möbius
+   \mathfrak r  y  299.2 x  342.3   line: r
+   \mathfrak e  y  308.8 x  355.5   line: expansion of the complementary common row mask, write e for the selected divisor and E for
+   \mathfrak e  y  418.3 x  249.1   line: τ ( a ) = τ ( a ) χ ( er ) ξ ( a ) , τ ( b ) = τ ( b ) χ ( er ) ξ ( b ) .
+   \mathfrak r  y  418.3 x  253.5   line: τ ( a ) = τ ( a ) χ ( er ) ξ ( a ) , τ ( b ) = τ ( b ) χ ( er ) ξ ( b ) .
+   \mathfrak e  y  418.3 x  385.7   line: τ ( a ) = τ ( a ) χ ( er ) ξ ( a ) , τ ( b ) = τ ( b ) χ ( er ) ξ ( b ) .
+   \mathfrak r  y  418.3 x  390.1   line: τ ( a ) = τ ( a ) χ ( er ) ξ ( a ) , τ ( b ) = τ ( b ) χ ( er ) ξ ( b ) .
+   \mathfrak r  y  422.3 x  266.8   line: C a r D b r
+   \mathfrak r  y  422.3 x  403.3   line: C a r D b r
+   \mathfrak r  y  496.5 x  184.4   line: √ X G ( r , h ) X C √ D τ ( a ) τ ( b ) R ( a, b ) G ( a, h ) G ( b, − h )
+   \mathfrak r  y  503.2 x  176.3   line: Xq q ξ r q q C D
+   \mathfrak e  y  508.0 x  122.2   line: e r a b
+   \mathfrak r  y  508.0 x  139.8   line: e r a b
+   \mathfrak e  y  544.6 x  281.0   line: e r a b
+   \mathfrak r  y  544.6 x  289.6   line: e r a b
+   \mathfrak r  y  568.1 x  109.5   line: ξ r
+   \mathfrak e  y  575.0 x  247.0   line: normalization, the substitution k = e k ′ and Poisson modulo r ab give H/ ( q q q q ) . The three
+   \mathfrak r  y  575.0 x  365.9   line: normalization, the substitution k = e k ′ and Poisson modulo r ab give H/ ( q q q q ) . The three
+   \mathfrak e  y  579.0 x  432.0   line: √ e r a b
+   \mathfrak r  y  579.0 x  440.5   line: √ e r a b
+   \mathfrak r  y  592.5 x  244.4   line: r a b
+   \mathfrak r  y  602.1 x  324.1   line: the phase, CRT for the pairwise coprime moduli a, b, r supplies
+   \mathfrak r  y  625.1 x  273.9   line: χ ( b r ) χ ( a r ) ξ ( ab ) .
+   \mathfrak r  y  625.1 x  303.3   line: χ ( b r ) χ ( a r ) ξ ( ab ) .
+   \mathfrak r  y  629.0 x  316.6   line: a b r
+   \mathfrak e  y  648.0 x  178.6   line: The substitution k = e k ′ supplies χ ( e ) χ ( e ) , up to a scalar in the frozen labels. Reciprocity
+   \mathfrak e  y  648.0 x  254.4   line: The substitution k = e k ′ supplies χ ( e ) χ ( e ) , up to a scalar in the frozen labels. Reciprocity
+   \mathfrak e  y  648.0 x  278.2   line: The substitution k = e k ′ supplies χ ( e ) χ ( e ) , up to a scalar in the frozen labels. Reciprocity
+   \mathfrak r  y  702.2 x  224.3   line: is counted even if the factors at r cancel on units.
+   \mathfrak r  y  729.3 x  183.3   line: any canceled factors at r . Its nominal frequency scale is exactly
+   \mathfrak e  y  754.9 x  219.0   line: T ( C, D, e , r ) = e r = Z K , K = 2 A − c − d + R + E − m.
+   \mathfrak r  y  754.9 x  227.5   line: T ( C, D, e , r ) = e r = Z K , K = 2 A − c − d + R + E − m.
+   \mathfrak e  y  758.3 x  179.3   line: T ( C, D, e , r ) = e r = Z K 0 , K = 2 A − c − d + R + E − m.
+   \mathfrak r  y  758.3 x  188.5   line: T ( C, D, e , r ) = e r = Z K 0 , K = 2 A − c − d + R + E − m.
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 494.1 x 146.5
+    below[0]: e r
+    below[1]: h =0 ̸
+    above[0]: nonzero-frequency
+\sum at y 494.1 x 211.9
+    below[0]: ( a,b )=1
+    below[1]: · Φ
+    above[0]: expression,
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

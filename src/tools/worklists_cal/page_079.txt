@@ -1,0 +1,14 @@
+PAGE 79   calligraphic glyphs in the PDF: 6   \mathcal in the Chinese: 0
+
+CAL R  y   73.2 x  126.5- 135.8
+      line: Here either R is identically zero, or there is a number µ > 0 , chosen independently of η , such
+CAL R  y   86.7 x   95.2- 104.5
+      line: that |R ( s ) | ≪ Z − µ on that entire line.
+CAL R  y  235.3 x  210.2- 219.5
+      line: The last term is omitted when R is identically zero. The implied constants and lower thresholds
+CAL D  y  356.4 x   97.7- 106.1
+      line: lie in D , so the correction is holomorphic. The all-height majorant and Lemma 10.2 justify the
+CAL D  y  410.6 x  171.6- 180.1
+      line: All these paths lie in D , and M ( z ) is holomorphic for ℜ z > 0 . Thus the two stated scalar poles
+CAL R  y  756.0 x  361.5- 370.7
+      line: Z C ( s ) e ( s − 5 / 6) 2 η )(1 + R ( s )) ds.

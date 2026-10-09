@@ -1,0 +1,40 @@
+PAGE 177
+counts pdf: {'sum': 1, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 12, 'abs': 9}
+
+OVERLINE  y  292.4 x  516.9- 523.4 covers: 'coeffi-'
+          line: length is available, Equation ( 18.46 ) bounds each product by O ( T ) , giving the last assertion.
+ACCENT    y  455.5 x  131.6- 137.7 
+          line: scales together. have If logarithmic r e 1 < r , each length selected at least plain r − length a 1 ,i ≥ satisfies r − r 1 a > 1 ,i 0 . ≤ Apply r e 1 , so Equation all fo
+ACCENT    y  455.5 x  371.7- 377.8 
+          line: scales together. have If logarithmic r e 1 < r , each length selected at least plain r − length a 1 ,i ≥ satisfies r − r 1 a > 1 ,i 0 . ≤ Apply r e 1 , so Equation all fo
+ACCENT    y  469.0 x  327.6- 333.6 
+          line: scales exact equal-product have logarithmic formal length scales. at least If r r 1 − ≥ a r 1 ,i , including ≥ r − r e 1 > equality, 0 . Apply or Equation if r = 0 , ( us
+ACCENT    y  482.6 x  254.5- 260.6 
+          line: exact absolute-volume equal-product fallback formal in the scales. same If lemma. r e 1 ≥ r , No including formal centered equality, scale or if is r clipped = 0 , use in
+ACCENT    y  509.7 x  502.6- 508.6 
+          line: With and an identically zero rectangle remains in the formal difference. absolute volume on the other side, this gives the aggregate The resulting saving is bound on each
+ACCENT    y  640.3 x   79.5-  85.6 
+          line: − r e 1 − r e 2 , while the divisor count gives t − . Equation ( 18.34 ) gives the one-line inequality
+ACCENT    y  640.3 x  102.5- 108.6 
+          line: − r e 1 − r e 2 , while the divisor count gives t − . Equation ( 18.34 ) gives the one-line inequality
+ACCENT    y  663.2 x  206.0- 212.0 
+          line: t − − r e 1 − r e 2 − ( r − r e 1 ) + = ( ≤ ω t − − − r. r e 2 ) − max( r, e r 1 ) (18.49)
+ACCENT    y  663.2 x  229.0- 235.0 
+          line: t − − r e 1 − r e 2 − ( r − r e 1 ) + = ( ≤ ω t − − − r. r e 2 ) − max( r, e r 1 ) (18.49)
+ACCENT    y  663.2 x  274.8- 280.8 
+          line: t − − r e 1 − r e 2 − ( r − r e 1 ) + = ( ≤ ω t − − − r. r e 2 ) − max( r, e r 1 ) (18.49)
+ACCENT    y  663.2 x  338.9- 344.9 
+          line: t − − r e 1 − r e 2 − ( r − r e 1 ) + = ( ≤ ω t − − − r. r e 2 ) − max( r, e r 1 ) (18.49)
+ACCENT    y  663.2 x  400.1- 406.2 
+          line: t − − r e 1 − r e 2 − ( r − r e 1 ) + = ( ≤ ω t − − − r. r e 2 ) − max( r, e r 1 ) (18.49)
+SUM       y  550.6 x  223.2- 238.9 
+          line: X | c t , J ( h ′ ) || P C, t , J ( h ′ ) P D, t , J ( h ′ ) |
+BAR       y  100.3 x  149.7- 152.7 
+BAR       y  229.7 x  331.2- 334.3 
+BAR       y  229.7 x  338.2- 341.2 
+BAR       y  270.4 x  123.3- 126.3 
+BAR       y  270.4 x  130.3- 133.3 
+BAR       y  553.0 x  240.8- 243.8 
+BAR       y  553.0 x  276.6- 279.6 
+BAR       y  553.0 x  279.6- 282.7 
+BAR       y  553.0 x  370.9- 373.9 

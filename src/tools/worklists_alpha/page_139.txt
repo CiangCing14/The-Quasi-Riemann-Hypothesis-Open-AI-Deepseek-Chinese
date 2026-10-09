@@ -1,0 +1,31 @@
+PAGE 139   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 25 glyph(s) O23 B2 | zh 23
+   \mathcal B  y  100.3 x  173.0   line: mode. In particular B , | B | 2 , | D | 2 , and 1 are still in its weight. They retain the
+   \mathcal B  y  168.0 x  290.1   line: | V ( ξ ; ζ ) | ≪B ( k ′′ ) µ 2 ( f ) .
+   \mathcal O  y  355.6 x  244.2   line: K slot O slot
+   \mathcal O  y  373.6 x  244.2   line: K slot O 0 slot O slot O g slot
+   \mathcal O  y  373.6 x  310.1   line: K slot O 0 slot O slot O g slot
+   \mathcal O  y  373.6 x  362.4   line: K slot O 0 slot O slot O g slot
+   \mathcal O  y  395.7 x  156.8   line: O
+   \mathcal O  y  409.2 x  246.9   line: 2 O 2 O
+   \mathcal O  y  409.2 x  471.6   line: 2 O 2 O
+   \mathcal O  y  422.8 x  310.5   line: 1 2 1 2 0 2 O 0 O a 1 2
+   \mathcal O  y  422.8 x  346.4   line: 1 2 1 2 0 2 O 0 O a 1 2
+   \mathcal O  y  436.3 x  140.1   line: O 0 O O O O O O
+   \mathcal O  y  436.3 x  176.0   line: O 0 O O O O O O
+   \mathcal O  y  436.3 x  317.2   line: O 0 O O O O O O
+   \mathcal O  y  436.3 x  367.6   line: O 0 O O O O O O
+   \mathcal O  y  436.3 x  394.9   line: O 0 O O O O O O
+   \mathcal O  y  436.3 x  449.2   line: O 0 O O O O O O
+   \mathcal O  y  436.3 x  497.2   line: O 0 O O O O O O
+   \mathcal O  y  449.9 x  229.0   line: O 0 O k 2 g
+   \mathcal O  y  449.9 x  260.2   line: O 0 O k 2 g
+   \mathcal O  y  477.0 x  249.3   line: 0 O 0 O O slot slot
+   \mathcal O  y  477.0 x  280.5   line: 0 O 0 O O slot slot
+   \mathcal O  y  477.0 x  308.6   line: 0 O 0 O O slot slot
+   \mathcal O  y  490.5 x  259.0   line: g O O g slot
+   \mathcal O  y  490.5 x  287.1   line: g O O g slot
+EUFM -> \mathfrak : pdf 3 glyph(s) B2 A1 | zh 0
+   \mathfrak B  y  223.9 x  238.9   line: d | C B /R = ⇒ d | f rad q . (17.59)
+   \mathfrak B  y  246.9 x  194.8   line: To prove this, a prime of B /R has t = 0 . The local table shows that it has even parity and
+   \mathfrak A  y  418.9 x  458.6   line: choices of b , b with b b = q 2 J 2 s cost at most d ( q ) 2 d ( f ) 3 ; the two choices A | rad( b b )

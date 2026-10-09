@@ -1,0 +1,3 @@
+PAGE 152   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 1 glyph(s) O1 | zh 0
+   \mathcal O  y  242.6 x  226.5   line: O δ

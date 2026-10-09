@@ -1,0 +1,26 @@
+PAGE 16   calligraphic glyphs in the PDF: 12   \mathcal in the Chinese: 0
+
+CAL R  y  323.2 x  328.0- 337.3
+      line: Γ( p ) , and χ (4) = 1 , proving G ( p 3 ) = γ ( p ) . Finally R ( p, p ) = 1 / Γ( p ) 2 = Γ( p ) 2 , as this square
+CAL R  y  374.8 x  163.2- 172.5
+      line: R ( vw, vw ) = R ( v, v ) R ( v, w ) 2 R ( w, w ) = R ( v, v ) R ( w, w ) .
+CAL R  y  374.8 x  227.9- 237.2
+      line: R ( vw, vw ) = R ( v, v ) R ( v, w ) 2 R ( w, w ) = R ( v, v ) R ( w, w ) .
+CAL R  y  374.8 x  261.9- 271.1
+      line: R ( vw, vw ) = R ( v, v ) R ( v, w ) 2 R ( w, w ) = R ( v, v ) R ( w, w ) .
+CAL R  y  374.8 x  303.0- 312.2
+      line: R ( vw, vw ) = R ( v, v ) R ( v, w ) 2 R ( w, w ) = R ( v, v ) R ( w, w ) .
+CAL R  y  374.8 x  356.3- 365.6
+      line: R ( vw, vw ) = R ( v, v ) R ( v, w ) 2 R ( w, w ) = R ( v, v ) R ( w, w ) .
+CAL R  y  374.8 x  390.3- 399.5
+      line: R ( vw, vw ) = R ( v, v ) R ( v, w ) 2 R ( w, w ) = R ( v, v ) R ( w, w ) .
+CAL R  y  399.3 x  253.9- 263.2
+      line: The prime identity consequently gives R ( n, n ) = χ ( − 1) for every primary n outside S . On the
+CAL R  y  516.1 x  490.5- 499.7
+      line: for j = 2 gives one. The product of the factors for j = 1 and j = 2 is ( χ ( b ) χ ( a )) 3 = R ( a, b ) .
+CAL O  y  565.7 x  453.9- 462.5
+      line: For later element rows, fix the generators π from Lemma 4.1 . Every 0 ̸ = m ∈O has a unique
+CAL R  y  664.8 x  269.5- 278.7
+      line: χ ( m ) = χ ( um ) R ( A, m ) Y χ ( A ) v p ( m ) . (4.8)
+CAL R  y  716.0 x   91.3- 100.6
+      line: and R is evaluated as its separately defined bicharacter. Once the good part’s fixed ray class and

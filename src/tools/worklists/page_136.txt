@@ -1,0 +1,24 @@
+PAGE 136
+counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 9, 'abs': 3}
+
+ACCENT    y  483.7 x  170.2- 176.3 
+          line: witness, will be needed which for gives the b c child ≤ ℓ + puncture; η , b t ≤ t + the η , containing and log Z q r norm g ≤ g − balls θ + 2 used η . for The counting fi
+ACCENT    y  481.7 x  221.7- 227.8 
+          line: witness, will be needed which for gives the b c child ≤ ℓ + puncture; η , b t ≤ t + the η , containing and log Z q r norm g ≤ g − balls θ + 2 used η . for The counting fi
+ACCENT    y  717.8 x  215.6- 221.6 
+          line: θ b ≤ g, b b j ≤ 2 ℓ b pair , b c ≤ ℓ b pair .
+ACCENT    y  720.7 x  235.0- 241.1 
+          line: θ b ≤ g, b b j ≤ 2 ℓ b pair , b c ≤ ℓ b pair .
+ACCENT    y  718.2 x  266.6- 272.7 
+          line: θ b ≤ g, b b j ≤ 2 ℓ b pair , b c ≤ ℓ b pair .
+ACCENT    y  717.8 x  292.6- 298.7 
+          line: θ b ≤ g, b b j ≤ 2 ℓ b pair , b c ≤ ℓ b pair .
+ACCENT    y  720.7 x  338.3- 344.4 
+          line: θ b ≤ g, b b j ≤ 2 ℓ b pair , b c ≤ ℓ b pair .
+ACCENT    y  717.8 x  358.1- 364.2 
+          line: θ b ≤ g, b b j ≤ 2 ℓ b pair , b c ≤ ℓ b pair .
+ACCENT    y  765.2 x  357.6- 363.7 
+          line: g − θ ≥− 2 η, j ≤ 2 ℓ + 3 η, b c ≤ ℓ + η. (17.49)
+BAR       y  244.1 x  233.1- 236.1 
+BAR       y  372.5 x  132.2- 135.2 
+BAR       y  685.6 x  409.9- 413.0 

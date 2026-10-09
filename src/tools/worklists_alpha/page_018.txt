@@ -1,0 +1,12 @@
+PAGE 18   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) M4 | zh 0
+   \mathcal M  y  131.9 x  202.5   line: With the Mellin convention M W ( s ) = R W ( y ) y s , a pure twist obeys
+   \mathcal M  y  155.9 x  220.7   line: M [ W ( y ) y iω ]( s ) = M W ( s + iω ) .
+   \mathcal M  y  155.9 x  308.7   line: M [ W ( y ) y iω ]( s ) = M W ( s + iω ) .
+   \mathcal M  y  238.7 x  162.7   line: |M W ( σ + iT ) | ≪ (1 + | T | ) − N X y σ | D j W ( y ) | . (4.11)
+MSBM -> \mathbb : pdf 5 glyph(s) R5 | zh 5
+   \mathbb R  y  176.6 x  180.8   line: Let D = y∂ , let I ⊂ R be compact, and let N ≥ 0 be an integer. Suppose the integrals below
+   \mathbb R  y  203.7 x  159.9   line: for σ ∈ I and T ∈ R ,
+   \mathbb R  y  378.0 x  150.8   line: R 2
+   \mathbb R  y  406.7 x  352.8   line: v R
+   \mathbb R  y  645.7 x  276.4   line: b R d

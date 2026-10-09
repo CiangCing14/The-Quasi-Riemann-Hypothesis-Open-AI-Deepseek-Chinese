@@ -1,0 +1,8 @@
+PAGE 44   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) C2 | zh 0
+   \mathcal C  y  641.5 x  176.3   line: C ( Z ; m, ν ) = Z t e t 2 T ( t + 1 / 2 , νχ ( m )) dt.
+   \mathcal C  y  751.9 x  246.9   line: X |C ( Z ; m, ν ) | 2 ≪ Z 1+ ϵ M ( V ) 2 . (5.39)
+EUFM -> \mathfrak : pdf 3 glyph(s) M3 | zh 0
+   \mathfrak M  y  509.5 x  328.1   line: twist assertion follows from the norm-twist bound for M in Proposition 5.1 .
+   \mathfrak M  y  590.2 x  481.5   line: It satisfies the hypotheses of Proposition 5.1 directly, has V ( t ) = e t 2 , and has finite M for
+   \mathfrak M  y  752.0 x  349.7   line: X |C ( Z ; m, ν ) | 2 ≪ Z 1+ ϵ M ( V ) 2 . (5.39)

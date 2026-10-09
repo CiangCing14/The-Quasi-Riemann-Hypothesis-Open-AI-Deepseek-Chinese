@@ -1,0 +1,40 @@
+PAGE 165
+counts pdf: {'sum': 4, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 2, 'abs': 7}
+
+OVERLINE  y  539.9 x  226.3- 249.2 covers: 'B ( v )'
+          line: B ( u ) B ( v ) τ ( u ) τ ( v ) q it q − it  Z K + g q 
+OVERLINE  y  539.9 x  273.5- 297.1 covers: 'τ 1 ( v )'
+          line: B ( u ) B ( v ) τ ( u ) τ ( v ) q it q − it  Z K + g q 
+ACCENT    y  553.6 x  392.4- 398.4 
+          line: Z K + g − ℓ − a 0 X u,v √ q u q v u v X j F ( u, v ; j ) Φ b 2 q u q v .
+ACCENT    y  606.6 x  261.4- 267.5 
+          line: Φ b 2 q u q v . (18.30)
+SUM       y  480.2 x  185.2- 200.9 
+          line: Z − ℓ X Φ 2 ( q h /Z K + g ) Z − a 0 / 2 X B ( u ) τ 1 ( u ) q u it G ( u, h ) .
+SUM       y  480.2 x  306.0- 321.7 
+          line: Z − ℓ X Φ 2 ( q h /Z K + g ) Z − a 0 / 2 X B ( u ) τ 1 ( u ) q u it G ( u, h ) .
+SUM       y  546.0 x  183.9- 199.7 
+          line: Z K + g − ℓ − a 0 X B ( u ) B ( v ) τ √ 1 ( q u ) q τ 1 ( v ) q u it q v − it X F ( u, v ; j ) Φ b 2  Z K q + q g q j  .
+SUM       y  546.0 x  330.1- 345.9 
+          line: Z K + g − ℓ − a 0 X B ( u ) B ( v ) τ √ 1 ( q u ) q τ 1 ( v ) q u it q v − it X F ( u, v ; j ) Φ b 2  Z K q + q g q j  .
+PAREN     y  263.9 x  194.0- 199.0 ch=(
+PAREN     y  263.9 x  242.9- 247.9 ch=)
+PAREN     y  540.9 x  405.9- 413.9 ch=(
+PAREN     y  540.9 x  452.9- 460.9 ch=)
+PAREN     y  594.0 x  274.9- 282.9 ch=(
+PAREN     y  594.0 x  321.9- 329.9 ch=)
+BAR       y   73.2 x  152.9- 155.9 
+BAR       y   73.2 x  164.4- 167.4 
+BAR       y  211.8 x  223.8- 226.8 
+BAR       y  211.8 x  260.4- 263.5 
+BAR       y  225.4 x  165.5- 168.5 
+BAR       y  471.5 x  268.1- 271.7 
+BAR       y  478.0 x  268.1- 271.7 
+BAR       y  484.6 x  268.1- 271.7 
+BAR       y  491.1 x  268.1- 271.7 
+BAR       y  497.7 x  268.1- 271.7 
+BAR       y  471.5 x  417.5- 421.1 
+BAR       y  478.0 x  417.5- 421.1 
+BAR       y  484.6 x  417.5- 421.1 
+BAR       y  491.1 x  417.5- 421.1 
+BAR       y  497.7 x  417.5- 421.1 

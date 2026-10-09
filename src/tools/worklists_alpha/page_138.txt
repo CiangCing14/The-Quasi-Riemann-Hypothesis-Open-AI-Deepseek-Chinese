@@ -1,0 +1,20 @@
+PAGE 138   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) B2 T2 A1 | zh 0
+   \mathcal B  y  286.3 x  418.6   line: V ( ξ ; ζ ) = w + µ ( d ) µ ( v ′ ) G ( ϑ ) | B ( g ′ ) | 2 | D ( v ′ ; d , k ′′ ) | 2 1 B ( k ′′ )
+   \mathcal A  y  304.4 x  179.3   line: × A ( ξ ) ψ ( y ) ψ ( y ) ψ ( y ) ψ ′′ ( y ) ω ( q /Z V c ) (17.56)
+   \mathcal T  y  397.6 x  107.2   line: Let T be the fixed v ′ -dyad, ray, and slot summand obtained from Equation ( 17.41 ) by the
+   \mathcal T  y  436.0 x  149.8   line: T = Z λ c +18 η + τ (2 π ) − 6 H ( ζ )
+   \mathcal B  y  643.8 x  252.4   line: latter appears only in characters and B . The derived label appears only in characters and its
+EUFM -> \mathfrak : pdf 8 glyph(s) d3 H3 A1 O1 | zh 0
+   \mathfrak d  y  120.8 x  409.3   line: W ′ ( z ) = ω ( Z δ N z ) z ε a iζ a , ν ′ = ν ϑ, d ′ = d ′ .
+   \mathfrak d  y  120.8 x  384.3   line: W ′ ( z ) = ω ( Z δ N z ) z ε a iζ a , ν ′ = ν ϑ, d ′ = d ′ .
+   \mathfrak d  y  191.1 x  327.0   line: × χ ( f ) 4 d ′ ( n ) W ′ ( q /Z N ch ) .
+   \mathfrak A  y  238.6 x  288.8   line: factors; all other phases involving the old b , A were placed in Equation ( 17.25 ) or in the old
+   \mathfrak O  y  343.5 x  348.2   line: All old pure arithmetic and priority masks are retained in O , with their nonnegative old coeffi-
+   \mathfrak H  y  436.1 x  281.0   line: T = Z λ c +18 η + τ (2 π ) − 6 H ( ζ )
+   \mathfrak H  y  696.5 x  184.1   line: | H ( t ) || H ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p ( W ) 2 . (17.58)
+   \mathfrak H  y  696.5 x  223.2   line: | H ( t ) || H ( ζ ) | (1 + | t | ) B ht (1 + | ζ | ) J ht d ζ d t ≪ p ( W ) 2 . (17.58)
+MSBM -> \mathbb : pdf 3 glyph(s) R3 | zh 3
+   \mathbb R  y  446.6 x  268.8   line: R 6
+   \mathbb R  y  707.0 x  150.6   line: R 9 R 6
+   \mathbb R  y  707.0 x  168.9   line: R 9 R 6

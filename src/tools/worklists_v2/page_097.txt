@@ -1,0 +1,12 @@
+PAGE 97   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) U2 | zh 0
+   \mathcal U  y  290.0 x  159.0   line: choices, denote by U ( k ) the right side of Equation ( 14.3 ), summed with the product-form
+   \mathcal U  y  752.4 x  241.6   line: X |U ( k ) | 2 ≪ Z E ref − O/ 2+ ϵ .
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 750.0 x 216.6
+    below[0]: k sf
+    below[1]: res
+    above[0]: contribution with
+
+---- Chinese file today: \substack x0, line breaks \\ x1 ----

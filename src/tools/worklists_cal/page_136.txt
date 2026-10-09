@@ -1,0 +1,8 @@
+PAGE 136   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 0
+
+CAL I  y  203.5 x  293.4- 299.3
+      line: union of these clipping supports is included in I .
+CAL B  y  291.2 x  490.3- 497.5
+      line: γ, k , f are the displayed functions of ξ . The set may be taken before imposing B and
+CAL A  y  304.8 x  402.4- 411.1
+      line: ( v ′ , g ′ CJ ) = 1 , retaining those masks in the signed outer weight. Let A ( ξ ) be the product of

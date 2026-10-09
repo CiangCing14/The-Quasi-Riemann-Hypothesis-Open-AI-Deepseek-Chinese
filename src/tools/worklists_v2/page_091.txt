@@ -1,0 +1,29 @@
+PAGE 91   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) P2 R1 O1 | zh 1
+   \mathcal R  y  109.2 x  410.5   line: The hypotheses of Equation ( 13.9 ) are not removed by extending R as a bicharacter. To
+   \mathcal P  y  472.2 x  512.5   line: Fix a finite index set I and pairwise disjoint lists P of primes outside S , with q ≍ Z z i for p ∈P .
+   \mathcal P  y  472.2 x  300.4   line: Fix a finite index set I and pairwise disjoint lists P of primes outside S , with q ≍ Z z i for p ∈P .
+   \mathcal O  y  629.6 x  161.2   line: range, and let k ∈O . For a fixed multiplicative finite ray character ν whose full zero-extended
+EUFM -> \mathfrak : pdf 3 glyph(s) r3 | zh 0
+   \mathfrak r  y  542.0 x  310.8   line: ( n, r ρ )=1
+   \mathfrak r  y  562.0 x  101.4   line: where r is squarefree and is required to be fixed only within the indicated current row and label
+   \mathfrak r  y  575.5 x  383.4   line: sums. A bounded product of such functions has this form with r equal to the radical of the
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 173.6 x 160.1
+    below[0]: ( a,b )=1
+    below[1]: full inner divisor
+    above[0]: the right side of that equation for all primary
+    above[1]: when ( a, b ) > 1
+\sum at y 173.6 x 287.1
+    below[0]: a,b
+    below[1]: , and the
+    above[0]: a, b outside
+    above[1]: finite coefficient
+\sum at y 173.6 x 397.0
+    below[0]: t | a, t | b
+    below[1]: correlation expressions
+    above[0]: ( ab, DE ) = 1 ,
+    above[1]: ( a, b ) on this
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

@@ -1,0 +1,17 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 712.3 x 248.2
+    below[0]: j =1
+    below[1]: factors share
+    above[0]: list of extracted
+    above[1]: h
+\prod at y 712.3 x 291.5
+    below[0]: a<j
+    below[1]: share primes.
+    above[0]: extracted factors
+\prod at y 712.3 x 365.6
+    below[0]: a ≤ h
+    below[1]: Applying it to each
+    above[0]: D 1 , . . . , D h , the
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

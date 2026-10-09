@@ -1,0 +1,12 @@
+PAGE 70   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL A  y  131.4 x  105.6- 112.4
+      line: A 0
+CAL A  y  212.7 x  383.9- 390.7
+      line: A
+CAL W  y  466.8 x  259.1- 269.9
+      line: I ( Z 1 / 2 , Z 1 / 2 , Z ) = W ( Z 1 / 2 , Z 1 / 2 , Z ; s, w, z )
+CAL H  y  504.4 x  416.1- 425.3
+      line: · X q − z ξ ( u ) F H ( s, w, z ) dz dw ds.
+CAL W  y  551.0 x  148.0- 158.8
+      line: W ( X, Y, Z ; s, w, z ) = X 1 / 2 − z Z s + z − 1 Y w − 1 e ( s + z − 1) 2 M ( z ) W ( w ) .

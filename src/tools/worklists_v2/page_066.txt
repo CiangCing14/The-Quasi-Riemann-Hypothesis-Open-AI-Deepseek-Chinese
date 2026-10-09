@@ -1,0 +1,13 @@
+PAGE 66   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 1 glyph(s) I1 | zh 0
+   \mathcal I  y   73.2 x  486.2   line: where a , . . . , a are pairwise coprime and squarefree, and a is arbitrary. Insert a ∈I and
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 119.4 x 290.4
+    below[0]: i = ̸ ℓ
+    below[1]: remaining
+    above[0]: i
+    above[1]: i X i ≍ M .
+    above[2]: coefficient
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

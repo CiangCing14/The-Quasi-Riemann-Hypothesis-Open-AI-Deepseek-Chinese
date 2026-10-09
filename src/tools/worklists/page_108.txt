@@ -1,0 +1,27 @@
+PAGE 108
+counts pdf: {'sum': 2, 'prod': 2, 'int': 0, 'sqrt': 0, 'overline': 3, 'hat': 0, 'abs': 8}
+
+OVERLINE  y  354.4 x  291.0- 310.7 covers: 'η ( p )'
+          line: Q z − 1 B , B = η ( p ) Q x P ∗ /P − Q − w . (16.1)
+OVERLINE  y  402.8 x  189.8- 209.5 covers: 'η ( p )'
+          line: ( η ( p ) Q x − Q − w )(1 − V )(1 − W ) P ∗ − Q − w (1 − V W )
+OVERLINE  y  703.2 x  165.9- 185.7 covers: 'η ( p )'
+          line: η ( p ) Q x + z − 1 P ∗ − Q z − w − 1 P = 1 − D Q z − 1 G . (16.4)
+SUM       y  534.1 x  284.3- 300.0 
+          line: B i ( u ; x, w, z ) = X W i ( q p /P i ) q p z − 1 B p .
+SUM       y  599.8 x  238.8- 254.5 
+          line: H η,u,Z ( x, w, z ) = X Y  W i ( q p i /P i ) q p z i − 1 G p i  Y H p . (16.3)
+PROD      y  599.8 x  275.6- 289.5 
+          line: H η,u,Z ( x, w, z ) = X Y  W i ( q p i /P i ) q p z i − 1 G p i  Y H p . (16.3)
+PROD      y  599.8 x  406.6- 420.5 
+          line: H η,u,Z ( x, w, z ) = X Y  W i ( q p i /P i ) q p z i − 1 G p i  Y H p . (16.3)
+BRACK     y  601.3 x  289.5- 294.1 ch=[
+BRACK     y  601.3 x  382.2- 386.8 ch=]
+BAR       y  178.8 x  304.3- 307.4 
+BAR       y  242.1 x  364.7- 367.7 
+BAR       y  467.7 x  380.0- 383.0 
+BAR       y  467.7 x  391.4- 394.4 
+BAR       y  467.7 x  399.3- 402.3 
+BAR       y  467.7 x  411.1- 414.1 
+BAR       y  467.7 x  419.0- 422.0 
+BAR       y  467.7 x  431.3- 434.4 

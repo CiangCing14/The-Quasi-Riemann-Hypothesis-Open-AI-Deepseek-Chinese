@@ -1,0 +1,24 @@
+PAGE 165   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) P2 | zh 0
+   \mathcal P  y   73.2 x  155.9   line: average remains |P| − 1 P , so a bound uniform in the frozen p introduces no prime-count
+   \mathcal P  y   78.7 x  202.0   line: p ∈P
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 480.2 x 185.2
+    below[0]: h
+    below[1]: in Lemma
+    above[0]: o (1)
+    above[1]: from the Z loss
+\sum at y 480.2 x 306.0
+    below[0]: u
+    below[1]: its exact expansion
+    above[0]: prime density, the
+\sum at y 546.0 x 183.9
+    below[0]: u,v
+    below[1]: occurs here is
+    above[0]: in Lemma
+\sum at y 546.0 x 330.1
+    below[0]: j
+    above[0]: expansion
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

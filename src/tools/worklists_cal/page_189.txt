@@ -1,0 +1,22 @@
+PAGE 189   calligraphic glyphs in the PDF: 10   \mathcal in the Chinese: 0
+
+CAL B  y  218.0 x  190.5- 197.7
+      line: d ≤ d ≤ d , and let B be the finite set of retained nonprincipal physical rows q ≍ U in one
+CAL B  y  285.8 x  516.8- 524.0
+      line: For each retained tuple of external parameters and each subset of error slots, partition B
+CAL C  y  312.9 x  329.8- 335.5
+      line: when a witness count is used. Suppose each such set C has main-slot mean q ∈ [0 , δ/ 2] , as in
+CAL C  y  340.0 x  243.9- 249.6
+      line: # C ≪ U R + ϵ (1 + T ) A A ,
+CAL A  y  340.7 x  350.6- 356.5
+      line: # C ≪ A ,ϵ U R + ϵ (1 + T 1 ) A A ,
+CAL A  y  344.0 x  264.2- 271.0
+      line: A ,ϵ 1 A
+CAL B  y  476.7 x   82.1-  89.2
+      line: If B ̸ = ∅ , let E ( d ) be the supremum of these values over all pointwise sets at all retained
+CAL A  y  582.6 x  377.7- 383.7
+      line: Z max ,Z (1 + T 1 ) A ,
+CAL A  y  610.2 x  273.6- 280.4
+      line: A
+CAL A  y  649.3 x  430.2- 437.0
+      line: A ,N 1

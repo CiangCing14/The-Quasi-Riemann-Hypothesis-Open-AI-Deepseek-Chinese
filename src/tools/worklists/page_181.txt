@@ -1,0 +1,23 @@
+PAGE 181
+counts pdf: {'sum': 2, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 1, 'abs': 6}
+
+OVERLINE  y  118.5 x  286.2- 312.5 covers: 'χ p ( u )'
+          line: Q ( u ; z ) = P − 1 / 2 X χ ( u ) W ( q /P )( q /P ) z − 1 .
+OVERLINE  y  179.4 x  244.4- 270.7 covers: 'χ p ( u )'
+          line: Q ( u ; z ) = − X χ ( u ) q z − 1 W ( q /P ) = − P z − 1 / 2 Q ( u ; z ) .
+ACCENT    y  389.4 x  246.7- 251.4 
+          line: Lemma Proof. Expand 4.9 , applied 1 p ∈ 1 T to = the | T buffered | P θ ∈ T b disks, θ ( p ) . bounds Every its resulting logarithmic prime derivative character on belong
+SUM       y  117.2 x  266.5- 282.2 
+          line: Q i ( u ; z ) = P i − 1 / 2 X χ p ( u ) W i ( q p /P i )( q p /P i ) z − 1 .
+SUM       y  178.0 x  224.7- 240.4 
+          line: Q i ( u ; z ) = − X χ p ( u ) q p z − 1 W i ( q p /P i ) = − P i z − 1 / 2 Q i ( u ; z ) .
+PAREN     y  732.9 x  249.0- 257.2 ch=(
+PAREN     y  732.9 x  292.0- 300.1 ch=(
+PAREN     y  732.9 x  368.3- 376.3 ch=)
+PAREN     y  732.9 x  376.3- 384.5 ch=)
+BAR       y  318.7 x  217.7- 220.7 
+BAR       y  318.7 x  257.8- 260.9 
+BAR       y  379.2 x  196.8- 199.8 
+BAR       y  379.2 x  207.7- 210.8 
+BAR       y  732.9 x  342.4- 345.4 
+BAR       y  732.9 x  357.4- 360.5 

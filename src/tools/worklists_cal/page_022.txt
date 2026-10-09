@@ -1,0 +1,20 @@
+PAGE 22   calligraphic glyphs in the PDF: 9   \mathcal in the Chinese: 1
+
+CAL O  y  129.7 x  304.6- 311.3
+      line: h mod f b ∈O
+CAL L  y  609.5 x  245.6- 253.1
+      line: acter of conductor norm Q , and put L ( s ) = L ( s, ψ ) . For the principal character put Q = 1 and
+CAL L  y  623.0 x   70.9-  78.4
+      line: L ( s ) = ( s − 1) ζ ( s ) / ( s + 1) , with its removable value at one. Fix a ∈ [1 / 2 , 1] and 0 < e < 10 − 3 .
+CAL L  y  636.5 x  111.4- 118.9
+      line: Suppose L has no zero in the open disk of radius 2 − a − 2 e centered at 2 + it . Uniformly on the
+CAL L  y  671.4 x  210.6- 218.1
+      line: |L ( s ) | + |L ( s ) − 1 | ≪ { 2 Q (3 + | t | ) 2 } ϵ . (4.15)
+CAL L  y  671.4 x  251.1- 258.7
+      line: |L ( s ) | + |L ( s ) − 1 | ≪ { 2 Q (3 + | t | ) 2 } ϵ . (4.15)
+CAL L  y  714.0 x  219.6- 227.2
+      line: |L ′ ( s ) / L ( s ) | ≪ log { 2 Q (3 + | t | ) 2 } .
+CAL L  y  714.0 x  249.0- 256.5
+      line: |L ′ ( s ) / L ( s ) | ≪ log { 2 Q (3 + | t | ) 2 } .
+CAL L  y  762.4 x  506.6- 514.1
+      line: passes to 1 /ζ ; the upper and logarithmic-derivative bounds are for the regularized function L .

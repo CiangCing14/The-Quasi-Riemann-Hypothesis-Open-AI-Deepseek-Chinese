@@ -1,0 +1,21 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 688.3 x 188.4
+    below[0]: i =1
+    below[1]: ( p ) ∈ Q P ( Z )
+    below[2]: i i i
+    above[0]: modified probe by
+    above[1]: K
+\prod at y 688.3 x 225.2
+    below[0]: i =1
+    below[1]: P ( Z )
+    below[2]: i i
+    above[0]: probe by the
+    above[1]: K
+\sum at y 688.3 x 307.8
+    below[0]: J ⊆{ 1 ,...,K }
+    below[1]: · I
+    below[2]: η
+    above[0]: identity
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

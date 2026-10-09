@@ -1,0 +1,6 @@
+PAGE 127   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
+
+CAL R  y  222.7 x  320.8- 330.1
+      line: cross factor between u , u is the reciprocity factor R ( u , u ) , not a quotient of zero-extended
+CAL R  y  282.5 x  286.6- 295.8
+      line: G ( u u − 1 ) R ( u u − 1 , P ) .

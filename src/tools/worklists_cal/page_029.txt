@@ -1,0 +1,16 @@
+PAGE 29   calligraphic glyphs in the PDF: 7   \mathcal in the Chinese: 0
+
+CAL O  y   73.2 x  344.6- 353.3
+      line: The character pairing furnished by e is nondegenerate on O / ( p ) . Changing variables in a Gauss
+CAL O  y  213.4 x  185.9- 194.6
+      line: Fourier inversion on O / ( L ) and on each O / ( p ) now gives
+CAL O  y  213.4 x  280.4- 289.1
+      line: Fourier inversion on O / ( L ) and on each O / ( p ) now gives
+CAL O  y  322.5 x  173.3- 182.0
+      line: coefficient x = λ 3 µ ∈O is the finite sum
+CAL F  y  355.7 x  144.6- 152.4
+      line: F ( z, v ) = X C ( h ) θ ¯ ( z + z , v ) , z = λ 2 h /L + X h /p . (5.12)
+CAL O  y  735.3 x  134.4- 143.1
+      line: element of λ 2 O = 3 O , a period of θ .
+CAL O  y  735.3 x  163.4- 172.1
+      line: element of λ 2 O = 3 O , a period of θ .

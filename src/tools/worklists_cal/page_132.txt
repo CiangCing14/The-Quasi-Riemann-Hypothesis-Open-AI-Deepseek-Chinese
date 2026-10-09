@@ -1,0 +1,4 @@
+PAGE 132   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL B  y  645.6 x  235.9- 243.1
+      line: B ( k ′′ ) = 1 .

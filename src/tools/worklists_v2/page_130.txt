@@ -1,0 +1,61 @@
+PAGE 130   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) A2 O2 B1 T1 | zh 0
+   \mathcal A  y  389.1 x  302.6   line: R , E, J, q are derived, not free indices. Let A be the product of the assigned original
+   \mathcal O  y  484.0 x   70.9   line: O = { A , A , C, d, R, t, h } , set
+   \mathcal B  y  510.1 x  337.2   line: w ( ω ; t ) = e ( ω ) µ ( d ) µ ( t ′ ) B ( t ′ ; y ) B ( t ′ ; y ) B ( h ) A ( ω ) ψ out ( ω ) Y y it α .
+   \mathcal A  y  510.1 x  363.9   line: w ( ω ; t ) = e ( ω ) µ ( d ) µ ( t ′ ) B ( t ′ ; y ) B ( t ′ ; y ) B ( h ) A ( ω ) ψ out ( ω ) Y y it α .
+   \mathcal O  y  525.7 x  449.3   line: α ∈O 1
+   \mathcal T  y  587.5 x  159.4   line: T = (2 π ) − 9 H ( t ) X w ( ω ; t )
+EUFM -> \mathfrak : pdf 12 glyph(s) A5 B4 d2 H1 | zh 0
+   \mathfrak d  y  243.8 x  231.7   line: × d ( x ) ω ( q /Z s a )( q /Z s a ) ε a it xa .
+   \mathfrak A  y  294.4 x  310.5   line: Apply Equation ( 17.16 ) with the ordered list ( b , A , C, t ′ ; x ) . A surviving prime dividing x is
+   \mathfrak A  y  307.9 x  169.2   line: already prime to b , A , C, t ′ : every prime of B is in J rad q , and the displayed fourth powers
+   \mathfrak B  y  307.9 x  288.4   line: already prime to b , A , C, t ′ : every prime of B is in J rad q , and the displayed fourth powers
+   \mathfrak d  y  321.5 x  273.4   line: and punctures supply these zeros. Thus d has the original individual coefficients and lists,
+   \mathfrak A  y  362.1 x   99.4   line: b , b , A , A , C, d , t ′ , f, h and the assigned slot primes, subject to their reconstruction re-
+   \mathfrak A  y  362.1 x  116.8   line: b , b , A , A , C, d , t ′ , f, h and the assigned slot primes, subject to their reconstruction re-
+   \mathfrak A  y  375.7 x  300.4   line: lations and individual supports. In particular A | B , ( C, B ) = 1 , and d | C B /R , while
+   \mathfrak B  y  375.7 x  326.7   line: lations and individual supports. In particular A | B , ( C, B ) = 1 , and d | C B /R , while
+   \mathfrak B  y  375.7 x  361.7   line: lations and individual supports. In particular A | B , ( C, B ) = 1 , and d | C B /R , while
+   \mathfrak B  y  375.7 x  463.3   line: lations and individual supports. In particular A | B , ( C, B ) = 1 , and d | C B /R , while
+   \mathfrak H  y  587.6 x  242.3   line: T = (2 π ) − 9 H ( t ) X w ( ω ; t )
+MSBM -> \mathbb : pdf 1 glyph(s) R1 | zh 1
+   \mathbb R  y  598.1 x  231.9   line: R 9 (17.31)
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 213.1 x 198.5
+    below[0]: x sf
+    below[1]: × d
+    below[2]: I a
+    above[0]: − 1 . For a fixed
+\prod at y 507.7 x 442.2
+    below[0]: α ∈O
+    below[1]: 1
+    below[2]: inversion gives
+    above[0]: Equation ( 17.30 ).
+\int at y 580.7 x 225.8
+    below[0]: 1 ,σ
+    below[1]: R
+    below[2]: 9
+    below[3]: × Z
+    above[0]: principal-restored formal
+\sum at y 585.1 x 280.4
+    below[0]: ω ∈ Ω
+    below[1]: σ
+    below[2]: ( κ +9 η/ 2) / 2
+    below[3]: Z 1 P (
+    below[4]: 1
+    above[0]: formal first
+\sum at y 744.8 x 183.9
+    below[0]: ω
+    above[0]: majorant.
+\prod at y 744.8 x 289.2
+    below[0]: i =1 ω
+    above[0]: any finite or
+    above[1]: 2
+\sum at y 744.8 x 313.6
+    below[0]: i =1 ω
+    above[0]: finite or absolutely
+    above[1]: 2
+
+---- Chinese file today: \substack x0, line breaks \\ x1 ----

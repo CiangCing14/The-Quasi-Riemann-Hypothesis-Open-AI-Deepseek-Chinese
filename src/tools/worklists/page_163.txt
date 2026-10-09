@@ -1,0 +1,16 @@
+PAGE 163
+counts pdf: {'sum': 1, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 5, 'abs': 1}
+
+ACCENT    y  141.9 x  218.2- 222.9 
+          line: N C ≪ Z A − c + q e + B c − s 0 + ϵ G , B c = max { 0 , (3 c − 5 d − R ) / 6 } . (18.23)
+ACCENT    y  213.5 x  253.0- 259.0 
+          line: = M + 2 + { A 1 − {B c + + e B q + − B c ( − c + s d 0 + − A 2 p − − d R + ) } e q . + B d − s 0 }
+ACCENT    y  213.5 x  359.9- 366.0 
+          line: = M + 2 + { A 1 − {B c + + e B q + − B c ( − c + s d 0 + − A 2 p − − d R + ) } e q . + B d − s 0 }
+ACCENT    y  481.5 x  259.1- 265.2 
+          line: Λ c = a 0 + e q + w o + w + B c − s 0 + ϵ G . (18.25)
+ACCENT    y  501.5 x  167.7- 173.7 
+          line: This For is just the initial A − c + norm, e q + B with c − s w 0 + = ϵ w G o + = 0 w o and . a 0 = A − c , the first transform gives the following
+SUM       y  543.8 x  187.8- 203.6 
+          line: Z − a 0 / 2 X D b ( l 1 , l 2 ) τ 1 ( l 1 l 2 ) q l it 1 l 2 1 (Π l 1 l 2 , R )=1 1 s | Π l 1 l 2 G (Π l 1 l 2 , h ) . (18.26)
+BAR       y  550.7 x  363.7- 366.1 

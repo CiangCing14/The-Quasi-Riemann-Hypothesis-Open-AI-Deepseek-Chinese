@@ -1,0 +1,45 @@
+PAGE 113
+counts pdf: {'sum': 2, 'prod': 6, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 0, 'abs': 18}
+
+OVERLINE  y  649.1 x  184.0- 210.3 covers: 'χ p ( u )'
+          line: | G + χ ( u ) H | ≪ Q − x r + Q − 6 z r + Q 4 − 5 x r − 6 z r + Q 1 − w r − 6 z r .
+OVERLINE  y  722.8 x  245.4- 265.1 covers: 'η ( p )'
+          line: G = η ( p ) Q x (1 − V ) E − Q − w H .
+SUM       y  137.0 x  188.1- 203.9 
+          line: | H η, 1 ,Z ( x, w, z ) | ≤ X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ Y P i z r = Z ℓz r .
+SUM       y  499.0 x  153.0- 168.8 
+          line: X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ ϵ U ϵ Y P i z r . (16.15)
+PROD      y  137.0 x  224.9- 238.9 
+          line: | H η, 1 ,Z ( x, w, z ) | ≤ X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ Y P i z r = Z ℓz r .
+PROD      y  137.0 x  371.9- 385.8 
+          line: | H η, 1 ,Z ( x, w, z ) | ≤ X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ Y P i z r = Z ℓz r .
+PROD      y  137.0 x  442.4- 456.4 
+          line: | H η, 1 ,Z ( x, w, z ) | ≤ X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ Y P i z r = Z ℓz r .
+PROD      y  499.0 x  189.8- 203.7 
+          line: X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ ϵ U ϵ Y P i z r . (16.15)
+PROD      y  499.0 x  336.7- 350.7 
+          line: X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ ϵ U ϵ Y P i z r . (16.15)
+PROD      y  499.0 x  425.6- 439.5 
+          line: X Y  | W i ( q p i /P i ) | q p z i r − 1 | G p i |  Y | H p | ≪ ϵ U ϵ Y P i z r . (16.15)
+BRACK     y  138.5 x  238.9- 243.4 ch=[
+BRACK     y  138.5 x  347.5- 352.1 ch=]
+BRACK     y  500.5 x  203.7- 208.3 ch=[
+BRACK     y  500.5 x  312.4- 316.9 ch=]
+BAR       y  139.3 x   82.1-  85.1 
+BAR       y  139.3 x  151.4- 154.4 
+BAR       y  139.3 x  243.4- 246.5 
+BAR       y  139.3 x  297.3- 300.3 
+BAR       y  139.3 x  325.0- 328.0 
+BAR       y  139.3 x  344.5- 347.5 
+BAR       y  139.3 x  405.6- 408.6 
+BAR       y  139.3 x  422.4- 425.5 
+BAR       y  397.2 x  476.8- 479.8 
+BAR       y  501.4 x  208.3- 211.3 
+BAR       y  501.4 x  262.1- 265.2 
+BAR       y  501.4 x  289.8- 292.9 
+BAR       y  501.4 x  309.4- 312.4 
+BAR       y  501.4 x  370.4- 373.5 
+BAR       y  501.4 x  387.3- 390.3 
+BAR       y  650.1 x  154.3- 157.3 
+BAR       y  650.1 x  224.2- 227.2 
+BAR       y  697.3 x  165.2- 168.3 

@@ -1,0 +1,20 @@
+PAGE 153   calligraphic glyphs in the PDF: 9   \mathcal in the Chinese: 0
+
+CAL O  y   86.7 x  196.4- 205.1
+      line: the rows are elements k ∈O with 0 < q ≪ Z m , and
+CAL S  y  243.0 x  248.5- 255.1
+      line: polynomials are outside the fixed set S .
+CAL S  y  256.5 x  499.4- 506.0
+      line: Fix a finite group Θ of finite-order ray characters whose conductor primes belong to S . It
+CAL R  y  297.2 x  387.5- 396.7
+      line: bicharacter table, this character is the diagonal character n 7→R ( n, n ) . Membership of an
+CAL R  y  337.8 x  225.4- 234.6
+      line: remain in the polynomials. Let R be the rows for which ψ induces a nonprincipal character.
+CAL R  y  351.4 x  136.6- 145.8
+      line: For z > 0 , let R be the rows for which the inducing character of ψ does not belong to Θ . Write
+CAL I  y  418.4 x  130.3- 135.0
+      line: i ∈I ψ k ,i
+CAL I  y  431.9 x  219.3- 224.0
+      line: i i ∈I i
+CAL R  y  589.8 x  207.1- 214.3
+      line: k ∈R z

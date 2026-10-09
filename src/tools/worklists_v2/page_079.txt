@@ -1,0 +1,23 @@
+PAGE 79   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) R4 D2 | zh 0
+   \mathcal R  y   73.2 x  126.5   line: Here either R is identically zero, or there is a number µ > 0 , chosen independently of η , such
+   \mathcal R  y   86.7 x   95.2   line: that |R ( s ) | ≪ Z − µ on that entire line.
+   \mathcal R  y  235.3 x  210.2   line: The last term is omitted when R is identically zero. The implied constants and lower thresholds
+   \mathcal D  y  356.4 x   97.7   line: lie in D , so the correction is holomorphic. The all-height majorant and Lemma 10.2 justify the
+   \mathcal D  y  410.6 x  171.6   line: All these paths lie in D , and M ( z ) is holomorphic for ℜ z > 0 . Thus the two stated scalar poles
+   \mathcal R  y  756.0 x  361.5   line: Z C ( s ) e ( s − 5 / 6) 2 η )(1 + R ( s )) ds.
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\int at y 122.5 x 257.8
+    below[0]: 2 πi
+    below[1]: (2)
+    below[2]: ,
+    above[0]: entire line.
+    above[1]: of Equation (
+\int at y 749.1 x 197.4
+    below[0]: 2 πi
+    below[1]: ( β + e )
+    below[2]: ∗
+    above[0]: therefore makes
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

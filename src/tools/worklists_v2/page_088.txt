@@ -1,0 +1,26 @@
+PAGE 88   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 1 glyph(s) A1 | zh 0
+   \mathcal A  y  303.5 x  450.0   line: The slot count is a separate fixed parameter, and moving labels remain outside A .
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 405.2 x 180.1
+    below[0]: p ∈ 1
+    below[1]: T
+    above[0]: ∈ 1 T when the
+    above[1]: nonzero smooth
+\int at y 400.7 x 327.7
+    below[0]: log P
+    below[1]: 0
+    above[0]: unramified prime
+\int at y 606.2 x 257.9
+    below[0]: log P
+    below[1]: a
+    below[2]: one. This
+    above[0]: Stieltjes integration
+    above[1]: ) when dπ 1 T
+    above[2]: (
+\sum at y 751.0 x 253.1
+    below[0]: x mod a
+    above[0]: from the
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

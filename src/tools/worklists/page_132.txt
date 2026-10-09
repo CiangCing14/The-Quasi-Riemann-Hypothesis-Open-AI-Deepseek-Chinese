@@ -1,0 +1,48 @@
+PAGE 132
+counts pdf: {'sum': 1, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 17, 'abs': 7}
+
+OVERLINE  y  111.2 x  322.7- 349.1 covers: 'χ x ( y )'
+          line: P ( y ) = X c ( x ) χ ( y ) .
+ACCENT    y  268.2 x  345.7- 351.8 
+          line: g = ( x 1 , x 2 ) , x j = g z j , g b = log Z q g ′ .
+ACCENT    y  379.4 x  152.5- 158.6 
+          line: center and write θ b = log Z q d 2 . The actual conductor length is
+ACCENT    y  404.0 x  188.6- 194.6 
+          line: L b 2 = x b 1 + b x 2 − 2 g, b | L b 2 − 2( s i − g ) | ≤ 10 η.
+ACCENT    y  406.8 x  214.7- 220.8 
+          line: L b 2 = x b 1 + b x 2 − 2 g, b | L b 2 − 2( s i − g ) | ≤ 10 η.
+ACCENT    y  406.8 x  239.0- 245.0 
+          line: L b 2 = x b 1 + b x 2 − 2 g, b | L b 2 − 2( s i − g ) | ≤ 10 η.
+ACCENT    y  406.8 x  268.4- 274.5 
+          line: L b 2 = x b 1 + b x 2 − 2 g, b | L b 2 − 2( s i − g ) | ≤ 10 η.
+ACCENT    y  404.0 x  304.5- 310.6 
+          line: L b 2 = x b 1 + b x 2 − 2 g, b | L b 2 − 2( s i − g ) | ≤ 10 η.
+ACCENT    y  431.3 x  330.3- 336.4 
+          line: The last inequality uses the full fresh For k new = d k d 2 k ′′ , the implication Z x H -support bound use q k ′′ / ( q d q m ) | ≤ x b a Z − τ s i gives | ≤ 4 η for eac
+ACCENT    y  431.3 x  478.8- 484.9 
+          line: The last inequality uses the full fresh For k new = d k d 2 k ′′ , the implication Z x H -support bound use q k ′′ / ( q d q m ) | ≤ x b a Z − τ s i gives | ≤ 4 η for eac
+ACCENT    y  763.9 x  196.4- 201.1 
+          line: Z H use − θ b − L b 2 / 2 = Z λ b 1 / 2 Z λ b 2 / 2 , λ b a = H use − θ b − x b a + b g.
+ACCENT    y  763.9 x  207.5- 212.2 
+          line: Z H use − θ b − L b 2 / 2 = Z λ b 1 / 2 Z λ b 2 / 2 , λ b a = H use − θ b − x b a + b g.
+ACCENT    y  763.9 x  248.5- 253.2 
+          line: Z H use − θ b − L b 2 / 2 = Z λ b 1 / 2 Z λ b 2 / 2 , λ b a = H use − θ b − x b a + b g.
+ACCENT    y  763.9 x  274.8- 279.5 
+          line: Z H use − θ b − L b 2 / 2 = Z λ b 1 / 2 Z λ b 2 / 2 , λ b a = H use − θ b − x b a + b g.
+ACCENT    y  767.5 x  319.4- 325.5 
+          line: Z H use − θ b − L b 2 / 2 = Z λ b 1 / 2 Z λ b 2 / 2 , λ b a = H use − θ b − x b a + b g.
+ACCENT    y  767.5 x  380.5- 386.5 
+          line: Z H use − θ b − L b 2 / 2 = Z λ b 1 / 2 Z λ b 2 / 2 , λ b a = H use − θ b − x b a + b g.
+ACCENT    y  770.3 x  399.0- 405.1 
+          line: Z b b = Z b Z b , λ b a = H use − θ b − x b a + b g.
+ACCENT    y  770.3 x  423.3- 429.3 
+          line: Z b b = Z b Z b , λ b a = H use − θ b − x b a + b g.
+SUM       y  109.8 x  282.3- 298.1 
+          line: P i ( y ) = X c i ( x ) χ x ( y ) .
+BAR       y  360.8 x  433.0- 436.0 
+BAR       y  398.8 x  300.5- 303.5 
+BAR       y  398.8 x  370.4- 373.4 
+BAR       y  423.3 x  326.9- 329.9 
+BAR       y  423.3 x  359.9- 362.9 
+BAR       y  423.3 x  475.7- 478.8 
+BAR       y  423.3 x  500.1- 503.1 

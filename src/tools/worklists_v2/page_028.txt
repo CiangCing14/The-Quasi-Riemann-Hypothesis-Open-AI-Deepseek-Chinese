@@ -1,0 +1,23 @@
+PAGE 28   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) O1 X1 | zh 1
+   \mathcal O  y  465.6 x  307.4   line: and n squarefree. The infinity support has λ 3 µ ∈O ; every other ramified exponent in Equation
+   \mathcal X  y  645.9 x  445.9   line: modulo 9 . On primary elements prime to S it equals χ ( λ ) 2 . A character in X is periodic on
+EUFM -> \mathfrak : pdf 3 glyph(s) E3 | zh 0
+   \mathfrak E  y  659.5 x  199.3   line: primary elements prime to E modulo its conductor, and the zero condition ( x, E ) ̸ = 1 is periodic
+   \mathfrak E  y  659.5 x  440.9   line: primary elements prime to E modulo its conductor, and the zero condition ( x, E ) ̸ = 1 is periodic
+   \mathfrak E  y  673.1 x  109.9   line: modulo E . Thus a sufficiently divisible L with prime support S works for every member of the
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 187.7 x 255.4
+    below[0]: v mod n
+    below[1]: defined at every
+    above[0]: their domain
+\sum at y 323.9 x 230.1
+    below[0]: v mod n
+    below[1]: λ 2 , ωλ 2 , ω 2 λ 2 in
+\sum at y 723.8 x 282.5
+    below[0]: x mod p
+    above[0]: before the
+    above[1]: zero extensions.
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

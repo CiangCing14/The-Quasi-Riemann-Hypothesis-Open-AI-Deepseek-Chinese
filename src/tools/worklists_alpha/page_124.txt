@@ -1,0 +1,8 @@
+PAGE 124   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) E2 O1 | zh 0
+   \mathcal O  y  321.3 x  262.1   line: f k ∈O q ≍ Z ℓ
+   \mathcal E  y  507.0 x  399.7   line: maining block in Equation ( A ). Let ϵ ≥ 0 . Suppose every energy E ′ of the form ( 17.3 ), with
+   \mathcal E  y  569.6 x  295.0   line: and both margins at least c − 7 η , satisfies E ′ ≪ Z F ′ + ϵ child . The hypothesis is uniform over
+EUFM -> \mathfrak : pdf 2 glyph(s) d2 | zh 0
+   \mathfrak d  y  230.7 x  185.4   line: not agree. The mark is d ( nb 3 ) , independent of the choice of the divisor h of b . Multiplicativity
+   \mathfrak d  y  347.6 x  345.1   line: × X a ( n ) χ ( k ) χ ( f ) 4 d ( nb 3 ) W ( q /Z r ) .

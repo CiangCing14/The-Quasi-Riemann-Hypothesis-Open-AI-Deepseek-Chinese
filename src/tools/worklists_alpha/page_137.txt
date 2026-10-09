@@ -1,0 +1,6 @@
+PAGE 137   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) I1 K1 | zh 0
+   \mathcal I  y  563.4 x  360.4   line: products g ′ v ′ n on them are the windows already included in I .
+   \mathcal K  y  745.3 x  332.8   line: × W ( y y y ) W ( y y y ) K A k .
+EUFM -> \mathfrak : pdf 1 glyph(s) H1 | zh 0
+   \mathfrak H  y  711.9 x  158.7   line: H ( y ) = Z − 6 η Y Ω ( y ) y − 1 y − 1 ( y y ) − 1 / 2

@@ -1,0 +1,8 @@
+PAGE 173
+counts pdf: {'sum': 0, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 1}
+
+PROD      y  699.0 x  332.7- 346.7 
+          line: χ n ( h ′ ) = χ n ( εh S ) R ( n, h good ) Y χ p ( n ) v p ( h ′ ) .
+PAREN     y  163.4 x  246.8- 254.9 ch=(
+PAREN     y  163.4 x  317.0- 325.2 ch=)
+BAR       y  717.5 x  330.3- 332.6 

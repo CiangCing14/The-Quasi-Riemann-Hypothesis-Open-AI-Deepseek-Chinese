@@ -1,13 +1,13 @@
 令 $x = t + 1 - z$，在两个权重的 Mellin 反演之后。对于非零且不含六次方因子的 $u$，且 $(u, S) = 1$，定义
 $$F_{\eta,u}(x, w, z) = \sum_{\substack{c \text{ sf} \\ n,s,a}} K_\eta(c, n, s, a; u)\, q_c^{-1/2-x} q_n^{-1-3x} q_s^{-w} q_a^{-6z}, \tag{7.3}$$
 其中 $A = cn^3$，而保留全部归一化因子的系数为
-$$K_\eta(c, n, s, a; u) = \frac{F(s, A, ua^6)\chi_s(b^*)}{\sqrt{q_{b^*}}\, \tau\, \xi(s)\xi(u)}\, \gamma_2(c)\alpha(A)G(A)\eta(A)\Xi(A)^{-1}R(A, s). \tag{7.4}$$
+$$K_\eta(c, n, s, a; u) = \frac{F(s, A, ua^6)\chi_s(b^*)}{\sqrt{q_{b^*}}\, \tau\, \xi(s)\xi(u)}\, \gamma_2(c)\overline{\alpha(A)G(A)}\eta(A)\Xi(A)^{-1}R(A, s). \tag{7.4}$$
 
 为方便起见，定义公共的 Mellin 权重
 $$W(X, Y, Z; x, w, z) = X^{1/2-z} Z^{x+z-1} Y^{w-1} \Phi(x + z - 1) M(z) W_{c_1}(w).$$
 
 例如，直线 $\Re x = 3$、$\Re w = 3$、$\Re z = 2$ 对应于原本的直线 $\Re t = 4$，并且落在绝对收敛区域内。完整的高阶恒等式为
-$$I_\eta(X, Y, Z) = \frac{1}{(2\pi i)^3} \int_{(3)} \int_{(3)} \int_{(2)} W(X, Y, Z; x, w, z) \cdot \sum_u q_u^{-z} \xi(u) F_{\eta,u}(x, w, z)\, dz\, dw\, dx. \tag{7.5}$$
+$$I_\eta(X, Y, Z) = \frac{1}{(2\pi i)^3} \int_{(3)} \int_{(3)} \int_{(2)} W(X, Y, Z; x, w, z) \cdot \sum_u q_u^{-z} \overline{\xi(u)} F_{\eta,u}(x, w, z)\, dz\, dw\, dx. \tag{7.5}$$
 
 人们可以用初等界 $|F(s, A, H)| \le q_s q_{b^*} A$ 以及环形权重来证明这些直线上的所有交换都是合理的。特别地，方程 (6.2) 与 (7.5) 是对同一探针成立的恒等式，而不是针对分别选取的测试表达式所作的估计。
 

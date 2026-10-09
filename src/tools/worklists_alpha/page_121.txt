@@ -1,0 +1,10 @@
+PAGE 121   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) O4 F2 | zh 4
+   \mathcal O  y  115.0 x  181.7   line: k ∈O
+   \mathcal F  y  134.0 x  362.9   line: = √ X X ψ ¯ ( h ) F Φ h ,
+   \mathcal O  y  149.7 x  331.9   line: d | rad R h ∈O
+   \mathcal O  y  352.1 x  163.3   line: Writing ϕ ( m ) = | ( O /m ) × | , there are ϕ ( m ) unit h ’s, all with magnitude q | γ ( ψ ; m ) | , and
+   \mathcal O  y  423.8 x  202.5   line: Φ O
+   \mathcal F  y  446.0 x  273.5   line: A X |F Φ( Aq ) | ≪ 1 .
+EUFM -> \mathfrak : pdf 1 glyph(s) r1 | zh 0
+   \mathfrak r  y  744.9 x  357.5   line: Z r ρ

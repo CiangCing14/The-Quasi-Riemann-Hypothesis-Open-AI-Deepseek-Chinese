@@ -1,0 +1,18 @@
+PAGE 166
+counts pdf: {'sum': 1, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 1, 'abs': 7}
+
+OVERLINE  y  470.7 x  321.3- 362.3 covers: 'R ( b, D 2 )'
+          line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .
+OVERLINE  y  470.7 x  420.8- 453.8 covers: 'χ b ( − j )'
+          line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .
+ACCENT    y  116.1 x  301.8- 307.9 
+          line: ( K + = ( g A − − ℓ M − ) s − 0 ) − d − ( a ( 0 K + − e q + K w ) − o + w w −B + B c + − g s − 0 ) ℓ (18.31)
+SUM       y  306.2 x  290.7- 306.5 
+          line: Ω ret ( q j ) := X ω λ ( q j /T λ ) .
+BAR       y  284.6 x  135.4- 138.5 
+BAR       y  284.6 x  182.2- 185.3 
+BAR       y  284.6 x  361.2- 364.3 
+BAR       y  575.4 x  154.1- 157.1 
+BAR       y  575.4 x  196.6- 199.7 
+BAR       y  602.5 x  243.7- 246.7 
+BAR       y  762.4 x  233.6- 236.6 

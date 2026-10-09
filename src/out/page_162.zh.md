@@ -1,6 +1,6 @@
 乘积支撑约定给出 $q_a/(X/q_C), q_b/(X/q_D) \in \exp([-H_N, H_N])$，因此在外扇区中对 $T_1$ 取上确界时，式 (18.21) 中的自变量至少为 $q_h/(e^{2H_N} T_{\sec})$。将前述整二元组局部化应用于这个真正的互素桥。若 $K = \log_Z T_\lambda$ 是某个保留二元组的上长度，则
 
-$$q_e = q + R + E, \quad K \leq K_0 + \delta_{fr,1}, \quad 0 \leq \delta_{fr,1} := \frac{\xi}{2} + \frac{\log(C_d C_{\sec})}{\log Z} < \xi. \tag{18.22}$$
+$$\widehat{q} = q + R + E, \quad K \leq K_0 + \delta_{fr,1}, \quad 0 \leq \delta_{fr,1} := \frac{\xi}{2} + \frac{\log(C_d C_{\sec})}{\log Z} < \xi. \tag{18.22}$$
 
 上面已估计的零频率是原公共光滑行球的零项；它在截断行定义域上不会被恢复。后续账本保留可能的不等式 $K_0 - K \geq -\delta_{fr,1}$。
 

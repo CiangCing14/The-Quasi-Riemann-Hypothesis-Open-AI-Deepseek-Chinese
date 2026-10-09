@@ -1,10 +1,10 @@
 19.1 素数振幅
 
 对于尺度为 $P_i = Z^{\ell_i}$ 的主物理槽，将其中心因子写为
-$$Q_i(u;z) = P_i^{-1/2} \sum_{p \in 1T} \chi_p(u) W_i(q_p/P_i)(q_p/P_i)^{z-1}.$$
+$$Q_i(u;z) = P_i^{-1/2} \sum_{p \in 1T} \overline{\chi_p(u)} W_i(q_p/P_i)(q_p/P_i)^{z-1}.$$
 
 命题 16.1 中的主要部分 $Q_i$ 恰好为
-$$Q_i(u;z) = -\sum_{p \in 1T} \chi_p(u) q_p^{z-1} W_i(q_p/P_i) = -P_i^{z-1/2} \mathcal{Q}_i(u;z).$$
+$$Q_i(u;z) = -\sum_{p \in 1T} \overline{\chi_p(u)} q_p^{z-1} W_i(q_p/P_i) = -P_i^{z-1/2} \mathcal{Q}_i(u;z).$$
 
 与第 12 节一样，每个关于 $p \in 1T$ 的求和保留相同的允许集 $P_i(\mathbb{Z})$，包括其对 $S$ 的排除。原来的零延拓保持不变，因此整除 $u$ 的素数不对此主槽有贡献。$z$ 的实部位于一个固定的有界范围内，其虚部是受共同高度容许量限制的外部频率之一。
 

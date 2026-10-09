@@ -1,0 +1,12 @@
+PAGE 166   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL B  y  108.1 x  367.0- 374.2
+      line: ( K + g − ℓ − s ) − ( a + q + w + w + B − s )
+CAL B  y  124.7 x  365.8- 373.0
+      line: = ( A − M ) − d − ( K − K ) − w −B + g − ℓ (18.31)
+CAL R  y  471.8 x  321.3- 330.6
+      line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .
+CAL R  y  471.8 x  362.3- 371.6
+      line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .
+CAL R  y  471.8 x  280.2- 289.4
+      line: F ( D a, E b ; j ) = F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j ) .

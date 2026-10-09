@@ -9,7 +9,7 @@ $$
 修正项的固定有限傅里叶展开为
 
 $$
-G(A) = \sum_{\theta \in \widehat{T}} a_\theta \theta(A), \qquad a_\theta = \frac{1}{|T|} \sum_{v \in T} G(v) \overline{\theta(v)}.
+\overline{G(A)} = \sum_{\theta \in \widehat{T}} a_\theta \theta(A), \qquad a_\theta = \frac{1}{|T|} \sum_{v \in T} \overline{G(v)} \overline{\theta(v)}.
 $$
 
 Parseval 与 Cauchy–Schwarz 给出 $\sum_\theta |a_\theta| \leq |T|^{1/2}$。对于射线类 $\sigma \in T$，选取一个代表元 $s_\sigma$，并令

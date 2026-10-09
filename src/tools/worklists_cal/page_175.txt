@@ -1,0 +1,10 @@
+PAGE 175   calligraphic glyphs in the PDF: 4   \mathcal in the Chinese: 0
+
+CAL B  y   83.6 x  388.0- 395.2
+      line: F = c/ 6 + 5 { d + ( K − K ) } / 6 + w/ 3 + q/ 6 + w + B − 5 g/ 6 + ℓ,
+CAL B  y  154.2 x  287.8- 295.0
+      line: a − 2 b + p − w −B − ℓ − 5 m ′ q ′ f/ 6 .
+CAL B  y  284.7 x  336.1- 343.2
+      line: F = c + 2 w + q/ 6 + w / 6 + B ≥ c + 2 w.
+CAL B  y  328.7 x  214.9- 222.1
+      line: B + q/ 6 ≥ (3 c − 5 D ) / 6 − 5 δ .

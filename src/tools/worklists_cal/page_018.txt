@@ -1,0 +1,10 @@
+PAGE 18   calligraphic glyphs in the PDF: 4   \mathcal in the Chinese: 0
+
+CAL M  y  131.9 x  202.5- 215.6
+      line: With the Mellin convention M W ( s ) = R W ( y ) y s , a pure twist obeys
+CAL M  y  155.9 x  220.7- 233.8
+      line: M [ W ( y ) y iω ]( s ) = M W ( s + iω ) .
+CAL M  y  155.9 x  308.7- 321.8
+      line: M [ W ( y ) y iω ]( s ) = M W ( s + iω ) .
+CAL M  y  238.7 x  162.7- 175.8
+      line: |M W ( σ + iT ) | ≪ (1 + | T | ) − N X y σ | D j W ( y ) | . (4.11)

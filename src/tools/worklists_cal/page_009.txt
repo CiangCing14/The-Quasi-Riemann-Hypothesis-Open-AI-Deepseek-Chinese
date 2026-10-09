@@ -1,0 +1,8 @@
+PAGE 9   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 0
+
+CAL S  y  312.5 x  293.0- 298.2
+      line: η L S ( s, η )
+CAL S  y  449.3 x  292.5- 297.6
+      line: η L S ( s, η )
+CAL S  y  531.0 x  246.1- 251.3
+      line: is a holomorphic continuation of 1 /L S ( s, η ) . The number ϵ was chosen independently of η . By

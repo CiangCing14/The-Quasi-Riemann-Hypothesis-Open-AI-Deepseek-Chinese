@@ -1,0 +1,6 @@
+PAGE 165   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
+
+CAL P  y   73.2 x  155.9- 163.5
+      line: average remains |P| − 1 P , so a bound uniform in the frozen p introduces no prime-count
+CAL P  y   78.7 x  202.0- 207.9
+      line: p ∈P

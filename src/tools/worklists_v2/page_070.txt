@@ -1,0 +1,29 @@
+PAGE 70   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) A2 W2 H1 | zh 0
+   \mathcal A  y  131.4 x  105.6   line: A 0
+   \mathcal A  y  212.7 x  383.9   line: A
+   \mathcal W  y  466.8 x  259.1   line: I ( Z 1 / 2 , Z 1 / 2 , Z ) = W ( Z 1 / 2 , Z 1 / 2 , Z ; s, w, z )
+   \mathcal H  y  504.4 x  416.1   line: · X q − z ξ ( u ) F H ( s, w, z ) dz dw ds.
+   \mathcal W  y  551.0 x  148.0   line: W ( X, Y, Z ; s, w, z ) = X 1 / 2 − z Z s + z − 1 Y w − 1 e ( s + z − 1) 2 M ( z ) W ( w ) .
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\int at y 459.9 x 203.3
+    below[0]: (2 πi ) 3
+    below[1]: (3) (3)
+    above[0]: called x in
+\int at y 459.9 x 222.5
+    below[0]: ) 3
+    below[1]: (3) (3) (2)
+    above[0]: x in Section
+\int at y 459.9 x 241.7
+    below[0]: (3) (3) (2)
+    below[1]: (6)
+    above[0]: in Section 7.2 .
+\sum at y 502.0 x 267.0
+    below[0]: u
+    above[0]: 1 / 2 1
+    above[1]: W ( Z , Z
+    above[2]: (2)
+    above[3]: (6)
+
+---- Chinese file today: \substack x0, line breaks \\ x2 ----

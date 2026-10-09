@@ -1,0 +1,19 @@
+PAGE 11
+counts pdf: {'sum': 1, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 4, 'hat': 0, 'abs': 2}
+
+OVERLINE  y  228.9 x  285.6- 291.1 covers: '3)'
+          line: Its extension to C is e ( z ) = exp(4 πi Im z/ √ 3) . The measure dµ ( z ) = (2 / √ 3) dx dy makes O
+OVERLINE  y  228.9 x  440.6- 446.1 covers: '3)'
+          line: Its extension to C is e ( z ) = exp(4 πi Im z/ √ 3) . The measure dµ ( z ) = (2 / √ 3) dx dy makes O
+OVERLINE  y  296.1 x  319.9- 329.8 covers: 'H'
+          line: # { a : q ≤ H } = πH √ + O ( √ H + 1) ( H ≥ 0) .
+OVERLINE  y  327.3 x  461.7- 471.7 covers: 'H'
+          line: For example, the error follows by covering the boundary of the disk with O ( √ H + 1) fixed
+SUM       y  494.4 x  254.9- 270.7 
+          line: γ j ( c ) = q c − 1 / 2 X χ c ( v ) j e ( v/c ) , γ j (1) = 1 .
+PROD      y  715.3 x  253.2- 267.1 
+          line: A 7−→ χ A  u Y π p v p  , u ∈O × , v p ≥ 0 ,
+PAREN     y  207.8 x  280.4- 285.4 ch=(
+PAREN     y  207.8 x  357.2- 362.2 ch=)
+BAR       y  405.2 x  420.2- 423.2 
+BAR       y  433.7 x  334.7- 337.1 

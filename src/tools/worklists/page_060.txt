@@ -1,0 +1,21 @@
+PAGE 60
+counts pdf: {'sum': 0, 'prod': 0, 'int': 2, 'sqrt': 0, 'overline': 0, 'hat': 2, 'abs': 10}
+
+ACCENT    y  322.1 x  351.6- 357.7 
+          line: H D,N ( xy ) = 2 π R H b D,N ( ν ) x iν y iν dν,
+ACCENT    y  350.8 x  203.5- 209.6 
+          line: | ν | >cT 1 | H b D,N ( ν ) | (1 + | ν | ) J dν ≪ J,N 0 ,c T 1 − N 0
+INT       y  310.0 x  334.9- 341.0 
+          line: H ( xy ) = 1 Z H ( ν ) x iν y iν dν,
+INT       y  338.7 x  160.9- 166.9 
+          line: Z | H ( ν ) | (1 + | ν | ) J dν ≪ T − N 0
+BAR       y  357.8 x  166.9- 169.3 
+BAR       y  357.8 x  173.9- 176.3 
+BAR       y  345.6 x  198.0- 201.0 
+BAR       y  345.6 x  242.2- 245.3 
+BAR       y  345.6 x  268.3- 271.3 
+BAR       y  345.6 x  277.4- 280.4 
+BAR       y  432.7 x  480.3- 483.4 
+BAR       y  432.7 x  489.4- 492.5 
+BAR       y  564.5 x  191.2- 194.3 
+BAR       y  564.5 x  224.1- 227.1 

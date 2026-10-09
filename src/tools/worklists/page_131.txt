@@ -1,0 +1,46 @@
+PAGE 131
+counts pdf: {'sum': 3, 'prod': 1, 'int': 1, 'sqrt': 0, 'overline': 0, 'hat': 11, 'abs': 9}
+
+ACCENT    y  134.9 x  364.5- 370.6 
+          line: f 2 E For | ( y each ) . If its fixed multiplicity old outer is reconstruction at most C d and ( f ) C nonzero 0 , then y = e h , the relation y = hf 2 E implies
+ACCENT    y  527.5 x  108.3- 114.3 
+          line: gives Let R = r b diff s + ≥ r 0 be , so the actual log-norm of the even-parity primes with a 1 p ̸ = a 2 p . The table
+ACCENT    y  539.6 x   99.5- 105.6 
+          line: gives R b = b s + b r diff , so
+ACCENT    y  542.4 x  120.5- 126.6 
+          line: gives R b = b s + b r diff , so
+ACCENT    y  542.4 x  139.0- 145.1 
+          line: gives R b = b s + b r diff , so
+ACCENT    y  563.7 x  182.0- 188.0 
+          line: b c = ℓ b pair + R/ b 2 − b j − r b diff / 2 ≤ ℓ + R/ 2 − j + 2 η. (17.34)
+ACCENT    y  560.8 x  201.8- 207.8 
+          line: b c = ℓ b pair + R/ b 2 − b j − r b diff / 2 ≤ ℓ + R/ 2 − j + 2 5 η. (17.34)
+ACCENT    y  560.9 x  236.3- 242.4 
+          line: b c = ℓ b pair + R/ b 2 − b j − r b diff / 2 ≤ ℓ + R/ 2 − j + 2 5 η. (17.34)
+ACCENT    y  561.2 x  266.4- 272.5 
+          line: b c = ℓ b pair + R/ b 2 − b j − r b diff / 2 ≤ ℓ + R/ 2 − j + 2 5 η. (17.34)
+ACCENT    y  563.7 x  285.5- 291.6 
+          line: b c = ℓ b pair + R/ b 2 − b j − r b diff / 2 ≤ ℓ + R/ 2 − j + 2 η. (17.34)
+ACCENT    y  675.6 x  309.3- 315.4 
+          line: |T 1 ,σ | ≪ Z π β + π old R 9 | H b 1 ,σ ( t ) |
+SUM       y  163.9 x  152.2- 167.9 
+          line: X w ( f ) ≤ C 0 d O (( y )) C 0 +1 ≤ C π old Z π old (0 < q y ≤ Z H use ) . (17.32)
+SUM       y  420.1 x  238.2- 253.9 
+          line: S i,σ, t = X w o + X Φ + ( q y /Z H use ) | P i ( y ) | 2 . (17.33)
+SUM       y  420.1 x  276.2- 291.9 
+          line: S i,σ, t = X w o + X Φ + ( q y /Z H use ) | P i ( y ) | 2 . (17.33)
+PROD      y  701.8 x  269.1- 283.1 
+          line: × Y  Z κ i +9 η/ 2 S i,σ, t  1 / 2 d t .
+INT       y  663.6 x  287.1- 293.1 
+          line: |T | ≪ Z π β + π old Z | H ( t ) |
+PAREN     y  700.0 x  284.9- 291.4 ch=(
+PAREN     y  700.0 x  354.9- 361.4 ch=)
+BAR       y  143.3 x   93.8-  96.9 
+BAR       y  182.5 x  161.2- 163.6 
+BAR       y  422.5 x  358.9- 362.0 
+BAR       y  422.5 x  386.6- 389.6 
+BAR       y  604.1 x  364.0- 367.1 
+BAR       y  670.4 x  203.8- 206.8 
+BAR       y  670.4 x  225.0- 228.0 
+BAR       y  670.4 x  305.4- 308.4 
+BAR       y  670.4 x  341.5- 344.5 

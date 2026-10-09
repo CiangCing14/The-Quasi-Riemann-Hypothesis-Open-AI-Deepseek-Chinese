@@ -1,0 +1,18 @@
+PAGE 86
+counts pdf: {'sum': 2, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 0, 'abs': 5}
+
+OVERLINE  y  689.7 x  395.8- 425.3 covers: 'η ( p J c )'
+          line: I ( Z ) = X Y W ( q /P ) X ( − 1) | J | q − 3 / 2 η ( p )
+OVERLINE  y  745.4 x  383.9- 403.7 covers: 'η ( p )'
+          line: Equivalently, at each prime p the operation is the marked term η ( p ) I ( X, Y, Zq ) minus the
+SUM       y  688.3 x  188.4- 204.2 
+          line: I η, modified ( Z ) = X Y W i ( q p i /P i ) X ( − 1) | J | q p − J 3 / 2 η ( p J c )
+SUM       y  688.3 x  307.8- 323.6 
+          line: I η, modified ( Z ) = X Y W i ( q p i /P i ) X ( − 1) | J | q p − J 3 / 2 η ( p J c )
+PROD      y  688.3 x  225.2- 239.2 
+          line: I η, modified ( Z ) = X Y W i ( q p i /P i ) X ( − 1) | J | q p − J 3 / 2 η ( p J c )
+BAR       y  247.1 x  324.7- 327.8 
+BAR       y  247.1 x  364.3- 367.3 
+BAR       y  620.9 x  130.8- 133.1 
+BAR       y  688.5 x  360.2- 362.5 
+BAR       y  688.5 x  367.9- 370.2 

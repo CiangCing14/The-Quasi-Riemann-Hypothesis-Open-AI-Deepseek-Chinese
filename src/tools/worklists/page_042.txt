@@ -1,0 +1,7 @@
+PAGE 42
+counts pdf: {'sum': 0, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 2}
+
+PROD      y  711.3 x  295.5- 309.5 
+          line: m pow = Y p v p ( m )
+BAR       y  208.2 x  214.7- 217.7 
+BAR       y  208.2 x  238.5- 241.5 

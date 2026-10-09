@@ -1,0 +1,7 @@
+PAGE 172
+counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 1, 'abs': 0}
+
+ACCENT    y  512.3 x  411.5- 417.5 
+          line: A clip ,j,ϱ − M act + (6 κ − 1) z ≤ ≤ α 6( j w − + M ℓ ) + + (6 δ κ − + 1) e z + + π e j + . π j,ϱ − r e j − ( M act − M )
+PAREN     y  446.3 x  241.8- 246.8 ch=(
+PAREN     y  446.3 x  371.7- 376.7 ch=)

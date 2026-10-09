@@ -1,0 +1,5 @@
+PAGE 142   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) O2 E1 | zh 0
+   \mathcal O  y  101.0 x  479.3   line: and bounded counts, while the remaining µ -sum is an unrestricted lattice sum on λ − 4 O .
+   \mathcal O  y  190.7 x  515.4   line: whole-dyad tail the actual argument is at least Z τ ref / 2 ; use the same lattice-shell bound on λ − 4 O
+   \mathcal E  y  557.8 x  128.0   line: This proves E ≪ Z F 0 + ϵ , with the claimed uniform finite-seminorm and polynomial-height depen-

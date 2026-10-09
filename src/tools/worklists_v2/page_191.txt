@@ -1,0 +1,15 @@
+PAGE 191   (pdf glyphs vs Chinese macros)
+EUFM -> \mathfrak : pdf 2 glyph(s) H2 | zh 0
+   \mathfrak H  y   99.5 x  192.4   line: | H ( s, w, z ) | ≪ U ϵ Y P 17 / 50 = U ϵ Z 17 ℓ/ 50 ,
+   \mathfrak H  y  385.7 x  236.1   line: | H ( s, w, z ) | ≪ U ϵ Z ℓz ∞
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 97.0 x 296.5
+    below[0]: i
+    below[1]: Equation ( 10.20
+\sum at y 490.8 x 202.8
+    below[0]: U>Z h + ζ
+    below[1]: contribution of
+    above[0]: > 0 after choosing
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

@@ -1,0 +1,11 @@
+PAGE 136   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) I1 B1 A1 | zh 0
+   \mathcal I  y  203.5 x  293.4   line: union of these clipping supports is included in I .
+   \mathcal B  y  291.2 x  490.3   line: γ, k , f are the displayed functions of ξ . The set may be taken before imposing B and
+   \mathcal A  y  304.8 x  402.4   line: ( v ′ , g ′ CJ ) = 1 , retaining those masks in the signed outer weight. Let A ( ξ ) be the product of
+EUFM -> \mathfrak : pdf 3 glyph(s) X2 O1 | zh 0
+   \mathfrak X  y  332.0 x  106.2   line: Let X src be the structural outer set of this transformed component, before adding any indepen-
+   \mathfrak O  y  345.5 x  260.3   line: dent child rows or labels. It retains o ∈ O , in particular the exact reconstruction b b = q 2 J 2 s ,
+   \mathfrak X  y  424.2 x  355.6   line: Γ = { ( q , t ′ , r = g ′ /d ) : ξ ∈ X src } . (17.47)
+
+---- Chinese file today: \substack x0, line breaks \\ x2 ----

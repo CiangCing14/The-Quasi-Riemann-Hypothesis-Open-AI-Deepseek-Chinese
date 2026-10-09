@@ -1,0 +1,15 @@
+PAGE 167
+counts pdf: {'sum': 0, 'prod': 2, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 2, 'abs': 4}
+
+ACCENT    y  543.7 x  144.3- 150.4 
+          line: length Define at most the nominal q e + w o + row t 2 + and V . total widths by
+ACCENT    y  578.7 x  372.2- 378.3 
+          line: M m ′ = = 2 m a ′ 0 + − q K ′ = − M g − + J g 2 − − g V, − g + t ≤ M − σ. q = q e + w o + t 2 + V, (18.32)
+PROD      y  384.5 x  262.3- 276.3 
+          line: χ n ( v ) = Y χ n ( p ) e p Y 1 ( n,p )=1 ,
+PROD      y  384.5 x  320.2- 334.2 
+          line: χ n ( v ) = Y χ n ( p ) e p Y 1 ( n,p )=1 ,
+BAR       y  176.9 x  225.8- 228.9 
+BAR       y  190.4 x  229.7- 232.8 
+BAR       y  403.0 x  268.0- 270.4 
+BAR       y  403.0 x  326.0- 328.3 

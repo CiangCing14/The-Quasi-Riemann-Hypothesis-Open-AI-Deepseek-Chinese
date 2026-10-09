@@ -1,0 +1,26 @@
+PAGE 72   calligraphic glyphs in the PDF: 12   \mathcal in the Chinese: 0
+
+CAL D  y  276.1 x  475.9- 484.3
+      line: is a function H ( s, w, z ) . It is holomorphic on a neighborhood of each point of D and of
+CAL D  y  289.6 x   99.4- 107.8
+      line: every D ( ϵ ) . For every D > 0 and every real box K contained in one of these regions, there are
+CAL K  y  289.6 x  309.6- 317.9
+      line: every D ( ϵ ) . For every D > 0 and every real box K contained in one of these regions, there are
+CAL K  y  307.2 x  163.1- 169.5
+      line: η, K ,D η, K ,D u
+CAL K  y  307.2 x  218.5- 225.0
+      line: η, K ,D η, K ,D u
+CAL K  y  316.7 x  153.5- 161.8
+      line: and real parts in K ,
+CAL K  y  342.0 x  284.9- 290.5
+      line: | H η,u,Z ( s, w, z ) | ≪ η, K ,D Z B η, K ,D (1 + |ℑ s | + |ℑ w | + |ℑ z | ) J η, K ,D . (10.4)
+CAL K  y  342.0 x  425.4- 431.1
+      line: | H η,u,Z ( s, w, z ) | ≪ η, K ,D Z B η, K ,D (1 + |ℑ s | + |ℑ w | + |ℑ z | ) J η, K ,D . (10.4)
+CAL K  y  345.2 x  244.4- 250.8
+      line: η,u,Z η, K ,D η, K ,D η, K ,D
+CAL W  y  442.2 x  258.3- 269.1
+      line: I ( Z ) = W ( X, Y, Z ; s, w, z ) X q − z ξ ( u )
+CAL W  y  534.6 x  148.0- 158.8
+      line: W ( X, Y, Z ; s, w, z ) = X 1 / 2 − z Z s + z − 1 Y w − 1 e ( s + z − 1) 2 M ( z ) W ( w ) .
+CAL H  y  581.6 x  502.0- 511.2
+      line: For the base probe, the physical expression is I ( Z l x , Z l y , Z ) , ℓ = 0 , and H = H .

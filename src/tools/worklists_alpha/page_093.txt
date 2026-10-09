@@ -1,0 +1,23 @@
+PAGE 93   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 21 glyph(s) Q9 A6 I4 B1 O1 | zh 1
+   \mathcal B  y   73.2 x  143.6   line: Here a branch B specifies h mod L , the base active and inactive sets A , I , and a partition
+   \mathcal A  y   73.2 x  414.0   line: Here a branch B specifies h mod L , the base active and inactive sets A , I , and a partition
+   \mathcal I  y   73.2 x  432.3   line: Here a branch B specifies h mod L , the base active and inactive sets A , I , and a partition
+   \mathcal Q  y   86.7 x   70.9   line: Q = A ⊔I . All base primes with j ̸ = 0 are active. Put
+   \mathcal A  y   86.7 x   94.3   line: Q = A ⊔I . All base primes with j ̸ = 0 are active. Put
+   \mathcal I  y   86.7 x  122.6   line: Q = A ⊔I . All base primes with j ̸ = 0 are active. Put
+   \mathcal Q  y   90.7 x  103.0   line: Q Q p
+   \mathcal Q  y   90.7 x  128.5   line: Q Q p
+   \mathcal A  y  128.5 x  251.3   line: p ∈A 0 ∪A Q
+   \mathcal A  y  128.5 x  267.9   line: p ∈A 0 ∪A Q
+   \mathcal Q  y  131.5 x  274.7   line: p ∈A 0 ∪A Q
+   \mathcal Q  y  195.3 x  188.5   line: Q b 0 F p q
+   \mathcal I  y  206.9 x  377.3   line: p ∈I 0 q ∈I Q
+   \mathcal I  y  206.9 x  313.1   line: p ∈I 0 q ∈I Q
+   \mathcal Q  y  209.8 x  381.9   line: p ∈I 0 q ∈I Q (14.4)
+   \mathcal A  y  238.6 x  228.2   line: p ∈A 0 q ∈A Q
+   \mathcal A  y  238.6 x  316.5   line: p ∈A 0 q ∈A Q
+   \mathcal Q  y  241.6 x  323.3   line: p ∈A 0 q ∈A Q
+   \mathcal Q  y  263.1 x  142.5   line: Q F
+   \mathcal O  y  322.0 x  282.6   line: Proof. For every good prime and every A ∈O , the zero convention gives the pointwise identity
+   \mathcal Q  y  335.5 x  302.6   line: 1 = 1 − χ ( A ) 0 . Expand its product over Q , and apply Proposition 5.1 to each of the

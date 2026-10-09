@@ -1,0 +1,55 @@
+PAGE 73
+counts pdf: {'sum': 0, 'prod': 0, 'int': 3, 'sqrt': 0, 'overline': 0, 'hat': 4, 'abs': 36}
+
+ACCENT    y  201.9 x  445.8- 451.9 
+          line: obtained where B, J, C by omitting are fixed the independently j th coordinate of of Z t . and Uniformly of the integer for T ≥ N 1 below. and r ∈K Write , b t j for the 
+ACCENT    y  275.4 x  316.2- 322.2 
+          line: D∩{ t j = T } K r ,Z ( t ) | F Z ( t ) | d b t j ≪ N Z B (1 + | T | ) − N . (10.8)
+ACCENT    y  415.2 x  261.3- 267.3 
+          line: R m − 1 (1 + | T | + | b t j | ) J − L d b t j ≪ (1 + | T | ) J − L + m − 1 .
+ACCENT    y  415.2 x  301.3- 307.4 
+          line: R m − 1 (1 + | T | + | b t j | ) J − L d b t j ≪ (1 + | T | ) J − L + m − 1 .
+INT       y  231.7 x  170.0- 176.0 
+          line: Z K ( t ) | F ( t ) | d t ≪ Z B T − N , (10.7)
+INT       y  262.8 x  191.4- 197.4 
+          line: Z K ( t ) | F ( t ) | d t ≪ Z B (1 + | T | ) − N . (10.8)
+INT       y  402.6 x  179.9- 186.0 
+          line: Z (1 + | T | + | t | ) J − L d t ≪ (1 + | T | ) J − L + m − 1 .
+BAR       y  124.7 x  325.0- 328.1 
+BAR       y  124.7 x  332.6- 335.6 
+BAR       y  176.2 x  238.5- 241.5 
+BAR       y  176.2 x  268.4- 271.4 
+BAR       y  176.2 x  333.0- 336.1 
+BAR       y  176.2 x  340.6- 343.6 
+BAR       y  250.8 x  213.8- 216.1 
+BAR       y  250.8 x  223.1- 225.4 
+BAR       y  238.5 x  280.9- 284.0 
+BAR       y  238.5 x  310.8- 313.8 
+BAR       y  269.6 x  276.5- 279.6 
+BAR       y  269.6 x  306.4- 309.4 
+BAR       y  269.6 x  389.4- 392.4 
+BAR       y  269.6 x  400.3- 403.4 
+BAR       y  364.4 x  413.7- 416.7 
+BAR       y  364.4 x  421.2- 424.3 
+BAR       y  409.4 x  231.7- 234.7 
+BAR       y  409.4 x  242.6- 245.7 
+BAR       y  409.4 x  259.0- 262.0 
+BAR       y  409.4 x  270.9- 274.0 
+BAR       y  409.4 x  351.0- 354.1 
+BAR       y  409.4 x  361.9- 365.0 
+BAR       y  495.4 x  353.9- 356.9 
+BAR       y  495.4 x  414.1- 417.1 
+BAR       y  495.4 x  418.9- 421.9 
+BAR       y  495.4 x  484.3- 487.4 
+BAR       y  548.0 x  445.2- 448.3 
+BAR       y  548.0 x  455.1- 458.1 
+BAR       y  561.6 x  178.7- 181.7 
+BAR       y  561.6 x  186.2- 189.3 
+BAR       y  600.8 x  229.5- 232.5 
+BAR       y  600.8 x  289.6- 292.6 
+BAR       y  665.9 x   70.9-  73.9 
+BAR       y  665.9 x  149.3- 152.3 
+BAR       y  690.3 x  213.7- 216.7 
+BAR       y  690.3 x  223.3- 226.4 
+BAR       y  690.3 x  236.9- 239.9 
+BAR       y  690.3 x  274.2- 277.2 

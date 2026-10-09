@@ -1,0 +1,8 @@
+PAGE 26   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 0
+
+CAL P  y  113.5 x  463.2- 469.1
+      line: ranges over a fixed finite set and its prime divisors divide L . There are O (2 |P| ) terms, or
+CAL P  y  127.0 x  124.3- 130.2
+      line: O (4 |P| ) after splitting each Ramanujan factor in the next display into its two summands.
+CAL O  y  323.9 x  463.9- 472.6
+      line: restriction at λ . The character ϑ is an additive character of a quotient of O by a fixed

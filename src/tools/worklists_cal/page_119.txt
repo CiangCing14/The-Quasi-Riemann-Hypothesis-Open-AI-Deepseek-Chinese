@@ -1,0 +1,12 @@
+PAGE 119   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL P  y  229.7 x  137.5- 145.1
+      line: or row vector P ( F ) is linear in this whole profile, then
+CAL P  y  253.8 x  376.8- 384.4
+      line: P ( F ) = m P ( F ) , ∥P ( F ) ∥ 2 = m 2 ∥P ( F ) ∥ 2 .
+CAL P  y  253.8 x  174.3- 181.9
+      line: P ( F ) = m P ( F ) , ∥P ( F ) ∥ 2 = m 2 ∥P ( F ) ∥ 2 .
+CAL P  y  253.8 x  236.3- 243.9
+      line: P ( F ) = m P ( F ) , ∥P ( F ) ∥ 2 = m 2 ∥P ( F ) ∥ 2 .
+CAL P  y  253.8 x  299.2- 306.8
+      line: P ( F ) = m P ( F ) , ∥P ( F ) ∥ 2 = m 2 ∥P ( F ) ∥ 2 .

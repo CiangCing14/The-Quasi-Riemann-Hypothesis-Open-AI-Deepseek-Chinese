@@ -11,13 +11,13 @@ $$h(y) = \prod_{i=1}^{d} y_i^{a_i}, \qquad F_Y(y) = W(y) V^{\sharp}(Y h(y)), \qq
 
 $$p_j(F_Y) \ll_{A,j,d,\Omega,a} m_A(Y) p_j(W) M_{A,\lceil 4A \rceil + j + 2}(V), \tag{5.22}$$
 
-$$\|F_Y\|_{J,\mathrm{sep}} \ll_{A,J,d,\Omega,a} m_A(Y) p_{J+d+2}(W) M_{A,\lceil 4A \rceil + J + d + 4}(V). \tag{5.23}$$
+$$\lVert F_Y\rVert_{J,\mathrm{sep}} \ll_{A,J,d,\Omega,a} m_A(Y) p_{J+d+2}(W) M_{A,\lceil 4A \rceil + J + d + 4}(V). \tag{5.23}$$
 
 这里 $p_j$ 是单个剖面的齐次半范数，而不是元组非齐次半范数。常数独立于 $Y$ 以及块内实际的范数标签。
 
 证明。在 $W$ 的支集上，单项式 $h$ 被仅依赖于 $\Omega$ 和指数的正常数上下界控制。作用在 $V^{\sharp}(Y h(y))$ 上的每个算子 $y_i \partial_{y_i}$ 等于 $V^{\sharp}$ 在 $Y h(y)$ 处的欧拉导数乘以 $a_i$。它不产生额外的 $Y$ 的幂。莱布尼茨法则和式 (5.4) 证明了式 (5.22)。以 $j = J + d + 2$ 应用引理 4.5 便得到式 (5.23)。
 
 下面是范数推论，包括其运算顺序。设 $I$ 为原始行集，并假设行向量 $U$ 关于整个剖面 $F_Y$ 是线性的。该剖面包含其行和列范数变量的完整固定对数盒的截断函数。假设同步对数傅里叶反演用对每一行公共的一个密度表示该向量。在验证了相关的算术系数独立性之后，写出 $F_Y = m_A(Y) \widetilde{F}_Y$。闵可夫斯基给出
-$$\|U\|_{\ell^2(I)} \le \frac{m_A(Y)}{(2\pi)^d} \int_{\mathbb{R}^d_c} |\widetilde{F}_Y(t)| \|B(t)\|_{\ell^2(I)} \, dt. \tag{5.24}$$
+$$\lVert U\rVert_{\ell^2(I)} \le \frac{m_A(Y)}{(2\pi)^d} \int_{\mathbb{R}^d_c} |\widetilde{F}_Y(t)| \lVert B(t)\rVert_{\ell^2(I)} \, dt. \tag{5.24}$$
 
 这里 $B(t)$ 是分离行向量，其范数幂全都具有绝对值一。这个不等式背后的恒等式是 $\ell^2(I)$ 中的 Bochner 积分；只要分离范数具有所述的半范数高度增长，上述有限分离范数便保证其绝对可积性。为各行分别选取的密度的统一界不会给出这个恒等式。只有在右边的非负范数内部，行集随后才可以

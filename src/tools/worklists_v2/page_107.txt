@@ -1,0 +1,11 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 485.3 x 187.6
+    below[0]: q ≪ Q
+    below[1]: m
+    below[2]: Cauchy–Schwarz in the row sum, Lemma
+    above[0]: P a
+    above[1]: / 6
+    above[2]: ≪ P a 1 . Proposition
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

@@ -1,0 +1,27 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 323.8 x 202.7
+    below[0]: x ∈ k
+    below[1]: the change of
+    above[0]: ) and let ψ ( x ) =
+    above[1]: ×
+    above[2]: of k , extended
+\sum at y 323.8 x 343.9
+    below[0]: x ∈ k
+    below[1]: gives
+    above[0]: nontrivial
+\sum at y 382.9 x 251.3
+    below[0]: t ∈ k × y
+    below[1]: −
+    below[2]: and 1 otherwise,
+    above[0]: of variables x =
+\sum at y 382.9 x 295.9
+    below[0]: y ∈ k ×
+    below[1]: otherwise, and
+    above[0]: x = ty gives
+\sum at y 650.0 x 256.9
+    below[0]: x ∈ k
+    below[1]: 2 m < P − 1 ,
+    above[0]: a cube.
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

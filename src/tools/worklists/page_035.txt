@@ -1,0 +1,19 @@
+PAGE 35
+counts pdf: {'sum': 0, 'prod': 1, 'int': 1, 'sqrt': 0, 'overline': 0, 'hat': 2, 'abs': 8}
+
+ACCENT    y  653.0 x  134.3- 140.4 
+          line: F Y = m A ( Y ) F e Y . Minkowski gives
+ACCENT    y  683.1 x  306.5- 312.5 
+          line: ∥U∥ ℓ 2 ( I ) ≤ (2 π ) d R d | F c e Y ( t ) |∥ B ( t ) ∥ ℓ 2 ( I ) d t . (5.24)
+PROD      y  364.8 x  134.8- 148.8 
+          line: h ( y ) = Y y i a i , F Y ( y ) = W ( y ) V ♯ ( Y h ( y )) , m A ( Y ) = min { Y 1 / 4 , (1 + Y ) − A } .
+INT       y  671.0 x  282.8- 288.9 
+          line: ∥U∥ ≤ m A ( Y ) Z | F c ( t ) |∥ B ( t ) ∥ d t . (5.24)
+BAR       y  442.9 x  159.4- 164.9 
+BAR       y  442.9 x  179.2- 184.6 
+BAR       y  677.9 x  192.9- 198.4 
+BAR       y  677.9 x  206.3- 211.7 
+BAR       y  677.9 x  301.3- 304.3 
+BAR       y  677.9 x  331.6- 334.7 
+BAR       y  677.9 x  334.7- 340.1 
+BAR       y  677.9 x  362.0- 367.4 

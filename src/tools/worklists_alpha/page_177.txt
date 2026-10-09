@@ -1,0 +1,15 @@
+PAGE 177   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) L4 | zh 0
+   \mathcal L  y  191.2 x  207.1   line: L ( U , t ) L ( U , t ) −L ( V , t ) L ( V , t ) .
+   \mathcal L  y  191.2 x  248.8   line: L ( U , t ) L ( U , t ) −L ( V , t ) L ( V , t ) .
+   \mathcal L  y  191.2 x  303.9   line: L ( U , t ) L ( U , t ) −L ( V , t ) L ( V , t ) .
+   \mathcal L  y  191.2 x  344.5   line: L ( U , t ) L ( U , t ) −L ( V , t ) L ( V , t ) .
+EUFM -> \mathfrak : pdf 8 glyph(s) t6 R2 | zh 0
+   \mathfrak R  y  100.4 x  156.1   line: divisors # { d : d | R } ≪ Z ϵ 1 . The coefficient itself is also Z ϵ 1 -bounded by the polynomial-
+   \mathfrak R  y  220.2 x  374.0   line: ϑ, R ∗ 1 2
+   \mathfrak t  y  346.9 x  296.5   line: plain lengths are at least L . Before the selected t -factors are removed, the c side has lower plain
+   \mathfrak t  y  557.1 x  248.5   line: t , J C, t , J D, t , J
+   \mathfrak t  y  557.1 x  298.1   line: t , J C, t , J D, t , J
+   \mathfrak t  y  557.1 x  342.8   line: t , J C, t , J D, t , J
+   \mathfrak t  y  568.7 x  226.0   line: t , J (18.48)
+   \mathfrak t  y  721.8 x  152.9   line: quotients retain t -primes, because the coefficient lemma preserves the common mask, equal

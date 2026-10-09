@@ -24,7 +24,7 @@ $$\prod_{i \text{ selected}} |Q_i|^2 \ge U^{2qz - \delta \max_i w_i}.$$
 
 所选因子恰好具有矩所需的系数类。如有必要，对两个见证因子（包括它们的剖面）取共轭，并将其行特征写为 $\psi(n) = \nu(n)\chi_n(u)$，$\nu \in \Theta$。相对于该行，一个物理素数具有系数
 
-$$\nu(p)1_{p \in 1_T} = \frac{1}{|T|} \sum_{\theta \in \widehat{T}} (\nu\theta)(p).$$
+$$\overline{\nu(p)1_{p \in 1_T}} = \frac{1}{|T|} \sum_{\theta \in \widehat{T}} (\overline{\nu\theta})(p).$$
 
 这是 $\Theta$ 中成员的固定有限组合；它独立于固定行和中移动的行。不要求 $\eta(p)=1$。因子 $(q_p/P_i)^{z_{\mathrm{phys}}-1}$ 是其光滑剖面的一部分。在掩码之前，底层素支撑保持不相交。标记矩允许这种负的公共行定向。为应用引理 18.1（其行特征具有正定向），对两个普通见证因子与所有选定素因子的整个乘积取共轭。其绝对平方不变，而其公共行特征变为 $\psi(n) = \nu(n)\chi_n(u)$。两个见证剖面及每个所选槽剖面都被共轭，
 

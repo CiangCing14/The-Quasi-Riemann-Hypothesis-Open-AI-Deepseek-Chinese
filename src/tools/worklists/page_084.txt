@@ -1,0 +1,7 @@
+PAGE 84
+counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 4}
+
+BAR       y  365.5 x  162.6- 165.7 
+BAR       y  365.5 x  244.7- 247.7 
+BAR       y  440.8 x  171.5- 174.5 
+BAR       y  440.8 x  207.7- 210.8 

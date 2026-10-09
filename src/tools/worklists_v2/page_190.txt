@@ -1,0 +1,22 @@
+PAGE 190   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) H2 Q2 D1 | zh 0
+   \mathcal H  y  113.1 x  239.0   line: H ( I ) = H ( s, w, z ) Y D ( u ) Y Q ( u ; z ) .
+   \mathcal D  y  113.1 x  315.0   line: H ( I ) = H ( s, w, z ) Y D ( u ) Y Q ( u ; z ) .
+   \mathcal Q  y  113.1 x  359.2   line: H ( I ) = H ( s, w, z ) Y D ( u ) Y Q ( u ; z ) .
+   \mathcal Q  y  189.9 x  387.3   line: Fix one amplitude set at one retained tuple. For a main slot, Q = − P z − 1 / 2 Q and | Q | ≤
+   \mathcal H  y  245.7 x   70.9   line: H ≪ U ϵ , multiplication of these estimates gives, after choosing the preliminary powers,
+EUFM -> \mathfrak : pdf 3 glyph(s) H3 | zh 0
+   \mathfrak H  y  113.2 x  195.7   line: H ( I ) = H ( s, w, z ) Y D ( u ) Y Q ( u ; z ) .
+   \mathfrak H  y  273.4 x  222.1   line: L S ( w, χ ( u )) H ( I ) ( s, w, z ) ≪ U δ/ 2+ O ( e )+ ϵ (1 + T ) A 1
+   \mathfrak H  y  414.1 x  299.0   line: has moved the original dynamic-bin sum using H . They are not used for continuation and are
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 110.7 x 299.3
+    below[0]: i ∈ I
+    below[1]: bound follows
+    above[0]: 16.1
+\prod at y 110.7 x 343.4
+    below[0]: i/ ∈ I
+    below[1]: follows from
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

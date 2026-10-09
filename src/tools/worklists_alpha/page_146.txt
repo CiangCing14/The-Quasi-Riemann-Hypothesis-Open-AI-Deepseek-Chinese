@@ -1,0 +1,6 @@
+PAGE 146   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) B2 I2 | zh 0
+   \mathcal B  y  179.4 x  254.2   line: µ ( d ′ ) µ ( s ) G ( ϑ ) B ( h ′ )1 1 1 . (17.73)
+   \mathcal B  y  366.8 x  116.6   line: Keep B outside the common Fourier separation of the full kernel and the old windows.
+   \mathcal I  y  455.8 x  329.2   line: cutoff and enlarged label window are also included in I , so the same bounds hold directly for
+   \mathcal I  y  659.2 x  241.1   line: are the windows already included in I . None of these supports depends on a current outer tuple

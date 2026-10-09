@@ -1,0 +1,16 @@
+PAGE 73   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 8 glyph(s) D5 K3 | zh 0
+   \mathcal K  y   73.2 x  398.6   line: Lemma 10.2 (External integrated and trace tails) . Let m ≥ 2 , let K be a compact set of real
+   \mathcal K  y   86.7 x  237.6   line: contour parameters, and, for r ∈K and Z ≥ 2 , let K be a nonnegative Borel measurable
+   \mathcal D  y  149.1 x  191.4   line: uniformly in r , Z, t . Let D ⊆ R m be Borel measurable, and suppose a Borel measurable factor
+   \mathcal D  y  162.6 x  144.7   line: F satisfies on D
+   \mathcal K  y  209.7 x  424.7   line: obtained by omitting the j th coordinate of t . Uniformly for T ≥ 1 and r ∈K ,
+   \mathcal D  y  250.8 x  176.0   line: D∩{ max j | t j | >T }
+   \mathcal D  y  281.9 x  197.4   line: D∩{ t j = T }
+   \mathcal D  y  434.9 x  398.8   line: Taking L > N + J + m − 1 proves Equation ( 10.8 ). Restricting to D decreases these positive
+MSBM -> \mathbb : pdf 5 glyph(s) R5 | zh 5
+   \mathbb R  y   98.0 x  118.0   line: kernel on R m . Suppose it is jointly Borel measurable in ( r , t ) and, for every integer L ≥ 0 ,
+   \mathbb R  y  146.8 x  216.9   line: uniformly in r , Z, t . Let D ⊆ R m be Borel measurable, and suppose a Borel measurable factor
+   \mathbb R  y  420.0 x  186.0   line: R m − 1
+   \mathbb R  y  650.1 x  232.6   line: y = A t with a fixed A ∈ GL ( R ) , and multiply the three-factor kernel by a Borel density
+   \mathbb R  y  746.6 x  252.2   line: identical argument uses a density on R m − 2 and m ≥ 2 , with density one when m = 2 . Thus

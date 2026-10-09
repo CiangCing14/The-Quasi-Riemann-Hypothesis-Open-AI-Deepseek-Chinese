@@ -1,0 +1,32 @@
+PAGE 163   calligraphic glyphs in the PDF: 15   \mathcal in the Chinese: 0
+
+CAL B  y  136.1 x  228.5- 234.0
+      line: N ≪ Z A − c + q + B c − s 0 + ϵ G , B = max { 0 , (3 c − 5 d − R ) / 6 } . (18.23)
+CAL B  y  138.3 x  295.7- 302.9
+      line: N ≪ Z A − c + q + B c − s 0 + ϵ G , B = max { 0 , (3 c − 5 d − R ) / 6 } . (18.23)
+CAL N  y  138.3 x  153.4- 162.3
+      line: N ≪ Z A − c + q + B c − s 0 + ϵ G , B = max { 0 , (3 c − 5 d − R ) / 6 } . (18.23)
+CAL B  y  162.8 x  195.9- 203.1
+      line: The analogous quantity is B = max { 0 , (3 d − 5 c − R ) / 6 } . The complete exponent ledger for this
+CAL B  y  205.5 x  271.0- 278.2
+      line: + 1 { A − c + q + B − s + A − d + q + B − s }
+CAL B  y  205.5 x  378.0- 385.2
+      line: + 1 { A − c + q + B − s + A − d + q + B − s }
+CAL B  y  222.0 x  228.3- 235.5
+      line: = M + 1 {B + B − ( c + d − 2 p − R ) } .
+CAL B  y  222.0 x  253.0- 260.2
+      line: = M + 1 {B + B − ( c + d − 2 p − R ) } .
+CAL B  y  254.6 x  235.7- 242.8
+      line: B + B ≤ c + d − 2 p − R. (18.24)
+CAL B  y  254.6 x  260.3- 267.5
+      line: B + B ≤ c + d − 2 p − R. (18.24)
+CAL B  y  473.5 x  324.4- 331.6
+      line: Λ = a + q + w + w + B − s + ϵ . (18.25)
+CAL B  y  493.5 x  185.8- 192.9
+      line: This is just A − c + q + B − s + ϵ + w .
+CAL N  y  704.9 x  162.8- 171.7
+      line: The positive norm N is at most the corresponding norm over a smooth ball of length K + g .
+CAL P  y  759.1 x  213.2- 220.8
+      line: P = { p : Z ℓ ∗ / 2 < q ≤ Z ℓ ∗ , p ∈S} / .
+CAL S  y  759.1 x  366.2- 372.8
+      line: P = { p : Z ℓ ∗ / 2 < q ≤ Z ℓ ∗ , p ∈S} / .

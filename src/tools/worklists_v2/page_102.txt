@@ -1,0 +1,21 @@
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 222.5 x 358.7
+    below[0]: J i
+    below[1]: i/ ∈ J
+    below[2]: compact sets on
+\sum at y 323.6 x 239.2
+    below[0]: Z
+    below[1]: k ∈
+    above[0]: fixed slot windows,
+    above[1]: order j ,
+\sum at y 354.0 x 240.4
+    below[0]: | k | >κ log Z − C
+    below[1]: G ann
+    below[2]: the fixed slot
+    above[0]: A cnt | k
+    above[1]: e
+    above[2]: Z
+    above[3]: k ∈
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

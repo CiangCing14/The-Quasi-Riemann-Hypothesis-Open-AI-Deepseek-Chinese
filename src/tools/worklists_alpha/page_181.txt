@@ -1,0 +1,9 @@
+PAGE 181   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 7 glyph(s) A3 Q2 P1 X1 | zh 1
+   \mathcal Q  y  154.6 x  143.4   line: The main part Q in Proposition 16.1 is exactly
+   \mathcal Q  y  180.4 x  160.3   line: Q ( u ; z ) = − X χ ( u ) q z − 1 W ( q /P ) = − P z − 1 / 2 Q ( u ; z ) .
+   \mathcal P  y  216.2 x  386.9   line: As in Section 12 , each sum over p ∈ 1 retains the same allowed set P ( Z ) , including its exclusion
+   \mathcal A  y  322.7 x  274.8   line: i A ,e,ϵ 1 1 i
+   \mathcal X  y  379.2 x  510.3   line: Proof. Expand 1 = | T | − 1 P θ ( p ) . Every resulting prime character belongs to X .
+   \mathcal A  y  410.4 x   94.9   line: A ,e
+   \mathcal A  y  465.9 x  429.6   line: A ,e

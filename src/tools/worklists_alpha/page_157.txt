@@ -1,0 +1,7 @@
+PAGE 157   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) I3 R2 | zh 0
+   \mathcal R  y  195.1 x  327.7   line: Thus every resulting slot character is nonprincipal on R .
+   \mathcal I  y  212.7 x  436.9   line: i i ∈I
+   \mathcal I  y  226.2 x  184.8   line: i i ∈I
+   \mathcal I  y  272.7 x  193.7   line: i ∈I  p prime 
+   \mathcal R  y  327.4 x  374.9   line: | Q | 2 ≤ CZ κz + ϵ 1 p ( W ) b (1 + | ω | ) h ( k ∈R , z > 0) . (18.12)

@@ -9,9 +9,9 @@ $$|H_{\eta, u, Z}(s, w, z)| \ll_{\eta, K, D} Z^{B_{\eta, K, D}} (1 + |\Im s| + |
 这些常数与指数不依赖于 $Z$、$u$ 以及任何后续分部积分阶数。不假定 $H$ 或其任何局部因子非零。
 
 最后，对独立给定的 $I_\eta(Z)$ 断言以下恒等式，其中和与积分在所示直线上绝对收敛：
-$$I_\eta(Z) = \frac{1}{(2\pi i)^3} \int_{(3)} \int_{(3)} \int_{(2)} W(X, Y, Z; s, w, z) \sum_u^{(6)} q_u^{-z} \xi(u) \cdot F\left( \frac{\zeta^S(6z) L^S(w, \chi_\bullet(u))}{L^S(s, \eta \chi_\bullet(u))} \right) H_{\eta, u, Z}(s, w, z) \, dz \, dw \, ds, \tag{10.5}$$
+$$I_\eta(Z) = \frac{1}{(2\pi i)^3} \int_{(3)} \int_{(3)} \int_{(2)} W(X, Y, Z; s, w, z) \sum_u^{(6)} q_u^{-z} \overline{\xi(u)} \cdot F\left( \frac{\zeta^S(6z) L^S(w, \chi_\bullet(u))}{L^S(s, \eta \chi_\bullet(u))} \right) H_{\eta, u, Z}(s, w, z) \, dz \, dw \, ds, \tag{10.5}$$
 其中和具有方程 (7.5) 的物理限制，且
-$$W(X, Y, Z; s, w, z) = X^{1/2 - z} Z^{s + z - 1} Y^{w - 1} e(s + z - 1) M(z) \widehat{W}_{c_1}(w).$$
+$$W(X, Y, Z; s, w, z) = X^{1/2 - z} Z^{s + z - 1} Y^{w - 1} e(s + z - 1) M(z) W_{c_1}(w).$$
 因此方程 (10.5) 是对物理表达式待证的假设，而非其定义。
 
 对基础探针，物理表达式为 $I_\eta(Z^{l_x}, Z^{l_y}, Z)$，$\ell = 0$，且 $H_{\eta, u, Z} = H_{\eta, u}$。方程 (7.5) 与 (7.13) 证明所需的恒等式，引理 7.1 给出全纯性与方程 (10.4)。更一般地，定义中的函数 $H$ 总是指去除所示标量商之后的完整修正。若该修正是局部因子乘积之和，则乘积本身必须在所述区域内全纯。用单个局部因子在其零点处写商并不能建立此条件。仅用于估计所保留围道的分解将在下面单独陈述。

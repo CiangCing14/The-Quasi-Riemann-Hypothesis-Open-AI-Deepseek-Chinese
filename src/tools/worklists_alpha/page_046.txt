@@ -1,0 +1,10 @@
+PAGE 46   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) R3 O1 C1 | zh 1
+   \mathcal O  y  152.4 x  186.1   line: m ∈O ∗ (4)
+   \mathcal R  y  292.8 x  270.6   line: ν ( a ) = η ( a )Ξ( a ) − 1 R ( a, s ) (( a, S ) = 1) ,
+   \mathcal R  y  376.5 x   99.9   line: Since R ( A, s ) = R ( A, s ) for s ∈ σ , the displayed Mellin integral of the corrected row equals
+   \mathcal R  y  376.5 x  152.9   line: Since R ( A, s ) = R ( A, s ) for s ∈ σ , the displayed Mellin integral of the corrected row equals
+   \mathcal C  y  429.8 x  302.9   line: B ( Z ) = X a C ( Z ; m, ν θ ) .
+MSBM -> \mathbb : pdf 2 glyph(s) R2 | zh 2
+   \mathbb R  y  559.1 x  515.0   line: on every value of q /Q that can occur on the support of W ( q /Y ) W ( q / ( q q X )) . For v ∈ R ,
+   \mathbb R  y  680.1 x  208.3   line: 2 π R

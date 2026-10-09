@@ -1,0 +1,60 @@
+PAGE 68   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 13 glyph(s) A9 U4 | zh 0
+   \mathcal A  y   90.7 x  113.0   line: A A u
+   \mathcal A  y   90.7 x  259.8   line: A A u
+   \mathcal A  y  120.1 x  314.1   line: k A
+   \mathcal A  y  144.2 x  468.4   line: k A
+   \mathcal U  y  153.7 x  269.1   line: when applying a positive row bound. Let U denote the rows of the current witness subdivision
+   \mathcal A  y  281.2 x  177.1   line: A
+   \mathcal U  y  326.4 x  262.9   line: # U ≪ UV − 1 / 2 . (9.19)
+   \mathcal A  y  330.4 x  291.0   line: V A
+   \mathcal U  y  348.5 x  273.6   line: Discarding any of the restrictions defining U in this upper count can only add rows.
+   \mathcal A  y  591.2 x  373.5   line: n n A
+   \mathcal A  y  648.0 x  222.4   line: k A
+   \mathcal A  y  706.5 x  248.4   line: u A ,ϵ 1 1
+   \mathcal U  y  718.1 x  159.7   line: u ∈U V
+EUFM -> \mathfrak : pdf 19 glyph(s) w9 s4 y4 k1 v1 | zh 0
+   \mathfrak w  y   77.2 x  194.2   line: w
+   \mathfrak k  y  120.2 x  261.6   line: k q q A V
+   \mathfrak s  y  127.6 x  285.8   line: s w
+   \mathfrak w  y  127.6 x  294.7   line: s w
+   \mathfrak v  y  194.5 x  187.1   line: has a unique expression v 2 y 3 with y squarefree; the two factors need not be coprime. The ideal
+   \mathfrak y  y  194.5 x  197.5   line: has a unique expression v 2 y 3 with y squarefree; the two factors need not be coprime. The ideal
+   \mathfrak y  y  194.5 x  236.2   line: has a unique expression v 2 y 3 with y squarefree; the two factors need not be coprime. The ideal
+   \mathfrak w  y  231.4 x  183.6   line: # { w : q ≤ V, w powerful } ≪ V 1 / 2 X q 3 / 2 ≪ V 1 / 2 .
+   \mathfrak w  y  231.4 x  242.7   line: # { w : q ≤ V, w powerful } ≪ V 1 / 2 X q 3 / 2 ≪ V 1 / 2 .
+   \mathfrak w  y  235.4 x  206.0   line: w y
+   \mathfrak y  y  235.5 x  364.0   line: w y
+   \mathfrak y  y  246.3 x  347.5   line: y
+   \mathfrak w  y  263.7 x  371.4   line: The last series converges by the same ideal count. For each fixed w in its dyad, the ball containing
+   \mathfrak w  y  362.2 x  133.5   line: For fixed w , s , υ , put v = υs w . Multiplicativity in the numerator gives the exact identity
+   \mathfrak s  y  362.2 x  146.8   line: For fixed w , s , υ , put v = υs w . Multiplicativity in the numerator gives the exact identity
+   \mathfrak s  y  366.1 x  220.8   line: s
+   \mathfrak w  y  671.2 x  204.3   line: over the O ( V 1 / 2 ) choices of w and the finitely many choices of s , υ yields
+   \mathfrak s  y  671.2 x  371.0   line: over the O ( V 1 / 2 ) choices of w and the finitely many choices of s , υ yields
+   \mathfrak w  y  748.9 x  337.9   line: applied. They may differ for different frozen values of w , which are summed only after those
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 229.0 x 341.6
+    below[0]: y
+    below[1]: For each fixed w
+    above[0]: two factors need
+\sum at y 584.8 x 203.0
+    below[0]: n
+    below[1]: holds for each of
+    above[0]: of w , even
+    above[1]: support and
+\sum at y 584.8 x 282.2
+    below[0]: q ≍ D
+    below[1]: n
+    below[2]: the finitely many
+    above[0]: though its fixed
+    above[1]: ideal counting
+\sum at y 700.1 x 152.4
+    below[0]: u ∈U
+    below[1]: V
+    below[2]: sequences in
+    above[0]: 1 / 2
+    above[1]: ( V ) choices of
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

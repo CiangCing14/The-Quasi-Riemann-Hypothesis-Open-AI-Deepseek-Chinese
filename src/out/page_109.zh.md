@@ -9,10 +9,10 @@ $$|H_{\eta,u,Z}(x, w, z)| \ll_\epsilon q^{u\epsilon} \prod_i P_i^{z_r + B} \ll_\
 其中 $B'$ 在该盒上固定。对于 $q_u \le Z^D$，这就是式 (10.4)，甚至高度指数为零。这里所有常数都在任何后续分部积分次序之前固定。
 
 现在，将精确的有限操作与式 (7.5) 和 (7.13) 相结合，给出
-$$I_{\eta,\mathrm{modified}}(Z) = \frac{1}{(2\pi i)^3} \int_{(3)} \int_{(3)} \int_{(2)} W(X, Y, Z; x, w, z) \cdot \sum_u q_u^{-z} \xi(u) \frac{\zeta_S(6z) L_S(w, \chi_\bullet(u))}{F L_S(x, \eta \chi_\bullet(u))} H_{\eta,u,Z}(x, w, z) \, dz \, dw \, dx. \tag{16.7}$$
+$$I_{\eta,\mathrm{modified}}(Z) = \frac{1}{(2\pi i)^3} \int_{(3)} \int_{(3)} \int_{(2)} W(X, Y, Z; x, w, z) \cdot \sum_u q_u^{-z} \overline{\xi(u)} \frac{\zeta_S(6z) L_S(w, \chi_\bullet(u))}{F L_S(x, \eta \chi_\bullet(u))} H_{\eta,u,Z}(x, w, z) \, dz \, dw \, dx. \tag{16.7}$$
 该恒等式在所显示的直线上绝对收敛，因为对于固定的 $Z$，它是由有限多个绝对收敛的重标度基础探针恒等式得到的。它没有额外的外部 Euler 因子。它验证了物理表达式 $I_{\eta,\mathrm{modified}}$ 的定义 10.1 中的精确高度表示，其几何由式 (12.4) 给出。特别地，$l_x/2 - 1 + h/6 = 17/96 - 1 + 13/96 = -11/16$，正如式 (12.3) 所要求的。它是命题 15.3 中所界定的那个探针的恒等式。每次延拓都使用式 (16.3) 中的完整修正，而不是各个商的整体定义乘积。
 
 16.2 动态局部误差
 
 在恒等射线素数处，来自 $T$ 的每个固定相位都等于一，尽管 $\eta(p)$ 可以是任意单位。首先假设 $p \nmid u$ 并令 $v = \chi_p(u)$。则 $D = \eta(p) v^{-1} Q^{-x}$，且 $\eta(p) Q^x D = v^{-1}$。利用 $v^{-1} W = Q^{-w}$ 和 $E_p = P_p^* + D$ 给出精确的归一化消去
-$$G_p + v^{-1} H_p = \frac{(1-V)(1-W)}{1-D} \Big[ (v^{-1} - Q^{-w})\{V/(1-V) - D\} + (\eta(p)Q^x + v^{-1} - Q^{-w}) E_p \Big]. \tag{16.8}$$
+$$G_p + v^{-1} H_p = \frac{(1-V)(1-W)}{1-D} \Big[ (v^{-1} - Q^{-w})\{V/(1-V) - D\} + (\overline{\eta(p)}Q^x + v^{-1} - Q^{-w}) E_p \Big]. \tag{16.8}$$

@@ -1,0 +1,4 @@
+PAGE 82   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL D  y   73.2 x  303.9- 312.3
+      line: For the large rows, (2 , 2 , v ) with v > 2 lies in D . The same all-height local bound verifies

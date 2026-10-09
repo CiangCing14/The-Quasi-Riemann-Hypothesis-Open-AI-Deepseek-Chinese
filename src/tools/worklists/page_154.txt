@@ -1,0 +1,16 @@
+PAGE 154
+counts pdf: {'sum': 4, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 3}
+
+SUM       y  503.7 x  188.4- 204.2 
+          line: S k, R ( X ) = X µ ( d ) ψ k 0 ( d ) q d − 1 / 2 T k ( X/q d ) , (18.4)
+SUM       y  536.3 x  257.5- 273.3 
+          line: Q k,i, R = Q k,i 0 − P i − 1 / 2 X ψ k 0 ( p ) ν i ( p ) W slot i ( q p /P i ) , P i = Z z i . (18.5)
+SUM       y  713.2 x  288.7- 304.4 
+          line: A ′ = A − log Z q d 1 d 2 − X z i , z ′ = z − X z i .
+SUM       y  713.2 x  383.0- 398.8 
+          line: A ′ = A − log Z q d 1 d 2 − X z i , z ′ = z − X z i .
+PROD      y  657.3 x  287.5- 301.5 
+          line: q d − 1 d / 2 Y P i − 1 / 2 .
+BAR       y  522.2 x  194.0- 196.4 
+BAR       y  554.8 x  263.1- 265.4 
+BAR       y  587.2 x  321.0- 323.3 

@@ -1,0 +1,18 @@
+PAGE 35   calligraphic glyphs in the PDF: 8   \mathcal in the Chinese: 0
+
+CAL R  y  113.8 x  435.0- 444.2
+      line: supported at primes over 6 d , all in S . Once the good ray class is fixed, A 7→R ( A, m ) is one
+CAL P  y  168.0 x  333.1- 340.7
+      line: symbol factors in a completed coefficient are placed in P and combined at a shared prime with
+CAL I  y  580.0 x  422.3- 428.2
+      line: Here is the norm consequence, including its order of operations. Let I be the original row
+CAL U  y  593.5 x  223.9- 230.7
+      line: set, and suppose a row vector U is linear in the whole profile F . The profile includes the
+CAL U  y  677.9 x  198.4- 205.2
+      line: ∥U∥ ≤ A | F c ( t ) |∥ B ( t ) ∥ d t . (5.24)
+CAL I  y  682.6 x  222.6- 227.3
+      line: ℓ 2 ( I ) (2 π ) d c e Y ℓ 2 ( I )
+CAL I  y  682.6 x  378.3- 383.0
+      line: ℓ 2 ( I ) (2 π ) d c e Y ℓ 2 ( I )
+CAL I  y  721.7 x  377.0- 382.9
+      line: identity underlying this inequality is a Bochner integral in ℓ 2 ( I ) ; the finite separation norm

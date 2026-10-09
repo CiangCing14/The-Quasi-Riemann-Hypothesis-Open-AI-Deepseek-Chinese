@@ -1,0 +1,29 @@
+PAGE 26   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) P2 O1 | zh 0
+   \mathcal P  y  113.5 x  463.2   line: ranges over a fixed finite set and its prime divisors divide L . There are O (2 |P| ) terms, or
+   \mathcal P  y  127.0 x  124.3   line: O (4 |P| ) after splitting each Ramanujan factor in the next display into its two summands.
+   \mathcal O  y  323.9 x  463.9   line: restriction at λ . The character ϑ is an additive character of a quotient of O by a fixed
+EUFM -> \mathfrak : pdf 2 glyph(s) L2 | zh 0
+   \mathfrak L  y  119.3 x  445.3   line: L
+   \mathfrak L  y  132.8 x  106.5   line: L
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 397.3 x 258.9
+    below[0]: y mod p
+    below[1]: units modulo p by
+    above[0]: of µ and satisfies
+    above[1]: 0 (mod 6) , put
+\prod at y 592.4 x 286.1
+    below[0]: p inactive
+    below[1]: of h and r
+    above[0]: six. With M =
+    above[1]: and the class of
+\prod at y 592.4 x 365.1
+    below[0]: p active
+    below[1]: 2
+    below[2]: mod M , both d
+    above[0]: λ L , there is
+    above[1]: 2
+    above[2]: modulo M ,
+
+---- Chinese file today: \substack x0, line breaks \\ x4 ----

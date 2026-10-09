@@ -1,0 +1,6 @@
+PAGE 184   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
+
+CAL B  y  345.8 x  229.2- 236.3
+      line: # B ≪ U e ( r ) − δr + ϵ (1 + T ) A A ,
+CAL A  y  346.6 x  346.8- 352.7
+      line: # B ≪ U e ( r ) − δr + ϵ (1 + T 1 ) A A ,

@@ -1,0 +1,6 @@
+PAGE 97   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
+
+CAL U  y  290.0 x  159.0- 165.8
+      line: choices, denote by U ( k ) the right side of Equation ( 14.3 ), summed with the product-form
+CAL U  y  752.4 x  241.6- 248.4
+      line: X |U ( k ) | 2 ≪ Z E ref − O/ 2+ ϵ .

@@ -1,0 +1,12 @@
+PAGE 169
+counts pdf: {'sum': 1, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 5}
+
+SUM       y  150.2 x  271.1- 286.9 
+          line: 1 p | Q n i = X ( − 1) | J | +1 Y 1 p | n i ,
+PROD      y  150.2 x  333.7- 347.6 
+          line: 1 p | Q n i = X ( − 1) | J | +1 Y 1 p | n i ,
+BAR       y  157.1 x  231.6- 234.0 
+BAR       y  150.4 x  310.5- 312.8 
+BAR       y  150.4 x  318.2- 320.6 
+BAR       y  157.1 x  359.2- 361.5 
+BAR       y  529.2 x  118.2- 121.2 

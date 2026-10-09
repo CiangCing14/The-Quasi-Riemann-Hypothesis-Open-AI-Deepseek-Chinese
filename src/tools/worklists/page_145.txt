@@ -1,0 +1,35 @@
+PAGE 145
+counts pdf: {'sum': 3, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 7, 'hat': 3, 'abs': 4}
+
+OVERLINE  y  321.4 x  195.2- 201.6 covers: 'ϑ,'
+          line: ν = ν ϑ, A ( z ) = α ¯ ( z ) γ ( z ) ν ( z ) , K = F Φ .
+OVERLINE  y  418.5 x  286.9- 318.1 covers: 'A ∗ ( z 2 )'
+          line: × X 1 A ( z ) A ( z ) χ ( d ′ ) χ ( h ′ ) χ ( d ′ ) χ ( h ′ )
+OVERLINE  y  418.5 x  318.1- 350.5 covers: 'χ z 1 ( d ′ )'
+          line: × X 1 A ( z ) A ( z ) χ ( d ′ ) χ ( h ′ ) χ ( d ′ ) χ ( h ′ )
+OVERLINE  y  418.5 x  415.9- 448.9 covers: 'χ z 2 ( h ′ )'
+          line: × X 1 A ( z ) A ( z ) χ ( d ′ ) χ ( h ′ ) χ ( d ′ ) χ ( h ′ )
+OVERLINE  y  457.9 x  312.1- 384.5 covers: 'W 0 ( q C q z 2 /Z D ′ )'
+          line: × d ( Cz ) d ( Cz ) W ( q q /Z D ′ ) W ( q q /Z D ′ )
+OVERLINE  y  745.0 x  212.2- 245.6 covers: 'χ sn ( d ′ )'
+          line: A ( sn ) χ ( d ′ ) χ ( h ′ ) = A ( s ) χ ( d ′ ) χ ( h ′ )
+OVERLINE  y  745.0 x  320.6- 348.8 covers: 'χ s ( d ′ )'
+          line: A ( sn ) χ ( d ′ ) χ ( h ′ ) = A ( s ) χ ( d ′ ) χ ( h ′ )
+ACCENT    y  103.9 x  194.1- 200.2 
+          line: κ b i ≤ κ c + 3 η, κ c = m − 2 D + P 1 . (17.70)
+ACCENT    y  383.5 x  264.4- 270.4 
+          line: T Σ init 0 = X ′ ψ C ψ d ′ ψ h ′ µ ( d ′ ) G b ( ϑ ) B init ( h ′ )1 ( C,j )=1
+ACCENT    y  677.2 x  433.6- 439.7 
+          line: before any factorwise bound. its retained individual cutoff. Let The v n ≥ a 0 are be the center of a squarefree squarefree and prime to s s , -dyad, but need v b = log n
+SUM       y  375.9 x  165.6- 181.3 
+          line: T Σ init 0 = X ψ C ψ d ′ ψ h ′ µ ( d ′ ) G b ( ϑ ) B init ( h ′ )1 ( C,j )=1
+SUM       y  417.1 x  180.9- 196.7 
+          line: × X 1 ( z 1 ,z 2 )=1 A ∗ ( z 1 ) A ∗ ( z 2 ) χ z 1 ( d ′ ) χ z 1 ( h ′ ) χ z 2 ( d ′ ) χ z 2 ( h ′ )
+SUM       y  631.9 x  271.6- 287.3 
+          line: 1 ( z 1 ,z 2 )=1 = X µ ( s ) , z a = sn a ,
+PAREN     y  477.6 x  237.9- 246.0 ch=(
+PAREN     y  477.6 x  287.7- 295.7 ch=)
+BAR       y  394.6 x  183.9- 186.2 
+BAR       y  515.7 x  107.6- 110.6 
+BAR       y  515.7 x  161.5- 164.5 
+BAR       y  650.4 x  267.7- 270.0 

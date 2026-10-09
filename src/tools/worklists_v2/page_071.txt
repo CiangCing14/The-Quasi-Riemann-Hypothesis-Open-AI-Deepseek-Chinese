@@ -1,0 +1,11 @@
+PAGE 71   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) H2 D2 S1 | zh 0
+   \mathcal H  y  244.8 x  186.9   line: H ( s ) = H ( s, 1 , 1 / 6) , c = W (1) M (1 / 6) Res ζ S ( v ) / 6 . (10.1)
+   \mathcal S  y  512.1 x  332.9   line: Let f be the integral in Equation ( 2.3 ) with C = C , S = S , and the function H just defined.
+   \mathcal H  y  616.0 x  252.8   line: present application the correction is H , independent of Z , and the parameters below are
+   \mathcal D  y  693.0 x  141.1   line: D ( ϵ ) = { ( s, w, z ) : ℜ s ≥ 51 / 100 , ℜ z ≥ 17 / 50 , ℜ w ≥− 1 / 100 ,
+   \mathcal D  y  726.1 x  158.8   line: D = { ( s, w, z ) : ℜ s ≥ 7 / 8 , ℜ z ≥ 33 / 200 , ℜ w ≥ 19 / 20 } .
+MSBM -> \mathbb : pdf 1 glyph(s) R1 | zh 1
+   \mathbb R  y  760.1 x   83.2   line: of R 3 for ( ℜ s, ℜ w, ℜ z ) .
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

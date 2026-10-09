@@ -1,0 +1,10 @@
+PAGE 115   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 5 glyph(s) P3 O2 | zh 5
+   \mathcal P  y   73.2 x  243.4   line: For a fixed finite set I of slots, let P be disjoint sets of primes outside S , with q ≍ Z z i for
+   \mathcal P  y   86.7 x   91.6   line: p ∈P . The sets and the coefficients a ( p ) are independent of u , and | a ( p ) | ≤ 1 . Given fixed
+   \mathcal P  y  141.4 x  246.8   line: i ∈ I p ∈P i i ∈ I
+   \mathcal O  y  290.0 x  236.0   line: u ∈O
+   \mathcal O  y  668.6 x  431.3   line: f O
+EUFM -> \mathfrak : pdf 2 glyph(s) r1 d1 | zh 0
+   \mathfrak r  y  723.4 x  359.7   line: ( n, r ρ )=1
+   \mathfrak d  y  732.4 x  184.7   line: independent of k, f . Let d have the product form in Equation ( 14.1 ) , with disjoint fixed prime lists

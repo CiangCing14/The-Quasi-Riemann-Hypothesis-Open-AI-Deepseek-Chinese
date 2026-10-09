@@ -1,0 +1,25 @@
+PAGE 90
+counts pdf: {'sum': 2, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 6, 'hat': 0, 'abs': 6}
+
+OVERLINE  y  207.1 x  242.5- 278.9 covers: 'χ n 1 ( n 2 )'
+          line: χ ( x ) = χ ( k ) χ ( n ) , χ ( y ) = χ ( − k ) χ ( n ) .
+OVERLINE  y  207.1 x  305.4- 336.2 covers: 'χ n 2 ( y ) ='
+          line: χ ( x ) = χ ( k ) χ ( n ) , χ ( y ) = χ ( − k ) χ ( n ) .
+OVERLINE  y  207.1 x  350.8- 390.4 covers: 'χ n 2 ( − k )'
+          line: χ ( x ) = χ ( k ) χ ( n ) , χ ( y ) = χ ( − k ) χ ( n ) .
+OVERLINE  y  516.6 x  516.9- 523.4 covers: 'For some applications it is preferable to remove all primes common to the two full moduli, with'
+          line: no congruence-sum identity is asserted at a newly added pair.
+OVERLINE  y  613.6 x  343.7- 380.3 covers: 'R ( b, D )'
+          line: F ( Da, Eb ; j ) = F ( D, E ; j ) R ( a, E ) R ( b, D ) R ( a, b )
+OVERLINE  y  756.6 x  332.2- 368.8 covers: 'R ( b, D )'
+          line: χ E ( a ) χ b ( D ) χ b ( a ) = R ( a, E ) R ( b, D ) R ( a, b ) .
+SUM       y  387.7 x  220.5- 236.3 
+          line: A ( n 1 /n 2 ) X A ((1 + t ) /t ) = A ( n 1 /n 2 ) X A ( z ) .
+SUM       y  387.7 x  373.1- 388.8 
+          line: A ( n 1 /n 2 ) X A ((1 + t ) /t ) = A ( n 1 /n 2 ) X A ( z ) .
+BAR       y  100.3 x  154.0- 157.1 
+BAR       y  100.3 x  318.2- 321.3 
+BAR       y  284.7 x  414.2- 417.2 
+BAR       y  352.5 x  168.9- 172.0 
+BAR       y  426.8 x  451.7- 454.7 
+BAR       y  440.4 x  271.1- 274.1 

@@ -1,0 +1,18 @@
+PAGE 73   calligraphic glyphs in the PDF: 8   \mathcal in the Chinese: 0
+
+CAL K  y   73.2 x  398.6- 406.9
+      line: Lemma 10.2 (External integrated and trace tails) . Let m ≥ 2 , let K be a compact set of real
+CAL K  y   86.7 x  237.6- 245.9
+      line: contour parameters, and, for r ∈K and Z ≥ 2 , let K be a nonnegative Borel measurable
+CAL D  y  149.1 x  191.4- 199.8
+      line: uniformly in r , Z, t . Let D ⊆ R m be Borel measurable, and suppose a Borel measurable factor
+CAL D  y  162.6 x  144.7- 153.1
+      line: F satisfies on D
+CAL K  y  209.7 x  424.7- 433.0
+      line: obtained by omitting the j th coordinate of t . Uniformly for T ≥ 1 and r ∈K ,
+CAL D  y  250.8 x  176.0- 182.6
+      line: D∩{ max j | t j | >T }
+CAL D  y  281.9 x  197.4- 204.0
+      line: D∩{ t j = T }
+CAL D  y  434.9 x  398.8- 407.2
+      line: Taking L > N + J + m − 1 proves Equation ( 10.8 ). Restricting to D decreases these positive

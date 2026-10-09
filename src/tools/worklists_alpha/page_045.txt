@@ -1,0 +1,5 @@
+PAGE 45   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) R3 | zh 0
+   \mathcal R  y  228.6 x   70.9   line: R , G , and the fixed primary and supplementary phases supported over 2 , 3 in Lemma 4.4 factor.
+   \mathcal R  y  519.3 x  281.8   line: Ψ ( a ) = η ( a )Ξ( a ) − 1 R ( a, s ) χ ( m ) (( a, S ) = 1) .
+   \mathcal R  y  611.2 x  317.6   line: b . For the completed index A = cn 3 , the factor R ( A, s ) cancels the cross-prime reciprocity

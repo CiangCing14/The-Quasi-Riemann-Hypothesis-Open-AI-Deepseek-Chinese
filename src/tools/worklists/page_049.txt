@@ -1,0 +1,45 @@
+PAGE 49
+counts pdf: {'sum': 3, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 24}
+
+OVERLINE  y  348.5 x  516.9- 523.4 covers: 'completed-'
+          line: implies Q + Y ≤ 2 Q , proving the second.
+SUM       y  248.7 x  190.3- 206.1 
+          line: X | a s,d | 2 = Y − 3 X | c σ ( s ) W 1 ( r s ) | 2 r s − 2 φ O ( s ) ,
+SUM       y  248.7 x  272.0- 287.8 
+          line: X | a s,d | 2 = Y − 3 X | c σ ( s ) W 1 ( r s ) | 2 r s − 2 φ O ( s ) ,
+SUM       y  550.4 x  231.1- 246.8 
+          line: X | B m,σ ( Z ) | 2 ≪ A ,ϵ 1 Z 1+ ϵ 1 .
+PAREN     y  712.0 x  316.0- 324.0 ch=(
+PAREN     y  712.0 x  335.1- 343.2 ch=)
+BAR       y   73.2 x  422.6- 425.7 
+BAR       y   86.7 x  160.4- 163.4 
+BAR       y  157.5 x  181.3- 185.0 
+BAR       y  164.1 x  181.3- 185.0 
+BAR       y  170.6 x  181.3- 185.0 
+BAR       y  177.2 x  181.3- 185.0 
+BAR       y  157.5 x  237.1- 240.8 
+BAR       y  164.1 x  237.1- 240.8 
+BAR       y  170.6 x  237.1- 240.8 
+BAR       y  177.2 x  237.1- 240.8 
+BAR       y  158.0 x  256.5- 259.5 
+BAR       y  158.0 x  333.0- 336.0 
+BAR       y  172.8 x  286.7- 289.7 
+BAR       y  172.8 x  302.8- 305.8 
+BAR       y  172.8 x  352.9- 356.0 
+BAR       y  172.8 x  369.0- 372.0 
+BAR       y  251.1 x  207.9- 210.9 
+BAR       y  251.1 x  227.8- 230.9 
+BAR       y  251.1 x  289.6- 292.6 
+BAR       y  251.1 x  349.4- 352.5 
+BAR       y  425.5 x  222.2- 225.8 
+BAR       y  432.1 x  222.2- 225.8 
+BAR       y  425.5 x  304.9- 308.6 
+BAR       y  432.1 x  304.9- 308.6 
+BAR       y  552.7 x  264.1- 267.1 
+BAR       y  552.7 x  307.6- 310.6 
+BAR       y  664.0 x  123.2- 126.2 
+BAR       y  664.0 x  149.6- 152.6 
+BAR       y  678.6 x  389.1- 392.1 
+BAR       y  678.6 x  425.1- 428.1 
+BAR       y  719.4 x  193.0- 196.1 
+BAR       y  719.4 x  248.5- 251.6 

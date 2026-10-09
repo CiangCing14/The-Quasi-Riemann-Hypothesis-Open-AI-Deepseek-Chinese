@@ -1,0 +1,10 @@
+PAGE 171   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) J2 I1 | zh 0
+   \mathcal J  y  614.0 x  171.3   line: i ∈J j i =1
+   \mathcal I  y  655.1 x  224.7   line: i =1 i ∈I j \J j
+   \mathcal J  y  655.1 x  237.5   line: i =1 i ∈I j \J j
+EUFM -> \mathfrak : pdf 4 glyph(s) t4 | zh 0
+   \mathfrak t  y   78.0 x  120.1   line: C, t , J D, t , J post ,j
+   \mathfrak t  y   78.0 x  189.8   line: C, t , J D, t , J post ,j
+   \mathfrak t  y  155.4 x   88.3   line: C ω ( t ) ≪ q a for any fixed a > 0 , not by spending a fixed exponent at each prime. The O (log Z )
+   \mathfrak t  y  163.9 x  131.0   line: N N,a t

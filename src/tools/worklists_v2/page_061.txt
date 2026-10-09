@@ -1,0 +1,51 @@
+PAGE 61   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 10 glyph(s) A6 I3 O1 | zh 1
+   \mathcal O  y  255.7 x  419.4   line: by their primary generators. In particular, “squarefree” refers to ideals of O = Z [ ω ] , not to their
+   \mathcal I  y  624.7 x  135.6   line: I = { a good : M < q ≤ 2 M } , A = { a ∈I : a squarefree } .
+   \mathcal A  y  624.7 x  312.3   line: I = { a good : M < q ≤ 2 M } , A = { a ∈I : a squarefree } .
+   \mathcal I  y  624.7 x  369.6   line: I = { a good : M < q ≤ 2 M } , A = { a ∈I : a squarefree } .
+   \mathcal A  y  649.2 x  210.3   line: For a sequence supported on A write ∥ λ ∥ 2 = P | λ | 2 , and define
+   \mathcal A  y  654.8 x  315.8   line: N 2 b ∈A N b
+   \mathcal A  y  705.7 x  299.7   line: ∥ λ ∥ 2 =1 a ∈A M b ∈A N
+   \mathcal A  y  705.8 x  329.3   line: ∥ λ ∥ 2 =1 a ∈A M b ∈A N
+   \mathcal I  y  751.0 x  299.7   line: ∥ λ ∥ 2 =1 a ∈I M b ∈A N
+   \mathcal A  y  751.0 x  327.2   line: ∥ λ ∥ 2 =1 a ∈I M b ∈A N
+MSBM -> \mathbb : pdf 1 glyph(s) Z1 | zh 1
+   \mathbb Z  y  253.5 x  443.0   line: by their primary generators. In particular, “squarefree” refers to ideals of O = Z [ ω ] , not to their
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 361.5 x 144.6
+    below[0]: k sf n sf
+    below[1]: q ≤ K q ≤ D
+    below[2]: k n
+\sum at y 361.5 x 172.7
+    below[0]: k sf n sf
+    below[1]: q ≤ K q ≤ D
+    below[2]: k n
+\sum at y 361.5 x 408.9
+    below[0]: n sf
+    below[1]: q ≤ D
+    below[2]: n
+\sum at y 687.7 x 294.2
+    below[0]: λ ∥ =1
+    below[1]: 2 a ∈A b ∈A
+    below[2]: M N
+    above[0]: λ ∥ = | λ
+    above[1]: 2 b ∈A N
+\sum at y 687.7 x 323.6
+    below[0]: ∈A b ∈A
+    below[1]: M N
+    above[0]: | λ b | , and
+    above[1]: b ∈A N
+\sum at y 733.0 x 293.2
+    below[0]: λ ∥ =1
+    below[1]: 2 a ∈I b ∈A
+    below[2]: M N
+    above[0]: λ ∥ 2 =1
+    above[1]: a ∈A M b ∈A
+\sum at y 733.0 x 321.5
+    below[0]: a ∈I b ∈A
+    below[1]: M N
+    above[0]: a ∈A M b ∈A N
+
+---- Chinese file today: \substack x2, line breaks \\ x2 ----

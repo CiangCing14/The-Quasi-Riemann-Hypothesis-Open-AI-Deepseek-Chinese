@@ -1,0 +1,10 @@
+PAGE 52   calligraphic glyphs in the PDF: 4   \mathcal in the Chinese: 0
+
+CAL R  y  661.5 x  190.6- 199.8
+      line: R ( A, s ) Y χ t p ( s ) χ k p ( A ◦ ) = Y R ( p, p ) t p k p .
+CAL R  y  661.5 x  351.5- 360.7
+      line: R ( A, s ) Y χ t p ( s ) χ k p ( A ◦ ) = Y R ( p, p ) t p k p .
+CAL R  y  709.7 x   70.9-  80.1
+      line: R ( p, r ) ; this cancels the corresponding pair in the bicharacter R ( A, s ) . Only its diagonal remains.
+CAL R  y  709.7 x  360.2- 369.4
+      line: R ( p, r ) ; this cancels the corresponding pair in the bicharacter R ( A, s ) . Only its diagonal remains.

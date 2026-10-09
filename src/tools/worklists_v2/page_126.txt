@@ -1,0 +1,38 @@
+PAGE 126   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 1 glyph(s) O1 | zh 0
+   \mathcal O  y  230.7 x  213.1   line: applies to the fixed lattice λ − 4 O . The proof uses only the large-argument bound | K ( x ) | ≪ x − A
+EUFM -> \mathfrak : pdf 18 glyph(s) B10 A8 | zh 0
+   \mathfrak B  y  365.4 x  195.6   line: B = rad( b b ) , n = A Cu ( i = 1 , 2) ,
+   \mathfrak A  y  365.4 x  313.9   line: B = rad( b b ) , n = A Cu ( i = 1 , 2) ,
+   \mathfrak A  y  389.9 x  103.2   line: where A = ( n , B ) , and C is the gcd of n / A and n / A . Then A | B , while u , u are
+   \mathfrak B  y  389.9 x  152.5   line: where A = ( n , B ) , and C is the gcd of n / A and n / A . Then A | B , while u , u are
+   \mathfrak A  y  389.9 x  294.8   line: where A = ( n , B ) , and C is the gcd of n / A and n / A . Then A | B , while u , u are
+   \mathfrak A  y  389.9 x  351.5   line: where A = ( n , B ) , and C is the gcd of n / A and n / A . Then A | B , while u , u are
+   \mathfrak A  y  389.9 x  405.6   line: where A = ( n , B ) , and C is the gcd of n / A and n / A . Then A | B , while u , u are
+   \mathfrak B  y  389.9 x  430.5   line: where A = ( n , B ) , and C is the gcd of n / A and n / A . Then A | B , while u , u are
+   \mathfrak B  y  403.5 x  319.5   line: squarefree, coprime to one another, and prime to C B . Let A , B be the fixed centers of A , C ,
+   \mathfrak A  y  403.5 x  498.3   line: squarefree, coprime to one another, and prime to C B . Let A , B be the fixed centers of A , C ,
+   \mathfrak B  y  417.0 x  289.3   line: and write A = log q , B = log q . For p | B , define
+   \mathfrak A  y  421.1 x  173.4   line: b i Z A i b Z C
+   \mathfrak A  y  446.1 x  173.1   line: ip p | A i p p 1 2 p 1 p 2 p p
+   \mathfrak B  y  507.4 x  413.9   line: ψ = χ ¯ χ Y χ p , m = u u R , R = C B /R . (17.22)
+   \mathfrak B  y  543.5 x  357.6   line: Indeed, the exponents at u , u are 1 , − 1 ; the common off- B factor C has exponent zero but
+   \mathfrak B  y  557.1 x  267.5   line: retains its mask; and the exponent at p | B is t . Each nonzero local power is nonprincipal and
+   \mathfrak B  y  597.7 x  406.2   line: Apply Lemma 17.5 with K = Z M , and denote its divisor by d | C B /R , with center δ and
+   \mathfrak B  y  689.9 x  343.8   line: If m = 1 , then u = u = 1 and t = 0 for every p | B . The latter condition forces π = 0
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 164.1 x 191.8
+    below[0]: h =0: ̸ aq >Y
+    below[1]: h
+    below[2]: j j
+    below[3]: Y < aq ≤ 2
+    above[0]: normalized-kernel
+    above[1]: estimate we shall
+\prod at y 504.9 x 213.3
+    below[0]: t =0 ̸
+    below[1]: p
+    below[2]: at u , u are 1 ,
+    above[0]: Its center is R ,
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

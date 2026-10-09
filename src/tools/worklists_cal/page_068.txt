@@ -1,0 +1,28 @@
+PAGE 68   calligraphic glyphs in the PDF: 13   \mathcal in the Chinese: 0
+
+CAL A  y   90.7 x  113.0- 119.8
+      line: A A u
+CAL A  y   90.7 x  259.8- 266.6
+      line: A A u
+CAL A  y  120.1 x  314.1- 320.8
+      line: k A
+CAL A  y  144.2 x  468.4- 475.2
+      line: k A
+CAL U  y  153.7 x  269.1- 276.0
+      line: when applying a positive row bound. Let U denote the rows of the current witness subdivision
+CAL A  y  281.2 x  177.1- 183.9
+      line: A
+CAL U  y  326.4 x  262.9- 269.7
+      line: # U ≪ UV − 1 / 2 . (9.19)
+CAL A  y  330.4 x  291.0- 297.7
+      line: V A
+CAL U  y  348.5 x  273.6- 280.5
+      line: Discarding any of the restrictions defining U in this upper count can only add rows.
+CAL A  y  591.2 x  373.5- 380.3
+      line: n n A
+CAL A  y  648.0 x  222.4- 229.2
+      line: k A
+CAL A  y  706.5 x  248.4- 255.1
+      line: u A ,ϵ 1 1
+CAL U  y  718.1 x  159.7- 164.9
+      line: u ∈U V

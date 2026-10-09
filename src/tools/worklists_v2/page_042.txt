@@ -1,0 +1,17 @@
+PAGE 42   (pdf glyphs vs Chinese macros)
+EUFM -> \mathfrak : pdf 3 glyph(s) p3 | zh 0
+   \mathfrak p  y  713.8 x  320.9   line: m = Y p v p ( m )
+   \mathfrak p  y  714.1 x  330.5   line: m = Y p v p ( m )
+   \mathfrak p  y  732.4 x  290.1   line: v p ( m ) ≥ 2
+MSBM -> \mathbb : pdf 1 glyph(s) R1 | zh 1
+   \mathbb R  y  673.7 x  459.7   line: from the primary elements prime to S . Fix bounded ranges for M ≥ 0 and N ∈ R , a constant
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 711.3 x 295.5
+    below[0]: v ( m ) ≥ 2
+    below[1]: p
+    below[2]: nonnegative centers
+    above[0]: Fix bounded
+    above[1]: For a
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

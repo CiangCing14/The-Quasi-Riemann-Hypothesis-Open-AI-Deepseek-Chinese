@@ -1,0 +1,24 @@
+PAGE 192   calligraphic glyphs in the PDF: 11   \mathcal in the Chinese: 0
+
+CAL J  y  276.8 x  165.7- 173.1
+      line: J = ( α − δ ) D + δP , t = 1 + x , R = L ( t ) . (20.8)
+CAL J  y  284.3 x  340.7- 348.1
+      line: x x 2 J
+CAL J  y  379.9 x  294.1- 301.5
+      line: ≤J ≤ .
+CAL J  y  403.0 x  205.0- 212.4
+      line: Because 0 < δ < α , one has J > δP > 0 , so 1 < t < 3 / 2 . Furthermore,
+CAL J  y  432.6 x  422.5- 429.9
+      line: D { R ( t ) − L ( t ) } = δP (3 / 2 − t ) − ( α − δ ) D ( t − 1) = x −J ( t − 1) = 0 .
+CAL J  y  473.8 x  310.5- 317.9
+      line: stated closed-endpoint values: at δ = α , one has J = αP , t = 3 / 2 , and R = R (3 / 2) =
+CAL J  y  550.5 x   70.9-  78.3
+      line: J , t, R by Equation ( 20.8 ) where J > 0 , and let E be E ( h ) with q = xδ and R = R . Then
+CAL J  y  550.5 x  233.9- 241.3
+      line: J , t, R by Equation ( 20.8 ) where J > 0 , and let E be E ( h ) with q = xδ and R = R . Then
+CAL J  y  694.4 x  357.2- 364.6
+      line: D = , P = y , J = y .
+CAL J  y  717.5 x  231.1- 238.5
+      line: From R = 1 − δ + ( α − δ ) δP / (2 J ) and Equation ( 20.4 ),
+CAL J  y  755.3 x  356.0- 363.4
+      line: 48 32 J

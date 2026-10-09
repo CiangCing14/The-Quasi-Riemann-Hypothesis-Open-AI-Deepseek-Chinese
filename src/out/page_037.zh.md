@@ -23,7 +23,7 @@ $$\chi_k(nb)^3 = \chi_k(mh)^3 \mathbf{1}_{(k,ct)=1}. \tag{5.29}$$
 确实，在所显示的二次特征下，一个平方具有六次幂；它在单位上取值为一，在碰撞处取值为零。因此当 $n$ 或 $g$ 与 $t$ 共享素数时该恒等式同样成立。
 对于所选范围，$t$ 有 $O(T)$ 种可能。Hilbert 空间 Cauchy 不等式给出
 
-$$\left| \sum_{q_t \asymp T} F_t \right|^2 \ll T \sum_{q_t \asymp T} \|F_t\|_2^2.$$
+$$\left| \sum_{q_t \asymp T} F_t \right|^2 \ll T \sum_{q_t \asymp T} \lVert F_t\rVert_2^2.$$
 
 在正和式中固定 $t$。条件 $(k, t) = 1$ 现在是一个固定的行限制。对于剩余的条件使用完全恒等式
 

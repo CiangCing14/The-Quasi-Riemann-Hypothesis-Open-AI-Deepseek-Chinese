@@ -1,0 +1,22 @@
+PAGE 173   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 7 glyph(s) S6 R1 | zh 0
+   \mathcal S  y  663.7 x  260.9   line: S good
+   \mathcal S  y  673.2 x   85.4   line: on S and its complement. For a primary element n prime to S , reciprocity gives, with every zero
+   \mathcal S  y  673.2 x  356.4   line: on S and its complement. For a primary element n prime to S , reciprocity gives, with every zero
+   \mathcal R  y  701.4 x  270.4   line: χ ( h ′ ) = χ ( εh ) R ( n, h ) Y χ ( n ) v p ( h ′ ) .
+   \mathcal S  y  705.4 x  260.0   line: n n S good p
+   \mathcal S  y  733.8 x  491.4   line: By Lemma 4.1 , the first factor belongs to a finite family of ray characters supported on S after
+   \mathcal S  y  747.4 x  152.5   line: the unit and the S -valuations modulo six are fixed. The second belongs to the fixed reciprocity
+EUFM -> \mathfrak : pdf 2 glyph(s) e1 r1 | zh 0
+   \mathfrak e  y  578.5 x  295.6   line: puncture. This is true initially, remains true for e , r in the first transform, and remains true for an
+   \mathfrak r  y  578.5 x  304.8   line: puncture. This is true initially, remains true for e , r in the first transform, and remains true for an
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 699.0 x 332.7
+    below[0]: p | h
+    below[1]: good
+    below[2]: family of ray
+    above[0]: , with ε
+    above[1]: n prime to S
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

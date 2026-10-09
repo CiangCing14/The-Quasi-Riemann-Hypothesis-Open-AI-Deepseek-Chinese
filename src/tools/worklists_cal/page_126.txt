@@ -1,0 +1,4 @@
+PAGE 126   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL O  y  230.7 x  213.1- 221.8
+      line: applies to the fixed lattice λ − 4 O . The proof uses only the large-argument bound | K ( x ) | ≪ x − A

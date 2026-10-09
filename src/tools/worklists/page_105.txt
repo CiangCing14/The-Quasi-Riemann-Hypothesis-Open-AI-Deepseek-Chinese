@@ -1,0 +1,15 @@
+PAGE 105
+counts pdf: {'sum': 1, 'prod': 2, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 6}
+
+SUM       y  217.7 x  307.9- 323.7 
+          line: 1 ( n 1 ,n 2 )=1 = X µ ( d )
+PROD      y  348.9 x  341.5- 355.4 
+          line: χ m ( k ) = κ ζ, e ( m ) R ( k good , m ) Y χ p ( m ) e p ,
+PROD      y  381.8 x  272.1- 286.1 
+          line: κ ζ, e ( m ) = χ m ( ζ ) Y χ m ( π p ) e p mod 6 .
+BAR       y  140.9 x  374.9- 377.9 
+BAR       y  140.9 x  392.5- 395.5 
+BAR       y  236.2 x  301.2- 303.5 
+BAR       y  236.2 x  323.1- 325.5 
+BAR       y  367.4 x  339.2- 341.6 
+BAR       y  419.6 x  505.1- 508.1 

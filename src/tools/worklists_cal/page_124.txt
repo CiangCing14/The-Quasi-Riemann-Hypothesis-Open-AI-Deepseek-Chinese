@@ -1,0 +1,8 @@
+PAGE 124   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 0
+
+CAL O  y  321.3 x  262.1- 268.8
+      line: f k ∈O q ≍ Z ℓ
+CAL E  y  507.0 x  399.7- 405.4
+      line: maining block in Equation ( A ). Let ϵ ≥ 0 . Suppose every energy E ′ of the form ( 17.3 ), with
+CAL E  y  569.6 x  295.0- 300.8
+      line: and both margins at least c − 7 η , satisfies E ′ ≪ Z F ′ + ϵ child . The hypothesis is uniform over

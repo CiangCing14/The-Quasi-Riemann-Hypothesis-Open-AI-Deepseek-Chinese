@@ -1,0 +1,14 @@
+PAGE 147
+counts pdf: {'sum': 1, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 1, 'abs': 1}
+
+OVERLINE  y  324.5 x  276.3- 334.7 covers: 'W 0 ( x C x s x 2 )'
+          line: × W ( x x x ) W ( x x x ) K  A x h  .
+ACCENT    y  678.9 x  247.1- 253.2 
+          line: V Σ init ( ω ; ξ ) = µ ( d ′ ) µ ( s ) G b ( ϑ ) B init ( h ′ )1 ( C,j )=1 1 ( s,Cj )=1 1 ( s,h ′ )=1 A init Σ ( ω )
+SUM       y  470.4 x  213.9- 229.6 
+          line: Q init a,t,j, ξ ( k, f ) = X A ∗ ( n ) ρ t,j ( n ) χ n ( k ) χ n ( f ) 4 d ′ a ( n ) W init a ( q n /Z N init ) . (17.77)
+PROD      y  289.8 x  230.4- 244.3 
+          line: H init , Σ , υ ( x ) = Z − 3 η Y Ω init ,α ( x α ) x − d 1 x − s 1 ( x 1 x 2 ) − 1 / 2
+PAREN     y  318.2 x  356.3- 364.3 ch=(
+PAREN     y  318.2 x  445.7- 453.7 ch=)
+BAR       y  571.1 x  242.1- 245.2 

@@ -1,0 +1,52 @@
+PAGE 110   calligraphic glyphs in the PDF: 25   \mathcal in the Chinese: 2
+
+CAL B  y   86.7 x  282.2- 289.4
+      line: on the raw quotient locus its left side is H ( B + v − 1 ) . To see the cancellation directly on that
+CAL E  y  100.3 x  210.1- 215.9
+      line: locus, substitute P ∗ = − D + E and P = (1 − V ) − 1 W/ (1 − W ) + P ∗ into the left side before
+CAL E  y  175.4 x  315.1- 320.9
+      line: G = η ( p ) Q x (1 − V ) E − Q − w H .
+CAL X  y  237.0 x  458.4- 466.2
+      line: for ν ∈ Θ and ς ∈{− 1 , 1 } . The numerator χ ( u ) and its conjugate belong to X with fixed
+CAL X  y  250.5 x  368.4- 376.2
+      line: multiplier 1 ∈ Θ , while the denominator ηχ ( u ) belongs to X with fixed multiplier η ∈ Θ .
+CAL W  y  406.8 x  508.2- 519.0
+      line: row u with ( u, S ) = 1 and q ≍ U , let ψ ∗ be the primitive character inducing χ ( u ) . Let W
+CAL W  y  433.9 x   92.3- 103.1
+      line: w ∈W ,
+CAL B  y  465.6 x  484.0- 491.2
+      line: with any prescribed small power. For this row on the displayed dynamic region, define B by its
+CAL B  y  479.2 x  250.0- 257.2
+      line: preceding slot sum, interpreting each B as G /H , with G from Equation ( 16.2 ) . The stated
+CAL D  y  541.8 x  329.2- 337.7
+      line: Q ( u ; z ) = − X W ( q /P ) q z − 1 χ ( u ) , D ( u ) = B ( u ; x, w, z ) −Q ( u ; z ) .
+CAL B  y  541.8 x  370.3- 377.5
+      line: Q ( u ; z ) = − X W ( q /P ) q z − 1 χ ( u ) , D ( u ) = B ( u ; x, w, z ) −Q ( u ; z ) .
+CAL Q  y  541.8 x  443.4- 452.3
+      line: Q ( u ; z ) = − X W ( q /P ) q z − 1 χ ( u ) , D ( u ) = B ( u ; x, w, z ) −Q ( u ; z ) .
+CAL Q  y  541.8 x  111.5- 120.4
+      line: Q ( u ; z ) = − X W ( q /P ) q z − 1 χ ( u ) , D ( u ) = B ( u ; x, w, z ) −Q ( u ; z ) .
+CAL P  y  557.9 x  183.7- 189.6
+      line: p ∈P i ( Z )
+CAL W  y  574.6 x  363.4- 374.2
+      line: Then, for every subset I of the slots and the same points w ∈W ,
+CAL D  y  604.2 x  213.8- 222.2
+      line: L S ( w, χ ( u )) Y D ( u ) ≪ U a − 1 / 2+ O ( e )+ ϵ (3 + T ) C Y P z r − 1 / 2+ O ( e )+ ϵ . (16.9)
+CAL Q  y  681.3 x  144.6- 153.5
+      line: Q ( u ; z ) = − P z − 1 / 2 P − 1 / 2 X χ ( u ) W ( q /P )( q /P ) z − 1 .
+CAL P  y  697.4 x  289.0- 294.9
+      line: p ∈P i ( Z )
+CAL W  y  714.1 x  187.3- 198.1
+      line: At the same points w ∈W , and on this dynamic region only, the full correction has the finite
+CAL H  y  751.0 x  206.1- 215.4
+      line: H = H Y ( Q + D ) = H X Y D Y Q . (16.10)
+CAL Q  y  751.0 x  247.6- 256.6
+      line: H = H Y ( Q + D ) = H X Y D Y Q . (16.10)
+CAL D  y  751.0 x  273.3- 281.7
+      line: H = H Y ( Q + D ) = H X Y D Y Q . (16.10)
+CAL H  y  751.0 x  303.9- 313.1
+      line: H = H Y ( Q + D ) = H X Y D Y Q . (16.10)
+CAL D  y  751.0 x  387.8- 396.2
+      line: H = H Y ( Q + D ) = H X Y D Y Q . (16.10)
+CAL Q  y  751.0 x  417.2- 426.1
+      line: H = H Y ( Q + D ) = H X Y D Y Q . (16.10)

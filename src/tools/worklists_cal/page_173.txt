@@ -1,0 +1,16 @@
+PAGE 173   calligraphic glyphs in the PDF: 7   \mathcal in the Chinese: 0
+
+CAL S  y  663.7 x  260.9- 266.1
+      line: S good
+CAL S  y  673.2 x   85.4-  92.1
+      line: on S and its complement. For a primary element n prime to S , reciprocity gives, with every zero
+CAL S  y  673.2 x  356.4- 363.0
+      line: on S and its complement. For a primary element n prime to S , reciprocity gives, with every zero
+CAL R  y  701.4 x  270.4- 279.7
+      line: χ ( h ′ ) = χ ( εh ) R ( n, h ) Y χ ( n ) v p ( h ′ ) .
+CAL S  y  705.4 x  260.0- 265.1
+      line: n n S good p
+CAL S  y  733.8 x  491.4- 498.0
+      line: By Lemma 4.1 , the first factor belongs to a finite family of ray characters supported on S after
+CAL S  y  747.4 x  152.5- 159.1
+      line: the unit and the S -valuations modulo six are fixed. The second belongs to the fixed reciprocity

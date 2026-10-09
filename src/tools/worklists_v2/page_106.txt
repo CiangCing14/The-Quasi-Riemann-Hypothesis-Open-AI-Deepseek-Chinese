@@ -1,0 +1,30 @@
+PAGE 106   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 9 glyph(s) Q7 O2 | zh 2
+   \mathcal Q  y  195.1 x  342.9   line: malized complete Fourier transform, with normalization Q − 2 on the two residue variables, has
+   \mathcal O  y  208.6 x  403.3   line: absolute value at most q and vanishes at (0 , 0) . Since every ideal of O is principal, the period
+   \mathcal Q  y  222.2 x  179.4   line: lattice has linear scale Q 1 / 2 . Four-dimensional lattice Poisson therefore gives, for this A ,
+   \mathcal Q  y  255.3 x  425.5   line: X a ( m ) W ( m / N ) ≪ (1 + | ν | ) J Gr R − B q N 2 min { 1 , ( Q /N ) A } . (15.5)
+   \mathcal O  y  271.6 x  143.9   line: m ∈O 2
+   \mathcal Q  y  290.8 x  116.0   line: For N ≥Q , the zero frequency vanishes and the other dual vectors have linear scale ( N/ Q ) 1 / 2 .
+   \mathcal Q  y  290.8 x  497.1   line: For N ≥Q , the zero frequency vanishes and the other dual vectors have linear scale ( N/ Q ) 1 / 2 .
+   \mathcal Q  y  304.4 x  326.6   line: Fourier decay of order 2 A > 4 bounds their sum by ( Q /N ) A . For N < Q , use the point count
+   \mathcal Q  y  304.4 x  415.7   line: Fourier decay of order 2 A > 4 bounds their sum by ( Q /N ) A . For N < Q , use the point count
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 252.9 x 134.7
+    below[0]: 2
+    below[1]: m ∈O
+    below[2]: ≥Q , the zero
+    above[0]: has linear scale
+\sum at y 526.6 x 101.7
+    below[0]: i,j ≥ 0
+    below[1]: For Λ ≥ 1 , split
+    above[0]: ′
+    above[1]: For Λ = Y / ( RP
+\sum at y 526.6 x 250.7
+    below[0]: n ≥ 0
+    below[1]: n
+    below[2]: tails at 2
+    above[0]: positive dyadic
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

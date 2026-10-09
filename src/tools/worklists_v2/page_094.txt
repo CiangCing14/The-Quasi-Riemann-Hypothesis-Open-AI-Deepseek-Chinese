@@ -1,0 +1,40 @@
+PAGE 94   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) O1 H1 | zh 0
+   \mathcal O  y  355.0 x  247.1   line: where both stars mean squarefree in O , and the coefficients are arbitrary complex numbers [ 17 ,
+   \mathcal H  y  719.2 x  134.0   line: Proof. Write H for the left side of Equation ( 14.7 ). First remove the complete moving row-mark
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 312.0 x 154.2
+    below[0]: a ≡ 1 (3) b ≡ 1
+    below[1]: q ≤ U q ≤
+    below[2]: a b
+    above[0]: ∗ ∗
+\sum at y 312.0 x 189.0
+    below[0]: 1 (3) b ≡ 1 (3)
+    below[1]: ≤ U q ≤ V
+    below[2]: b
+    above[0]: ∗ ∗
+\sum at y 312.0 x 407.8
+    below[0]: b
+    above[0]: ∗
+\sum at y 598.0 x 163.3
+    below[0]: k P
+    below[1]: ≪ (
+    below[2]: ϵ
+    above[0]: independent of k, n, b
+\sum at y 598.0 x 184.5
+    below[0]: P
+    below[1]: k P
+    below[2]: ≪ ( KNBL
+    below[3]: ϵ
+    above[0]: of k, n, b ,
+\sum at y 598.0 x 265.0
+    below[0]: n,b
+    below[1]: ϵ
+    below[2]: ) ( K + NB ) B
+    above[0]: β is independent
+\sum at y 743.9 x 300.4
+    below[0]: D | ( P,k )
+    above[0]: ( 14.7 ). First
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

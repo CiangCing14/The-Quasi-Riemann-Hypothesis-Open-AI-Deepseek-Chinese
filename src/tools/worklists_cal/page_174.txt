@@ -1,0 +1,14 @@
+PAGE 174   calligraphic glyphs in the PDF: 6   \mathcal in the Chinese: 0
+
+CAL S  y  199.3 x  257.0- 263.6
+      line: More generally, at every prime outside S , exceptional induction prescribes a single residue class
+CAL S  y  226.4 x  397.6- 404.2
+      line: supports that residue is zero. For each of the finitely many choices at S and of unit and fixed-ray
+CAL I  y  511.2 x  278.5- 283.1
+      line: N i ∈I j \J j i
+CAL J  y  511.2 x  291.3- 297.0
+      line: N i ∈I j \J j i
+CAL I  y  557.8 x  304.3- 309.0
+      line: i ∈I j \J j
+CAL J  y  557.8 x  317.1- 322.8
+      line: i ∈I j \J j

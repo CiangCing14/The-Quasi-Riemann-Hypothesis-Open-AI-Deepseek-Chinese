@@ -1,6 +1,6 @@
 设 $T_\Sigma^{\mathrm{init}}$ 为由式 (17.71) 经完整的 Möbius 展开与优先展开所得到的固定 $s$-二元组与槽位被加项。其精确分离恒等式为
 
-$$T_\Sigma^{\mathrm{init}} = Z^{\kappa_{\mathrm{init}} + 3\eta} c^{-6} (2\pi)^{-6} \int_{\mathbb{R}^6} \hat{H}^{\mathrm{init}, \Sigma, \upsilon}(\xi) \times \sum_{\omega \in \Omega_\Sigma} V_\Sigma^{\mathrm{init}}(\omega; \xi) Q_{1,t,j,\xi}^{\mathrm{init}}(k, f) Q_{2,t,j,\xi}^{\mathrm{init}}(k, f) \, d\xi. \tag{17.79}$$
+$$T_\Sigma^{\mathrm{init}} = Z^{\kappa_{\mathrm{init}} + 3\eta} c^{-6} (2\pi)^{-6} \int_{\mathbb{R}^6} \hat{H}^{\mathrm{init}, \Sigma, \upsilon}(\xi) \times \sum_{\omega \in \Omega_\Sigma} V_\Sigma^{\mathrm{init}}(\omega; \xi) Q_{1,t,j,\xi}^{\mathrm{init}}(k, f) \overline{Q_{2,t,j,\xi}^{\mathrm{init}}(k, f)} \, d\xi. \tag{17.79}$$
 
 事实上 $x_a = Z \delta_{\mathrm{init}} z n_a$。两个列模式，连同式 (17.78) 的最后一个因子，恰好是 $x_{i\xi_1} x_{i\xi_2}$，另外四个模式是外部的。Fourier 反演恢复完整剖面；其较大的截断在保留支集上为一，而新的列截断在旧 $W_0$ 窗口非零处为一。式 (17.75) 恢复完整的前因子与核。式 (17.72) 与优先展开逐项恢复每一个算术因子项。完整新窗口中的额外组合在此复恒等式中通过旧窗口在 Cauchy 之前相互抵消。
 

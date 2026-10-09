@@ -1,0 +1,6 @@
+PAGE 128   calligraphic glyphs in the PDF: 2   \mathcal in the Chinese: 0
+
+CAL B  y  665.7 x  240.7- 247.9
+      line: B ( h ) = 1 .
+CAL B  y  720.8 x  377.8- 384.9
+      line: below. No indicator of the ratio inequality is inserted. Inside B = 1 retain the full smooth

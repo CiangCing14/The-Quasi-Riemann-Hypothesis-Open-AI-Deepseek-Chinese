@@ -1,0 +1,12 @@
+PAGE 105   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL R  y  269.4 x  386.6- 395.9
+      line: ( d, Ck ) = 1 . Throughout this step use the fixed ray extension of R ( n , n ) ; a quotient of zero
+CAL R  y  351.3 x  277.0- 286.2
+      line: χ ( k ) = κ ( m ) R ( k , m ) Y χ ( m ) e p ,
+CAL R  y  433.1 x  469.4- 478.7
+      line: Lemma 4.1 places the finitely many κ in a fixed ray group supported on S . Also R ( k , m )
+CAL R  y  473.8 x  307.8- 317.0
+      line: of every fixed ray coefficient in A , a period for R in each variable, and the conductors of all
+CAL Q  y  762.4 x  303.8- 312.7
+      line: N = Y ′ / ( C D ) , Q = q ≪ RP .

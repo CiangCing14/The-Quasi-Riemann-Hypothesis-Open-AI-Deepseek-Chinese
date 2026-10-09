@@ -1,0 +1,48 @@
+PAGE 134   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 7 glyph(s) C3 B2 T1 K1 | zh 0
+   \mathcal B  y  110.8 x  319.4   line: T = X w + ψ ψ ψ ′′ µ ( d ) B ( k ′′ ) | B ( g ′ ) | 2
+   \mathcal T  y  110.8 x  143.7   line: T = X w + ψ ψ ψ ′′ µ ( d ) B ( k ′′ ) | B ( g ′ ) | 2
+   \mathcal K  y  215.4 x  251.1   line: × √ K k .
+   \mathcal B  y  367.2 x  124.3   line: unchanged B . It agrees with the genuine formula on coprime pairs. Insert the complete identity
+   \mathcal C  y  714.3 x  506.6   line: the repeated zero at d and the fixed puncture at r . The old punctures at q , t ′ remain. If C
+   \mathcal C  y  751.3 x  265.6   line: G ( ϑ ) = |C | − 1 X G ( c ) ϑ ( c ) .
+   \mathcal C  y  766.9 x  309.2   line: c ∈C ray
+EUFM -> \mathfrak : pdf 3 glyph(s) d2 O1 | zh 0
+   \mathfrak O  y  127.2 x  197.0   line: o ∈ O σ , g ′ sf
+   \mathfrak d  y  191.7 x  198.8   line: × d ( g ′ z ) d ( g ′ z ) W ( q ′ q /Z s i ) W ( q ′ q /Z s i )
+   \mathfrak d  y  191.7 x  238.3   line: × d ( g ′ z ) d ( g ′ z ) W ( q ′ q /Z s i ) W ( q ′ q /Z s i )
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 108.4 x 201.7
+    below[0]: o ∈ O , g ′ sf
+    below[1]: σ
+    below[2]: d | g ′ , k ′′ =0 ̸
+    below[3]: 2
+    above[0]: preliminary pattern
+    above[1]: exactly
+\sum at y 149.7 x 212.4
+    below[0]: z ,z sf
+    below[1]: 1 2
+    below[2]: ′
+    below[3]: ( z z ,g )=1
+    below[4]: 1 2
+    below[5]: ′
+    above[0]: w o ψ g
+    above[1]: ′
+    above[2]: o ∈ O σ , g sf
+    above[3]: ′ ′′
+    above[4]: d 2 | g , k =0 ̸
+\sum at y 388.3 x 268.2
+    below[0]: ′
+    below[1]: v | ( z ,z )
+    below[2]: 1 2
+    below[3]: v ≥ 0
+    above[0]: fixed-ray
+    above[1]: It agrees with the genuine formula on coprime pairs.
+\sum at y 748.9 x 304.3
+    below[0]: c ∈C
+    below[1]: ray
+    above[0]: at r g . The
+    above[1]: factors, put
+
+---- Chinese file today: \substack x2, line breaks \\ x6 ----

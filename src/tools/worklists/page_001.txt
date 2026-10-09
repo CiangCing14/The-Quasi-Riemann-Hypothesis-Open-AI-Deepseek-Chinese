@@ -1,0 +1,5 @@
+PAGE 1
+counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 0}
+
+OVERLINE  y  252.4 x  395.7- 408.5 covers: '− 3) principal'
+          line: We prove that all finite-order Hecke L -functions over Q ( √ − 3) and all Dirichlet

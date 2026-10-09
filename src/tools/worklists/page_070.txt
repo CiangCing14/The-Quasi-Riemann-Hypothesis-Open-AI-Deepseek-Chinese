@@ -1,0 +1,13 @@
+PAGE 70
+counts pdf: {'sum': 1, 'prod': 0, 'int': 3, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 0}
+
+OVERLINE  y  503.3 x  301.2- 321.2 covers: 'ξ ( u )'
+          line: · X q − z ξ ( u ) ζ F S (6 z ) L S ( w, χ • ( u )) H ( s, w, z ) dz dw ds.
+SUM       y  502.0 x  267.0- 282.7 
+          line: · X q u − z ξ ( u ) ζ F S (6 z S ) L S ( w, χ • ( u )) H η,u ( s, w, z ) dz dw ds.
+INT       y  459.9 x  203.3- 209.4 
+          line: I ( Z 1 / 2 , Z 1 / 2 , Z ) = 1 Z Z Z W ( Z 1 / 2 , Z 1 / 2 , Z ; s, w, z )
+INT       y  459.9 x  222.5- 228.6 
+          line: I ( Z 1 / 2 , Z 1 / 2 , Z ) = 1 Z Z Z W ( Z 1 / 2 , Z 1 / 2 , Z ; s, w, z )
+INT       y  459.9 x  241.7- 247.8 
+          line: I ( Z 1 / 2 , Z 1 / 2 , Z ) = 1 Z Z Z W ( Z 1 / 2 , Z 1 / 2 , Z ; s, w, z )

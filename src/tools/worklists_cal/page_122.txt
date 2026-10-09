@@ -1,0 +1,4 @@
+PAGE 122   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL T  y  483.4 x  275.1- 281.1
+      line: = X k T ( Z N /q 3 ; k ) , d ( A ) = d ( h 3 A ) .

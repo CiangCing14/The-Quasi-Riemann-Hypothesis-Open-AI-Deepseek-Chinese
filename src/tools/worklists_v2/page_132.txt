@@ -1,0 +1,12 @@
+PAGE 132   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 1 glyph(s) B1 | zh 0
+   \mathcal B  y  645.6 x  235.9   line: B ( k ′′ ) = 1 .
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 109.8 x 282.3
+    below[0]: x
+    below[1]: factors of
+    above[0]: Fix one of
+    above[1]: has the form
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

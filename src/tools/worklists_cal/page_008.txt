@@ -1,0 +1,14 @@
+PAGE 8   calligraphic glyphs in the PDF: 6   \mathcal in the Chinese: 5
+
+CAL S  y  280.8 x  159.5- 166.1
+      line: For a finite set S of prime ideals, a superscript S means that the corresponding Euler factors
+CAL S  y  280.8 x  309.6- 316.2
+      line: For a finite set S of prime ideals, a superscript S means that the corresponding Euler factors
+CAL S  y  305.7 x  212.3- 217.4
+      line: L S ( s, η ) = L ( s, η ) Y (1 − η ( p ) N p − s ) .
+CAL S  y  323.5 x  308.3- 313.4
+      line: p ∈S
+CAL S  y  450.9 x  252.4- 259.0
+      line: acter η , suppose there exist a finite set S , a holomorphic function H on ℜ s > σ , and a function
+CAL S  y  550.5 x  356.0- 361.1
+      line: η 2 πi L S ( s, η )

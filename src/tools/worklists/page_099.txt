@@ -1,0 +1,33 @@
+PAGE 99
+counts pdf: {'sum': 3, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 0, 'abs': 7}
+
+OVERLINE  y  271.6 x  289.6- 300.1 covers: 'q µ'
+          line: | d ( µ ) | / √ q µ ≤ 27 q 4 / 3 .
+SUM       y  627.5 x  149.7- 165.4 
+          line: N = X X √ a ( q p ) 1 ( P,k res )=1 X β ( n, b ) χ k res ( nb ) 3 χ P ( n ) − 2 1 ( P,b )=1 ,
+SUM       y  627.5 x  182.7- 198.5 
+          line: N = X X √ a ( q p ) 1 ( P,k res )=1 X β ( n, b ) χ k res ( nb ) 3 χ P ( n ) − 2 1 ( P,b )=1 ,
+SUM       y  627.5 x  270.8- 286.6 
+          line: N = X X √ a ( q p ) 1 ( P,k res )=1 X β ( n, b ) χ k res ( nb ) 3 χ P ( n ) − 2 1 ( P,b )=1 ,
+PROD      y  668.8 x  166.1- 180.1 
+          line: P = Y p i , q P ≍ Z z a .
+BAR       y  269.9 x  248.3- 251.3 
+BAR       y  269.9 x  272.0- 275.1 
+BAR       y  612.3 x  179.1- 182.7 
+BAR       y  618.8 x  179.1- 182.7 
+BAR       y  625.3 x  179.1- 182.7 
+BAR       y  631.9 x  179.1- 182.7 
+BAR       y  638.4 x  179.1- 182.7 
+BAR       y  645.0 x  179.1- 182.7 
+BAR       y  651.5 x  179.1- 182.7 
+BAR       y  612.3 x  440.6- 444.2 
+BAR       y  618.8 x  440.6- 444.2 
+BAR       y  625.3 x  440.6- 444.2 
+BAR       y  631.9 x  440.6- 444.2 
+BAR       y  638.4 x  440.6- 444.2 
+BAR       y  645.0 x  440.6- 444.2 
+BAR       y  651.5 x  440.6- 444.2 
+BAR       y  718.5 x  154.9- 158.0 
+BAR       y  718.5 x  178.8- 181.8 
+BAR       y  718.5 x  186.7- 189.7 
+BAR       y  718.5 x  221.0- 224.1 

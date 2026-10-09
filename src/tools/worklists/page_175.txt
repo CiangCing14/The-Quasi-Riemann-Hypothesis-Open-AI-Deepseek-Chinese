@@ -1,0 +1,13 @@
+PAGE 175
+counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 4, 'abs': 2}
+
+ACCENT    y   91.6 x  333.3- 339.4 
+          line: F F 1 = = 2 c/ b 6 + 5 − 5 { g d − + ( p K + 0 − t + K ) V/ } / 6 + 6 + w/ f/ 6 3 + . e q/ 6 + w o + B c − 5 g/ 6 + ℓ, (18.43)
+ACCENT    y  292.7 x  270.4- 276.5 
+          line: F 1 = c + 2 w + e q/ 6 + w o / 6 + B c ≥ c + 2 w.
+ACCENT    y  314.7 x  154.9- 161.0 
+          line: When J < 0 , use q e ≥ R and
+ACCENT    y  336.7 x  240.1- 246.2 
+          line: B c + e q/ 6 ≥ (3 c − 5 D 0 ) + / 6 − 6 δ fr , 1 .
+BAR       y  551.0 x  216.2- 219.3 
+BAR       y  564.5 x  220.1- 223.2 

@@ -1,0 +1,11 @@
+PAGE 20   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) M4 | zh 0
+   \mathcal M  y   73.2 x  114.3   line: Directly, M W ( s ) = e s 2 , and the weighted logarithmic derivatives in Equation ( 4.11 ) are finite
+   \mathcal M  y  265.9 x  398.0   line: u = log y and complete the square in its Gaussian integral to obtain M W ( s ) = e s 2 . The same
+   \mathcal M  y  595.7 x  290.3   line: K ( x ) = M W ( − s ) m ( s ) x − s ds,
+   \mathcal M  y  667.6 x  289.7   line: | ( x∂ ) j K ( x ) | ≪ x − σ |M W ( − σ − it ) | (1 + | t | ) h + j dt.
+MSBM -> \mathbb : pdf 4 glyph(s) R4 | zh 4
+   \mathbb R  y  277.2 x  304.4   line: Gaussian bounds every e σu ( d/du ) j W ( e u ) in L 1 ( R ) , uniformly for σ in a compact interval.
+   \mathbb R  y  362.9 x   70.9   line: R d , put
+   \mathbb R  y  383.1 x  360.8   line: s j ( f ) = ∥ x ∂ f ( x ) ∥ L 1 ( R d ) .
+   \mathbb R  y  678.2 x  278.6   line: R

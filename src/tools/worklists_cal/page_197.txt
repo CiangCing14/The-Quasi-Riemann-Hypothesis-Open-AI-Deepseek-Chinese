@@ -1,0 +1,4 @@
+PAGE 197   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL A  y  361.1 x  403.6- 409.5
+      line: By the definition of ϵ ht , this proves every literal condition (1 + T 1 ) A A ≤ U ϵ/ 10 in Lemma 8.2

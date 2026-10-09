@@ -1,0 +1,23 @@
+PAGE 188
+counts pdf: {'sum': 1, 'prod': 1, 'int': 1, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 8}
+
+SUM       y  174.2 x  310.7- 326.4 
+          line: H η, 1 ,Z ( s, 1 , 1 / 6) = H η ( s ) Y  X W i ( q p /P i ) q p − 5 / 6 B p  ,
+PROD      y  174.2 x  277.3- 291.2 
+          line: H η, 1 ,Z ( s, 1 , 1 / 6) = H η ( s ) Y  X W i ( q p /P i ) q p − 5 / 6 B p  ,
+INT       y  582.3 x  262.2- 268.2 
+          line: f ( Z ) = 1 Z Z C ( s ) e ( s − 5 / 6) 2 H η ( s ) ds.
+BAR       y  244.6 x  256.8- 259.8 
+BAR       y  244.6 x  282.4- 285.5 
+BAR       y  320.8 x  342.5- 345.5 
+BAR       y  320.8 x  382.0- 385.1 
+BAR       y  502.1 x  238.7- 241.7 
+BAR       y  502.1 x  278.2- 281.2 
+BAR       y  635.5 x  150.1- 153.7 
+BAR       y  642.1 x  150.1- 153.7 
+BAR       y  648.6 x  150.1- 153.7 
+BAR       y  655.2 x  150.1- 153.7 
+BAR       y  635.5 x  247.5- 251.2 
+BAR       y  642.1 x  247.5- 251.2 
+BAR       y  648.6 x  247.5- 251.2 
+BAR       y  655.2 x  247.5- 251.2 

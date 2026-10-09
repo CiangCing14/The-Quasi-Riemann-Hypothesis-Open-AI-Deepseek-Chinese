@@ -1,0 +1,13 @@
+PAGE 149   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 4 glyph(s) H2 O1 E1 | zh 0
+   \mathcal E  y  239.7 x  431.3   line: H init = X D ( f ) X | Q init ( k, f ) | 2 = Z F init E init . (17.82)
+   \mathcal H  y  239.7 x  141.1   line: H init = X D ( f ) X | Q init ( k, f ) | 2 = Z F init E init . (17.82)
+   \mathcal O  y  255.4 x  297.0   line: f sf k ∈O
+   \mathcal H  y  338.9 x  342.6   line: X V init Q Q ≪ Z P 1 +2 η Y H init dν init ( t ) . (17.83)
+EUFM -> \mathfrak : pdf 6 glyph(s) T5 r1 | zh 0
+   \mathfrak T  y  100.4 x  256.4   line: norm ball bounds its cardinality by # T ≪ Z P 1 +2 η + π count , init ; it is not used as a replacement
+   \mathfrak T  y  168.6 x  243.9   line: t ∈ T Σ
+   \mathfrak T  y  351.2 x  329.3   line: ω ∈ Ω a =1 T Σ
+   \mathfrak T  y  431.3 x  355.4   line: The fixed puncture is exactly at rad( tj ) . For each t ∈ T , its source bound and the fixed
+   \mathfrak r  y  462.4 x  259.0   line: init Z r ρ b b b 1
+   \mathfrak T  y  662.3 x  476.8   line: There is also an explicit energy calculation. Apply the canonical bound only for t ∈ T , where

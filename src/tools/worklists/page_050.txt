@@ -1,0 +1,33 @@
+PAGE 50
+counts pdf: {'sum': 1, 'prod': 0, 'int': 5, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 14}
+
+SUM       y  269.4 x  251.7- 267.5 
+          line: F ( s, A, H ) = X χ s ( d ) g ξχ A  b ∗ A, H − s b ∗ Ad  . (7.1)
+INT       y  465.8 x  195.6- 201.6 
+          line: M ( z ) = Z ∞ W ( r ) r z − 1 dr, W ( w ) = Z ∞ W ( r ) r w − 1 dr.
+INT       y  465.8 x  351.6- 357.7 
+          line: M ( z ) = Z ∞ W ( r ) r z − 1 dr, W ( w ) = Z ∞ W ( r ) r w − 1 dr.
+INT       y  610.2 x  303.2- 309.2 
+          line: | y | 2 σ − 2 = 1 Z ∞ t − σ e − t | y | 2 dt.
+INT       y  685.8 x  190.3- 196.4 
+          line: 1 Z ∞ t − σ Z W ( | x | 2 ) √ 2 π exp  − 4 π 2 | x | 2  dµ ( x ) dt > 0 .
+INT       y  685.8 x  230.0- 236.1 
+          line: 1 Z ∞ t − σ Z W ( | x | 2 ) √ 2 π exp  − 4 π 2 | x | 2  dµ ( x ) dt > 0 .
+PAREN     y  264.3 x  343.3- 351.3 ch=(
+PAREN     y  264.3 x  422.7- 430.7 ch=)
+PAREN     y  685.3 x  325.9- 333.9 ch=(
+PAREN     y  685.3 x  378.6- 386.6 ch=)
+BAR       y  430.1 x  126.5- 129.5 
+BAR       y  430.1 x  135.2- 138.3 
+BAR       y  430.1 x  336.6- 339.6 
+BAR       y  430.1 x  345.4- 348.4 
+BAR       y  617.0 x  211.2- 214.3 
+BAR       y  617.0 x  220.0- 223.0 
+BAR       y  614.9 x  355.7- 358.1 
+BAR       y  614.9 x  362.6- 364.9 
+BAR       y  649.4 x  250.7- 253.8 
+BAR       y  649.4 x  259.5- 262.5 
+BAR       y  692.7 x  263.4- 266.4 
+BAR       y  692.7 x  272.7- 275.7 
+BAR       y  685.3 x  360.4- 363.4 
+BAR       y  685.3 x  369.6- 372.7 

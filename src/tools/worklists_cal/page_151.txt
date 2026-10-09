@@ -1,0 +1,8 @@
+PAGE 151   calligraphic glyphs in the PDF: 3   \mathcal in the Chinese: 2
+
+CAL I  y  100.3 x  357.6- 363.6
+      line: final threshold also enforces the full initial support ratios in I .
+CAL O  y  322.3 x  111.2- 117.9
+      line: u ∈O n
+CAL O  y  668.2 x  160.3- 167.0
+      line: v ∈O

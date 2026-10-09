@@ -1,0 +1,20 @@
+PAGE 37   calligraphic glyphs in the PDF: 9   \mathcal in the Chinese: 0
+
+CAL I  y   73.2 x  453.6- 459.5
+      line: Lemma 5.5 (Quadratic reduction for completed indices) . Let K, N, B ≥ 1 . Let I be any set of
+CAL I  y  127.4 x   85.5-  91.5
+      line: on I and fixed restrictions on the ( n, b ) -support are allowed.
+CAL Q  y  201.4 x  292.2- 301.1
+      line: where all comparison constants are fixed. Let Q ( β ) be the sum over k ∈I of the squared
+CAL I  y  201.4 x  446.4- 452.4
+      line: where all comparison constants are fixed. Let Q ( β ) be the sum over k ∈I of the squared
+CAL D  y  228.5 x  290.7- 299.1
+      line: For a squarefree good ideal r and a fixed t , let D ( t ) be the set of triples ( c ′ , m, h ) for which
+CAL Q  y  318.0 x   87.3-  96.3
+      line: Q ( β ) ≪ ( KNB ) ϵ T X X + X | β ( rc ′ m, rc ′ ht 2 ) | 2 .
+CAL D  y  334.1 x  401.8- 408.4
+      line: q t ≍ T r sf , ( r,S )=1 ( c ′ ,m,h ) ∈D r ( t )
+CAL I  y  457.7 x  183.3- 188.0
+      line: k ∈I n,b
+CAL O  y  752.8 x  301.5- 308.2
+      line: O

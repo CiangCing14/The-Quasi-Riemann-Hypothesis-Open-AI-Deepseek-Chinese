@@ -1,0 +1,20 @@
+PAGE 53   calligraphic glyphs in the PDF: 9   \mathcal in the Chinese: 0
+
+CAL R  y   86.7 x  489.6- 498.9
+      line: exponent at a pair p < r is t t − e e = 3( e l + e l + 3 l l ) . The cube of χ ( r ) χ ( p ) is R ( p, r ) ,
+CAL R  y  125.0 x  248.1- 257.3
+      line: Y R ( p, r ) e p l r + e r l p + l p l r = R ( c, n ) G ( n 3 ) Y G ( p 3 ) p R ( p, p ) − e p l p − l p ( l p − 1) / 2 .
+CAL R  y  125.0 x  363.9- 373.1
+      line: Y R ( p, r ) e p l r + e r l p + l p l r = R ( c, n ) G ( n 3 ) Y G ( p 3 ) p R ( p, p ) − e p l p − l p ( l p − 1) / 2 .
+CAL R  y  125.0 x  143.1- 152.4
+      line: Y R ( p, r ) e p l r + e r l p + l p l r = R ( c, n ) G ( n 3 ) Y G ( p 3 ) p R ( p, p ) − e p l p − l p ( l p − 1) / 2 .
+CAL R  y  171.7 x  251.1- 260.3
+      line: of n 3 . The same refinement gives G ( c ) R ( c, n ) G ( n 3 ) = G ( cn 3 ) , which is cancelled by the inserted
+CAL R  y  185.3 x  341.1- 350.3
+      line: G ( cn 3 ) . Finally Equation ( 4.6 ) gives G ( p 3 ) = γ ( p ) and R ( p, p ) = ω . These identities account
+CAL H  y  599.2 x  334.9- 344.1
+      line: H = P , H = Y H . (7.12)
+CAL F  y  663.0 x  182.5- 190.3
+      line: F ( x, w, z ) = F H ( x, w, z ) . (7.13)
+CAL H  y  663.0 x  350.2- 359.4
+      line: F ( x, w, z ) = F H ( x, w, z ) . (7.13)

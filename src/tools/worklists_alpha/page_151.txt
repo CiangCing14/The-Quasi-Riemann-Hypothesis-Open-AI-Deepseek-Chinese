@@ -1,0 +1,5 @@
+PAGE 151   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) O2 I1 | zh 2
+   \mathcal I  y  100.3 x  357.6   line: final threshold also enforces the full initial support ratios in I .
+   \mathcal O  y  322.3 x  111.2   line: u ∈O n
+   \mathcal O  y  668.2 x  160.3   line: v ∈O

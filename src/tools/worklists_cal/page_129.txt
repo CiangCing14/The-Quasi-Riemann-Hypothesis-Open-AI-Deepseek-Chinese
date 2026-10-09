@@ -1,0 +1,16 @@
+PAGE 129   calligraphic glyphs in the PDF: 7   \mathcal in the Chinese: 0
+
+CAL B  y  167.4 x  493.6- 500.7
+      line: replaced by the fixed ray functions above. Those functions, the unchanged outer mask B , all
+CAL B  y  275.8 x  186.2- 193.3
+      line: those labels. The mask B implies q ≤ q ≤ Z H use , so there are only logarithmically many
+CAL B  y  289.3 x  327.5- 334.6
+      line: such dyads in the bounded retained scale range. Keep B outside every Fourier inversion. Define
+CAL I  y  343.0 x  180.1- 186.1
+      line: support is included in I , so this same bound holds directly on that support after separation,
+CAL K  y  702.5 x   70.9-  79.2
+      line: K = F Φ , define the single compact profile
+CAL F  y  702.5 x   98.5- 106.3
+      line: K = F Φ , define the single compact profile
+CAL K  y  757.3 x  324.0- 332.3
+      line: × W ( y y y y ) W ( y y y y ) K A h .

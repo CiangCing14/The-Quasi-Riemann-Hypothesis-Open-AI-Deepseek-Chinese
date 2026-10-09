@@ -1,0 +1,13 @@
+PAGE 10
+counts pdf: {'sum': 0, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 3, 'hat': 0, 'abs': 4}
+
+OVERLINE  y  201.7 x  507.5- 521.4 covers: '− 3) . A'
+          line: Theorem 3.1 (The 11 / 12 half-plane) . Every finite-order Hecke L -function over F = Q ( √ − 3)
+OVERLINE  y  556.0 x  135.2- 149.1 covers: '− 3)'
+          line: Let F = Q ( √ − 3) , let ω = e 2 πi/ 3 , and put
+OVERLINE  y  577.3 x  293.0- 306.9 covers: '− 3 ='
+          line: O = Z [ ω ] , λ = √ − 3 = ω − ω 2 = 1 + 2 ω.
+BAR       y  599.8 x  202.4- 205.5 
+BAR       y  599.8 x  211.2- 214.3 
+BAR       y  599.8 x  417.6- 420.7 
+BAR       y  599.8 x  426.4- 429.5 

@@ -1,0 +1,52 @@
+PAGE 139   calligraphic glyphs in the PDF: 25   \mathcal in the Chinese: 23
+
+CAL B  y  100.3 x  173.0- 180.1
+      line: mode. In particular B , | B | 2 , | D | 2 , and 1 are still in its weight. They retain the
+CAL B  y  168.0 x  290.1- 297.3
+      line: | V ( ξ ; ζ ) | ≪B ( k ′′ ) µ 2 ( f ) .
+CAL O  y  355.6 x  244.2- 250.9
+      line: K slot O slot
+CAL O  y  373.6 x  244.2- 250.9
+      line: K slot O 0 slot O slot O g slot
+CAL O  y  373.6 x  310.1- 316.9
+      line: K slot O 0 slot O slot O g slot
+CAL O  y  373.6 x  362.4- 369.1
+      line: K slot O 0 slot O slot O g slot
+CAL O  y  395.7 x  156.8- 163.6
+      line: O
+CAL O  y  409.2 x  246.9- 253.6
+      line: 2 O 2 O
+CAL O  y  409.2 x  471.6- 478.3
+      line: 2 O 2 O
+CAL O  y  422.8 x  310.5- 317.2
+      line: 1 2 1 2 0 2 O 0 O a 1 2
+CAL O  y  422.8 x  346.4- 353.1
+      line: 1 2 1 2 0 2 O 0 O a 1 2
+CAL O  y  436.3 x  140.1- 146.8
+      line: O 0 O O O O O O
+CAL O  y  436.3 x  176.0- 182.7
+      line: O 0 O O O O O O
+CAL O  y  436.3 x  317.2- 323.9
+      line: O 0 O O O O O O
+CAL O  y  436.3 x  367.6- 374.3
+      line: O 0 O O O O O O
+CAL O  y  436.3 x  394.9- 401.6
+      line: O 0 O O O O O O
+CAL O  y  436.3 x  449.2- 455.9
+      line: O 0 O O O O O O
+CAL O  y  436.3 x  497.2- 503.9
+      line: O 0 O O O O O O
+CAL O  y  449.9 x  229.0- 235.7
+      line: O 0 O k 2 g
+CAL O  y  449.9 x  260.2- 266.9
+      line: O 0 O k 2 g
+CAL O  y  477.0 x  249.3- 256.0
+      line: 0 O 0 O O slot slot
+CAL O  y  477.0 x  280.5- 287.2
+      line: 0 O 0 O O slot slot
+CAL O  y  477.0 x  308.6- 315.4
+      line: 0 O 0 O O slot slot
+CAL O  y  490.5 x  259.0- 265.7
+      line: g O O g slot
+CAL O  y  490.5 x  287.1- 293.8
+      line: g O O g slot

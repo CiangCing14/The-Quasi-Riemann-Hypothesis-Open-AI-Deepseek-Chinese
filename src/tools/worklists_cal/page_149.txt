@@ -1,0 +1,10 @@
+PAGE 149   calligraphic glyphs in the PDF: 4   \mathcal in the Chinese: 0
+
+CAL E  y  239.7 x  431.3- 437.0
+      line: H init = X D ( f ) X | Q init ( k, f ) | 2 = Z F init E init . (17.82)
+CAL H  y  239.7 x  141.1- 150.3
+      line: H init = X D ( f ) X | Q init ( k, f ) | 2 = Z F init E init . (17.82)
+CAL O  y  255.4 x  297.0- 303.7
+      line: f sf k ∈O
+CAL H  y  338.9 x  342.6- 351.8
+      line: X V init Q Q ≪ Z P 1 +2 η Y H init dν init ( t ) . (17.83)

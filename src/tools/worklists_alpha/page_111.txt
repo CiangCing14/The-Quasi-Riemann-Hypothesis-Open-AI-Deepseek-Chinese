@@ -1,0 +1,18 @@
+PAGE 111   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 14 glyph(s) B5 R3 E2 H1 Q1 D1 O1 | zh 0
+   \mathcal B  y  113.8 x  147.9   line: H , now defines B throughout this region. It is H , not the possibly singular raw factor P , that
+   \mathcal H  y  140.9 x  362.3   line: Consequently the tuple sum in Equation ( 16.3 ) factors as H Q B on this dynamic region.
+   \mathcal B  y  140.9 x  401.2   line: Consequently the tuple sum in Equation ( 16.3 ) factors as H Q B on this dynamic region.
+   \mathcal B  y  154.5 x  133.4   line: Substituting B = Q + D proves Equation ( 16.10 ). This factorization is not used to continue
+   \mathcal Q  y  154.5 x  160.1   line: Substituting B = Q + D proves Equation ( 16.10 ). This factorization is not used to continue
+   \mathcal D  y  154.5 x  186.4   line: Substituting B = Q + D proves Equation ( 16.10 ). This factorization is not used to continue
+   \mathcal E  y  181.6 x  312.7   line: For p ∤ u , Equation ( 16.8 ) and the estimate for E give
+   \mathcal B  y  207.2 x  113.2   line: | H ( B + χ ( u )) | ≪ Q − x r +2 ϑ + Q − 6 z r +2 ϑ + Q 4 − 5 x r − 6 z r +2 ϑ + Q 1 − w r − 6 z r + ϑ ≪ Q − 51 / 100 .
+   \mathcal E  y  287.8 x  433.5   line: For p | u there are only divisor-many possible labels. A monomial in E is multiplied by
+   \mathcal B  y  301.3 x  149.9   line: Q z − 1+ x in Q z − 1 B , so after separating Q z its exponent is x − 1 plus the exponent of that
+   \mathcal R  y  522.7 x  306.7   line: χ ( u ) = ϵ ( q n − 1) / 6 Y R ( p, n ) j p χ ( n ) j p .
+   \mathcal R  y  609.1 x  377.2   line: Thus the unit factor depends only on q modulo 36 , and the R product depends only on n
+   \mathcal R  y  622.6 x  306.4   line: modulo 4 . Together with the multiplicativity of R and the local symbols, the displayed norm
+   \mathcal O  y  690.4 x  513.8   line: avoiding S . These characters induce the same primitive character: in the principal ideal ring O ,
+EUFM -> \mathfrak : pdf 1 glyph(s) f1 | zh 0
+   \mathfrak f  y  494.6 x  107.1   line: Let f be the conductor of ψ ∗ . Write u = ϵ Q p j p , with ϵ a unit. For primary n coprime

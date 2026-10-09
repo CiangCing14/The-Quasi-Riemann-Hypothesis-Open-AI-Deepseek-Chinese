@@ -1,0 +1,22 @@
+PAGE 56   calligraphic glyphs in the PDF: 10   \mathcal in the Chinese: 0
+
+CAL X  y  113.8 x  172.9- 180.7
+      line: X =  ψ ( n ) = ν ( n ) χ ( u ) ς : ν ∈ Θ , ς ∈{− 1 , 1 } .
+CAL X  y  147.0 x  196.6- 204.4
+      line: property of Θ shows that X is closed under conjugation. It contains the numerator character
+CAL X  y  187.7 x  377.7- 385.5
+      line: Let ψ ∗ be the primitive character inducing a presentation ψ ∈X , and let Q be its conductor
+CAL A  y  230.1 x  130.2- 137.0
+      line: ψ A u orig p u
+CAL X  y  329.2 x  221.7- 229.5
+      line: Consequently a presentation in X can induce the principal character only when u is supported
+CAL X  y  536.2 x  322.1- 329.9
+      line:   ψ ∈X , L ( ρ, ψ ∗ ) = 0 , 
+CAL X  y  605.8 x  190.4- 198.1
+      line: If a > 51 / 100 , some ψ ∈X has a zero ρ = σ + iγ with
+CAL X  y  653.5 x  204.9- 212.7
+      line: For every ϵ > 0 , every ψ ∈X , and sufficiently large Z , uniformly in the retained row,
+CAL A  y  681.3 x  262.8- 269.6
+      line: orig orig A ,e,ϵ 1 1 1
+CAL A  y  729.0 x  293.3- 300.1
+      line: orig A ,e,ϵ 1 1 1

@@ -1,0 +1,55 @@
+PAGE 95
+counts pdf: {'sum': 10, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 12}
+
+SUM       y  218.5 x  173.3- 189.0 
+          line: H ≪ ( KNBL ) ϵ X q 1 X X β D ( n, b ) χ k ′ ( nb ) 3 X a √ D ( q P ′ ) χ P ′ ( n ) − 2 1 ( P ′ ,b )=1 . (14.8)
+SUM       y  218.5 x  207.6- 223.3 
+          line: H ≪ ( KNBL ) ϵ X q 1 X X β D ( n, b ) χ k ′ ( nb ) 3 X a √ D ( q P ′ ) χ P ′ ( n ) − 2 1 ( P ′ ,b )=1 . (14.8)
+SUM       y  218.5 x  228.8- 244.6 
+          line: H ≪ ( KNBL ) ϵ X q 1 X X β D ( n, b ) χ k ′ ( nb ) 3 X a √ D ( q P ′ ) χ P ′ ( n ) − 2 1 ( P ′ ,b )=1 . (14.8)
+SUM       y  218.5 x  325.7- 341.4 
+          line: H ≪ ( KNBL ) ϵ X q 1 X X β D ( n, b ) χ k ′ ( nb ) 3 X a √ D ( q P ′ ) χ P ′ ( n ) − 2 1 ( P ′ ,b )=1 . (14.8)
+SUM       y  457.0 x  141.6- 157.4 
+          line: ( KNBL ) ϵ X q 1 T X X  q K q + NG C 2  q C X | β D ( rc ′ m, rc ′ ht 2 ) | 2
+SUM       y  457.0 x  185.9- 201.6 
+          line: ( KNBL ) ϵ X q 1 T X X  q K q + NG C 2  q C X | β D ( rc ′ m, rc ′ ht 2 ) | 2
+SUM       y  457.0 x  231.6- 247.3 
+          line: ( KNBL ) ϵ X q 1 T X X  q K q + NG C 2  q C X | β D ( rc ′ m, rc ′ ht 2 ) | 2
+SUM       y  457.0 x  369.5- 385.3 
+          line: ( KNBL ) ϵ X q 1 T X X  q K q + NG C 2  q C X | β D ( rc ′ m, rc ′ ht 2 ) | 2
+SUM       y  508.0 x  295.8- 311.6 
+          line: · X a D,r √ q ( P ′ ) χ P ′ ( c ′ m ) − 2 1 ( P ′ ,ht )=1 ,
+SUM       y  740.2 x  203.8- 219.5 
+          line: X | a D,r ( P ′ ) q | 2 1 ( P ′ ,ht )=1 ≪ ϵ ( KNBL ) ϵ .
+PAREN     y  452.0 x  275.3- 283.4 ch=(
+PAREN     y  452.0 x  342.1- 350.3 ch=)
+BAR       y  181.0 x  256.8- 259.9 
+BAR       y  181.0 x  273.8- 276.8 
+BAR       y  206.5 x  225.2- 228.8 
+BAR       y  213.0 x  225.2- 228.8 
+BAR       y  219.6 x  225.2- 228.8 
+BAR       y  226.1 x  225.2- 228.8 
+BAR       y  232.7 x  225.2- 228.8 
+BAR       y  239.2 x  225.2- 228.8 
+BAR       y  206.5 x  460.4- 464.0 
+BAR       y  213.0 x  460.4- 464.0 
+BAR       y  219.6 x  460.4- 464.0 
+BAR       y  226.1 x  460.4- 464.0 
+BAR       y  232.7 x  460.4- 464.0 
+BAR       y  239.2 x  460.4- 464.0 
+BAR       y  459.4 x  390.9- 394.0 
+BAR       y  459.4 x  471.2- 474.2 
+BAR       y  499.2 x  292.2- 295.8 
+BAR       y  505.8 x  292.2- 295.8 
+BAR       y  512.3 x  292.2- 295.8 
+BAR       y  518.9 x  292.2- 295.8 
+BAR       y  525.4 x  292.2- 295.8 
+BAR       y  499.2 x  451.8- 455.4 
+BAR       y  505.8 x  451.8- 455.4 
+BAR       y  512.3 x  451.8- 455.4 
+BAR       y  518.9 x  451.8- 455.4 
+BAR       y  525.4 x  451.8- 455.4 
+BAR       y  697.4 x  192.6- 195.6 
+BAR       y  697.4 x  209.5- 212.6 
+BAR       y  734.1 x  222.6- 225.6 
+BAR       y  734.1 x  265.3- 268.3 

@@ -1,0 +1,20 @@
+PAGE 24   calligraphic glyphs in the PDF: 9   \mathcal in the Chinese: 3
+
+CAL X  y  482.1 x  400.6- 408.3
+      line: Proposition 5.1 (Completed cubic reflection) . Fix a finite family X of finite-ray characters
+CAL X  y  522.7 x   83.3-  91.1
+      line: of X by zero away from the E -units. Choose a single L ∈O \ { 0 } with prime support S , with
+CAL O  y  522.7 x  353.8- 362.5
+      line: of X by zero away from the E -units. Choose a single L ∈O \ { 0 } with prime support S , with
+CAL X  y  536.3 x  339.2- 346.9
+      line: (18) | ( L ) and E | ( L ) , large enough that, for every Ψ ∈X , the function on O
+CAL O  y  536.3 x  431.8- 440.5
+      line: (18) | ( L ) and E | ( L ) , large enough that, for every Ψ ∈X , the function on O
+CAL X  y  631.1 x  515.0- 522.8
+      line: and L are fixed for the entire family before any moving prime is chosen. Fix a member Ψ ∈X
+CAL P  y  644.6 x  185.6- 193.2
+      line: and put L = ( L ) . Let P be any finite set of distinct primary primes not dividing L , choose
+CAL P  y  658.2 x  214.1- 221.7
+      line: j ∈{ 0 , 1 , . . . , 5 } for each p ∈P , and set, on primary elements,
+CAL P  y  700.4 x  313.5- 319.4
+      line: p ∈P

@@ -1,0 +1,19 @@
+PAGE 190
+counts pdf: {'sum': 0, 'prod': 2, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 4}
+
+PROD      y  110.7 x  299.3- 313.2 
+          line: H ( η,u,Z I ) = H η,u ( s, w, z ) Y D i ( u ) Y Q i ( u ; z ) .
+PROD      y  110.7 x  343.4- 357.3 
+          line: H ( η,u,Z I ) = H η,u ( s, w, z ) Y D i ( u ) Y Q i ( u ; z ) .
+PAREN     y  464.2 x  211.8- 219.8 ch=(
+PAREN     y  464.2 x  254.3- 262.3 ch=)
+PAREN     y  464.2 x  354.8- 362.8 ch=(
+PAREN     y  464.2 x  419.0- 427.0 ch=)
+BAR       y  189.9 x  494.1- 497.2 
+BAR       y  189.9 x  509.2- 512.2 
+BAR       y  268.8 x  157.2- 160.8 
+BAR       y  275.3 x  157.2- 160.8 
+BAR       y  281.9 x  157.2- 160.8 
+BAR       y  268.8 x  287.8- 291.5 
+BAR       y  275.3 x  287.8- 291.5 
+BAR       y  281.9 x  287.8- 291.5 

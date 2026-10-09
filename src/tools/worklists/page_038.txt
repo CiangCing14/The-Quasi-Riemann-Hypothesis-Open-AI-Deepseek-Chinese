@@ -1,0 +1,47 @@
+PAGE 38
+counts pdf: {'sum': 6, 'prod': 0, 'int': 1, 'sqrt': 0, 'overline': 1, 'hat': 1, 'abs': 10}
+
+OVERLINE  y  644.7 x  288.2- 319.7 covers: 'α ( cn 3 ) √'
+          line: γ ( c ) α ( cn 3 ) ν ( cn 3 ) χ ( m )  q q 3 
+ACCENT    y  761.2 x  272.7- 278.8 
+          line: C V ( X ; m, ν ) = 2 πi ( a ) V b ( s − 1 / 2) X s − 1 / 2 T ( s, νχ • ( m )) ds. (5.31)
+SUM       y  213.9 x  165.4- 181.2 
+          line: X X C j χ k ′ ( j ) 3 ≪ ϵ ( KNB ) ϵ  K q + NG C 2  X | C j | 2 .
+SUM       y  213.9 x  186.7- 202.4 
+          line: X X C j χ k ′ ( j ) 3 ≪ ϵ ( KNB ) ϵ  K q + NG C 2  X | C j | 2 .
+SUM       y  213.9 x  386.3- 402.0 
+          line: X X C j χ k ′ ( j ) 3 ≪ ϵ ( KNB ) ϵ  K q + NG C 2  X | C j | 2 .
+SUM       y  325.9 x  168.6- 184.4 
+          line: X | C j | 2 ≪ ϵ ( KNB ) ϵ C q X | β ( rc ′ m, rc ′ ht 2 ) | 2 .
+SUM       y  325.9 x  305.0- 320.8 
+          line: X | C j | 2 ≪ ϵ ( KNB ) ϵ C q X | β ( rc ′ m, rc ′ ht 2 ) | 2 .
+SUM       y  650.9 x  235.5- 251.3 
+          line: C V ( X ; m, ν ) = X γ 2 ( c ) α ( cn 3 √ ) ν q ( q cn 3 ) χ cn 3 ( m ) V  q X c q n 3  . (5.30)
+INT       y  749.1 x  251.9- 258.0 
+          line: C ( X ; m, ν ) = 1 Z V ( s − 1 / 2) X s − 1 / 2 T ( s, νχ • ( m )) ds. (5.31)
+PAREN     y  208.8 x  321.7- 329.7 ch=(
+PAREN     y  208.8 x  376.4- 384.4 ch=)
+PAREN     y  504.3 x  233.0- 241.1 ch=(
+PAREN     y  504.3 x  287.8- 295.8 ch=)
+PAREN     y  645.8 x  398.6- 406.6 ch=(
+PAREN     y  645.8 x  428.6- 436.6 ch=)
+BAR       y  201.9 x  183.0- 186.7 
+BAR       y  208.4 x  183.0- 186.7 
+BAR       y  215.0 x  183.0- 186.7 
+BAR       y  221.5 x  183.0- 186.7 
+BAR       y  228.0 x  183.0- 186.7 
+BAR       y  234.6 x  183.0- 186.7 
+BAR       y  201.9 x  249.4- 253.0 
+BAR       y  208.4 x  249.4- 253.0 
+BAR       y  215.0 x  249.4- 253.0 
+BAR       y  221.5 x  249.4- 253.0 
+BAR       y  228.0 x  249.4- 253.0 
+BAR       y  234.6 x  249.4- 253.0 
+BAR       y  216.2 x  403.8- 406.9 
+BAR       y  216.2 x  419.0- 422.1 
+BAR       y  328.3 x  186.2- 189.2 
+BAR       y  328.3 x  201.4- 204.4 
+BAR       y  328.3 x  342.7- 345.8 
+BAR       y  328.3 x  415.9- 418.9 
+BAR       y  415.1 x  152.9- 156.0 
+BAR       y  415.1 x  162.7- 165.7 

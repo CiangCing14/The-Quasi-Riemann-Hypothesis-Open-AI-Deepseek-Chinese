@@ -1,0 +1,16 @@
+PAGE 168   calligraphic glyphs in the PDF: 7   \mathcal in the Chinese: 0
+
+CAL B  y  478.6 x  356.9- 364.0
+      line: M ′ + ∆ , ∆ = b − p + w + B + ℓ ≥ w + ℓ. (18.33)
+CAL R  y  554.5 x  281.3- 290.6
+      line: F ( a, b ; j ) := F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j )
+CAL R  y  554.5 x  322.5- 331.7
+      line: F ( a, b ; j ) := F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j )
+CAL R  y  554.5 x  363.5- 372.7
+      line: F ( a, b ; j ) := F ( D , E ; j ) R ( a, E ) R ( b, D ) R ( a, b ) χ ( j ) χ ( − j )
+CAL C  y  592.4 x  390.6- 396.3
+      line: the genuine correlation only when ( a, b ) = 1 . Define the remaining C ( a, b ; j ) on all individually
+CAL C  y  672.0 x  150.8- 156.6
+      line: X C ( a, b ; j ) F ( D a, E b ; j ) = X µ ( t ) X C ( a, b ; j ) F ( a, b ; j ) .
+CAL C  y  672.0 x  361.8- 367.6
+      line: X C ( a, b ; j ) F ( D a, E b ; j ) = X µ ( t ) X C ( a, b ; j ) F ( a, b ; j ) .

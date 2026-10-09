@@ -1,0 +1,19 @@
+PAGE 163   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 15 glyph(s) B11 N2 P1 S1 | zh 0
+   \mathcal B  y  136.1 x  228.5   line: N ≪ Z A − c + q + B c − s 0 + ϵ G , B = max { 0 , (3 c − 5 d − R ) / 6 } . (18.23)
+   \mathcal B  y  138.3 x  295.7   line: N ≪ Z A − c + q + B c − s 0 + ϵ G , B = max { 0 , (3 c − 5 d − R ) / 6 } . (18.23)
+   \mathcal N  y  138.3 x  153.4   line: N ≪ Z A − c + q + B c − s 0 + ϵ G , B = max { 0 , (3 c − 5 d − R ) / 6 } . (18.23)
+   \mathcal B  y  162.8 x  195.9   line: The analogous quantity is B = max { 0 , (3 d − 5 c − R ) / 6 } . The complete exponent ledger for this
+   \mathcal B  y  205.5 x  271.0   line: + 1 { A − c + q + B − s + A − d + q + B − s }
+   \mathcal B  y  205.5 x  378.0   line: + 1 { A − c + q + B − s + A − d + q + B − s }
+   \mathcal B  y  222.0 x  228.3   line: = M + 1 {B + B − ( c + d − 2 p − R ) } .
+   \mathcal B  y  222.0 x  253.0   line: = M + 1 {B + B − ( c + d − 2 p − R ) } .
+   \mathcal B  y  254.6 x  235.7   line: B + B ≤ c + d − 2 p − R. (18.24)
+   \mathcal B  y  254.6 x  260.3   line: B + B ≤ c + d − 2 p − R. (18.24)
+   \mathcal B  y  473.5 x  324.4   line: Λ = a + q + w + w + B − s + ϵ . (18.25)
+   \mathcal B  y  493.5 x  185.8   line: This is just A − c + q + B − s + ϵ + w .
+   \mathcal N  y  704.9 x  162.8   line: The positive norm N is at most the corresponding norm over a smooth ball of length K + g .
+   \mathcal P  y  759.1 x  213.2   line: P = { p : Z ℓ ∗ / 2 < q ≤ Z ℓ ∗ , p ∈S} / .
+   \mathcal S  y  759.1 x  366.2   line: P = { p : Z ℓ ∗ / 2 < q ≤ Z ℓ ∗ , p ∈S} / .
+EUFM -> \mathfrak : pdf 1 glyph(s) R1 | zh 0
+   \mathfrak R  y  550.8 x  333.2   line: b 1 2 1 1 2 l 1 l 2 (Π l 1 l 2 , R )=1 s | Π l 1 l 2 1 2

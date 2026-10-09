@@ -1,0 +1,29 @@
+PAGE 155
+counts pdf: {'sum': 2, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 0, 'abs': 14}
+
+OVERLINE  y  665.9 x  294.2- 325.9 covers: 'ψ ∗ k ( h 0 )'
+          line: µ ( d ) ψ ∗ ( d ) ψ ∗ ( h )  C q 
+OVERLINE  y  680.2 x  335.3- 345.9 covers: 'ψ 0 k'
+          line: T k ( X ; W ) = ε k X √ k q q k T ψ 0 Xq 0 ; W ♯ , | ε k | = 1 .
+SUM       y   91.4 x  203.5- 219.3 
+          line: X q d − 1 / 2 ≤ Y (1 − q p − 1 / 2 ) − 1 ≪ ϵ 1 ,B Z ϵ 1 . (18.6)
+SUM       y  672.3 x  203.1- 218.8 
+          line: T k ( X ; W ) = ε k X µ ( d 0 ) ψ √ k ∗ q ( d 0 q ) ψ k ∗ ( h 0 ) T ψ 0  C Xq k q d 0 ; W ♯  , | ε k | = 1 .
+PROD      y   91.4 x  260.7- 274.6 
+          line: X q d − 1 / 2 ≤ Y (1 − q p − 1 / 2 ) − 1 ≪ ϵ 1 ,B Z ϵ 1 . (18.6)
+PAREN     y  667.3 x  347.7- 355.8 ch=(
+PAREN     y  667.3 x  405.4- 413.4 ch=)
+BAR       y  109.9 x  209.1- 211.4 
+BAR       y  109.9 x  265.3- 267.7 
+BAR       y  139.7 x  444.1- 447.1 
+BAR       y  381.5 x  444.3- 447.3 
+BAR       y  381.5 x  457.6- 460.6 
+BAR       y  566.4 x  437.7- 440.8 
+BAR       y  566.4 x  447.9- 451.0 
+BAR       y  690.8 x  205.5- 207.8 
+BAR       y  700.5 x  215.1- 217.5 
+BAR       y  674.7 x  441.8- 444.8 
+BAR       y  674.7 x  455.0- 458.1 
+BAR       y  725.8 x  318.5- 320.8 
+BAR       y  757.5 x  288.5- 291.6 
+BAR       y  757.5 x  369.4- 372.4 

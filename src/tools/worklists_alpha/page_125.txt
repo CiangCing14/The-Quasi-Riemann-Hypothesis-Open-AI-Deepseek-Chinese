@@ -1,0 +1,16 @@
+PAGE 125   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) I2 | zh 0
+   \mathcal I  y  298.3 x  158.1   line: a finite collection I of compact normalized-ratio intervals. If L is the maximum absolute
+   \mathcal I  y  352.5 x  392.4   line: next node come directly from the full independent fresh windows in I . Separated norm powers
+EUFM -> \mathfrak : pdf 7 glyph(s) H7 | zh 0
+   \mathfrak H  y  461.0 x  401.7   line: supports of those retained cutoffs. For the resulting compact profile H , define before summing
+   \mathfrak H  y  503.5 x  214.4   line: H ( t ) = H ( e u 1 , . . . , e u d ) e − i t · u u ,
+   \mathfrak H  y  503.5 x  268.3   line: H ( t ) = H ( e u 1 , . . . , e u d ) e − i t · u u ,
+   \mathfrak H  y  537.6 x  212.1   line: H ( y ) = (2 π ) − d H ( t ) Y y j d t .
+   \mathfrak H  y  537.6 x  302.1   line: H ( y ) = (2 π ) − d H ( t ) Y y j d t .
+   \mathfrak H  y  670.1 x  206.2   line: | H ( t ) | (1 + | t | ) J t ≪ max ∥ D a H ∥ . (17.20)
+   \mathfrak H  y  670.1 x  385.3   line: | H ( t ) | (1 + | t | ) J t ≪ max ∥ D a H ∥ . (17.20)
+MSBM -> \mathbb : pdf 3 glyph(s) R3 | zh 3
+   \mathbb R  y  514.0 x  255.9   line: R d
+   \mathbb R  y  548.1 x  289.7   line: R d
+   \mathbb R  y  680.6 x  190.7   line: R d | a |≤ 2 m 0

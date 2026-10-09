@@ -1,0 +1,8 @@
+PAGE 144   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) I1 R1 B1 | zh 2
+   \mathcal I  y  113.8 x  510.7   line: larger cutoffs, the surviving slot supports, and the j -product interval in the finite collection I
+   \mathcal R  y  239.6 x  157.2   line: R ( u ) = Z − D ′ / 2 X µ ( c ) ν ( c )1 χ ( u ) d ( c ) W ( q /Z D ′ ) . (17.68)
+   \mathcal B  y  616.1 x  236.6   line: B ( h ′ ) = 1 .
+EUFM -> \mathfrak : pdf 2 glyph(s) d2 | zh 0
+   \mathfrak d  y  239.7 x  355.6   line: R ( u ) = Z − D ′ / 2 X µ ( c ) ν ( c )1 χ ( u ) d ( c ) W ( q /Z D ) . (17.68)
+   \mathfrak d  y  273.6 x  259.0   line: Here ν is a fixed finite ray character, d is the product mark of cap z with those individual

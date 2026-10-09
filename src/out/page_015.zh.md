@@ -5,13 +5,13 @@
 引理 4.4（六次互反律与固定高斯相位）。对于 $S$ 外互素的主元 $a, b$，
 $$\chi_b(a) = R(a, b)\chi_a(b), \quad R(a, b) = r(a, b).$$
 在 $S$ 外的所有主元对上，包括非互素对，用式 (4.4) 的双特征 $r$ 定义 $R$。在 $S$ 外的每个主指数上定义
-$$G(c) = \chi_c(4)\Gamma(c).$$
+$$G(c) = \overline{\chi_c(4)}\Gamma(c).$$
 它的模为 $1$，且通过一个支撑在 $2, 3$ 上的固定射线群分解。对于所有这样的 $v, w$，
 $$G(vw) = G(v)G(w)R(v, w), \qquad G(1) = 1. \qquad (4.5)$$
 此外 $G(v^2) = \chi_v(4)$，且在好素数处
 $$G(p^3) = \gamma_3(p), \qquad R(p, p) = \gamma_3(p)^2 = \chi_p(-1). \qquad (4.6)$$
 在 $S$ 外的每个主元 $n$ 上，有 $\chi_n(-1) = R(n, n)$。对角线映射 $t \mapsto R(t, t)$ 是固定射线群的一个特征。在式 (4.4) 的平方类记号中，它是 $r(-1, n)$，其中 $-1$ 表示其模 $4$ 的剩余平方类，而非单位理想 $(-1)$ 的理想射线类。对于无平方因子 $c$，完整的高斯恒等式为
-$$\gamma_2(c)^3 = \mu(c)\alpha(c), \quad \gamma_1(c)\gamma_2(c) = \mu(c)\alpha(c)G(c), \quad G(c) = \chi_c(4)\gamma_3(c), \quad |G(c)| = 1. \qquad (4.7)$$
+$$\gamma_2(c)^3 = \mu(c)\alpha(c), \quad \gamma_1(c)\gamma_2(c) = \mu(c)\alpha(c)G(c), \quad G(c) = \overline{\chi_c(4)}\gamma_3(c), \quad |G(c)| = 1. \qquad (4.7)$$
 $G$ 在非无平方因子指数上的所有出现均指刚刚定义的有限射线函数，而非非无平方因子的高斯和。
 
 证明。在好素数处，对剩余域中的平方根计数给出

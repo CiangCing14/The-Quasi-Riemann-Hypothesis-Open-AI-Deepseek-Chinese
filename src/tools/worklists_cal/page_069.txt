@@ -1,0 +1,16 @@
+PAGE 69   calligraphic glyphs in the PDF: 7   \mathcal in the Chinese: 0
+
+CAL A  y  271.8 x  324.0- 329.9
+      line: X | M u ( D ; W u ) | 2 ≪ A ,ϵ ( UD ) ϵ 1 (1 + T 1 ) A A V 1 / 2 + D + . (9.22)
+CAL A  y  275.0 x  224.5- 231.3
+      line: u u A ,ϵ 1 1 1 A
+CAL U  y  286.6 x  131.9- 137.2
+      line: u ∈U V
+CAL A  y  307.3 x  234.3- 241.1
+      line: A
+CAL A  y  416.6 x  469.9- 476.6
+      line: A
+CAL U  y  474.9 x  193.1- 199.9
+      line: # U ≪ U min { 1 − o/ 2 ,e o ( r ) − δr } + O ( ϵ 0 )+ ϵ 1 (1 + T ) A A , (9.23)
+CAL A  y  475.6 x  401.3- 407.3
+      line: # U V ≪ U min { 1 − o/ 2 ,e o ( r ) − δr } + O ( ϵ 0 )+ ϵ 1 (1 + T 1 ) A A , (9.23)

@@ -1,0 +1,19 @@
+PAGE 137
+counts pdf: {'sum': 0, 'prod': 1, 'int': 0, 'sqrt': 0, 'overline': 1, 'hat': 4, 'abs': 0}
+
+OVERLINE  y  744.2 x  280.1- 332.8 covers: 'W i ( y g y v y 2 )'
+          line: × W ( y y y ) W ( y y y ) K  A y k  .
+ACCENT    y  146.6 x  247.0- 253.1 
+          line: Q new ≤ ≤ Q Q + + b ℓ c + + t b t + + g b g − − θ θ b + 4 η ≤ Q + D + 4 η. (17.50)
+ACCENT    y  144.6 x  265.0- 271.1 
+          line: Q new ≤ ≤ Q Q + + b ℓ c + + t b t + + g b g − − θ θ b + 4 η ≤ Q + D + 4 η. (17.50)
+ACCENT    y  146.6 x  282.5- 288.6 
+          line: Q new ≤ ≤ Q Q + + b ℓ c + + t b t + + g b g − − θ θ b + 4 η ≤ Q + D + 4 η. (17.50)
+ACCENT    y  143.7 x  301.9- 308.0 
+          line: Q new ≤ Q + b c + b t + b g − θ b (17.50)
+PROD      y  709.4 x  240.0- 254.0 
+          line: H 2 ,σ, t ( y ) = Z − 6 η Y Ω 2 ,α ( y α ) y d − 1 y v − 1 ( y 1 y 2 ) − 1 / 2
+PAREN     y  491.7 x  275.5- 282.0 ch=(
+PAREN     y  491.7 x  417.0- 423.5 ch=)
+PAREN     y  737.9 x  345.8- 353.9 ch=(
+PAREN     y  737.9 x  423.7- 431.7 ch=)

@@ -1,0 +1,12 @@
+PAGE 157   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL R  y  195.1 x  327.7- 336.9
+      line: Thus every resulting slot character is nonprincipal on R .
+CAL I  y  212.7 x  436.9- 441.6
+      line: i i ∈I
+CAL I  y  226.2 x  184.8- 189.5
+      line: i i ∈I
+CAL I  y  272.7 x  193.7- 198.4
+      line: i ∈I  p prime 
+CAL R  y  327.4 x  374.9- 384.2
+      line: | Q | 2 ≤ CZ κz + ϵ 1 p ( W ) b (1 + | ω | ) h ( k ∈R , z > 0) . (18.12)

@@ -1,0 +1,14 @@
+PAGE 121   calligraphic glyphs in the PDF: 6   \mathcal in the Chinese: 4
+
+CAL O  y  115.0 x  181.7- 188.4
+      line: k ∈O
+CAL F  y  134.0 x  362.9- 370.8
+      line: = √ X X ψ ¯ ( h ) F Φ h ,
+CAL O  y  149.7 x  331.9- 338.6
+      line: d | rad R h ∈O
+CAL O  y  352.1 x  163.3- 172.0
+      line: Writing ϕ ( m ) = | ( O /m ) × | , there are ϕ ( m ) unit h ’s, all with magnitude q | γ ( ψ ; m ) | , and
+CAL O  y  423.8 x  202.5- 209.2
+      line: Φ O
+CAL F  y  446.0 x  273.5- 281.4
+      line: A X |F Φ( Aq ) | ≪ 1 .

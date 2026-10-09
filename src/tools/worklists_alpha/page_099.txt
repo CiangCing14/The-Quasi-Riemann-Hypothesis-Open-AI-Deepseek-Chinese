@@ -1,0 +1,5 @@
+PAGE 99   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) N2 O1 | zh 0
+   \mathcal O  y  230.6 x  207.1   line: Lemma 5.4 with lattice λ − 4 O , a = X/q 2 , and U = Z τ ref / 2 . On the full source support, the
+   \mathcal N  y  570.3 x  345.3   line: Z − v − 2 ℓ b − 2 e λ / 3 − S 0 − B 0 + ϵ N ,
+   \mathcal N  y  629.9 x  110.9   line: N = X X √ 1 X β ( n, b ) χ ( nb ) 3 χ ( n ) − 2 1 ,

@@ -1,0 +1,4 @@
+PAGE 88   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL A  y  303.5 x  450.0- 458.8
+      line: The slot count is a separate fixed parameter, and moving labels remain outside A .

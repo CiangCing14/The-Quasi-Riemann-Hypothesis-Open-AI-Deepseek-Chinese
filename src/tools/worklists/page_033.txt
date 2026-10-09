@@ -1,0 +1,35 @@
+PAGE 33
+counts pdf: {'sum': 3, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 2, 'abs': 18}
+
+ACCENT    y  540.0 x  293.6- 299.7 
+          line: absolute and Equation value ( at 5.3 most ). Since one. | This ϕ | ≤ proves 1 , we have | ζ | ≤ | 1 ϕ b / ( 81 h 0 . ) | ≤ 1 ; every other factor in the scalar has
+ACCENT    y  656.9 x  160.4- 166.4 
+          line: tion shifts ( 4.11 are ) therefore makes V b valid rapidly within decreasing − 1 / 4 ≤ℜ pointwise t ≤ A , including on every vertical between strip. any two Rectangular n
+SUM       y  132.2 x  159.9- 175.6 
+          line: X q n − (1 −ℜ s ) , X q b 1 / 2 − 3(1 −ℜ s ) , X 3 k (1 / 6 − (1 −ℜ s )) .
+SUM       y  132.2 x  243.8- 259.5 
+          line: X q n − (1 −ℜ s ) , X q b 1 / 2 − 3(1 −ℜ s ) , X 3 k (1 / 6 − (1 −ℜ s )) .
+SUM       y  132.2 x  347.8- 363.5 
+          line: X q n − (1 −ℜ s ) , X q b 1 / 2 − 3(1 −ℜ s ) , X 3 k (1 / 6 − (1 −ℜ s )) .
+PAREN     y  452.8 x  302.5- 310.5 ch=(
+PAREN     y  452.8 x  343.3- 351.4 ch=)
+BAR       y  170.5 x  480.3- 483.4 
+BAR       y  170.5 x  490.0- 493.0 
+BAR       y  238.3 x  318.9- 322.0 
+BAR       y  238.3 x  335.0- 338.0 
+BAR       y  306.0 x  187.7- 190.8 
+BAR       y  306.0 x  233.7- 236.7 
+BAR       y  306.0 x  275.7- 278.7 
+BAR       y  306.0 x  282.7- 285.7 
+BAR       y  304.4 x  307.3- 309.6 
+BAR       y  304.4 x  312.7- 315.0 
+BAR       y  534.9 x  203.0- 206.0 
+BAR       y  534.9 x  212.5- 215.5 
+BAR       y  534.9 x  289.4- 292.5 
+BAR       y  534.9 x  318.5- 321.6 
+BAR       y  548.4 x  263.9- 266.9 
+BAR       y  548.4 x  272.5- 275.6 
+BAR       y  613.6 x  233.1- 236.1 
+BAR       y  613.6 x  282.9- 285.9 
+BAR       y  613.6 x  332.8- 335.8 
+BAR       y  613.6 x  342.1- 345.1 

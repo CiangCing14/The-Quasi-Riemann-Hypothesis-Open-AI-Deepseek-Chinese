@@ -1,0 +1,10 @@
+PAGE 21   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) M1 O1 | zh 1
+   \mathcal M  y  208.6 x  322.4   line: a fixed set. For a pure twist the Mellin integrand is M W ( − σ − it + iω ) . Substitute v = t − ω
+   \mathcal O  y  737.9 x  414.7   line: 0 a ∈O
+EUFM -> \mathfrak : pdf 3 glyph(s) f3 | zh 3
+   \mathfrak f  y  638.4 x  264.3   line: directly from a lattice theta integral. Let f = ( f ) be the conductor and define the periodic residue
+   \mathfrak f  y  652.0 x  230.9   line: character ϕ ( a ) = ψ (( a )) when ( a, f ) = 1 , with value zero otherwise. For the principal conductor
+   \mathfrak f  y  679.1 x  315.4   line: has no nonprincipal character. Periodicity modulo f follows from the ray character property; ϕ
+MSBM -> \mathbb : pdf 1 glyph(s) C1 | zh 1
+   \mathbb C  y  458.7 x  369.4   line: Proof. A finite-order character has trivial infinite type, since C × is connected. The primitive

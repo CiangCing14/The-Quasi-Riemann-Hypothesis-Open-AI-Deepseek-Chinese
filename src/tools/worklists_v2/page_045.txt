@@ -1,0 +1,20 @@
+PAGE 45   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 3 glyph(s) R3 | zh 0
+   \mathcal R  y  228.6 x   70.9   line: R , G , and the fixed primary and supplementary phases supported over 2 , 3 in Lemma 4.4 factor.
+   \mathcal R  y  519.3 x  281.8   line: Ψ ( a ) = η ( a )Ξ( a ) − 1 R ( a, s ) χ ( m ) (( a, S ) = 1) .
+   \mathcal R  y  611.2 x  317.6   line: b . For the completed index A = cn 3 , the factor R ( A, s ) cancels the cross-prime reciprocity
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 488.8 x 172.9
+    below[0]: d mod c
+    below[1]: Ψ ( a ) =
+    below[2]: m,s,η
+    above[0]: theorem
+    above[1]: on nonunits.
+\sum at y 675.6 x 210.9
+    below[0]: c sf
+    below[1]: n
+    above[0]: coefficientwise in
+    above[1]: row at spectral
+
+---- Chinese file today: \substack x1, line breaks \\ x1 ----

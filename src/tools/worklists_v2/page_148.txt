@@ -1,0 +1,51 @@
+PAGE 148   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 8 glyph(s) O5 T2 B1 | zh 0
+   \mathcal T  y   73.2 x  108.8   line: Let T init be the fixed s -dyad and slot summand obtained from Equation ( 17.71 ) by the
+   \mathcal T  y  113.2 x  165.2   line: T init = Z κ init c +3 η (2 π ) − 6 H ( ξ )
+   \mathcal B  y  548.5 x  299.7   line: | V init ( ω ; ξ ) | ≪B ( h ′ ) µ 2 ( f ) .
+   \mathcal O  y  618.8 x  279.3   line: O slot
+   \mathcal O  y  645.9 x  256.1   line: O O slot
+   \mathcal O  y  645.9 x  281.7   line: O O slot
+   \mathcal O  y  695.1 x  267.6   line: init init init O slot init O slot
+   \mathcal O  y  695.1 x  404.9   line: init init init O slot init O slot
+EUFM -> \mathfrak : pdf 4 glyph(s) H3 T1 | zh 0
+   \mathfrak H  y  113.3 x  294.3   line: T init = Z κ init c +3 η (2 π ) − 6 H ( ξ )
+   \mathfrak H  y  364.1 x  108.1   line: | H ( ξ ) | (1 + | ξ | ) J ξ ≪ (1 + | υ | ) L , | H ( υ ) | (1 + | υ | ) L υ ≪ p ( W ) .
+   \mathfrak H  y  364.1 x  350.8   line: | H ( ξ ) | (1 + | ξ | ) J ξ ≪ (1 + | υ | ) L , | H ( υ ) | (1 + | υ | ) L υ ≪ p ( W ) .
+   \mathfrak T  y  762.5 x  231.9   line: T = { t = C/d ′ : ω ∈ Ω src } .
+MSBM -> \mathbb : pdf 3 glyph(s) R3 | zh 3
+   \mathbb R  y  123.8 x  282.0   line: R 6
+   \mathbb R  y  374.6 x   92.9   line: R 6 R 1+ | I 0 |
+   \mathbb R  y  374.6 x  318.0   line: R 6 R 1+ | I 0 |
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\int at y 106.4 x 276.0
+    below[0]: init
+    below[1]: R
+    below[2]: 6
+    below[3]: init
+    below[4]: V ( ω ; ξ ) Q
+    below[5]: Σ 1
+    above[0]: slot summand
+    above[1]: Its exact
+\sum at y 136.2 x 229.5
+    below[0]: ω ∈ Ω
+    below[1]: Σ
+    below[2]: two column
+    above[0]: init
+    above[1]: κ c +3 η − 6
+    above[2]: Z (2 π )
+\int at y 357.1 x 86.8
+    below[0]: init
+    below[1]: R 6
+    below[2]: The first
+    above[0]: in the outer
+    above[1]: points. By
+\int at y 357.1 x 311.9
+    below[0]: R 1+ | I |
+    below[1]: 0
+    below[2]: roots and the
+    above[0]: The
+    above[1]: there are fixed
+
+---- Chinese file today: \substack x0, line breaks \\ x0 ----

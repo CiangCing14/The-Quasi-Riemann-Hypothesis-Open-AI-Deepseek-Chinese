@@ -1,0 +1,37 @@
+PAGE 159
+counts pdf: {'sum': 2, 'prod': 7, 'int': 0, 'sqrt': 0, 'overline': 0, 'hat': 0, 'abs': 8}
+
+SUM       y  263.0 x  170.9- 186.6 
+          line: X ϑ ( l )1 ( l, R ∗ )=1 q l it W i ( q l /T ) = c ϑ, R ∗ T 1+ it I i ( t ) + error ,
+SUM       y  750.6 x  259.1- 274.8 
+          line: log Y q P p i ≤ X h i ≤ H N , θ N := log H N Z . (18.19)
+PROD      y  138.3 x  195.1- 209.0 
+          line: D b ( l 1 , l 2 ) = Y W i ( q b i q l i /X i ) − Y W i ( q b i q l i /Y i ) , X 1 X 2 = Y 1 Y 2 . (18.17)
+PROD      y  138.3 x  287.9- 301.8 
+          line: D b ( l 1 , l 2 ) = Y W i ( q b i q l i /X i ) − Y W i ( q b i q l i /Y i ) , X 1 X 2 = Y 1 Y 2 . (18.17)
+PROD      y  407.6 x  175.7- 189.6 
+          line: Y ν i ( p i ) W i slot ( q p i /P i ) ! D b ( l 1 , l 2 ) τ 1 ( u ) q u it 1 ( u, R )=1 1 s | u ,
+PROD      y  550.6 x  192.6- 206.5 
+          line: χ Q v i ( h ) = Y χ v i ( h ) , q Q it v i = Y q v it i , 1 ( Q v i , R )=1 = Y 1 ( v i , R )=1 .
+PROD      y  550.6 x  290.0- 303.9 
+          line: χ Q v i ( h ) = Y χ v i ( h ) , q Q it v i = Y q v it i , 1 ( Q v i , R )=1 = Y 1 ( v i , R )=1 .
+PROD      y  550.6 x  397.7- 411.6 
+          line: χ Q v i ( h ) = Y χ v i ( h ) , q Q it v i = Y q v it i , 1 ( Q v i , R )=1 = Y 1 ( v i , R )=1 .
+PROD      y  750.6 x  210.0- 223.9 
+          line: log Y q P p i ≤ X h i ≤ H N , θ N := log H N Z . (18.19)
+BAR       y  414.6 x  420.5- 422.9 
+BAR       y  487.9 x   79.6-  82.6 
+BAR       y  666.8 x  183.9- 186.9 
+BAR       y  666.8 x  213.8- 216.8 
+BAR       y  666.8 x  221.7- 224.7 
+BAR       y  666.8 x  250.5- 253.5 
+BAR       y  741.9 x  190.4- 194.0 
+BAR       y  748.4 x  190.4- 194.0 
+BAR       y  755.0 x  190.4- 194.0 
+BAR       y  761.5 x  190.4- 194.0 
+BAR       y  768.1 x  190.4- 194.0 
+BAR       y  741.9 x  240.9- 244.5 
+BAR       y  748.4 x  240.9- 244.5 
+BAR       y  755.0 x  240.9- 244.5 
+BAR       y  761.5 x  240.9- 244.5 
+BAR       y  768.1 x  240.9- 244.5 

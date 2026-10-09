@@ -1,0 +1,23 @@
+PAGE 13
+counts pdf: {'sum': 5, 'prod': 0, 'int': 0, 'sqrt': 0, 'overline': 2, 'hat': 0, 'abs': 6}
+
+OVERLINE  y  240.4 x  339.1- 363.0 covers: 'H (4)'
+          line: γ ( p ) 3 = − α ( p ) , γ ( p ) γ ( p ) = H (4) γ ( p ) γ ( p ) 3 .
+OVERLINE  y  579.9 x  339.4- 363.3 covers: 'H (4)'
+          line: τ 1 τ 3 = H (4) τ 2 1 , τ τ = H (4) τ 3 τ 3 2 .
+SUM       y  323.8 x  202.7- 218.5 
+          line: τ ( A ) = X A ( x ) ψ ( x ) , J ( A, B ) = X A ( x ) B (1 − x ) .
+SUM       y  323.8 x  343.9- 359.7 
+          line: τ ( A ) = X A ( x ) ψ ( x ) , J ( A, B ) = X A ( x ) B (1 − x ) .
+SUM       y  382.9 x  251.3- 267.1 
+          line: | τ ( A ) | 2 = X A ( t ) X ψ (( t − 1) y ) = P.
+SUM       y  382.9 x  295.9- 311.6 
+          line: | τ ( A ) | 2 = X A ( t ) X ψ (( t − 1) y ) = P.
+SUM       y  650.0 x  256.9- 272.7 
+          line: J ( H 2 , H 2 ) ≡ X x m (1 − x ) m = 0 (mod p ) .
+BAR       y  265.5 x  205.9- 209.0 
+BAR       y  265.5 x  233.0- 236.0 
+BAR       y  385.2 x  201.4- 204.4 
+BAR       y  385.2 x  227.1- 230.1 
+BAR       y  496.7 x  351.5- 354.5 
+BAR       y  496.7 x  392.0- 395.0 

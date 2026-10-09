@@ -1,0 +1,12 @@
+PAGE 112   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 6 glyph(s) B4 H2 | zh 0
+   \mathcal H  y  460.7 x  408.0   line: coefficients and masks in any main slot. The tuple-independent factor H separately costs U ϵ
+   \mathcal B  y  546.0 x  367.8   line: enlargement of P . For this principal row on this region, define B = G /H and define B by the
+   \mathcal B  y  546.0 x  481.2   line: enlargement of P . For this principal row on this region, define B = G /H and define B by the
+   \mathcal H  y  604.8 x  180.5   line: H ( x, w, z ) = H ( x, w, z ) Y B (1; x, w, z ) in the second Euler region . (16.12)
+   \mathcal B  y  604.8 x  256.9   line: H ( x, w, z ) = H ( x, w, z ) Y B (1; x, w, z ) in the second Euler region . (16.12)
+   \mathcal B  y  724.7 x  246.5   line: B = − 1 + O ( Q − 7 / 8 ) , (16.13)
+EUFM -> \mathfrak : pdf 3 glyph(s) f2 H1 | zh 0
+   \mathfrak f  y  130.0 x  226.1   line: f u S rad( u ) u p
+   \mathfrak f  y  181.0 x  225.6   line: f u 1
+   \mathfrak H  y  604.9 x   99.7   line: H ( x, w, z ) = H ( x, w, z ) Y B (1; x, w, z ) in the second Euler region . (16.12)

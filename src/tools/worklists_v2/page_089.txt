@@ -1,0 +1,39 @@
+PAGE 89   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) O1 R1 | zh 0
+   \mathcal O  y  326.5 x   89.3   line: j ∈O , put
+   \mathcal R  y  489.8 x  316.5   line: F ( Cn , Cn ; Ck ) = χ ( k ) χ ( − k ) R ( n , n ) L ( n , n ; k ) ,
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\sum at y 224.4 x 263.7
+    below[0]: x mod p
+    below[1]: 0
+    below[2]: p | k and
+    above[0]: a − 1
+    above[1]: P otherwise.
+\sum at y 338.7 x 290.0
+    below[0]: x mod u, y mod v
+    below[1]: vx − uy ≡ j (mod uv )
+    above[0]: common factors) .
+\sum at y 393.5 x 269.3
+    below[0]: u v
+    below[1]: h mod uv
+    below[2]: unless u = v , and
+    above[0]: x mod u, y
+    above[1]: vx − uy ≡ j (mod
+\sum at y 506.9 x 281.1
+    below[0]: x,y mod C
+    below[1]: x − n y ≡ k (mod C
+    below[2]: 2 1
+    above[0]: n 1 ( k ) χ n 2 ( − k ) R
+\prod at y 506.9 x 407.8
+    below[0]: p c ∥ C
+    above[0]: ( n 1 , n 2 ; k ) ,
+\sum at y 749.5 x 197.9
+    below[0]: v
+    below[1]: x mod u,y mod v
+    above[0]: both Gauss sums
+\sum at y 749.5 x 303.4
+    below[0]: h mod uv
+    above[0]: displayed Fourier
+
+---- Chinese file today: \substack x2, line breaks \\ x4 ----

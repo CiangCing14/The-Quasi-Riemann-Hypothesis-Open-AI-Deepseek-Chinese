@@ -1,0 +1,53 @@
+PAGE 20
+counts pdf: {'sum': 1, 'prod': 0, 'int': 2, 'sqrt': 0, 'overline': 0, 'hat': 2, 'abs': 35}
+
+ACCENT    y  441.3 x  280.5- 286.6 
+          line: sup ξ (1 + | ξ | ) A | ∂ β b f ( ξ ) | ≪ A,β,d s ⌈ A ⌉ + | β | ( f ) .
+ACCENT    y  486.4 x  313.3- 319.3 
+          line: Fourier pairing. For a radial transform written as f b ( ξ ) = F ( | ξ | 2 ) , any prescribed bound
+SUM       y  377.4 x  265.1- 280.9 
+          line: s j ( f ) = X ∥ x α ∂ β f ( x ) ∥ L 1 ( R d ) .
+INT       y  588.8 x  270.2- 276.2 
+          line: K ( x ) = 1 Z M W ( − s ) m ( s ) x − s ds,
+INT       y  660.7 x  272.5- 278.6 
+          line: | ( x∂ ) j K ( x ) | ≪ x − σ Z |M W ( − σ − it ) | (1 + | t | ) h + j dt.
+PAREN     y  162.6 x  312.3- 317.3 ch=(
+PAREN     y  162.6 x  395.2- 400.2 ch=)
+BAR       y  163.4 x  273.1- 276.1 
+BAR       y  163.4 x  282.2- 285.2 
+BAR       y  163.4 x  340.9- 343.9 
+BAR       y  163.4 x  349.9- 353.0 
+BAR       y  183.0 x  287.0- 289.3 
+BAR       y  183.0 x  294.0- 296.3 
+BAR       y  237.2 x  296.6- 299.0 
+BAR       y  237.2 x  303.6- 306.0 
+BAR       y  395.9 x  256.6- 258.9 
+BAR       y  395.9 x  264.4- 266.7 
+BAR       y  395.9 x  269.1- 271.4 
+BAR       y  395.9 x  276.6- 278.9 
+BAR       y  379.7 x  291.2- 296.7 
+BAR       y  379.7 x  342.2- 347.6 
+BAR       y  436.2 x  241.0- 244.0 
+BAR       y  436.2 x  249.3- 252.3 
+BAR       y  436.2 x  263.4- 266.4 
+BAR       y  436.2 x  298.8- 301.8 
+BAR       y  440.7 x  365.4- 367.7 
+BAR       y  440.7 x  372.9- 375.2 
+BAR       y  481.3 x  358.8- 361.9 
+BAR       y  481.3 x  367.1- 370.2 
+BAR       y  505.8 x  297.2- 300.2 
+BAR       y  505.8 x  350.9- 353.9 
+BAR       y  564.1 x  149.7- 152.7 
+BAR       y  564.1 x  198.1- 201.1 
+BAR       y  564.1 x  246.9- 250.0 
+BAR       y  564.1 x  253.9- 256.9 
+BAR       y  667.6 x  165.4- 168.5 
+BAR       y  667.6 x  232.3- 235.3 
+BAR       y  667.6 x  286.7- 289.7 
+BAR       y  667.6 x  359.2- 362.3 
+BAR       y  667.6 x  385.3- 388.3 
+BAR       y  667.6 x  392.3- 395.3 
+BAR       y  694.5 x  385.6- 388.6 
+BAR       y  694.5 x  444.8- 447.8 
+BAR       y  721.6 x   70.9-  73.9 
+BAR       y  721.6 x   81.1-  84.1 

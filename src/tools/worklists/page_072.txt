@@ -1,0 +1,25 @@
+PAGE 72
+counts pdf: {'sum': 1, 'prod': 0, 'int': 3, 'sqrt': 0, 'overline': 3, 'hat': 0, 'abs': 8}
+
+OVERLINE  y  119.6 x  405.9- 412.2 covers: '6'
+          line: X = Z x , Y = Z y , h = 1 − l x + ℓ> 0 , C ( s ) = s + 2 − 1+ h 6 = s − 6 + l 3 + ℓ 6 . (10.3)
+OVERLINE  y  119.6 x  484.1- 489.5 covers: '6'
+          line: X = Z x , Y = Z y , h = 1 − l x + ℓ> 0 , C ( s ) = s + 2 − 1+ h 6 = s − 6 + l 3 + ℓ 6 . (10.3)
+OVERLINE  y  441.1 x  381.9- 401.9 covers: 'ξ ( u )'
+          line: I ( Z ) = 1 Z Z Z W ( X, Y, Z ; s, w, z ) X q − z ξ ( u )
+SUM       y  439.8 x  347.7- 363.5 
+          line: I η ( Z ) = (2 πi 1 ) 3 Z Z Z W ( X, Y, Z ; s, w, z ) X q u − z ξ ( u )
+INT       y  435.3 x  202.5- 208.6 
+          line: I ( Z ) = 1 Z Z Z W ( X, Y, Z ; s, w, z ) X (6) q − z ξ ( u )
+INT       y  435.3 x  221.7- 227.8 
+          line: I ( Z ) = 1 Z Z Z W ( X, Y, Z ; s, w, z ) X (6) q − z ξ ( u )
+INT       y  435.3 x  240.9- 247.0 
+          line: I ( Z ) = 1 Z Z Z W ( X, Y, Z ; s, w, z ) X (6) q − z ξ ( u )
+BAR       y  341.2 x  151.8- 154.8 
+BAR       y  341.2 x  220.6- 223.6 
+BAR       y  341.2 x  323.0- 326.0 
+BAR       y  341.2 x  339.0- 342.0 
+BAR       y  341.2 x  355.4- 358.4 
+BAR       y  341.2 x  374.4- 377.4 
+BAR       y  341.2 x  390.8- 393.8 
+BAR       y  341.2 x  407.2- 410.3 

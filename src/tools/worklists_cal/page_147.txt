@@ -1,0 +1,12 @@
+PAGE 147   calligraphic glyphs in the PDF: 5   \mathcal in the Chinese: 0
+
+CAL I  y  127.4 x  477.1- 483.1
+      line: fixed centers, not on a current row or label, and its full clipping family is included in I .
+CAL K  y  325.6 x  334.7- 343.1
+      line: × W ( x x x ) W ( x x x ) K A h .
+CAL A  y  622.3 x  344.1- 352.8
+      line: played outer zero masks, which will be in the weight. Let A init ( ω ) be the product of all assigned
+CAL B  y  673.7 x  268.4- 275.6
+      line: V init ( ω ; ξ ) = µ ( d ′ ) µ ( s ) G ( ϑ ) B ( h ′ )1 1 1 A init ( ω )
+CAL A  y  673.7 x  419.4- 428.1
+      line: V init ( ω ; ξ ) = µ ( d ′ ) µ ( s ) G ( ϑ ) B ( h ′ )1 1 1 A init ( ω )

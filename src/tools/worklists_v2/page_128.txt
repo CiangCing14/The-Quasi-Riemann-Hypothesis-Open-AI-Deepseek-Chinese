@@ -1,0 +1,16 @@
+PAGE 128   (pdf glyphs vs Chinese macros)
+CMSY -> \mathcal : pdf 2 glyph(s) B2 | zh 0
+   \mathcal B  y  665.7 x  240.7   line: B ( h ) = 1 .
+   \mathcal B  y  720.8 x  377.8   line: below. No indicator of the ratio inequality is inserted. Inside B = 1 retain the full smooth
+EUFM -> \mathfrak : pdf 2 glyph(s) B1 A1 | zh 0
+   \mathfrak B  y  318.9 x  478.1   line: Indeed, the primes with exponent four are exactly those of sJ ; every other prime of B divides
+   \mathfrak A  y  359.5 x  513.2   line: ray group. For fixed J, q , the choices of s, J , the factorizations b b = q 2 J 2 s , and the ideals A
+
+---- BIG-OPERATOR LIMITS (compare with the Chinese subscripts) ----
+\prod at y 109.9 x 232.8
+    below[0]: π p =0
+    below[1]: a = a =1
+    below[2]: 1 p 2 p
+    above[0]: label from
+
+---- Chinese file today: \substack x1, line breaks \\ x1 ----

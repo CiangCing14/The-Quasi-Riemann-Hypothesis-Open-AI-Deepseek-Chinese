@@ -1,0 +1,4 @@
+PAGE 19   calligraphic glyphs in the PDF: 1   \mathcal in the Chinese: 0
+
+CAL M  y  240.3 x   86.2-  99.3
+      line: M W ( σ + iT ) = ( − iT ) − N F ( N ) ( u ) e iTu du, F ( N ) ( u ) = e σu X σ N − j D j W ( e u ) .
