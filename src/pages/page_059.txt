@@ -1,0 +1,62 @@
+Proposition 8.3 (Two saturated witnesses). Let u have a bin (i, a) with a > 51/100, and assume
+the loss and height hypotheses of Lemma 8.2. For every t ∈ [1, 3/2], and every prescribed ϵ > 0,
+after reducing its preliminary losses, there are ψ ∈ Xu , a zero ρ = σ +iγ as in Lemma 8.1, dyadic
+lengths D = U r , N = U m , and two polynomials Mr , Sm for the common row character ψ such
+that
+
+      r ≤ t + O(1/ log U ),       r + m ≥ t − O(1/ log U ),              |Mr Sm |2 ≫A,ϵ U δ(r+m)−ϵ .   (8.3)
+
+Their lengths and individual values also satisfy
+
+                   t − 12 − O(ϵ) ≤ r ≤ t + O(1/ log U ),           0 ≤ m ≤ 21 + O(ϵ),
+                                                                                                       (8.4)
+                              |Mr |2 ≫A,ϵ U δr−ϵ ,        |Sm |2 ≫A,ϵ U δm−ϵ .
+
+The constants in the O(ϵ) terms are absolute on the stated parameter ranges. Both polynomials
+have the same twist height γ − ν, where |ν| ≤ cT1 for a fixed c > 0 chosen within the cumulative
+frequency allowance. Their untwisted profiles form a uniformly smooth annular family. For each
+row, both witnesses use one presentation ψu,ϑ,ς , selected by a label (ϑ, ς) in the fixed finite set
+Θ × {−1, 1}. The presentation itself varies with u. The dyadic pair can likewise be selected
+separately for each row from O((log U )2 ) possibilities.
+
+Proof. The truncated-inverse and Gamma-integral construction is a form of the classical zero
+detector; compare [21, Appendix C] and [14, Section 13.1]. The buffered row-dependent rectangle
+and the simultaneous lower bounds needed here are established below. Choose the zero ρ supplied
+by the bin and set
+                                   D∗ = U t ,     Y∗ = U 20 .
+Let V≤ be a fixed smooth function equal to one on [0, 1] and zero on [2, ∞). Define
+                                                    Z
+             X                                  1
+    Cψ (s) =    µ(l)ψ(l)V≤ (ql /D∗ )ql−s , J=            Y z Γ(z)Lorig (ρ + z, ψ)Cψ (ρ + z) dz.
+                                               2πi (2) ∗
+               l
+
+The row character is nonprincipal, so Lorig is entire. Moving the line to ℜz = −1/4 crosses only
+the pole of Γ(z) at zero, and its residue vanishes because Lorig (ρ, ψ) = 0. The global strip bound
+in Equation (4.14), together with the deleted Euler factors, bounds the new line by
+                                                 1−σ+1/4+o(1)
+                                       U −5 U 2 D∗               T12 .
+
+Indeed ℜ(ρ − 1/4) ≥ 26/100 > 0, so the deleted product has an arbitrarily small U -power; the
+deliberately weaker U 2 includes the primitive conductor bound. The finite polynomial is bounded
+by the displayed power of D∗ using the ideal count. Finally, the fixed polynomial in the added
+height is integrable against Γ(−1/4 + iv), since (1 + |γ + v|)2 ≤ (1 + |γ|)2 (1 + |v|)2 . Uniformly
+for 1 ≤ t ≤ 3/2,                                             
+                                                  3 5      51        189
+                         −3 + t(5/4 − σ) ≤ −3 +         −       =−       .
+                                                  2 4 100            100
+Thus J = o(1). This Gamma integration uses only global upper bounds and consumes no
+reciprocal height allowance.
+    On the original line, absolute convergence and the Mellin formula for the exponential give
+                               X
+                           J=      µ(l)ψ(lk)V≤ (ql /D∗ )(ql qk )−ρ e−ql qk /Y∗ .
+                                 l,k
+
+
+For 1 < qn ≤ D∗ , the coefficient of ψ(n)qn−ρ is
+                                                   P
+                                                      l|n µ(l) = 0. For n = 1 it is one. When
+qn > D∗ , V≤ (2qn /D∗ ) = 0. Consequently insertion of 1 − V≤ (2ql qk /D∗ ) removes exactly the unit
+contribution e−1/Y∗ = 1 + o(1). The resulting tail has absolute value 1 + o(1). Multiplying it by
+
+                                                     59

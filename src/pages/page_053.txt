@@ -1,0 +1,66 @@
+removes the squarefree part of the remaining pair product. If ep = vp (c) and lp = vp (n), its
+exponent at a pair p < r is tp tr − ep er = 3(ep lr + er lp + 3lp lr ). The cube of χp (r)χr (p) is R(p, r),
+whose square is one. Thus the pair product left after this division is
+           Y                                              Y           lp
+               R(p, r)ep lr +er lp +lp lr = R(c, n)G(n3 )    G(p3 ) R(p, p)−ep lp −lp (lp −1)/2 .
+             p<r                                              p
+
+The equality follows by expanding the quadratic refinement Equation (4.5) on the prime factors
+of n3 . The same refinement gives G(c)R(c, n)G(n3 ) = G(cn3 ), which is cancelled by the inserted
+G(cn3 ). Finally Equation (4.6) gives G(p3 ) = γ3 (p) and R(p, p) = ωp . These identities account
+for all pair phases, with no restriction on the ray class of p.
+    The coefficient in Equation (7.4) has therefore separated into prime factors. In absolute
+convergence, its factor at p is the series
+
+                          (−1)e0 γ1−e0 η(p)e0 (ap γ3 )l ρk−t ωptk−e0 l−l(l−1)/2 Cp (t, k, j + 6m)
+                     X
+              Pp =
+                     e0 =0,1
+                    l,k,m≥0                                                                             (7.10)
+                                                  −(x+1/2)e0 −(1+3x)l−wk−6zm
+                                             ·Q                                  ,       t = e0 + 3l.
+Let Pp∗ be the same sum restricted to t > 0, equivalently to positive valuation of the completed
+index A.
+Lemma 7.1 (The complete local identity). For every nonzero sixth-power-free u with (u, S) = 1
+and every prime p ∈
+                  / S, the factors just defined are
+                               R(1 − Q−1 ) − η(p)(Q − 1)Q−x−w V 1j≤1
+                                                                        
+                  ∗      1
+                Pp =                                                 + Jj ,
+                      1−R                        1−V
+                                                                                        (7.11)
+                         1             Wloc        ∗
+                Pp =         + 1j=0           + Pp ,
+                      1−V            1 − Wloc
+where the six values of Jj are
+
+                                 j   Jj
+                                 0   −η(p)ρ−1 Q−x + Wloc R
+                                 1   η(p)Q−x−w
+                                 2   ap ρ−3 Q3/2−3x
+                                 3   −η(p)bp ρ−2 Q2−3x−w + b2p ρ−4 Q2−4x
+                                 4   −η(p)ap ρ−3 Q5/2−4x−w
+                                 5   −a2p Q3−6x .
+
+Put W = χp (u)Q−w and D = η(p)χp (u)Q−x , with the original zero extension at p | u, and define
+                                         (1 − V )(1 − W )                   Y
+                               Hp = Pp                    ,       Hη,u =         Hp .                   (7.12)
+                                              1−D
+                                                                           p∈S
+                                                                            /
+
+Then the series in Equation (7.3) has the scalar factorization
+
+                                              ζFS (6z)LS (w, χ• (u))
+                          Fη,u (x, w, z) =                             Hη,u (x, w, z).                  (7.13)
+                                                   LS (x, ηχ• (u))
+Write xr = ℜx, wr = ℜw, and zr = ℜz. For every fixed ϵ0 > 0, the correction product converges
+normally on a neighborhood of every point in each of the following regions, and hence defines a
+holomorphic function there:
+
+                   xr ≥ 51/100,      zr ≥ 17/50,       wr ≥ −1/100,       xr + wr ≥ 1 + ϵ0 ;            (7.14)
+                                               xr ≥ 7/8,      zr ≥ 33/200,           wr ≥ 19/20.        (7.15)
+
+
+                                                        53

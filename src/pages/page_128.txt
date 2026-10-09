@@ -1,0 +1,69 @@
+Retaining the fourth-power label from the cubes. Write uniquely b1 b2 = q 2 s with s
+squarefree, and define
+                            Y
+                       J2 =       p,   J = sJ2 , q = J2 q0 .
+                                         πp =0
+                                      a1p =a2p =1
+
+Every prime of J2 has positive even valuation in b1 b2 , so J2 | q. The ideals s, J2 are coprime and
+squarefree; hence J is squarefree. Let j ≥ 0 be the center of J, and put
+
+             sb = logZ qs ,     j2 = logZ qJ2 ,
+                                b                   j = logZ qJ = sb + b
+                                                    b                  j2 ,   ℓbpair = (bb1 + bb2 )/2.
+
+The ideal identity b1 b2 = q02 J22 s gives exactly
+
+          c := logZ qq0 = ℓbpair − sb/2 − b
+          b                               j2 ≥ 0,           4ℓbpair − 2b
+                                                                       s+b
+                                                                         j2 = 4b    j2 ≥ 0.
+                                                                               c + 5b                    (17.24)
+
+The table above now proves the exact zero-extended identity
+
+                                          ξ(n) = χn (J)4 1(n,rad q0 )=1 .                                (17.25)
+
+Indeed, the primes with exponent four are exactly those of sJ2 ; every other prime of B divides
+q0 . A prime in both J and q0 only repeats the zero already supplied by χn (J)4 . We will fix q0
+but keep J in a later average. The modulus q0 contributes a puncture and is not part of the fixed
+ray group. For fixed J, q0 , the choices of s, J2 , the factorizations b1 b2 = q02 J22 s, and the ideals Ai
+have only divisor multiplicity.
+     We now localize the genuine first Poisson expression, before extending its coprime support
+or taking absolute Fourier integrals. The local table gives the exact actual-norm identity
+                                         b−A
+                                         R b1 − A    b = sb − 2b
+                                                b2 + E         j2 .
+
+For y = hf 2 E, the implication Z M qh /(qdk qm1 ) ≤ Z τ and Equation (17.23) give
+
+                              yb ≤ n    b 2 − 2B
+                                   b1 + n      b − M + sb − 2bj2 + δb + 2fb + τ
+                                 ≤n     b 2 − 2B
+                                   b1 + n      b − M + 4ℓbpair − b
+                                                                 j + δb + 2fb + τ.
+
+The second inequality is Equation (17.24). Define the formal center and the enclosing outer row
+scale by
+               Hc = 2r − 2B − M + 4ℓ + 2V + δ − j,        Huse = Hc + 12η + τ.          (17.26)
+Relative to Hc , the last actual upper bound has error
+
+      n1 − r) + (b
+     (b          n2 − r) − 2(B
+                             b − B) + 2(bb1 − ℓ) + 2(bb2 − ℓ) − (b
+                                                                 j − j) + (δb − δ) + 2(fb − V ),
+
+whose positive maximum under Equation (17.18) is 12η. Thus the actual-ratio inequality implies
+qy ≤ Z Huse for every supported raw column pair.
+   On that raw expression insert only the outer mask
+
+                                           B1 (h) = 10<qhf 2 E ≤Z Huse .
+
+For each supported pair, its complement is contained in the actual kernel tail Z M qh /(qdk qm1 ) >
+Z τ ; apply Equation (17.21) to discard that complement, with the raw counts and order fixed
+below. No indicator of the ratio inequality is inserted. Inside B1 = 1 retain the full smooth
+kernel, including pairs whose ratio is larger than Z τ . The mask depends on h, f, E and the
+fixed sector, but, after the indicated extraction, not on u1 , u2 . If Huse < 0, its nonzero ball is
+empty and the same tail comparison discards every nonzero frequency. Any principal nonzero
+
+                                                        128

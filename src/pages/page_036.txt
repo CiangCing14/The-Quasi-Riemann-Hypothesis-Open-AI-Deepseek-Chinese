@@ -1,0 +1,56 @@
+be enlarged, using the same separated formula for B on the added rows. No comparison of
+the kernel argument with Y is asserted on the added rows. Squaring this inequality gives the
+factor mA (Y )2 . If only the small-argument bound is being used, the same argument permits the
+weaker scalar min{1, Y 1/4 }, whose square is min{1, Y 1/2 }. The normalized profile has bounded
+tuple seminorms; they are not claimed to be small, since the tuple seminorm includes a constant
+one. A kernel occurring once in an already expanded quadratic expression instead contributes
+its scalar once, not automatically its square.
+    The Gaussian test in Proposition 5.1 is directly admissible there and in Lemma 5.3: only the
+joint factor W in the latter lemma needs compact logarithmic support. If the compact-support
+calculus is instead applied to the Gaussian itself, Lemma 4.6 supplies the required absolutely
+summable annular decomposition.
+
+Lemma 5.4 (Lattice kernel tails). Let Λ be either O or λ−4 O. Suppose K : (0, ∞) → C satisfies
+|K(x)| ≤ CA x−A for x ≥ 1, where A > 1. Then, for a > 0 and U ≥ 1,
+                            X
+                                  |K(aqµ )| ≪A CA (1 + a−1 )U 1−A .                    (5.25)
+                              0̸=µ∈Λ
+                              aqµ >U
+
+
+For K = V ♯ one may take CA ≪A MA,⌈4A⌉+2 (V ).
+
+Proof. The shell 2j U < aqµ ≤ 2j+1 U contains O(1 + 2j U/a) points of either fixed lattice.
+Its contribution is at most CA (1 + 2j U/a)(2j U )−A . Summing the two geometric series gives
+OA (CA (U −A + a−1 U 1−A )), which implies the display because U ≥ 1. The last assertion follows
+from Equation (5.4).
+
+5.4   A quadratic norm for completed indices
+The next estimate bounds the quadratic character left by reflection on a squarefree factor times
+a cube. We begin with the imported sieve. For squarefree primary ideals outside a fixed set
+containing the primes over 6, the quadratic kernel χa (b)3 satisfies
+                                                    2
+                         X      X                                             X
+                                       cb χa (b)3       ≪ϵ (U V )ϵ (U + V )       |cb |2 .     (5.26)
+                          a sf  b sf                                          b
+                         qa ≤U qb ≤V
+
+This is Goldmakher–Louvel’s quadratic large sieve [13, Definition 1 and Theorem 1.1]. To verify
+its family hypotheses, let ϑa ((x)) denote the quadratic residue symbol evaluated at the primary
+generator of (x). The adjustment of x to its primary generator contributes ελ (x)e(a) , where ελ
+is the nontrivial character modulo λ and e(a) = (qa − 1)/2 mod 2. The powers of ω contribute
+nothing because they are squares. CRT therefore gives exact primitive conductor aλe(a) and
+trivial infinite type. We use the primitive inducing character: the displayed formula first specifies
+its restriction to the λ-units, and the factor at λ is absent when e(a) = 0. This does not change
+any value on the indices in Equation (5.26). In a fixed primary square class modulo 4, two indices
+have the same e(a); for coprime such indices the primitive product has conductor exactly their
+product. The reciprocity factor is the fixed bicharacter R of Equation (4.4). These are precisely
+the family conditions of the cited theorem. A finite ray partition and transpose duality give
+Equation (5.26) in the displayed orientation.
+     A fixed restriction on the row set decreases the positive outer sum. A fixed restriction on the
+coefficient support is implemented by setting the omitted coefficients to zero. Neither observation
+permits an arbitrary mask depending simultaneously on a row and a column. The next reduction
+resolves the collision mask produced by square factors of a completed index.
+
+
+                                                          36

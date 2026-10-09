@@ -1,0 +1,58 @@
+factors for χ and χχ−3 . If p is inert, then χ−3 (p) = −1, the unique prime ideal has norm p2 , and
+its factor is
+                     (1 − χ(p)2 p−2s )−1 = (1 − χ(p)p−s )−1 (1 + χ(p)p−s )−1 .
+These exhaust the primes outside SQ . Absolute Euler convergence for ℜs > 1, followed by
+uniqueness of meromorphic continuation, gives
+                                   S
+                                 LFQ (s, η) = LSQ (s, χ)LSQ (s, χχ−3 ).                           (11.2)
+The product character on the right may be imprimitive; deletion of SQ makes the identity
+independent of that choice. Every deleted factor is nonzero for ℜs > 0.
+    Both Dirichlet factors are holomorphic in 0 < ℜs < 1. A zero of L(s, χ) there would therefore
+give a zero of the Hecke factor, with no cancellation by a pole, and the assumed Hecke half-plane
+excludes it when ℜs > σ0 . Absolute Euler convergence handles ℜs > 1. On s = 1 + it with t ̸= 0,
+neither Dirichlet factor has a pole, so the same product argument applies.
+    At s = 1, a pole-zero cancellation could occur only if one primitive inducing character among
+χ and χχ−3 were principal. The other would then be χ−3 . Its Dirichlet series converges at one
+by bounded partial sums of the nonprincipal periodic character, and grouping consecutive terms
+gives
+                                     X 1                1
+                                                             
+                      L(1, χ−3 ) =                  −
+                                           3n + 1 3n + 2
+                                     n≥0
+                                     Z 1               Z 1
+                                         1−x                    dx         π
+                                  =             3
+                                                  dx =               2
+                                                                       = √ > 0.
+                                      0  1 −  x         0  1 +  x + x    3 3
+The first integral follows by monotone convergence of the nonnegative paired integrands. Thus
+there is no zero in this last case either; a principal pole is allowed. This proves the strict half-plane
+assertion with no claim on its boundary.
+Proof of Theorem 3.1. Suppose that β∗ > 11/12. Lemma 7.1 and Equation (10.2) give the
+required holomorphic, nonzero Hη on ℜs > 11/12 for every primitive target. The low and high
+bounds established in Proposition 11.2 and its proof verify Proposition 2.1 with
+                             11                        ∆1             1
+                        σ0 =    ,   C = CI ,      ω=      ,     σ=        .
+                             12                        2            4800
+These two positive losses are independent of the target, while the allowed constants, excluded
+sets, and thresholds may depend on it. The continuation criterion contradicts the supposition.
+Therefore β∗ ≤ 11/12. By its definition and absolute Euler convergence in ℜs > 1, every
+primitive finite-order Hecke L-function over F is zero-free in the strict half-plane ℜs > 11/12,
+with the principal pole allowed.
+    Proposition 11.3, applied at the same boundary, extends this assertion to all finite-order
+Hecke characters and all Dirichlet L-functions, including ζ(s). It preserves the strict half-plane
+and the allowed principal pole. This proves the theorem.
+
+
+Part II
+The seven-eighths zero-free half-plane
+12     The compensated probe
+Theorem 3.1 applies to every primitive character entering the supremum in Equation (2.1), and
+therefore gives β∗ ≤ 11/12. Suppose for contradiction throughout Part II that β∗ > 7/8, and
+put
+                          7                1                       3       5
+                ∆ := β∗ − ,      0<∆≤ ,            κ := 2β∗ − 1 = + 2∆ ≤ .             (12.1)
+                          8               24                       4       6
+
+                                                   85

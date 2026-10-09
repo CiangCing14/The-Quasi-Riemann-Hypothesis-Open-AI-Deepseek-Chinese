@@ -1,0 +1,67 @@
+The exact bin ceiling in Section 8 applies, since β∗ > 7/8 > 51/100. For every retained nonprin-
+cipal row and its bin (i, a) it gives
+                                                                                5
+                                             a ≤ β∗ ,           δ = 2a − 1 ≤ κ ≤ .                                           (12.2)
+                                                                                6
+Indeed, the finite set defining Mi (u) consists of the floor 51/100 and real parts of actual zeros,
+all at most β∗ . This uses only the definition of the supremum, not its attainment. The boundary
+case δ = 5/6 remains part of the argument.
+    For the second application of Proposition 2.1, write throughout Part II
+                                                                       11                        3
+                                  C(s) = CII (s) := s −                   ,       C(7/8) =          .                        (12.3)
+                                                                       16                        16
+Our task is to construct a normalized probe JII,η from the finite expression below. It is distinct
+from the balanced probe JI,η . Its low-side target is |JII,η (Z)| ≪η Z 3/16+ω for a common 0 <
+ω < ∆; its high side must satisfy the signal estimate in Equation (2.5) with this C. The nonzero
+scalar normalization will be specified after the principal term is evaluated.
+    For each primitive target η, use an admissible fixed instance of the data T, S, b∗ , ξ, τ, Ξ, W0 , W1
+from Section 6. The permitted choice of P0 will be made in the parameter order below. These
+data may differ from those used in Part I, but within this application they are independent of Z
+and are the same in the physical probe and its high representation.
+    We first define the two-term modification on the original probe, before moving any contour.
+The subsequent low and high estimates will concern this same finite expression.
+    Use the fixed geometry
+                                                   1                    13             1
+                                                 b= ,           h=         ,         ℓ= ,
+                                                   8                    16             6
+                                                                17                              23
+                                      lx = 1 + ℓ − h =             ,           ly = lx + b =       ,                         (12.4)
+                                                                48                              48
+                                                                               5
+                  X = Z lx ,                Y = Z ly ,            M = lx + ly = ,                 M + ℓ = 1.
+                                                                               6
+Fix positive slot lengths ℓ1 , . . . , ℓK of total length ℓ, and put Pi = Z ℓi . Each physical slot has a
+nonnegative, nonzero smooth annular weight Wi (qp /Pi ). Its allowed prime set is
+
+                         Pi (Z) = {p prime : p ∈
+                                               / S, p ∈ 1T , qp /Pi ∈ supp Wi }.
+
+The underlying window sets {p prime : qp /Pi ∈ supp Wi } for distinct slots are required to be
+disjoint before Qimposing the ray and S restrictions. In particular, the sets Pi (Z) are disjoint, and
+every tuple in i Pi (Z) consists of distinct primes. The number and lengths of the slots will be
+chosen later, but they are fixed independently of Z. A sum over p ∈ 1T for slot i below always
+retains this same exclusion and annular support.
+     For a squarefree product D of slot primes, let Iη;D (X, Y, Z) denote Equation (6.1) with the
+indicator
+Q           1D|cn3 inserted in its completed row.Q Thus Iη;1 = Iη . For a tuple (p1 , . . . , pK ) ∈
+    P
+  i i   (Z) and  J  ⊆ {1, . . . , K} write p J =  i∈J pi , with p∅ = 1. The subset J indexes the
+rescaled slots and J c the marked slots; this subset notation is distinct from the normalized probe
+JII,η . Define the modified probe by the finite identity
+
+                              X                  K
+                                                 Y                          X
+     Iη,modified (Z) =                                 Wi (qpi /Pi )               (−1)|J| qp−3/2
+                                                                                              J
+                                                                                                  η(pJ c )
+                                  Q
+                                                 i=1                                                                         (12.5)
+                         (pi )∈       i Pi (Z)                         J⊆{1,...,K}
+
+                                                                                     · Iη;pJ c (X/qpJ , Y /qpJ , ZqpJ c ).
+
+Equivalently, at each prime p the operation is the marked term η(p)Iη;p (X, Y, Zqp ) minus the
+                −3/2
+rescaled term qp Iη (X/qp , Y /qp , Z). Formula (12.5) specifies their composition: every slot
+
+                                                                       86

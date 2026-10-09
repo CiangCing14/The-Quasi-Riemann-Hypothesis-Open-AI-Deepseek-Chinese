@@ -1,0 +1,59 @@
+terms are restored below, they will carry the same outer ball mask as the nonprincipal terms;
+the last part of Lemma 17.5 bounds them at this same cost.
+    We next identify its column coefficients. For coprime squarefree primary a, b, CRT and
+reciprocity give
+                     γ2 (ab) = γ2 (a)γ2 (b)χa (b)2 χb (a)2 = γ2 (a)γ2 (b)χb (a)4 .
+In the first Poisson root, the factors involving u1 , including the divisor and frequency, are
+                                                            Y
+                                γ1 (u1 )χu1 (h)χu1 (dk R1 )   χu1 (ptp ),
+                                                             tp ̸=0
+
+up to a fixed-ray factor. This follows by writing the CRT factors between u1 and p as
+χu1 (p)χp (u1 )tp and using reciprocity. On the conjugated second side tp is replaced by −tp . The
+cross factor between u1 , u2 is the reciprocity factor R(u1 , u2 ), not a quotient of zero-extended
+symbols.
+    Put PT = tp ̸=0 ptp , regarded in the fixed ray group. Equation (4.7) and Equation (4.5)
+                  Q
+show that the remaining two-column ray factor is
+                                        G(u1 u−1       −1
+                                              2 )R(u1 u2 , PT ).
+
+For example, before placing factors inside the conjugated second polynomial, the raw second
+Gauss-signal factor is µ(u2 )χu2 (−1)G(u2 ). Its corresponding factor written inside that polyno-
+mial is µ(u2 )χu2 (−1)G(u2 ). Also G(u−1
+                                      2 ) = χu2 (−1)G(u2 ). These identities give the displayed
+quotient. Fix the ray class of PT and Fourier-expand the displayed function on the finite ray
+group. Its factors on each side are genuine multiplicative ray characters, denoted by νi . Their
+number and coefficient norm depend only on the fixed ray group.
+   Define                            Y
+                                E=       pa1p +a2p ,    h = hf 2 E.
+                                                        e
+                                        πp =1
+
+The original fourth power at f equals χui (f 2 ), including zeros. Assign the slots first to bi , Ai , C.
+The remaining local factor at p | B on side i has exponent
+                          4aip + 1tp ̸=0 (1 ± tp ) + πp (a1p + a2p )    (mod 6).
+The plus sign belongs to side one. Direct reduction gives the same answer on both sides:
+                             πp a1p a2p tp exponent on both sides
+                             0   0   0  0            0
+                             0   1   0  1            0
+                             0   0   1  5            0
+                             0   1   1  0            4
+                             1   0   0  3            4
+                             1   1   0  4            4
+                             1   0   1  2            4
+                             1   1   1  3            4
+Define ξ(n) as the product over p | B of χn (p) raised to the corresponding exponent in the last
+column. An exponent zero still denotes the puncture at p. The calculation proves that ξ is
+common to both sides and independent of h, f, C. The nonprincipal coefficient on side i, after
+these assignments, is
+                                                  h)χui (C)4 χui (dk )ξ(ui )di (ui ).
+                         µ(ui )νi (ui )ρ(ui )χui (e                                                  (C)
+It also shows that every character involving the moving bi , Ai is in either ξ or e
+                                                                                  h; their other
+factors are outer coefficients.
+    The first transform has produced the inverse-type column coefficient in Equation (C). We
+next collect its fourth-power factors into one squarefree label before forming the positive row
+norm for the second transform.
+
+                                                    127

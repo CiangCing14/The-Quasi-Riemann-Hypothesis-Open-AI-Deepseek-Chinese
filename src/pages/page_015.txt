@@ -1,0 +1,58 @@
+because the sum is Oc (ε−2 ). The amplitude error is Oc (ε), as is the damping error, by the
+same lattice estimate. All three are o(Iε ). The phase e(−cy 2 /4) is periodic modulo 2O. In the
+preceding Gaussian mean take b = 2 and a = qc /4; each of itsP     four classes has normalized mean
+1/qc . The normalized right side therefore tends to (2|c|)−1 y mod 2 e(−cy 2 /4), which proves
+Equation (4.3).
+   The representatives 0, 1, ω, ω 2 modulo 2 give the asserted four-term expression. Multiplication
+by an odd v permutes these classes, so the same formula gives Γ(cv 2 ) = Γ(c). The group of units
+modulo 4 has order 12. Squaring a lift modulo 4 depends only on its class modulo 2, and its three
+possible squares are 1, ω, ω 2 . The four representatives in the statement are distinct modulo this
+subgroup; also λ2 = −3 ≡ 1 (mod 4). Evaluating the four-term expression on them gives the
+table. Evaluating Γ(ab)/(Γ(a)Γ(b)) on the two generators −1, λ gives the displayed exponent,
+proving the last claims.
+
+Lemma 4.4 (Sextic reciprocity and the fixed Gauss phase). For coprime primary a, b outside
+S,
+                       χb (a) = R(a, b)χa (b),  R(a, b) = r(a, b).
+On all primary pairs outside S, including noncoprime pairs, define R by the bicharacter r of
+Equation (4.4). Define, on every primary index outside S,
+
+                                                  G(c) = χc (4)Γ(c).
+
+It has modulus one and factors through a fixed ray group supported at 2, 3. For all such v, w,
+
+                             G(vw) = G(v)G(w)R(v, w),                      G(1) = 1.                           (4.5)
+
+Moreover G(v 2 ) = χv (4), and at good primes
+
+                           G(p3 ) = γ3 (p),            R(p, p) = γ3 (p)2 = χp (−1).                            (4.6)
+
+On every primary n outside S, one has χn (−1) = R(n, n). The diagonal t 7→ R(t, t) is a
+character of the fixed ray group. In the square-class notation of Equation (4.4), it is r(−1, n),
+where −1 denotes its residue square class modulo 4, not the ideal ray class of the unit ideal (−1).
+For squarefree c the complete Gauss identities are
+
+  γ2 (c)3 = µ(c)α(c),       γ1 (c)γ2 (c) = µ(c)α(c)G(c),                 G(c) = χc (4)γ3 (c),      |G(c)| = 1. (4.7)
+
+All occurrences of G on nonsquarefree indices mean the finite-ray function just defined, not a
+nonsquarefree Gauss sum.
+Proof. At a good prime, counting square roots in the residue field gives
+                X               X                            X
+                     e(x2 /p) =      (1 + χp (y)3 )e(y/p) =        χp (y)3 e(y/p).
+               x mod p                  y mod p                                y mod p
+
+The additive sum without the character is zero. Hence Γ(p) = γ3 (p), and replacing x2 /p by
+ux2                                            3
+P /p for a unit u multiplies the sum by χp (u) . For squarefree c, representing a residue as
+  p|c (c/p)xp gives, in both sums,
+                                 Y                                       Y
+                        Γ(c) =         χp (c/p)3 Γ(p),        γ3 (c) =         χp (c/p)3 γ3 (p).
+                                 p|c                                     p|c
+
+The cross terms in the square are integral in the additive character. Thus Γ(c) = γ3 (c) for
+squarefree c. In particular, for distinct good primes p, q,
+                                            Γ(pq)
+                                                    = χp (q)3 χq (p)3 .
+                                           Γ(p)Γ(q)
+
+                                                         15

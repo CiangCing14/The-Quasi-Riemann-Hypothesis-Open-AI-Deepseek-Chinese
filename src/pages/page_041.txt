@@ -1,0 +1,68 @@
+The constants may depend on the fixed kernel order A, the fixed arithmetic data, the bounded
+log-length ranges, and the fixed support box, but not on the moving frozen local set F. Norm
+twists in W0 have the polynomial cost supplied by its finite seminorms.
+
+Proof. For the fixed h0 and the fixed class of R modulo Mref   2 , the class of F R is fixed. Propo-
+                                                                                   act
+sition 5.1 therefore gives one common d and one common additive character ϑ for the whole row
+set. Write xF = uλk+4 NF BF3 , so that λ4 µ = xF nb3 . The residual local factors are exactly
+                       Y
+                           Bp (λ4 µ) = χR (xF )3 χR (nb3 )3 = χR (xF )3 χR (nb)3 .
+                      p|R
+
+Both equalities include zeros; no unit symbol has been divided. In particular, any collision with
+xF is a restriction depending only on R. Every remaining local factor is fixed and depends only
+on the dual index. The scalar ζR of the reflection depends on R but not on µ.
+   Define on the specified dual support
+
+                                                d(µ)α(µ)ϑ(λ4 µ)
+                                    δ(n, b) =                    .
+                                                  27 3k/6 |BF b|
+
+The coefficient bound gives |δ(n, b)| ≤ 1. Its denominator is nonzero, and the definition remains
+valid when the numerator is zero. Using qµ = 3k qNF n qB
+                                                       3
+                                                         Fb
+                                                            gives the exact factorization
+
+                            d(µ)α(µ)ϑ(λ4 µ)             −1/3 −1/2 −1
+                                 √          = 27δ(n, b)qλk qNF n qBFb
+                                                                      .
+                                   qµ
+
+                                                                          −1/2
+A small Ramanujan factor or an active zero-mask factor contributes qp . A divisibility factor
+              1/2                                           −1/2
+contributes qp ; for a prime assigned to NF it cancels qp        from the squarefree denominator,
+                                             −1/2
+and for a prime assigned to BF it leaves qp       after extraction. When a prime assigned to NF
+also divides b, its entire occurrence in b remains in qb−1 and in δ(n, b). These facts give exactly
+                            −1/2
+the common power Z −ν0 yn yb−1 .
+    Absorb δ, the signs of small Ramanujan terms, the bounded fixed local characters, and the
+fixed dual indicators into β(n, b). This function is bounded by one and is independent of R. Put
+ρ(R) = 81ζR χR (xF )3 ; it is bounded by one because |ζR | ≤ 1/81. The factor 27/81 = 1/3 now
+proves Equation (5.32). Multiplicativity of the norm proves Equation (5.33). It does not use any
+coprimality between NF and b.
+    By the definitions of the log-norms,
+
+                                      Y = qc−2
+                                            F
+                                               Z v+3ℓb +eλ −T0 .
+
+The finite set of possible cF depends only on L. Consequently mA (Y ) ≪L Z −(T0 −v−3ℓb −eλ )+ /4 .
+Apply Lemma 5.3 in dimension three and Equation (5.24) to the structural identity. The single
+density is common to all R because W uses the row and both dual norms as coordinates. At each
+Fourier mode the norm powers have absolute value one and can be absorbed into the bounded
+row scalar and the common dual coefficient. Only now enlarge the positive row norm from IH
+to squarefree good R with qR ≪ Z H , retaining any fixed restrictions. No kernel estimate is used
+on the added rows.
+    Equation (5.28), with K = Z H , Ncol = Z v , and Bcol = Z ℓb , bounds the separated squared
+norm by
+                                     Z ϵ+max(H,v+ℓb )+v+ℓb .
+The squared common coefficient in the structural identity has exponent −v−2ℓb −2eλ /3−S0 −B0 .
+The square of the extracted profile scalar contributes −(T0 − v − 3ℓb − eλ )+ /2. Combining these
+exponents and the dimension-three separation norm proves Equation (5.34).
+
+
+                                                  41

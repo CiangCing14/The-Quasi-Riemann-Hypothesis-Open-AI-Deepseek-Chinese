@@ -1,0 +1,64 @@
+c = rc′ . Squarefreeness gives the fixed row restriction (k ′ , r) = 1 and the coefficient restriction
+(c′ , r) = 1; terms with (r, t) > 1 vanish, and otherwise (k ′ , t) = 1 is another fixed row restriction.
+There is no remaining (k ′ , c′ ) condition in an individual r-summand: the full collision mask was
+already expanded. A fixed ray sector for k becomes a fixed sector for k ′ once r is fixed.
+      The factor χr (mh)3 is a bounded column factor. Split the squarefree parts of m, h supported
+on S from their good parts: m = mS mg and h = hS hg . There are only finitely many choices
+of mS , hS . Their symbols are bounded row factors, while j = mg hg is squarefree and good, of
+norm O(N G/C 2 ). For fixed r, t, mS , hS , group the remaining columns by j. If Cj is the resulting
+coefficient, the quadratic large sieve gives
+                                                 2                               X
+                      X X
+                                             3                   ϵ       K   NG
+                                Cj χk′ (j)           ≪ϵ (KN B)              + 2        |Cj |2 .
+                                                                         qr  C
+                      k′    j                                                      j
+
+The outer sum may retain all its fixed restrictions. On a nonempty range, both quotient lengths
+in the last display are bounded below by a fixed positive constant; replacing them by their
+maxima with one changes only the comparison constant.
+    For each j, the number of factorizations into mg , hg is divisor-bounded. There are O(C/qr )
+possible c′ in its range. Cauchy over these two choices therefore gives
+                      X                     C      X
+                          |Cj |2 ≪ϵ (KN B)ϵ                |β(rc′ m, rc′ ht2 )|2 .
+                                            qr ′
+                        j                               (c ,m,h)∈Dr (t)
+
+The bounded column factor from χr has been discarded only in this positive sum. The fixed
+bad-part symbols were row factors of unit modulus and were removed from the outer modulus
+before applying the sieve. The ideals m, h here are the original ideals, reconstructed from their
+fixed S-parts; the S-part of c′ is untouched. Combining the displays proves Equation (5.27).
+    Suppose now |β| ≤ 1. Ideal counting gives
+                                                               CNG
+                                                 #Dr (t) ≪            .
+                                                               qr C C
+For qr ≍ r0 , its product with the preceding factor C/qr is O(N G/r02 ). There are O(r0 ) possible
+r in this range and O(T ) possible t. Since B ≍ GT 2 , their contribution to Equation (5.27) is at
+most                                           
+                               ϵ NB    K    NG
+                      (KN B)              + 2 ≪ (KN B)ϵ N B(K + N B).
+                                  r0   r0    C
+Here r0 , C, T are bounded below on a nonempty range and G ≪ B. The number of dyadic
+choices for C, G, T, r0 is logarithmic in the norm ranges. Hilbert-space triangle over the C, G, T
+blocks, followed by a rescaling of ϵ, proves Equation (5.28).
+
+5.5    The unmarked reflected energy
+For a fixed finite-ray character ν, extended by zero away from primary elements prime to S, and
+for m ̸= 0, define the central completed sum
+                                     X γ2 (c)α(cn3 )ν(cn3 )χcn3 (m)  qc q 3 
+                                                                           n
+                   CV (X; m, ν) =                    √             V           .          (5.30)
+                                                       qc qn             X
+                                       c sf, n
+                                     c,n≡1 (3)
+                                     (cn,S)=1
+
+Here c, n may share primes. The defining series is absolutely convergent for every X > 0 when
+V satisfies the hypotheses of Proposition 5.1. Complete multiplicativity, with the zeros retained,
+gives χcn3 (m) = χc (m)χn (m)3 . Thus for every a > 1,
+                                       Z
+                                   1
+                   CV (X; m, ν) =          Vb (s − 1/2)X s−1/2 T (s, νχ• (m)) ds.           (5.31)
+                                  2πi (a)
+
+                                                          38

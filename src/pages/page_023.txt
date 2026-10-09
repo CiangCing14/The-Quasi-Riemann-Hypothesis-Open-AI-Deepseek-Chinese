@@ -1,0 +1,66 @@
+Proof. Write Rj = 2 − a − je and C = 2Q(3 + |t|)2 . All the disks used here lie in ℜs > 1/2, where
+the principal regularizer is holomorphic. On the zero-free disk choose a holomorphic logarithm
+g = log L whose value near the center is the Euler logarithm, together with the logarithm of the
+regularizing factor in the principal case. The value g(2 + it) is uniformly bounded. Lemma 4.8
+and Euler convergence to the right of 11/10 give
+
+                       ℜg(s) = log |L(s)| ≪ log C            (|s − (2 + it)| ≤ R3 ).
+
+The possible heights differ from t by at most 3/2, which is included in C. Borel–Carathéodory
+on radii R3 , R4 , whose difference is e, now gives |g| ≪e log C on the disk of radius R4 .
+    On the disk of fixed radius r0 = 49/100, one has ℜs ≥ 151/100 > 1. The absolutely
+convergent Euler logarithm is uniformly bounded there. For the principal function the logarithm
+of (s − 1)/(s + 1) is also bounded on this disk, using its branch in ℜs > 1. Since r0 < R6 < R4 ,
+Hadamard’s three-circles theorem applied to g gives
+
+                                                                    log(R6 /r0 )
+                         max         |g(s)| ≪e (log C)θ ,      θ=                < 1.
+                     |s−(2+it)|≤R6                                  log(R4 /r0 )
+
+For fixed e, continuity on the compact interval 1/2 ≤ a ≤ 1 makes θ uniformly smaller than one.
+For every ϵ > 0, exp(Ce (log C)θ ) ≪e,ϵ C ϵ . Applying this to both eg and e−g proves Equation (4.15).
+Cauchy’s estimate between radii R6 and R8 gives the stated bound for g ′ = L′ /L.
+    For the global assertion first suppose β∗ ≤ b ≤ 1. Choose 0 < e < min(10−3 , v/8) and
+put a = b. The disk of radius R2 is contained in ℜs > b + 2e > β∗ , so it is zero-free by the
+definition of β∗ and absolute Euler convergence beyond one. The disk of radius R8 covers the
+points b + v ≤ ℜs ≤ 2 at its center’s height; Euler convergence covers ℜs ≥ 2. The preceding
+constants are uniform in b. If b > 1, Euler convergence on ℜs ≥ 1 + v suffices. Finally
+
+                          1      s−1                        s−1
+                               =     L(s)−1 ,                   ≤ 1 (ℜs ≥ 0),
+                        ζF (s)   s+1                        s+1
+
+which proves the principal reciprocal assertion.
+
+        Q (Deleted−sEuler factors). Let R be a squarefree ideal and let |ap | ≤ 1 for p | R. Put
+Lemma 4.10
+DR (s) = p|R (1 − ap qp ). For fixed σ0 > 0 and every ϵ > 0,
+
+                           |DR (s)| + |DR (s)−1 | ≪σ0 ,ϵ qR
+                                                          ϵ
+                                                                    (ℜs ≥ σ0 ).
+
+On a bounded real strip one has, uniformly in the height,
+                                                   ′ (s)
+                                                  DR
+                                 (−ℜs)+ +ϵ
+                 |DR (s)| ≪ϵ qR              ,           ≪σ0 log(2qR )        (ℜs ≥ σ0 ).
+                                                  DR (s)
+
+In particular a support qR ≤ Z B with bounded B costs any prescribed positive power of Z on
+a fixed positive real half-plane. For an imprimitive function L(s, ψ ∗ )DR (s), both the primitive
+conductor and the deletion radical R must be included when applying logarithmic control.
+
+Proof. Every factor is nonzero on ℜs > 0. For ℜs ≥ σ0 , both its absolute value and the
+absolute value of its inverse are at most (1 − qp−σ0 )−1 . For sufficiently large qp , depending on
+σ0 , ϵ, − log(1 − qp−σ0 ) ≤ ϵ log qp . The finitely many smaller primes contribute a fixed constant.
+This proves the first estimate. For any real σ,
+                                                (−σ)              (−σ) +ϵ
+                             Y
+                                 (1 + qp−σ ) ≤ qR + 2#{p:p|R} ≪ϵ qR + .
+                           p|R
+
+
+
+
+                                                     23

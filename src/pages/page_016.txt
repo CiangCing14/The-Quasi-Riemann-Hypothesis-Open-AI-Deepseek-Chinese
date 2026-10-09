@@ -1,0 +1,58 @@
+   We use cubic reciprocity in the following precise form: for coprime primary a, b one has
+(a/b)3 = (b/a)3 ; see [8, Equation (1.4)]. Thus the quotient χb (a)/χa (b) is a sign. At p, q its
+cube is χq (p)3 χp (q)3 , so this sign equals r(p, q). Multiplicativity in both arguments and the
+bicharacter property extend the equality to every coprime primary pair. The definition by r on
+noncoprime pairs involves no division of zero symbols.
+    The element −2 is primary and −1 is a cube. Cubic reciprocity therefore gives
+
+                             χc (4) = (2/c)3 = (−2/c)3 = (c/(−2))3 .
+
+This is a character of c mod 2. Together with the dependence of Γ on c mod 4, this proves that
+G is a function on a fixed ray group (for example the ray group modulo 12 suffices here). Indeed,
+if two primary generators represent the same ray class modulo 12, their quotient differs from an
+element congruent to one modulo 12 by a unit; reduction modulo 3 forces that unit to be one.
+The generators therefore have the same residue modulo 4. Its multiplicative refinement is the
+                                                                                        2
+definition of r. Since Γ(v 2 ) = 1 and χv (4) has order dividing three, G(v 2 ) = χv (4) = χv (4).
+The table also gives
+                                  Γ(p)2 = (−1)(qp −1)/2 = χp (−1).
+For the last equality use χp (−1) = (−1)(qp −1)/6 and the equality of these parities. Now Γ(p3 ) =
+                3
+Γ(p), and χp (4) = 1, proving G(p3 ) = γ3 (p). Finally R(p, p) = 1/Γ(p)2 = Γ(p)2 , as this square
+is a sign.
+    For a symmetric sign-valued bicharacter its diagonal is multiplicative:
+
+                    R(vw, vw) = R(v, v)R(v, w)2 R(w, w) = R(v, v)R(w, w).
+
+The prime identity consequently gives R(n, n) = χn (−1) for every primary n outside S. On the
+square class (−1)e λf , the table gives both this diagonal and r(−1, n) the value (−1)f . This use
+of −1 is in the residue square-class group; the ideal (−1) is the identity in an ideal ray class
+group and is not being substituted there.
+   For coprime squarefree primary a, b outside S, the Chinese remainder theorem gives
+
+                                γj (ab) = χa (b)j χb (a)j γj (a)γj (b).
+
+One obtains this by representing a residue as bx+ay with x mod a and y mod b. Cubing the factor
+for j = 2 gives one. The product of the factors for j = 1 and j = 2 is (χa (b)χb (a))3 = R(a, b).
+The prime identities from Lemma 4.2, followed by Equation (4.5), therefore prove Equation (4.7)
+by induction on the number of prime factors.
+
+   For later element rows, fix the generators πp from Lemma 4.1. Every 0 ̸= m ∈ O has a unique
+expression                                               Y v (m)
+                              m = umS mgood ,       mS =   πp p ,
+                                                             p∈S
+
+where u is a unit and mgood is the primary generator of the part of (m) outside S. On every
+primary A outside S, multiplicativity and sextic reciprocity give the zero-preserving identity
+                                                        Y
+                      χA (m) = χA (umS )R(A, mgood )          χp (A)vp (m) .                 (4.8)
+                                                           p|mgood
+
+For (A, mgood ) = 1 this is the reciprocity formula just proved; if they meet, both sides are zero
+and R is evaluated as its separately defined bicharacter. Once the good part’s fixed ray class and
+the S-valuations modulo six are fixed, the first two factors on the right range over a fixed finite
+family of characters of A. The product over good primes retains the moving character factors
+and all their zeros.
+
+
+                                                  16

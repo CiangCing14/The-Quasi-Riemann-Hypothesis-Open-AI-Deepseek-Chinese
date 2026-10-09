@@ -1,0 +1,61 @@
+one independent of k, f : arbitrary bounded weights are permitted only as the stated product of
+individual prime-slot coefficients.
+    Put F0 = N + V . Suppose
+                                       qrρ ≤ Z F0 −M −z0 −c∗ ,
+                                                                                         (17.2)
+                                      3M + 6z0 + c∗ ≤ 4F0 .
+For every smooth annular W and every ϵ > 0, define
+
+                               X              X                  X
+                    E = Z −V        w(f )               Z −N/2          ᾱ(n)γ2 (n)ν(n)ρ(n)
+                                f             k∈O                n sf
+                                            0<qk ≪Z M                                              (17.3)
+                                                                                   2
+                                            × χn (k)χn (f )4 d(n)W (qn /Z N ) .
+
+
+Then E ≪ Z F0 +ϵ . The constant is uniform in the moving moduli and the frozen outer ideals within
+the stated ranges. It depends on finitely many smooth seminorms and has a fixed polynomial
+dependence on separated norm-twist heights. The same conclusion holds for all subcollections of
+the slots with the original cap z0 , including the empty collection.
+
+    The reflected energy in Section 14 supplies the terminal estimate for this family. The re-
+maining ranges will be reduced to the same family with shorter rows. Before the two Poisson
+transformations, we give the common analytic rule for propagating smooth seminorm and height
+orders through the finite induction.
+
+17.3    Finite propagation of seminorm and height orders
+We use the following abstract statement about a finite sequence of estimates. It does not assert
+that any particular arithmetic reduction has its hypotheses. Its purpose is to state exactly which
+uniform bounds on transformed profiles and Fourier coefficient measures suffice to choose all
+internal derivative orders before an external height cutoff.
+    Write ⟨t⟩ = 1 + |t|. Let a finite rooted directed graph have no directed cycles, and let every
+directed path have at most D edges. At each vertex v let Nv (Z, w, t) be a nonnegative quantity,
+where Z ≥ 1, w is a fixed finite tuple of annular profiles, and t is a finite-dimensional height
+vector. The profile dimensions, supports, and height dimensions may depend on v, but are fixed
+throughout the graph. Additional labels are allowed in these quantities; every bound below is
+required uniformly in those labels.
+
+Lemma 17.3 (Finite seminorm propagation). Suppose that at each vertex there is a terminal
+bound
+                          Tv (Z, w, t) ≤ Cv Z av pjv (w)bv ⟨t⟩hv
+with fixed real av and finite nonnegative jv , bv , hv . Suppose also that
+
+            Nv (Z, w, t) ≤ Tv (Z, w, t)
+                               X          Z
+                                     Z ae
+                                                                                            
+                           +                       |Ke (Z, w, t; ξ)|Nv′ Z, W e , Ae t + Be ξ dξ,
+                               e:v→v ′       Rde
+
+
+where Ae , Be are fixed bounded linear maps and W e = W e (Z, w, t, ξ) is the child profile tuple.
+Empty edge sums are allowed. Assume the following two bounds for each edge.
+   For every fixed j there are finite nonnegative numbers me (j), b′e (j), c′e (j) and a constant Ce,j
+such that
+                                                        ′         ′         ′
+                           pj (W e ) ≤ Ce,j pme (j) (w)be (j) ⟨t⟩ce (j) ⟨ξ⟩ce (j) .
+
+
+
+                                                      116

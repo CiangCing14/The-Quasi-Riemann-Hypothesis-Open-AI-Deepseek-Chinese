@@ -1,0 +1,54 @@
+                                      |Sm |2 ≪A,ϵ U δ min(m,1−m)+ϵ .                          (8.2)
+The external tail order may be chosen after the positive number τ . It does not change AA .
+Proof. We spell out the height restriction because a full infinite contour shift would not be
+justified by the bin. For a fixed annular W , a bounded real number σ, and a pure twist y iω ,
+Mellin inversion on a line c + σ > 1 gives
+                        X
+                 U −r/2     µ(n)ψ(n)W (qn /U r )(qn /U r )−σ+iω
+                         n
+                             Z
+                       1
+                    =              MW (s) U r(s+σ−iω−1/2) Lorig (s + σ − iω, ψ)−1 ds.
+                      2πi    (c)
+
+Here MW is the Mellin transform defined in Lemma 4.5. The twist occurs in the L-argument,
+not in the transform whose tails are estimated. Shift only the portion with added frequency at
+most the assigned fraction of T1 to ℜ(s + σ) = a + 6e. The horizontal joins and the shifted
+portion remain in the zero-free rectangle of Lemma 8.1. Its bound gives U (a−1/2+6e)r+ϵ1 for the
+central portion.
+    Leave the remaining tails on the absolute line, which we may take to be ℜ(s + σ) = 2. There
+the reciprocal Euler product is absolutely bounded. On the inverse joins the reciprocal remains
+inside the buffered rectangle. Since the real join interval and the length range are bounded, the
+remaining arithmetic and scale factors on a join are O(U B (1+|ℑs|)J ) for fixed B, J chosen before
+the external tail order. The pointwise Mellin bound in Equation (4.11), applied on that compact
+real interval with derivative order N + ⌈J⌉ + 1, bounds each horizontal join by O(U B T1−N ). The
+separate vertical tails have the same bound by Equation (4.10). Both estimates apply to the
+untwisted profile, uniformly in the stated family. Because T1 = Z τ , τ > 0, and all lengths lie in
+a fixed bounded interval, a sufficiently large fixed N makes these errors smaller than the claimed
+bound. Taking e and ϵ1 small in the prescribed ϵ proves Equation (8.1).
+    For the plain polynomial the same calculation uses Lorig instead of its reciprocal. Shifting to
+ℜ(s + σ) = a + 6e gives
+                              |Sm | ≪ U (a−1/2+6e)m+ϵ1 + O(U B T1−N ).
+Alternatively shift its central portion to ℜ(s + σ) = 1 − a − 6e. The function is entire because
+the row is nonprincipal. The reflected estimate of Lemma 8.1 gives
+                  |Sm | ≪ U a−1/2+12e+ϵ1 U (1/2−a−6e)m (3 + T1 )C + O(U B T1−N ).
+The joins here need only the global upper strip bound and the negative-strip bound for the deleted
+product, since no reciprocal is present. These give fixed B, J as above, so the pointwise Mellin
+estimate bounds the joins and the integrated Fourier estimate bounds the absolute-line tails.
+Taking the better central bound, choosing N to dominate also the possibly negative exponent
+when m > 1, and using the displayed height hypothesis proves Equation (8.2). A primitive
+conductor smaller than U reduces the reflected conductor factor. The original deleted Euler
+factors have already been included in Lemma 8.1.
+    There are only finitely many separated variables in any one L-argument. Assign each a fixed
+fraction of the single T1 /2 allowance; do not assign that allowance anew at successive shifts.
+The profile windows and the finite height orders used in the row estimates are fixed before N .
+Lemma 4.5 differentiates only the untwisted separating profiles when increasing N , which proves
+the last assertion.
+
+8.2   Simultaneous saturated witnesses
+At a selected zero, the truncated-inverse construction below produces a product with squared
+size at least U δ(r+m)−ϵ . The pointwise estimates bound the same product by U δ(r+min(m,1−m))+ϵ .
+Since δ ≥ 1/50, these two bounds force m ≤ 1/2 + O(ϵ). Each factor then attains its own point-
+wise exponent up to the prescribed loss; this is the saturation asserted in the next proposition.
+
+                                                   58

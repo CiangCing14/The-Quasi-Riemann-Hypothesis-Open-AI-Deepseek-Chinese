@@ -1,0 +1,57 @@
+Put gi = 0 if Qi = 0, and also put gi = 0 for an error slot from Equation (16.9). Then, for a
+main slot,
+                         |Qi | ≤ Pigi +ϑ ,  gi > 0 =⇒ |Qi | ≥ Pigi .
+No lower bound is asserted for a slot with gi = 0. The finitely many possible vectors (gi ), with the
+possible endpoint value δ/2, partition the rows into amplitude bins. Define their length-weighted
+mean by                        P
+                                   ℓi gi                          X
+                          q= i           ,   0 ≤ q ≤ δ/2,      ℓ=     ℓi .                     (19.1)
+                                  ℓ
+                                                                                i
+
+This q records prime amplitude; it is not the conductor exponent denoted q in the auxiliary
+fourth moment.
+
+19.2    Selected prime slots and the row counts
+Use ∆ and κ from Equation (12.1):
+                          1                                3                            5
+                0<∆≤         ,     κ = 2β∗ − 1 =             + 2∆ ∈ (3/4, 5/6],     α := .
+                          24                               4                            6
+The parameter κ remains dynamic; α is the fixed slope from sixth-power amplification. Since
+κ < 1 and β∗ = (1 + κ)/2, the positive-slot hypothesis of Lemma 18.1 is satisfied by equality.
+Equation (12.2) gives δ ≤ κ ≤ α for the current Part II bins, including the possible endpoint
+δ = α.
+     Fix a dynamic and amplitude bin and fix the external physical Mellin parameters. Write
+zphys for the fixed third Mellin parameter, so the physical slots are Qi (u; zphys ). All gi , and hence
+q, are now fixed within its row sum. At base U , the length of slot i is wi = ℓi /d, and the total
+available length is ℓ/d. For a requested length 0 ≤ z ≤ ℓ/d, order the positive gi decreasingly
+and fill z fractionally in that order. The gained exponent is at least qz: if positive slots suffice to
+fill z, their initial weighted average is at least the average q of all slots; otherwise retaining them
+all gives gain qℓ/d ≥ qz. Removing the one possibly fractional slot loses at most (maxi wi )δ/2.
+Thus a fixed subcollection of whole positive slots of length at most z satisfies
+                                                      2
+                                       Y
+                                                 Qi       ≥ U 2qz−δ maxi wi .
+                                    i selected
+
+When a strict moment inequality is needed, we first replace z by z − ν0 for a fixed small ν0 > 0,
+or select no slot if z ≤ ν0 . The resulting loss in this display is at most 2qν0 + δ maxi wi , except in
+the stated zero-capacity neighborhood, where an unweighted moment will be used. Both losses
+can be made smaller than any prescribed positive power.
+    The selected factors have exactly the coefficient class required by the moments. Conjugate
+both witness factors, including their profiles, if necessary and write their row character as ψ(n) =
+ν(n)χn (u), ν ∈ Θ. Relative to this row, a physical prime has coefficient
+                                                           1 X
+                                    ν(p)1p∈1T =                (νθ)(p).
+                                                          |T |
+                                                                θ∈Tb
+
+This is a fixed finite combination of members of Θ; it is independent of the moving row in
+the fixed row sum. There is no requirement that η(p) = 1. The factor (qp /Pi )zphys −1 is part
+of its smooth profile. Underlying prime supports remain disjoint before masks. The marked
+moment permits this negative common row orientation. To apply Lemma 18.1, whose row
+character has positive orientation, conjugate the whole product of both plain witness factors
+and all selected prime factors. Its absolute square is unchanged, and its common row character
+becomes ψ(n) = ν(n)χn (u). Both witness profiles and every selected slot profile are conjugated,
+
+                                                          182

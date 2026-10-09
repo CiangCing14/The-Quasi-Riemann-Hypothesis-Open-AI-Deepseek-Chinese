@@ -1,0 +1,59 @@
+The qdit from extraction has canceled the qd−it in the main term at X/qd . This proves that the
+coefficient is independent of both X and t. The errors are multiplied by at most the number of
+divisors #{d : d | R∗ } ≪ϵ1 ,B∗ Z ϵ1 . The coefficient itself is also Z ϵ1 -bounded by the polynomial-
+size Euler-product estimate. This proves Equation (18.45).
+    For Equation (18.46), take absolute values in the original sum. It is empty below a fixed
+positive scale; whenever it is nonempty, ideal counting on the fixed annulus gives O(X) points.
+This is uniform in t and in the mask.
+    The masked sum in Equation (18.47) is exactly
+
+                               L1 (U1 , t)L2 (U2 , t) − L1 (V1 , t)L2 (V2 , t).
+
+The two product main terms in Equation (18.45) are both c2ϑ,R∗ T 1+it I1 (t)I2 (t). They cancel.
+Each cross term with one error is bounded by Z ϵ1 (1 + |t|)2J times one of U1 , U2 , V1 , V2 , and the
+product of errors has the same bound after reducing the subsidiary power loss. If all four scales
+are at least Z r , each is at most T Z −r , and 1 ≤ T Z −r because T ≥ Z 2r . The difference is therefore
+O(Z ϵ1 (1 + |t|)2J T Z −r ). Division by T 1/2 proves Equation (18.47). When no nonnegative lower
+length is available, Equation (18.46) bounds each product by O(T ), giving the last assertion.
+
+    Apply this lemma to each already allocated exceptional child. The hypotheses on its coeffi-
+cient and common mask follow from Lemma 18.2; in particular the main terms cancel for the
+same row, mask, and whole-product norm power before any absolute value. Initially all four
+plain lengths are at least L. Before the selected t-factors are removed, the c2 side has lower plain
+length at least L − c − w − c2 and nominal total length α1 = a0 − c2 : no one plain loses more
+than the total c + w + c2 extracted by the two genuine common supports and the amplifier. The
+other side has the analogous bounds with d2 . Put
+
+                                   r = (L − c − w − min(c2 , d2 ))+ ,
+
+and call the side with this reference saving the first side, relabeling its associated raw data
+together. If re1 < r, each selected plain length satisfies a1,i ≤ re1 , so all four formal post plain
+scales have logarithmic length at least r − a1,i ≥ r − re1 > 0. Apply Equation (18.47) on these
+exact equal-product formal scales. If re1 ≥ r, including equality, or if r = 0, use the all-scale
+absolute-volume fallback in the same lemma. No formal centered scale is clipped in this branch,
+and an identically zero rectangle remains in the formal difference. The resulting saving is (r−er1 )+ .
+With absolute volume on the other side, this gives the aggregate bound on each lower-endpoint
+divisor dyad,
+                                  X
+                                       |ct,J (h′ )||PC,t,J (h′ )PD,t,J (h′ )|
+                                   t,J                                                        (18.48)
+                                                     a0 −b2 −r+2θN +ϵ1
+                                               ≪Z                       .
+
+Here and below a fixed polynomial in the separated heights is understood. To check the bound,
+the raw coefficients and volumes give the reference exponent a0 − b2 + e1 + e2 and reduction
+−er1 − re2 , while the divisor count gives t− . Equation (18.34) gives the one-line inequality
+
+                         t− − re1 − re2 − (r − re1 )+ = (t− − re2 ) − max(r, re1 )
+                                                                                                 (18.49)
+                                                       ≤ ω2 − r.
+
+Adding e1 + e2 leaves at most e1 + (e2 + ω2 ) − r ≤ 2θN − r. The divisor-bounded allocations
+contribute only ϵ1 , proving Equation (18.48). This applies to the artificial terms even when
+quotients retain t-primes, because the coefficient lemma preserves the common mask, equal
+product scales, and one norm power within each rectangle difference.
+   The live slots are summed only after the finite transform
+                                                    Q        has removed their Gauss coefficients.
+Their unnormalized absolute sums contribute ON ( i live Pi ). Combining this with the nominal
+
+                                                    177

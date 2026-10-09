@@ -1,0 +1,63 @@
+The actual residual norms lie in fixed multiples of N ; the nominal value N is allowed to be
+below one. Fix arbitrary A > 2 and B > 2. For each fixed C, d, k, the one joint annular profile
+WR for the two columns has the finitely many homogeneous single-profile seminorms used below
+bounded by OB,JGr ((1 + |ν|)JGr R−B ), with one fixed JGr chosen after these derivative orders
+and A, B. This follows by differentiating the first Fourier kernel, whose Schwartz decay absorbs
+every resulting power of R; derivatives of the norm powers cost a fixed power of 1 + |ν|. This
+factor R−B remains in the single-profile Fourier estimate and occurs once in the linear lattice
+sum below; no small inhomogeneous tuple seminorm is used.
+    Let aC,d,k be this periodic arithmetic coefficient. For a nonexceptional frequency its nor-
+malized complete Fourier transform, with normalization Q−2 on the two residue variables, has
+absolute value at most qC and vanishes at (0, 0). Since every ideal of O is principal, the period
+lattice has linear scale Q1/2 . Four-dimensional lattice Poisson therefore gives, for this A,
+
+                X                     √
+                      aC,d,k (m)WR (m/ N ) ≪ (1 + |ν|)JGr R−B qC N 2 min{1, (Q/N )A }.                 (15.5)
+               m∈O2
+
+For N ≥ Q, the zero frequency vanishes and the other dual vectors have linear scale (N/Q)1/2 .
+Fourier decay of order 2A > 4 bounds their sum by (Q/N )A . For N < Q, use the point count
+in the two annuli. A nonempty subunit annulus has N bounded below by a fixed positive
+constant, so it still contains O(N ) lattice points; below that constant it is empty. This proves
+Equation (15.5) without any primitivity or tensor-product assumption on aC,d,k .
+    Put KR = RPa /C0 . The fixed shell comparison constants give qk ≤ Csh KR for a fixed
+                                                                       −1
+Csh > 0. Hence the nonzero frequency range is empty when KR < Csh         . On a nonempty range,
+elementary lattice counting gives
+                                                          p
+                    #{k : 0 < qk ≤ Csh KR } ≪fixed KR + KR + 1 ≪fixed KR .
+There are therefore O(C0 D0 KR ) choices of C, d, k on these dyads. Multiplying Equation (15.5)
+by this count and by the common prefactor gives at most
+                                                     (              )
+                               JGr −B Q RPa               RPa C0 D0 A
+                      (1 + |ν|) R               min 1,                   .
+                                      Y ′ C0 D0               Y′
+
+For Λ = Y ′ /(RPa ) the required positive dyadic sum is
+      X                                     X                                       1 + log(2 + Λ)
+              2−i−j min{1, (2i+j /Λ)A } =       (n + 1)2−n min{1, (2n /Λ)A } ≪A                    .
+                                                                                           Λ
+      i,j≥0                                 n≥0
+
+For Λ ≥ 1, split the two geometric tails at 2n ≍ Λ; for Λ < 1, the left side is bounded and
+the displayed right side is larger than a positive constant. Thus the nonexceptional frequencies
+contribute
+                                                      Q P2
+                                       ≪ (1 + |ν|)JGr ′ a′ Z ϵ
+                                                      Y Y
+after the R sum, on choosing a fixed B > 2.
+    It remains to count the exceptional nonzero frequencies. They have (k) = a61 e, where e is
+sixth-power-free and supported on the primes of C and the fixed support. There are at most
+6ω(C)+OS (1) ≪ϵ qC  ϵ possible e. For each of them the shell bound q ≤ C K permits only
+                                                                        k      sh R
+qa1 ≤ (Csh KR /qe )1/6 . If this range is nonempty, its upper bound is at least one, and the ideal
+                      1/6
+count gives Ofixed (KR ) choices; if qe > Csh KR it is empty. Unit factors cost only a fixed factor.
+                        1/6 ϵ
+Hence there are Oϵ (KR qC     ) such elements k, including the bounded subunit range of KR .
+    Use KR = RPa /C0 , |LC | ≤ qC , and the trivial two-column point count. Before multiplication
+by Q/Y ′3 , the contribution on these dyads is
+                                                                    −1/6
+                             ≪ (1 + |ν|)JGr R−B Z ϵ Y ′2 (RPa )1/6 C0      D0−1 .
+
+                                                    106

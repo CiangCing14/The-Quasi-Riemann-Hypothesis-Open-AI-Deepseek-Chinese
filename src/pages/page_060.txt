@@ -1,0 +1,59 @@
+a fixed smooth terminal cutoff equal to one for ql qk ≤ U 21 and zero for ql qk ≥ 2U 21 changes it
+by o(1); this follows from Y∗ = U 20 , exponential decay, and the ideal count.
+    Partition ql ≍ D, qk ≍ N by a fixed smooth dyadic partition. There are O((log U )2 ) relevant
+pairs, and their support satisfies
+
+                               D ≪ D∗ ,     DN ≫ D∗ ,          DN ≪ U 21 .
+
+With x = ql /D, y = qk /N , the profile for a pair is
+
+                                 W1 (x)V≤ (Dx/D∗ ) W2 (y) HD,N (xy),
+
+where Ω is a fixed annular cutoff equal to one on the product of the supports of W1 , W2 , and
+
+                 HD,N (s) = Ω(s)[1 − V≤ (2DN s/D∗ )]e−DN s/Y∗ Vterm (DN s/U 21 ).
+
+Every fixed logarithmic derivative is bounded uniformly in D, N, U . On a cutoff transition its
+argument is bounded, and a logarithmic derivative of the exponential is a polynomial in its
+argument times that exponential. Logarithmic Fourier inversion therefore gives
+                                                        Z
+                                                     1      b D,N (ν)xiν y iν dν,
+                                        HD,N (xy) =         H
+                                                    2π R
+                   Z
+                           b D,N (ν)|(1 + |ν|)J dν ≪J,N ,c T −N0
+                          |H                           0    1
+                     |ν|>cT1
+
+for every fixed J, N0 . The coefficient L1 -norm on the full line is also uniformly bounded. Trivial
+bounds for the two finite polynomials have a fixed U -power because their lengths are bounded
+by U 21+o(1) . After τ > 0 is fixed, choose N0 so that the discarded Fourier tail is o(1).
+    The absolute value of the remaining sum of integrals is bounded below by a positive constant.
+The number of dyadic pairs and the uniform L1 -norm show that, for one pair and one |ν| ≤ cT1 ,
+the product of the two unnormalized blocks has absolute value ≫ (log U )−2 . Both profiles have
+the same height γ − ν:
+
+                                WM (x) = W1 (x)V≤ (Dx/D∗ )x−σ−i(γ−ν) ,
+                                WS (y) = W2 (y)y −σ−i(γ−ν) .
+
+The first extra cutoff remains part of the inverse annular profile and creates no second frequency.
+Removing the factors D1/2−σ and N 1/2−σ by central normalization gives
+
+                           |Mr Sm |2 ≫ (log U )−4 (DN )2σ−1 ≥ U δ(r+m)−ϵ
+
+for sufficiently large U . The support inequalities give the two length bounds in Equation (8.3).
+    Apply Lemma 8.2 to these profiles, choosing its loss smaller than the present ϵ. Comparison
+of the product lower bound with the two upper bounds gives
+
+                           δ{m − min(m, 1 − m)} = 2δ(m − 1/2)+ ≪ ϵ.
+
+Since δ ≥ 1/50, this implies m ≤ 1/2 + O(ϵ) with an absolute constant. The support inequality
+then gives r ≥ t − 1/2 − O(ϵ). Dividing the product lower bound in turn by each individual
+upper bound gives the two individual lower bounds in Equation (8.4). Only the dyadic support
+errors are O(1/ log U ); all other losses are arbitrarily small fixed powers. Lemma 4.5 permits the
+stated rowwise choices with a fixed polynomial height factor.
+
+
+
+
+                                                  60

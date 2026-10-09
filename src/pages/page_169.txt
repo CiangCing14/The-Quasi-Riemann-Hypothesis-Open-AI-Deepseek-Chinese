@@ -1,0 +1,56 @@
+   On each retained dyad, separate the full kernel and inverse roots in the normalized h′ norm
+and the two whole-product norms, as for the first transform. The frozen factor Gc Vid contributes
+only an outer phase to the row Fourier power. The fixed support boxes are chosen before the
+current live labels, so the resulting coefficient measure is common to them, to both rectangles,
+and to the row. Then fix t. For each of its primes p, use the exact factor-allocation identity
+                                             X             Y
+                                  1p|Qi ni =     (−1)|J|+1    1p|ni ,
+                                                  ∅̸=J                i∈J
+
+where the factors ni are the two plain variables and the live slots. For a selected plain variable
+write ni = pli , with no restriction on li . This extracts only a row scalar and qpit , and replaces
+both Xi , Yi by Xi /qp , Yi /qp . It introduces no one-variable puncture. A selected slot is frozen.
+If two distinct divisor primes select the same prime slot, the term is zero. The quotients and
+unselected factors may still contain p, and may overlap the opposite side; no new coprimality is
+imposed. Old common masks remain common, and the product of the two new plain scales is
+equal in the two rectangles. The extracted row scalars, including zero scalars, are retained in
+the signed identity.
+    Only now, for a fixed retained dyad and fixed Fourier parameters, is each separated summand
+a product of two independent residual convolutions, where J records the factor allocations. Their
+row characters are
+
+                 τ1 (n)ρ(n)χn (Gc Vid h′ ),         τ1 (n)ρ′ (n)χn (−Gc Vid h′ ),      ρ, ρ′ ∈ Θ.
+
+They are understood with the fixed-factor support representation above. In particular their
+inducing-character ratio belongs to Θ, including the supplementary factor n 7→ χn (−1); this
+assertion takes no quotient at a zero. Their natural row zeros are retained. Extracting the
+selected factors contributes row scalars, not new factors of the residual character and not new
+support in q ′ . These scalars, including zeros, remain in the signed identity.
+
+Lemma 18.2 (Common coefficient under complete extraction). For a centered input, the two
+transforms and the intervening Gauss-row enlargement just constructed preserve the following
+coefficient data. Each Gauss polynomial and each amplifier error retains Equation (18.18), mul-
+tiplied by G(u, h), apart from bounded frozen scalars and row scalars of modulus at most one. For
+an uncentered input, omit the second rectangle throughout. After the second transform and the
+full Möbius factor allocation, each separated child side has that coefficient form without G and
+without s | u. Every surviving slot has the child’s one whole-product character and its original
+coefficient νi , with no Gauss coefficient. Within a side the plain variables have the same char-
+acter, puncture mask, and norm power in both rectangles. The two sides of one squared Gauss
+norm may have different norm powers; their inducing characters differ by a member of Θ.
+     If the new inducing character belongs to Θ, fixing the live slot labels leaves the plain coefficient
+
+                                  ϑ(l1 )ϑ(l2 )1(l1 l2 ,R∗ )=1 qlit1 l2 Db (l1 , l2 )
+
+for one ϑ ∈ Θ, one squarefree mask R∗ of polynomial norm, and one real t. The mask may
+depend on the frozen row, but is common to both variables and both rectangles. All coefficients
+are understood with their retained frozen scalars, including zeros, and the exact normalizations
+recorded below.
+
+Proof. The first-transform calculation proved the Gauss coefficient form; the local p-power cal-
+culation proved it for each amplifier error. The genuine complete-support identity and the full
+Möbius allocation above proved the child form, preserving one character and norm power on each
+whole residual product. Thus “common” concerns one separated side; the displayed character
+ratio is the relation between the two sides. When the inducing character belongs to Θ, it equals
+some ϑ ∈ Θ on units. Its redundant natural zeros and the fixed punctures combine into one R∗
+
+                                                         169

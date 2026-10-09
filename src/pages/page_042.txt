@@ -1,0 +1,60 @@
+   For later summation, call a dual block retained when
+
+                               v + 3ℓb + eλ ≤ T0 + τref ,        τref > 0.
+                                                                                       −1
+On the fixed support box, Equation (5.33) places the kernel argument in [Cker             , Cker ] times
+Z v+3ℓb +eλ −T0 , for one fixed Cker . If log Z ≥ 2 log Cker /τref , every unretained whole block has
+actual argument greater than Z τref /2 throughout its support. These blocks can be removed be-
+fore Fourier inversion with arbitrary power saving when the other log-lengths lie in bounded
+ranges. Here are the details needed for that uniform assertion.
+    On the full source support,
+                                |d(µ)|      −1/3                4/3
+                                 √     ≤ 27qλk qn−1/2
+                                                  0
+                                                      qb−1 ≤ 27qλ .
+                                   qµ                   0
+
+
+                                                                      1/2
+After its indicator is discarded, each local factor is bounded by qp , uniformly in µ. The product
+of these bounds has a fixed polynomial size when the active log-norm is bounded. For a fixed
+row put a = X/qc2 . Its factor 1 + a−1 also has a fixed polynomial bound on the stated row
+and conductor ranges. The finite local choices and bounded row counts have a further fixed
+polynomial cost; call the sum of these norm-scale exponents Btail . The fixed profile seminorms
+and their polynomial height costs remain multiplicative factors outside this exponent. It is chosen
+before the kernel order and does not count discarded dual indices. The remaining dual sum is
+the unrestricted lattice sum in Lemma 5.4, with U = Z τref /2 . For any D > 0, choosing
+                                                  2(Btail + D)
+                                        A>1+
+                                                      τref
+makes the discarded contribution O(Z −D ) times a finite seminorm of V and the fixed profile
+bounds. The assertion holds either for the absolute total or, after increasing Btail to include the
+bounded row count, for the row norm. The dyadic cutoffs have bounded overlap, so this lattice
+estimate controls their whole sum. In particular no bound on the discarded dual lengths has
+been assumed.
+    We finish by summing the reflected blocks for an element row. The following norm observation
+records the actual support that governs this summation. Suppose an element row has an ideal
+factorization (m) = mpow msup R, with integral factors, and the fixed support constants give
+
+                      qm ≤ Cm Z M ,       qmpow ≥ Z O /CO ,        qR ≥ Z H /CH .
+
+Since qmsup ≥ 1, multiplicativity gives
+
+                                           log Cres
+                          H ≤M −O+                  ,       Cres = CH Cm CO .                    (5.35)
+                                            log Z
+This inequality does not require msup to have bounded norm, and it need not be an equality. We
+will use it with the three factors on disjoint prime supports and with the unit residual ideal in
+the bounded H = 0 dyad.
+Lemma 5.8 (Unmarked completed-row moment). Let ν range over a fixed finite family of
+multiplicative finite-ray characters with conductors supported on S, all extended by zero away
+from the primary elements prime to S. Fix bounded ranges for M ≥ 0 and N ∈ R, a constant
+Cm ≥ 1, and fixed dyadic support comparisons. For a nonzero element m, let
+                                                Y
+                                      mpow =          pvp (m)
+                                                 vp (m)≥2
+
+be its maximal powerful ideal factor. Use nonnegative centers O for its dyadic ranges, with center
+zero for the unit range.
+
+                                                  42

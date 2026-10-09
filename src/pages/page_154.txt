@@ -1,0 +1,60 @@
+depends only on those sets and ϵ, uniformly for κ ∈ [3/4, 1]. For each fixed Z-independent
+arithmetic datum A and fixed slot count, the bound uses finitely many smooth seminorms and
+a fixed polynomial in the separated norm-twist heights. Their orders, and the bound itself, are
+uniform over all moving moduli, admissible masks, and frozen outer labels in the stated ranges.
+    The application to the 7/8 bound sets κ = 2β∗ − 1, so its zero-free hypothesis in this lemma
+holds by equality. We retain this dynamic value rather than replace it by the value 5/6 supplied
+by the 11/12 bound, since the refined row count uses the resulting affine capacity. The proof
+below uses the finite Gauss identities of Section 13.3, Lemma 4.5, and Lemma 4.9. Absorb any
+zero-length slots by absolute counting at their bounded scales; henceforth z = 0 means that no
+live slot remains. We first make two reductions that preserve the row family.
+    The later induction is on the effective width M = m + q, with all zero-slot bands completed
+before the positive-slot bands. Within each band the range A ≤ 5M/6 is proved first. This
+threshold comes from the transformed rows whose inducing characters lie in Θ: counting their
+sixth-power form and bounding their plain products by volume leaves an excess A−5M/6, before
+the common-support savings. Reflection handles some longer inputs; the others are reduced to
+an equal-product-scale difference, whose cancellation removes that excess.
+
+18.1    Fixed masks and reflection
+Call a character natural when its zeros consist exactly of its primitive conductor primes, its
+redundant row and declared moving radical primes, and the fixed primes in S. Here a redundant
+prime is one at which the inducing character is unramified but the displayed zero-extended
+product still vanishes. A displayed six-divisible power still vanishes on nonunits. If a redundant
+factor of the fixed twist is not included in the declared moving radical, first factor it exactly into
+its remaining phase and a coprimality indicator, and put that indicator in a squarefree ideal R,
+with qR ≤ Z B , fixed throughout the row sum. In particular, a cancellation between the fixed
+twist and the varying factor χn (k) is not reclassified as a separately chosen extra puncture for
+each row.
+    Let ψk0 be the natural character obtained by deleting these additional punctures, and let
+Tk (X) denote its centrally normalized plain sum at scale X. Write Sk,R (X) for the sum with
+the extra mask. Multiplicativity, including zero extensions, gives the exact identities
+                                           −1/2
+                           X
+               Sk,R (X) =      µ(d)ψk0 (d)qd Tk (X/qd ),                                        (18.4)
+                          d|R
+                                   −1/2
+                                           X
+                          0
+                Qk,i,R = Qk,i − Pi                  ψk0 (p)νi (p)Wislot (qp /Pi ),          P i = Z zi .   (18.5)
+                                            p|R
+                                          p prime
+                                                    P
+For example, the first identity follows by inserting d|(n,R) µ(d) and writing n = dl. The quotient
+l is unrestricted at primes of d; the original natural zero extension remains on it.
+     Apply these identities simultaneously to both plain factors and all slots. If the frozen slots
+form J ⊆ I, and the plain divisors are d1 , d2 , the scalar depending on the row has modulus at
+most one. The remaining coefficient has absolute value at most a fixed profile constant times
+                                            −1/2
+                                                  Y −1/2
+                                           qd1 d2   Pi    .
+                                                     i∈J
+
+The resulting natural product has lengths
+                                                     X                         X
+                         A′ = A − logZ qd1 d2 −             zi ,    z′ = z −         zi .
+                                                      i∈J                      i∈J
+
+Its inducing character is unchanged. If z ′ > 0, the left side of Equation (18.3) has decreased; if
+z ′ = 0, the zero-slot assertion has no length restriction and Rz ⊆ R0 .
+
+                                                      154

@@ -1,0 +1,63 @@
+   We also need control as Z ↓ 0. By Equation (2.2), Hη is bounded on ℜs > σ0 . The reciprocal
+Euler product is absolutely and uniformly bounded on ℜs ≥ 2. On every fixed strip 2 ≤ ℜs ≤ B,
+                                            2
+the Gaussian in Equation (2.3) is OB (e−(ℑs) ). Cauchy’s theorem on rectangles therefore moves
+the contour to any fixed B > 2, with horizontal integrals tending to zero. Hence
+
+                               |fη (Z)| ≪η,B Z B+c            (0 < Z ≤ 1).
+
+Since B is arbitrary, the signal has arbitrarily rapid power decay at zero.
+   This bound and Equation (2.6) show that
+                                            Z ∞
+                                                               dZ
+                                  Fη (s) :=      fη (Z)Z −C(s)
+                                             0                  Z
+
+converges locally uniformly on ℜs > β∗ − ϵ∗ . On each compact subset, choose B larger than all
+occurring real parts for the integral near zero, and use Equation (2.6) near infinity. Thus Fη is
+holomorphic on that half-plane.
+   We identify this Mellin transform without moving a contour across a zero. Set
+
+                                                 2    Hη (s)
+                             Aη (s) = e(s−5/6)                    (ℜs > 1).
+                                                     LSF (s, η)
+
+The function Aη (2+it) is continuous and integrable in t. Writing Z = eu , Equation (2.3) becomes
+                                                   Z
+                              −(2+c)u      u     1
+                            e         fη (e ) =      eitu Aη (2 + it) dt.
+                                                2π R
+
+The left side is integrable in u by the two endpoint estimates. Ordinary Fourier inversion therefore
+gives Fη (2 + it) = Aη (2 + it) for every real t. Both sides are holomorphic on ℜs > 1, so the
+identity theorem gives
+                                                 2 Hη (s)
+                                Fη (s) = e(s−5/6) S           (ℜs > 1).
+                                                  LF (s, η)
+   Equation (2.2) implies |Hη (s)| ≥ 1/2 on ℜs > σ0 . Consequently
+
+                                         2   Fη (s)
+                               e−(s−5/6)                   (ℜs > β∗ − ϵ∗ )
+                                             Hη (s)
+
+is a holomorphic continuation of 1/LSF (s, η). The number ϵ∗ was chosen independently of η. By
+the definition of β∗ , some target has a zero ρ with ℜρ > β∗ − ϵ∗ . Its reciprocal has a pole at ρ,
+and the deleted factors are nonzero there. This contradicts the continuation.
+
+    The high estimate in Proposition 2.1 is measured relative to C(β∗ ), not to C(σ0 ). This
+distinction matters when a row contribution reaches the low scale but still has a power saving
+relative to the hypothetical rightmost zero. Part I uses
+                                  11                 2                    1
+                           σ0 =      ,     C(s) = s − ,           C(σ0 ) = ,
+                                  12                 3                    4
+whereas Part II uses
+                                 7                  11              3
+                           σ0 = ,       C(s) = s − ,       C(σ0 ) = .
+                                 8                  16             16
+Only the positive power margins must be uniform in the target. Fixed-character constants,
+excluded sets, and sufficiently large lower thresholds may depend on it in both applications.
+
+
+
+
+                                                       9

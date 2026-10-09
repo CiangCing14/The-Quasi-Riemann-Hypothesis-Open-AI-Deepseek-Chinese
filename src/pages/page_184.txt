@@ -1,0 +1,61 @@
+Inverse witnesses without selected primes. Whenever no inverse slot is selected, use in-
+stead the sixth-power amplification of Lemma 17.6. It applies to these physical rows because
+their ideal valuations are at most five and their original zero extensions are unchanged. After
+the present subdivision, U, t, D, D∗ are common, and the inverse base profile is
+
+                                 Wbase (y) = W1 (y)V≤ (Dy/D∗ ).
+
+Its fixed logarithmic seminorms are uniformly bounded: a derivative of the second factor is
+supported where its scaled argument lies in a fixed compact interval. The remaining rowwise
+parameters are σ in a fixed compact interval and the pure twist −(γ − ν), of absolute value at
+most (3I + 1)T1 . The rowwise assertion of Lemma 17.6 therefore applies with that height range.
+Replacing its factor (1 + (3I + 1)T1 )A by (3I + 2)A (1 + T1 )A changes only a fixed constant.
+    For clarity, this use is uniform even when r approaches one with U . If 0 ≤ r ≤ R0 , Equa-
+tion (17.88) with preliminary loss ϵ0 has exponent
+                                                                                            
+          1 + 5(1 + c)r                         5cR0                                    1 + 5r
+ max 1,                    + (1 + r)ϵ0 ≤ e(r) +      + (1 + R0 )ϵ0 ,    e(r) = max 1,            .
+                 6                                6                                       6
+
+For a requested loss ϵm > 0, take, for example, c = 3ϵm /(10 max{R0 , 1}) and ϵ0 = ϵm /(4(1+R0 )).
+These are fixed before U , and the two extra terms are at most ϵm /2. Thus division by the inverse
+witness spike gives
+                                  #B ≪ U e(r)−δr+ϵ (1 + T1 )AA ,
+                                        (
+                                          1 − δr,             0 ≤ r ≤ 1,                    (19.3)
+                            e(r) − δr =
+                                          1 − α + (α − δ)r, r ≥ 1.
+In particular this is not an application of the strict marked moment with the shrinking margin
+1 − r.
+
+Cases requiring no selected primes. We first dispose of the cases in which a witness already
+gives the required count without selecting primes. For r ≥ 1, Equation (19.3) uses effective
+moment exponent (1 + 5r)/6 = 1 − α + αr. Division by the inverse spike gives 1 − α + (α − δ)r.
+Because δ ≤ α and r ≤ t + O(ϵ), this is at most
+
+                        L(t) = 1 − α + (α − δ)t = 1 − δ + (α − δ)(t − 1)                   (19.4)
+
+up to O(ϵ). This includes r = 1, where the two branches in Equation (19.3) agree. If m ≥ 1/2,
+the zero-slot case of Lemma 18.1 gives count exponent 1 − 2δm ≤ 1 − δ. Since Rshort (t) ≥ 1 − δ,
+this also satisfies the stated bound. We may therefore assume for the remaining argument that
+
+                                      r < 1,     m < 1/2.
+
+Both capacities zM (r) and zP (m) are then positive; when either is too small for the fixed decre-
+ment, we will use its unweighted estimate below.
+
+Comparing the positive capacities. For the inverse capacity zM (r), the resulting ideal
+exponent is AI (r) below. To compare the plain exponent first replace zP (m) by its value at
+∆ = 0, namely 2(1 − 2m)/9. Since the actual m is at least t − r − O(ϵ), the resulting ideal
+comparison exponent is
+
+                           AI (r) = 1 − δ{x + (1 − x)r},
+                                                                                           (19.5)
+                                                               
+                                            4x        8x
+                           St (r) = 1 − δ      + 2−        (t − r) .
+                                             9         9
+
+
+
+                                               184

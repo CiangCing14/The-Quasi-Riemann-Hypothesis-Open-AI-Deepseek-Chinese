@@ -1,0 +1,66 @@
+The same bound holds if the cutoff is below one. Taking A large makes this an arbitrary negative
+power error.
+   In the remaining sum write a = a0 s, with a0 good and s supported on S, and choose one
+generator s0 for each fixed s. Equations (9.3) and (9.4) give the separated factors
+                                  (j)
+                               Ψb,c (a0 s) = Fb (a0 )j Fc (a0 )j χb (s0 )j χc (s0 )j .
+
+All χb (s0 ) have modulus one. Split a0 into shells a0 ∈ IH , where H ≪ ZN 2 /(M qs ), and insert
+Mellin inversion for W on ℜw = δ. Apart from a bounded factor depending on M, qa0 , qs , the
+two coefficient sequences are
+                                           −1/2+δ+it                                      −1/2+δ+it
+              Ab = λb γj (b)χb (s0 )j qb               ,        Bb = λb γ−j (b)χb (s0 )j qb           .
+They are fixed across the a0 sum and have absolute values ≪ N −1/2+δ |λb |. Detecting (b, c) = 1
+by Möbius inversion and applying Cauchy in a0 gives
+
+              X       X
+                              Ab Bc Fb (a0 )j Fc (a0 )j
+             a0 ∈IH b,c∈AN
+                    (b,c)=1
+                                                 1/2          1/2
+                                X        X              X
+                ≤ Ej (H, N )              |Ab |2       |Bb |2  ≪ N −1+3δ Ej (H, N ).
+                                 d        d|b                   d|b
+
+Here the divisor bound absorbs the sum over d. Conjugating the entire first polynomial uses
+the same Ej norm. The factors with H < 1 have just the unit evaluation ideal and satisfy
+Ej (H, N ) ≪ N . There are only a fixed power of log(2 + ZN 2 ) choices of s and of the dyadic
+shell, because S is fixed and a nonzero Qj has M bounded below. Equation (9.5) integrates the t
+variable. Choosing δ sufficiently small in terms of ε proves Equation (9.7), including the allowed
+global loss on its M term.
+    We now apply this paired estimate to Ej . Partition its inner sum by t, insert W , and open the
+square. Write the two squarefree indices as db, dc, where d is their gcd, (b, c) = 1, and (d, bc) = 1.
+Their residual classes agree because t is multiplicative. Index multiplicativity and Equation (9.3)
+give on every good a
+                                                                 (j)
+                                  Fdb (a)j Fdc (a)j = 1(a,d)=1 Ψb,c (a).
+           Q
+Let sS = p∈S p. Möbius inversion for (a, sS d) = 1 writes a = ra with r | sS d. Choose one
+generator r0 of each fixed r. The value of Ψ at r separates as χb (r0 )j χc (r0 )j , so the common
+residual sequence is
+                              λ′b = λdb 1(b,d)=1 χb (r0 )j ,  |λ′b | ≤ |λdb |.
+It is supported on AN/qd in one class. Apply Equation (9.7) with lengths M/qr and N/qd . The
+summed coefficient mass is at most
+                XXX                           X
+                           |λdb |2 ≤ dO (sS )   dO (m)2 |λm |2 ≪S,δ (2 + N )δ ∥λ∥22 .
+                  d r|sS d b                           m
+
+Writing ∆r = qr and ∆d = qd , we have 1 ≤ ∆d ≤ 2N and 1 ≤ ∆r ≤ qsS ∆d . We obtain the
+recursive interface
+                                                          
+                                           ε                M
+                Ej (M, N ) ≪S,ε (2 + M N )      max
+                                              1≤∆d ≤2N      ∆r
+                                             1≤∆r ≤qsS ∆d
+                                                                                 (9.8)
+                                                                              
+                                                                              
+                                 M ∆d                                         
+                               +                   max           Ej (H, N/∆d ) .
+                                  N ∆r             1≤H                        
+                                                       ε 2     2
+                                                                              
+                                                H≪S,ε (2+M N ) N ∆r /(M ∆d )
+
+
+                                                           64

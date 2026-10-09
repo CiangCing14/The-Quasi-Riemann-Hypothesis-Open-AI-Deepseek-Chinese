@@ -1,0 +1,27 @@
+参考文献
+
+ [1] S. Baier and A. Bansal, The large sieve with power moduli for Z[i], International Journal of Number Theory 14 (2018), no. 10, 2737–2756. doi:10.1142/S1793042118501658; arXiv:1802.08964.
+
+ [2] V. Bhargava, G. Ivanyos, R. Mittal, and N. Saxena, Irreducibility and deterministic r-th root finding over finite fields, Proceedings of the 2017 ACM International Symposium on Symbolic and Algebraic Computation (ISSAC 2017), ACM, 2017, 37–44. doi:10.1145/3087604.3087620; author manuscript.
+
+ [3] K. Billington, M. Cheng, J. Schettler, and A. I. Suriajaya, The average number of Goldbach representations and zero-free regions of the Riemann zeta-function, International Journal of Number Theory 21 (2025), no. 2, 289–316. doi:10.1142/S1793042125500150; arXiv:2306.09102.
+
+ [4] V. Blomer, L. Goldmakher, and B. Louvel, L-functions with n-th-order twists, International Mathematics Research Notices 2014 (2014), no. 7, 1925–1955. doi:10.1093/imrn/rns257; arXiv:1112.1650.
+
+ [5] Clay Mathematics Institute, Riemann Hypothesis, Millennium Prize Problems, https://www.claymath.org/millennium/riemann-hypothesis/.
+
+ [6] C. David, A. de Faveri, A. Dunn, and J. Stucky, Non-vanishing for cubic Hecke L-functions, preprint, arXiv:2410.03048v2 (2026). arXiv:2410.03048.
+
+ [7] P. G. L. Dirichlet, Beweis des Satzes, daß jede unbegrenzte arithmetische Progression, deren erstes Glied und Differenz ganze Zahlen ohne gemeinschaftlichen Factor sind, unendlich viele Primzahlen enthält, Abhandlungen der Königlichen Preussischen Akademie der Wissenschaften zu Berlin (1837), 45–81. English translation by R. Stephan, arXiv:0808.1408.
+
+ [8] A. Dunn and M. Radziwiłł, Bias in cubic Gauss sums: Patterson’s conjecture, Annals of Mathematics 200 (2024), no. 3, 967–1057. doi:10.4007/annals.2024.200.3.3; arXiv:2109.07463.
+
+ [9] J. B. Friedlander and D. A. Goldston, Sums of three or more primes, Transactions of the American Mathematical Society 349 (1997), no. 1, 287–310. doi:10.1090/S0002-9947-97-01652-8.
+
+[10] S. D. Galbraith, Mathematics of Public Key Cryptography, Cambridge University Press, 2012. doi:10.1017/CBO9781139012843. 章节和算法引用使用作者扩展并更正后的 2.0 版，第 2 章。
+
+[11] P. Gao and L. Zhao, Moments of quadratic Hecke L-functions of imaginary quadratic number fields, Journal of Number Theory 209 (2020), 359–377. doi:10.1016/j.jnt.2019.09.002; arXiv:1707.00091.
+
+[12] P. Gao and L. Zhao, Moments and one level density of sextic Hecke L-functions, Functiones et Approximatio Commentarii Mathematici 70 (2024), no. 1, 7–28. doi:10.7169/facm/2057; arXiv:2201.01885.
+
+[13] L. Goldmakher and B. Louvel, A quadratic large sieve inequality over number fields, Mathematical Proceedings of the Cambridge Philosophical Society 154 (2013), no. 2, 193–212. doi:10.1017/S0305004112000370; arXiv:1112.1642.

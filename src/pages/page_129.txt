@@ -1,0 +1,66 @@
+terms now restored to unify the formula carry this identical mask. Their absolute contribution
+is bounded by the full principal restoration already estimated.
+    Remove the condition (u1 , u2 ) = 1 by
+                                    X
+                   1(u1 ,u2 )=1 =        µ(t′ ),   ui = t′ xi , t = logZ qt′ .
+                                                                b
+                                      t′ |(u1 ,u2 )
+
+Let t be its fixed nonnegative center. This inversion is made after the cross phases have been
+replaced by the fixed ray functions above. Those functions, the unchanged outer mask B1 , all
+remaining zero-extended local factors, and the formal product qu1 qu2 qR1 in the smooth kernel
+define an expression also for noncoprime u1 , u2 . It agrees with Poisson summation on the co-
+prime support; the displayed divisor identity then recovers exactly that support. No primitive
+Poisson formula is asserted for the newly introduced noncoprime pairs. Squarefreeness retains
+the puncture (xi , t′ ) = 1. Assigned slots at t′ are outer coefficients, while the other slots form
+the mark on xi .
+    Insert dyads of qh from one fixed partition common to all f, E, not partitions recentered for
+those labels. The mask B1 implies qh ≤ qhf 2 E ≤ Z Huse , so there are only logarithmically many
+such dyads in the bounded retained scale range. Keep B1 outside every Fourier inversion. Define
+               si = r − Ai − B − t,              κi = M − 2r − 2ℓ − V − δ + Ai + B − R/2.
+The identity ni = Ai Ct′ xi on the factorized expression gives |b
+                                                                xi − si | ≤ 4η. The full fresh xi -
+support is included in ID , so this same bound holds directly on that support after separation,
+not only on the original product support. The reconstructed formal products used in the current
+prefactor are also included there.
+
+Separating the first transformed product. We record the actual prefactor before applying
+Cauchy. It splits exactly over the two column sides as
+
+     Z −r−2ℓ−V Z M −δ−L1 /2 = Z κb1 /2 Z κb2 /2 ,       bi = M − r − 2ℓ − V − δb − n
+                                                        κ                          bi + A    b − R/2.
+                                                                                        bi + B
+                       b b                                                                       b
+
+Equation (17.18) gives on each side
+                                                      bi ≤ κi + 29 η.
+                                                      κ                                                   (17.27)
+The five error weights are 1, 1, 1, 1, 1/2. We now implement this normalization with all real
+inverse roots in one joint profile. Fix a first dyadic, ray, and slot pattern σ, and let h1 be the
+center of its bare-h dyad. Use the nine independent normalized coordinates
+                                                           q
+                                                              A1   qA2 qC qdk qR1 qt′ qh qx1 qx2 
+   y = (yA1 , yA2 , yC , yd , yR , yt , yh , yx1 , yx2 ) =       ,    ,  ,   ,   , ,      ,    ,     .
+                                                            Z A1 Z A2 Z B Z δ Z R Z t Z h1 Z s1 Z s2
+The exact full root and kernel argument on the formal ua = t′ xa expression are
+                         Z −r−2ℓ−V Z M                          −1/2
+                         √       √        = Z (κ1 +κ2 )/2 yd−1 yR yt−1 (yx1 yx2 )−1/2 ,
+                      qdk qR1 qt′ qx1 qx2
+                                Z M qh                         yh                                         (17.28)
+                                    2          = Aker,1                   ,
+                           qdk qR1 qt′ qx1 qx2          yd yR yt2 yx1 yx2
+                                      Aker,1 = Z M +h1 −δ−R−2t−s1 −s2 .
+Choose fresh cutoffs ωx,a equal to one on the old W -support divided by the individual Aa , C, t′
+supports, and retain them in the columns. Retain every current outer dyad cutoff outside inver-
+sion. Let Ω1,α be larger cutoffs equal to one on the full supports of these retained cutoffs. With
+K1 = FΦ, define the single compact profile
+                                                −1/2
+                             Y
+          H1,σ (y) = Z −9η/2    Ω1,α (yα )yd−1 yR yt−1 (yx1 yx2 )−1/2
+                                 α
+                                                                                                        (17.29)
+                                                                                     yh
+                        × W (yA1 yC yt yx1 )W (yA2 yC yt yx2 )K1 Aker,1                               .
+                                                                              yd yR yt2 yx1 yx2
+
+                                                           129

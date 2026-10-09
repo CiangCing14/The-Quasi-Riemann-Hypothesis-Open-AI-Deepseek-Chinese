@@ -1,0 +1,52 @@
+Part I
+The quasi-Riemann hypothesis
+3     A first zero-free half-plane
+We first prove a fixed zero-free half-plane using the basic completed cubic-theta sum. This
+isolates the mechanism that excludes zeros before the additional estimates needed for the sharper
+boundary are introduced.
+                                                                                            √
+Theorem 3.1 (The 11/12 half-plane). Every finite-order Hecke L-function over F = Q( −3)
+has no zero in ℜs > 11/12. The same holds for every Dirichlet L-function, including ζ(s). A
+pole at s = 1 for a principal character is allowed.
+    For the Hecke assertion, suppose for contradiction that
+                                                     11
+                                       ∆1 := β∗ −       > 0.                                  (3.1)
+                                                     12
+The proof will construct one character sum with two exact representations. Cubic-theta reflection
+bounds the sum after an elementary additive large-sieve estimate. Poisson summation expresses
+the same sum as a principal Mellin signal and a family of remaining character rows. A zero
+detector and the sextic large sieve control those rows. These estimates verify Proposition 2.1
+with boundary 11/12.
+   The fixed family in Equation (2.1) is essential even when the desired consequence concerns
+ζ: the Poisson representation introduces finite-order Hecke twists of the target. Proving the
+family-wide assertion also supplies the precise input used at the beginning of Part II.
+
+
+4     Arithmetic and analytic preliminaries
+The two parts use the same arithmetic conventions and analytic estimates. This section fixes the
+residue symbols, retaining their zero values even for principal powers, and proves the Gauss and
+reciprocity identities used to transform character sums. It then establishes a calculus for smooth
+norm profiles and uniform bounds for a Hecke L-function on a disk known to be zero-free. These
+are the common preliminaries for the balanced argument.
+
+4.1    Arithmetic notation and coefficient classes
+          √
+Let F = Q( −3), let ω = e2πi/3 , and put
+                                               √
+                          O = Z[ω],       λ=    −3 = ω − ω 2 = 1 + 2ω.
+
+For an element a write qa = |a|2 = NF/Q (a), and for a ̸= 0 write α(a) = a/|a|. The same notation
+qa denotes the norm of√a nonzero ideal. The ring O is Euclidean for this norm: a point of C is
+at distance at most 1/ 3 < 1 from the triangular lattice O, which gives Euclidean division. In
+particular every ideal is principal. The six units are {±1, ±ω, ±ω 2 }, and their images are the
+six units of O/3O. Consequently every ideal coprime to 3 has a unique generator congruent to
+1 (mod 3); we call this generator primary. Products of primary generators are primary.
+    In the character-polynomial estimates below, a row is an outer index for a character polyno-
+mial, while a column is an ideal index, or a tuple of ideal indices, summed inside it. A label is an
+auxiliary index distinguishing parts of the family. Whether a label is averaged or locally frozen
+refers to the current sum; freezing it does not make it part of the fixed arithmetic datum.
+    For the arithmetic datum in any given invocation, fix from the outset a finite set S of prime
+ideals containing the primes above 6 and the prime supports of the defining moduli of every finite-
+order character presentation in that datum and of the fixed finite ray group used to present them.
+
+                                                10

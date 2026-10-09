@@ -1,0 +1,57 @@
+    The parameter π has an independent quantifier. Let Jstep be the maximum number of uses of
+a free divisor or sieve exponent and of logarithmic dyadic-count factors in one fixed two-Poisson,
+two-Cauchy factorization tree, maximized over the finitely many assignments with at most the
+fixed slot bound. Once Lpow bounds the log-length of every scale product in such a use, choose
+each free input exponent at most π/(2Jstep max(1, Lpow )). For sufficiently large Z, the product
+of the at most Jstep logarithmic factors is at most Z π/2 . These choices make all non-center,
+non-frequency local losses at most CZ π . They include the retained common frequency dyads
+and the reconstruction divisor bounds. In particular the distinct allocations πβ , πold , πcount , πfib
+and the finite-union dyadic allocation are parts of this single aggregate, not repeated allowances
+of size π. Fixed ray sums and fixed seminorm constants are constants. The same convention
+defines the aggregate terminal loss πref . In particular π hides no multiple of η or τ .
+    This proves the conditional reduction estimate (17.17), including its common-measure and
+finite-order uniformity once the choices below are made. It remains to fix those choices uniformly
+and apply the reduction through the finite depth.
+
+Order of choices and termination. For the requested canonical exponent ϵc = ϵ, first fix
+the starting ranges, tests, slot bound, c∗ , and then d, D as at the beginning of the proof. Choose
+
+                   η ≤ min{d/16, c∗ /(14D), ϵc /(160D), c∗ /1000, 1/100},
+                                                                                               (17.66)
+      τ ≤ min{ϵc /(4D), c∗ /1000, 1/100},        π ≤ ϵc /(4D),      τref , πref ≤ c∗ /1000.
+
+Use this same τ in both Poisson comparisons. At this point π is a target aggregate loss; its
+subsidiary input exponents are chosen only after the bounded scale range is known.
+    Choose the individual cutoffs through depth D, including every full larger or fresh support
+and the bounded clipping families described above, and form ID , Lwin . Include the product
+intervals for the active slots and the terminal constants Cres , Cwidth , Cker , maximized through
+the depth. This is finite because there are finitely many factorization types per passage and
+finitely many passages. Put
+
+         Fmax = Nmax + Vmax + 11Dη,           Lall = 100(1 + Mmax + Fmax + z0,max + c∗ ).
+
+These bound all retained scale lengths. Indeed, Equation (17.52) and the bound following it give
+M ≤ Mmax and N, V ≤ Fmax . A nonempty column window has r ≥ −η, so ℓ ≤ (Fmax + η)/3.
+The displayed parent products bound every extracted divisor length by 2Fmax + 6η. For example
+dk | C rad(b1 b2 ) gives δ ≤ r+2ℓ+4η, and Equation (17.26) then gives Huse ≤ 7Fmax +18η+τ . The
+terminal active conductor is supported on the row, f , the puncture, and slots; their total lengths
+are at most Mmax + 2Fmax + z0,max plus the already displayed ratio allowances. Equations (17.11)
+and (14.11) bound the retained terminal dual lengths by 4Mmax +4Fmax +2z0,max +3d+12η +τref .
+Under Equation (17.66), all these bounds and the exact conductor product lengths are below
+Lall . We may now take Lpow = Lall and choose the subsidiary small exponents that realize π
+and πref .
+     Define Bcrude to be the maximum exponent obtained by replacing every bounded nonfre-
+quency ideal or element sum in either raw Poisson expansion, including both column sums,
+by its lattice count at length Lall , and every explicit norm factor, including 1 + a−1 in Equa-
+tion (17.21), by its absolute upper bound. Replace divisor-bounded coefficients and marks by
+their trivial polynomial norm bounds as well. Exclude only the frequency kernel itself. The
+expansions contain a fixed finite number of factors, so this defines a finite uniform number.
+     For the reflected tail define Bref analogously using its bounded row, local, and active-product
+counts and 1 + a−1 with a = X/qc2 . Do not count discarded dual indices at a retained length.
+Instead, Equation (5.2) gives on its support
+
+                         |d(µ)|      −k/3               4/3
+                          √     ≤ 27qλ qn−1/2 qb−1 ≤ 27qλ          (k ≥ −4).
+                            qµ
+
+                                                 141

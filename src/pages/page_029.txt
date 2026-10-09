@@ -1,0 +1,73 @@
+The character pairing furnished by e is nondegenerate on O/(p). Changing variables in a Gauss
+sum, and using the orthogonality of a nontrivial multiplicative character, gives
+                                    
+                                       −1/2 −
+                                    
+                                    
+                                    qp τp,j    χp (h)−j , j ̸= 0, h ̸= 0,
+                                    
+                                    0,                    j ̸= 0, h = 0,
+                         Cp,j (h) =      −1
+                                                                                        (5.11)
+                                    
+                                    
+                                    −qp ,                 j = 0, h ̸= 0,
+                                    1 − q −1 ,
+                                    
+                                                           j = 0, h = 0.
+                                           p
+
+Here and below h = 0 means h ≡ 0 (mod p). Each nontrivial power of χp is primitive modulo
+                                                                  ± | = 1.
+the prime p, so the usual finite-field Gauss-sum identity gives |τp,m
+    Fourier inversion on O/(L) and on each O/(p) now gives
+                                                         !!
+          Y             X                      X                               Y
+                    jp
+     ϕ(x)     χp (x) =      C(h)e x h0 /L +        hp /p    ,     C(h) = ϕ(h
+                                                                          b 0)   Cp,j (hp ).
+                                                                                         p
+           p             h                       p                                   p
+
+This uses every additive frequency, including nonunit h0 and zero local frequencies. We do not
+invoke the twisted formula in [8, Lemma 5.2 and Corollary 5.1], whose unit-Fourier-support
+hypothesis need not hold for these masks. The theta function with this multiplier on its infinity
+coefficient x = λ3 µ ∈ O is the finite sum
+                                                                             !
+                           X                                        X
+                                                         2
+                F(z, v) =      C(h)θ̄(z + zh , v), zh = λ h0 /L +       hp /p .            (5.12)
+                             h                                               p
+
+For an isolated infinity index x = nb3 , the piecewise definition of ϕ first discards every term for
+which (nb, E) ̸= 1. This is a mask on the whole completed index: (nb3 , E) = 1 if and only if
+both n and b are E-units. Only on that remaining domain do we use complete multiplicativity,
+including χb (λ)6 = 1, to write
+                            Y
+                    ϕ(nb3 )   χp (nb3 )jp = χn (λ)2 Ψ(n)Ψ(b)3     ((nb, E) = 1).
+                             p
+
+It remains true when n, b share a moving prime, since the corresponding local powers retain their
+zero values, including for jp = 0. For the discarded terms the completed coefficient is defined
+to be zero directly; no value of χn (λ) is evaluated there. Combining Equations (5.9) and (5.10)
+on the retained domain now identifies the direct Mellin series with the product T . The dual
+coefficient functions dH keep the full source support in Equation (5.2); no S-mask is placed on
+them.
+    Fix h0 and declare p active precisely when hp ̸= 0. Equation (5.11) forces all primes with
+jp ̸= 0 to be active. Choose once for each h0 mod L a representative and a reduced expression
+λ2 h0 /L = aF /cF . Multiplying numerator and denominator by one unit, normalize the numerator
+to be 1 (mod 3) if λ | cF and the denominator to be 1 Q     (mod 3) otherwise. Since every active
+prime is primary, this unit depends only on h0 . For r = p active p, Equation (5.12) then gives
+                             a                                     X
+                      zh =     ,   c = cF r,    a = aF r + λ2 cF         (r/p)hp .           (5.13)
+                             c
+                                                                   p|r
+
+At a prime dividing cF , the numerator is congruent to aF r and is a unit. At p | r, it is congruent
+to λ2 cF (r/p)hp and is again a unit. Thus this fraction is reduced, even when h0 is a nonunit
+modulo L. The empty product r = 1 is allowed. Replacing any lift by another changes zh by an
+element of λ2 O = 3O, a period of θ.
+   Choice of the cusp matrix and its multiplier. The next construction determines the automor-
+phy multiplier and reflected additive phase for each reduced cusp fraction just obtained. Set
+
+                                                29

@@ -1,0 +1,57 @@
+The second Cauchy inequality and the outer counts. Apply Equation (D) to the second
+transformed sum with Ua = Z (λc +18η+τ )/2 Qa,γ,ζ on the complete set Ξσ , for each fixed Fourier
+mode. In particular B2 , |Bo |2 , |Do |2 , and 1(v′ ,g′ CJ)=1 are still in its weight. They retain the
+squarefreeness of fnew proved above. All other factors in the weight are bounded by a fixed
+constant, including the bounded number of original assigned slot coefficients, the fixed ray coeffi-
+cient, the individual cutoffs, and the unit modes. Consequently, only after Cauchy, the absolute
+weights obey
+                                    |Vσ (ξ; ζ)| ≪ B2 (k ′′ )µ2 (fnew ).
+This is the step which permits the new averaged ideal to remain in the squarefree class.
+   We first record the exact reconstruction needed to dominate a fibre.
+
+                                 dk | CB/R1        =⇒       dk | fnew rad q0 .                     (17.59)
+
+To prove this, a prime of B/R1 has tp = 0. The local table shows that it has even parity and
+equal aip . If both are one it is in J2 , and if both are zero it is in rad q0 . Primes of C are already
+in fnew . This proves the implication. Thus dk also has divisor multiplicity after fnew , q0 are
+specified. Once these factors are fixed, k ′′ is uniquely determined by the element knew = dk d2 k ′′ .
+    Let Kslot bound the original number of slots. At fixed γ = (q0 , t′ , rg ), squarefree f = fnew ,
+and element k = knew , the number of possible ξ ∈ Ξσ with nonzero weight is at most a fixed
+constant times DKslot (f )CKslot (γ), where
+
+                         DKslot (f ) = dO (f )9+4Kslot ,
+                                                                                                   (17.60)
+                          CKslot (γ) = dO (q0 )5+2Kslot dO (t′ )2Kslot dO (rg )2Kslot ,
+
+Here and below dO denotes the ideal divisor count. For completeness, the ordered allocation
+of f into J, C, d2 , v ′ costs 4ω(f ) = dO (f )2 , and splitting J = sJ2 costs at most dO (f ). The
+choices of b1 , b2 with b1 b2 = q02 J22 s cost at most dO (q0 )2 dO (f )3 ; the two choices Aa | rad(b1 b2 )
+cost at most dO (q0 )2 dO (f )2 . These estimates use dO (IJ) ≤ dO (I)dO (J) and dO (I 2 ) ≤ dO (I)2 .
+Equation (17.59) costs at most dO (q0 )dO (f ) choices for dk . Then g ′ = d2 rg is fixed, and k ′′ =
+k/(dk d2 ) is the unique element if it is integral. The at most 2Kslot old assigned primes divide
+q0 f t′ , so their choices cost at most [dO (q0 )dO (f )dO (t′ )]2Kslot . The at most 2Kslot new assigned
+primes divide f rg , and cost at most [dO (f )dO (rg )]2Kslot . The other first side’s surviving slots
+disappeared on selecting the first positive side; the selected surviving slots occur twice in its
+new square, exactly as counted here. Thus the displayed product dominates the fibre even if its
+actual size depends on k. There is no count of the old f, h, no independent count of J, C, d2 , v ′ ,
+and no second frequency count.
+     Equation (17.34) and the same source witnesses place Γσ inside the product of the three norm
+balls
+                        qq0 ≤ Z ℓ+R/2−j+5η/2 ,      qt′ ≤ Z t+η ,        qrg ≤ Z g−θ+2η .
+We use these balls only to bound the number of distinct triples, not as a replacement domain for
+the child estimate. Ideal counting gives
+
+                   #Γσ ≤ CZ Cc +11η/2+πcount ,           Cc = ℓ + R/2 − j + t + g − θ.             (17.61)
+
+Here πcount is part of the separately chosen aggregate π. In a nonempty sector each upper
+exponent of these three balls is nonnegative, since it bounds the norm of an existing ideal;
+the constant term in ideal counting therefore adds no boundary power. In particular J is not
+counted here. The ranges of all three ideals are bounded, so the adjustable divisor bound gives
+CKslot (γ) ≪ Z πfib uniformly on the containing balls. Put cσ = Cc + 11η/2 and introduce the
+genuinely row- and label-independent measure
+                                     X
+                     dνσ (γ) = Z −cσ    CKslot (γ)δγ ,  ∥νσ ∥ ≪ Z πcount +πfib .        (17.62)
+                                        γ∈Γσ
+
+
+                                                      139

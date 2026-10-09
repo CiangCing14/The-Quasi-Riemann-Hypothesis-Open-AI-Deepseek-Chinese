@@ -1,0 +1,53 @@
+                          The Quasi-Riemann Hypothesis
+                                A Zero-Free Half-Plane ℜs > 7/8
+
+                                                OpenAI
+
+                                         30 September 2026
+
+
+                                               Abstract
+                                                                          √
+          We prove that all finite-order Hecke L-functions over Q( −3) and all Dirichlet
+      L-functions are zero-free in the half-plane ℜs > 7/8, with the principal pole at s = 1
+      allowed. In particular, the Riemann zeta function is zero-free in this half-plane, proving the
+      quasi-Riemann hypothesis.
+
+
+Contents
+1 Introduction                                                                                          4
+
+2 From a common signal to a zero-free half-plane                                                        8
+
+
+I   The quasi-Riemann hypothesis                                                                       10
+
+3 A first zero-free half-plane                                                                         10
+
+4 Arithmetic and analytic preliminaries                                                                10
+  4.1 Arithmetic notation and coefficient classes . . . . . . . . . . . . . . . . . . . . . .          10
+  4.2 Gauss sums and the finite reciprocity phase . . . . . . . . . . . . . . . . . . . . .            13
+  4.3 Smooth norm profiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         17
+  4.4 Growth and logarithmic control for Hecke functions . . . . . . . . . . . . . . . . .             21
+
+5 Completed cubic reflection and unmarked row energy                                                   24
+  5.1 The completed reflection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         24
+  5.2 Element rows and fixed sectors . . . . . . . . . . . . . . . . . . . . . . . . . . . .           34
+  5.3 Common profiles and lattice tails . . . . . . . . . . . . . . . . . . . . . . . . . . .          35
+  5.4 A quadratic norm for completed indices . . . . . . . . . . . . . . . . . . . . . . .             36
+  5.5 The unmarked reflected energy . . . . . . . . . . . . . . . . . . . . . . . . . . . .            38
+
+6 The base probe and its balanced low estimate                                                         45
+  6.1 Definition and separation of the two factors . . . . . . . . . . . . . . . . . . . . .           45
+  6.2 The balanced low estimate . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .          47
+
+7 The Poisson representation and its Euler factors                                                     50
+  7.1 The exact Poisson series . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .         50
+  7.2 The scalar Euler identity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        51
+
+8 A zero detector with saturated witnesses                                                             55
+  8.1 Buffered rectangles and pointwise bounds . . . . . . . . . . . . . . . . . . . . . .             55
+  8.2 Simultaneous saturated witnesses . . . . . . . . . . . . . . . . . . . . . . . . . . .           58
+
+
+                                                    1

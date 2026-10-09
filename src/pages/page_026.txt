@@ -1,0 +1,68 @@
+1. A term is specified by h0 mod L and a subset of active primes. Every Q      p with jp ̸= 0 is
+   active, while a prime with jp = 0 may be active or inactive. Write r = p active p. Then
+   c = cF r, where cF is the reduced denominator of λ2 h0 /L, with a normalizing unit. Thus cF
+   ranges over a fixed finite set and its prime divisors divide L. There are OL (2|P| ) terms, or
+   OL (4|P| ) after splitting each Ramanujan factor in the next display into its two summands.
+
+2. The local column factors are
+                             
+                                    −jp −2 ,               jp ̸= 0, 4,
+                             χp (x)
+                             
+                    Bp (x) = qp−1/2 (−1 + qp 1p|x ),       jp = 4,
+                              −1/2
+                             
+                                qp χp (x)−2 ,              jp = 0 and p is active.
+
+  The function d is one of three fixed cusp coefficient functions. Writing u for an Eisenstein
+  unit, their support and size satisfy
+
+       supp d ⊂ {uλk nb3 : k ≥ −4, n, b ≡ 1         (mod 3), n sf},              |d(µ)| ≤ 27 3k/6 |b|.   (5.2)
+
+  The bound refers to the displayed representation of a supported index. It permits common
+  primes of n and b, and it imposes no exclusion at the primes of L other than the displayed
+  restriction at λ. The character ϑ is an additive character of a quotient of O by a fixed
+  modulus depending only on L.
+
+3. The scalar ζ is independent of µ and satisfies |ζ| ≤ 1/81. Its moving-prime dependence can
+   be specified exactly. For m ̸≡ 0 (mod 6), put
+                                       X
+                          ±
+                         τp,m = qp−1/2    χp (y)m e(±y/p),          ±
+                                                                  |τp,m | = 1.
+                                     y mod p
+
+   For each active p, define units modulo p by
+                                                                          −1
+                              σp = λ2 c/p,         ϵp = − (λ3 c/p)σp             ,
+
+  and put                           − +
+                                                        −j−2 ,        j ̸= 0, 4,
+                                   τp,j τp,j+2 χp (ϵp )
+                                   
+                                     −
+                             ωp,j = τp,4 ,                            j = 4,
+                                   
+                                    +
+                                    −τp,2 χp (ϵp )−2 ,                j = 0.
+  The indices of τ are read modulo six. With M = λ12 L4 , there is a number κF of absolute
+  value one, depending only on h0 and the class of r modulo M 2 , such that
+                         i                      Y                     Y
+                  ζ=−      ᾱ(c)2 ϕ(h
+                                  b 0 )κ̄F            (1 − qp−1 )              χp (σp )−2 ωp,jp .        (5.3)
+                        81
+                                             p inactive             p active
+
+  In each of the finitely many classes of h0 and r mod M 2 , both d and ϑ are fixed. Conse-
+  quently these are common column factors within that sector. Apart from the displayed scale
+  qc2 , all other moving-prime dependence outside the Bp is in the scalar ζ, which may depend
+  on the whole active set.
+  The branch conventions are simultaneous for all local prime sets with the same L and Ψ0 .
+  In particular, if a good prime p is added to the local set with exponent zero and is declared
+  inactive, the resulting branch has the same cF , c, d, ϑ, κF , the same data at every other active
+  prime, and the same kernel as the branch in which p is absent. Its scalar is multiplied by
+  1 − qp−1 . This compatibility includes every h0 , not only the unit classes modulo L.
+
+
+
+                                                 26

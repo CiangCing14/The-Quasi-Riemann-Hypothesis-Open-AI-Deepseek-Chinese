@@ -1,0 +1,58 @@
+for a primitive nonprincipal inducing character ψ. To estimate a prime annulus of scale P ,
+apply Mellin inversion to a smooth von Mangoldt sum and move its contour to ℜs = sκ + e.
+There are no poles in the region of the shift, and the Mellin transform has arbitrary decay, so
+Equation (18.11) bounds the new integral by P sκ +e times a logarithm of the conductor and a
+fixed polynomial in the height. Prime powers of exponent at least two contribute O(P 1/2+ϵ1 ). For
+large P , dividing the annular weight by log(P y) replaces the von Mangoldt weight by the prime
+weight; its smooth seminorms are bounded on the annulus. Bounded P are estimated by absolute
+counting. Expand each positive-length coefficient in the characters ϑij from the statement. If the
+primitive inducing row character ψ ∈/ Θ made ψϑij principal, then ψ = ϑ−1        ij ∈ Θ, a contradiction.
+Thus every resulting slot character is nonprincipal on Rz .
+    After extra-mask erasure, fix a positive slot list and put W = (Wislot )i∈I . For normalized
+twist heights ω = (ωi )i∈I , define
+                                                                                   
+                         Y  −1/2 X                                                 
+                   Qω =         Pi         ψk0 (p)νi (p)Wislot (qp /Pi )(qp /Pi )iωi .
+                                                                                   
+                          i∈I          p prime
+
+For every ϵ1 > 0, central normalization and multiplication over this fixed list, with e and all
+subsidiary losses sufficiently small, give finite j, b, h ≥ 0 and a constant C such that
+
+                     |Qω |2 ≤ CZ κz+ϵ1 pj (W )b (1 + |ω|)h      (k ∈ Rz , z > 0).                (18.12)
+
+Here j may be rounded up to an integer and 2sκ − 1 = κ. The orders and C may depend
+on the fixed data, slot count, loss, and any fixed requested internal logarithmic or normalized-
+twist derivatives, but not on Z, moving labels, rows, or the numerical heights. The exponent
+κz + ϵ1 is independent of these derivative and height orders. Indeed, translate each pure twist
+in its Mellin variable before integration by parts. The weighted integral of the untwisted Mellin
+transform then contributes a finite seminorm and a fixed polynomial in ω, while the contour
+displacement contributes exactly 2ez to the squared exponent. Logarithmic derivatives remain
+annular, and normalized-twist derivatives insert only powers of the logarithmic profile variable.
+The redundant natural radical contains only O(log Z) primes, so deleting it changes a normalized
+             −1/2
+slot by O(Pi      log Z) times its fixed profile factor; this is within the stated power loss because
+Pi ≥ 1. For κ = 1, absolute prime counting gives Equation (18.12) without a zero-free assumption
+and with h = 0 for undifferentiated pure twists, whose modulus is one. For κ < 1 the hypothesis
+remains β∗ ≤ (1 + κ)/2. The choice of losses is uniform in κ ∈ [3/4, 1], since the length ranges are
+bounded. In every later use of Equation (18.12), its fixed seminorm and height factor is retained
+in the weighted Fourier estimates; it is not included in the exponent of Z.
+    We now specify the induction, including the estimates at its smallest widths. Choose a
+width floor ρ > 0, a width step σ > 0, and then δ > 0, all small in terms of the final ϵ,
+with δ ≪ min(ρ, σ). Precise loss choices will be made after the depth is bounded. Divide the
+bounded range of M into consecutive bands of length σ/4. Prove all zero-slot bands first, in
+increasing order of width, and then all positive-slot bands. Within a zero-slot band, first prove the
+uncentered assertion for A ≤ 5M/6, and then the padded core in Equation (18.10). Reflection
+then supplies all zero-slot lengths in that band. Within a positive-slot band, first prove the
+uncentered assertion for A ≤ 5M/6 subject to Equation (18.3), and then the remaining part of
+that region by centering. A completed earlier band therefore includes the unrestricted zero-slot
+assertion. Let Mmax bound the initial width range, and define
+
+                                        D = 2 + ⌈2Mmax /σ⌉ .
+
+The strict width decrease proved below will show that at most D − 2 nonterminal calls occur on
+a branch.
+   At M ≤ ρ, the padded zero-slot core follows from absolute counting: there are O(Z m ) rows
+and the squared product is O(Z A+ϵ1 ). Its exponent above M is at most A − q ≤ ρ + δ. For
+
+                                                  157

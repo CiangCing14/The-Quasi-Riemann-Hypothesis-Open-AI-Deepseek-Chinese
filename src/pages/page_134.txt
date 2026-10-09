@@ -1,0 +1,63 @@
+norms. For this preliminary pattern σ0 , the masked principal-restored nonzero component of
+Equation (17.33) is exactly
+                            X
+              T2,σ0 ,i =        wo+ ψg ψd2 ψk′′ µ(d2 )B2 (k ′′ )|Bo (g ′ )|2
+                               o∈Oσ , g ′ sf
+                               d2 |g ′ , k′′ ̸=0
+                                        X
+                                ×                     1(z1 ,z2 )=1 Lo,d2 ,k′′ (z1 )Lo,d2 ,k′′ (z2 )G([z2 ][z1 ]−1 )
+                                      z1 ,z2 sf                                                                         (17.41)
+                                    (z1 z2 ,g ′ )=1
+
+                                × dIi (g ′ z1 )dIi (g ′ z2 )Wi (qg′ qz1 /Z si )Wi (qg′ qz2 /Z si )
+                                                                       
+                                        K                    Kqk′′
+                                ×      √           K2                     .
+                                  qd2 qz1 qz2              qd 2 qz1 qz2
+
+Here brackets denote classes in the fixed finite ray group. Indeed the arithmetic part of ci (g ′ z)
+factors into Bo (g ′ ) and its residual µ(z) coefficient on (g ′ , z) = 1. The common row factor is the
+mask at g ′ , whose Poisson expansion gives the one divisor d2 , while the signal calculation above
+gives the displayed two L factors and ray quotient. The restored principal pair z1 = z2 = 1
+agrees by G(1) = 1. Its separate cost, and the raw complement removed before this formula,
+have already been bounded. Thus this is an equality for the specified component of the positive
+majorant, not for the original signed block.
+    Define the summand of Equation (17.41) on all individually admissible squarefree z1 , z2 by
+its displayed quotient-free L factors, fixed-ray quotient, formal product norms, full kernel, and
+unchanged B2 . It agrees with the genuine formula on coprime pairs. Insert the complete identity
+                                               X
+                                1(z1 ,z2 )=1 =       µ(v ′ ),      z a = v ′ na ,
+                                                          v ′ |(z1 ,z2 )
+
+before any factorwise estimate. Let v ≥ 0 be the center of the squarefree v ′ -dyad and vb = logZ qv′ .
+The na are squarefree, with (v ′ , na ) = 1; they need not be mutually coprime. No primitive Poisson
+formula is used on this extension. For squarefree v ′ put
+
+              Do (v ′ ; d2 , k ′′ ) = a0 (v ′ )νi (v ′ )ρ(v ′ )1(v′ ,r0 )=1 χv′ (Ho )4 χv′ (d0 )χv′ (d2 )χv′ (k ′′ ).
+
+On squarefree coprime v ′ , n, the exact extraction is
+                          Lo,d2 ,k′′ (v ′ n) = Do (v ′ ; d2 , k ′′ )a0 (n)νi (n)ρ(n)1(n,r0 )=1
+                                                                                                                        (17.42)
+                                                      × χn (Ho )4 χn (d0 )χn (d2 )χn (k ′′ )χn (v ′ )4 .
+
+This uses a0 (v ′ n) = a0 (v ′ )a0 (n)χn (v ′ )4 . On an overlap the right side defines the extension to be
+zero by χn (v ′ )4 , without evaluating a nonsquarefree Gauss sum. The two common factors give
+|Do (v ′ ; d2 , k ′′ )|2 , including the zero (v ′ , k ′′ ) = 1 and its fixed-puncture, d0 , and label zeros. They
+remain in the outer weight through Cauchy. The old gcd also leaves 1(v′ ,g′ )=1 . Since Do vanishes
+on (v ′ , CJ) > 1, we retain equivalently the explicit outer factor 1(v′ ,g′ CJ)=1 , which repeats that
+label zero.
+    Set rg = g ′ /d2 , knew = dk d2 k ′′ and fnew = JCd2 v ′ . All moving factors on n satisfy the
+complete zero-extended identity
+
+                       χn (dk )χn (k ′′ )χn (d2 )χn (CJ)4 χn (v ′ )4 = χn (knew )χn (fnew )4 .                          (17.43)
+
+It uses χn (d2 ) = χn (d2 )χn (d2 )4 , also on nonunits. The residual gcd with g ′ = d2 rg splits into
+the repeated zero at d2 and the fixed puncture at rg . The old punctures at q0 , t′ remain. If Cray
+denotes the fixed group through which G factors, put
+                                                        X
+                                      G(ϑ)
+                                      b     = |Cray |−1   G(c)ϑ(c).
+                                                                           c∈Cray
+
+
+                                                                      134

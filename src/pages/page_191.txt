@@ -1,0 +1,56 @@
+Equation (16.15) gives
+                                                           17/50
+                                                      Y
+                          |Hη,u,Z (s, w, z)| ≪ϵ U ϵ       Pi       = U ϵ Z 17ℓ/50 ,
+                                                      i
+
+uniformly in all imaginary parts. This is Equation (10.20), with height degree zero. It remains
+valid at zeros of individual local factors. The data for Lemma 10.6 were already verified above,
+so it applies to every physical row u ̸= 1 in these dyads. Its classification includes nontrivial
+unit numerators and permits a principal denominator; no detector witness or selected moment
+is used here.
+    The d-independent part of the relative exponent is
+                                              
+                                         17 1      ly      79
+                                     h      −    − =−         .                            (20.6)
+                                         50 6      2      800
+
+The row exponent in Equation (10.21) is 63/50 < 2. Thus the small dyadic sum in Equa-
+tion (10.22), measured relative to C(β∗ ), has exponent at most
+                              79                         63
+                          −       + 2dmin + O(e + ϵ) = −     + O(e + ϵ).
+                              800                        800
+It is negative after the adjustable real losses are made sufficiently small. Write msmall := 63/800
+for this fixed error-free saving.
+     For the large rows, fix z∞ > 2. On (ℜs, ℜw, ℜz) = (2, 2, z∞ ), the same Equation (16.15)
+gives
+                                    |Hη,u,Z (s, w, z)| ≪ϵ U ϵ Z ℓz∞
+for every physical row and all imaginary parts. This verifies Equation (10.23). Lemma 10.6
+therefore gives, with B0 = lx /2 + 1 + ly = 53/32,
+
+                                 |Rη (U ; Z)| ≪ Z B0 +hz∞ +ϵ U 1+ϵ−z∞ ,
+
+and, for every fixed ζ > 0 after choosing 0 < ϵ < z∞ − 1,
+                             X
+                                   |Rη (U ; Z)| ≪ Z B0 +(h+ζ)(1+ϵ)−ζz∞ +ϵ .
+                           U >Z h+ζ
+
+Here Rη is the row contribution of Lemma 10.6 for the present physical expression. A fixed
+sufficiently large z∞ makes the last exponent as negative as required. It is chosen after ζ but
+before the target. These invocations use the quotient-free tuple bounds in Section 16, not the
+central main/error factorization.
+
+20.4    The endpoint inequality
+We next bound E(h), first without adjustable losses or height factors. They will be restored with
+a quantified order of choices. Recall
+                                           3                     5
+                                      κ=     + 2∆,             α= .
+                                           4                     6
+At the live upper endpoint δ = α, take t = 3/2 in Proposition 8.3. Then r ≥ 1 − O(ϵ). Apply
+the no-slot amplified estimate in Equation (19.3) on both sides of r = 1. For r ≥ 1, its exponent
+is
+                                    1 − α + (α − δ)r = 1 − δ.
+For r < 1 in the stated O(ϵ) neighborhood, the same estimate uses e(r) = 1, so its exponent
+is 1 − δr ≤ 1 − δ + O(ϵ). The fixed amplification margin is independent of this neighborhood.
+
+                                                  191

@@ -1,0 +1,74 @@
+   Choose once a nonnegative W ∈ Cc∞ ((0, ∞)) with W ≥ 1 on [1, 2]. For the Fourier transform
+and self-dual measure in the arithmetic preliminaries, put w(z) = W (|z|2 ) and define W by
+
+                                            w(y)
+                                            b    = W (|y|2 ).
+
+The transform is radial, smooth at zero, and rapidly decreasing. Thus
+                                           Z
+                                  −A
+                 W (x) ≪A (1 + x) ,           |MW (σ + it)| dt < ∞ (σ > 0).                       (9.5)
+                                                 R
+
+Here M denotes the Mellin transform. The second assertion follows by integration by parts in
+the Mellin integral; all logarithmic derivatives are bounded at zero and rapidly decreasing at
+infinity. Scaling the Fourier transform gives M W (M |y|2 ) for z 7→ W (|z|2 /M ).
+    For bc ̸= 1, finite Fourier inversion for the primitive raw character is
+                             X        (j)                  (j)    √     (j)
+                                     Θb,c (v)e(vy/(bc)) = Θb,c (y) qbc Γb,c .
+                          v mod bc
+
+For a nonunit y the left side vanishes because one nontrivial local character is summed against
+the trivial additive character. For the stated e and dµ, the trace pairing on the basis (1, ω) has
+          0 1
+              
+matrix 1 −1 , of determinant −1, and the dµ-covolume of O is one. Thus the dual of bcO is
+(bc)−1 O, while the covolume of bcO is qbc . Coset Poisson summation, followed by division by the
+six generators of each ideal, therefore gives
+                                                  (j)
+                     X               (j)       M Γb,c X                   (j)
+                          W (qa /M )Ψb,c (a) = √           W (M qa /qbc )Ψb,c (a).                (9.6)
+                                                 qbc
+                     a̸=0                             a̸=0
+
+Both sums here are over all nonzero integral ideals. The division by six uses unit-triviality of
+ (j)
+Θb,c and radiality of the weight. The zero frequency vanishes since this character is nontrivial.
+Poisson transformation of the squared norm. For λ supported on one t-class in AN , set
+                                                               (j)
+                                        X         X
+                       Qj (M, N ; λ) =      λb λc   W (qa /M )Ψb,c (a).
+                                           b,c∈AN         a̸=0
+                                           (b,c)=1
+
+We claim, for every ε > 0,
+
+                 |Qj (M, N ; λ)| ≪S,ε (2 + M N )ε ∥λ∥22
+                                                                                         
+                                                                                                  (9.7)
+                                                                                         
+                                           M                                             
+                                  × M+                  max                  Ej (H, N )       .
+                                           N           1≤H                               
+                                                     H≪S,ε (2+M N ) N 2 /M
+                                                            ε
+                                                                                         
+
+The maximum runs over dyadic shells and is zero if empty. If N ≤ 1, only the unit good ideal
+can occur and the annular ideal count proves the M term. Also Qj = 0 when M is below a fixed
+positive constant, because W has a fixed upper support endpoint and nonzero ideals have norm
+at least one.
+     Suppose N > 1 and normalize ∥λ∥2 = 1. Then every pair in Qj is nontrivial and qbc ≍ N 2 .
+Apply Equation (9.6) and take the
+                                P triangle inequality over the dual ideals. For a small δ > 0 put
+Z = (2 + M N ) . Cauchy gives ( b |λb |) ≪ N . By Equation (9.5), the part with qa > ZN 2 /M
+               δ                        2
+
+is, for any A > 1, at most
+                                  X
+                            M            (M qa /N 2 )−A ≪ N 2 Z 1−A .
+                                 qa >ZN 2 /M
+
+
+
+                                                     63

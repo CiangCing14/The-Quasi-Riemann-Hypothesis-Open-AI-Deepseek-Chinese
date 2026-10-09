@@ -1,0 +1,61 @@
+Lemma 5.5 (Quadratic reduction for completed indices). Let K, N, B ≥ 1. Let I be any set of
+squarefree primary good ideals k with qk ≪ K. Let n range over squarefree primary ideals with
+qn ≍ N , and let b range over primary ideals with qb ≍ B. The ideals n, b may contain primes of
+S other than λ. Let β(n, b) be arbitrary complex coefficients independent of k. Fixed restrictions
+on I and fixed restrictions on the (n, b)-support are allowed.
+    Write uniquely b = gt2 with g squarefree, and set c = (n, g), n = cm, g = ch. Thus c, m, h
+are pairwise coprime and squarefree. Fix one set of dyadic ranges
+
+                         qc ≍ C,              qg ≍ G,              qt ≍ T,              B ≍ GT 2 ,
+
+where all comparison constants are fixed. Let QC,G,T (β) be the sum over k ∈ I of the squared
+absolute value of the (n, b)-sum restricted to this set of ranges, with summand β(n, b)χk (nb)3 .
+For a squarefree good ideal r and a fixed t, let Dr (t) be the set of triples (c′ , m, h) for which
+
+                                  c = rc′ ,       n = rc′ m,                  b = rc′ ht2
+
+belongs to the original support and to these ranges, with the stated squarefreeness and pairwise
+coprimality of c, m, h. Then
+                                                         
+                              X       X         K    NG C          X
+    QC,G,T (β) ≪ϵ (KN B) T ϵ
+                                                   + 2                     |β(rc′ m, rc′ ht2 )|2 .
+                                                qr    C     qr ′
+                              qt ≍T     r sf, (r,S)=1                                   (c ,m,h)∈Dr (t)
+                                        qr ≪min(K,C)
+                                                                                                          (5.27)
+
+Empty quotient ranges contribute zero; all bounded ranges, including the unit ideal, are included
+by the fixed comparison constants. Fixed ray sectors and bounded row scalars are permitted. In
+particular, if |β(n, b)| ≤ 1, then
+                                                          2
+                      X X
+                                  β(n, b)χk (nb)3             ≪ϵ (KN B)ϵ (K + N B)N B.                    (5.28)
+                      k∈I   n,b
+
+The constants may depend on the fixed support comparisons and on S, but are uniform in the
+coefficients and in the permitted support restrictions.
+Proof. The factorization b = gt2 permits g and t to share primes. Since nb = c2 mht2 , the zero
+convention gives the exact identity
+
+                                       χk (nb)3 = χk (mh)3 1(k,ct)=1 .                                    (5.29)
+
+Indeed a square has sixth power under the displayed quadratic character; this is one on units
+and zero at a collision. The identity therefore also holds when n or g shares a prime with t.
+   For the chosen ranges there are O(T ) possible t. Hilbert-space Cauchy gives
+                                                      2
+                                          X                         X
+                                                 Ft       ≪T                ∥Ft ∥22 .
+                                         qt ≍T                      qt ≍T
+                                                      2
+
+Fix t in the positive sum. The condition (k, t) = 1 is now a fixed row restriction. For the
+remaining condition use the full identity
+                                                 X
+                                      1(k,c)=1 =   µ(r).
+                                                               r|(k,c)
+
+For each k the number of possible r is at most dO (k). Rowwise Cauchy followed by summation
+over k costs (KN B)ϵ and gives a positive sum over fixed squarefree good r. Write k = rk ′ and
+
+                                                              37

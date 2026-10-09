@@ -1,0 +1,60 @@
+After multiplication by Qxr , the strict term of the local table has exponent at most 1 − wr = 1/2;
+for j = 1 it also contains the factor V . The exponents of the boundary terms Jj , in order
+j = 1, . . . , 5, are
+                                                        
+                       1  3             3
+                      − ,   − 2xr ,       − 2xr , 2 − 3xr , 2 − 3xr , 3 − 5xr .
+                       2  2             2
+
+They are bounded above by −1/2, −1/4 − 2e, (−1/4 − 2e, −5/8 − 3e), −5/8 − 3e, −11/8 − 5e,
+respectively. The common R term has exponent 4−5xr −6zr ≤ −483/200−5e. All further terms
+in the geometric families decrease these powers, since |R| ≤ Q−329/100−6e and |V | = Q−51/25 .
+Finally Q−w Hp = O(Q−1/2 ). Hence Gp ≪ Q1/2 on u, also at a zero of Hp .
+    The labels dividing u are divisor-many, while a slot contains O(Pi ) ideals. Its positive sum
+is therefore
+                                                                     z −1/2
+                     X
+                          |Wi (qp /Pi )|qpzr −1 |Gp | ≪ Pizr + U ϵ Pi r     ≪ U ϵ Pizr .   (16.16)
+                   p∈Pi (Z)
+
+Using the positive majorant for the unselected product and distributing the requested ϵ among
+the fixed number of slots proves Equation (16.15) on the first lines.
+     Now fix xr = wr = 2 and zr = z∞ > 2. For a selected prime off u, the four exponents
+in Equation (16.8) are −2, −6z∞ , −6 − 6z∞ , −1 − 6z∞ , so Gp = Oz∞ (1). On u, the strict
+term after multiplication by Qxr has exponent at most 1 − wr = −1. The boundary exponents
+are −2, −5/2, (−4, −4), −11/2, −7, the common R exponent is −6 − 6z∞ , and |R| = Q−8−6z∞ ,
+|V | = Q−6z∞ . The rescaling term is O(Q−2 ). Thus Gp = Oz∞ (1) on u as well. A positive slot
+sum is consequently Oz∞ (Piz∞ ). Together with Equation (16.5), this proves Equation (16.15) on
+the second lines.
+
+   Equation (16.7) supplies the full high representation of the physical function just bounded
+on the low side. Proposition 16.1 controls the error factors jointly with the numerator, and
+Lemma 16.2 supplies the bounds on the remaining contour lines. The main factors are the prime
+polynomials displayed in Proposition 16.1. To count rows on which those factors and a detector
+witness are large, we next prove the inverse and fourth-moment estimates used in Section 19.
+
+
+17     The inverse moment with prime factors
+We now bound an inverse Dirichlet polynomial multiplied by independently weighted prime sums.
+The estimate applies to the inverse witness in Section 8 together with selected main factors
+from the local compensation. Its proof uses the completed row energy of Section 14. A final
+amplification gives an unmarked estimate on sixth-power-free rows at longer column lengths.
+
+17.1    Statement of the marked estimate
+Let ν be a fixed finite-order ray character whose full zero-extended defining modulus has prime
+support in S. This entire presentation belongs to the fixed arithmetic datum; a locally frozen
+moving zero support is instead retained as a puncture whose radical is included in the explicit
+norm bound below. Fix one sign εχ ∈ {1, −1}, and set
+
+                                      ψu (n) = ν(n)χn (u)εχ .
+
+The only masks in this definition are the fixed exclusions and the zero extension of χn (u). For a
+smooth annular function W , define
+                                               X
+                        Mu (Z r ; W ) = Z −r/2     µ(n)ψu (n)W (qn /Z r ).
+                                                n
+
+
+
+
+                                               114

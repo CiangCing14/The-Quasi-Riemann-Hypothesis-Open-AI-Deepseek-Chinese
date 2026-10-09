@@ -1,0 +1,62 @@
+coordinates above. The outside powers, including qu−z0 , are
+
+                                      Z a/2−3/4+z0 /2+13e U −z0 .
+
+Multiplying these bounds gives, for every εp > 0, a retained bin contribution at most
+                                                                           ′
+                           ≪η Z 1/4+EI (d)+13e+(1+d)εc +dεd +εp (1 + T1 )Aη .                (10.12)
+
+Here we have harmlessly enlarged the bound by Z εc +εp so that the losses use the same form as
+the later general estimate, and
+                                                                     
+                                3 δ + R(δ)         1             δ 17
+                     EI (d) = − +          + d−          R(δ) + −         .
+                                4     2            2             2 50
+
+There is no additional Mellin integral in this application. Its scalar buffered arguments have
+heights ℑs and ℑw. The witness frequencies and profile choices in the row count stay within the
+detector’s existing allowance and do not enter either scalar argument.
+    At d = h = 1/2, the three pieces of the row envelope give, respectively,
+                                    
+                                    −1/4 + δ/2, 0 ≤ δ ≤ 1/3,
+                                    
+                            EI (h) = −1/12,           1/3 ≤ δ ≤ 2/3,
+                                    
+                                       −(1 − δ)/4, 2/3 ≤ δ ≤ 1.
+                                    
+
+The first two pieces are at most −1/12. In the third, the exact bin ceiling from Section 8 is
+                                                       5
+                                      δ ≤ 2β∗ − 1 =      + 2∆1 .
+                                                       6
+It follows in every piece that
+                                                        1     ∆1
+                                     EI (h) − ∆1 ≤ −      −       .
+                                                       24      2
+This is the comparison with CI (β∗ ) required here; EI (h) itself need not be negative. The frequency
+slope has the three forms
+                                          
+                                          33/50 + δ/2,         0 ≤ δ ≤ 1/3,
+                              δ 17 
+                      R(δ) + −          = 149/150 − δ/2, 1/3 ≤ δ ≤ 2/3,
+                              2 50 
+                                            33/50,              2/3 ≤ δ ≤ 1.
+                                          
+
+It therefore lies in [33/50, 62/75]. Positivity controls all d ≤ h, and the extension to d ≤ h + ζ
+costs at most (62/75)ζ. Thus, before adjustable losses, every central dyad has saving at least
+                                            1  62   1021
+                                     mc =     − ζ=
+                                            24 75  25000
+relative to CI (β∗ ).
+
+10.6     Central estimates for a correction split into pieces
+The preceding calculation multiplied one aggregate absolute row bound by the outside Mellin
+powers. We record its form when the full correction is estimated by several pieces and the
+available bound varies between sets of rows. The contour has already been justified for the fixed
+bin; these sets will be used only to estimate its retained integrand.
+
+
+
+
+                                                  76

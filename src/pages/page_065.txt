@@ -1,0 +1,56 @@
+The maxima may be restricted to nonempty ranges. This is the combination of the gcd and
+Poisson steps in [4, Lemmas 3.2–3.3]; every sequence used here is common within its norm sum,
+and S remains fixed.
+The initial and power bounds. Row inclusion gives Dj ≤ Ej . Hilbert space duality and sextic
+reciprocity, splitting one matrix variable by its finite t-class, give
+
+                                    Dj (M, N ) ≪S Dj (N, M ).                                        (9.9)
+
+The phases are unit-valued and the noncoprime entries are zero in both orientations. We also
+have the initial estimate
+
+                            Dj (M, N ) ≪S M 2 + N                  (M, N ≥ 1).                      (9.10)
+
+Indeed, for the squarefree row a, finite Fourier inversion gives on every b, including nonunits,
+                                             1      X
+                           χa (b)j = √                χa (x)j e(xb/a).
+                                         qa γ−j (a)
+                                                      x mod a
+
+Cauchy costs at most #(O/(a))× /qa ≤ 1. The reduced fractions x/a from a ∈ AM are distinct
+modulo O and separated by at least 1/(2M ): a nonzero numerator of x/a − y/c − h has absolute
+value at least one, while |ac| ≤ 2M ; equality modulo O forces the same primary denominator
+and residue. The dual of Lemma 6.1, with the coefficient generators in the ball qb ≤ 2N , proves
+Equation (9.10).
+    We need the following near-monotonicity, also used in the large-sieve recursions of [13,
+Lemma 4.4 and Remark 5] and [4, Lemma 3.1]:
+
+           Dj (M1 , N ) ≪S Dj (M2 , N ) if M2 ≥ CM1 log(2M1 N ),                 M1 , M2 , N ≥ 1.   (9.11)
+
+Here is a direct verification. The assertion is immediate for a zero norm. Otherwise choose a
+maximizing unit coefficient vector for Dj (M1 , N ), and split the row shell at 3M1 /2; one part
+carries at least half its mass. Put L = M2 /M1 . For the first part use good prime ideals of
+norms in (L, 4L/3], and for the second use norms in (2L/3, L]. Then ap ∈ AM2 when p ∤ a.
+The fixed-field prime ideal theorem supplies P ≫S L/ log L such primes.PAn ideal of norm at
+most 2x contains at most dx = log(2x)/ log(2L/3) of them. For Sa (v) = b vb Fb (a)j and p ∤ a,
+multiplicativity gives                                                 
+                            Sa (λ) = Sap (λb Fb (p)j )b + Sa (λb 1p|b )b .
+The first coefficient is zero at p | b and cancels the factor at p otherwise. Squaring and summing
+over the chosen rows and primes gives
+                     P − d M1
+                              Dj (M1 , N ) ≤ 2P Dj (M2 , N ) + 2dN Dj (M1 , N ).
+                        2
+For the stated threshold with C sufficiently large, dM1 + 4dN ≤ P/2, proving Equation (9.11).
+   We finish with the power decomposition and recursion of [4, Lemmas 3.4–3.5]. Suppose,
+simultaneously for j ∈ J, that for every positive loss
+
+                  Dj (M, N ) ≪S,ε (M N )ε {M α + N + (M N )2/3 },                α > 4/3,           (9.12)
+
+for M, N ≥ 1; the unit shells satisfy the same bound directly. The initial estimate gives this
+with α = 2. Write a good evaluation ideal uniquely as
+
+                                         a = a1 a22 a33 a44 a55 a66 ,
+
+
+
+                                                     65

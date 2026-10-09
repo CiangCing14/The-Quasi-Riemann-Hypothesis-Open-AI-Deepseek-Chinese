@@ -1,0 +1,67 @@
+is chosen for an actual surviving tuple. The measure may depend on the already fixed j, but
+Equation (17.20) is uniform for its yj in the fixed product interval. Minkowski’s inequality is
+used in the whole row Hilbert space for this one measure. Include the full support of ωc , its
+larger cutoffs, the surviving slot supports, and the j-product interval in the finite collection ID
+before the final threshold is chosen. With the same η convention as the canonical proof, we then
+have
+                                     c − D′ | ≤ η,
+                                    |b               |b
+                                                      j − G| ≤ η
+on the full supports actually used below, where b    c = logZ qc . For the sign εχ = 1, conjugate
+the whole residual polynomial, including its finite character, mark, and test; its row norm is
+unchanged. For the other sign leave it unchanged. It therefore suffices to estimate one polynomial
+of the exact form
+                                ′                                                 ′
+                                   X
+                  R0 (u) = Z −D /2      µ(c)ν0 (c)1(c,j)=1 χc (u)d0 (c)W0 (qc /Z D ).       (17.68)
+                                        c sf
+
+Here ν0 is a fixed finite ray character, d0 is the product mark of cap z0 with those individual
+coefficients or their conjugates, and W0 is ωc (y)y iυc or its conjugate. All are independent of the
+row.
+     Majorize the original row ball by a fixed nonnegative radial Schwartz function Φinit at scale
+  m
+Z , and expand its square. Let C be the gcd of the two columns and write ci = Czi , with
+z1 , z2 squarefree and coprime. Put bci = logZ qci , so the preceding support bound applies to each
+i = 1, 2. Let B ≥ 0 be the center of C, and write B    b = logZ qC . The row character has primitive
+modulus z1 z2 and remaining zero mask C. Apply Lemma 17.5, with d′ | C. Let θ ≥ 0 be its
+center and θb = logZ qd′ . Set
+                                        P1 = B − θ ≥ −2η,
+where the inequality follows from θb ≤ B  b and the two η-ratio bounds. The actual conductor
+length is
+                      L
+                      b init = b    c2 − 2B,
+                               c1 + b      b      b init − 2(D′ − B)| ≤ 4η.
+                                                 |L
+For a positive tolerance τinit , the implication Z m qh′ /(qd′ qz1 z2 ) ≤ Z τinit gives
+
+                                     ′ h′ ≤ 2D ′ − m − 2P + 6η + τ
+                                    dd                   1         init .
+
+Define the fixed formal and enclosing row scales
+
+                          Mcinit = 2D′ − m − 2P1 ,                 Minit = Mcinit + 6η + τinit .           (17.69)
+
+The 6η is 4η from the conductor and 2η from the two copies of d′ in the new row bound.
+    Separate the original principal contribution for the direct count below. On the genuine non-
+principal coprime Poisson expression, before any off-coprime extension or Fourier absolutization,
+keep only the outer mask
+                                    Binit (h′ ) = 10<qd′ h′ ≤Z Minit .
+Its complement is contained in the actual ratio tail above for every supported pair. Equa-
+tion (17.21), with the separate initial raw count and order specified below, discards precisely
+that complement. Retain the full smooth kernel inside the mask, with no column-dependent
+ratio selector. The mask depends on d′ , h′ , the fixed overlap and sector, but not on the residual
+columns. If Minit < 0, its nonzero ball is empty and the same tail comparison discards every
+nonzero frequency; otherwise the retained row parameter is nonnegative.
+    The actual normalization and Poisson prefactor split over the two sides as
+                      ′                        init /2      init /2
+                Z −D Z m−θ−Linit /2 = Z κb1              Z κb2         ,   binit
+                                                                           κ     = m − D′ − θb − b
+                                                                                                 ci + B.
+                              b b                                                                     b
+                                                                             i
+
+
+
+
+                                                                 144

@@ -1,0 +1,60 @@
+Multiplying out gives the explicit quadratic
+
+                     10368J (−E∗ ) = 2jy [1 + (3 + 8y)δ] − 468(5/6 − δ)δpy
+                                    = 10(37 + 34y) − 8(237 + 377y + 26y 2 )δ
+                                           + 48(51 + 131y + 94y 2 + 32y 3 )δ 2 .
+
+Multiplication by v and completion of the square yields
+
+      10368vJ (−E∗ ) = (3 + 5y) (4vδ − 79)2 + 49
+                                
+                                                                                            (20.9)
+                         + 4y 4vδ[(1 + 3y)(15 + 32y)δ + 9 − 13y] + 265 + 3485y .
+
+This identity can also be checked by coefficients: expansion of its right side as a polynomial in δ
+gives respectively
+
+                                  10v(37 + 34y),
+                                  − 8v(237 + 377y + 26y 2 ),
+                                  48v(51 + 131y + 94y 2 + 32y 3 ),
+
+which are the constant, linear, and quadratic coefficients in the preceding display multiplied by
+v.
+     Every term on the right of Equation (20.9) is nonnegative: y, δ ≥ 0 and 9 − 13y ≥ 5/2. The
+first line is at least 49(3 + 5y), while v = 51 + 41y ≤ 17(3 + 5y). Hence
+                                         49       49       1
+                              −E∗ ≥           ≥        >       ,
+                                      176256J   440640   10000
+using J ≤ 5/2.
+
+    The lower bounds for Dx and J bound all derivatives of the crossing and cutoff on the
+compact parameter ranges. The saturation losses are uniform because δ ≥ 1/50, and the inverse
+selection has the explicit supply and width margins proved in Proposition 19.2. At a zero
+capacity its unweighted bound differs from 1 − δ by at most a constant times the chosen capacity
+decrement. Since R∗ ≥ 1 − δ, these cases obey the same comparison. Thus all detector, bin,
+and rounding errors have a total O(ϵ) with a target-independent constant once their individual
+requested losses are at most ϵ. Let Eactual (h) denote the scale exponent relative to C(7/8) after
+the observed row bound R ≤ R∗ + ∆/4 + ϵrow is inserted. For now the explicit height factors
+remain outside this exponent. The coefficient of R in Equation (20.4) is d, so at d = h the capacity
+replacement contributes h∆/4. Denote by ϵtotal the sum of hϵrow and all other adjustable real
+losses; the preceding uniformity makes it arbitrarily small with a target-independent coefficient.
+The certificate gives the comparison actually needed:
+                                                              
+                                                49           h
+                         Eactual (h) − ∆ ≤ −        − 1−         ∆ + ϵtotal
+                                             440640          4
+                                                                                             (20.10)
+                                                49     51
+                                         =−         − ∆ + ϵtotal .
+                                             440640 64
+The subtraction of ∆ = C(β∗ )−C(7/8) is essential: the certificate is not a claim that Eactual (h) <
+0 for every ∆. When the height factors are converted to a reserved exponent allowance below,
+that allowance is added to ϵtotal .
+
+20.5    Frequency ranges
+For 1/2 ≤ d ≤ h, the available length is
+                                        ℓ   8   1 7
+                                          ≥    > > .
+                                        d   39  5 37
+
+                                                193

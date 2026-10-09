@@ -1,0 +1,69 @@
+It is projected once over all current rows and labels, not redefined for a fixed k, f . Every member
+has a source witness on the C, d′ dyads, and therefore logZ qt = B          b − θb ≤ P1 + 2η. The containing
+norm ball bounds its cardinality by #TΣ ≪ Z           P 1 +2η+πcount,init ; it is not used as a replacement
+child domain. In a nonempty sector P1 + 2η ≥ 0, since it bounds the norm of an existing ideal.
+The divisor bound on this bounded range gives the normalized measure
+                                        X
+                dνΣinit (t) = Z −P1 −2η   Cinit (t)δt ,      ∥νΣinit ∥ ≪ Z πcount,init +πfib,init .  (17.81)
+                                             t∈TΣ
+
+This set and measure ignore the unit Fourier phases and are common to the whole current row
+and label sum. The nonempty gates remain separate from this structural projection.
+   For a fixed mode let
+                         X                   X
+                init
+               Ha,t  =          Dinit (f )          |Qinit            2
+                                                      a,t,j,ξ (k, f )| = Z
+                                                                           Finit init
+                                                                                Ea,t . (17.82)
+                              f sf                      k∈O
+                                init
+                         qf /Z Vc      ∈If          0<qk ≤Z Minit
+
+
+This is Equation (17.3) with the same row ball; with a larger fixed canonical ball the equality is
+replaced by the corresponding upper bound. The fibre estimate and weighted Cauchy give
+
+                        X                                  2 Z
+                                                           Y                              1/2
+                              VΣinit Q1 Q2 ≪ Z P1 +2η                     init
+                                                                         Ha,t  dνΣinit (t)     .   (17.83)
+                       ω∈ΩΣ                                a=1      TΣ
+
+
+Here Qa = Qinit
+              a,t,j,ξ (k, f ). Only the positive outer f, k sums were enlarged to their full fixed
+windows; the inner ρt,j , mark, and fresh test are unchanged. The weight Dinit depends on
+f alone. The new outer ball is exactly 10<qk ≤Z Minit . Thus use of the uniform child bound
+introduces the displayed quotient-count exponent once and the normalized mass once.
+    The fixed puncture is exactly at rad(tj). For each t ∈ TΣ , its source bound and the fixed
+overlap bound give
+                              Qinit := logZ qrρ ≤ B
+                                                  b − θb + b
+                                                           j ≤ P1 + G + 3η.                (17.84)
+Shared puncture primes only decrease this bound. It continues to hold when positive new labels
+or rows are added, because those additions do not change t, j or delete their inner puncture.
+    The fixed formal centers satisfy
+
+                    Fcinit − Mcinit − (P1 + G) − z0 = m − r − 2z + 2G,
+                              4Fcinit − 3Mcinit − 6z0 = 3m − 2r − 8z + 10G + 2P1 .
+
+Use the marked premises, G ≥ 0, P1 ≥ −2η, Equations (17.69) and (17.84), and the favorable
+clipping signs. The actual canonical margins are
+
+          Finit − Minit − Qinit − z0 ≥ c1 + δinit − 9η − τinit ≥ c1 − 9η − τinit ,
+                                                                                                   (17.85)
+              4Finit − 3Minit − 6z0 ≥ c2 + 4δinit − 22η − 3τinit ≥ c2 − 22η − 3τinit .
+
+The 22η is 4η from the possible negative 2P1 and 18η from three copies of the row enclosure.
+   There is also an explicit energy calculation. Apply the canonical bound only for t ∈ TΣ , where
+the preceding puncture and margin checks hold. Equations (17.82) and (17.83) then bound the
+unscaled signed outer sum by
+
+                                         C(υ, ξ)Z P1 +2η+2Finit +ϵc ∥νΣinit ∥.
+
+The one mass is that of Equation (17.81); the label d′ s remains inside the child average. The
+common Fourier density is integrated separately, once, with the uniform weighted bounds above.
+
+
+                                                         149

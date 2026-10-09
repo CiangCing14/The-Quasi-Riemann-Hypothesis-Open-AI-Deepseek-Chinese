@@ -1,0 +1,61 @@
+the orders required by this separate crude bound and the canonical tails. The full kernel retained
+inside the outer ball has the uniform Euler bounds already used in the canonical separation. The
+final threshold also enforces the full initial support ratios in ID .
+    The principal count has exponent m, and every nonprincipal term has now been bounded by
+Z m+ϵ  . The argument keeps all element rows and every original mask, applies to subcollections
+and either common orientation, and preserves arbitrary bounded row-independent prime coeffi-
+cients. The common separated measures give the stated finite- seminorm and polynomial-height
+uniformity. This proves Equation (17.1).
+
+17.7    Amplification on sixth-power-free rows
+We first extract an unmarked consequence on all element rows. In Lemma 17.1, take Z = H, m =
+1, no slots, and r = logH D. If H ≥ D1+c for a fixed c > 0, then 1 − r ≥ c/(1 + c); the second
+required margin is also positive. For D ≤ H ϵ/4 , the direct bound |Mu (D; W )|2 ≪ D suffices.
+Otherwise the starting lengths are in a fixed bounded range away from zero. Bounded H, D are
+handled directly. We obtain, for H, D ≥ 1,
+                                                               2
+       X                  X
+                   −1/2                          εχ
+               D                 µ(n)ν(n)χn (u) W (qn /D)          ≪c,ϵ,W H(HD)ϵ ,    H ≥ D1+c .   (17.87)
+       u∈O                   n
+     0<qu ≤H
+
+The fixed arithmetic data and the stated seminorms are included in the dependence of the
+constant.
+
+Lemma 17.6 (Sixth-power amplification). Let ν, W, εχ and the zero extensions be as in
+Lemma 17.1, with no prime slots. Let U, D ≥ 1, and sum over elements u with qu ≍ U such
+that every prime valuation of the ideal (u) is at most five. For every fixed c > 0 and ϵ > 0, put
+
+                                        H = max(2U, D1+c ),         P = (H/U )1/6 .
+
+Then
+                    X                           H
+                             |Mu (D; W )|2 ≪      (U D)ϵ ≪ max{U, U 1/6 D5(1+c)/6 }(U D)ϵ .        (17.88)
+                     u
+                                                P
+The implied constant depends only on c, ϵ, the fixed arithmetic data, and finitely many seminorms
+of W . In particular, for D = U r with r in a fixed bounded nonnegative range, for every ϵ > 0 the
+exponent may be written
+                  X
+                       |Mu (U r ; W )|2 ≪ U e(r)+ϵ ,  e(r) = max{1, (1 + 5r)/6}.
+                         u
+
+Both assertions permit a separate test Wσu ,tu (y) = W (y)y −σu +itu in each row, with σu in a fixed
+compact interval and |tu | ≤ T1 , at a cost (1 + T1 )A for a fixed A.
+
+Proof. First, Equation (17.87) and Lemma 4.5 imply the rowwise scale bound
+                 X
+                         sup |Mv (D′ ; W )|2 ≪ H(HD)ϵ ,    H ≥ max(2, D1+c ).                      (17.89)
+                        0<D ≤D      ′
+                 v∈O
+               0<qv ≤CH
+
+Indeed, sufficiently small scales have no ideals in the annular support. Differentiation with
+respect to log D′ replaces W (y) by −W (y)/2 − yW ′ (y). The one-dimensional Sobolev inequality
+in Lemma 4.5, followed by Equation (17.87) for these two tests, controls the supremum on a
+unit logarithmic interval. There are O(log(2 + D)) such intervals. A fixed enlargement of H
+handles their endpoints, and the direct small-scale bound handles the initial intervals. This
+proves Equation (17.89).
+
+                                                         151

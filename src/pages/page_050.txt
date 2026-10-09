@@ -1,0 +1,69 @@
+7     The Poisson representation and its Euler factors
+The direct estimate is now available. To compare the probe with the Mellin signal in Proposi-
+tion 2.1, we return to independent positive scales X, Y, Z and apply Poisson summation in the
+element variable m. The resulting rows are indexed by the sixth-power-free part of the frequency.
+We will factor each row into Hecke L-functions and a holomorphic Euler product; the row u = 1
+will contain the reciprocal of the target function.
+
+7.1   The exact Poisson series
+The correction G(A) is independent of m, and the varying character in the completed row is
+precisely χA (m), including its zeros. Consequently Poisson summation uses the full modulus
+sb∗ A, even if s and A share primes. Expand the s-Gauss sum and first sum the lifts of a residue
+modulo b∗ A. The lifts impose H ≡ b∗ Ad (mod s) and give the coefficient
+                                                                         
+                                       X                        H − b∗ Ad
+                    F (s, A, H) =              χs (d)gξχA b∗ A,             .               (7.1)
+                                                                   s
+                                      d mod s
+                                  H≡b∗ Ad (mod s)
+
+                                                      −1/2                            1/2
+Indeed, the finite Fourier transform of ξ(m)χA (m)qs gχs (s, −m) modulo sb∗ A is qs F (s, A, H).
+The Poisson prefactor for the row scale qb∗ qs X is X/qA . After the outer square-root normalization
+                                                                                    1/2
+in Equation (6.1), leaving its separate Y −1 outside, their product is X 1/2 /(qb∗ qA ). This also
+verifies all factors of qs in the transformation.
+     At the primes of b∗ the primitive Gauss sum vanishes unless (H, S) = 1. It therefore also
+removes H = 0. Every remaining element has a unique expression H = ua6 , where u is a sixth-
+power-free
+P(6)          element, including its unit factor, and a is the primary generator of an ideal. Write
+   u   for the  sum over such nonzero u with (u, S) = 1.
+     Let W0 (|y|2 ) be the planar Fourier transform of W0 (|y|2 ) for the self-dual measure and char-
+         f
+acter fixed in Section 4. The radial Fourier argument after Poisson is XqH /qA . Put
+                              Z ∞                              Z ∞
+                                           z−1
+                     M (z) =       W0 (r)r
+                                   f           dr,   W1 (w) =
+                                                     c               W1 (r)rw−1 dr.
+                             0                                 0
+
+Smoothness at zero and Schwartz decay show that M is holomorphic for ℜz > 0. On every com-
+pact positive real strip it has arbitrary polynomial decay in ℑz: every derivative of e(ℜz)v W
+                                                                                             f0 (ev )
+is integrable in v, uniformly on that strip, so repeated integration by parts applies. The same
+argument gives arbitrary polynomial decay for W  c1 on every fixed real strip.
+    We will need the strict positivity
+                                            M (1/6) > 0.                                       (7.2)
+Here is a proof that does not require the Fourier transform itself to be nonnegative. For 0 < σ < 1,
+                                                    Z ∞
+                                             1                     2
+                                |y|2σ−2
+                                        =                t−σ e−t|y| dt.
+                                          Γ(1 − σ) 0
+
+The pairing of the left side with Wf0 (|y|2 ) is absolutely integrable. Fubini and Fourier duality
+express it as
+                          Z ∞
+                                                             4π 2 |x|2
+                                   Z                                  
+                   1            −σ            2 2π
+                              t       W0 (|x| ) √ exp −                  dµ(x) dt > 0.
+                Γ(1 − σ) 0          C             3t            3t
+The inner integral is strictly positive for every t > 0, since W0 is nonnegative and nonzero.
+Absolute integrability follows either from the displayed representation on the Fourier side or
+         annular support of W0 on this side. Polar integration identifies the original pairing
+from the √
+with (2π/ 3)M (σ), proving Equation (7.2).
+
+                                                 50

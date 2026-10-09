@@ -1,0 +1,55 @@
+Every residual full product divided by its nominal product scale lies in exp([−HN , HN ]), after
+increasing HN once for the fixed list of operations. Both rectangles use that same box. Extracted
+plain prime powers use their exact norms, and a frozen slot contributes its ratio qp /Pi just once.
+If a nonempty plain scale below one is clipped to one, its error is at most the logarithm of that
+plain window’s fixed endpoint divided by log Z, once for that plain. Thus a whole subset of slots
+or a whole divisor extraction contributes one aggregate O(θN ) boundary error, not one copy of
+a preselected tolerance for each slot or prime.
+
+18.4    The first Poisson transform and its target bound
+We now estimate either the uncentered product or the centered difference selected above. Put
+H = Z m and X = Z A . Choose a fixed nonnegative smooth radial function that majorizes the
+row ball. The full index product in either rectangle has norm in a fixed multiple of X. All
+comparisons of exponents in this subsection are first made on fixed dyadic norm intervals. Their
+bounded relative widths change a logarithmic length by O(1/ log Z); the final loss discussion
+includes these changes.
+    We use the following P  common localization for both Poisson formulas. Fix a nonnegative
+smooth dyadic partition λ ωλ (q/Tλ ) = 1 for q > 0, with each weight supported in Cd−1 ≤
+q/Tλ ≤ 1 for one fixed Cd . A sector fixes dyadic boxes for the finite list of aggregate outer
+norms, not a separate box for each slot. Let Tsec be the supremum in that sector of the nominal
+frequency scale. Its ratio to the scale at any one set of outer labels is at most a fixed Csec . Retain
+exactly the whole weights whose support meets
+
+                                          0 < q ≤ Tsec Z ξ/2 .
+
+Their union is contained in q ≤ Cd Tsec Z ξ/2 ; every discarded weight is supported above Tsec Z ξ/2 .
+The selection depends only on the sector, never on a live column. After N and the support data
+are fixed, take Z large enough that
+
+                                              log(Cd Csec )  ξ
+                                      2θN +                 < .                                (18.20)
+                                                 log Z       4
+One fixed enlargement of Csec covers all the finitely many sector endpoint factors.
+     Here is a direct tail bound that justifies this operation on the genuine sums. In both appli-
+cations the kernel argument is at least q/(e2HN Tsec ). On every discarded weight it is therefore
+at least Z ξ/4 , by Equation (18.20). Lemma 4.7 gives arbitrary decay (1 + argument)−B . For the
+                                 1/2
+first formula use |G(a, h)| ≤ qa , and for the second use the finite definition |F (u, v; j)| ≤ qu qv .
+Absolute ideal counting and the divisor bounds for the fixed number of factors bound all raw
+columns and prefactors in a sector by CN Z B0 times a fixed polynomial in the retained heights,
+where B0 depends only on the bounded total lengths and chosen subsidiary power shares. A
+lattice norm dyad of scale T has O(1 + T ) frequencies. Summing the radial decay over discarded
+dyads consequently gives CN,B Z B1 −Bξ/4 times that height polynomial, for a bounded B1 inde-
+pendent of B and N , and a convergent geometric sum when B > 1. Choose B sufficiently large
+to obtain any prescribed power saving, including the polynomial number of frozen outer labels.
+This is an absolute bound for the original terms, before any off-coprime extension or Fourier
+absolutization. It uses neither the later s-radical saving nor a factorized off-coprime identity. On
+the retained weights the full smooth kernel is kept; no sharp condition comparing a row norm
+with the two live column norms is inserted. A retained range below the first nonzero lattice norm
+is empty, apart from a bounded boundary dyad covered by the clipping convention below.
+     At zero frequency in the first row Poisson formula, a character mean can be nonzero only if its
+exponent at every prime is zero modulo six. In particular, no prime occurs to total multiplicity
+one in the product of the two full index products. This product is therefore a powerful ideal.
+There are Oϵ (X 1+ϵ ) such products of norm O(X 2 ): each powerful ideal is a square times a cube
+
+                                                  160

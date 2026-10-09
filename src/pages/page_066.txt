@@ -1,0 +1,55 @@
+where a1 , .Q                            and squarefree, and a6 is arbitrary. Insert ai ∈ IXi and
+            . . , a5 are pairwise coprimeQ
+put X = i Xi ; here Xi ≥ 1/2 and i Xii ≍ M . Choose ℓ ∈ {1, 2} with Xℓ = max(X1 , X2 ).
+After the other factors are fixed, the coefficient
+                                                  Y
+                                         λ′b = λb   Fb (ai )ij
+                                               i̸=ℓ
+
+has absolute value at most |λb |, and the remaining kernel is exactly that of Djℓ mod 6 (Xℓ , N ).
+Enlarging its fixed positive row restriction gives this norm bound. This includes the zero of the
+sixth power factor. The set J is closed under j 7→ jℓ mod 6. Counting the fixed ideals and
+forgetting their coprimalities in positive sums gives
+                                               n                 o
+             Ej (M, N ) ≪S,ε (M N )ε max min M 1/3 , (M/Xℓ )2/3 Djℓ mod 6 (Xℓ , N ).       (9.13)
+                                      X
+
+To verify the factor, the number of fixed choices is O(X/Xℓ ). For ℓ = 1 it is at most a constant
+times both (M/X1 )1/2 ≪ (M/X1 )2/3 and (M X2 /X1 )1/3 ≤ M 1/3 ; for ℓ = 2 it is at most a
+constant times (M X12 /X22 )1/3 ≤ M 1/3 ≪ (M/X2 )2/3 . The number of boxes is a fixed power of
+log(2 + M ).
+    Substituting Equation (9.12) into Equation (9.13) yields
+                            Ej (M, N ) ≪S,ε (M N )ε (M α + M 1/3 N ).
+The three terms before simplification are bounded by M α , M 1/3 N , and (M N )2/3 ; the last
+is bounded by one of the first two according as N ≤ M or N ≥ M . Use this estimate in
+Equation (9.8). All auxiliary nonempty scales are bounded by fixed powers of 2 + M N : here
+N/∆d ≥ 1/2 and H(N/∆d ) ≪S,ε (2+M N )3+ε . The unit column shell satisfies the same estimate
+directly. Thus preliminary losses can be chosen smaller to give any specified final loss. The two
+scale factors are
+                        ∆α−1
+                          r   ∆1−2α
+                                d    ≪S ∆−αd ≤ 1,      (∆r ∆d )−2/3 ≤ 1.
+Consequently, for M, N ≥ 1,
+             Dj (M, N ) ≤ Ej (M, N ) ≪S,ε (M N )ε {M + N 2α−1 M 1−α + (M N )2/3 }.          (9.14)
+    Put h = 2 − 3/(3α − 1) = (2α − 5/3)/(α − 1/3) and β = 2 − 2/(3α − 1). If M ≥ N h , the
+middle term in Equation (9.14) is at most (M N )2/3 . If M < N h , apply Equation (9.11) with
+a fixed multiple of N h log(2M N ) in place of M . Equation (9.14) there gives (M N )ε N β , since
+2(h + 1)/3 = β and h < β. Thus in both cases
+                        Dj (M, N ) ≪S,ε (M N )ε {M + N β + (M N )2/3 }.
+Symmetry gives Equation (9.12) with β in place of α, simultaneously for every j ∈ J. Starting
+from 2, the map α 7→ 2 − 2/(3α − 1) decreases to 4/3. For a requested loss take finitely many
+iterations until the remaining exponent gap is smaller than a fixed fraction of that loss, and
+absorb it into (M N )ε . Combining the bound and its symmetric form, using M 4/3 ≤ (M N )2/3
+when M ≤ N and the analogous inequality when N ≤ M , proves
+                   Dj (M, N ) ≪S,ε (M N )ε {M + N + (M N )2/3 }         (j ∈ J).            (9.15)
+    Dyadic subdivision of both norm balls, with Cauchy across the column shells, converts Equa-
+tion (9.15) to the same bound for the ball matrix with entries Fb (a) = χa (b). The logarithmic
+factors are absorbed by a smaller preliminary loss, and the unit shells are bounded directly. The
+matrix in Equation (9.1) for ς = 1 is the transpose of this matrix at lengths (D, K). A com-
+plex matrix and its transpose have the same operator norm, by the adjoint identity followed
+by whole-vector conjugation. The bound is symmetric in the two lengths, so it gives precisely
+K +D +(KD)2/3 . Conjugating the entire inner sum gives ς = −1, with unchanged zeros. Finally,
+a fixed row restriction removes nonnegative terms, and a fixed coefficient restriction is imposed
+by zero extension. This proves all assertions of the lemma.
+
+                                               66

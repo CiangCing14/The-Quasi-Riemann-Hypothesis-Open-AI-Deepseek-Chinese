@@ -1,0 +1,63 @@
+   Write bh = logZ qh . The completion is at the actual scale N∗ = N −3bh. Its fixed support gives
+h ≤ ℓ1 + η < d + η once the fixed annular threshold specified below is imposed. In Lemma 14.3,
+b
+keep the actual residual-row dyad and choose the same threshold so that
+
+         H ≤ M − O + η,          Td − S0 − B0 ≤ 2M − O + Q + V − N∗ + 2za + η.                   (17.11)
+
+These are Equations (5.35) and (14.17), not estimates for an enlarged row range. Substituting
+N∗ = N − 3bh and the first inequality in Equation (17.9) gives
+
+                       Td − S0 − B0 ≤ M − O + 2za − z0 − cnode + 5d + 4η.                        (17.12)
+
+Indeed, the additional terms are 2V + 3bh + η < 5d + 4η.
+   Take the threshold also to ensure eλ ≥ −η, and discard the whole reflected tail dyads as in
+Lemma 14.3. Thus every retained dyad satisfies v + 3ℓb + eλ ≤ Td + τref . The row branch of
+Equation (14.14), after dropping its nonpositive terms, obeys
+
+                               Eref ≤ M + za + 53 η ≤ F − cnode + 53 η.
+
+For the column branch with u = za , the retained dual bound first gives Eref ≤ O/2 + (Td − S0 −
+B0 ) + 5η/3 + τref . Equation (17.12) and the first invariant then give
+
+                                Eref ≤ F − 2cnode + 5d + 17
+                                                         3 η + τref .                            (17.13)
+
+If u ̸= za , its definition implies u ≥ v/2. The retained dual bound now first gives
+
+                         Eref ≤ O/2 + (Td − S0 − B0 )/2 + za + 67 η + 12 τref .
+
+Using Equation (17.12), za ≤ z0 , and then the second invariant yields
+
+                        Eref ≤ F − M/4 − 3cnode /4 + (5/2)d + 19    1
+                                                              6 η + 2 τref .                     (17.14)
+
+Use the reflected estimate with aggregate local loss πref , including its freely chosen exponent, the
+label divisor bound, and the finitely many logarithmic sums. If
+
+                     cnode ≥ c∗ /2,         d ≤ c∗ /200,            η, τref , πref ≤ c∗ /1000,
+
+all three bounds, after adding πref , are strictly below F . In the last bound M ≥ 0. For z0 = 0
+only u =Pza = 0 occurs.  The reflected estimate was applied for each fixed f ; the weighted mass
+bound f w(f ) ≪ Z     V +π ref shows that summing its squared bounds over f costs at most this
+
+amount, already included in the aggregate loss, and cancels the outside Z −V . Thus no moving
+fourth-power label entered the hybrid norm, and these terminal terms satisfy the canonical
+estimate.
+
+The remaining terms and their marks. At every factorization, assign a slot first to an
+extracted factor which its prime divides, and otherwise retain it on the residual column. The
+basic identity for the completion is
+
+                                        1p|nb3 = 1p|b + 1p∤b 1p|n .                              (17.15)
+
+More generally, for an ordered list of extracted factors D1 , . . . , Dh , the exact priority identity is
+                                            h
+                                            X             Y                    Y
+                          1p|D1 ···Dh n =         1p|Dj         1p∤Da + 1p|n         1p∤Da .     (17.16)
+                                            j=1           a<j                  a≤h
+
+It holds even when extracted factors share primes. Applying it to each slot and each copy of
+a square gives a disjoint partition for each tuple of primes; the two copies of one slot have
+
+                                                          123

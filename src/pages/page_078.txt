@@ -1,0 +1,55 @@
+The supremum is finite because the pairs lie in a fixed bounded range. The power εp absorbs
+the pointwise logarithmic multiplicity. No separate integral for a pointwise piece or row set is
+asserted. All discarded portions and horizontal joins in this contour move are Oη,N (Z Bη T1−N )
+for every fixed N , where Bη is finite and is fixed before N .
+
+Proof. Apply Lemma 10.3 to the original triple integral, using for its three box constants the
+corresponding ck in Equation (10.14). These constants are positive and at most 1/2. The full
+correction and the fixed bin therefore give the retained integral and the asserted errors before
+any pointwise pieces are introduced. Any auxiliary integrations used for the central bound are
+subject to the additional hypotheses in the statement.
+    Now use the central decomposition and form the pointwise sets Bλ,ν . At each retained
+point apply the triangle inequality to the original row sum, and then apply Equation (10.13)
+to the sets present at that point. There are at most a fixed multiple of (1 + log Z)D such
+sets pointwise. Bound each of their exponents by the supremum over PZ and integrate only the
+original holomorphic row sum. Thus neither measurability of an individual pointwise subdivision
+nor one common label set across contour points is needed. On the retained contours, Lemma 8.1
+bounds the reciprocal by Oη,e,εd (U εd ). The tests have a uniformly bounded joint L1 norm, since
+the transformation (ℑs, ℑz, ℑw) 7→ (ℑ(s + z), ℑz, ℑw) is invertible. The scalar factor ζFS (6z0 ) is
+absolutely bounded. It remains to compute the real power of Z.
+    The outside factor, including qu−z0 and the real displacements in Equation (10.11), contributes
+
+                       lx (1/2 − z0 ) + a + z0 − 1 − aly − dz0 + (16 − 6ly )e.
+
+Equation (10.13) adds d(R +δ/2+εc )+ℓ(z0 −1/2)+g +εc . The reciprocal adds dεd . Subtracting
+C(σ0 ) = σ0 +lx /2−1+h/6 and using h = 1−lx +ℓ gives Equation (10.15) and the remaining terms
+in Equation (10.16). The pointwise logarithmic multiplicity is bounded by Z εp for sufficiently
+large Z. This proves the claim.
+
+    The lemma separates two uses of the correction. Its holomorphy and all-height majorant
+justify the contour move before the rows are subdivided by their pointwise sizes. The pieces in
+Equation (10.13) are used only after the move; they may be defined using local divisions whose
+nonvanishing has been proved on that retained region. Such a division supplies no continuation
+or tail bound outside that region. For the base correction there is only one piece, and Lemma 8.1
+supplies the reflected numerator factor U δ/2+12e+ϵ appearing in the central hypothesis.
+
+10.7      Extracting the principal signal
+The intermediate-row estimate leaves the principal row and the two outer norm ranges. We first
+cross the two scalar poles in the principal row. The following formulation also records the precise
+condition under which a different correction has the same target signal.
+
+Lemma 10.5 (Extraction of the principal signal). Assume Definition 10.1 and Equation (10.2).
+Fix σ0 ∈ [7/8, 1) with β∗ > σ0 and 0 < e < 10−3 . Suppose that for every ϵ > 0, uniformly in all
+imaginary parts on
+
+               ℜs = β∗ + e,      19/20 ≤ ℜw ≤ 1 + e,           33/200 ≤ ℜz ≤ 1/6 + e,
+
+one has
+                   |Hη,1,Z (s, w, z)| ≪η,e,ϵ Z ℓℜz+ϵ (1 + |ℑs| + |ℑw| + |ℑz|)Jη,e,ϵ ,       (10.17)
+with finite Jη,e,ϵ fixed before any external tail order. Suppose also that Aη (Z) ̸= 0 for every
+sufficiently large real Z, that |Aη (Z)|−1 ≪η,ϵ Z ϵ for every ϵ > 0, and that on ℜs = β∗ + e,
+uniformly in ℑs,
+                          Hη,1,Z (s, 1, 1/6) = Hη (s)Z ℓ/6 Aη (Z)(1 + Rη,Z (s)).          (10.18)
+
+
+                                                  78

@@ -1,0 +1,64 @@
+   The geometry and Mellin exponent are
+                     13         1                  17                      23
+                h=      ,     ℓ= ,          lx =      ,            ly =       ,       h = 1 − lx + ℓ,
+                     16         6                  48                      48
+                                               11                   3
+                            C(s) = CII (s) = s −  ,     C(7/8) = .
+                                               16                  16
+These are the values in Equations (12.4) and (12.3). Write s for the local variable called x in
+Section 16; the amplitude ratio x = q/δ below is a different real number.
+   Use Definition 10.1 with
+
+                Iη (Z) = Iη,modified (Z),       Hη,u,Z (s, w, z) as in Equation (16.3).
+
+In the shared analytic lemmas take σ0 = 7/8. Section 16 verifies every part of these data:
+Equation (16.7) is the absolutely convergent high identity for the independently defined finite
+expression in Equation (12.5), and the full correction is holomorphic in the two required Euler
+regions and satisfies Equation (10.4). The excluded set, physical row masks, and calibration are
+unchanged. In particular there is no additional Euler factor outside this full correction. Its scalar
+denominator is LSF (s, ηχ• (u)), and its Gaussian is Φ(s + z − 1).
+    In the estimates below, 0 < e < 10−3 is an admissible detector width. Its final choice,
+together with the remaining real losses, is made in the concluding order of choices.
+
+20.1    The principal normalizer
+We verify the two correction hypotheses of Lemma 10.5. First, Equation (16.14) gives
+
+                                      |Hη,1,Z (s, w, z)| ≪ Z ℓℜz
+
+uniformly in all imaginary parts on every fixed real box in the second Euler region. In particular
+this holds on the entire rectangle in Equation (10.17), with height degree zero. This is a bound
+for the full tuple correction.
+    For the residue value, define
+                                     X
+                           Si (Z) =      Wi (qp /Pi )qp−5/6 ,  Pi = Z ℓi .
+                                   p∈Pi (Z)
+
+Lemma 13.1, including its assertion about deletion of a fixed finite set, gives
+                                              1/6      Z ∞
+                                            Pi
+                              Si (Z) ∼                          Wi (y)y −5/6 dy.
+                                         |T | log Pi      0
+
+Each leading constant is positive. Since the slot count is fixed, all Si (Z) are positive for every
+sufficiently large Z, with a common lower threshold allowed to depend on the fixed data. Set
+                                                                     K
+                                                                     Y
+                                                     K        −ℓ/6
+                                  AT (Z) = (−1) Z                          Si (Z).                      (20.1)
+                                                                     i=1
+                              P
+Using log Pi = ℓi log Z and    i ℓi = ℓ, we obtain
+
+                                                    K             Z ∞
+                                   (−1)K
+                                                                                             
+                                              Y               1                      −5/6
+                      AT (Z) ∼                                             Wi (y)y          dy .
+                               |T |K (log Z)K                 ℓi     0
+                                                    i=1
+
+Consequently AT (Z) ̸= 0 on that range and
+
+                      |AT (Z)| ≍T,K,(ℓi ,Wi ) (log Z)−K ,                  |AT (Z)|−1 ≪ϵ Z ϵ
+
+                                                     187

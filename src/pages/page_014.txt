@@ -1,0 +1,70 @@
+we obtain J(H 2 , H 2 ) ≡ P − 2 ≡ −1 (mod 3). Divisibility by p and equality of norms imply
+J(H 2 , H 2 ) = up for a unit u. As p is primary and the six units have distinct residues modulo
+3, the congruence forces u = −1. Finally,    3       2   2
+                                         √ τ2 = J(H , H )τ2 τ4 = −pP . Dividing the two Gauss
+identities by the appropriate powers of P proves the lemma.
+
+    The remaining phase is quadratic. Its evaluation below is valid even for odd elements that
+are not squarefree or primary.
+
+Lemma 4.3 (Quadratic four-term formula). For a nonzero odd c ∈ O, define
+                                           X
+                              Γ(c) = |c|−1      e(x2 /c).
+                                                         x mod c
+
+Then
+                                               1     X
+                                      Γ(c) =                  e(−cy 2 /4).                     (4.3)
+                                               2
+                                                   y mod 2O
+
+For c = a + bω the right side is (1 + i−b + ia + ib−a )/2. In particular Γ depends only on c mod 4O
+and Γ(cv 2 ) = Γ(c) for every odd v. The units modulo 4 have square subgroup {1, ω, ω 2 } and
+square-class representatives 1, −1, λ, −λ. The function Γ never vanishes on these units, and
+r(a, b) = Γ(ab)/(Γ(a)Γ(b)) satisfies
+
+                                          c   1 −1 λ −λ
+                                         Γ(c) 1  1 i −i                                        (4.4)
+                         e f          g h             eh+f g+f h
+                  r((−1) λ , (−1) λ ) = (−1)                       ,    e, f, g, h ∈ {0, 1}.
+
+Thus |Γ(c)| = 1 and r is a symmetric {±1}-valued bicharacter of the square-class group.
+
+Proof. Use the Fourier transform with kernel e(−zy) and measure dµ. For ε > 0 apply Poisson
+                                           2
+summation on O to fε (z) = e(z 2 /c)e−πε|z| . Direct Gaussian integration gives, with rε = 1 +
+3qc ε2 /16,
+                                    |c|         2
+                          fbε (y) = √ e−πεqc |y| /(4rε ) e −cy 2 /(4rε ) .
+                                                                        
+                                   2 rε
+To check the normalization, rotate z by half the argument of c. The quadratic matrix of the
+resulting real two-variable Gaussian is
+                                            √     
+                                ε√      −4i/( 3|c|)             16rε
+                                                     ,   det =       .
+                           −4i/( 3|c|)       ε                   3qc
+
+Its eigenvalues
+             √ are conjugates with positive real part. The positive square root of the determinant,
+the factor 2/ R 3 in dµ, and completion
+                                    √ of the square give the formula above.
+                        2
+    Put Iε = C e−πε|z| dµ(z) = 2/( 3ε). For a fixed ideal (b), a fixed class v mod b, and a > 0,
+Gaussian Poisson summation on bO gives
+                               1     X               2         1
+                                             e−πaε|z| −→               (ε ↓ 0).
+                               Iε                             aqb
+                                    z∈v+bO
+
+The zero dual vector gives the limit and every nonzero dual vector is exponentially small. The
+phase e(z 2 /c) is periodic modulo c. Consequently the normalized left side of Poisson’s identity
+tends to Γ(c)/|c|.
+   On the right side one may replace rε by 1. For fixed c, the total error from the phase is at
+most                                    X         −1    2
+                                 C c ε2   |y|2 e−Cc ε|y| = Oc (1),
+                                         y∈O
+
+
+
+                                                         14

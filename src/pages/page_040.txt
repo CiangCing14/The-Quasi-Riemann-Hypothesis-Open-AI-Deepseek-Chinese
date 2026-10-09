@@ -1,0 +1,58 @@
+Choose one term. Let NF be the product of the primes assigned to the squarefree ideal n0 , and
+let BF be the product assigned to b0 but not n0 . Write n0 = NF n and b0 = BF b. In the first
+assignment only the occurrence in n0 is extracted, even if b0 contains that prime; in the second
+exactly one occurrence is extracted from b0 . All remaining source restrictions are retained on
+n, b. Let Fsm be the product of the small jp = 4 summands and the active jp = 0 primes, and
+put
+          A0 = logZ qFact ,   S0 = logZ qFsm ,    N0 = logZ qNF ,       B0 = logZ qBF .
+Empty products have log-norm zero.
+  Fix a unit u, an integer k ≥ −4, and dual ranges
+                       µ = uλk NF n(BF b)3 ,          qn ≍ Z v ,      qb ≍ Z ℓ b ,   qλk = Z eλ ,
+where v, ℓb ≥ 0. The squarefree n and the primary b retain the full source support of Equa-
+tion (5.2), including permitted primes of S and shared primes. Let H ≥ 0, and choose a common
+smooth profile W1 (yR , yn , yb ) on a fixed compact logarithmic box, where
+                               yR = qR /Z H ,        yn = qn /Z v ,        yb = qb /Z ℓb .
+Choose fixed smooth annular cutoffs χrow , χn , χb for these three ranges, and put
+                                      W0 (y) = χrow (yR )χn (yn )χb (yb )W1 (y).
+The supports and invoked seminorms are fixed uniformly over the block. Denote by Uv,ℓb ,eλ (R)
+the specified term of the right side of Equation (5.1), restricted to this dual representation
+and multiplied by W0 (yR , yn , yb ). The original row set IH consists of the allowed R for which
+χrow (qR /Z H ) ̸= 0. This definition is made separately for every fixed choice above.
+    The frozen primes in this definition may vary between invocations; they are not added to the
+fixed arithmetic modulus L. The definition fixes them only before taking the current norm over
+R.
+Lemma 5.7 (Unmarked reflected block). For an unmarked reflected block, set
+                                                                         v        eλ S0 + B0
+                T0 = 2H + 2A0 − N − N0 − 3B0 ,                  ν0 =       + ℓb +   +        .
+                                                                         2        3     2
+Let all these log-lengths range over fixed bounded sets. Put
+          qλk NF B 3 XZ v Z 3ℓb
+    Y =           F
+                                  ,      W (y) = yn−1/2 yb−1 W0 (y),                                        −2
+                                                                               FY (y) = W (y)V ♯ (Y yn yb3 yR  ).
+              qc2F Fact Z 2H
+
+There are functions ρ(R) and β(n, b), with absolute values at most one, such that β is independent
+of R and
+                                  1           X
+                   Uv,ℓb ,eλ (R) = Z −ν0 ρ(R)    β(n, b)χR (nb)3 FY (yR , yn , yb ).         (5.32)
+                                  3
+                                                       n,b
+
+The sum retains all the fixed dual restrictions from the definition. The only arithmetic factor here
+that depends simultaneously on R and the dual variables is the displayed zero-extended quadratic
+symbol. Moreover,
+                                 qµ X              −2
+                                       = Y yn yb3 yR  ,    c = cF Fact R.                     (5.33)
+                                  qc2
+This is an exact identity on the original support, including when NF shares primes with b.
+    For every ϵ > 0 and every fixed A ≥ 0,
+      X
+          |Uv,ℓb ,eλ (R)|2 ≪ϵ,A Z E0 +ϵ p5 (W )2 MA,⌈4A⌉+7 (V )2 ,
+     R∈IH
+                                                                                                              (5.34)
+                                                            2eλ 1
+                      E0 = max(H, v + ℓb ) − S0 − B0 − ℓb −    − (T0 − v − 3ℓb − eλ )+ .
+                                                             3  2
+
+                                                         40

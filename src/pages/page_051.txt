@@ -1,0 +1,62 @@
+   Set x = t + 1 − z after Mellin inversion of the two weights. For a nonzero sixth-power-free u
+with (u, S) = 1, define
+                                    X
+                   Fη,u (x, w, z) =    Kη (c, n, s, a; u) qc−1/2−x qn−1−3x qs−w qa−6z ,     (7.3)
+                                       c sf
+                                       n,s,a
+
+where A = cn3 and the coefficient, with all normalizations retained, is
+
+                                   F (s, A, ua6 )χs (b∗ )
+            Kη (c, n, s, a; u) =     √                    γ2 (c)α(A)G(A)η(A)Ξ(A)−1 R(A, s).             (7.4)
+                                       qb∗ τ ξ(s)ξ(u)
+
+For convenience define the common Mellin weight
+
+              W(X, Y, Z; x, w, z) = X 1/2−z Z x+z−1 Y w−1 Φ(x + z − 1)M (z)W
+                                                                           c1 (w).
+
+For example, the lines ℜx = 3, ℜw = 3, ℜz = 2 correspond to the original line ℜt = 4 and lie in
+absolute convergence. The complete high identity is
+                                  Z Z Z
+                              1
+             Iη (X, Y, Z) =                    W(X, Y, Z; x, w, z)
+                            (2πi)3 (3) (3) (2)
+                                                 (6)                                      (7.5)
+                                                 X
+                                                      −z
+                                               ·     qu ξ(u)Fη,u (x, w, z) dz dw dx.
+                                                           u
+
+One may justify all interchanges on these lines by the elementary bound |F (s, A, H)| ≤ qs qb∗ A
+and by the annular weights. In particular, Equations (6.2) and (7.5) are identities for the same
+probe, not estimates for separately chosen test expressions.
+
+7.2   The scalar Euler identity
+We next evaluate the coefficient in Equation (7.4). Our objective is to prove that the high series
+is a scalar Euler product for the target η. The calculation also records separately the terms with
+positive valuation of the completed index A at a given prime. We keep every ray phase until it
+has been cancelled or assigned to a local factor.
+    Fix a nonzero sixth-power-free row u with (u, S) = 1 and a prime p ∈   / S. Set
+
+            Q = qp ,       j = vp (u) ∈ {0, . . . , 5},            ρ = χp (u/pj ),      ωp = χp (−1),
+                                   3                           2
+                       ap = α(p) η(p)3 ,        bp = α(p) η(p)2 χp (4),              b3p = a2p ,        (7.6)
+                         V = Q−6z ,        R = a2p Q4−6x−6z ,              Wloc = ρQ−w .
+
+The values ρ, ap , bp have absolute value one, and ωp ∈ {1, −1}. No ray-class restriction on p is
+imposed.
+
+The finite scalar and its unit factors. Write Gr = gχrp (p, 1), with G0 = −1, and γr =
+Q−1/2 Gr for 1 ≤ r ≤ 5. For t ≥ 1 and j ′ ≥ 0, summing the lifts of a residue modulo p gives
+                                           (
+                                      ′     Qt−1 Gr 1j ′ =t−1 ,       6 ∤ r,
+                         gχrp (pt , pj ) =   t             t−1
+                                            Q 1j ′ ≥t − Q 1j ′ ≥t−1 , 6 | r.
+
+The second line is the Ramanujan sum for the principal character extended by zero. Orthogo-
+nality also gives G1 G−1 = ωp Q.
+
+
+
+                                                      51

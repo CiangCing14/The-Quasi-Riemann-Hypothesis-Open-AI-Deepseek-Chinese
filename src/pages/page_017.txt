@@ -1,0 +1,70 @@
+    Every function on a fixed finite abelian ray group has a finite Fourier expansion in its char-
+acters. For example, if ϕ : T → C, then
+                                     X                           1 X
+                           ϕ(v) =           aθ θ(v),     aθ =        ϕ(u)θ(u).
+                                                                |T |
+                                     θ∈Tb                           u∈T
+
+
+Parseval and Cauchy–Schwarz bound θ |aθ | by |T |1/2 maxT |ϕ|. Applying the same statement
+                                      P
+on T × T separates R(a, b) as a finite sum of products of characters. These expansions remain
+valid at noncoprime primary pairs because R there is the fixed-ray bicharacter, not a symbolic
+quotient. For example, for a good prime p and every primary n outside S,
+
+                                     χn (p)χp (n) = R(p, n)1(n,p)=1 .
+
+On coprime pairs this is sextic reciprocity, and on the remaining pairs both sides vanish. Thus
+cancellation of the moving local characters can leave both a coprimality indicator and a fixed-ray
+phase; neither may be discarded.
+
+4.3    Smooth norm profiles
+The following conventions make the smooth dependence in character-polynomial estimates quan-
+titative. They distinguish derivatives of a fixed test from powers of a spectral height. This
+distinction is needed when a Fourier tail is removed only after the height range has been chosen.
+    For a profile w on (0, ∞)d with logarithmic support in a fixed compact set Ω ⊂ Rd , put
+                                                             X
+                  wlog (u) = w(eu1 , . . . , eud ), pj (w) =   sup |∂ α wlog (u)|.
+                                                                                d
+                                                                    |α|≤j u∈R
+
+We always understand that wlog is smooth and supported in Ω. Define
+                    Z                                   Z
+                                  −it·u
+             w(t)
+             b =        wlog (u)e       du,  ∥w∥J,sep =    |w(t)|(1
+                                                            b       + |t|)J dt.
+                         Rd                                              Rd
+
+    a fixed finite tuple w = (w1 , . . . , wr ), possibly of different fixed dimensions, we use pj (w) =
+For P
+1 + ri=1 pj (wi ).
+Lemma 4.5 (Smooth calculus). For integers J ≥ 0,
+
+                                       ∥w∥J,sep ≪J,d,Ω pJ+d+2 (w).
+
+Logarithmic  Fourier inversion separates any fixed norm monomial. More precisely, if xj =
+  Qr     ajℓ
+cj ℓ=1 yℓ with cj , yℓ > 0 and fixed real exponents ajℓ , then
+                                                Z
+                                             1           Y itj Y i Pj ajℓ tj
+                     w(x1 , . . . , xd ) =          w(t)  cj    yℓ           dt.
+                                           (2π)d Rd
+                                                    b
+                                                                j        ℓ
+
+If the coefficient measure in this formula is common to a collection of rows, Minkowski’s inequality
+passes any separated row ℓ2 bound through the integral using ∥w∥J,sep whenever the separated
+bound has height growth at most (1 + |t|)J .
+     For a unit box I ⊂ Rd and a smooth scalar function F on I + [−1, 1]d ,
+                                                X Z
+                                        2
+                                sup |F | ≪d                   |∂ α F |2 .                      (4.9)
+                                 I                           I+[−1,1]d
+                                                  α∈{0,1}d
+
+Consequently, under the corresponding derivative bounds, rowwise choices of scales in a polyno-
+mial range cost powers of log Z, and rowwise choices of norm-twist heights of absolute value at
+most T1 cost a fixed power of 1 + T1 .
+
+                                                       17

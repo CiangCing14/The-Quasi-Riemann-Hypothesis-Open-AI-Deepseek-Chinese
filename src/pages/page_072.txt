@@ -1,0 +1,58 @@
+Definition 10.1 (Data for an exact high representation). Fix real numbers lx , ly > 0 and ℓ ≥ 0
+such that
+                                                                               lx    h    5 lx ℓ
+ X = Z lx ,      Y = Z ly ,         h = 1−lx +ℓ > 0,           C(s) = s+          −1+ = s− + + . (10.3)
+                                                                               2     6    6 3 6
+These real numbers are fixed before the target character. For each primitive finite-order target η,
+fix the data S, ξ, W0 , W1 of Section 6, independently of Z. Data for an exact high representation
+consist of the following objects and assertions.
+    First, Iη (Z) is an independently specified complex-valued quantity for every sufficiently
+large real Z. In each application it is given by a finite linear combination, for that Z, of the
+completed sums in Equation (6.1), allowing specified restrictions on the completed index A and
+specified rescalings of its three positive scales. The number of terms and coefficients in this finite
+combination may depend on Z. Any direct estimate for Iη refers to this expression, not to a
+separately defined high integral.
+    Second, for every nonzero sixth-power-free element u with (u, S) = 1 and every such Z, there
+is a function Hη,u,Z (s, w, z). It is holomorphic on a neighborhood of each point of D2 and of
+every D1 (ϵ0 ). For every D > 0 and every real box K contained in one of these regions, there are
+finite constants Bη,K,D and Jη,K,D such that, uniformly for 1 ≤ qu ≤ Z D , all imaginary parts,
+and real parts in K,
+
+                   |Hη,u,Z (s, w, z)| ≪η,K,D Z Bη,K,D (1 + |ℑs| + |ℑw| + |ℑz|)Jη,K,D .                (10.4)
+
+The constants and exponents are independent of Z, u and of any later order of integration by
+parts. No nonvanishing of H or of any of its local factors is assumed.
+   Finally, the following identity is asserted for the independently given Iη (Z), with absolute
+convergence of the sum and integrals on the displayed lines:
+                                Z     Z      Z                           (6)
+                         1                                               X
+              Iη (Z) =                             W(X, Y, Z; s, w, z)         qu−z ξ(u)
+                       (2πi)3   (3)    (3)   (2)                       u                              (10.5)
+                                                     S       S
+                                                    ζ (6z)L (w, χ• (u))
+                                                   · F                   Hη,u,Z (s, w, z) dz dw ds,
+                                                       LS (s, ηχ• (u))
+
+where the sum has the physical restrictions of Equation (7.5), and
+                                                                                   2
+                  W(X, Y, Z; s, w, z) = X 1/2−z Z s+z−1 Y w−1 e(s+z−1) M (z)W
+                                                                            c1 (w).
+
+Thus Equation (10.5) is a hypothesis to be proved for the physical expression, not its definition.
+
+    For the base probe, the physical expression is Iη (Z lx , Z ly , Z), ℓ = 0, and Hη,u,Z = Hη,u .
+Equations (7.5) and (7.13) prove the required identity, and Lemma 7.1 gives the holomorphy and
+Equation (10.4). More generally, the function H in the definition always means the full correction
+after the displayed scalar quotient is removed. If that correction is a sum of products of local
+factors, the products themselves must be holomorphic in the stated regions. Writing a quotient
+by an individual local factor at its zeros does not establish this condition. The decompositions
+used only to estimate a retained contour will be stated separately below.
+
+10.3    External tails on vertical lines and horizontal joins
+The product of our three Mellin tests decays in three independent height directions. The following
+estimate turns that decay into bounds both off a large box and on the horizontal sides of a contour
+rectangle.
+
+
+
+                                                          72

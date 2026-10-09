@@ -1,0 +1,68 @@
+   Let TΣinit be the fixed s-dyad and slot summand obtained from Equation (17.71) by the
+complete Möbius and priority expansions. Its exact separated identity is
+                                                 Z
+                      init   κinit +3η      −6
+                    TΣ = Z    c        (2π)          b init,Σ,υ (ξ)
+                                                     H
+                                                  R6
+                                   X                                                         (17.79)
+                              ×          VΣinit (ω; ξ)Qinit              init
+                                                         1,t,j,ξ (k, f )Q2,t,j,ξ (k, f ) dξ.
+                                         ω∈ΩΣ
+
+Indeed xa = Z δinit zna . The two column modes, with the last factor of Equation (17.78), are
+exactly xiξ     1 iξ2
+             1 x2 , and the other four modes are outer. Fourier inversion restores the full profile;
+its larger cutoffs are one on the retained supports, and the fresh column cutoffs are one wher-
+ever the old W0 windows are nonzero. Equation (17.75) restores the full prefactor and kernel.
+Equation (17.72) and the priority expansion restore every arithmetic factor term by term. Extra
+combinations in the full fresh windows cancel through the old windows in this complex identity
+before Cauchy.
+    The transform in Equation (17.79) is chosen from the fixed ambient profile before any actual
+C, d′ , s, h′ , and hence before any t, k, f , is evaluated. It depends on Σ, Z, the fixed tests, and the
+earlier mode υ, and may depend on the already frozen j, but not on any current outer ideal or
+reindexed row or label. The bare h′ norm is a coordinate; the derived row and label occur only
+in the outer masks or in the displayed characters. The relation C = td′ only restricts evaluation
+points. By Equation (17.20), for each fixed J there are fixed L, b0 such that
+    Z                                                      Z
+                                  J                 L               b ov,j (υ)|(1 + |υ|)L dυ ≪ pb (W ).
+          |Hinit,Σ,υ (ξ)|(1 + |ξ|) dξ ≪ (1 + |υ|) ,
+           b                                                       |H                            0
+     R6                                                         R1+|I0 |
+
+The first bound uses the fixed normalized roots and the uniform Euler bounds of the full kernel
+for every positive Aker,init ; W0 has only polynomial υ-dependence. The second is uniform over the
+fixed j-product interval. Taking larger L if needed also controls the earlier row-space Minkowski
+inequality. No derivative order introduces a power of Z.
+    Equation (17.79) now expresses the component in polynomials of canonical shape with one
+common Fourier density chosen before the current outer ideals are evaluated. It remains to
+bound the positive fibres and source measure, verify child admissibility from source witnesses,
+and restore the normalization in Lemma 17.1.
+    Apply Equation (D) on the whole ΩΣ , including all quotients t, before fixing one for the
+child. Only afterward take absolute weights. The retained (s, C) = 1 and d′ | C make f = d′ s
+squarefree, and all other factors of the weight are bounded by a fixed constant. Thus
+
+                                         |VΣinit (ω; ξ)| ≪ Binit (h′ )µ2 (f ).
+
+For fixed t, f, k, the identities
+
+          d′ | f,      s = f /d′ ,       C = td′ ,       h′ = k/d′         if this quotient is an element
+
+show that the reconstruction has at most dO (f ) choices before slots. Here Kslot again denotes
+the fixed bound for the original number of slots. The at most 2Kslot assigned residual primes
+divide tf . Their choices cost at most [dO (t)dO (f )]2Kslot . The earlier overlap primes were already
+frozen and counted in the overlap triangle. Hence the fibre, even if its actual size depends on k,
+is bounded by
+
+          Dinit (f )Cinit (t),       Dinit (f ) = dO (f )1+2Kslot ,         Cinit (t) = dO (t)2Kslot .      (17.80)
+
+There is no independent d′ , s count and no second frequency count.
+    Let Ωsrc
+         Σ be the structural outer set just used, before independent positive row or label addi-
+tions and ignoring unit Fourier phases, and define the set of distinct source quotients
+
+                                          TΣ = {t = C/d′ : ω ∈ Ωsrc
+                                                                Σ }.
+
+
+                                                         148

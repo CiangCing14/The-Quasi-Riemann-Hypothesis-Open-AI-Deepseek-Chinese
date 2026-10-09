@@ -1,0 +1,55 @@
+10.1    The principal row and the normalization
+We identify the row whose numerator is principal. A physical row with a prime factor outside
+S has nonprincipal numerator by the ramification argument in Section 8. Because the physical
+mask imposes (u, S) = 1, the remaining rows are units. If a unit u ̸= 1 had a sixth root in F , that
+root would have valuation zero at every prime, hence would be a unit of F ; every unit of F has
+sixth power one. Thus F (u1/6 )/F is nontrivial. It is finite Galois because F contains the sixth
+roots of unity. Chebotarev applied to a nonidentity Frobenius class supplies a prime outside the
+fixed set S where the associated sextic character is nontrivial [27, Theorem 1.1]. By the Kummer
+description in Lemma 4.1, this is χ• (u). Therefore u = 1 is the sole principal numerator row. A
+denominator attached to a bounded unit row may be principal; its reciprocal has a zero at one
+and will be kept on a global line below.
+    Define                                                                  2
+                Hη (s) = Hη,1 (s, 1, 1/6),   cS = W c1 (1)M (1/6) Res ζFS (v) /6.            (10.1)
+                                                                         v=1
+                                                                                              −4/5
+Lemma 7.1 makes Hη holomorphic on ℜs > 7/8. Its uniform estimate Hη = 1 + O(P0                )
+permits a choice of P0 before the target, because the local bound is uniform in the target unit
+phases. Fix P0 large enough that
+                                                        1
+                                      sup |Hη (s) − 1| ≤ .                                   (10.2)
+                                     ℜs>7/8             2
+
+Enlarging S by these primes leaves the fixed ray group T unchanged, as the calibration in the
+local identity holds coefficientwise. The excluded set and hence the particular function Hη may
+differ between applications, but within one application they are exactly those of the exact high
+representation being used.
+    The constant cS is positive. Indeed Wc1 (1) > 0 because W1 is nonnegative and nonzero, and
+M (1/6) > 0 by Equation (7.2). Q The simple   pole of ζFS has positive residue: deletion multiplies
+the positive residue of ζF by p∈S (1 − qp−1 ) > 0.
+    For the first stage put
+
+                                     2                    Iη (Z 1/2 , Z 1/2 , Z)
+                         CI (s) = s − ,      JI,η (Z) =                          .
+                                     3                             cS
+Let fI,η be the integral in Equation (2.3) with C = CI , S = S, and the function Hη just defined.
+The two scalar poles at w = 1 and z = 1/6 will give cS fI,η ; our remaining objective is a common
+power saving for every other term, measured relative to Z CI (β∗ ) .
+
+10.2    The exact identity used in contour moves
+The contour proof uses the full holomorphic correction in the displayed integral. To reuse that
+proof with the compensated probe, we record the identity and bounds that it requires. In the
+present application the correction is Hη,u , independent of Z, and the parameters below are
+lx = ly = h = 1/2 and ℓ = 0.
+    The scalar quotient in Equation (7.13) is the part of the high expansion that determines both
+the contour move and the principal residues. We keep that quotient fixed and state explicitly
+what may be changed around it. Put
+
+               D1 (ϵ0 ) = {(s, w, z) : ℜs ≥ 51/100,   ℜz ≥ 17/50,         ℜw ≥ −1/100,
+                                    ℜ(s + w) ≥ 1 + ϵ0 },          ϵ0 > 0,
+                   D2 = {(s, w, z) : ℜs ≥ 7/8,    ℜz ≥ 33/200,         ℜw ≥ 19/20}.
+
+These are the two regions in Lemma 7.1. A real box below means a compact rectangular subset
+of R3 for (ℜs, ℜw, ℜz).
+
+                                                 71

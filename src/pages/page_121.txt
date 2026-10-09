@@ -1,0 +1,67 @@
+e(−zy). For K > 0,
+                      X
+                           ψ(k)1(k,R)=1 Φ(qk /K)
+                     k∈O
+                          Kγ(ψ; m) X µ(d)ψ(d) X
+                                                        
+                                                          Kqh
+                                                                                           (17.8)
+                        =  √                    ψ̄(h)FΦ           ,
+                             qm         qd                qd qm
+                                      d|rad R            h∈O
+
+                         −1/2 P
+where γ(ψ; m) = qm             x mod m ψ(x)e(x/m).   For a nonprincipal primitive character,
+|γ(ψ; m)| = 1 and the h = 0 term is zero. For the primitive principal character the conventions
+are m = 1, γ(1; 1) = 1, ψ(h) = 1, including at h = 0.
+
+Proof. Expand the mask as d|rad R, d|k µ(d) and write k = dk ′ . The scale becomes K/qd and
+                               P
+the character contributes ψ(d). Poisson summation in residue classes modulo m has prefactor
+K/(qd qm ). Its finite transform is
+                               X                   √
+                                    ψ(x)e(hx/m) = qm γ(ψ; m)ψ̄(h).
+                            x mod m
+
+For unit h this follows by changing variables. For nonunit h the transform is zero by primi-
+tivity; for m = 1 the stated principal convention applies.   This proves Equation (17.8).
+                                                                                    P For a
+nonprincipal primitive character, finite Parseval gives h | x ψ(x)e(hx/m)|2 = qm x |ψ(x)|2 .
+                                                        P P
+                                                                            √
+Writing   ϕ(m) = |(O/m)× |, there are ϕ(m) unit h’s, all with magnitude qm |γ(ψ; m)|, and
+           2
+P
+   x |ψ(x)| = ϕ(m). Thus |γ(ψ; m)| = 1.
+    A fixed ray restriction can first be expanded into finitely many characters. Each is then
+replaced by its primitive inducing character, with the removed local zero extensions kept in R;
+the same formula applies term by term. For the principal modulus the absolute sum of the
+nonzero frequencies is OΦ (dO (rad R)). Indeed, for all A > 0,
+                                        X
+                                     A     |FΦ(Aqh )| ≪Φ 1.
+                                        h̸=0
+
+Lattice counting proves this when A ≤ 1, and Schwartz decay proves it when A ≥ 1. Sum
+this bound with A = K/qd over d. At every use below the relevant nonempty row scale has
+K ≥ 1, so this is also O(KZ ϵ ). When principal nonzero frequencies are added or removed while
+separating a nonprincipal sum, they will carry the same outer row mask as that sum; their
+absolute contribution is no larger than this full principal bound.
+
+17.5    The canonical reduction and its induction
+We now prove Lemma 17.2. The reflected energy handles the short completion; the remaining
+blocks undergo two Poisson transformations to produce admissible canonical sums with shorter
+rows.
+
+Proof of Lemma 17.2. The order of the analytic choices is organized by Corollary 17.4 in Sec-
+tion 17.3. Its indexed conclusion will be used on each positive Cauchy-side sum separately; the
+proof below verifies the required common coefficient measures, fixed norm losses, and finite depth.
+    At each node, every joint (f, k) Hilbert space uses the current label measure w(f ), and that
+factor is retained exactly once in every parent f -sum until Equation (17.32) removes the old
+label.
+    At each node keep the parameters N, V, M fixed, and write
+
+                                  F = N + V,          Q = logZ qrρ .
+
+
+
+                                                121

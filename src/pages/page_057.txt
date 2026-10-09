@@ -1,0 +1,57 @@
+Proof. Each maximum exists: the collection is finite, the zeros of each nonprincipal primitive
+L-function are discrete in compact rectangles, and absolute Euler convergence excludes zeros
+with real part greater than one. The sequence Mj (u) is nondecreasing and lies in [51/100, 1]. If
+every one of its I − 1 increments exceeded e, then
+
+                                 MI (u) − M1 (u) > (I − 1)e > 1,
+
+which is impossible. Choose an index with Mi+1 (u) − Mi (u) ≤ e, and round Mi (u) down on the
+stated grid. This gives the two inequalities. When a > 51/100, the maximum Mi (u) is attained
+by an actual zero, giving ρ. This reasoning allows a zero on the line one.
+    For |t| ≤ (3i + 2)T1 , the closed disk centered at 2 + it with radius 2 − a − 2e has real part at
+least a + 2e. Its radius is less than 3/2 < T1 , so every point in it has imaginary part of absolute
+value less than 3(i + 1)T1 . The bound Mi+1 (u) < a + 2e therefore excludes every zero of every
+primitive function in this disk. Lemma 4.9 controls the concentric disk of radius 2 − a − 6e.
+Apply it with center 2 + iℑs, and use absolute Euler convergence farther right. Since Qψ ≪A U
+and (3 + |t|)2 ≪e U 1/50 , the arbitrarily small power in that lemma can be chosen so that its
+contribution is U ϵ1 /2 . The estimates for polynomial-size deleted Euler products following that
+lemma supply the other U ϵ1 /2 .
+    For the last assertion, the primitive functional equation recalled in the proof of Lemma 4.8
+[11, Equation (1.1)] relates the value at 1 − a − 6e + it to the conjugate primitive function at
+a + 6e − it. The conjugate presentation is in Xu . The conductor and gamma quotient contribute
+at most
+                                           a−1/2+6e
+                                         Qψ         (3 + |t|)C .
+The reflected primitive value has an arbitrarily small U -power by the preceding disk bound.
+Finally, 1 − a − 6e ≥ −6e, so the upper bound for the deleted product is U 6e+ϵ1 , after reducing
+the preliminary losses. This proves the reflected estimate. The ranges of i and a give Oe (1)
+pairs.
+
+   We call (i, a) the bin of the row and put
+
+                                  δ = 2a − 1,         1/50 ≤ δ ≤ 1.
+
+Every primitive character inducing a presentation in Xu is a finite-order Hecke character. The
+definition of β∗ , together with β∗ > 51/100, therefore gives Mi (u) ≤ β∗ . In particular, the bin
+satisfies the exact inequalities
+                                     a ≤ β∗ ,   δ ≤ 2β∗ − 1.
+The bin a = 51/100 will be bounded by the trivial row count. For a > 51/100, the zero in
+Lemma 8.1 produces large polynomials to which the moments can be applied.
+Lemma 8.2 (Pointwise dyadic estimates). Fix bounded nonnegative ranges for r, m, and let
+
+                            Mr = Mψ (r; WM ),          Sm = Sψ (m; WS )
+
+denote the polynomials of Equations (4.2) and (4.1), now at base U . Suppose ψ ∈ Xu , the
+untwisted profiles have uniformly bounded smooth seminorms on a fixed annulus, and any pure
+norm twist has height at most (3i + 1)T1 . All additional Mellin frequencies entering the same
+L-argument are required to have total absolute value at most T1 /2.
+    For every ϵ > 0, there are e0 > 0, depending only on ϵ and the bounded length ranges, and a
+finite height order AA , uniform in the moving rows and profiles, such that, when
+
+                               0 < e < e0 ,     (1 + T1 )AA ≤ U ϵ/10 ,
+
+the following estimates hold for sufficiently large Z:
+
+                                        |Mr |2 ≪A,ϵ U δr+ϵ ,                                   (8.1)
+
+                                                 57

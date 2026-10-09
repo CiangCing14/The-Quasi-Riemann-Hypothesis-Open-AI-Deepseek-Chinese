@@ -1,0 +1,61 @@
+contains the target and the fixed ray twists used in the high-row family, and every conductor
+prime of a member of Θ belongs to S. For a sixth-power-free element u, define the finite collection
+of presentations
+                     Xu = ψu,ν,ς (n) = ν(n)χn (u)ς : ν ∈ Θ, ς ∈ {−1, 1} .
+                           
+
+At a nonunit the value of χn (u)−1 , like every other power of the symbol, is zero. The group
+property of Θ shows that Xu is closed under conjugation. It contains the numerator character
+χ• (u), the denominator character ηχ• (u), and every zero-extended presentation obtained by
+multiplying either orientation of the sextic symbol by a member of Θ.
+    Let ψ ∗ be the primitive character inducing a presentation ψ ∈ Xu , and let Qψ be its conductor
+norm. Reciprocity and the fixed conductor primes give
+                                                  Y
+       Qψ ≪A qu ,       Lorig (s, ψ) = L(s, ψ ∗ )   (1 − ψ ∗ (p)qp−s ), Eu ⊂ S ∪ {p : p | u}.
+                                                  p∈Eu
+
+The radical of the deleted product has norm OS (qu ). These identities retain the original zero
+extensions; in particular, they do not replace a row-dependent mask by an independently chosen
+mask.
+    If vp (u) = j ∈ {1, . . . , 5} at a prime p ∈
+                                                / S, the local character of χ• (u) on units at p has order
+6/ gcd(6, j) > 1. A character in Θ is unramified there, so it cannot cancel this local character.
+Consequently a presentation in Xu can induce the principal character only when u is supported
+on S. There are finitely many such sixth-power-free rows, including unit factors. Remove them
+for the present detector; each application must estimate these bounded physical rows separately.
+    Fix 0 < dmin < dmax < ∞ and write U = Z d , where dmin ≤ d ≤ dmax . The rows in the
+present dyad satisfy qu ≍ U , with fixed comparison constants. Let
+
+            0 < τ ≤ dmin /100,        T1 = Z τ > 2,          0 < e < 10−3 ,      I = ⌈1/e⌉ + 2.
+
+The value of τ will be chosen after the fixed height orders are known. For now it is fixed
+independently of Z. In particular T1 ≤ U 1/100 .
+
+Lemma 8.1 (Buffered zero-free bins). For every retained row u, there are an index i ∈ {1, . . . , I−
+1} and a grid point
+                             a ∈ (51/100 + eZ≥0 ) ∩ [51/100, 1]
+with the following properties. For j = 1, . . . , I, set
+
+                                                       ψ ∈ Xu , L(ρ, ψ ∗ ) = 0,
+                                                                              
+              Mj (u) = max {51/100} ∪ ℜρ :                                         .
+                                                       ℜρ ≥ 51/100, |ℑρ| ≤ 3jT1
+
+Then
+                              a ≤ Mi (u) < a + e,           Mi+1 (u) < a + 2e.
+If a > 51/100, some ψ ∈ Xu has a zero ρ = σ + iγ with
+
+                                     a ≤ σ < a + e,          |γ| ≤ 3iT1 .
+
+For every ϵ1 > 0, every ψ ∈ Xu , and sufficiently large Z, uniformly in the retained row,
+
+          |Lorig (s, ψ)| + |Lorig (s, ψ)−1 | ≪A,e,ϵ1 U ϵ1    (ℜs ≥ a + 6e, |ℑs| ≤ (3i + 2)T1 ) .
+
+On the reflected line in the same height range,
+
+                     |Lorig (1 − a − 6e + it, ψ)| ≪A,e,ϵ1 U a−1/2+12e+ϵ1 (3 + T1 )C ,
+
+where C depends only on the fixed real strip and the field. There are Oe (1) possible pairs (i, a),
+independently of the row and its conductor.
+
+                                                     56

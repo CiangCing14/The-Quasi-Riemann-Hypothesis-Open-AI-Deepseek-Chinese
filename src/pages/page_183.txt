@@ -1,0 +1,58 @@
+and each selected slot coefficient becomes ν(p)1p∈1T , again a fixed finite combination of members
+of Θ. Conjugation retains all zero extensions and underlying prime supports. It also preserves
+whether the inducing character belongs to Θ, since Θ is a group. The witness and physical
+heights need not be equal. Apply Lemma 4.5 to the rowwise witness parameters after fixing the
+physical parameters and selected indices. Derivatives in those parameters insert only logarithmic
+profile weights. The cost is a fixed power of 1 + T1 , uniform over moving rows and outer labels.
+Every retained large row induces outside Θ, because it ramifies at a prime outside S. Thus the
+z > 0 family condition of Lemma 18.1 holds.
+    For an actual plain length m ≤ 1/2, its largest zero-loss capacity from Lemma 18.1, at
+effective row width one, is
+                                           1 − 2m       1 − 2m
+                                  zP (m) =         =              .                          (19.2)
+                                             6κ        9/2 + 12∆
+Indeed the moment is applied to two copies of the plain witness, so its condition is 2m + 6κz ≤ 1.
+For an inverse witness of length r < 1, put zM (r) = (1 − r)/2. We use this capacity only where
+the second strict inequality in Lemma 17.1 also has a fixed margin.
+
+Proposition 19.2 (Row counts from the witnesses). Let B be a fixed dynamic and amplitude
+bin of retained sixth-power-free physical rows qu ≍ U = Z d , with a > 51/100, 0 < δ = 2a − 1 ≤ α,
+and mean amplitude q ∈ [0, δ/2]. Put x = q/δ, so 0 ≤ x ≤ 1/2, and define
+                                                              
+                                      17x                  8x
+                           Dx = 3 −        ,    Px = 2 −         (1 − x).
+                                       9                     9
+
+Assume the total available prime length exceeds 7/37 by a fixed positive amount. For every
+t ∈ [1, 3/2] and every ϵ > 0, the capacity decrements and slot mesh can be chosen using only ϵ, ∆
+and the bounded real ranges so that
+
+                         #B ≪A,ϵ U max{Rshort (t),L(t)}+∆/4+ϵ (1 + T1 )AA ,
+
+where AA < ∞ is uniform over moving rows and
+                                     δPx
+              Rshort (t) = 1 − δ +       (3/2 − t),    L(t) = 1 − δ + (α − δ)(t − 1).
+                                     Dx
+The estimate is valid for the rowwise witnesses of Proposition 8.3, with its height condition. If
+no prime slots are selected, then t = 1 instead gives
+
+                                 #B ≪A,ϵ U 1−2δ/3+ϵ (1 + T1 )AA ,
+
+without a prime-supply hypothesis. At zero inverse capacity use Lemma 17.6; at zero plain ca-
+pacity use the zero-slot case of Lemma 18.1.
+
+Proof. Subdivide by the witness presentation and dyadic pair. The number of choices is
+OA ((log U )2 ); the remaining rowwise smooth parameters are handled by the preceding Sobolev
+argument. Work in one subdivision, denoting it again by B, and let r, m be the actual lengths
+from Proposition 8.3. Whenever the selected slots satisfy the corresponding moment hypotheses
+and have total requested capacity z, their spike and the individual witness spikes imply, after
+reducing preliminary losses,
+
+                      #B ≪ U 1−δr−2qz+ϵ (1 + T1 )AA ,     from Lemma 17.1,
+                      #B ≪ U 1−2δm−2qz+ϵ (1 + T1 )AA ,    from Lemma 18.1.
+
+In the second line use two copies of Sm , so the denominator is |Sm |4 , not |Sm |2 . The effective
+width is one because the twist ν is fixed within the row sum and has no moving conductor radical.
+Each formula includes the arbitrarily small capacity, rounding, moment, and witness losses.
+
+                                                 183

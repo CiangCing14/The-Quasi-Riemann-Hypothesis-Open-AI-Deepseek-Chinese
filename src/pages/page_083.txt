@@ -1,0 +1,56 @@
+Proof. For the fixed target choose
+                                                                  
+                                         dmin             m
+                      0 < τη ≤ min            , τ0,η ,                 ,      T 1 = Z τη .
+                                         100           4(Aη + 1)
+
+Then (1 + T1 )Aη ≪η Z m/4 , so the first term in Equation (11.1) is Oη (Z C(β∗ )−3m/4 ). Next choose
+a fixed integer N such that
+                                    Bη − N τη < C(β∗ ) − m/2.
+This is possible because τη > 0 and Bη is finite. The second term is then bounded by the required
+power. Increase the lower threshold for Z after these choices. Both m and ω were fixed before
+the target, whereas τη , N and the threshold may depend on it. Since Jη and fη do not contain
+T1 , this proves the asserted family-wide exponent without changing either function.
+
+Proposition 11.2 (Balanced high estimate). Under the supposition ∆1 > 0, for every primitive
+finite-order target η and all sufficiently large Z,
+
+                              |JI,η (Z) − fI,η (Z)| ≪η Z CI (β∗ )−1/4800 .
+
+The displayed saving is independent of the target; the implied constant and lower threshold may
+depend on it.
+Proof. Use lx = ly = h = 1/2, ℓ = 0 and C = CI . The exact identity and local correction
+were verified at the start of Section 10; Equation (10.12) estimates its intermediate rows, and
+the principal and outer specializations there give the margins listed above. It remains to choose
+their losses.
+
+Order of choices. We give a common loss budget. Put
+                             1                                      1                  ∆1
+                    m0 =        ,     ϵ∗ = 10−6 ,         m=            ,        ω=       .
+                           1200                                    2400                2
+The error-free central, small, principal, and large savings just proved are all at least m0 . Fix
+the displayed geometry, row ranges, and v = 4000 before the target. Request loss ϵ∗ in the row
+count, numerator, local correction, buffered reciprocal, central multiplicity, and each principal or
+outer estimate. Reserve a further loss ϵ∗ for the O(log Z) physical dyads. The witness-pair and
+powerful-part logarithms are already included in the requested row-count loss; the Oe (1) bins
+and fixed presentation choices cost constants.
+    To obtain the requested row-count loss, first choose its preliminary witness, dyadic, and sieve
+losses sufficiently small in terms of ϵ∗ . These choices are independent of the target. Indeed
+the witness length error has an absolute coefficient, and the affine slopes in the optimization of
+Proposition 9.2 are uniformly bounded. The target-dependent constants in the actual dyadic
+endpoints multiply only 1/ log U , which changes a fixed constant or lower threshold. Apply
+Lemma 8.2 on the enclosing pre-saturation ranges 0 ≤ r, m ≤ 22: the detector’s terminal product
+cutoff is O(U 21 ) before it proves the shorter witness lengths. Its number e0 depends only on the
+requested dyadic loss and these bounded ranges. We may thus fix, still before the target,
+
+                                     0 < e < min{10−3 , ϵ∗ , e0 }.
+
+    With ϵr = ϵn = ϵH = ϵ∗ , this gives εc ≤ 15ϵ∗ . Since d ≤ 501/1000 < 1, the explicit central
+losses in Equation (10.12), together with the reserved physical-dyad loss, are at most
+                                                                             1    m0
+                       13ϵ∗ + 2(15ϵ∗ ) + ϵ∗ + ϵ∗ + ϵ∗ = 46ϵ∗ <                  =    .
+                                                                           4800   4
+The two principal losses are at most (3/2 + 1)ϵ∗ and 2ϵ∗ ; the small-row loss is at most 2ϵ∗ . Each
+is less than m0 /4. The displayed large-row estimate already uses its requested loss. Therefore
+
+                                                    83

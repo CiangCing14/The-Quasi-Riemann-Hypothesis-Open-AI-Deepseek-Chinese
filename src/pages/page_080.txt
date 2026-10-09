@@ -1,0 +1,59 @@
+When present, the error factor is estimated on this line; the global reciprocal bound and Gaussian
+give Oη,e,ϵ (Z C(β∗ )+e−µ+ϵ ). No continuation of that error factor is required.
+    Move only the main integral right to ℜs = 2. The reciprocal is holomorphic for ℜs > β∗ by
+the definition of β∗ and absolute Euler convergence beyond one. At a principal pole its reciprocal
+has a zero, so that case adds no residue. The function Hη is holomorphic there by Lemma 7.1,
+and is bounded there by Equation (10.2). The global reciprocal estimate is polynomial in height
+                                                                  2
+uniformly on the fixed real strip, while the Gaussian is O(e−(ℑs) ). Rectangular contours therefore
+have vanishing horizontal sides, and the shifted integral is exactly fη (Z). This also covers β∗ = 1.
+The three remainders give the asserted bound.
+
+   The function Hη in this lemma is the correction of the unmodified scalar Euler product at the
+double residue. A different full correction is permitted only when it verifies Equation (10.18) with
+a nonzero normalizer. For the base correction that equation holds with Aη = 1 and Rη,Z = 0.
+The normalized physical quantity in any application is Iη /(cS Aη ); the same normalizer must be
+used for its direct estimate and for this principal comparison. The raw central and outer-row
+bounds acquire only an arbitrarily small additional power after this division, by the hypothesis
+on A−1
+    η .
+
+
+The base correction. Take lx = ly = h = 1/2 and ℓ = 0. On the principal rectangle of
+Lemma 10.5, the local correction is bounded uniformly in every height because that rectangle
+lies in D2 . Thus Equation (10.17) holds with ℓ = 0 and height order zero. At the double residue
+it satisfies exactly
+                       Hη,1,Z (s, 1, 1/6) = Hη (s) = Hη (s)Z ℓ/6 · 1 · (1 + 0).
+Hence Aη = 1 and the residue error is identically zero. In the row u = 1, the outside factor
+qu−z ξ(u) is one; the sole factor 1/6 is already in cS from the residue of ζFS (6z). Lemma 10.5
+therefore has just its two remainder terms. Their savings before losses are
+                                      ly  1                    h      1
+                              mw =       = ,          mz =        =      .
+                                      20  40                  600   1200
+
+10.8    Small and large row norms
+The buffered bin estimate is needed only on a bounded interval of positive row exponents. The
+following direct bounds cover its two complements. They ask for explicit absolute estimates on
+the full correction and do not use its central decomposition.
+Lemma 10.6 (Outer row norms). Assume Definition 10.1. Fix σ0 ∈ [7/8, 1) with β∗ > σ0 ,
+0 < e < 10−3 , z0 = 17/50, and dmin > 0. For a dyadic number U ≥ 1, let Rη (U ; Z) denote the
+contribution in Equation (10.5) of physical rows U ≤ qu < 2U , omitting u = 1.
+   Suppose that for every ϵ > 0, for all such rows with qu ≤ 2Z dmin , and uniformly in all
+imaginary parts on (ℜs, ℜw, ℜz) = (β∗ + e, 1/2, z0 ),
+
+                  |Hη,u,Z (s, w, z)| ≪η,e,ϵ Z ℓz0 +ϵ quϵ (1 + |ℑs| + |ℑw| + |ℑz|)Jη,e,ϵ .    (10.20)
+
+Then, for every ϵ > 0 and 1 ≤ U ≤ Z dmin ,
+
+                       |Rη (U ; Z)| ≪η,e,ϵ Z C(β∗ )+h(z0 −1/6)−ly /2+e+ϵ U 63/50+ϵ .         (10.21)
+
+In particular the sum of these dyads is
+
+                            ≪η,e,ϵ Z C(β∗ )+h(z0 −1/6)−ly /2+e+(63/50)dmin +ϵ .              (10.22)
+
+    For the other end, suppose that for every fixed v > 2 and ϵ > 0, for every physical row,
+uniformly in all imaginary parts on (ℜs, ℜw, ℜz) = (2, 2, v),
+
+                   |Hη,u,Z (s, w, z)| ≪η,v,ϵ Z ℓv+ϵ quϵ (1 + |ℑs| + |ℑw| + |ℑz|)Jη,v,ϵ .     (10.23)
+
+                                                    80

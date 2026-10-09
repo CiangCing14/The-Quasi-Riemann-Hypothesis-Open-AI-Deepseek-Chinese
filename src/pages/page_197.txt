@@ -1,0 +1,56 @@
+    Now fix a primitive target η. Choose its admissible fixed arithmetic data and the final
+excluded set S, including its conductor, the common cutoff, and the further fixed exclusions just
+described. The physical expression, Hη , cS , and the signal all use this same data. The group T
+and the slot system remain independent of the target. Fix all internal moment, seminorm, and
+Sobolev orders supplied by the preceding results for this datum. Their uniformity over moving
+moduli, common masks, and frozen labels gives a finite Aη dominating the product of all retained
+high factors, including the dyadic, prime, numerator-reflection, and row-count height factors. It
+is independent of any later external test order. The all-height correction bounds and the direct
+global or absolute bounds in the shared analytic lemmas likewise give a finite scale degree Bη
+for all discarded physical pieces, independent of the later order N . Normalizing those pieces and
+summing their finitely many types only enlarges this fixed Bη .
+    We use the height ceiling verified at the end of Section 19.2. Let Aht,η ≤ Aη dominate the
+finitely many detector height orders, enlarging Aη if necessary, and put
+
+                                                  dmin ϵht
+                                     τ0,η :=                  > 0.
+                                               20(1 + Aht,η )
+
+This number is fixed after the retained orders for the target, but before N and Z. If 0 < τ ≤
+min{dmin /100, τ0,η } and T1 = Z τ , then, for U ≥ Z dmin and sufficiently large Z,
+
+                  T1 ≤ U 1/100 ,     (1 + T1 )Aht,η ≤ 2Aht,η Z dmin ϵht /20 ≤ U ϵht /10 .
+
+By the definition of ϵht , this proves every literal condition (1 + T1 )AA ≤ U ϵ/10 in Lemma 8.2
+throughout the moderate range.          The first bound also makes the detector’s crude er-
+ror U −189/100+o(1) T12 ≤ U −187/100+o(1) tend to zero. Every buffered moderate range has
+d ≤ h + ζ < 1; small and absolute large rows use no buffered cutoff.
+    The fixed finite list of external coordinates, including the physical ℑz coordinate, uses the
+single allocation in Equation (10.14). Its matrix is fixed by the slot system and the finite
+retained estimates, and is independent of the external derivative order. For each such τ , the
+dyadic, witness, and prime estimates may choose their auxiliary external orders after τ , as their
+statements permit, so that their complete pointwise bounds hold. Choose a strict power gap when
+absorbing their discarded parts; the resulting external seminorm constants are then absorbed by
+the τ -dependent lower threshold. For any requested remaining order N , these auxiliary orders
+may be increased further; this changes only external seminorm constants and the lower threshold,
+not Aη , Bη , or τ0,η . No internal moment is reapplied to an externally differentiated profile.
+    Combining Lemma 20.1, all the row ranges, and the principal remainder estimate therefore
+gives, for every fixed N and sufficiently large Z in this ceiling range,
+
+                   |JII,η (Z) − fII,η (Z)| ≪η,N Z C(β∗ )−m (1 + T1 )Aη + Z Bη T1−N .
+
+The lower threshold is allowed to depend on τ, N, η. This is Equation (11.1). Its low hypothesis
+is Equation (20.2) with ω = ∆/2, and the two functions do not contain T1 . Apply Lemma 11.1
+with σ0 = 7/8, C = CII , this m, and the verified ceiling τ0,η . It chooses τη , then a common
+dominating external order Nη , and finally the threshold. It gives the asserted high estimate with
+σ = m/2 > 0. Both ω and σ were fixed before the target.
+
+   Proposition 20.3 and Equation (10.2) verify the hypotheses of Proposition 2.1 with σ0 = 7/8,
+Jη = JII,η , and fη = fII,η . This contradicts β∗ > 7/8; hence β∗ ≤ 7/8. Proposition 11.3
+at σ0 = 7/8 extends the primitive Hecke conclusion to all finite-order Hecke and Dirichlet L-
+functions, with the principal pole allowed, and proves Theorem 1.1.
+
+
+
+
+                                                  197

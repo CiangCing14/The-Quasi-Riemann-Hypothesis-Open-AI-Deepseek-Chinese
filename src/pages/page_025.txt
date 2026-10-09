@@ -1,0 +1,77 @@
+No coprimality between the two variables in the following product is imposed:
+                                sf
+                                X
+              D(s, Ψ) =               γ2 (n)ᾱ(n)Ψ(n)qn−s ,
+                            n≡1 (3)
+                            (n,E)=1
+                                                        −3s+1/2
+                                X
+              L0 (s, Ψ) =             ᾱ(b)3 Ψ(b)3 qb             ,       T (s, Ψ) = L0 (s, Ψ)D(s, Ψ).
+                            b≡1 (3)
+                            (b,E)=1
+
+Both series and their product converge absolutely for ℜs > 1.
+   Let X > 0. Suppose that V ∈ C ∞ (0, ∞) and that, for every C > 0 and every integer j ≥ 0,
+(x∂x )j V (x) is OC,j (xC ) as x → 0 and OC,j (x−C ) as x → ∞. Define
+                                               Z ∞
+                                                           dx
+                                       V (t) =
+                                       b           V (x)xt    .
+                                                0          x
+
+The smoothed expression to be transformed is the completed sum
+                        Z
+                     1
+                            Vb (s − 1/2)X s−1/2 T (s, Ψ) ds
+                   2πi (a)
+                           X γ2 (n)α(nb3 )Ψ(nb3 )  qn q 3 
+                                                              b
+                       =                √              V        ,                            a > 1.
+                                           qn qb            X
+                                 n sf, b
+                                n,b≡1 (3)
+                                (nb,E)=1
+
+This equality follows by absolute convergence and Mellin inversion. The character acts on the
+whole index nb3 , with its zero values retained; n and b may share prime factors.
+   The reflected test is defined by
+
+                                       (2π)4                      Y Γ(1 + t ± 1/6)
+                                K=           ,           R(t) =                          ,
+                                         27                           ±
+                                                                        Γ(1 − t ± 1/6)
+                                            Z
+                                 1
+                            ♯
+                        V (x) =                       Vb (−t)R(t)(Kx)−t dt         (σ ≥ 0).
+                                2πi             (σ)
+
+The integral defining V ♯ is absolutely convergent and is independent of σ ≥ 0.
+    The product T has an entire continuation. On every fixed vertical strip it has polynomial
+growth, with constants allowed to depend on L, Ψ0 , P, (jp ) and the strip. There is one fixed triple
+of cusp coefficient functions from λ−4 O \ {0} to C, constructed from the theta expansions in the
+proof. The same triple is used for all choices of the arithmetic data, scale, and test profile. For
+each fixed arithmetic choice above, there is a finite family of terms, indexed as in (1), independent
+of X, V , and the contour parameter a > 1. In each term, d is selected from this triple and ϑ is an
+additive character of O modulo a fixed modulus depending only on L; their sectorwise dependence
+is exactly that stated in (3), and the remaining data have properties (1)–(3). For these terms
+and every a > 1, the identity is
+                     Z
+                  1
+                          Vb (s − 1/2)X s−1/2 T (s, Ψ) ds
+                 2πi (a)
+                                        d(µ)α(µ)ϑ(λ4 µ) Y
+                                                                                               (5.1)
+                                                                           ♯ qµ X
+                       X         X
+                                                                      4
+                    =        ζ                 √                 Bp (λ µ)V           .
+                      terms         −4
+                                                 qµ                            qc2
+                                 0̸=µ∈λ     O                           p active
+
+Every inner sum is absolutely convergent. The terms have the following precise properties.
+
+
+
+                                                            25

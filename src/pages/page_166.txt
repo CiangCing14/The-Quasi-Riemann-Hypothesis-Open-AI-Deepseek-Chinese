@@ -1,0 +1,53 @@
+slightly negative. Subtracting the allowance in Equation (18.25) from its nominal part, without
+ϵG , gives
+                        (K + g − ℓ − s0 ) − (a0 + qe + wo + w + Bc − s0 )
+                           = (A − M ) − d − (K0 − K) − wo − Bc + g − ℓ                       (18.31)
+                           ≤ A − M + 5σ/3 + δfr,1 .
+For the inequality, put D0 = d + K0 − K. The contribution −D0 − wo + J+ is at most δfr,1 :
+it is at most −c − 2w when J ≥ 0, and when J < 0 use D0 ≥ −δfr,1 . The largest remaining
+increment is 2σ −ℓ∗ = 5σ/3 in the amplified main norm; the other norms have increment σ. Thus
+the diagonal requires only the displayed terminal loss 5σ/3, plus the already reserved frequency
+perturbation δfr,1 and numerical support correction θN , when A ≤ M , and an additional δ in the
+padded zero-slot core. The θN correction is included in the C∗ ξ stage allowance.
+     For j ̸= 0, first perform the whole-dyad localization on this genuine full (u, v, j) sum, before
+extracting any common support. The nominal scale is T2 = Z 2a0 −K−g , and the kernel argument
+is at least qj /(e2HN Tsec ) for its supremum in the current Gauss sector. The tail estimate above
+applies using |F (u, v; j)| ≤ qu qv , with the literal conditions s | u, v still present. Write
+                                                    X
+                                      Ωret (qj ) :=       ωλ (qj /Tλ ).
+                                              λ retained
+
+This common row weight satisfies 0 ≤ Ωret ≤ 1. The full kernel in Equation (18.30) remains
+on every retained term. All subsequent signed Fourier separations are performed one retained
+λ at a time, so the normalized row variable stays on a fixed log box; Ωret records their sum
+and common domain. There are O(log Z) relevant retained dyads in the bounded polynomial
+ranges. The preceding j = 0 term is exactly the diagonal of the same final Φ2 ball, including the
+previously added Gauss row zero; neither zero term is restored on a different domain.
+     Now write u = D2 a, v = E2 b, extracting the genuine complete common support, so that
+(a, b) = 1 and (ab, D2 E2 ) = 1. Allocate all extracted powers to the plain variables and slots as
+at the first transform. Lemma 13.4 applies on this genuine locus and gives
+
+              F (D2 a, E2 b; j) = F (D2 , E2 ; j)R(a, E2 )R(b, D2 )R(a, b)χa (j)χb (−j).
+
+It permits arbitrary prime powers in all four moduli and leaves a row scalar at the common primes.
+Every extracted prime punctures all remaining factors on its side, and every slot supplying that
+prime is frozen.
+    This also explains explicitly the cases where a slot shares a prime with a plain variable. If p
+occurs only on one side, with full multiplicity i, its residual factor is χp (j)i . Splitting i among
+the two plain variables and the possible slot gives precisely the same factor by multiplicativity,
+including when 6 | i and p | j. For example, a plain p5 and a slot p give the zero-extended factor
+χp (j)6 . If p occurs on both sides, its full powers are removed. In the unequal case i > j0 ≥ 1,
+the local correlation is zero unless 6 | j0 and the frequency is pj0 k with p ∤ k; when it is nonzero
+it equals
+                                P j0 −1 (P − 1)χp (k)i−j0 ,  P = qp .
+This is a row scalar, even if the excess valuation on the first side came partly from a live slot.
+For instance i = 7, j0 = 6 with a plain p6 and slot p leaves the scalar P 5 (P − 1)χp (k), freezes
+that slot, and punctures both remaining plain variables at p. Equal multiplicities have the scalar
+factors in Equation (13.8) and the same puncture conclusion. Complete rather than gcd-only
+extraction is what makes these local factors independent of the residual variables.
+    Define
+                       c2 = logZ qD2 , d2 = logZ qE2 , b2 = (c2 + d2 )/2.
+Let p2 be the logarithmic norm of their common radical, let Gc = (D2 , E2 ), and put g2 = logZ qGc .
+The correlation vanishes unless Gc | j. At a common prime with equal multiplicity i ̸≡ 0 (mod 6),
+
+                                                 166

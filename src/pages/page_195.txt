@@ -1,0 +1,57 @@
+and a fixed geometry, moment losses, capacity decrements, slot system, amplitude width, bin width
+e > 0, and extension 0 < ζ < 1/48, all chosen before the target character, with the following
+property. For every primitive finite-order target η, one can then choose its fixed arithmetic data,
+a positive height exponent τη , a finite external tail order Nη , and a lower threshold Z0,η such that,
+for Z ≥ Z0,η ,
+
+                 |JII,η (Z)| ≪η Z C(7/8)+ω ,       |JII,η (Z) − fII,η (Z)| ≪η Z C(β∗ )−σ .
+
+The exponents ω, σ do not depend on η. The cutoff T1 = Z τη occurs only in the estimates, not
+in either function.
+
+Proof. The ideal margins are
+                                         51
+                  mlo = ∆,       mhi =      ∆,       mhigh := min{mhi , msmall } > 0.
+                                         64
+The principal contour margins are mw , mz in Equation (20.3). Reserve one half of each of
+mlo , mhigh , mw , mz . On the compact real parameter ranges, the coefficients multiplying all re-
+quested detector, moment, capacity, and rounding losses are bounded independently of the target.
+Indeed, δ ≥ 1/50, Dx ≥ 37/18, and J ≥ 35/54; the dyadic lengths are bounded, and Proposi-
+tion 19.2 gives fixed inverse width and supply margins. The equality δ = α uses the separate
+no-slot bound above. Choose the moment losses and capacity decrement so that their total cost
+in the high exponent is less than mhigh /8.
+    Let ηmesh > 0 be the mesh supplied by Lemma 18.1 for these losses and bounded real ranges.
+Its uniform assertion on [3/4, 1] applies in particular to the compact closure κ ∈ [3/4, 5/6] used
+here, and the mesh is independent of the number of slots. Only the eventual seminorm and height
+orders may depend on a fixed slot count. Let bround > 0 be small enough that a squared-spike
+rounding loss below bround , after the bounded changes of exponent base, costs less than mhigh /8.
+Choose a fixed even integer K with
+                                                   
+                      2ℓ                         1             ℓ
+                         < min ηmesh , bround ,       ,  ℓi =     (1 ≤ i ≤ K).
+                      K                         185            K
+
+These positive lengths sum to ℓ and are independent of the target and Z. Put Pi = P = Z ℓ/K .
+For 1 ≤ i ≤ K, set                                      
+                                      2i − 1        2i
+                          Ii = 1 +           , 1+          ⊂ (1, 2)
+                                     2K + 1       2K + 1
+and choose a nonnegative, nonzero Wi ∈ Cc∞ (Ii ). The intervals have positive gaps. Hence their
+underlying prime windows are disjoint for every Z, before the ray, excluded-set, or row masks
+are imposed. Equation (12.5) keeps each window at its original scale in every summand.
+    For each selected row range, U = Z d has d ≥ 1/2, so
+
+                               ℓi   2ℓ                                2ℓ
+                        wi =      ≤    < ηmesh ,         δ max wi ≤      < bround .
+                               d    K                       i         K
+The second inequality uses δ ≤ 5/6 < 1. The total available length remains ℓ/d. For d ≤ h it is
+at least 8/39, exceeding 7/37 by 23/1443. For h < d ≤ h+ζ with ζ < 1/48, it exceeds 1/5, whose
+excess over 7/37 is 2/185. Thus every selected inverse capacity and the smaller plain capacity
+are supplied. The extra bound 2ℓ/K < 1/185 is below half the latter gap. A zero-capacity
+neighborhood, including the equality endpoint, uses the no-slot moment. Actual annular ratios
+change nominal lengths by OK (1/ log U ), absorbed by the fixed strict margins at a sufficiently
+large threshold.
+    The internal centered amplifier also stays separated from these windows. Write σwidth for
+the width decrement denoted σ in the proof of Lemma 18.1. That proof uses the pool exponent
+
+                                                   195

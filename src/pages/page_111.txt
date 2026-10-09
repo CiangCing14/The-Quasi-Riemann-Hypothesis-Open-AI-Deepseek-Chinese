@@ -1,0 +1,58 @@
+Proof. In this region ϑ = (−wr )+ ≤ 6e. The estimates in the proof of Lemma 7.1 sharpen to
+Hp − 1 = O(Q−1−10e ) for p ∤ u and Hp − 1 = O(Q−10e ) for p | u. Increase the fixed P0 so that
+|Hp − 1| < 1/2 for all these primes. The holomorphic factor Gp in Equation (16.2), divided by
+Hp , now defines Bp throughout this region. It is Hp , not the possibly singular raw factor Pp , that
+is bounded away from zero when wr < 0.                                Q
+    Consequently the tuple sum in Equation (16.3) factors as Hη,u i Bi on this dynamic region.
+Substituting Bi = Qi + Di proves Equation (16.10). This factorization is not used to continue
+the correction outside the present region.
+    For p ∤ u, Equation (16.8) and the estimate for Ep give
+
+    |Hp (Bp + χp (u))| ≪ Q−xr +2ϑ + Q−6zr +2ϑ + Q4−5xr −6zr +2ϑ + Q1−wr −6zr +ϑ ≪ Q−51/100 .
+
+The four exponents are bounded respectively by −a − 4e, −51/25 + 12e, 49/25 − 5a − 68e, and
+a − 51/25 + 12e. Division by the bounded Hp preserves this estimate. The number of primes
+in a slot is O(Pi ) by the ideal count; hence its total contribution from p ∤ u, including Qz−1 , is
+     z −51/100+ϵ
+O(Pi r           ).
+    For p | u there are only divisor-many possible labels. A monomial in Ep is multiplied by
+Qz−1+x in Qz−1 Bp , so after separating Qz its exponent is xr − 1 plus the exponent of that
+monomial. For the non-tail boundary terms of the six-valuation table, these exponents at e = 0
+are
+                        j    1        2            3           4         5
+                           a − 2 1/2 − 2a −a, 1 − 3a 1/2 − 2a 2 − 5a.
+At positive e their changes are respectively +6e, −32e, (−26e, −48e), −42e, −80e. They are all
+strictly below −1/2 in the stated range. The common R term is smaller still: its exponent
+after separating Qz is at most 49/25 − 1 − 5a − 80e < −1/2. Additional valuation pairs and
+m values have ratios |R| ≤ Q−11/10 and |V | = Q−51/25 , so their geometric sums preserve these
+bounds. The strict second-family term with an additional V is also smaller than Q−1/2 after this
+normalization.
+    The sole remaining term is the strict (e0 , l, k, m) = (1, 0, 1, 0) term, which occurs for j ≥ 2
+and is −η(p)(Q − 1)Q−x−w . Its exponent after separating Qz is −wr . The explicit rescaling term
+−Q−w has exponent after separating Qz −1 − wQ       r < −1/2, so it needs no further estimate.
+    Let fu be the conductor of ψu∗ . Write u = ϵu p|u pjp , with ϵu a unit. For primary n coprime
+to uS, reciprocity gives                          Y
+                             χn (u) = ϵu(qn −1)/6     R(p, n)jp χp (n)jp .
+                                                 p|u
+
+The unit exponent is read modulo six. The prime formula extends to composite n: when A ≡
+B ≡ 1 (mod 6),
+                              AB − 1     A−1 B−1
+                                       ≡       +           (mod 6).
+                                 6         6        6
+Thus the unit factor depends only on qn modulo 36, and the R product depends only on n
+modulo 4. Together with the multiplicativity of R and the local symbols, the displayed norm
+congruence makes the right side multiplicative on integral ideals prime to 6u; extend it to their
+fractional ideal group. A generator congruent to one modulo (36) rad(u) is already primary and
+makes every displayed factor one. This character therefore has a ray presentation with that fixed
+2, 3 modulus times rad(u). It agrees with the Kummer character χ• (u) of Lemma 4.1 on ideals
+avoiding S. These characters induce the same primitive character: in the principal ideal ring O,
+the Chinese remainder theorem supplies a representative avoiding the additional finite set S in
+every ray class of a common modulus. At a good prime p | u, hold the fixed class and all other
+good residues at one and vary the residue modulo p by the Chinese remainder theorem. The
+                            j
+remaining local character χpp has exact order 6/ gcd(6, jp ) > 1. Its conductor exponent at p is
+therefore exactly one: the displayed ray modulus has only the first power of p, and the character
+
+
+                                                111

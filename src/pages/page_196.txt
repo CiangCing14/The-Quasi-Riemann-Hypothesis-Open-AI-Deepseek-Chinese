@@ -1,0 +1,57 @@
+ℓ∗ = σwidth /3 and a mesh below σwidth /6. At base U , every live physical slot has norm at most
+2U ηmesh , whereas the pool begins at U ℓ∗ /2. Their fixed exponent gap makes these sets disjoint
+for all sufficiently large U , uniformly in the selected d-range. The marked inverse moment has
+no mesh condition.
+R ∞ The normalizer      in Equation (20.1) is nonzero for this actual choice.           Put ci =
+    W    (y)y −5/6 dy > 0. The asymptotic already proved in Section 20.1 specializes to
+ 0     i
+                                                                     !
+                         P 1/6 ci                       K K Y
+                                                            
+               Si (Z) ∼            > 0,    AT (Z) ∼                ci (log Z)−K > 0.
+                        |T | log P                     |T |ℓ
+                                                                 i
+
+The sign uses even K. Any later fixed excluded set affects only the common lower threshold,
+since its primes eventually leave all these windows. Choose
+                      7 ℓ     7                      7           7
+               κP =        =     ,        0 < κP <     min ℓi =     ,       mP := κP .
+                      16 K   96K                     8 i        48K
+Thus the principal approximation has a positive margin chosen before the target. The number
+of subsets, the seminorms of the narrow windows, and their finite height orders may depend on
+this fixed K.
+     Choose the amplitude width, the remaining power losses, and e so that their total high cost
+is less than mhigh /8, and so that
+                (1 + h)e + ϵpr < mw /4,      e + ϵpr < mz /4,        e + ϵpr < mP /4.
+Here ϵpr > 0 includes the chosen small powers in the principal remainder estimate. Also require
+e < 10−3 and the bounds e0 in Lemma 8.2. The slot lengths have already been fixed, so the small
+powers needed in the amplitude subdivision can be chosen in terms of their positive minimum.
+All these choices depend only on ∆ and the pretarget slot system.
+    Choose
+                                 0 < ζ < min{1/48, mhigh /16}.
+The frequency extension then costs at most 2ζ < mhigh /8. Now choose the absolute line z∞ > 2
+in Section 20.3 sufficiently far right that its large-row sum has a saving larger than mhigh relative
+to C(β∗ ). Its exponent depends only on these real choices, so z∞ also precedes the target. Choose
+the pretarget cutoff needed for Equation (10.2). Any additional fixed excluded primes required
+by Proposition 16.1 after the target is fixed may be added to S: the same positive product-tail
+majorant preserves the shared contraction, and neither T nor the slot windows change.
+    For clarity, the nonprincipal real comparison is uniform over all pointwise pairs in Lemma 20.1.
+Let ϵreal (d) ≥ 0 collect the allocated real, mesh, and moment losses for the relevant range. The
+endpoint inequality, the intermediate inequality, and the positive slopes give
+                         E(d) + ϵreal (d) ≤ (β∗ − 7/8) − εhi ,       εhi > 0,                (20.12)
+for every occurring (R, q) and every moderate d, with a fixed fraction of mhigh still reserved.
+Therefore the same inequality holds for Emax,Z (d), uniformly in Z. The small and large bounds
+have their stated separate savings. Apply the subpower normalizer estimate once to the nonprin-
+cipal and outer-row contributions, and absorb the remaining finite dyadic multiplicities using a
+power below mhigh /8. Lemma 10.5 already includes its own normalizer allowance ϵpr . The four
+high real allocations above cost less than mhigh /2; this last allowance leaves more than 3mhigh /8.
+The principal inequalities leave more than 3/4 of each of mw , mz , mP . Thus one may fix, before
+the target,
+                                     1
+                               m = min{mhigh , mw , mz , mP } > 0
+                                     4
+as a common remaining high saving before retained height factors. For the low estimate, apply
+Equation (20.2) with the pretarget loss ∆/2, and set ω = ∆/2. Let ϵht > 0 be the minimum of
+the finitely many detector height allowances already chosen with these real losses.
+
+                                                196

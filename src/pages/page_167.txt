@@ -1,0 +1,59 @@
+call the divided frequency j/Gc a unit or nonunit according as that prime does not or does divide
+it. Let t2 be the total radical length of these unit primes. Let Vid be the product of these nonunit
+primes and put V = logZ qVid .
+    Equation (13.8) gives the following absolute local bounds:
+
+           common multiplicities and divided frequency absolute correlation bound
+                        i = i, 6 ∤ i, unit                        P i−1
+                     i = i, 6 ∤ i, nonunit                         Pi
+                      i = i, 6 | i, either                         Pi
+                      i > j0 , 6 | j0 , unit                      P j0 .
+
+Every unequal case not in the last line is zero. Fix the indicated unit/nonunit partition and
+write j = Gc Vid h′ . The partitioned scalar
+                                                  F (D2 , E2 ; Gc Vid h′ )
+                                    1part (h′ )
+                                                         Z g2 −t2
+is defined to be zero off that partition and has modulus at most one everywhere with this
+definition. We do not assert the unit bound for the unpartitioned correlation on other rows.
+Every frozen allocation forced to be zero by the old masks is still discarded before this absolute
+bound is used.
+    The complete-support identity leaves the row factor χn (Gc Vid h′ ) on each whole residual
+column. To count its fixed moving support, put v = Gc Vid and ep = vp (v) mod 6. Products of
+the canonical primary generators of these good ideals are primary, so the exact all-input identity
+is                                       Y            Y
+                                χn (v) =     χn (p)ep    1(n,p)=1 ,
+                                            p|v                p|v
+                                           ep ̸=0             ep =0
+
+with any unit of the original row retained in h′ . All primes in this identity already puncture
+every residual factor, because they are in the genuine extracted support. The active ep ̸= 0
+primes are contained in the unit set counted by t2 and the nonunit set counted by V . Equal
+six-divisible and unequal-minimum-six-divisible primes have ep = 0 and are represented solely
+by the common puncture in this fixed factor. A nonunit prime can also have ep = 0, in which
+case counting it in V only enlarges the bound. This factors only χn (v): the natural row factor
+χn (h′ ), with all its zeros, and all fixed-ray reciprocity phases remain. It does not reclassify a
+cancellation with the varying row as an extra puncture. Thus the full new moving support has
+length at most qe + wo + t2 + V .
+    Define the nominal row and total widths by
+          m′ = 2a0 − K − g − g2 − V,                                  q ′ = qe + wo + t2 + V,
+                                                                                                (18.32)
+          M ′ = m′ + q ′ = M + J − g − g2 + t2 ≤ M − σ.
+Here g2 ≥ t2 , and the definitions of g give g − J ≥ σ. The identities follow by substituting
+a0 = A − c − w and the definition of K0 preceding Equation (18.22). Put
+                                                  ξ log(Cd Csec )
+                                 0 ≤ δfr,2 :=       +             < ξ.
+                                                  2    log Z
+The sector constants here are those for the second transform. The retained row weight pulls back
+exactly to Ωret (qGc Vid qh′ ). On its support,
+
+                             Cd Tsec Z ξ/2   Cd Csec Z 2a0 −K−g+ξ/2      ′
+                     qh′ ≤                 ≤                        = Z m +δfr,2 .
+                               qGc Vid               qGc Vid
+Thus it lies in that common enclosing row ball. On a nonempty retained range define the declared
+nonnegative row length m′act = max{0, m′ + δfr,2 } and Mact
+                                                         ′ = m′         ′
+                                                                 act + q . Nonemptiness implies
+
+
+                                                      167

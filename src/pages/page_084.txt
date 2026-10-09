@@ -1,0 +1,56 @@
+all these terms, after division by the fixed cS , retain at least 3m0 /4 = 1/1600 before the height
+factor. We use only m = 1/2400, leaving a further power 1/4800 available below.
+    It remains to check when the height hypotheses hold. Let ϵdet > 0 be the fixed dyadic loss
+chosen above, and, after fixing a target, let Adet,η dominate the finitely many orders in its uses
+of Lemma 8.2. Set
+                                               dmin ϵdet
+                                     τ0,η =                  > 0.
+                                            20(Adet,η + 1)
+For 0 < τ ≤ τ0,η and sufficiently large Z,
+
+                      (1 + Z τ )Adet,η ≤ Z dmin ϵdet /10 ≤ U ϵdet /10    (d ≥ dmin ).
+
+This verifies the detector height condition uniformly over the physical range. The fixed factor
+from 1 + Z τ ≤ 2Z τ is absorbed by the lower threshold. We also impose τ ≤ dmin /100 as required
+by the bins. The internal tail orders used to establish the witnesses are chosen after this τ and
+are separate from the final external order N below. Their increase does not change the retained
+profile or height orders. Any fixed constants introduced by those internal choices are absorbed
+into the unused power 1/4800 by increasing the lower threshold, which may depend on η and τ .
+    For every final integer N ≥ 0, Lemma 10.3 bounds the discarded high portions and joins by
+Oη,N (Z Bη T1−N ), with Bη fixed before N . The bounded real and row ranges and the finite set of
+bins permit one such Bη for all the central dyads. Summing the O(log Z) dyads can be absorbed
+by increasing Bη by one, again before N . Combining the preceding estimates gives
+
+                    |JI,η (Z) − fI,η (Z)| ≪η,N Z CI (β∗ )−m (1 + T1 )Aη + Z Bη T1−N
+
+for some finite Aη , Bη , whenever 0 < τ ≤ min{dmin /100, τ0,η } and Z is sufficiently large. Both
+functions are independent of T1 . Proposition 6.3, applied with loss ω and divided by the same
+fixed cS , supplies
+
+                      |JI,η (Z)| ≪η Z 1/4+ω = Z CI (11/12)+ω ,          0 < ω < ∆1 .
+
+All hypotheses of Lemma 11.1 are now verified. It gives the saving m/2 = 1/4800 asserted in
+the proposition.
+
+11.2    Transfer to Dirichlet L-functions
+The continuation criterion concerns the Hecke family over F . We prove once that a strict zero-free
+half-plane for that family has the corresponding Dirichlet consequence.
+
+Proposition 11.3 (Quadratic√transfer). Let σ0 ∈ [1/2, 1). Suppose every primitive finite-order
+Hecke L-function over F = Q( −3) is zero-free on ℜs > σ0 , with its principal pole at one allowed.
+Then every finite-order Hecke L-function over F and every Dirichlet L-function is zero-free on
+that same strict half-plane, again allowing the principal pole at one.
+
+Proof. Passing from a primitive Hecke character to one that it induces changes only finitely
+many factors 1 − η(p)N p−s . They are nonzero for ℜs > 0, so the Hecke assertion extends to
+all finite-order characters. The same observation for factors 1 − χ(p)p−s reduces the Dirichlet
+assertion to a primitive Dirichlet character χ of conductor q.
+    Let χ−3 be the quadratic character of conductor three, and let η be the finite-order Hecke
+character given by a 7→ χ(N a) on ideals coprime to 3q. It is a ray character: if α ≡ 1 (mod qO),
+then N α ≡ 1 (mod q), so the norm character is trivial on the corresponding principal ray
+subgroup. Let SQ be the rational primes dividing 3q, and let SQ be the primes of F above them.
+Superscripts by these sets denote deletion of those Euler factors.
+    For p ∈/ SQ , the local factors agree as follows. If p splits in F , then χ−3 (p) = 1, the two prime
+ideals have norm p, and the Hecke factor is (1 − χ(p)p−s )−2 . This is the product of the Dirichlet
+
+                                                     84

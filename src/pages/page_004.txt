@@ -1,0 +1,57 @@
+1    Introduction
+            √
+Let F = Q( −3), let O be its ring of integers, and write N a = |O/a| for the norm of a nonzero
+integral ideal. A finite-order Hecke character η modulo a nonzero integral ideal f is a character
+of the ray class group modulo f, extended by zero to ideals not coprime to f. This agrees with
+the usual finite-order idelic definition: the complex place contributes no nontrivial finite-order
+continuous character [22, Chapter VI, Section 1]. For ℜs > 1, put
+                                      X η(a)            Y                      −1
+                        LF (s, η) =                 =        1 − η(p)(N p)−s         .
+                                             (N a)s      p
+                                      a̸=0
+
+The same notation denotes its meromorphic continuation. For a Dirichlet character χ modulo q,
+extended by zero on nonunits, we likewise write
+                                               X χ(n)
+                                L(s, χ) =                      (ℜs > 1)
+                                                     ns
+                                               n≥1
+
+and then continue meromorphically; the character modulo 1 gives the Riemann zeta function
+ζ(s). The problem here is uniform exclusion: to find a constant σ0 < 1, independent of the
+character, its conductor, and the height, such that these functions have no zeros in ℜs > σ0 .
+    For ζ alone, the existence of a fixed σ0 < 1 for which ζ(s) ̸= 0 in ℜs > σ0 is called the
+quasi-Riemann hypothesis [3, Section 1]. It asks for one gap valid at every height, not merely
+nonvanishing on ℜs = 1. The corresponding uniform formulation over all Dirichlet characters
+appears in [9, p. 288, Equation (1.4) and the following paragraph].
+    The connection between these functions and prime distribution has a long history. Dirichlet’s
+1837 proof of infinitude of primes in every reduced arithmetic progression introduced the character
+L-series that separate residue classes [7]. Riemann’s 1859 memoir related the zeros of ζ to the
+distribution of primes and formulated the critical-line conjecture [25]. Hadamard and de la Vallée
+Poussin independently proved in 1896 that ζ has no zero on ℜs = 1, obtaining the prime number
+theorem [15, 28]. Hecke subsequently developed the character zeta functions and their analytic
+theory over number fields [18].
+    Classical zero-free regions for Hecke L-functions approach the line ℜs = 1 as the conductor
+or height increases and can allow one simple real exceptional zero; a precise form for abelian
+extensions is given by [27, Theorem 3.1]. Such regions do not give uniform exclusion in a fixed
+half-plane. Zero-density estimates address a different question: they bound the number of zeros
+to the right of a given vertical line. For example, Guth and Maynard’s large-value estimates
+improve zero-density bounds for ζ [14, Theorem 1.2], but these zero-density bounds do not
+exclude every zero.
+                                                                    √
+Theorem 1.1. Every finite-order Hecke L-function over F = Q( −3) has no zero in ℜs > 7/8.
+The same holds for every Dirichlet L-function, including ζ(s). A pole at s = 1 for a principal
+character is allowed.
+    In particular, Theorem 1.1 resolves the quasi-Riemann hypothesis affirmatively: the supre-
+mum of the real parts of the nontrivial zeros of ζ, namely its zeros in 0 < ℜs < 1, is at most 7/8.
+The boundary ℜs = 7/8 is not included, while any exceptional real zero in (7/8, 1) is excluded.
+The theorem does not establish the Riemann hypothesis or its generalized versions, which place
+nontrivial zeros on ℜs = 1/2. The Riemann hypothesis remains open [5].
+    Kubota’s metaplectic theory and Patterson’s cubic theta series provide the automorphic set-
+ting [20, 24]. We use the unconditional explicit cusp expansions recorded by Dunn and Radziwiłł
+[8, Section 5 and Appendix A]; their GRH-conditional prime asymptotic is not an input. The
+corresponding first-moment asymptotic is proved unconditionally in an independent manuscript
+[23, Theorem 1.1]; that result is also not used here. Proposition 5.1 derives the reflection used
+here while retaining the characters’ zero-on-nonunit restrictions.
+
+                                                     4

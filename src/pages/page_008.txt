@@ -1,0 +1,59 @@
+2    From a common signal to a zero-free half-plane
+Both parts of the proof use the same analytic principle. A character sum is bounded directly
+and is also compared with a Mellin integral containing the reciprocal of a target L-function. A
+power saving in both comparisons then continues that reciprocal across the rightmost possible
+zeros. We prove this principle for a variable boundary, so that it can be applied at 11/12 and at
+7/8 without repeating the argument.√
+    Throughout the paper, F = Q( −3). It suffices to consider primitive target characters.
+Indeed, a character induced from a primitive character η has L-function differing from LF (s, η)
+by finitely many factors 1 − η(p)N p−s , all nonzero for ℜs > 0. Define
+                                                                                  
+                                 1/2 ≤ ℜρ ≤ 1, LF (ρ, η) = 0
+      β∗ = sup {1/2} ∪ ℜρ :                                                            .     (2.1)
+                                 for some primitive finite-order Hecke character η
+
+Poles are not included. Absolute convergence of the Euler product excludes zeros in ℜs > 1, so
+1/2 ≤ β∗ ≤ 1.
+   For a finite set S of prime ideals, a superscript S means that the corresponding Euler factors
+have been deleted:                                  Y
+                             LSF (s, η) = LF (s, η)   (1 − η(p)N p−s ).
+                                                    p∈S
+
+The local value is zero at a ramified prime. Each displayed factor is nonzero for ℜs > 0, so
+deleting finitely many factors neither creates nor removes a zero there.
+
+Proposition 2.1 (Continuation from a common signal). Fix σ0 ∈ (1/2, 1) and suppose ∆0 =
+β∗ − σ0 > 0. Let C(s) = s + c, where c ∈ R is fixed. Suppose that numbers ω, σ satisfying
+
+                                     0 < ω < ∆0 ,         σ>0
+
+can be chosen independently of the target character. For every primitive finite-order Hecke char-
+acter η, suppose there exist a finite set S, a holomorphic function Hη on ℜs > σ0 , and a function
+Jη (Z) defined for all sufficiently large real Z, such that
+
+                                                         1
+                                       sup |Hη (s) − 1| ≤ .                                  (2.2)
+                                      ℜs>σ0              2
+
+For Z > 0, define                        Z
+                                    1                         2    Hη (s)
+                          fη (Z) =              Z C(s) e(s−5/6)              ds.             (2.3)
+                                   2πi   ℜs=2                     LSF (s, η)
+Assume that, as Z → ∞,
+
+                                             |Jη (Z)| ≪η Z C(σ0 )+ω ,                        (2.4)
+                                 |Jη (Z) − fη (Z)| ≪η Z C(β∗ )−σ .                           (2.5)
+
+The implied constants, lower thresholds, excluded set, and function Hη may depend on η. Then
+these assumptions contradict β∗ > σ0 .
+
+Proof. Put
+                                   ϵ∗ := min{∆0 − ω, σ} > 0.
+Because C has slope one, the triangle inequality gives
+
+                              |fη (Z)| ≪η Z C(β∗ )−ϵ∗       (Z ≥ Z0,η ).                     (2.6)
+
+Moreover ϵ∗ ≤ ∆0 − ω < ∆0 , so β∗ − ϵ∗ > σ0 .
+
+
+                                                   8

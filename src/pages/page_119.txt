@@ -1,0 +1,60 @@
+retaining the unnormalized sum would count the same labels twice. The rule concerns weighted
+mass, not cardinality in addition to that mass. It is applied only after any row-dependent
+eligibility remains within the child or has been removed by a nonnegative inequality. Labels still
+averaged in a child norm are not included in Γ.
+    There is a separate normalization for a small
+                                               P kernel amplitude. The single-profile seminorm
+pj (w) is homogeneous, whereas pj (w) = 1 + pj (wi ) is not. Suppose a joint annular profile on
+a fixed block satisfies, for a scalar 0 < mR ≤ 1,
+
+                           pj (FR ) ≤ mR Cj pℓ(j) (w)b(j) ⟨t⟩h(j)    (j ≥ 0).
+
+One may keep FR in the Fourier coefficient measure, whose weighted L1 norm then contains the
+factor mR . Alternatively, write FR = mR FeR and put mR outside that measure. If a polynomial
+or row vector P(FR ) is linear in this whole profile, then
+
+                       P(FR ) = mR P(FeR ),         ∥P(FR )∥22 = m2R ∥P(FeR )∥22 .
+
+The tuple containing FeR has bounded, not small, seminorms. A scalar may be removed from a
+centered difference only when it multiplies the whole difference. A kernel occurring once in an
+already expanded quadratic expression contributes one factor mR , not automatically its square.
+These conventions use either the small measure or the outside scalar, never both. If the positive
+row range will later be enlarged, the scalar and the common profile are first fixed on the actual
+annuli, and the norm inequality containing that scalar is obtained before the enlargement.
+    Here are sufficient analytic ways to verify the two edge hypotheses. Let m(y) be a fixed norm
+monomial and let χ be a smooth cutoff with compact logarithmic support in a product of fixed
+annuli. Suppose a normalized kernel has Euler bounds
+
+                              |(r∂r )j K(r)| ≤ CA,j Sm(A,j) min(1, r−A ),
+
+where Sk is an increasing family of specified finite input seminorm and polynomial height bounds,
+and m(A, j) is taken nondecreasing in j. The product and chain rules give, uniformly for R > 0,
+                                                    ′
+                                                       Sm(A,j) min(1, R−A ).
+                                            
+                        pj χ(y)K(Rm(y)) ≤ CA,j                                              (17.7)
+
+Indeed yi ∂yi acting on the kernel is the fixed exponent of yi in m times r∂r , and m is bounded
+above and below on the cutoff support. There is no extra factor R from differentiation. The
+same argument preserves a bound with min(R1/4 , 1, R−A ), when those three kernel estimates
+are available. The decay order A is the same at every requested j; only the input order and
+its finite height degree increase. For an old window w(cm(y)) with c > 0, Euler derivatives are
+bounded by the global logarithmic seminorms of w and introduce no power of c depending on
+the derivative order. Normalized real powers such as y −1/2 obey the same rule. Pure twists of
+normalized norms insert only fixed powers of their heights.
+     Ordinary radial Fourier seminorms must be used only after the radial scale has been normal-
+ized. For a fixed annular w in two real dimensions, fR (x) = w(R|x|2 ) satisfies
+
+                                         ∥∂ j fR ∥1 = Rj/2−1 ∥∂ j f1 ∥1
+                                                                √
+for any fixed directional derivative of order j, by x 7→ Rx. Thus an unnormalized shrinking
+radial test could introduce a scale power depending on j. Sufficient hypotheses are a fixed-shape
+radial Schwartz test at its stated row scale, or a radial Cc∞ test constant near zero at that
+scale. After normalization, Lemma 4.7 applies to its fixed transform, and moving scale ratios
+                                                         −1/2         −1/2 −1/2
+enter only as in Equation (17.7). For example qu               = U0       y     on qu = U0 y; the central
+power belongs to the norm exponent, and the annular factor has order-independent scale bounds.
+Likewise quit = U0it y it , and the central unit phase is factored as a scalar before differentiating the
+normalized profile.
+
+                                                   119

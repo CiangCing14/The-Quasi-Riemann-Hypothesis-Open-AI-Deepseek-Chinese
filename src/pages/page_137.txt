@@ -1,0 +1,62 @@
+The first two are not asserted with zero error. In particular the third inequality holds for every
+fixed triple because of its source witness, even though it need not hold throughout the containing
+count ball. The new radical in Equation (17.44) has actual logarithmic norm Qnew = Qγ ,
+satisfying
+
+                         Qnew ≤ Q + b t + gb − θb
+                                    c+b
+                                                                                                  (17.50)
+                               ≤ Q + ℓ + t + g − θ + 4η ≤ Q + Dc + 4η.
+
+This also holds when its factors share primes with the old puncture, because taking the radical
+only decreases the norm. The last inequality uses Ai , V ≥ 0.
+   Use Fch = Fc + δN , Mch = Mc + η, and 2(Ai + t + g − θ + V ) + j ≥ −4η in Equation (17.48).
+The two child margins satisfy
+
+                    Fch − Mch − Qnew − z0 ≥ cnode + δN − 5η ≥ cnode − 5η,
+                                                                                                  (17.51)
+                         4Fch − 3Mch − 6z0 ≥ cnode + 4δN − 7η ≥ cnode − 7η.
+
+The nominal cap z0 is unchanged because the surviving mark is a subcollection. Moreover
+Dc ≥ ℓ + V − 2η and 2ℓ − j ≥ −3η, whence
+
+                    M − Mch = 2Dc + 2ℓ − j − η ≥ 2(ℓ + V ) − 8η ≥ 2d − 8η.                        (17.52)
+
+For η ≤ d/16 this is at least 3d/2, hence at least d. The same identities give Fc ≤ F − ℓ − V + 5η,
+so Fch ≤ F + 11η. Because its two summands are nonnegative, this bounds the child Nch , Vc
+through the finite depth.
+    The arithmetic construction has thus produced admissible child ranges with a smaller row
+length. We next express the transformed sum in their canonical polynomials. The required
+Fourier density is common to all triples γ, rows and labels; only after that identity will we apply
+Cauchy and dominate the reconstruction multiplicities.
+
+A common density for the second transformed sum. Before any actual outer ideal is
+summed, use the six independent coordinates
+                                                    q ′ q
+                                                      g    d2 qv ′ qk′′   qn1 qn2 
+                   (yg , yd , yv , yk , y1 , y2 ) =     ,    ,    ,     ,    ,      .
+                                                     Z g Z θ Z v Z h2 Z Nc Z Nc
+Use the fresh cutoffs ωn,a , ωf already chosen. Retain the four current dyad cutoffs and ωf outside
+inversion, and ωn,a in the two columns. Let Ω2,α be larger cutoffs equal to one on the full supports
+of the corresponding four dyad and two column cutoffs. These full supports, If , and the formal
+products g ′ v ′ n on them are the windows already included in ID .
+    The exact second root and kernel argument are
+                                 K
+                                 √          = Z λc +12η+τ yd−1 yv−1 (y1 y2 )−1/2 ,
+                          qd2 qv′ qn1 qn2
+                                 Kqk′′                   yk                                       (17.53)
+                                 2          = Aker,2              ,
+                            qd2 qv′ qn1 qn2          yd yv2 y1 y2
+                                    Aker,2 = Z Huse +h2 −θ−2v−2Nc .
+
+Indeed Nc = si − g − v and λc = Hc − θ − (si − g). Define the one ambient profile
+                                     Y
+                  H2,σ,t (y) = Z −6η   Ω2,α (yα )yd−1 yv−1 (y1 y2 )−1/2
+                                       α
+                                                                                                (17.54)
+                                                                               yk
+                                × Wi (yg yv y1 )Wi (yg yv y2 )K2 Aker,2                       .
+                                                                           yd yv2 y1 y2
+
+
+                                                   137

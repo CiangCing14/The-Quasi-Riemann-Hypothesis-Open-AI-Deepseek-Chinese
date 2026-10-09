@@ -1,0 +1,60 @@
+for every ϵ > 0. The lower threshold may depend on the target’s finite excluded set; no uniform
+prime asymptotic in a moving ray conductor is being used.
+    On the principal second Euler region, Section 16 defines Bp = Gp /Hp with Hp ̸= 0, and
+                                           −7/8
+Equation (16.13) gives Bp = −1 + O(qp ), uniformly in all imaginary parts and target unit
+phases. Apply the principal factorization in Equation (16.12) at w = 1, z = 1/6, where it remains
+valid even if the original quotient by Pp was undefined. It gives
+                                                                              
+                                                K
+                                                Y   X
+                    Hη,1,Z (s, 1, 1/6) = Hη (s)         Wi (qp /Pi )qp−5/6 Bp  ,
+                                               i=1     p∈Pi (Z)
+
+where Hη is the function in Equation (10.1) for this same excluded set S. By nonnegativity of
+Wi , its ith slot equals
+                                                          −7/8
+               −Si (Z){1 + ρi (s)},       |ρi (s)| ≪ Pi           (ℜs = β∗ + e, ℑs ∈ R).
+                                                                                    −7/8
+Indeed the sum of the absolute local errors is at most a fixed multiple of Pi     Si (Z). Choose
+any pretarget number
+                                                 7
+                                      0 < κP < min ℓi .
+                                                 8 i
+Since K is fixed, Rη,Z (s) := i (1 + ρi (s)) − 1 satisfies |Rη,Z (s)| ≪ Z −κP on that entire line.
+                              Q
+Thus the exact residue correction is
+                       Hη,1,Z (s, 1, 1/6) = Hη (s)Z ℓ/6 AT (Z){1 + Rη,Z (s)},
+which is Equation (10.18) with Aη = AT and µ = κP . This factorization is asserted only at the
+principal residue; it is not the correction used for general contour moves.
+    Let cS > 0 be the scalar in Equation (10.1), whose positivity is part of Lemma 10.5. For
+sufficiently large Z, define the normalized physical probe
+                                                     Iη,modified (Z)
+                                      JII,η (Z) =                    .
+                                                       cS AT (Z)
+This is distinct from JI,η , and both its numerator and normalizer are independent of the analysis
+height T1 . Proposition 15.3 and the subpower bound for A−1 T give, for every ϵ > 0,
+
+                                      |JII,η (Z)| ≪η,ϵ Z C(7/8)+ϵ .                         (20.2)
+The same scalar is used for the high comparison.
+   Choose the fixed cutoff as required for Equation (10.2). The associated Hη is holomorphic
+on ℜs > 7/8, satisfies the contraction there, and uses this same S. Let PII,η denote the u = 1
+term of Equation (16.7), and set
+                                         Z
+                                       1                     2 Hη (s)
+                          fII,η (Z) =         Z C(s) e(s−5/6) S         ds.
+                                      2πi (2)                 LF (s, η)
+All hypotheses of Lemma 10.5 have now been verified with σ0 = 7/8. Its remainder estimate is
+                  PII,η (Z)
+                            − fII,η (Z) ≪ Z C(β∗ )+(1+h)e−mw +ϵ + Z C(β∗ )+e−mz +ϵ
+                  cS AT (Z)
+                                             + Z C(β∗ )+e−κP +ϵ ,
+where the two geometric margins are
+                                     ly    23               h      13
+                           mw :=        =     ,     mz :=      =       .                     (20.3)
+                                     20   960              600    9600
+Lemma 10.5 includes the residue paths, the scalar Jacobian, and the rightward shift of the main
+integral. In particular the last term is the error estimated on its original global line; it is not
+part of fII,η . Both this signal and the physical probe are independent of T1 .
+
+                                                    188

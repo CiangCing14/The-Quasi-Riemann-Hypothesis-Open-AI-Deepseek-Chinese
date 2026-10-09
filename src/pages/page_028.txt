@@ -1,0 +1,65 @@
+Equation (5.16). Those formulas give the support inclusion in Equation (5.2). For completeness,
+the two possible magnitudes from τ at µ = uλk nb3 are
+
+                                    3k/6+8/3 |b| and 3k/6+3 |b|,
+
+and τ1 , τ2 have magnitude 9|b| and k = −4. Here the Gauss sums use only the cubic symbol,
+including at primes in S. To make their domain explicit, for every primary squarefree n define,
+as in [8, Equation (1.7)],
+                                         X v
+                        ge3 (n) = qn−1/2        ě(v/n),      ge3 (1) = 1.               (5.8)
+                                            n 3
+                                       v mod n
+
+The ordinary cubic symbol is defined at every prime other than λ and is extended by zero on
+nonunits and multiplicatively in the denominator. Every primary n is prime to λ. At each prime
+divisor of n the cubic character is nontrivial, and ě(v/n) = e(λv/n) is primitive because λ is
+a unit there. The finite-field Gauss identity and the Chinese remainder theorem therefore give
+|e
+ g3 (n)| = 1 for every such squarefree n. This includes the primary prime −2 of norm 4; no sextic
+character with that denominator is used. Also, whenever (t, n) = 1, the change of variable y = tv
+gives
+                                    X v                  −1
+                              −1/2                          t
+                             qn                ě(tv/n) =        ge3 (n).
+                                           n 3              n 3
+                                  v mod n
+
+This covers the twists t = λ2 , ωλ2 , ω 2 λ2 in the other source coefficient families.
+                                                                                     Thus the un-
+normalized Gauss sums occurring in all three cusp families have magnitude |n|. Consequently
+each coefficient magnitude displayed above is at most 27 3k/6 |b|, including k = −4. The formulas
+require only that n be squarefree and that n, b be primary; they do not require (n, b) = 1. Prime
+valuations of nb3 also show that its representation by such n, b, when it exists, is unique. In
+particular the same bound is valid when the variables share primes or contain primes excluded
+from the primal sums.
+    At infinity the condition x = λ3 µ ≡ 1 (mod 3) isolates exactly µ = λ−3 nb3 with n, b primary
+and n squarefree. The infinity support has λ3 µ ∈ O; every other ramified exponent in Equation
+(5.7) of [8] makes x divisible by λ, and the negative sign in the remaining pair gives x ≡ −1
+(mod 3). At the isolated index the coefficient in θ̄ is
+
+                                    dI (λ−3 nb3 ) = 35/2 |b|e
+                                                            g3 (n).                         (5.9)
+
+This is the unmasked source formula, valid for every primary squarefree n and every primary b,
+with no coprimality condition between them. Only when (n, S) = 1 may it be expressed in the
+global sextic notation: substituting y = λv in γ2 (n) gives
+                                −1
+                                λ
+                     ge3 (n) =       γ2 (n) = χn (λ)−2 γ2 (n)         ((n, S) = 1).        (5.10)
+                                n 3
+
+The cubic supplementary laws in [8, Equation (1.5)] make (λ/x)3 periodic on all primary x
+modulo 9. On primary elements prime to S it equals χx (λ)2 . A character in X is periodic on
+primary elements prime to E modulo its conductor, and the zero condition (x, E) ̸= 1 is periodic
+modulo E. Thus a sufficiently divisible L with prime support S works for every member of the
+fixed finite family. This verifies its choice before the moving local primes are selected.
+    Finite Fourier inversion with the zero extensions. For j ∈ {0, . . . , 5} define
+                                                 X
+                                Cp,j (h) = qp−1       χp (x)j e(−hx/p).
+                                             x mod p
+
+
+
+
+                                                  28

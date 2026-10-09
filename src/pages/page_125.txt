@@ -1,0 +1,65 @@
+q0 introduced below are used at their actual logarithmic norms, without independently rounded
+centers.
+    Every individual dyad introduced in the two transformations has a fixed compact normalized
+support. If a is its ideal and acen its named logarithmic center, we use
+
+                                        | logZ qa − acen | ≤ η.                                (17.18)
+
+This convention applies to the original ni , bi , f windows and to each extracted-ideal dyad when
+it is introduced. Errors for products and quotients are the sums of these individual errors; the
+fresh residual windows below have the explicitly stated bounds 4η, 6η and 4η. These estimates
+concern fixed compact normalized-ratio intervals, not annuli of ratio Z η .
+     For clarity, the intervals are fixed uniformly through the whole finite depth as follows. At
+each factorization choose fresh individual smooth cutoffs equal to one on the quotient supports,
+and include the full supports of these cutoffs, of the larger cutoffs used in Fourier separation, and
+of the enlarged label windows. Include also the bounded clipping families used below. Products
+and quotients of endpoints locate the initial quotient supports, such as those of b = hh′ , the
+residual n, and the child column and label. Iterating this construction through D levels gives
+a finite collection ID of compact normalized-ratio intervals. If Lwin is the maximum absolute
+logarithm of their endpoints, the threshold log Z ≥ Lwin /η implies Equation (17.18) and all the
+fresh-support bounds specified below. After a positive sum is enlarged, its newly added columns
+or labels need not satisfy an old parent product identity. Their norm bounds at this and the
+next node come directly from the full independent fresh windows in ID . Separated norm powers
+do not change these supports.
+     We use the following specialization of the common joint Fourier calculus in Lemma 4.5. Every
+normalized norm occurring in a coupled smooth factor to be separated from the columns is a
+coordinate y1 , . . . , yd of one ambient profile. A derived outer mask or label cutoff retained in the
+weight remains outside and needs no profile coordinate. Keep the current individual dyad cutoffs
+and fresh column cutoffs outside the inversion, until the weighted Cauchy inequality where they
+are used. Multiply the coupled profile by larger individual cutoffs Ωj equal to one on the full
+supports of those retained cutoffs. For the resulting compact profile H, define before summing
+any current row or label
+                                           Z
+                                    H(t) =
+                                    b           H(eu1 , . . . , eud )e−it·u du,
+                                         Rd
+                                                   Z           d                               (17.19)
+                                                                      it
+                                                               Y
+                                              −d
+                                H(y) = (2π)             H(t)
+                                                        b            yj j dt.
+                                                   Rd          j=1
+
+Arithmetic relations among the norms restrict evaluation points of this identity, not its density.
+Outer modes stay in the outer weight; for two column coordinates the first test receives y1it1 and
+the second receives y2−it2 , whose conjugate supplies y2it2 . All normalized real inverse-root powers
+are included in the coupled profile, so the final column tests contain no second copy.
+    This convention also makes the uniformity quantitative. Write Dj = yj ∂yj . On a fixed log
+rectangle, integration by parts with (1 − ∆)m0 , for 2m0 > J + d, gives
+                          Z
+                              |H(t)|(1
+                               b       + |t|)J dt ≪J,d,box max ∥Da H∥∞ .                       (17.20)
+                           Rd                                   |a|≤2m0
+
+
+For a fixed radial Schwartz Fourier kernel K, every supx≥0 |(x∂x )j K(x)| is finite, and
+                                              
+                             Y ej          Y aj
+                     Da K A     yj  =  ej  (x∂x )|a| K(x) x=A Q yej .
+                                                                                j   j
+                                j              j
+
+
+
+                                                   125

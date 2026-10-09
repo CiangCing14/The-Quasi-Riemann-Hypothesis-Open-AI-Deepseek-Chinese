@@ -1,0 +1,67 @@
+All characters in this subsection have the zero extensions specified in Section 4, and we put
+vp (0) = +∞.
+Lemma 13.2 (Prime-power Fourier sums). For P = qp and every integer a ≥ 1,
+
+                             |G(pa , k)| = P (a−1)/2 1vp (k)=a−1 ,                    6 ∤ a,
+                                   a            a/2                a/2−1
+                                                                                                      (13.5)
+                               G(p , k) = P           1pa |k − P           1pa−1 |k , 6 | a.
+
+Proof. Write a residue modulo pa as x0 + py, with x0 mod p and y mod pa−1 . The sum over y
+is zero unless pa−1 | k, and equals P a−1 otherwise. In the latter case write k = pa−1 k0 . The
+remaining normalized sum is
+                                         X
+                               P a/2−1        χp (x0 )a e(k0 x0 /p).
+                                               x0 mod p
+                                                                             √
+If 6 ∤ a, its inner sum vanishes when p | k0 and otherwise has absolute value P . If 6 | a, the
+inner sum is the sum of the additive character over the units, namely P 1p|k0 − 1. These are
+exactly the two cases in the statement.
+
+Lemma 13.3 (Full correlation and common factors). For primary moduli u, v outside S and
+j ∈ O, put                              X
+                        F (u, v; j) =             χu (x)χv (y).                   (13.6)
+                                                 x mod u, y mod v
+                                                vx−uy≡j (mod uv)
+
+Then
+                                         1        X
+                      F (u, v; j) = √                       G(u, h)G(v, h)e(−jh/(uv)).
+                                        qu qv
+                                                h mod uv
+
+At zero frequency, F (u, v; 0) = 0 unless u = v, and F (u, u; 0) = φ(u), where φ(u) is the number
+of units modulo u.
+    Let C = (u, v) and write u = Cn1 , v = Cn2 , where (n1 , n2 ) = 1. Then F (u, v; j) = 0 unless
+C | j. For j = Ck,
+
+                  F (Cn1 , Cn2 ; Ck) = χn1 (k)χn2 (−k)R(n1 , n2 )LC (n1 , n2 ; k),
+                                               X                             Y
+                      LC (n1 , n2 ; k) =                 χC (x)χC (y) =            Lpc .              (13.7)
+                                                   x,y mod C                                  pc ∥C
+                                             n2 x−n1 y≡k (mod C)
+
+For P = qp and p ∤ n1 n2 , the local factor is
+                                                        
+                                                        P − 1,
+                                                                             p | k,
+                                      c−1             c
+                              Lpc = P     χp (n1 /n2 ) −1,                    p ∤ k, 6 ∤ c,           (13.8)
+                                                        
+                                                         P − 2,               p ∤ k, 6 | c.
+                                                        
+
+If p divides exactly one of n1 , n2 , the local factor is P c−1 (P − 1)16|c 1p∤k . On the genuine residual
+locus (n1 , n2 ) = 1, LC means the congruence sum in Equation (13.7). When LC is used on all
+residual pairs, it instead denotes the artificial product extension of these local formulas, with the
+local value defined to be zero if p | (n1 , n2 ). Outside the genuine residual locus this is not the
+original congruence sum. The genuine function and this artificial extension both satisfy |LC | ≤ qC ,
+and the extension is periodic modulo rad C in each residual column.
+Proof. Expanding both Gauss sums in the displayed Fourier transform leaves
+                   1           X                                X                          
+                                            χu (x)χv (y)              e h(vx − uy − j)/(uv) .
+                  qu qv
+                          x mod u,y mod v                  h mod uv
+
+
+                                                           89

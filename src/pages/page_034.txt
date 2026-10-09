@@ -1,0 +1,63 @@
+zero line. Thus the shift of the kernel contour does not require a termwise shift of a conditionally
+convergent Dirichlet series.
+    For Equation (5.5), set fY (v) = χ(ev )V ♯ (Y ev ). This is supported on a fixed compact interval.
+Integrating its Fourier transform by parts J + 2 times and using the trivial bound for |u| ≤ 1
+gives
+                             Z                            J+2
+                                                          X (j)
+                               (1 + |u|)J |fbY (u)| du ≪J      ∥fY ∥L1 (R) .
+                             R                           j=0
+
+Leibniz’s rule and Equation (5.4) bound each norm by the right side of Equation (5.5), because
+ev stays in a fixed compact subinterval of (0, ∞). Finally, for |u| ≥ 1, B + 2 integrations by parts
+give                                               Z ∞
+                                              −B−2                         dx
+                      |V (η + iu)| ≤ |η + iu|
+                       b                               |(x∂x )B+2 V (x)|xη .
+                                                    0                      x
+For |u| ≤ 1 use the corresponding undifferentiated integral. On −A ≤ η ≤ 1/4, xη ≤ 1 + x−A +
+x1/4 , proving Equation (5.6). The identity x\  iu0 V (η + iu) = V
+                                                                 b (η + i(u + u0 )) and 1 + |u| ≤
+(1 + |u + u0 |)(1 + |u0 |) give the asserted norm-twist bound. In particular the Gaussian test
+           √                                                     2
+V (x) = (2 π)−1 exp(−(log x)2 /4), whose Mellin transform is et , satisfies the hypotheses of this
+Proposition directly.
+
+5.2   Element rows and fixed sectors
+To apply the reflection to a character A 7→ χA (m), we separate the fixed supplementary phases
+from the good prime divisors of the row. The separation retains the zero at every shared good
+prime.
+
+Lemma 5.2 (Fixed ray sectors for nonzero rows). Let Ψbase range over a fixed finite family of
+finite-ray characters with conductors supported on S, extended by zero off the primary elements
+prime to S. Use the fixed generators πl for l ∈ S from Lemma 4.1. For 0 ̸= m ∈ O, write
+uniquely                                     Y v (m)                Y
+                  m = umS mgood ,      mS =     πl l ,     mgood =      pvp (m) ,
+                                               l∈S                      p∈S
+                                                                         /
+
+where the good prime generators are primary and u is a unit. On every primary element A prime
+to S one has                                            Y
+                      χA (m) = χA (umS )R(A, mgood )         χp (A)vp (m) .             (5.20)
+                                                          p|mgood
+
+All powers on the right retain their zero values, including when vp (m) ≡ 0 (mod 6). Fix u, the
+valuations vl (m) modulo six, and the class of mgood in the fixed ray group through which R factors.
+In such a sector define
+                   (
+         [m]         Ψbase (A)χA (umS )R(A, mgood ), A ≡ 1 (mod 3), (A, S) = 1,
+        Ψ0 (A) =                                                                              (5.21)
+                     0,                                  otherwise.
+
+The nonzero branch is a member of a fixed finite family of finite-ray characters with conductors
+supported on S. Therefore a single E, L in Proposition 5.1 works for all these sectors. The local
+prime set contains every p | mgood , with exponent vp (m) modulo six, even when this exponent is
+zero. No moving good prime is absorbed into L.
+
+Proof. If (A, mgood ) = 1, multiplicativity and the symmetric reciprocity factor in Lemma 4.4
+give Equation (5.20). If a good prime is shared, both sides are zero: the left side is the zero
+extension of χA (m), and its local factor on the right is zero even for a six-divisible exponent.
+This proves the identity on the entire stated domain.
+
+
+                                                 34

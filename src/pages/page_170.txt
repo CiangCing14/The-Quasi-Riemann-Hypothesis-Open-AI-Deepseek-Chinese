@@ -1,0 +1,62 @@
+of polynomial norm. For each fixed Π, multiplicativity factors its value, mask, and norm power
+on Πl1 l2 into a scalar in Π times the three factors stated in the conclusion. This proves the
+exceptional assertion.
+
+   We next record the exact normalization of the two residual convolutions. Put
+                                                                        α1 + α 2
+                     α1 = a0 − c2 ,            α2 = a0 − d2 ,                    = a0 − b2 .
+                                                                           2
+At the entrance to the current two-transform stage, let Iin be its live slotQset and let X1 , X2
+be the formal scales of its first rectangle. Their exact convention is X1 X2 i∈Iin Pi = Z A . For
+side j ∈ {1, 2}, let Fj be the slots from this entrance set frozen by the first and second genuine
+common-support extractions, let Ij be the slots still live before the final t-allocation, and let
+Qplain,j be the product of the exact norms of the plain powers extracted at those steps and at
+the amplifier. Slots removed in an ancestor stage are not included in Fj . Let Tj be the common
+formal pre-t product of the two plain scales in its rectangles; for an uncentered input use its one
+formal plain product. Before using slot ratios, discard a frozen-slot profile-zero term, which is
+identically zero by its frozen data independently of the row and live labels. Complete extraction
+gives the exact identities
+                                                Y
+                              Z A−αj = Qplain,j     qp i ,
+                                                         i∈Fj
+                                 Y                      ZA
+                           Tj         Pi =               Q            = Z αj +ej ,
+                                           Qplain,j i∈Fj Pi
+                                 i∈Ij
+                                           X
+                                      ej =     logZ (qpi /Pi ),            |ej | ≤ θN .
+                                               i∈Fj
+
+The amplifier contributes only exact plain powers to this calculation. Each earlier frozen slot
+occurs once, even if it shared its prime with a plain. The already separated inverse roots, kernel,
+and fixed normalization constants remain outside ej .
+   For side j, let dj,i be the product of final t-primes selected in plain i, and let Jj ⊆ Ij be the
+newly frozen slots. Put
+                                                    X                    X
+          aj,i = logZ qdj,i ,   rej = aj,1 + aj,2 +   zi ≥ 0,      ωj =       logZ (qpi /Pi ).
+                                                            i∈Jj                        i∈Jj
+
+The corresponding formal scale is divided by qdj,i in both rectangles. An assignment selecting
+one prime slot at two distinct t-primes, or a newly frozen slot with zero profile value, is identically
+zero from the frozen data and is discarded before these ratio bounds are used. All other extracted
+zeros remain until the nonnegative or absolute estimate described below.
+    Use lower-endpoint divisor dyads T ≤ qt < 2T , T ≥ 1, and put t− := logZ T . Each dyad
+contains O(Z t− ) ideals. The actual selected product on side j is divisible by t, so
+                                                            
+                                                      Y
+                         rej + ωj = logZ qdj,1 dj,2     qpi  ≥ logZ qt ≥ t− ,
+                                                     i∈J
+                                                                                               (18.34)
+                                                                 j
+
+                               |ωj | ≤ θN ,           |ej + ωj | ≤ θN     (j = 1, 2).
+
+The last inequality uses the disjoint subsets Fj and Jj of the current stage entrance slots. It
+does not include ancestor slots or fixed separation constants.
+   Writing Tj′ = Tj /qdj,1 dj,2 , the post formal factor product and the nominal raw child scale are
+                                 Y
+                         Tj′              Pi = Z αj +ej −erj ,       Npost,j = Z αj −erj .     (18.35)
+                               i∈Ij \Jj
+
+
+                                                          170

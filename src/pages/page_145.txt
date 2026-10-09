@@ -1,0 +1,69 @@
+Thus the actual side exponents obey
+
+                                binit
+                                κ i   ≤ κinit
+                                         c    + 3η,              κinit
+                                                                  c    = m − 2D′ + P1 .                   (17.70)
+
+All normalized real inverse roots will be kept in the single joint profile below, not also in the
+final child tests. Principal columns have the direct diagonal bound O(Z m+ϵ ), also for a bounded
+nonempty negative D′ -window. Any principal nonzero frequencies restored to the formal formula
+carry the same Binit mask and are bounded by the full principal restoration in Lemma 17.5, since
+Z m ≥ 1.
+    Insert frequency dyads of qh′ from one partition common to all d′ , not a label-recentered
+partition. The outer mask implies qh′ ≤ Z Minit , so there are only logarithmically many dyads
+in the bounded retained range. Let H be the center of one such bare-frequency dyad, and let
+ψC , ψd′ , ψh′ be the retained individual cutoffs on the current C, d′ , h′ dyads, evaluated at their
+normalized norms.
+    The orientation in Equation (17.68) is now fixed. The calculation in the second canonical
+Poisson transformation replaces µ(z)γ−1 (z) by ᾱ(z)γ2 (z)χz (−1)G(z). On the second side the
+factor inside conjugation has ray factor G(z); together with the CRT cross phase the relative ray
+factor is G([z2 ][z1 ]−1 ). Expand it by the fixed group formula above, and in a fixed ray summand
+put
+                       ν∗ = ν0 ϑ,    A∗ (z) = ᾱ(z)γ2 (z)ν∗ (z),  Kinit = FΦinit .
+For a preliminary pattern Σ0 fixing the overlap, these dyads and the ray summand, and with the
+earlier mode held fixed, the masked principal-restored nonzero component is exactly
+                    X
+          TΣinit
+             0
+                 =         ψC ψd′ ψh′ µ(d′ )G(ϑ)B
+                                            b           ′
+                                                 init (h )1(C,j)=1
+                  C sf, d′ |C
+                    h′ ̸=0
+                          X
+                  ×                   1(z1 ,z2 )=1 A∗ (z1 )A∗ (z2 )χz1 (d′ )χz1 (h′ )χz2 (d′ )χz2 (h′ )
+                        z1 ,z2 sf                                                                         (17.71)
+                      (z1 z2 ,Cj)=1
+                                                                   ′
+                  × d0 (Cz1 )d0 (Cz2 )W0 (qC qz1 /Z D )W0 (qC qz2 /Z D′ )
+                          ′
+                     Z −D Z m
+                                        m          
+                                         Z qh′
+                  × √            Kinit                .
+                    qd ′ qz1 qz2        qd′ qz1 qz2
+
+Indeed |µ(C)ν0 (C)|2 = 1 for the squarefree C outside S, the common row factor is exactly
+1(u,C)=1 , and its Poisson expansion contributes the one µ(d′ ). The displayed two numerator
+factors are those of the primitive character χz1 χz2 and its Fourier transform. The finite ray sum
+restores the principal pair by G(1) = 1. The cost of that restoration and the raw complement
+removed before this equality were bounded separately above.
+    Define the summand in Equation (17.71) on all individually squarefree z1 , z2 prime to Cj by
+the displayed separate A∗ factors, characters, formal product norms, full kernel, and unchanged
+outer ball. It agrees on the coprime domain. Insert the complete identity
+                                             X
+                              1(z1 ,z2 )=1 =      µ(s),     za = sna ,
+                                                   s|(z1 ,z2 )
+
+before any factorwise bound. Let v ≥ 0 be the center of a squarefree s-dyad, vb = logZ qs , and ψs
+its retained individual cutoff. The na are squarefree and prime to s, but need not be mutually
+coprime. This formal extension does not apply Poisson summation to a noncoprime conductor.
+For squarefree coprime s, n, CRT and the zero-preserving identity χn (d′ ) = χn (d′ )χn (d′ )4 give
+exactly
+
+                         A∗ (sn)χsn (d′ )χsn (h′ ) = A∗ (s)χs (d′ )χs (h′ )
+                                                                                                          (17.72)
+                                                                 × A∗ (n)χn (d′ h′ )χn (d′ s)4 .
+
+                                                            145

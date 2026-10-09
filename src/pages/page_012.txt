@@ -1,0 +1,56 @@
+Proof. Let ξ 6 = a. Since F contains all sixth roots of unity, all roots of X 6 − a lie in F (ξ),
+and σ 7→ σ(ξ)/ξ embeds its Galois group into µ6 . The extension is therefore abelian. A prime
+outside 6a is unramified; for example this follows from the discriminant of X 6 − a, which is
+supported on 6a. At such a prime, arithmetic Frobenius is characterized on the residue field
+by x 7→ xqp . Consequently its quotient on ξ reduces to a(qp −1)/6 . Reduction is injective on µ6
+outside 6, proving the displayed identity. Multiplicativity of the Artin map gives the assertion
+for ideals. Artin reciprocity makes this map factor through a ray group with modulus supported
+on the primes dividing 6a; these are the power-residue and ray-group assertions in [22, Chapter
+VIII, (5.3) and (5.5)].
+     For the last statement, an ideal A outside S is coprime to every πp and to every unit. Its
+symbol therefore has no zero there, and the power of each χA (πp ) ∈ µ6 depends only on vp
+(mod 6). There are at most 6|S|+1 possible displayed numerators after this reduction. Apply the
+first assertion to each and take a common multiple of their ray moduli. Their prime supports
+are all contained in S because S contains the primes above 6.
+
+   The word fixed in this lemma is essential: a numerator containing a moving good prime does
+not thereby enter a ray group fixed independently of Z. Its character and its natural zero support
+remain moving data.
+   At a base Z > 1, a plain polynomial of real log-length n is
+                                                  X
+                              Sψ (n; W ) = Z −n/2    ψ(l)W (ql /Z n ),                        (4.1)
+                                                     l
+
+and the centrally normalized inverse polynomial of log-length r is
+                                              X
+                          Mψ (r; W ) = Z −r/2   µ(n)ψ(n)W (qn /Z r ).                         (4.2)
+                                                n
+
+Every mask in ψ is retained in both definitions. At base U , when ψ(n) = ν(n)χn (u), we also
+denote the latter polynomial by Mu (U r ; W ), or by Mu (D; W ) when D = U r .
+    An annular test is a smooth function with support in a fixed compact subinterval of (0, ∞).
+Families of annular or coupled profiles are used only with fixed logarithmic support and uniform
+bounds for every logarithmic derivative that is invoked. The precise separation norm is given
+in Lemma 4.5. In a product of two plain factors, both factors have the same row character,
+including the same fixed finite-ray twist. Conjugating a whole factor inside its absolute value
+permits the opposite orientation; conjugating only part of its coefficients does not.
+    We use the following uniformity convention. Log-lengths range over fixed bounded sets, and
+every estimate allows any specified positive power loss. The exponents of the norm scales depend
+only on those real parameter ranges, the strict margins, and the specified losses. Write A for this
+fixed arithmetic datum: the complete zero-extended presentations of the fixed finite characters,
+their defining moduli and the fixed finite ray group used to present them, the excluded set, and
+any fixed arithmetic normalization. It is chosen independently of Z, the current rows, and the
+averaged labels, though it may depend on a previously fixed target. Finite seminorm orders,
+polynomial height orders, implied constants, and lower thresholds may depend on A. They are
+uniform over the declared moving moduli and outer labels in their stated ranges, even when an
+outer label is fixed during one row sum.
+    For a nonzero ideal a, let dO (a) = #{d : d | a}, where the count includes all integral ideal
+divisors, including those meeting S, and for 0 ̸= f ∈ O put dO (f ) = dO ((f )). A nonnegative
+multiplicity w(f ) is called divisor-bounded only if
+
+                                        w(f ) ≤ C dO (f )C
+
+for one fixed C ≥ 1, independent of Z, the current rows, and the averaged labels. The constant
+C may depend on A. This convention does not relax any separate condition that w depend only
+
+                                                12

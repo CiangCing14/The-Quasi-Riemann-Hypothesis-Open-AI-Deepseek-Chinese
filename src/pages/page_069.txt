@@ -1,0 +1,65 @@
+   We now restore the rowwise choice of Wu in Equation (9.17). Here the detector was used
+with t = 1, so D∗ = U . After the presentation and dyadic pair are fixed, its inverse profiles have
+the form
+                         Wdyad (x)V≤ (Dx/U )x−σ−iω ,      ω = γ − νF ,
+where Wdyad is the fixed smooth dyadic cutoff and νF is the Fourier frequency from the detector.
+The factor V≤ (Dx/U ) is common to the row sum; the varying parameters are σ ∈ [51/100, 1] and
+|ω| ≤ (3i + 1)T1 . Differentiating in either parameter inserts a power of log x, which is bounded
+on the fixed annulus. Cover these two parameter ranges by unit boxes. There are at most a
+fixed power of 1 + T1 such boxes. The parameter Sobolev inequality in Lemma 4.5 bounds the
+supremum on a box by a finite sum of integrals of squared profile derivatives. Sum over the
+rows before these integrals. At each fixed parameter value, differentiation changes only the fixed
+profile coefficient, inserting the allowed logarithmic weights or profile derivatives. Equation (9.21)
+therefore applies to every such integral. This proves
+                                                                (                    )
+                                                                                U D 2/3
+                                                                              
+             X
+                                2             ϵ1        AA 1/2    U
+                  |Mu (D; Wu )| ≪A,ϵ1 (U D) (1 + T1 ) V              +D+                  .     (9.22)
+                                                                  V              V
+           u∈UV
+
+The derivative order and hence AA are fixed before choosing τ . The height intervals and the
+total allowance for additional frequencies are exactly those in the shared detector estimates; the
+Sobolev step does not assign a new frequency allowance or change a contour. It does not permit
+a coefficient to be selected separately for each k.
+    It remains to combine this moment with the independent count Equation (9.19). Write
+                                                                                  
+                      o            r               o                  2(1 − o + r)
+               V =U ,        D=U ,        eo (r) = + max 1 − o, r,                   .
+                                                   2                       3
+These are the parameters of the actual dyads. A nonempty dyad has 0 ≤ o ≤ 1 + OA (1/ log U );
+the unit dyad has o = 0. Since the witness lengths stay bounded, the arbitrarily small power of
+U D in Equation (9.22) can be written as an arbitrarily small power of U . Dividing that equation
+by the spike in Equation (9.17), and also using Equation (9.19), gives for this subdivision
+                         #UV ≪ U min{1−o/2,eo (r)−δr}+O(ϵ0 )+ϵ1 (1 + T1 )AA ,                  (9.23)
+after decreasing the sieve loss denoted by ϵ1 if necessary.
+    We compute the largest exponent in this expression first on 0 ≤ o ≤ 1 and 1/2 ≤ r ≤ 1. Put
+x = 1 − o and A = (1 + x)/2. Then
+                                                                            
+                                           1−x                1 x       2
+            eo (r) − δr = max A − δr,             + (1 − δ)r,  + +        −δ r .
+                                             2                2 6       3
+The minimum of A with a maximum of three real numbers is the maximum of its minima
+with those numbers. The first such minimum is A − δr ≤ 1 − δ/2. For fixed r, the second is the
+minimum of an increasing and a decreasing affine function of x. They cross at x = (1−δ)r ∈ [0, 1],
+so its maximum over x is
+                                    1 + (1 − δ)r         δ
+                                                   ≤1− .
+                                          2              2
+Both functions in the third minimum increase with x. Its maximum over x is therefore
+                                                      
+                                           2      2
+                                  min 1, +          −δ r .
+                                           3      3
+The affine expression in r takes the values 1 − δ/2 and 4/3 − δ at the two endpoints. It follows,
+and equality is attained at one of those endpoints, that
+                                                                           
+                                                                     δ 4
+                 max min{1 − o/2, eo (r) − δr} = min 1, max 1 − , − δ           .          (9.24)
+                0≤o≤1                                                2 3
+               1/2≤r≤1
+
+
+                                                 69

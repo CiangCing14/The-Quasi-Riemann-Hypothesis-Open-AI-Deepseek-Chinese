@@ -1,0 +1,32 @@
+这里把相异的冻结商计算一次，其见证重数已包含在纤维权重中。形式恒等式
+                                    κinit
+                                      c   + P1 + 2Fcinit = m
+在恢复子规范化并应用损失为 ϵc 的典范界之后，给出单侧指数
+
+                                  m + 3η + 2η + 2δinit + πinit + ϵc
+                                                                                                (17.86)
+                                        ≤ m + 11η + πinit + ϵc .
+
+这里 πinit 是合计的自由选择的局部除子、二进和分离损失，包括指定重叠除子损失和相异分配 πcount,init 、 πfib,init 。这些是一个合计量的各部分，不是重复的容许量。两个裁剪副本来自恢复的规范化和子指数。没有 τinit 能量因子：行放大发生在典范子内部，并已在其边缘检验中计入。初始加权 Cauchy 取几何平均，重叠三角形已被 Z −G 抵消。
+   我们明确给出参数和尾阶。设 rmax 、 zmax 、 mmax 界定标记范围，设 sslot 界定槽数，并令 Dmax = rmax + zmax 。置 c̄ = min(c1 , c2 ) 并选择典范边缘 c∗ = c̄/2。对于 η, τinit ≤ 1/100，该应用有效的先验起始界为
+
+                        Mmax = 2Dmax + 1,           Nmax = Vmax = Dmax + 1.
+
+确实，P1 ≥ −2η 给出 Minit ≤ 2Dmax + 10η + τinit ，而 Finit ≤ Dmax + 5η 界定两个非负子参数。按方程 (17.66) 进行选择，取 ϵc = ϵ/2，并额外施加
+                       η, τinit ≤ c̄/100,  η ≤ ϵ/88,     πinit ≤ ϵ/8.
+在施加这两组界之后，可以取 τinit = τ。方程 (17.85) 随即给出两个边缘至少为 3c̄/4 > c∗ ，因此引理 17.2 适用。方程 (17.86) 至多为其 ϵc = ϵ/2 损失增加 ϵ/4。
+   在这些有界初始范围固定之后，选择实现目标 πinit 的辅助输入指数，然后再选择初始尾阶和 Fourier 高度阶。
+   对于单独的初始原始尾，被支撑的列满足 qci ≤ CZ Dmax ，而 D′ ∈ [−zmax , Dmax ]。在真正的初始展开上置 a = Z m /(qd′ qz1 z2 )。由于 m ≥ 0、d′ | C 且 ci = Czi ，
+                               a−1 ≤ qd′ qz1 z2 ≤ qc1 qc2 /qC ≤ CZ 2Dmax .
+显式的粗略指数
+
+                        Bcrude,init = 10{1 + mmax + (sslot + 1)(Dmax + 1)}
+
+即使没有抵消也界定所有原始非频率因子。为验证这一点，规范化至多耗费 zmax ，两个列计数耗费 2Dmax ，d′ -除子计数至多耗费 Dmax ，而 1 + a−1 至多耗费 2Dmax 。两个剩余标记至多耗费 2sslot Dmax ，利用 dO (c)sslot ≤ qcsslot 。即使计算重叠对及其指定系数而不计其抵消权重，也至多耗费 2zmax + 2sslot zmax 。Poisson 前因子至多耗费 mmax 。总和至多为 mmax + (8 + 4sslot )Dmax < Bcrude,init 。
+   选择 Tinit > 1 + Bcrude,init ，然后
+
+                                Ainit > 1 + (Bcrude,init + Tinit )/τinit .
+
+方程 (17.21) 使原始 Binit = 0 补集为 O(Z −Tinit )，具有固定的半范数和多项式高度因子。这个阶是在标记范围和 τinit 之后选择的，但在初始 Fourier 高度阶之前，且在最终 Z 阈值之前。如果 τinit = τ，取以下的最大值
+
+                                                  150

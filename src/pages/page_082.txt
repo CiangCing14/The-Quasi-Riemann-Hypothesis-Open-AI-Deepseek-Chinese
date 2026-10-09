@@ -1,0 +1,50 @@
+For the large rows, (2, 2, v) with v > 2 lies in D2 . The same all-height local bound verifies
+Equation (10.23) for every physical row. Here B0 = lx /2 + 1 + ly = 7/4, so Equation (10.25) has
+exponent
+                                   7   501             v
+                                     +      (1 + ϵ) −      + ϵ.
+                                   4 1000             1000
+It tends to −∞ as the fixed number v increases. For example, v = 4000 makes it less than −1
+when ϵ ≤ 10−6 , whereas CI (β∗ ) ≥ 1/4. This more than supplies the saving needed below. The
+three ranges U ≤ Z dmin , Z dmin < U ≤ Z h+ζ , and U > Z h+ζ cover every physical dyad. The row
+u = 1 was already assigned to the principal term.
+
+
+11     The 11/12 conclusion
+For the normalized base probe the central estimate, principal extraction, and outer-row estimates
+now give the following margins before adjustable losses:
+                             contribution          saving relative to CI (β∗ )
+                          intermediate rows              1021/25000
+                   unresidued principal w integral           1/40
+                    remaining principal z integral          1/1200
+                              small rows                    43/300
+                       large rows (v = 4000)                  >1
+The smallest margin comes from the principal z remainder. We retain a common positive margin
+after all real losses, then choose the analysis height for each target. The physical sum and the
+signal do not depend on that height.
+
+11.1    Choosing the final height
+The preceding estimates separate real powers from finite powers of the analysis height T1 . The
+following elementary step records the order of choices needed to obtain one power saving for
+every target.
+Lemma 11.1 (Late choice of height and external order). Fix σ0 ∈ (1/2, 1) with ∆0 = β∗ −σ0 > 0
+and an affine function C(s) = s + c. Suppose that all real parameters and finite structural choices
+in an application have been fixed independently of η. Suppose there are common numbers m > 0
+and 0 < ω < ∆0 such that, for every primitive finite-order target, functions Jη , fη independent
+of T1 satisfy
+                                      |Jη (Z)| ≪η Z C(σ0 )+ω .
+Assume that after a finite sum of estimates, for every integer N ≥ 0,
+                     |Jη (Z) − fη (Z)| ≪η,N Z C(β∗ )−m (1 + T1 )Aη + Z Bη T1−N ,             (11.1)
+where Aη ≥ 0 and Bη are finite and independent of N . Suppose there is a number τ0,η > 0, fixed
+after the real choices and the finite profile orders for the target but before N and Z, such that
+the estimate is valid for sufficiently large Z whenever T1 = Z τ and 0 < τ ≤ min{dmin /100, τ0,η },
+with a fixed dmin > 0. This additional ceiling may encode a height condition in a preceding
+estimate, such as the one in Lemma 8.2. The lower threshold may depend on η, N, τ . Increasing
+N is assumed to change only external test seminorms, not Aη or the already fixed real powers in
+Equation (11.1).
+    Then τ and N can be chosen after η so that
+                                 |Jη (Z) − fη (Z)| ≪η Z C(β∗ )−m/2 .
+In particular the common saving σ = m/2, together with the displayed low estimate, has the
+target quantifier required by Proposition 2.1.
+
+                                                 82

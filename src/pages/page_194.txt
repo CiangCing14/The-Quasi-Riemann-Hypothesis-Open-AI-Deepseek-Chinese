@@ -1,0 +1,55 @@
+Passing from base Z to base U changes a slot length from ℓi to ℓi /d ≤ 2ℓi , so one mesh chosen
+with this factor of two satisfies the moment requirement throughout the interval. If
+                                                          1
+                                       0 < ζ < 5ℓ − h =      ,
+                                                          48
+then for h < d ≤ h + ζ the supply remains greater than 1/5, whose margin above 7/37 is 2/185.
+   For 1/50 < δ < α, use the ideal row upper exponent R = R∗ + ∆/4. For δ = α, use R = 1 − δ.
+Both are at least 1 − δ, so
+                                            17   33 δ   4
+                                R + δ/2 −      ≥   − ≥    > 0.
+                                            50   50 2  25
+The floor has a positive slope as well. Thus d = h bounds all these exponents for d ≤ h. The
+cost of extending to h + ζ is at most 2ζ: indeed
+                                       α−δ  17                         139
+                        R∗ ≤ 1 − δ +       ≤ ,            R∗ + ∆/4 ≤       ,
+                                        2   12                         96
+and 139/96 + 1/2 − 17/50 < 2. The slopes at δ = α and floor cases are smaller than two.
+    For dmin ≤ d ≤ 1/2 and δ ≤ α, choose t = 1 and use no selected primes. Proposition 19.2
+gives the ideal exponent 1 − 2δ/3 outside the floor. Use the slightly larger common exponent
+                                                 76 2
+                                            R=     − δ.
+                                                 75 3
+At δ = 1/50 it equals one, so it also covers the floor. Its slope is 101/150 − δ/6 > 0 on this range.
+Using q ≤ δ/2 in Equation (20.4) yields
+                                           529  25              49
+             E(d) ≤ E(1/2) + O(ϵ) ≤ −          + δ + O(ϵ) ≤ −       + O(ϵ) < 0.              (20.11)
+                                          2400 96             14400
+The middle expression follows by substituting d = 1/2, R = 76/75 − 2δ/3, and q = δ/2; the
+last inequality uses δ ≤ 5/6. At δ = α, the count used in Equation (20.7) and its positive slope
+already control every d ≤ h. Together with Section 20.3, these cases cover every physical row
+norm. Only d ≥ 1/2 uses selected physical prime factors in a row moment; every physical slot
+remains in the high correction in all ranges.
+    To compare with C(β∗ ), subtract C(β∗ ) − C(7/8) = ∆ from each ideal exponent. In the
+adaptive range this is precisely the comparison in Equation (20.10); its only positive capacity al-
+lowance is h∆/4. The other endpoint ranges have nonpositive ideal exponents before subtracting
+∆. Thus all of them retain the target-independent main high margin
+                                                 
+                                                h        51
+                                    mhi := 1 −      ∆ = ∆.
+                                                4        64
+
+The low exponent has margin mlo := ∆. The principal contour and approximation margins were
+established in Section 20.1; we now choose all losses together.
+
+20.6    Order of choices and conclusion
+We finish by separating the target-independent real choices from the target-dependent height
+and external test orders. The numerical choices remain part of this application; the final height
+selection is supplied by Lemma 11.1.
+
+Proposition 20.3 (Order of choices). Under the contradiction in Equation (12.1), there are
+numbers
+                                 0 < ω < ∆,     σ>0
+
+
+                                                 194

@@ -1,0 +1,79 @@
+For a nonempty negative-center window, qn ≥ 1 and Equation (17.74) give δinit ≤ 3η, while its
+upper support endpoint gives Z δinit ≤ b. If Ncinit ≥ 0, then δinit = 0 and the latter inequality
+follows from b ≥ 1. Thus 1 ≤ Z δinit ≤ b in every retained case. The cutoff ωn,a (Z δinit y) is
+supported in [a/b, b] and has uniformly bounded Euler seminorms. Its rescaling depends only on
+fixed centers, not on a current row or label, and its full clipping family is included in ID .
+    On the formal factorization za = sna , the complete root and kernel argument are exactly
+                                         ′
+                                Z −D Z m            init
+                                    √          = Z κc x−1     −1
+                                                         d xs (x1 x2 )
+                                                                          −1/2
+                                                                               ,
+                              qd qs qn1 qn2
+                                ′
+
+                                   Z m qh′                     xh                                          (17.75)
+                                     2
+                                               = Aker,init              ,
+                                qd′ qs qn1 qn2             xd x2s x1 x2
+                                                                    ′
+                                        Aker,init = Z m+H−θ−2(D −B) .
+
+For the first equality use Ncinit = D′ − B − v and κinit
+                                                       c  = m − 2D′ + B − θ. Equivalently its root
+    −1             −1/2
+is xd xC (xc1 xc2 )     with xca = xC xs xa . Define the one joint profile
+                                     Y
+               Hinit,Σ,υ (x) = Z −3η   Ωinit,α (xα )x−1  −1
+                                                     d xs (x1 x2 )
+                                                                  −1/2
+
+                                         α
+                                                                                                         (17.76)
+                                                                                        xh
+                               × W0 (xC xs x1 )W0 (xC xs x2 )Kinit Aker,init                           .
+                                                                                    xd x2s x1 x2
+                                  init
+Its outside scalar is exactly Z κc +3η . The old c-windows are coupled and therefore are in this
+profile, as are all normalized real inverse roots and the full kernel. No real root is also put in a
+child test.
+    For ξ = (ξC , ξd , ξs , ξh , ξ1 , ξ2 ), put zn = qn /Z Ninit , set again ε1 = 1, ε2 = −1, and define
+
+                                     Wainit (z) = ωn,a (Z δinit z)z εa iξa .
+
+If d′a is the surviving subcollection on side a, the precise unnormalized child polynomial is
+                                     X
+                 Qinit
+                   a,t,j,ξ (k, f ) =   A∗ (n)ρt,j (n)χn (k)χn (f )4 d′a (n)Wainit (qn /Z Ninit ). (17.77)
+                                 n sf
+
+Its fixed finite character, puncture, product mark, and test are independent of k, f . The two
+sides can have different tests and subcollections, but both have the same canonical coefficient
+class.
+    Let ΩΣ consist of
+
+                        ω = (C sf, d′ | C, s sf, h′ ̸= 0; assigned slot primes)
+
+with the retained individual supports and slot branches. It has no current column index. The
+functions t, k, f are the products defined above; the set may be taken before imposing the dis-
+played outer zero masks, which will be in the weight. Let Ainit
+                                                              Σ (ω) be the product of all assigned
+coefficients of d0 and their priority masks, conjugated on side two. The complete remaining outer
+weight is
+
+               VΣinit (ω; ξ) = µ(d′ )µ(s)G(ϑ)B
+                                         b           ′                                init
+                                              init (h )1(C,j)=1 1(s,Cj)=1 1(s,h′ )=1 AΣ (ω)
+                                                                                   init
+                              × ψC (xC )ψd′ (xd )ψs (xs )ψh′ (xh )ωf (qf /Z Vc )                           (17.78)
+                              × xiξ C iξd iξs iξh
+                                 C xd xs xh Z
+                                                  iδinit (ξ1 +ξ2 )
+                                                                   .
+
+The cutoff ωf is one on every original label product, so its insertion is an equality before separa-
+tion. There is one copy of each Möbius factor and one ray coefficient. In particular the common
+zero at (s, h′ ) is still present.
+
+                                                      147

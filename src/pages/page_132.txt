@@ -1,0 +1,70 @@
+The second Poisson transformation. Fix one of the two positive sums obtained from the
+first Cauchy inequality. Its polynomial has the form
+                                             X
+                                    Pi (y) =     ci (x)χx (y).
+                                                      x
+
+The coefficient ci (x) consists of the other factors of Equation (C), with ui = t′ x, the puncture at
+t′ , and the separated weight. It is independent of y. In particular x is squarefree and
+
+                        ci (x) = 0 unless (x, CJ) = 1,               (x, rad q0 t′ ) = 1.
+
+The puncture ρ and the zero of χx (dk ) are retained as well. The y-sum uses the fixed-shape
+smooth positive ball at scale Z Huse .
+   In its expanded square put
+
+                            g ′ = (x1 , x2 ),     xj = g ′ zj ,       gb = logZ qg′ .
+
+Let g ≥ 0 be its fixed center. Then z1 , z2 are squarefree and coprime, and each is prime to g ′ .
+The row data for Lemma 17.5 are
+
+                   K = Z Huse ,       ψ2 = χ̄z1 χz2 ,          m2 = z1 z2 ,      Rmask = g ′ .    (17.36)
+
+The common factor χ̄g′ (y)χg′ (y) is exactly this mask. The character is primitive away from
+m2 = 1, because its two nonzero local powers have disjoint supports. For d2 | g ′ , let θ ≥ 0 be its
+center and write θb = logZ qd2 . The actual conductor length is
+
+                           L
+                           b2 = x    b2 − 2b
+                                b1 + x     g,              |L
+                                                            b 2 − 2(si − g)| ≤ 10η.
+
+The last inequality uses the full fresh x-support bound |b     xa −si | ≤ 4η for each copy and |b
+                                                                                                g −g| ≤ η.
+                  ′′
+For knew = dk d2 k , the implication Z   Huse                      τ
+                                              qk′′ /(qd2 qm2 ) ≤ Z gives
+
+                              new ≤ 2(si − g) − Huse + δ + 2θ + 13η + τ
+                             kd
+                                   = Mc + η,
+
+where
+                Mc = 2(si − g) − Hc + δ + 2θ
+                                                                                                  (17.37)
+                     = M − 4ℓ − 2Ai − 2t − 2g + 2θ − 2V + j,                   Mch = Mc + η.
+
+The 13η consists of 10η from the conductor, one from dk , and two from d2 . Subtracting Huse =
+Hc + 12η + τ cancels the same tolerance τ used in this second Poisson comparison. Thus no
+separate row clipping or unrecorded boundary error is needed.
+   Separate the original principal contribution for the direct count below. Before any off-coprime
+extension or Fourier absolutization, keep on the genuine nonprincipal second Poisson expression
+only the outer mask
+                                    B2 (k ′′ ) = 10<q       M .
+                                                       ′′ ≤Z ch
+                                                           dk d2 k
+
+For each supported pair its complement is contained in the actual ratio tail just considered, so
+Equation (17.21) discards it with the order fixed below. Inside the mask retain the full smooth
+kernel. The mask depends on dk , d2 , k ′′ and the fixed sector, not on the residual z1 , z2 . If Mch < 0,
+the nonzero ball is empty and the same tail comparison discards every nonzero frequency. In a
+retained nonempty passage Mch ≥ 0.
+    The actual second prefactor has the exact side split
+
+                     Z Huse −θ−L2 /2 = Z λ1 /2 Z λ2 /2 ,        ba = Huse − θb − x
+                                                                λ                ba + gb.
+                             b b           b      b
+
+
+
+                                                      132

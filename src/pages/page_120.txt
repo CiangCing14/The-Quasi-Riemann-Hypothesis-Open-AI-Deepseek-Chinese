@@ -1,0 +1,55 @@
+    Logarithmic Fourier separation uses a joint cutoff in a coordinate list containing every nor-
+malized norm occurring in a coupled smooth factor. Derived nonsmooth row and label masks
+remain outside that factor and need no coordinate. A nonzero norm used as such a coordinate
+and initially ranging in a ball down to norm one must first be partitioned into common whole
+annuli fixed for the current sector; the zero frequency is separate. In bounded logarithmic ranges
+there are O((1 + log Z)d ) such blocks for a fixed number d of variables, so their count costs a
+preselected small power. The cutoff and its full support depend only on the block centers and
+fixed data, not on the individual values of the labels inside a row norm. Provided the coupled
+smooth factor is this one joint function with no further dependence on the individual labels, its
+Fourier density is common to those rows, as required by Lemma 4.5; separate uniform bounds for
+row-dependent densities would not imply the same Hilbert-space inequality. Nonsmooth masks
+are retained or resolved by exact arithmetic identities, never differentiated or incorporated as
+label-dependent sharp Fourier selectors.
+    Finally, suppose an internal dyadic ratio R > Z ξ , with fixed ξ > 0, has absolute arithmetic
+count at most Z B Rb . A coefficient bound with the factor R−A gives, for A > b,
+                                     X
+                                           Z B Rb−A ≪ Z B−ξ(A−b) .
+                                 R dyadic
+                                  R>Z ξ
+
+Choose A from the fixed B, b, ξ and the desired internal saving. The actual bound may also have
+finite input seminorm and polynomial height factors; these enter the finite propagation graph.
+This tail estimate is not a height-free assertion uniform in all heights. Parameter Sobolev adds
+only a fixed number of profile derivatives and height dimensions, and all these internal orders
+are chosen before an external cutoff.
+    Finally suppose the graph and all of its kernel and annular orders have been fixed, giv-
+ing height degree H. Suppose an additional, external separation uses annular profiles with pj
+bounded uniformly in Z for every fixed j, or nonannular profiles with the weighted Mellin or
+annular norms in the preceding lemmas uniformly bounded at every fixed order, and its dis-
+carded integrand has bound Z B0 ⟨t⟩J0 with fixed B0 , J0 . The external truncation is required to
+remain outside the graph: it does not replace a profile w or a kernel Ke by a cutoff-dependent
+profile. Given a retained-height allowance δ > 0, first choose 0 < τ < δ/(1 + H). Then
+(1 + T1 )H ≤ 2H Z δ for T1 = Z τ . After this choice, Equation (4.10) with weight J0 and any
+fixed integer N > (B0 + M )/τ makes an integrated external tail O(Z −M ) for any prescribed
+M > 0. For a horizontal join use Equation (4.11) with the additional fixed height weight, or
+Equation (4.12) for a joint Gaussian slice. When other coordinates on such a slice are extended
+to the whole real line, the accompanying arithmetic factors must have global bounds on those co-
+ordinates; a coordinate entering a denominator controlled only in a buffered region must remain
+restricted to that region. The external constants may depend on N and on the fixed data. This
+late choice does not alter any internal profile or the internal orders J, H, which is the asserted
+order of dependence.
+
+17.4    Finite Poisson summation with a mask
+We now prove Lemma 17.1, using the arithmetic conventions of Section 4 and Lemma 14.3
+for the terminal case. The recursive reduction uses two applications of the following form of
+Poisson summation, and the initialization uses one. Its explicit divisor variable retains every
+zero extension.
+
+Lemma 17.5 (Masked primitive Poisson). Let ψ be a primitive finite character modulo an ideal
+m, extended by zero on nonunits, and let R be any ideal. Let Φ(qz ) be a radial Schwartz function
+on C, and let FΦ(qy ) denote its Fourier transform for the self-dual measure and the kernel
+
+
+
+                                               120

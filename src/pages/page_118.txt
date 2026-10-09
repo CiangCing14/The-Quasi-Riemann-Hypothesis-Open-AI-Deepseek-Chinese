@@ -1,0 +1,65 @@
+Corollary 17.4 (Indexed finite propagation). In Lemma 17.3, let ℓ denote any admissible length
+and outer labels at a vertex v, and let Φv (ℓ) be its desired norm exponent. Suppose the terminal
+bound, after division by Z Φv (ℓ) , has the form in that lemma with a fixed exponent δv . An edge
+may be indexed by a Z-dependent family Γe with a nonnegative measure νe , and may have the
+form
+            Z Z                         re
+                       ae (ℓ,γ)
+                                        Y                                         θ
+                     Z          |Ke,γ |    Nve,r Z, ℓe,r , W e,r , Ae,r t + Be,r ξ e,r dξ dνe (γ),
+             Γe   Rde              r=1
+where the child labels ℓe,r may depend on ℓ, γ. Assume uniformly in those labels that
+                                         X
+                             ae (ℓ, γ) +   θe,r Φve,r (ℓe,r ) − Φv (ℓ) ≤ δe ,                (17.4)
+                                          r
+
+with fixed δe , and that the child-profile bounds of the lemma hold. Assume also that for every
+fixed H ≥ 0,
+                 Z Z
+                                                           mass
+                          |Ke,γ |⟨ξ⟩H dξ dνe (γ) ≤ Ce,H Z δe pℓe (H) (w)be (H) ⟨t⟩ce (H) , (17.5)
+                  Γe    Rde
+
+where δemass is fixed independently of H. When the quantities are squared Hilbert-space row
+norms obtained by separating a profile, this hypothesis must use the coefficient measure common
+to those rows. There need only be finitely many edge types at each of the finitely many depths;
+the cardinalities of the Γe may vary with Z.
+    Then Nv /Z Φv (ℓ) has the conclusion of Lemma 17.3, uniformly in ℓ, with terminal exponents
+δv and edge exponents δe + δemass . In particular all required seminorm and height orders are finite
+and independent of an external cutoff.
+Proof. Set N v = Z −Φv (ℓ) Nv . Substitution in an edge and Equation (17.4) bound its norm power
+by Z δe times the product of the normalized children. Insert their inductive bounds. As in the
+product proof of Lemma 17.3, the required coefficient moment is
+                                        X
+                                            θe,r Hr + Br c′e,r (Jr ) ,
+                                                                    
+                                  He =
+                                           r
+                                                                                      mass
+which is finite and independent of γ. Equation (17.5) at this order contributes Z δe  and only
+finite profile and height orders. Backward induction over the finite edge types therefore gives
+exactly the stated normalized recurrence. A label averaged inside a child remains inside that
+child throughout this argument; it is not a second integration variable of νe .
+
+    We make explicit how discrete labels are normalized in this corollary. P   After the relevant
+weighted Cauchy inequality, suppose a nonnegative outer measure satisfies γ∈Γ wγ ≤ CZ c+ϵ ,
+with fixed c and ϵ selected before the height orders. For a per-label prefactor Z araw common on
+the block, put                            X
+                           dνΓ (γ) = Z −c    wγ δ γ ,   νΓ (Γ) ≤ CZ ϵ .
+                                                γ∈Γ
+
+Here δγ denotes unit point mass. For nonnegative Bγ for which the displayed integrals are finite,
+the exact identity is
+                                X    Z
+                           araw
+                         Z        wγ |Kγ (ξ)|Bγ (ξ) dξ
+                                γ∈Γ
+                                                Z Z                                          (17.6)
+                                      araw +c
+                                =Z                    |Kγ (ξ)|Bγ (ξ) dξ dνΓ (γ).
+                                                 Γ
+
+Uniform weighted moments of Kγ now give Equation (17.5) with only the remaining Z ϵ mass.
+Thus a displayed exponent that already includes the count c must use this normalized measure;
+
+                                                      118
