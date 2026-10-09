@@ -1,0 +1,117 @@
+\contentsline {section}{\numberline {1}引言}{4}{section.1}%
+\contentsline {paragraph}{一个共同的延拓原理。}{5}{section*.3}%
+\contentsline {paragraph}{完备化和。}{5}{section*.4}%
+\contentsline {paragraph}{平衡的第一阶段。}{6}{section*.5}%
+\contentsline {paragraph}{精细化的第二阶段。}{6}{section*.6}%
+\contentsline {paragraph}{向 Dirichlet $L$ 函数的转移。}{7}{section*.7}%
+\contentsline {section}{\numberline {2}从一个共同信号到无零点半平面}{7}{section.2}%
+\contentsline {part}{I\hspace {1em}拟黎曼假设}{10}{part.1}%
+\contentsline {section}{\numberline {3}第一个无零点半平面}{10}{section.3}%
+\contentsline {section}{\numberline {4}算术与解析预备}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}算术记号与系数类}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Gauss 和与有限互反相位}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}光滑范数剖面}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Hecke 函数的增长与对数控制}{21}{subsection.4.4}%
+\contentsline {section}{\numberline {5}完备化的三次反射与无标记行能量}{23}{section.5}%
+\contentsline {subsection}{\numberline {5.1}完备化反射}{24}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}元素行与固定扇区}{34}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}公共剖面与格尾部}{34}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}完备化指标的二次范数}{36}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}无标记反射能量}{38}{subsection.5.5}%
+\contentsline {section}{\numberline {6}基础探针及其平衡低估计}{44}{section.6}%
+\contentsline {subsection}{\numberline {6.1}两个因子的定义与分离}{44}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}平衡低估计}{46}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Poisson 表示及其 Euler 因子}{49}{section.7}%
+\contentsline {subsection}{\numberline {7.1}精确的 Poisson 级数}{49}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}标量 Euler 恒等式}{50}{subsection.7.2}%
+\contentsline {paragraph}{有限标量及其单位因子。}{51}{section*.9}%
+\contentsline {paragraph}{剩余配对相位的相消。}{52}{section*.10}%
+\contentsline {section}{\numberline {8}带饱和见证的零点探测器}{55}{section.8}%
+\contentsline {subsection}{\numberline {8.1}带缓冲的矩形与逐点界}{55}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}同时的饱和见证}{58}{subsection.8.2}%
+\contentsline {section}{\numberline {9}六次筛法的行计数}{60}{section.9}%
+\contentsline {subsection}{\numberline {9.1}主约定下的六次大筛法}{60}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}物理行及其逆见证}{66}{subsection.9.2}%
+\contentsline {section}{\numberline {10}高展开的解析估计}{70}{section.10}%
+\contentsline {subsection}{\numberline {10.1}主行与正规化}{70}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}移动围道所用的精确恒等式}{71}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}竖直线上的外部尾部与水平衔接}{72}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}移动一个固定分箱}{73}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}应用行包络}{75}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}把修正分成若干片段的中心估计}{76}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}提取主信号}{78}{subsection.10.7}%
+\contentsline {paragraph}{基础修正。}{80}{section*.12}%
+\contentsline {subsection}{\numberline {10.8}小行范数与大行范数}{80}{subsection.10.8}%
+\contentsline {paragraph}{第一阶段的各外部区间。}{81}{section*.13}%
+\contentsline {section}{\numberline {11}$11/12$ 结论}{82}{section.11}%
+\contentsline {subsection}{\numberline {11.1}选取最终高度}{82}{subsection.11.1}%
+\contentsline {paragraph}{选择次序。}{83}{section*.14}%
+\contentsline {subsection}{\numberline {11.2}向 Dirichlet $L$ 函数 的转移}{84}{subsection.11.2}%
+\contentsline {part}{II\hspace {1em}八分之七无零点半平面}{85}{part.2}%
+\contentsline {section}{\numberline {12}补偿探针}{85}{section.12}%
+\contentsline {section}{\numberline {13}系数约定与有限相关性}{87}{section.13}%
+\contentsline {subsection}{\numberline {13.1}补充系数条件}{87}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}固定射线类中的素数计数}{88}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}完整有限 Fourier 相关性}{88}{subsection.13.3}%
+\contentsline {section}{\numberline {14}带标记的完备化与反射行能量}{91}{section.14}%
+\contentsline {subsection}{\numberline {14.1}完备化和与积形式的标记}{91}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}整指标的带标记反射}{92}{subsection.14.2}%
+\contentsline {subsection}{\numberline {14.3}一个二次--三次范数估计}{94}{subsection.14.3}%
+\contentsline {subsection}{\numberline {14.4}反射能量界}{96}{subsection.14.4}%
+\contentsline {paragraph}{反射块数据.}{96}{section*.15}%
+\contentsline {section}{\numberline {15}补偿的低阶估计}{101}{section.15}%
+\contentsline {subsection}{\numberline {15.1}标记的完备化行}{101}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}加性 Gram 界}{104}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}下界的完成}{107}{subsection.15.3}%
+\contentsline {section}{\numberline {16}局部补偿及其误差}{108}{section.16}%
+\contentsline {subsection}{\numberline {16.1}完整的全纯修正}{108}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}动态局部误差}{109}{subsection.16.2}%
+\contentsline {paragraph}{主局部因子。}{112}{section*.16}%
+\contentsline {subsection}{\numberline {16.3}其余围道的绝对界}{113}{subsection.16.3}%
+\contentsline {section}{\numberline {17}带素因子的逆矩}{114}{section.17}%
+\contentsline {subsection}{\numberline {17.1}带标记估计的陈述}{114}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}典范估计}{115}{subsection.17.2}%
+\contentsline {subsection}{\numberline {17.3}半范数与高度阶的有限传播}{116}{subsection.17.3}%
+\contentsline {subsection}{\numberline {17.4}带掩码的有限 Poisson 求和}{120}{subsection.17.4}%
+\contentsline {subsection}{\numberline {17.5}典范归约及其归纳}{121}{subsection.17.5}%
+\contentsline {paragraph}{短完备化。}{122}{section*.17}%
+\contentsline {paragraph}{剩余项及其标记。}{123}{section*.18}%
+\contentsline {paragraph}{两次变换的归约。}{124}{section*.21}%
+\contentsline {paragraph}{第一次 Poisson 变换。}{125}{section*.22}%
+\contentsline {paragraph}{从立方中保留四次幂标号。}{127}{section*.24}%
+\contentsline {paragraph}{分离第一次变换后的乘积。}{129}{section*.25}%
+\contentsline {paragraph}{第一个正优函数。}{130}{section*.26}%
+\contentsline {paragraph}{第二次 Poisson 变换。}{131}{section*.28}%
+\contentsline {paragraph}{新的典范数据及其容许性。}{135}{section*.29}%
+\contentsline {paragraph}{第二次变换和的公共密度。}{137}{section*.30}%
+\contentsline {paragraph}{第二个 Cauchy 不等式与外层计数。}{138}{section*.31}%
+\contentsline {paragraph}{正规范子式。}{140}{section*.32}%
+\contentsline {paragraph}{能量指数。}{140}{section*.33}%
+\contentsline {paragraph}{选择的次序与终止。}{141}{section*.34}%
+\contentsline {subsection}{\numberline {17.6}带标记矩的初始化}{142}{subsection.17.6}%
+\contentsline {subsection}{\numberline {17.7}无六次幂因子行上的放大}{151}{subsection.17.7}%
+\contentsline {section}{\numberline {18}带短素因子的四阶矩}{152}{section.18}%
+\contentsline {subsection}{\numberline {18.1}固定掩码与反射}{154}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}素估计与归纳次序}{156}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}中心化系数及其支集}{158}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}第一个 Poisson 变换及其目标界}{160}{subsection.18.4}%
+\contentsline {subsection}{\numberline {18.5}扩大 Gauss 行范数}{163}{subsection.18.5}%
+\contentsline {subsection}{\numberline {18.6}第二变换与较小宽度的乘积}{165}{subsection.18.6}%
+\contentsline {subsection}{\numberline {18.7}诱导特征位于 \(\Theta \) 的行}{173}{subsection.18.7}%
+\contentsline {subsection}{\numberline {18.8}有限归纳的完成}{178}{subsection.18.8}%
+\contentsline {paragraph}{在指定槽数之前的选择。}{179}{section*.35}%
+\contentsline {paragraph}{固定槽系统的选择。}{179}{section*.36}%
+\contentsline {section}{\numberline {19}素理想振幅与精化行计数}{180}{section.19}%
+\contentsline {subsection}{\numberline {19.1}素理想振幅}{180}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}选定的素槽位与行计数}{181}{subsection.19.2}%
+\contentsline {paragraph}{未选素数的逆见证。}{183}{section*.37}%
+\contentsline {paragraph}{无需选定素数的情形。}{183}{section*.38}%
+\contentsline {paragraph}{比较正容量。}{184}{section*.39}%
+\contentsline {paragraph}{小容量与结论。}{185}{section*.40}%
+\contentsline {section}{\numberline {20}八分之七界}{186}{section.20}%
+\contentsline {subsection}{\numberline {20.1}主正规化因子}{186}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}补偿后的高指数}{188}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}小行范数与大行范数}{190}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}端点不等式}{191}{subsection.20.4}%
+\contentsline {subsection}{\numberline {20.5}频率范围}{193}{subsection.20.5}%
+\contentsline {subsection}{\numberline {20.6}选择次序与结论}{193}{subsection.20.6}%
